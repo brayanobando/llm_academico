@@ -1,0 +1,66 @@
+La Conferencia de Dartmouth (en inglés: Dartmouth Summer Research Project on Artificial Intelligence) es el nombre del encuentro que tuvo lugar en el verano boreal 1956 en la universidad Dartmouth College, ubicada en Hanover, Nuevo Hampshire (Estados Unidos), considerado como el evento germen de la Inteligencia Artificial como esfera o campo de actividad.
+
+
+== Contexto ==
+A principios de la década de 1950, el campo de las "máquinas pensantes" recibía varios nombres: cibernética, teoría de los autómatas y procesamiento complejo de la información.​ La variedad de nombres sugiere la variedad de orientaciones conceptuales.
+En 1955, John McCarthy, entonces un joven profesor asistente de matemáticas en el Dartmouth College, decidió organizar un grupo para aclarar y desarrollar ideas sobre las máquinas pensantes. Eligió el término "Inteligencia artificial" para el nuevo campo. Eligió el nombre por su neutralidad, ya que evitaba centrarse en la estrecha teoría de los autómatas y evitar la cibernética, muy centrada en la retroalimentación analógica. Además, así evitaba tener que aceptar al asertivo Norbert Wiener como gurú o tener que discutir con él.​
+John McCarthy explicaba en el debate Lighthill de 1973​ que cuando Claude Shannon y él mismo pensaron en el término Inteligencia Artificial en 1956, a Shannon le pareció demasiado ostentoso y decidieron utilizar en su lugar «estudios de autómatas». Posteriormente se dieron cuenta que el término original podría ser más adecuado para separar la disciplina del campo de los autómatas y señalar su objetivo prioritario de la creación de máquinas que realizasen tareas similares a la inteligencia humana. McCarthy también menciona que el término les pareció que podría ser más atractivo para la obtención de subvenciones para el proyecto.
+A principios de 1955 McCarthy se dirigió a la Fundación Rockefeller para solicitar financiación para un seminario de verano en Dartmouth para unos 10 participantes. En junio él y Claude Shannon, uno de los fundadores de la teoría de la información que entonces trabajaba en los Laboratorios Bell, se reunieron con Robert Morison (director de investigación biológica y médica) para discutir la idea y la posible financiación, aunque Morison no estaba seguro de que un proyecto tan visionario llegara a ser financiado.​
+El 2 de septiembre de 1955, McCarthy, Marvin Minsky, Nathaniel Rochester y Claude Shannon propusieron formalmente el proyecto. A esta propuesta se le atribuye la introducción del término "inteligencia artificial".​
+
+
+== Fechas ==
+Se dice que la Conferencia de Dartmouth duró seis semanas en el verano de 1956.​ Las notas de Ray Solomonoff escritas durante el evento, sin embargo, dicen que duró aproximadamente ocho semanas, desde el 18 de junio hasta el 17 de agosto​. Las notas de Solomonoff sobre Dartmouth comienzan el 22 de junio; el 28 de junio menciona a Minsky, el 30 de junio menciona Hanover, N.H., el 1 de julio menciona a Tom Etter. El 17 de agosto Ray realizó su último discurso​.
+
+
+== Personas ==
+La conferencia fue organizada por John McCarthy (Dartmouth College, Nuevo Hampshire), Marvin L. Minsky (Harvard University), Nathaniel Rochester (IBM) y Claude E. Shannon (Bell Telephone Laboratories). Propusieron a un grupo de investigadores que quisieran trabajar sobre la conjetura de que cada aspecto del aprendizaje y la inteligencia podían ser tan precisamente descritos que se podían crear máquinas que las simularan.
+El 26 de mayo de 1956, McCarthy notificó a Robert Morison los 11 asistentes previstos:
+Presencia de los participantes:
+Periodo completo:
+
+1) Dr. Marvin Minsky
+2) Dr. Julian Bigelow
+3) Professor D.M. Mackay
+4) Mr. Ray Solomonoff
+5) Mr. John Holland
+6) Dr. John McCarthy
+Cuatro semanas:
+
+7) Dr. Claude Shannon
+8) Mr. Nathanial Rochester
+9) Mr. Oliver Selfridge
+Primeras dos semanas:
+
+10) Mr. Allen Newell
+11) Professor Herbert Simon
+Alrededor del 18 de junio de 1956 los primeros participantes (quizás sólo Ray Solomonoff, tal vez con Tom Etter) llegaron al campus de Dartmouth en Hanover, N.H. para reunirse con John McCarthy que ya tenía un apartamento allí. Ray y Marvin se alojaron en los apartamentos de los profesores, pero la mayoría se alojó en el Hanover Inn.
+
+
+== Declaración fundacional ==
+En la introducción al encuentro se estableció:
+
+ 
+
+La propuesta continúa argumentando sobre computadoras, procesamiento del lenguaje natural, redes neuronales, teoría de la computación, abstracción y creatividad (estas áreas aún se consideran relevantes dentro del campo de la inteligencia artificial). Según Stottler Henke Associates, además de los autores de la propuesta, asistieron al encuentro Ray Solomonoff, Oliver Selfridge, Trenchard More, Arthur Samuel, Herbert A. Simon, y Allen Newell.
+​​​
+
+
+== Evento y resultado ==
+Los asistentes disponían de toda la planta superior del Departamento de Matemáticas de Dartmouth para ellos solos y la mayoría de los días de la semana se reunían en el aula principal de matemáticas, donde alguien dirigía una discusión centrada en sus ideas, o más frecuentemente, se celebraba una discusión general.
+No se trataba de un proyecto de investigación en grupo dirigido; las discusiones abarcaban muchos temas, pero se considera que se fomentaron varias direcciones en concreto: el auge de los métodos simbólicos, los sistemas centrados en dominios limitados (los primeros sistemas expertos) y los sistemas deductivos frente a los inductivos. Uno de los participantes, Arthur Samuel, dijo: "Fue muy interesante, muy estimulante, muy emocionante".​
+Ray Solomonoff tomó notas de su impresión sobre las charlas y sobre las ideas de los distintos debates.​
+
+
+== 50 Aniversario ==
+En 2005 se celebró el 50 aniversario en varias ciudades y universidades del mundo:
+
+Entre el 13-15 de julio de 2005 se celebró en Dartmouth: AI@50 the Dartmouth Artificial Intelligence Conference: The Next Fifty Years.
+En Albacete, (España) se celebró el Campus Multidisciplinar en Percepción e Inteligencia de Albacete 2006 del 10 al 14 de julio de 2006, el evento internacional más importante en lengua castellana que conmemoró los 50 años del nacimiento de la investigación sobre inteligencia artificial, los 50 años de las Conferencias de Dartmouth, reuniendo a cientos de expertos de España, Estados Unidos e Hispanoamérica.
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+50 Años De La Inteligencia Artificial - Campus Multidisciplinar en Percepción e Inteligencia - Albacete 2006 (España).

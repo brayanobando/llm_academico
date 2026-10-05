@@ -1,0 +1,25 @@
+Leela Chess Zero es un motor de ajedrez gratuito y de código abierto y un proyecto de computación distribuida. El desarrollo ha sido encabezado por el programador Gary Linscott, quien también es desarrollador del motor de ajedrez Stockfish. Leela Chess Zero fue adaptada del motor Leela Zero Go,​  que a su vez se basó en el proyecto AlphaGo Zero de Google, también para verificar los métodos en el papel de AlphaZero aplicados al juego de ajedrez.​
+Al igual que Leela Zero y AlphaGo Zero, Leela Chess Zero empezó conociendo solo las reglas básicas y nada más. Leela Chess Zero es entrenada por una red de computación distribuida coordinada en el sitio web Leela Chess Zero. En noviembre de 2019, Lc0 había superado las 250 millones de partidas de ajedrez jugadas contra sí misma para entrenarse.​ 
+
+
+== Historia ==
+El proyecto Leela Chess Zero se anunció por primera vez en TalkChess.com el 9 de enero de 2018.​ En los primeros meses de entrenamiento, Leela Chess Zero ya había alcanzado el nivel de Gran maestro, superando la fuerza de los primeros lanzamientos de Rybka, Stockfish y Komodo, a pesar de utilizar una búsqueda MCTS que verifica varios órdenes de magnitud menos posiciones.
+
+
+== Resultados de competición ==
+En abril de 2018, Leela Chess Zero se convirtió en el primer motor de red neuronal en participar en el Top Chess Engine Championship, durante la temporada 12 en la división más baja, 4.​ Leela no tuvo un buen desempeño: en 28 juegos, ganó uno, empató dos y perdió el resto; su única victoria vino de una posición en la que su oponente, Scorpio 2.82, se colgó no pudiendo continuar el juego.​ En julio de 2018, Leela compitió en el Campeonato Mundial de Ajedrez Informático 2018, donde ocupó el séptimo lugar entre ocho competidores.​ Leela volvió a participar en la temporada 13 del Campeonato Top Chess Engine en la división 4 (la división más baja). Terminó primero en esa división con un registro de 14 victorias, 12 empates y 2 derrotas.​ Leela pasó a la división 3 donde empató en segundo lugar con Arasan, pero sin conseguir pasar a la siguiente ronda (En caso de empates, los encuentros directos entre los motores empatados deciden la promoción). Su registro en la división 3 fue de 7 victorias, 18 empates y 3 derrotas. 
+Leela Chess Zero ganó recientemente el campeonato de computadoras más fuerte del mundo (TCEC 15), tras disputar la Superfinal contra el programa Stockfish, considerado hasta ahora el mejor del planeta. En el siguiente campeonato (TCEC 16) no pudo alcanzar la final, tras quedar tercera a un punto de Stockfish y a medio punto de AllieStein. Lc0 consiguió completar la ronda de clasificación sin ninguna derrota, pero con muy pocas victorias (9) y muchos empates, por las 14 victorias que lograron los dos módulos que disputaron la Superfinal.
+
+
+== Véase también ==
+AlphaZero
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio web oficial
+Leela Chess Zero en GitHub
+Cliente para entrenamiento de la red neuronal
+Lc0 Motor de ajedrez

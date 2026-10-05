@@ -1,0 +1,17 @@
+Frank Rosenblatt (11 de julio de 1928-11 de julio de 1971) fue un psicólogo estadounidense notable en el campo de inteligencia artificial.
+
+
+== Biografía ==
+Nació en New Rochelle (Nueva York) y sus padres fueron el Dr. Frank y Katherine Rosenblatt.​ Después de graduarse en el Instituto Bronx de Ciencia en 1946, asistió a la Universidad Cornell, donde obtuvo su licenciatura en Letras (A.B.) en 1950 y su doctorado en Filosofía (Ph.D.) En 1956.​
+Luego fue al Laboratorio Cornell Aeronáutico en Búfalo (Nueva York), donde fue sucesivamente psicólogo investigador, psicólogo sénior y jefe de la sección de sistemas cognitivos. Aquí es donde también dirigió sus primeros trabajos sobre perceptrones,​ que culminaron en el desarrollo y construcción del hardware del perceptron Mark I en 1960.​ Este era esencialmente el primer ordenador que podría aprender habilidades nuevas a prueba y error, utilizando un tipo de red neuronal que simula el proceso de pensamiento humano. 
+Los intereses en investigaciones de Rosenblatt eran excepcionalmente amplios. En 1959 ingresó en el campus de Ithaca en Cornell como director del Programa de Investigación de Sistemas Cognitivos y también como conferencista en el Departamento de Psicología. En 1966 se unió como profesor asociado a la sección de Neurobiología y Comportamiento dentro de la recién formada división de Ciencias Biológicas.​ También en 1966, se fascinó con la transferencia de comportamiento aprendido de ratas sin entrenamiento mediante la inyección de extractos de cerebro de ratas entrenadas, un tema sobre el cual publicaría ampliamente en los años posteriores.​
+Falleció en 1971, en el mismo día de su cumpleaños número 43, en un accidente de bote en la bahía de Chesapeake.​
+
+
+== Véase también ==
+Red neuronal artificial
+Historia de la inteligencia artificial
+Perceptrón
+
+
+== Referencias ==

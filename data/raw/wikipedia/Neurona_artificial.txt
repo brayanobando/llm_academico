@@ -1,0 +1,16 @@
+Las neuronas artificiales son una función matemática concebida como un modelo de una neurona biológica. Las neuronas artificiales son la unidad elemental de las redes neuronales artificiales.​
+
+
+== Funcionamiento ==
+La neurona artificial recibe una o más entradas (que representan potenciales postsinápticos excitadores y potenciales postsinápticos inhibidores en las dendritas neuronales) y las suma para producir una salida (o activación, que representa el potencial de acción de una neurona que se transmite a lo largo de su axón). Normalmente, cada entrada se pesa por separado y la suma se transmite a través de una función no lineal conocida como función de activación o función de transferencia. Las funciones de transferencia suelen tener una forma sigmoide, pero también pueden adoptar la forma de otras funciones no lineales, funciones lineales a trozos o funciones de paso. A menudo también son monótonamente crecientes, continuos, diferenciables y acotados.
+La función de umbral ha inspirado la construcción de puertas lógicas denominadas lógicas de umbral; aplicable a la construcción de circuitos lógicos similares al procesamiento cerebral. Por ejemplo, los dispositivos nuevos como los Memristors se han utilizado ampliamente para desarrollar esta lógica en los últimos tiempos. La función de transferencia de neuronas artificiales no debe confundirse con la función de transferencia de un sistema lineal.​
+
+
+== Véase también ==
+Red neuronal artificial
+Perceptrón
+Sistema nervioso
+Neurona
+
+
+== Referencias ==

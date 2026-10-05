@@ -1,0 +1,72 @@
+
+== Introducción ==
+Las redes neuronales recurrentes (RNNs) son una clase de algoritmos de aprendizaje profundo que se utilizan para procesar datos secuenciales, como el lenguaje natural, la música y las series temporales. Las RNNs se han convertido en una herramienta poderosa en el campo del procesamiento del lenguaje natural, el reconocimiento del habla, la visión por computadora y la predicción de series temporales. En esta página, se presentará una revisión detallada de las redes neuronales recurrentes, incluyendo su estructura, cómo funcionan, las aplicaciones y los desafíos que enfrentan.
+
+
+==== Definición Global ====
+Una red neuronal recurrente (RNN, por sus siglas en inglés) es un tipo de red neuronal que se utiliza en el aprendizaje automático y la inteligencia artificial para procesar datos secuenciales. A diferencia de las redes neuronales feedforward, que procesan los datos en una única dirección, las RNN tienen conexiones recursivas que permiten que la información fluya hacia atrás y hacia adelante a través de la red. Esto les permite tener una memoria a largo plazo y modelar patrones complejos en los datos secuenciales.
+En una RNN, cada capa oculta se calcula a partir de la entrada actual y la salida de la capa anterior, lo que permite que la red capture información contextual de la secuencia de datos. Además, las RNN tienen parámetros compartidos a lo largo de la secuencia, lo que les permite procesar entradas de longitud variable.
+Hay varios ejemplos de aplicaciones de redes neuronales recurrentes en el mundo real. Algunos de ellos son:
+Reconocimiento del habla: Las RNN se utilizan en el reconocimiento del habla para transcribir automáticamente el habla a texto. La entrada a la red es la secuencia de características acústicas del habla, y la salida es una secuencia de caracteres del alfabeto.
+
+Traducción automática: Las RNN se utilizan en la traducción automática para traducir texto de un idioma a otro. La entrada a la red es una secuencia de palabras en el idioma de origen, y la salida es una secuencia de palabras en el idioma de destino.
+
+Predicción de series de tiempo: Las RNN se utilizan para predecir valores futuros en series de tiempo, como el precio de las acciones o el clima. La entrada a la red es la serie de tiempo histórica, y la salida es una predicción del valor futuro.
+
+Modelado de lenguaje: Las RNN se utilizan para modelar el lenguaje natural, como en la generación de texto. La entrada a la red es una secuencia de palabras, y la salida es una secuencia de palabras generadas automáticamente.
+
+Reconocimiento de escritura a mano: Las RNN se utilizan en el reconocimiento de escritura a mano para convertir la escritura manuscrita en texto. La entrada a la red es la secuencia de trazos de la escritura a mano, y la salida es una secuencia de caracteres del alfabeto.
+
+En resumen, las redes neuronales recurrentes son una herramienta poderosa para procesar datos secuenciales y modelar patrones complejos en ellos. Se utilizan en una variedad de aplicaciones en el mundo real, desde el procesamiento del lenguaje natural hasta la predicción de series de tiempo.
+
+
+==== Estructura de las redes neuronales recurrentes ====
+Las RNNs son una variante de las redes neuronales que permiten procesar datos secuenciales de longitud variable. A diferencia de las redes neuronales tradicionales, que toman una entrada fija y generan una salida fija, las RNNs tienen conexiones recurrentes que les permiten mantener información en memoria a medida que procesan los datos de entrada. La estructura básica de una RNN consiste en una capa de entrada, una o varias capas ocultas y una capa de salida.
+Las RNNs tienen una estructura de bucle, lo que significa que la salida de una capa se utiliza como entrada para la siguiente capa en la secuencia. Esto permite que las RNNs mantengan una "memoria" interna que se actualiza a medida que se procesan los datos de entrada. La memoria de una RNN se llama "estado oculto", y se actualiza en cada paso de tiempo con la información de entrada actual y el estado oculto anterior.
+
+
+== Fórmulas ==
+
+
+== Funcionamiento de las redes neuronales recurrentes ==
+El funcionamiento de las RNNs se basa en la propagación hacia adelante y hacia atrás del error de la red a través del tiempo. Durante la propagación hacia adelante, la red procesa los datos de entrada en cada paso de tiempo y calcula la salida correspondiente. Durante la propagación hacia atrás, la red ajusta los pesos de la red para minimizar el error de la salida de la red. La propagación hacia atrás se realiza utilizando el algoritmo de retropropagación del error.
+
+Una de las limitaciones de las RNNs es que pueden sufrir de "problemas de desvanecimiento y explosión del gradiente". Esto ocurre cuando los gradientes utilizados para actualizar los pesos de la red son muy pequeños o muy grandes, lo que hace que los pesos de la red no se actualicen correctamente. Para solucionar este problema, se han propuesto varias variantes de las RNNs, como las LSTMs y las GRUs, que tienen una estructura más compleja y pueden mantener mejor la información de largo plazo.
+ 
+ 
+ 
+ 
+
+
+== Comparación con otras arquitecturas ==
+Existen diferentes tipos de arquitecturas de redes neuronales, entre ellas las Redes Neuronales y las Convolucionales, pero la principal diferencia con las Redes Neuronales Recurrentes radica en la capacidad de analizar secuencias de datos. Mientras que las primeras pueden clasificar un gran número de datos con alta precisión, están diseñadas para procesar datos de entrada y salida con un tamaño constante, como una sola imagen o una palabra. En cambio, si se introduce una secuencia de imágenes o palabras, ninguna de estas arquitecturas será capaz de procesar los datos debido a su tamaño variable y a la correlación existente entre ellos. Las Redes Neuronales Recurrentes sí pueden analizar secuencias, ya que están diseñadas para reconocer la relación entre varios elementos de la secuencia y, por lo tanto, comprender su significado. Para entender cómo funcionan, es necesario comprender qué es una secuencia: una serie de datos que siguen un orden específico y tienen un significado que solo puede ser comprendido cuando se analizan en conjunto, como un texto escrito, una serie de imágenes o notas musicales.
+
+ 
+
+
+==== Aplicaciones de las redes neuronales recurrentes ====
+Las RNNs se han utilizado en una amplia gama de aplicaciones, incluyendo el procesamiento del lenguaje natural, la generación de música y la predicción de series temporales. En el procesamiento del lenguaje natural, las RNNs se utilizan para tareas como la traducción automática, la generación de texto y el análisis de sentimientos. En la generación de música, las RNNs se utilizan para generar nuevas melodías y armonías basadas en patrones existentes. 
+
+
+==== Artículos Relevantes ====
+El artículo "Long Short-Term Memory" (LSTM) de Hochreiter y Schmidhuber (1997) es uno de los artículos más citados en el campo de las RNNs. Los autores presentan una arquitectura de red neuronal que puede aprender a recordar información a largo plazo y olvidar información irrelevante. El modelo LSTM ha sido ampliamente utilizado en aplicaciones de procesamiento de lenguaje natural, como la generación de texto y la traducción automática.
+En "Sequence to Sequence Learning with Neural Networks" de Sutskever et al. (2014), los autores proponen un modelo de RNN llamado "encoder-decoder" para la traducción automática. El modelo consiste en un "encoder" que convierte la entrada en un vector de características y un "decoder" que genera la salida a partir del vector de características. El modelo fue el primero en superar al estado del arte en la traducción automática de varios idiomas.
+El artículo "Show and Tell: A Neural Image Caption Generator" de Vinyals et al. (2015) utiliza una variante del modelo "encoder-decoder" para generar subtítulos de imágenes. El modelo RNN aprende a mapear una imagen a un vector de características y genera un subtítulo basado en el vector de características. El modelo demostró un rendimiento sobresaliente en comparación con los enfoques basados en reglas y los métodos de aprendizaje supervisado tradicionales.
+En "Neural Machine Translation by Jointly Learning to Align and Translate" de Bahdanau et al. (2014), los autores presentan un enfoque de RNN para la traducción automática que aprende a alinear la entrada y la salida durante el proceso de traducción. El modelo puede alinear diferentes partes de la entrada con diferentes partes de la salida, lo que lo hace más efectivo para la traducción de idiomas con gramáticas y estructuras sintácticas diferentes.
+
+
+== Modelos predictivos basados en redes neuronales recurrentes de tiempo discreto ==
+Los modelos predictivos basados en redes neuronales recurrentes de tiempo discreto son una técnica de aprendizaje automático que se utiliza para predecir valores futuros basados en datos históricos. En particular, estos modelos se utilizan comúnmente para predecir valores de series temporales, como el precio de las acciones, el clima, la demanda de energía y otros fenómenos que cambian con el tiempo.
+Las redes neuronales recurrentes (RNN) son un tipo de red neuronal que tiene una capacidad intrínseca para modelar secuencias de datos. A diferencia de las redes neuronales feedforward, que sólo procesan entradas en una dirección, las RNN tienen conexiones de retroalimentación que permiten que la información se retroalimente de una capa a otra. Esto permite que las RNN tengan una memoria a corto y largo plazo, lo que es útil para predecir valores futuros en series temporales.
+En particular, los modelos predictivos basados en RNN de tiempo discreto son adecuados para series temporales discretas, donde los valores se registran en intervalos de tiempo fijos, como por ejemplo, por hora, por día, por semana, etc. El modelo se entrena en un conjunto de datos históricos y luego se utiliza para predecir los valores futuros.
+La arquitectura de una RNN de tiempo discreto consta de una capa de entrada, una o varias capas ocultas y una capa de salida. La capa de entrada toma los datos históricos como entrada y los procesa para generar una representación interna de la serie temporal. La capa oculta tiene conexiones recurrentes que permiten que la información se retroalimente en la red. La capa de salida toma la representación interna de la serie temporal y genera una predicción del siguiente valor de la serie.
+El entrenamiento de un modelo predictivo basado en RNN de tiempo discreto implica ajustar los pesos y las conexiones de la red para minimizar el error entre las predicciones del modelo y los valores reales de la serie temporal. Para esto, se utilizan técnicas de optimización, como el descenso del gradiente, para ajustar los pesos y las conexiones de la red.
+En resumen,son una técnica poderosa para predecir valores futuros en series temporales discretas. Estos modelos tienen una memoria a corto y largo plazo que les permite modelar patrones complejos en los datos históricos y hacer predicciones precisas sobre los valores futuros.
+
+
+==== Referencias ====
+
+​
+​
+​
+​

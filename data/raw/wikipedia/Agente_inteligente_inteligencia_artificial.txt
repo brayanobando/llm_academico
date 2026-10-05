@@ -1,0 +1,129 @@
+Un agente inteligente es una entidad capaz de percibir su entorno, procesar tales percepciones y responder o actuar en dicho entorno de manera racional, es decir, logrando objetivos, tendiendo a maximizar un resultado esperado y adquiriendo conocimiento con su desempeño. Es capaz de percibir su medio ambiente con la ayuda de sensores y actuar en ese medio utilizando actuadores (elementos que reaccionan a un estímulo realizando una acción).
+
+Si bien el término agente racional se refiere a agentes artificiales en el campo de la inteligencia artificial, también puede considerarse agentes racionales a los animales, incluido el hombre. Un agente inteligente puede ser una entidad física o virtual, compleja o simple; por ejemplo, un termostato o un sistema de control cualquiera es considerado un agente inteligente.​
+Un agente tiene una «función objetivo» que encapsula todos los objetivos de la inteligencia artificial. Este agente está diseñado para crear y ejecutar cualquier plan que, al completarse, maximice el valor esperado de la función objetivo.​ Por ejemplo, un agente de aprendizaje por refuerzo tiene una «función de recompensa» que permite a los programadores dar forma al comportamiento deseado de la inteligencia artificial, y el comportamiento de un algoritmo evolutivo se moldea mediante una «función de aptitud».​
+Los agentes inteligentes suelen describirse esquemáticamente como un sistema funcional abstracto similar a un programa de computadora..​ Las descripciones abstractas de los agentes inteligentes se llaman agentes inteligentes abstractos (AIA) para distinguirlos de sus implementaciones del mundo real. Un agente inteligente autónomo está diseñado para funcionar en ausencia de intervención humana. Los agentes inteligentes también están estrechamente relacionados con los agentes de software (un programa de computadora autónomo que realiza tareas en nombre de los usuarios).​
+
+
+== Tipos de agentes ==
+Un agente está formado por una arquitectura y un programa. El programa tiene que ser apropiado para la arquitectura. Hay cuatro tipos básicos de programas para agentes. 
+
+
+=== Agentes reactivos simples ===
+
+Es el tipo de agente más sencillo. Seleccionan las acciones sobre la base de las percepciones actuales, ignorando el resto de las percepciones históricas. Sigue la regla de condición-acción. Algunas  desventajas son las siguientes: Inteligencia muy limitada, mejor funcionamiento en entornos totalmente observables, bucles infinitos.
+
+
+=== Agentes reactivos basados en modelos ===
+
+El agente debe mantener un estado interno que dependa de la historia percibida y que refleje alguno de los aspectos no observables del estado actual. La actualización de dicho estado requiere codificar dos tipos de conocimiento:
+
+Información acerca de cómo evoluciona el mundo independientemente del agente.
+Información sobre cómo afectan al mundo las acciones del agente.
+Este conocimiento se conoce como modelo del mundo.
+
+
+=== Agentes basados en objetivos ===
+
+El conocimiento sobre el estado actual del mundo no siempre es suficiente. Además de la descripción del estado actual, el agente requiere información sobre su meta. El programa del agente puede combinar con información sobre los resultados de las acciones posibles para elegir aquellas que ayuden a alcanzar el objetivo. En ocasiones, la selección de acciones basadas en objetivos es directa. Cuando se alcanza el objetivo como resultado de una acción individual. Puede ser complicado en otras ocasiones. Cuando se tienen que considerar secuencias complejas para alcanzar el objetivo.
+Un agente basado en objetivos y basado en modelos, que almacena información del estado del mundo así como del conjunto de objetivos que intenta alcanzar, y que es capaz de seleccionar la acción que eventualmente lo guiará hacia la consecución de sus objetivos.
+La toma de decisiones en estos agentes es distinta de las reglas de condición acción. Se tienen en cuenta consideraciones sobre el futuro. Parece menos eficiente, pero es más flexible. El conocimiento que tiene para su decisión está representado explícitamente y puede modificarse.
+
+
+=== Agentes basados en la utilidad. ===
+
+Las metas no bastan para generar comportamientos de calidad en la mayoría de los entornos. El agente selecciona un estado del mundo basado en la utilidad. La función de utilidad expresa numéricamente el nivel de utilidad de cada estado. Esta permite tomar decisiones racionales en dos tipos de casos con metas inadecuadas.
+
+- Cuando haya objetivos conflictivos y solo algunos de ellos sean alcanzables.
+- Cuando haya varios objetivos por los que se pueda guiar el agente y ninguno de ellos se pueda alcanzar con certeza.
+Un agente basado en utilidad y basado en modelos. Utiliza un modelo del mundo, junto con una función de utilidad que calcula sus preferencias entre los estados del mundo. Después selecciona la acción que le lleve a alcanzar la mayor utilidad esperada, que se calcula haciendo la media de todos los estados resultantes posibles, ponderado con la probabilidad del resultado.
+
+
+== Función del Agente ==
+Un programa de agente simple puede definirse matemáticamente como una función f (llamada la "función del agente")​ que mapea cada secuencia posible de percepciones a una acción posible que el agente puede realizar a un coeficiente, elemento de retroalimentación, función o constante que afecta las acciones eventuales:
+
+  
+    
+      
+        f
+        :
+        
+          P
+          
+            ∗
+          
+        
+        ⟶
+        A
+      
+    
+    {\displaystyle f:P^{*}\longrightarrow A}
+  
+
+La función del agente es un concepto abstracto, ya que podría incorporar varios principios de toma de decisiones como el cálculo de la utilidad de opciones individuales, deducción a través de reglas lógicas, lógica difusa, etc.​
+Por otro lado, el programa de agente mapea cada percepción posible a una acción.
+Utilizamos el término percepción para referirnos a las entradas del agente en cualquier instante dado. Es por esto que en las imágenes anteriores, un agente es representado como cualquier cosa que pueda considerarse como una entidad capaz de percibir su entorno a través de sensores y actuar sobre ese entorno a través de actuadores.
+
+
+== Entornos de Trabajo ==
+Las propiedades de los entornos de trabajo determinan, hasta cierto punto, el diseño más adecuado para el agente.Observable vs Parcialmente observable: Se considera que todas las células fuera del espacio del autómata toman un valor fijo.
+Determinista vs Estocástico: Es determinista si el siguiente estado del medio está totalmente determinado por el estado actual y la acción ejecutada por el agente. Es estocástico si el siguiente estado es independiente al estado actual. Si es determinista, excepto para las acciones de otros agentes, entonces el medio es estratégico.
+Episódico vs secuencial: En el episódico la experiencia del agente se divide en episodios atómicos, cada episodio consiste en la percepción del agente y la realización de una única acción posterior. En entornos secuenciales la decisión presente puede afectar decisiones futuras.
+Estático vs dinámico: Si el entorno puede cambiar cuando el agente está deliberando, se dice que el entorno es dinámico; de otra manera, es estático. Si el entorno no cambia con el tiempo, pero cambia el rendimiento del agente, se dice que el medio es semidinámico.
+Discreto vs Continuo: Se puede aplicar al estado del medio, a la forma en la que se maneja el tiempo y a las percepciones y acciones del agente.
+
+
+== Aplicaciones ==
+Hallerbach y colaboradores discutieron la aplicación de enfoques basados en agentes para el desarrollo y validación de sistemas de conducción automatizada a través de un gemelo digital del vehículo en prueba y una simulación de tráfico microscópica basada en agentes independientes.​ Waymo ha creado un entorno de simulación multiagente llamado Carcraft para probar algoritmos para vehículos autónomos.​ Este simula interacciones de tráfico entre conductores humanos, peatones y vehículos automatizados. El comportamiento de las personas es imitado por agentes artificiales basados en datos reales del comportamiento humano. La idea básica de utilizar modelado basado en agentes para entender los vehículos autónomos se discutió por primera vez en 2003.​
+Además de su uso en sistemas de conducción automatizada y simulaciones de tráfico, los agentes inteligentes han comenzado a implementarse de forma creciente en áreas como la atención al cliente y el comercio electrónico. En estos contextos, los agentes de IA no solo responden consultas como lo haría un chatbot tradicional, sino que también ejecutan acciones automatizadas —como actualizar información en sistemas CRM​, verificar inventarios en tiempo real o iniciar devoluciones— actuando como asistentes autónomos que mejoran la experiencia del usuario y optimizan los procesos operativos.​
+
+
+== Ejemplos ==
+Como ejemplos de entidades físicas pueden nombrarse: 
+
+un robot de comportamiento variable autorregulado (ya sea que su comportamiento sea determinado por software o incorporado directamente en la electrónica),
+una computadora que ejecuta un software de diagnóstico médico y muestra resultados en una pantalla para ayudar a decidir a un médico,
+una computadora especializada que controla un helicóptero en maniobras peligrosas para un hombre.
+una inteligencia artificial especializada en contar cuantas personas hay en una parada de bus mediante sensores y cámaras.
+Ejemplos de entidad puramente virtual serían:
+
+un software de descubrimiento de patrones en Internet que sólo interactúa con otros software.
+un software softbot que simula a una persona en un juego de computadora, tal como un jugador de ajedrez, un jugador de fútbol contrincante o un conductor de carreras de automóviles, etc.
+un chatbot de atención al huésped en un hotel que responde consultas, gestiona reservas y envía comunicaciones automatizadas sin intervención humana.
+
+
+== Clasificación ==
+Es posible clasificar a los agentes inteligentes en 6 categorías principales:
+
+Agentes reactivos
+Agentes reactivos basados en modelo
+Agentes basados en objetivos
+Agentes basados en utilidad
+Agentes que aprenden
+Agentes de consultas
+
+
+== La racionalidad es necesaria ==
+En muchos textos se define agente inteligente como todo agente capaz de tener conciencia de su entorno y actuar sobre él. No obstante es necesario exigir que estas decisiones sean racionales en el sentido de que persigan algún fin.
+
+
+== Enlaces externos ==
+Advances on Practical Applications of Agents and Multiagent Systems, Springer, 2011.
+Grupo de investigación - Sistemas Inteligentes
+
+
+== Véase también ==
+Agente autónomo
+Aprendizaje por refuerzo
+JADE
+Cougaar
+Inteligencia artificial fuerte
+Sistema inteligente
+Sistema multiagente
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Russell, Stuart J.; Norvig, Peter (2003). Artificial Intelligence: A Modern Approach (2.ª edición). Upper Saddle River, New Jersey: Prentice Hall. ISBN 0-13-790395-2.

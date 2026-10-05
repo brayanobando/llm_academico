@@ -1,0 +1,34 @@
+Joseph Weizenbaum (8 de enero de 1923 - 5 de marzo de 2008) fue profesor emérito de Informática en el Instituto Tecnológico de Massachusetts y se le considera uno de los padres de la cibernética.
+Nació en Berlín, alemán de padres judíos, escapó del régimen de Hitler en 1936, emigrando con su familia a los Estados Unidos. Empezó a estudiar matemáticas en 1941, pero sus estudios fueron interrumpidos por la guerra, durante la que sirvió en el ejército.
+Sobre los años 50, trabajó en computación analógica, y ayudó a crear un ordenador digital para la Universidad Wayne State. En 1955 trabajó para General Electric en el primer ordenador utilizado por un banco y en 1963 entró en el Instituto Tecnológico de Massachusetts, dos años después creó allí su célebre departamento de ciencias de la computación.
+En 1966 publicó un aparentemente simple programa llamado ELIZA que utilizaba el procesamiento del lenguaje natural para dar la sensación de cierta empatía. El programa aplicaba reglas de concordancia de patrones a las frases de los humanos para calcular sus respuestas, seguía un modelo conversacional acorde al estilo de trabajo psicoterapéutico del psicólogo Humanista Carl Rogers. Weizenbaum se sorprendió del impacto que este programa tuvo, al tomarse en serio por mucha gente que incluso llegaban a abrirle sus corazones. Esto le hizo pensar sobre las implicaciones filosóficas de la Inteligencia Artificial y más adelante se convirtió en uno de sus más fervientes críticos. Su influyente libro de 1976 El Poder de las Computadoras y la Razón Humana (Computer Power and Human Reason) muestra su ambivalencia en cuanto a la tecnología introducida por la informática y afirma que cuando la Inteligencia Artificial sea posible, no deberemos dejarles tomar decisiones importantes porque los ordenadores nunca tendrán cualidades humanas como la compasión y la sabiduría al no haber crecido en el entorno emocional de una familia humana.
+En los últimos años había sido también reconocido como un gran pacifista por su firme oposición al uso de los ordenadores y la tecnología como armas y se contrapuso firmemente a la creación de robots-soldado. En este sentido se le considera que es a la Informática lo que Albert Einstein fue a la Física Nuclear.
+Llegó a ser el presidente del Consejo Científico del Instituto de Comercio electrónico de Berlín.
+Falleció el 5 de marzo de 2008 en Gröben, Alemania por complicaciones de cáncer
+
+
+== Simulación psicológica en el MIT ==
+En 1966, Joseph Weizenbaum publicó un programa relativamente simple llamado ELIZA, nombrado así por la ingenua protagonista de Pygmalion de George Bernard Shaw, que podía conversar con el usuario.​ ELIZA fue escrito en el lenguaje de programación SLIP, creado por el propio Weizenbaum. El programa aplicaba reglas de coincidencia de patrones a las declaraciones para determinar sus respuestas (programas como este ahora se llaman chatbots). Impulsado por un guion llamado DOCTOR, era capaz de entablar conversaciones con los humanos que guardaban un notable parecido con las que se tendrían con un psicólogo empático.
+Weizenbaum modeló el estilo conversacional de ELIZA basándose en Carl Rogers, quien introdujo el uso de preguntas abiertas para fomentar una comunicación más efectiva entre los pacientes y los terapeutas. Weizenbaum se sorprendió de que muchos usuarios tomaran en serio su programa, llegando a abrirle su corazón.​
+Famosamente, al observar a su secretaria usar el software —quien sabía que se trataba de una simulación—, ella le pidió: "¿Te importaría salir de la habitación, por favor?" Muchos elogiaron el programa como un precursor de las máquinas pensantes, una interpretación equivocada que Weizenbaum intentaría corregir en sus escritos posteriores.​
+
+
+== Diferencia entre decidir y elegir ==
+Su influyente libro de 1976 Computer Power and Human Reason refleja su ambivalencia hacia la tecnología informática y expone su argumento: la posibilidad de programar computadoras para realizar una tarea u otra que los humanos también pueden hacer (es decir, si la inteligencia artificial es alcanzable o no) es irrelevante frente a la cuestión de si las computadoras pueden ser utilizadas para una tarea en particular.
+Weizenbaum sostiene que la definición de tareas y la selección de criterios para su cumplimiento es un acto creativo que depende de los valores humanos, algo que no puede provenir de las computadoras.​ Hace una distinción crucial entre decidir y elegir. Decidir es una actividad computacional, algo que, en última instancia, puede ser programado. Sin embargo, elegir es producto del juicio, no del cálculo.​
+Al utilizar computadoras para tomar decisiones que antes hacían los humanos, el agente que las implementa ha hecho una elección basada en sus propios valores, una elección que tendrá consecuencias particulares y no neutrales para las personas que experimenten los resultados de las decisiones informatizadas que ese agente ha establecido.
+
+
+== Trabajos ==
+"ELIZA - Un Programa informático para el estudio del lenguaje natural en la comunicación Hombre-Máquina", Communications of the Association for Computing Machinery 9 (1966): 36-45.
+Computer Power and Human Reason: From Judgment To Computation (San Francisco: W. H. Freeman, 1976)
+Weizenbaum, Joseph (1977). La frontera entre el ordenador y la mente. Ediciones Pirámide. ISBN 978-84-368-0073-9. 
+
+
+== Enlaces externos ==
+Joseph Weizenbaum: 1988 Winner of CPSR's Norbert Wiener Award for Professional and Social Responsibility (en inglés)
+A Java applet faithfully recreating the original ELIZA (en inglés)
+Institute of Electronic Business (en alemán) (en inglés)
+
+
+== Referencias ==

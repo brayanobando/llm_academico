@@ -1,0 +1,89 @@
+La teoría computacional de la mente o computacionalismo sostiene que la mente humana se puede concebir como un sistema de procesamiento de información muy similar en cuanto a su arquitectura interna o estructura interna, o incluso casi idéntico, al de una computadora digital.​ En otras palabras, sería cierta clase de computación desarrollada por un hardware autoconfigurable, —el cerebro—.​ Este punto de vista es habitual en la psicología cognitiva y uno de los fundamentos de la psicología evolutiva.​​​
+El computacionalismo es una teoría funcionalista en filosofía de la mente que por razones metodológicas, concibe la mente como un sistema de tratamiento de información y compara el pensamiento con un cálculo (en inglés, computation​), o más precisamente, con la aplicación de un determinado sistema de reglas. Por computacionalismo, debe entenderse la teoría particularmente desarrollada por Hilary Putnam y Jerry Fodor,​ y no el cognoscitivismo en alguna de sus facetas.​
+Este término 'computacionalismo' (en inglés: Computational theory ; en francés: Computationnalisme) fue propuesto por Hilary Putnam en 1961, y desarrollado por Jerry Fodor en los años 1960 y 1970.​ Este enfoque recibió un fuerte impulso y respaldo en los años 1980, en buena medida porque se correspondía bastante bien con la concepción chomskyana del lenguaje como aplicación de un conjunto de reglas,​​ y también porque este modelo computacionalista estaba, según Fodor, implícitamente presupuesto en la ciencia cognitiva​ y en las investigaciones sobre inteligencia artificial.​​
+En el idioma inglés, computation hace referencia a lo que en español se denomina calculabilidad, es decir, a la noción que refiere a las posibles transformaciones de una señal de entrada en una señal de salida, a través de un determinado y bien definido algoritmo. El computacionalismo no es una tesis ontológica sobre la naturaleza del espíritu, ya que no pretende que todo pensamiento o toda manifestación mental pueda reducirse a un cálculo de este tipo, pues con esto se desea marcar o señalar, que es posible concebir que ciertas funciones del pensamiento trabajan y se estructuran sobre la base de este modelo, ya sea que se trate de funciones conscientes, o infraconscientes (como por ejemplo el proceso de la visión, según el enfoque de la neurociencia computacional, que fuera desarrollado por David Marr a principio de los años 1980​).
+En términos de doctrina, el computacionalismo puede ser caracterizado como una síntesis o una fusión entre el realismo intencional​ y el fisicalismo.​​​ El realismo intencional o intencionalidad reafirma la existencia y la causalidad de los estados mentales, y toma en cuenta las actitudes proposicionales, es decir, la manera como un determinado sujeto se comporta y actúa respecto de una proposición (« yo creo que x », « yo pienso que p », etcétera). El segundo afirma que toda entidad existente es una entidad física. El computacionalismo se presenta así como la alternativa al eliminativismo materialista, que rechaza la existencia de toda entidad mental.​ Dos polos o núcleos teóricos también fueron esenciales en la formación de la teoría computacionalista, a saber : (1) por una parte, el formalismo matemático desarrollado a principios del siglo XX, lo que en líneas generales permitió concebir la matemática como la manipulación de símbolos a partir de reglas formales (axiomática de Hilbert) ; (2) por otro lado, la calculabilidad y la máquina de Turing. Sobre la base de estos dos núcleos teóricos, es posible pasar de un planteamiento semántico a un simple planteamiento sintáctico-matemático, y de este último a la automatización, aunque siempre sin negar la existencia de la semántica en sí misma, es decir, del sentido de lo que se expresa.
+El computacionalismo ha recibido numerosas críticas, en particular de John Searle, Hubert Dreyfus, y Roger Penrose, las que se centraban todas ellas en torno a la reducción del pensamiento y/o del entendimiento a la simple aplicación de un sistema de reglas. Hacia el fin de los años 1980, el computacionalismo compitió con un nuevo modelo cognitivo, el conexionismo,​ el cual se orienta a mostrar que puede describirse y explicarse el lenguaje del pensamiento sin requerir un mecanismo gobernado por un sistema de reglas, como lo hace el computacionalismo.​
+
+
+== Combinar el realismo intencional con el fisicalismo ==
+Además de la analogía entre el pensamiento con el raciocinio (o cálculo), el funcionalismo está ligado a una « teoría representativa del espíritu »,​ que estipula la existencia de actitudes proposicionales : las creencias y los deseos son así una relación entre un sujeto pensante y las representaciones simbólicas de contenido de esos estados.​ De esta forma, creer que el gato está en el sofá, es adoptar una actitud proposicional distinta (la de la creencia), que la actitud que consiste en desear que el gato se encuentre sobre el sofá (la del deseo) ; en los dos casos, la representación simbólica mental (« el gato está sobre el sofá ») conserva el mismo valor semántico, pero la actitud proposicional (creer o desear) difiere.​ El enfoque computacionalista considera que los estados mentales son representaciones, en el sentido que los mismos se basan en representaciones simbólicas con determinadas propiedades semánticas y sintácticas, respecto de símbolos utilizados en la calculabilidad matemática.​ Este enfoque tiene pues su sustento en la afirmación según la cual las actitudes proposicionales implican representaciones simbólicas.​ Y ello se opone al eliminativismo materialista, que niega toda posibilidad de existencia a las entidades mentales.​​
+La teoría de la representación de Jerry Fodor, formulada en su concepción del « mentalés » (consultar lenguaje del pensamiento), se distingue de las teorías clásicas de la representación (Thomas Hobbes, René Descartes, etc.), en que las representaciones en cuestión no son asimilables a imágenes, sino a símbolos.​​
+Aparte de este teoría representativa, el computacionalismo también sostiene cierta teoría causal de los estados mentales : los estados mentales están interligados entre ellos por el principio de causalidad.​ En el centro de esta teoría, se encuentra la posibilidad de formular, bajo forma exclusivamente sintáctica y en el sentido matemático del término, el contenido semántico de los estados mentales, para luego ligar la sintaxis al principio de causalidad.​​
+En otros términos, se busca tratar el pensamiento en cuanto aplicación de un sistemas de reglas.​​ Y esto plantea un primer problema filosófico, en la medida que concebir el pensamiento de esta manera, puede confundir una regularidad empírica (que obedece a una regla), a la aplicación de esa regla.​ O dicho de otra manera : « no siempre que un comportamiento es regular, se verifica que el mismo obedece a una norma ».​
+Por tanto, esta teoría pareciera plantear una amalgama entre el concepto de causa y el de razón :​​​ ¿Cómo pensar que nuestras representaciones mentales se encadenen únicamente a través de un proceso causal?​ ¿No es ignorar el carácter normativo que poseen, y cuando las evaluamos, basar esta validación en un « estándar » (por ejemplo, el criterio de verdad)?​
+
+
+== La hipótesis del mecanismo digital ==
+La concepción filosófica del « mecanismo digital »​ fue desarrollada por Bruno Marchal,​ adjuntando a la hipótesis del mecanismo digital e indexical, otras dos hipótesis de una diferente naturaleza :​
+
+Por una parte, la tesis de Church, piedra angular de la informática teórica,
+Por otra parte, lo que se llama realismo aritmético, es decir, el hecho que la verdad aritmética es intrínseca a "una ontología no sustancial", ipse dixit Bruno Marchal.
+Es esta conjunción de tres hipótesis que Marchal llama "computacionalismo", afirmación que en realidad no es admitida por todos los estudiosos del computacionalismo. En efecto, lo que propone Marchal se trata de una tesis ontológica fuerte, según la cual la consciencia podría sobrevivir con un conveniente cerebro artificial (de manera análoga a como una persona y su consciencia pueden sobrevivir con un riñón artificial), junto a una tesis lógica débil, en la medida que para ello se necesita una descripción de un estado instantáneo del cerebro, a lo que Marchal no sujeta ninguna restricción. En otros términos, sería posible que falle en conocer el estado cuántico de todo el universo, para obtener tal descripción adecuada del cerebro.​ Los sistemas de teletransportación utilizados en la ciencia ficción, y retomados en cuanto experiencia de pensamiento en relación con el problema de la identidad personal, aplicaría una hipótesis como la señalada.​
+
+
+== Críticas a la hipótesis computacionalista ==
+Diversas críticas han sido dirigidas a la teoría computacionalista,​ relacionadas todas con la cuestión de las reglas. En efecto, el computacionalismo postula que se puede asimilar el pensamiento a un sistema de aplicación de reglas, lo que a su vez permite identificar funciones informáticas complejas como siendo el equivalente del pensamiento. Este tipo de críticas no son necesariamente fatales para el computacionalismo, aunque limitan la extensión de ciertos procesos determinados del pensamiento, que podrían ser modelizados según un sistema de reglas.
+Antonio Damasio critica a la teoría computacional por asumir una forma de dualismo entre cuerpo y espíritu.​
+
+
+=== ¿Qué es lo calculable? ===
+Una antigua crítica tiene su origen en John Lucas (1961), quien afirmaba que los teoremas de incompletitud de Gödel plantean problemas insuperables a la analogía espíritu/máquina.​ Este argumento fue desarrollado por Roger Penrose, según quien un matemático humano es capaz de comprender más y de demostrar más que aquello que es simplemente calculable.​ 
+
+
+=== ¿Se puede asimilar calculabilidad y comprensión? ===
+
+Una de las mejores objeciones fue formulada por John Searle en 1980, a través de la experiencia de pensamiento de la llamada habitación china, que pretendía obtener una respuesta al test de Turing. Se trataba de cuestionarse sobre si la calculabilidad (computación) podría ser suficiente como para explicar o concretar la comprensión.​ A través de este test, Turing pretendía sustituir la interrogante « ¿ es que las máquinas pueden pensar ? » por el problema de saber si se puede pasar un examen llamado « juego de imitación », en el que las personas examinadas deben determinar, con la sola ayuda de las respuestas que se le dan, si su interlocutor invisible es una persona o una máquina (consultar el programa ELIZA).​
+
+
+== La alternativa conexionista ==
+
+Hacia fines de los años 1980, el enfoque conexionista comenzó a competir con el enfoque computacionalista, cuyo principal título de legitimidad según Jerry Fodor, era que se trataba de la única teoría apta para explicar la evolución de las ciencias cognitivas y de los modelos implícitos en ellas.​ El conexionismo intenta elaborar modelos de comprensión de los procesos cognitivos, que no consisten en el simple uso y aplicación de reglas.​ Precedido por algunos trabajos innovadores de Norbert Wiener y de Frank Rosenblatt, el enfoque conexionista surgió en el ámbito de la filosofía, con la publicación de la obra de David Rumelhart y James Lloyd McClelland titulada Parallel Distributed Processing (año 1986).​
+
+
+== Bibliografía ==
+[Fisette-2000] Denis Fisette, Pierre Poirier, Philosophie de l'esprit: état des lieux, editor 'Vrin', 2000, ISBN 2711614735 y 9782711614738 (texto parcial en línea).
+[Fodor-2013] Jerry Fodor, Lenguaje de Fodor del pensamiento, 17 de octubre de 2013.
+[Horst-2003] Steven Horst, The Computational Theory of Mind, 'Stanford Encyclopedia of Philosophy', 16 de octubre de 2015.
+[Marchal-1995] Bruno Marchal, Conscience et Mécanisme, Rapport technique de l'Université de Bruxelles, TR/IRIDIA 95, 1995.
+[Marchal-1998] Bruno Marchal, Calculabilité Physique et Cognition, thèse de doctorat en informatique de l'Université de Lille, 1998.
+[Marchal-2005] Bruno Marchal, Physical of Life Review 251-289, « Theoretical computer science and the natural science », Elsevier, 2005 (texto en línea).
+[Sabah-1988] Gérard Sabah, L'intelligence artificielle et le langage - représentations des connaissances, segunda edición, volumen 1, Hermès, 1988, ISBN 2-86601-134-1, ISSN 0988-0569.
+[Searle-1980] John Searle, "Minds, Brains and Programs.", Behav. Brain Sci., 3: 417-424, 1980.
+[Searle-1984] John Searle, Minds, Brains and Science. Cambridge, Mass.: Harvard University Press, 1984.
+
+
+== Véase también ==
+Teoría de la mente
+Lenguaje y pensamiento
+Cognoscitivismo
+Cognición
+Conexionismo
+Psicología cognitiva
+Tesis de Church-Turing
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+en inglés
+Computational Theory of the Mind (interviews).
+The Computational Theory of Mind en 'The Stanford Encyclopedia of Philosophy', 16 de octubre de 2015.
+Computational theories of Mind (documento pdf), fuente: Routledge Encyclopedia of Philosophy.
+Matthew Hunzinger, J. S. Jordon, Cognitive Approaches to Consciousness, 2006.
+Marcin Milkowski, The Computational Theory of Mind en 'Internet Encyclopedia of Philosophy (IEP)'.
+en francés
+Serge Labreze, Computationnalisme, 4 de marzo de 2015.
+Amélie Pinset, L’éliminativisme : un matérialisme radical en philosophie de l’esprit, 29 de abril de 2011.
+Jean Robillard, Représentationnalisme et Computationnalisme, 27 de marzo de 2009.
+Jean Robillard, Processus cognitif selon le représentationnalisme en 'La société savante: Communication et cognition sociale', 2011.
+Jean Robillard, Représentationnalisme, computationnalisme et représentations sociales, 27 de marzo de 2009.
+Eve Suzanne, Le rôle de l’information au cœur de la numérisation de la société (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última)., 28 de marzo de 2011.
+en español
+La importancia de la Informática en nuestra Sociedad
+Las ontologías del paradigma cognitivo : computacionalismo, conexionismo, y materialismo emergenciata
+Teoría del Computacionalismo
+Cultura, mente y educación
+en portugués
+Teoria do Computacionalismo da Mente

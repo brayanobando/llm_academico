@@ -1,0 +1,97 @@
+El Logic Theorist es un complejo sistema de manejo de información creado por Allen Newell, Herbert A. Simon y Cliff Shaw en 1955. Este sistema es considerado una de las primeras muestras de un programa exhibiendo comportamientos inteligentes, al imitar el comportamiento del ser humano para solucionar problemas matemáticos. Utilizando esta estrategia, el programa fue capaz de demostrar 38 de los 52 teoremas presentados en Principia Mathematica escrito por Alfred North Whitehead y Bertrand Russell​.
+
+
+== Historia ==
+Simon era un científico político dedicado al estudio de la toma de decisiones en contextos organizacionales, área en la cual desarrolló una teoría que redefinió las premisas o creencias de cada área como la unidad básica de información, con base en la que un sistema humano - como empresas, universidades y agencias gubernamentales - toma decisiones. Este trabajo llegaría a servir como una de las verticales principales sobre las que estaría Construido el L.T. Durante la primavera de 1952 Simon sería invitado por RAND Corporation a actuar como consultor sobre el estudio de sistemas de defensa aérea y es allí  donde se encontraría con un dispositivo utilizado para simular mapas de aviación, hecho que cambiaria su visión de la computación, en sus propias palabras:​ 
+
+"Tenían este maravilloso dispositivo para simular mapas en viejas máquinas tabuladoras. Aquí estaba usted, usando esto no para imprimir estadísticas, sino para imprimir una imagen, que era el mapa. De repente, fue obvio que usted no tenía que limitarse a calcular los números; podría calcular la posición que deseaba, un lugar para aparecer en un papel. Podrías imprimir imágenes, con cosas que ni siquiera eran una computadora moderna, solo calculadoras de tarjetas antiguas."​
+
+Esta máquina tenía como objetivo entender las interacciones humano-máquina al modelar un centro de defensa aérea. Allen Newell, un científico empleado en RAND Corporation con antecedentes en matemática, dedicado en ese momento al estudio de la logística y teoría organizacional, fue el creador del lenguaje utilizado para este experimento. Para Newell el punto quiebre sucedió durante una conferencia con Oliver Selfridge, quien en ese momento trabajaba en Lincoln Laboratory, en la cual le fueron presentados los avances que en conjunto con G. P. Dinneen se habían realizado en Reconocimiento de patrones. Esto le permitió a Newell entender que procesos altamente complejos podían ser simulados a través del uso de múltiples subprocesos sencillos que eran activados de manera condicional y se comunicaban entre ellos de manera interactiva.
+
+A partir del verano de 1955, Newell y Simon comenzaron a discutir la posibilidad de construir una máquina que pudiera pensar. Con labores bien definidas, Simon dedicaba su tiempo a pensar en áreas o problemáticas en las que pudieran aplicar estas estrategias de manera exitosa en campos como la lógica, la geometría o el ajedrez, mientras que Newell con la ayuda de Shaw, el único ingeniero de sistemas del grupo que trabajaba en RAND Corporation, se dedicaban a la parte computacional. Para el 15 de diciembre del mismo año, Simon fue capaz de simular a mano la primera prueba lógica utilizando una versión bastante similar al programa que pasaría a llamarse el Logic Theorist. 
+
+El desarrollo anterior desencadenaría en la primera simulación real del programa en enero de 1956 :En enero de 1956, reunimos a mi esposa y tres hijos junto con algunos estudiantes graduados. A cada miembro del grupo, le entregamos una de las tarjetas, de modo que cada uno se convirtió, en efecto, en un componente del programa de computadora ... Aquí estaba la naturaleza imitando el arte imitando a la naturaleza.​
+
+En cuanto a los problemas computacionales, la ausencia de un Lenguaje de programación de alto nivel, que permitiera especificar los conceptos complejos alrededor del Logic Theorist, llevó a la creación de una serie de lenguajes de procesamiento de información conocidos como IPL-I e IPL-II. De acuerdo con Shaw:
+
+"Como programadores, teníamos una tarea creativa cada vez tratando de inventar una representación en la máquina correspondiente a lo que estábamos comunicando bastante libremente en inglés. La dirección Natural entonces era sugerir lenguajes interpretativos, de nivel superior, tratando de acercarse a algo donde Al y Herb podrían Específicar más completamente los conceptos complejos del ajedrez. Pero queríamos hacerlo en la máquina. Así que eso involucró a Al más directamente en la programación en ese punto, y creamos los idiomas de procesamiento de información, IPL-I y IPL-II. IPL-En realidad era una etiqueta que pusimos retroactivamente a un lenguaje que Al y Herb usaban para diseñar las especificaciónes de la máquina de la teoría lógica."​
+
+Además de la creación de estos lenguajes, era necesario encontrar una manera de manejar las grandes cantidades de memoria que necesitaba el programa, para esto se creó el Procesamiento por listas  una solución innovadora para el manejo de la memoria que utilizaba etiquetas para mantener un récord de los espacios de memoria que contenían información que ya no era útil y por ende podían ser reutilizados.
+
+El programa estaría terminado para el verano de 1956, misma fecha en la que sería presentado a la conferencia creada alrededor de la Inteligencia artificial y organizada por John McCarthy, Marvin Minsky,Claude Shannon y Nathan Rochester, en esta conferencia fueron presentadas múltiples ideas y en pocos casos programas con aplicaciones específicos​. El L.T ya era un programa con la capacidad de razonar emulando el comportamiento humano. Aun así el programa creado por Newell, Simon y Shaw recibió muy poca atención. Sobre esto, Pamela McCorduck menciona "la evidencia es que nadie salvo los mismos Newell y Simon percibieron el significado a largo plazo de lo que estaban haciendo."​
+
+Poco tiempo después el programa sería capaz de demostrar 38 de los 52 teoremas presentados en el segundo capítulo de “Principia Mathematica” escrito por Alfred North Whitehead y Bertrand Russell. Vale la pena resaltar que el teorema 2.85 fue resuelto de una manera más eficiente por el programa que por Russell​, lo que llevaría a los autores a presentar un nuevo artículo en The Journal of Symbolic Logic pero la prueba fue rechazada alegando que no presentaba un descubrimiento significativo para el área de las Matemáticas. Aun así la alianza entre los autores se mantendría y resultaría en la creación de tecnologías como General Problem Solver y Soar, la  unified theory of cognition y en la creación de uno de los primeros laboratorios de inteligencia artificial bajo el nombre de Carnegie Tech.
+
+
+== Implicaciones para el área de IA ==
+Procesamiento por listas
+Cuando el L.T fue pensado, no existían lenguajes de programación en máquina capaces de cumplir con sus procesos de alto nivel o con sus requerimientos de uso de memoria, es por eso que se crean los programas IPL. Estos lenguajes utilizaban un tipo de procesamiento simbólico que les permitía reutilizar bloques de memoria ya asignados pero con información que ya no era relevante. Esas serían una las bases para la familia de lenguajes Lisp, la cual es usada hoy en día.​​
+
+Búsqueda en árboles
+El L.T utilizó un proceso que luego llegaría a ser conocido como Árbol de decisión. En esta metodología en la raíz del árbol se encuentra Hipótesis ;cada rama contiene una deducción a partir del postulado anterior y en alguna de ellas se encuentra la demostración de la hipótesis. Lo único que el computador debe hacer es seguir las ramas hasta encontrar la respuesta.
+
+Heurísticas
+Una vez el árbol de decisión fue construido, los autores se vieron enfrentados a un nuevo problema que consistía en la cantidad de ramas que cada árbol podía llegar a tener, por esta razón deciden implementar dentro de L.T una serie de reglas prácticas, basadas en la experiencia más que en principios matemáticos, que tenían como propósito descartar rápidamente una gran cantidad de ramas y así optimizar el velocidad para encontrar una respuesta correcta. Siendo estos los primeros pasos de un área de estudio de la inteligencia artificial conocido como Heurísticas.
+
+
+== Funcionamiento general del programa ==
+
+
+=== Objetivo ===
+El objetivo del Logic Theorist consiste en probar que ciertas expresiones lógicas del siguiente estilo -p → q v -p son ciertas es decir son teoremas.​
+
+De acuerdo con el reporte enviado a Rand en 1956 por los autores:
+
+"un programa para construir cadenas de teoremas, no al azar sino en respuesta a indicios que hacen que el descubrimiento de una prueba sea probable dentro de un tiempo de cálculo razonable."​
+
+
+=== Estructura ===
+Lenguaje
+Variables o expresiones atómicas: p, q, r, A, B, C. Conectores: -  (negación), v (o), →  (implica). expresiones: la combinación de variables y conectores por ejemplo -p → q v -p
+
+Expresiones tomadas con ciertas (teoremas)
+p v p → p  p → q v p  p v q → q v p  p v q v r → q v p v r  p → q → r v p → r v q​
+
+
+=== Métodos ===
+Método de Sustitución
+1) Recibir la expresión (A) que se desea probar como verdadera  2) Seleccionar un Axioma a partir del cual se desea demostrar A,  el programa a través de heurísticas reduce la cantidad de axiomas que puede elegir al buscar aquellos que sean similares a A lo que le permite enfocarse en las expresiones más prometedoras.  3) Cuando una expresión similar es encontrada, utilizar las Reglas de reemplazo para intentar demostrar A, nuevamente el programa reduce la cantidad de sustituciones posibles al utilizar una heurística que lo lleva a realizar únicamente las sustituciones que intenten igualar las variables del axioma a las de A.  4) Si A fue demostrado como cierto el programa termina, si la prueba no es exitosa el programa vuelve a la etapa 2 y elige un axioma diferente.​
+
+Método de separación (Modus ponendo ponens)
+1) Recibir la expresión (A) que se desea comprobar como verdadera  2) Seleccionar el lado derecho de un Axioma a partir del cual se desea demostrar A,  el programa a través de heurísticas reduce la cantidad de axiomas que puede elegir al buscar aquellos que tengan lados derechos que sean similares a A lo que le permite enfocarse en las expresiones más prometedoras.  3) Cuando un lado derecho similar es encontrado, utilizar las Reglas de reemplazo para intentar igualarlo a A, nuevamente el programa reduce la cantidad de sustituciones posibles al utilizar una heurística que lo lleva a  realizar únicamente las sustituciones que intenten igualar las variables de lado derecho del axioma a las de A.  4) El lado izquierdo del axioma es demostrado utilizando el método de sustitución. 5) se obtiene una expresión del estilo p → q donde p es verdadero por ende q es verdadero.​
+
+Método de encadenamiento (Silogismo)
+1) Recibir la expresión (A) de la forma p → q que se desea comprobar como verdadera  2) Encontrar un axioma (B) de la formar r → c con un lado derecho similar a p  3) Utilizar las reglas de sustitución para igualar el lado derecho de r a p transformando (B) en p → c 4)  4) construir una expresión (C) de la formar c → q y utilizar el método de sustitución para demostrarla como verdadera  5) se obtienen dos expresiones del estilo p → c y c → q que se pueden reducir a p → q demostrando la expresión como verdadera.​
+
+
+=== Rutina de ejecución ===
+1) Recibir la expresión que desea ser probada como cierta 
+2) Utilizar el Método de Sustitución si es exitoso saltar al paso 6b
+3) Utilizar el Método de separación si es exitoso saltar al paso 6b
+4) Utilizar el Método de encadenamiento si es exitoso saltar al paso 6b
+5) Aplicar la regla de problemas subsidiarios si es exitoso saltar al paso 6b
+6a) Reportar la expresión como no probada y terminar el programa 
+6b) Reportar la expresión como comprobada, agregarla a la lista de axiomas y terminar el programa.​
+
+Regla de los problemas subsidiarios
+Los métodos de separación y de encadenamiento dependen en un punto de su demostración del método de sustitución, si este paso fracasa el L.T guarda el segmento de la expresión (B) que no se pudo demostrar utilizando la sustitución en la lista P. Cuando el programa llega al punto 5 toma la primera expresión de esta lista (A), la elimina de ella y vuelve a iniciar la rutina de ejecución con A como su entrada. si A es demostrado como verdadero en la iteración el Logic Theorist entonces puede afirmar que B es verdadero saltando al paso 6b.​
+
+Debido a que la regla de problemas subsidiarios implica que el programa puede correr indefinidamente es necesario adicionar las reglas de terminación:
+
+lista P
+si la lista P se encuentra vacía al momento de llegar a la etapa 5, este paso será omitido y el programa terminara en el paso 6a
+Trabajo Realizado
+el L.T cuenta con una variable (W) en la que guarda la cantidad de veces que ha realizado el método de sustitución y una variable (WM) en la que guarda el máximo de veces que puede realizar el método de sustitución, la variable w es consultada cada vez que se llega a la etapa 5 de la ejecución y si es igual a WM, el programa salta automáticamente a la etapa 6a.​
+
+aprendizaje
+Aunque el Logic theorist no se modifica a sí mismo durante el procesamiento, el aprendizaje sucede cuando agrega las expresiones demostradas como ciertas a su lista de axiomas, lo que le permite con cada iteración tener más conocimiento sobre el que apoyarse y poder solucionar nuevas expresiones.​
+
+
+== Citas ==
+
+
+== Referencias ==
+Crevier, Daniel (1992). AI: the tumultuous search for artificial inteligence. NY: NY: basic books. p. 44-46. ISBN 0-465-02997-3. 
+Mccorduck, Pamela (2004). Machines Who Think (2nd ed.). MA: A. K. peters. p. 161.170. ISBN 1-56881-205-1. 
+Russel, Stuart J.; Norvig, Peter (2003). Artificial Intelligence: A modern approach (2nd ed.). New Jersey: prentice Hall: Upper Saddle River. p. 17. ISBN 0-13-790395-2. 
+Newell, Allen; Simon, Herbert A. «The logic theory machine a complex information processing system». The Rand Corporation.

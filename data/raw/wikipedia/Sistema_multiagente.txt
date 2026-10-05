@@ -1,0 +1,192 @@
+La simulación multiagente es un modelo computacional utilizado para representar sistemas formados por múltiples agentes autónomos que interactúan dentro de un entorno compartido. Cada agente posee comportamientos, reglas y objetivos propios, lo que permite simular fenómenos complejos de manera más realista. Los agentes pueden representar personas, vehículos, robots, empresas o cualquier entidad capaz de tomar decisiones y reaccionar ante su entorno.
+Este tipo de simulación es ampliamente utilizado en el estudio de sistemas complejos y sistemas distribuidos, ya que permite analizar cómo las interacciones locales entre agentes generan comportamientos globales sin necesidad de un control centralizado.
+Los ámbitos en los que la investigación de sistemas multiagente puede ofrecer un enfoque adecuado incluyen el comercio en línea,​ la respuesta a desastres​ y el modelado de estructuras sociales.​
+
+
+== Funcionamiento de los agentes ==
+Cada agente dentro del sistema puede:
+
+percibir información del entorno,
+tomar decisiones,
+ejecutar acciones,
+e interactuar con otros agentes.
+Estas interacciones pueden incluir cooperación, competencia, comunicación o adaptación al entorno. Aunque cada agente sigue reglas relativamente simples, el comportamiento colectivo del sistema puede volverse altamente dinámico y complejo.
+Además, los agentes pueden modificar su comportamiento dependiendo de las condiciones del entorno, permitiendo estudiar sistemas adaptativos y fenómenos emergentes.
+
+
+== Ejemplos de aplicación ==
+Las simulaciones multiagente tienen aplicaciones en múltiples áreas, entre ellas:
+
+
+=== Simulación de tráfico. ===
+Los vehículos actúan como agentes autónomos que toman decisiones de movimiento y generan patrones de circulación.
+
+
+=== Modelado epidemiológico. ===
+Permite simular la propagación de enfermedades considerando movilidad, interacción social y comportamiento individual.
+
+
+=== Mercados digitales. ===
+Los agentes representan compradores y vendedores que interactúan en sistemas económicos automatizados.
+
+
+=== Robótica colaborativa. ===
+Grupos de robots cooperan para realizar tareas complejas sin depender de un controlador central.
+
+
+== Relación con los sistemas distribuidos ==
+La simulación multiagente mantiene una estrecha relación con los sistemas distribuidos debido a que ambos funcionan mediante componentes autónomos que cooperan entre sí. En los sistemas distribuidos, múltiples nodos procesan información y se comunican mediante redes para resolver tareas de manera descentralizada, mientras que en los sistemas multiagente los agentes interactúan localmente para producir comportamientos globales organizados.
+Gracias a esta relación, las simulaciones multiagente son utilizadas para analizar escalabilidad, tolerancia a fallos, coordinación distribuida y comportamiento emergente en infraestructuras modernas.
+
+
+== Coordinación y comunicación distribuida ==
+En los sistemas multiagente, la comunicación entre agentes resulta fundamental para coordinar acciones y compartir información dentro de entornos distribuidos. Debido a que cada agente puede ejecutarse de manera independiente e incluso en diferentes nodos de red, es necesario utilizar mecanismos de sincronización y protocolos de comunicación que permitan mantener la coherencia y estabilidad del sistema.
+La coordinación distribuida permite que múltiples agentes cooperen para resolver tareas complejas sin depender de un controlador central. Para ello, los agentes pueden intercambiar mensajes, negociar recursos o tomar decisiones colectivas basadas en información parcial del entorno. Este enfoque es ampliamente utilizado en aplicaciones de computación distribuida, robótica colaborativa y redes inteligentes.
+Uno de los principales desafíos en este tipo de sistemas consiste en evitar conflictos derivados del acceso concurrente a recursos compartidos. Problemas como retrasos en la comunicación, pérdida de mensajes o fallos en nodos distribuidos pueden afectar el comportamiento global del sistema, por lo que frecuentemente se implementan mecanismos de tolerancia a fallos y recuperación automática.
+
+
+==== Ejemplos de coordinación distribuida ====
+Coordinación de drones autónomos.
+Sistemas de tráfico inteligente.
+Redes de sensores distribuidos.
+Robótica colaborativa.
+Computación en la nube.
+
+
+== Información general ==
+El estudio de Sistemas Multiagentes se inició hace cerca de 20 años, en el ámbito de la Inteligencia Artificial Distribuida (Distributed Artificial Intelligence - DAI). La DAI es un subcampo de investigación de la Inteligencia Artificial (AI). La DAI estudia el comportamiento inteligente de grupo que se deriva a partir de la cooperación de entidades llamadas agentes. Estudia como un grupo de módulos cooperan para dividir y compartir el conocimiento del problema y como se desarrolla la solución. La DAI se centra en el comportamiento global, con un comportamiento prefijado de los agentes. Estudia las técnicas y el conocimiento necesarios para la coordinación y distribución del conocimiento y las acciones en un entorno multiagente.
+Un agente es un sistema informático, situado en algún entorno, dentro del cual actúa de forma autónoma y flexible para así cumplir sus objetivos.
+El dominio del sistema multiagente o de inteligencia artificial distribuida es una ciencia y una técnica que trata con los sistemas de inteligencia artificial en red.
+El bloque fundamental de construcción de un sistema multiagente, como es de esperarse, son los agentes.
+Aunque no existe una definición formal y precisa de lo que es un agente, éstos son por lo general vistos como entidades inteligentes, equivalentes en términos computacionales a un proceso del sistema operativo, que existen dentro de cierto contexto o ambiente, y que se pueden comunicar a través de un mecanismo de comunicación interproceso, usualmente un sistema de red, utilizando protocolos de comunicación.
+En cierto modo, un sistema multiagente es un sistema distribuido en el cual los nodos o elementos son sistemas de inteligencia artificial, o bien un sistema distribuido donde la conducta combinada de dichos elementos produce un resultado en conjunto inteligente.
+Hay que notar que los agentes no son necesariamente inteligentes. Existen como en todo el resto del dominio de la inteligencia artificial, dos enfoques para construir sistemas multiagentes:
+
+El enfoque formal o clásico, que consiste en dotar de los agentes de la mayor inteligencia posible utilizando descripciones formales del problema que resolver y de hacer reposar el funcionamiento del sistema en tales capacidades cognitivas. Usualmente la inteligencia es definida utilizando un sistema formal (por ejemplo, sistemas de inferencia lógica) para la descripción, raciocinio, inferencia de nuevo conocimiento y planificación de acciones a realizar en el medio ambiente.
+El enfoque constructivista, que persigue la idea de brindarle inteligencia al conjunto de todos los agentes, para que a través de mecanismos ingeniosamente elaborados de interacción, el sistema mismo genere comportamiento inteligente que no necesariamente estaba planeado desde un principio o definido dentro de los agentes mismos (que pueden ser realmente simples). Este tipo de conducta es habitualmente llamado comportamiento emergente.
+Por otra parte, los entornos de los agentes pueden organizarse según propiedades como la accesibilidad (si es posible reunir información completa sobre el entorno), el determinismo (si una acción causa un efecto definido), la dinámica (cuántas entidades influyen en el entorno en un momento dado), la discreción (si el número de acciones posibles en el entorno es finito), la episodicidad (si las acciones del agente en determinados periodos de tiempo influyen en otros periodos),​ y la dimensionalidad (si las características espaciales son factores importantes del entorno y el agente tiene en cuenta el espacio en su toma de decisiones).​ 
+Las acciones de los agentes suelen estar mediadas por un middleware adecuado. Este middleware ofrece una abstracción de diseño de primera clase para los sistemas multiagente, proporcionando medios para gobernar el acceso a los recursos y la coordinación de los agentes.​
+
+
+== Características ==
+Los agentes en un sistema multiagente tienen varias características importantes:​
+
+Autonomía: Los agentes son al menos parcialmente autónomos, capaces de tomar decisiones y actuar sin control directo externo.
+Visión local: Ningún agente tiene una visión global completa del sistema, o el sistema es demasiado complejo para que un agente haga uso práctico de tal conocimiento global.
+Descentralización: No hay un agente de control central designado; el control y la toma de decisiones están distribuidos entre los agentes.​
+Interacción: Los agentes pueden comunicarse e interactuar entre sí, compartiendo información y coordinando acciones.
+Adaptabilidad: Los agentes pueden aprender y modificar su comportamiento basándose en sus experiencias y el entorno cambiante.
+Proactividad: Los agentes no solo reaccionan a los cambios en su entorno, sino que también pueden tomar iniciativas para alcanzar sus objetivos.
+Racionalidad limitada: Los agentes toman decisiones basadas en información incompleta y capacidades de procesamiento limitadas.
+Heterogeneidad: Los agentes en un sistema pueden tener diferentes capacidades, conocimientos y objetivos.
+Normalmente la investigación de sistemas multiagente se refiere a agentes de software. Sin embargo, los agentes en un sistema multiagente también podrían ser robots,​ seres humanos o equipos humanos.
+
+
+== Propiedades de los agentes inteligentes​ ==
+Conocimiento de la situación o entorno: Uso de sensores y actuadores para interactuar con el ambiente. Las reacciones del agente podrán depender de los estímulos de su entorno. Se debe considerar el entorno de un agente para diseñar sus posibles entradas y salidas.
+Autonomía: Capacidad de reaccionar al entorno según un estado interno, sin necesidad que sea dependiente de la intervención de algún agente externo o de algún usuario.
+Capacidad inferencial: La habilidad de un agente de trabajar en metas abstractas deduciendo una observación al generalizar la información que recibe.
+Reactivo: Percibe la condición del ambiente y responde a ella en un tiempo adecuado.
+Proactivo: Los agentes no deben actuar sólo guiados por los estímulos del entorno, deben decidir si actuar o realizar alguna acción que permita o incite el lograr sus objetivos.
+Sociabilidad: Un agente es capaz de interactuar con otros agentes para lograr un objetivo. Pueden compartir su información y ayudar a otros agentes para resolver un problema. Los agentes aprenden de la experiencia de otras entidades sean personas, otros agentes o controles estadísticos.  
+
+
+== Autoorganización y autodirección ==
+Los sistemas multiagente pueden manifestar autoorganización, así como autodirección y otros paradigmas de control y comportamientos complejos relacionados, incluso cuando las estrategias individuales de todos sus agentes son simples.
+Cuando los agentes pueden compartir su conocimiento usando cualquier lenguaje acordado, dentro de los límites del protocolo de comunicación del sistema, el enfoque puede conducir a una mejora común. Ejemplo de lenguajes son Knowledge Query and Manipulation Language (KQML) o Agent Communication Language (ACL) de la FIPA.
+
+
+== El estudio de sistemas multiagente ==
+El estudio de los sistemas multiagente está "interesado en el desarrollo y análisis de resoluciones a problemas sofisticados de IA y arquitecturas de control tanto para sistemas con un único agente como sistemas multiagente”.​ Los temas de investigación en SMA’s son:
+
+ingeniería de software orientado a agentes
+creencias, deseos e intenciones (en inglés Beliefs, Desires and Intentions, BDI)
+cooperación y coordinación
+organización
+comunicación
+negociación
+resolución de problemas distribuida
+aprendizaje de multiagentes
+comunidades científicas
+fiabilidad y tolerancia a fallos
+
+
+== Frameworks ==
+Si bien sistemas multiagente ad hoc son a menudo creados desde cero por investigadores y desarrolladores, algunos frameworks han surgido aplicando estándares comunes (tales como las plataformas de sistemas de agentes y lenguajes de comunicación de FIPA). Estos frameworks ahorran tiempo a los desarrolladores y también ayudan en la estandarización del desarrollo de SMAs.
+
+
+== Desarrollo orientado a agentes ==
+Como casi todo enfoque informático para la solución de problemas, los sistemas multiagentes proponen ayudas metodológicas de ingeniería de software, en este caso metodologías de ingeniería del software orientada a agentes (en inglés AOSE, Agent Oriented Software Engineering) y notaciones. Es decir, artefactos de desarrollo que son específicamente concebidos para crear sistemas basados en agentes.
+Ejemplos de metodologías y notaciones de ingeniería de software orientada a agentes, son:
+
+Vocales (Voyelles) de Yves Demazeau es una de las primeras propuestas en el área, y considera la concepción de sistemas multiagentes desde varios puntos de vista, correspondientes a las vocales: Agente, Entorno, Interacciones, y Organización.
+GAIA de Michael Wooldridge y Nick Jennings de la Univ. de Southampton, propone cómo realizar un análisis basado en roles del sistema multi-agente.
+MASE de Scott A. Deloach propone agentes como extensiones de objetos y proporciona la herramienta AgentTool para análisis, diseño e implementación.
+AgentUML de James Odell, propone una notación, extendiendo UML, para especificar protocolos de comunicación entre agentes.
+MADKiT es una herramienta de desarrollo, propuesta por Jacques Ferber, basada en el paradigma Agente-Role-Organización de la metodología Aalaadin.
+ADELFE del grupo IRIT de la Universidad de Toulouse, trata especialmente los temas de cooperación entre agentes.
+INGENIAS del grupo GRASIA de la UCM, extiende la metodología MESSAGE y proporciona un conjunto de herramientas para modelar y generar código de sistemas multiagente.
+Mas-CommonKADS de Carlos Iglesias en la UPM extiende la metodología CommonKADS, para sistemas expertos, a agentes, utilizando estructuración orientada a objetos y lenguajes de especificación de protocolos como SDL.
+SemanticAgent del grupo LIRIS de la Universidad de Lyon. Basada en el SWRL.
+NetLogo es una plataforma orientada a los sistemas de multiagente, para modelar complejidad, desarrollado por el CCL.
+CORMAS (COmmon Resources Multi-Agent System) es un framework de desarrollo de sistemas multi-agente, de código abierto y basado en el lenguaje de  programación orientada a objetos SmallTalk. Criado por el CIRAD, Cormas trata los temas de investigación científica para el desarrollo agrícola y para la negociación entre los actores.
+
+
+== Estático vs dinámico ==
+Si el entorno puede cambiar cuando el agente está deliberando, entonces se dice que el entorno es dinámico para el agente; de otra forma se dice que es estático. Los medios estáticos son más fáciles de tratar ya que el agente no necesita estar pendiente del mundo mientras está tomando una decisión sobre una acción, ni necesita preocuparse del tiempo transcurrido. Los medios dinámicos, por el contrario, preguntan continuamente al agente qué quiere hacer, sino ha decidido aún, entonces se entiende que ha tomado la decisión de no hacer nada.Si el entorno no cambia con el paso del tiempo, pero el rendimiento del agente cambia, entonces se dice que el medio es semidinámico. 
+
+
+== Ventajas y desventajas ==
+
+
+=== Ventajas ===
+1. Flexibilidad y escalabilidad: Los sistemas multiagentes pueden ser altamente flexibles y escalables. Pueden adaptarse a entornos cambiantes y pueden crecer en tamaño y complejidad de manera relativamente sencilla agregando o modificando agentes.
+2. Distribución del conocimiento y tareas: Al descentralizar el sistema en múltiples agentes autónomos, se puede distribuir la carga de trabajo y el conocimiento, lo que puede mejorar la eficiencia y la capacidad de respuesta del sistema en su conjunto.
+3. Resiliencia y robustez: Debido a su naturaleza descentralizada, los sistemas multiagentes suelen ser más resistentes a fallos individuales. La pérdida de un agente no necesariamente compromete todo el sistema.
+4. Adaptación y aprendizaje: Los agentes pueden ser diseñados para aprender y adaptarse a medida que interactúan con su entorno y otros agentes. Esto permite que el sistema mejore con el tiempo sin requerir intervención externa.
+
+
+=== Desventajas ===
+1. Complejidad de diseño: El diseño y la implementación de sistemas multiagentes pueden ser complejos, especialmente cuando se trata de coordinar la interacción entre múltiples agentes autónomos con diferentes objetivos.
+2. Comunicación y coordinación: La comunicación y coordinación entre agentes autónomos puede ser un desafío. Se necesitan protocolos y mecanismos efectivos para asegurar que los agentes puedan colaborar eficientemente.
+3. Posibles conflictos: Los agentes autónomos pueden tener objetivos individuales que pueden entrar en conflicto con los objetivos de otros agentes o del sistema en su conjunto. Gestionar estos conflictos puede ser complicado.
+4. Privacidad y seguridad: La autonomía de los agentes también puede plantear desafíos en términos de privacidad y seguridad. Los sistemas multiagentes deben implementar medidas adecuadas para proteger la información sensible y prevenir comportamientos no deseados.
+
+
+== Aplicaciones en el mundo real ==
+Los sistemas multiagente son aplicados en el mundo real a aplicaciones gráficas como juegos de ordenador. Los sistemas de agente se han utilizado en películas.​ También se utilizan para sistemas de defensa coordinados. Otras aplicaciones incluyen el transporte, la logística,​ los gráficos, sistemas de información geográfica, diagnóstico,​ así como en muchos otros campos. Es una tecnología ampliamente defendida para su uso en tecnologías de redes y móviles, para lograr el equilibrio de carga automático y dinámico, alta escalabilidad, y redes auto-sanadas.
+
+
+=== Aplicaciones en simulación y sistemas complejos ===
+Los sistemas multiagente son ampliamente utilizados en simulaciones sociales, modelado epidemiológico, mercados digitales y sistemas adaptativos. Gracias a la interacción entre múltiples agentes autónomos, es posible representar fenómenos complejos donde el comportamiento global surge a partir de decisiones individuales y reglas locales simples.
+En el ámbito científico y educativo, los sistemas multiagente permiten analizar dinámicas difíciles de estudiar en entornos reales debido a costos, riesgos o limitaciones prácticas. Por ejemplo, pueden emplearse para simular la propagación de enfermedades, el comportamiento de grupos sociales o la coordinación de vehículos autónomos dentro de redes inteligentes de transporte.
+Herramientas como NetLogo facilitan la creación de este tipo de simulaciones mediante entornos visuales e interactivos. A través de dichas plataformas, los investigadores pueden modificar parámetros y observar cómo pequeños cambios afectan el comportamiento general del sistema, permitiendo estudiar fenómenos emergentes y procesos distribuidos de manera eficiente.
+
+
+== Véase también ==
+
+
+== Referencias ==
+​
+
+
+== Lectura recomendada ==
+Michael Wooldridge, An Introduction to MultiAgent Systems, John Wiley & Sons Ltd, 2002, paperback, 366 pages, ISBN 0-471-49691-X.
+Yoav Shoham and Kevin Leyton-Brown, Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations, Cambridge University Press, 2008, hardback, 496 pages, ISBN 978-0-521-89943-7.
+Mamadou Tadiou Koné, Shimazu A. and Nakajima T., "The State of the Art in Agent Communication Languages (ACL)", Knowledge and Information Systems Journal (KAIS), Springer-Verlag, London, Vol. 2, no. 2, pp. 1 – 26, August 2000.
+Carl Hewitt and Jeff Inman. DAI Betwixt and Between: From "Intelligent Agents" to Open Systems Science IEEE Transactions on Systems, Man, and Cybernetics. Nov./Dec. 1991.
+The Journal of Autonomous Agents and Multiagent Systems, Publisher: Springer Science+Business Media B.V., formerly Kluwer Academic Publishers B.V. [1] (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).
+Gerhard Weiss, ed. by, Multiagent Systems, A Modern Approach to Distributed Artificial Intelligence, MIT Press, 1999, ISBN 0-262-23203-0.
+Jacques Ferber, Multi-Agent Systems: An Introduction to Artificial Intelligence, Addison-Wesley, 1999, ISBN 0-201-36048-9.
+Sun, Ron, (2006). "Cognition and Multi-Agent Interaction". Cambridge University Press. http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=0521839645
+David Keil, Dina Goldin. Indirect Interaction in Environments for Multiagent Systems (PDF). In Environments for Multiagent Systems II, eds. Danny Weyns, Van Parunak, Fabien Michel. LNCS 3830, Springer, 2006.
+Whitestein Series in Software Agent Technologies and Autonomic Computing, published by Springer Science+Business Media Group
+
+
+== Enlaces externos ==
+Sistemas de Información Multiagente
+Lenguaje de desarrollo de SE basado en CommonKADS
+Inteligencia artificial en el análisis de rutas y exploración de mapas Archivado el 7 de diciembre de 2023 en Wayback Machine.
+Random Agent-Based Simulations by Borys Biletskyy – Random agent-base simulations for multi-robot system and Belousov-Zhabotinsky reaction. Java applets available.
+Janus multiagent Platform – Holonic multiagent execution platform (free for non-commercial use)
+HarTech Technologies - HarTech Technologies developed a dedicated Distributed Multi Agent System Framework used in both simulation and large scale command and control system. This unique framework called the Generic Blackboard (GBB) provides a development framework for such systems which is domain independent. Distributed Multi Agent Framework.

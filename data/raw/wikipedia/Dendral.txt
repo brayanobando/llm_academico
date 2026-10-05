@@ -1,0 +1,19 @@
+Dendral (Interpreta la estructura molecular) es el nombre de un sistema experto desarrollado por Edward Feigenbaum y otros programadores en la Universidad de Stanford, a mediados de la década de 1960. Su desarrollo duró diez años, (1965 a 1975).​​​​
+
+
+== Características ==
+Fue el primer sistema experto en ser utilizado para propósitos reales, al margen de la investigación computacional, y durante aproximadamente 10 años, el sistema tuvo cierto éxito entre químicos y biólogos, ya que facilitaba enormemente la inferencia de estructuras moleculares, dominio en el que Dendral estaba especializado. 
+Inicialmente escrito en Lisp, su filosofía de trabajo se aleja de las estructuras clásicas de los sistemas expertos más típicos (como Mycin o XCon), ya que su implementación no separaba de forma explícita el conocimiento del motor de inferencia. Sin embargo, pronto se convirtió en uno de los modelos a seguir por muchos de los programadores de sistemas expertos de la época.
+
+
+== Véase también ==
+CADUCEUS (sistema experto)
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Lederberg, Joshua. How Dendral Was Conceived and Born. ACM Symposium on the History of Medical Informatics, 5 November 1987, Rockefeller University. New York: National Library of Medicine, 1987.
+Lindsay, Robert K., Bruce G. Buchanan, Edward A. Feigenbaum, and Joshua Lederberg. Applications of Artificial Intelligence for Organic Chemistry: The Dendral Project. McGraw-Hill Book Company, 1980.
+November, Joseph A. “Digitizing Life: The Introduction of Computers to Biology and Medicine.” Doctoral dissertation, Princeton University, 2006.

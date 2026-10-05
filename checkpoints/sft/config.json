@@ -1,0 +1,28 @@
+{
+  "modelo": {
+    "vocab_size": 16000,
+    "context": 256,
+    "d_model": 320,
+    "n_heads": 5,
+    "n_layers": 6,
+    "d_ff": 1280,
+    "dropout": 0.1,
+    "pos_encoding": "sinusoidal",
+    "pre_norm": true,
+    "tie_weights": true,
+    "flash": true
+  },
+  "entrenamiento": {
+    "batch_size": 16,
+    "epochs": 20,
+    "lr": 0.0006,
+    "min_lr": 6e-05,
+    "warmup_steps": 100,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "eval_every": 50,
+    "paciencia": 8,
+    "amp": "fp16",
+    "seed": 42
+  }
+}

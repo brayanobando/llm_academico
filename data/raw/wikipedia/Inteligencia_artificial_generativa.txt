@@ -1,0 +1,146 @@
+La inteligencia artificial generativa (IA generativa) es una subdisciplina de la inteligencia artificial que se centra en la creación de contenido nuevo —como texto, imágenes, audio, video o código— a partir de datos de entrenamiento.​ A diferencia de los modelos discriminativos, que se utilizan principalmente para clasificar o predecir etiquetas, los modelos generativos aprenden la distribución subyacente de los datos y generan nuevas muestras que siguen patrones similares.​
+Los sistemas modernos de IA generativa suelen basarse en técnicas de aprendizaje profundo, especialmente en arquitecturas de tipo transformador, que permiten modelar dependencias complejas en datos secuenciales.​ Estas arquitecturas han sido fundamentales en el desarrollo de los modelos de lenguaje grandes (LLM), capaces de realizar tareas como generación de texto, traducción automática y respuesta a preguntas.​
+Además de texto, los modelos generativos pueden producir imágenes, audio y video mediante el aprendizaje de representaciones multimodales.​ Entre los sistemas más conocidos se encuentran modelos de lenguaje como ChatGPT y Gemini, así como sistemas de generación de imágenes como DALL-E, Midjourney y Stable Diffusion.​
+La IA generativa ha sido adoptada en diversos ámbitos, como la creación de contenido digital, el desarrollo de software, la investigación científica y la automatización de procesos.​ Su expansión a principios de la década de 2020 ha estado asociada con un aumento significativo de la inversión y el desarrollo por parte de grandes empresas tecnológicas.​
+El rápido desarrollo de esta tecnología también ha generado preocupaciones relacionadas con la fiabilidad del contenido, la reproducción de sesgos presentes en los datos de entrenamiento y el uso indebido, incluyendo la generación de desinformación.​
+
+
+== Historia ==
+
+Los fundamentos de la inteligencia artificial generativa moderna se desarrollaron con el avance del aprendizaje automático y, posteriormente, del aprendizaje profundo a finales de la década de 2000 y principios de la década de 2010. Durante este periodo, las redes neuronales profundas lograron avances significativos en tareas como el reconocimiento de imágenes y el procesamiento del lenguaje natural.​ Sin embargo, la mayoría de estos modelos eran de tipo discriminativo, diseñados para clasificar o predecir etiquetas, en lugar de generar nuevos datos.​
+
+
+=== Modelos generativos profundos (2014–2016) ===
+Un punto de inflexión se produjo en 2014 con la introducción de modelos generativos profundos capaces de producir datos complejos. Entre ellos destacan los autoencoders variacionales (VAE), que permiten modelar distribuciones de datos latentes,​ y las redes generativas adversarias (GAN), que utilizan un enfoque competitivo entre dos redes neuronales para generar muestras realistas.​
+Estos modelos demostraron que las redes neuronales profundas podían generar imágenes, audio y otros tipos de datos con un nivel creciente de realismo.
+
+
+=== Transformadores y modelos de lenguaje (desde 2017) ===
+En 2017, la introducción de la arquitectura de transformador supuso un avance significativo en el modelado de secuencias mediante mecanismos de autoatención.​
+Esta arquitectura permitió el desarrollo de modelos generativos de gran escala basados en lenguaje. En 2018, OpenAI presentó el primer modelo de la serie generative pre-trained transformer (GPT).​
+Modelos posteriores, como GPT-2 y GPT-3, demostraron la capacidad de generar texto coherente en múltiples tareas.​
+
+
+=== Modelos multimodales y difusión (desde 2020) ===
+A partir de 2020, la investigación se expandió hacia modelos multimodales capaces de trabajar con texto, imágenes y otros tipos de datos. Los modelos de difusión introdujeron un enfoque basado en la eliminación progresiva de ruido para generar imágenes de alta calidad.​
+El lanzamiento de sistemas como DALL-E, Midjourney y Stable Diffusion contribuyó a popularizar la generación de imágenes a partir de texto.
+
+
+=== Adopción pública y controversias (desde 2023) ===
+El desarrollo de la IA generativa ha dado lugar a una adopción rápida en aplicaciones comerciales y mediáticas. En 2023, el sitio web CNET fue objeto de críticas tras revelarse que había utilizado herramientas de IA para redactar artículos, algunos de los cuales contenían errores que posteriormente fueron corregidos.​
+Ese mismo año, el lanzamiento de GPT-4 generó debates sobre el progreso hacia sistemas de inteligencia artificial más avanzados.​
+También se produjeron controversias relacionadas con el uso de contenido generado por IA en medios. En 2023, la revista alemana Die Aktuelle publicó una entrevista generada por IA con el expiloto de Fórmula 1 Michael Schumacher, lo que provocó críticas y el despido del editor responsable.​
+En 2024, la adopción organizativa de la IA generativa se aceleró de forma notable. Una encuesta global de McKinsey señaló que el 65% de las organizaciones encuestadas afirmaba utilizar regularmente IA generativa, aproximadamente el doble que diez meses antes, y que empezaban a observarse beneficios materiales en coste e ingresos en algunas unidades de negocio.​
+Ese mismo año, los modelos de texto a video pasaron de la fase experimental a una exposición pública mayor. En febrero de 2024, OpenAI presentó Sora como un sistema capaz de generar escenas de video a partir de instrucciones textuales, inicialmente en fase de pruebas y evaluación de seguridad.​ En diciembre de 2024, la compañía amplió su disponibilidad a usuarios de pago de ChatGPT en varios mercados.​
+En 2025, la atención del sector se desplazó en parte desde los chatbots generalistas hacia los llamados agentes de IA, sistemas diseñados para ejecutar tareas multietapa con mayor autonomía. En mayo de 2025, Microsoft presentó su visión de una "web agéntica" basada en estándares que permitieran a agentes de distintos proveedores colaborar entre sí y conservar mejor el contexto de sus interacciones.​ En julio de 2025, OpenAI anunció una versión agéntica de ChatGPT capaz de interactuar con sitios web y aplicaciones para realizar tareas complejas en nombre del usuario.​
+Las encuestas sectoriales publicadas en 2025 también mostraron una integración más amplia de estas herramientas en el trabajo profesional. Un informe de Thomson Reuters indicó que la gran mayoría de los profesionales encuestados veía ya casos de uso para la IA generativa en su propio trabajo, y atribuyó parte de esa familiaridad a la disponibilidad pública de herramientas como ChatGPT, Gemini y Microsoft Copilot.​
+
+
+== Modelos y modalidades ==
+Los sistemas de inteligencia artificial generativa modernos suelen basarse en los llamados modelos fundacionales, que son modelos entrenados con grandes volúmenes de datos generales y que pueden adaptarse a múltiples tareas sin necesidad de entrenamiento específico para cada aplicación.​ Estos modelos se caracterizan por su capacidad de generalización y su uso como base para sistemas más especializados.
+Entre los ejemplos más conocidos se encuentran modelos de lenguaje y asistentes basados en ellos, como GPT, Gemini, Claude, LLaMA, DeepSeek y sistemas integrados en aplicaciones como Microsoft Copilot. En el ámbito de la generación de imágenes destacan modelos como DALL-E, Stable Diffusion y Midjourney, mientras que en video han recibido atención sistemas como Sora. Estos sistemas pueden integrarse en asistentes conversacionales, herramientas de generación de contenido, entornos de desarrollo de software y sistemas de análisis automatizado.
+
+
+=== Modalidades ===
+Los modelos generativos pueden clasificarse según el tipo de datos que procesan y generan.
+
+Texto: Los modelos de lenguaje entrenados en grandes corpus textuales pueden realizar tareas como procesamiento del lenguaje natural, traducción automática y generación de texto. Estos modelos utilizan unidades denominadas tokens para representar secuencias lingüísticas.​
+Código: Los modelos generativos también pueden entrenarse con código fuente, lo que les permite generar programas informáticos, detectar errores y asistir en tareas de desarrollo de software.​
+Imágenes: Los modelos de generación de imágenes producen contenido visual a partir de descripciones textuales o datos visuales, y se utilizan en áreas como el diseño gráfico y el arte digital.​
+Audio: Algunos sistemas generativos pueden producir voz sintética o música mediante el modelado de señales de audio.​
+Video: Los modelos generativos pueden crear secuencias de video coherentes a partir de descripciones o datos visuales, aunque esta área sigue en desarrollo.
+Datos científicos: En biología y química, los modelos generativos pueden trabajar con representaciones moleculares o secuencias biológicas para aplicaciones como la predicción de estructuras de proteínas.​
+Multimodal: Los modelos multimodales combinan múltiples tipos de datos (como texto e imagen) en un único sistema, lo que permite tareas más complejas como la generación de contenido condicionado por distintos tipos de entrada.​
+Estas modalidades reflejan la diversidad de aplicaciones de la IA generativa y su capacidad para integrarse en distintos tipos de sistemas y entornos.
+
+
+== Aplicaciones ==
+La inteligencia artificial generativa se utiliza en múltiples sectores para la creación de contenido, la automatización de tareas y el apoyo a la toma de decisiones. Su adopción ha aumentado con la disponibilidad de modelos de gran escala capaces de generar texto, imágenes, audio y otros tipos de datos.​ En 2024, una encuesta global de McKinsey indicó que el uso organizativo de la IA y, en particular, de la IA generativa había aumentado con rapidez, y que muchas organizaciones ya reportaban valor medible en costes o ingresos en las unidades donde la desplegaban.​
+
+
+=== Salud ===
+En el ámbito de la salud, la IA generativa se emplea en el descubrimiento de fármacos, el diseño de moléculas y la generación de datos sintéticos para entrenar sistemas diagnósticos.​ También se utiliza para mejorar modelos de imagen médica, asistir en documentación clínica, resumir historiales y apoyar la investigación biomédica.​ La Organización Mundial de la Salud ha advertido, no obstante, que el uso de estos sistemas en entornos clínicos requiere marcos de gobernanza, evaluación y supervisión adecuados.​
+
+
+=== Finanzas ===
+En el sector financiero, los modelos generativos se utilizan para la generación automática de informes, análisis de datos y automatización de la atención al cliente.​ También pueden emplearse en la simulación de escenarios, la detección de anomalías, la revisión documental y tareas de cumplimiento normativo, así como en ámbitos próximos como auditoría, fiscalidad y gestión del riesgo.​
+
+
+=== Medios y entretenimiento ===
+
+La IA generativa se utiliza ampliamente en la creación de contenido digital, incluyendo texto, música, imágenes y video. Estos sistemas permiten generar guiones, composiciones musicales, efectos visuales y arte digital, así como apoyar la producción audiovisual y la creación de videojuegos.​ En 2024, los modelos de texto a video ganaron visibilidad pública con la presentación de Sora, y su disponibilidad comenzó a ampliarse a usuarios de pago a finales de ese año.​​
+En América Latina, estudios como NoMa Studio AI (fundado en Buenos Aires en 2023), aplican IA generativa al desarrollo de contenido audiovisual, produciendo proyectos como la serie infantil Wizzy.​
+
+
+=== Educación ===
+En educación, la IA generativa se utiliza para crear materiales didácticos, generar explicaciones automatizadas y apoyar el aprendizaje personalizado. Estas herramientas pueden adaptarse al nivel del estudiante y proporcionar retroalimentación en tiempo real.​ La UNESCO publicó en 2023 su primera guía global sobre IA generativa en educación e investigación, en la que propuso un enfoque centrado en las personas y advirtió sobre cuestiones como privacidad, evaluación y preparación institucional.​
+En el ámbito académico, diversas universidades y centros de investigación han creado cátedras y programas especializados en inteligencia artificial generativa para fomentar la investigación, la formación y la transferencia de conocimiento. Estas iniciativas suelen implicar colaboración entre instituciones académicas y empresas tecnológicas, y contribuyen al desarrollo de competencias en IA y al análisis de sus implicaciones éticas y sociales. Un ejemplo es la Cátedra sobre Empleabilidad y Responsabilidad en Inteligencia Artificial (CERIA), creada en 2024 por la Universidad Autónoma de Madrid en colaboración con Microsoft y Founderz, orientada a la formación en inteligencia artificial y al desarrollo de prácticas responsables en su uso.​
+
+
+=== Asistencia personal y profesional ===
+Durante 2024 y 2025, la IA generativa pasó de los chatbots generales a asistentes más integrados en flujos de trabajo personales y profesionales. Encuestas sectoriales mostraron un aumento de la familiaridad y del uso cotidiano de herramientas como ChatGPT, Gemini y Microsoft Copilot en contextos laborales.​ En 2025, varias compañías comenzaron a presentar de forma explícita sistemas de tipo agente, orientados a ejecutar tareas multietapa y a interactuar con aplicaciones, páginas web y otros servicios.​​
+
+
+=== Desarrollo de software ===
+Los modelos generativos pueden producir código informático a partir de descripciones en lenguaje natural, lo que facilita el desarrollo de software y la automatización de tareas de programación.​ Estas herramientas se integran en entornos de desarrollo para asistir a los programadores en tareas como la generación de funciones, documentación automática y detección de errores. En 2025, la evolución hacia sistemas más autónomos dio lugar a herramientas con capacidades agentic orientadas a escribir y modificar código durante periodos más largos y con menor supervisión directa.​
+
+
+=== Ciencia e investigación ===
+En el ámbito científico, los modelos generativos se utilizan para la simulación de procesos, la generación de hipótesis y el análisis de grandes conjuntos de datos.​ Estas técnicas han acelerado el descubrimiento en áreas como la biología estructural, la química computacional y la física.
+
+
+=== Diseño y manufactura ===
+La IA generativa también se utiliza en diseño asistido por computadora para generar prototipos, optimizar estructuras y explorar soluciones de ingeniería.​ Estas aplicaciones permiten automatizar procesos creativos, reducir tiempos de diseño y mejorar la eficiencia en la producción industrial.
+
+
+== Riesgos y preocupaciones ==
+El rápido desarrollo de la inteligencia artificial generativa ha suscitado diversas preocupaciones relacionadas con su fiabilidad, impacto social y posibles usos indebidos.​
+
+
+=== Sesgos ===
+Los modelos generativos pueden reflejar y amplificar sesgos presentes en los datos de entrenamiento, incluyendo sesgos de género, raza o cultura.​ Investigaciones han señalado que los modelos de lenguaje pueden reproducir estereotipos sociales al asociar determinadas profesiones con géneros específicos.​
+
+
+=== Desinformación ===
+La IA generativa puede utilizarse para producir grandes volúmenes de contenido falso o engañoso, lo que aumenta el riesgo de desinformación.​
+
+
+=== Fiabilidad y alucinaciones ===
+Los modelos generativos pueden producir información incorrecta o inventada, fenómeno conocido como alucinación.​
+
+
+=== Deepfakes ===
+
+Los deepfakes son medios generados por IA que sustituyen la apariencia o la voz de una persona en imágenes, audio o video mediante redes neuronales.​
+
+
+=== Cibercrimen ===
+La capacidad de generar contenido sintético realista ha sido explotada en diversos tipos de delitos informáticos, incluyendo ataques de phishing, fraude y suplantación de identidad.​
+
+
+=== Impacto en el empleo ===
+
+Informes han señalado impactos en sectores como el arte digital y la producción de contenido.​
+
+
+=== Derechos de autor ===
+El entrenamiento de modelos generativos con grandes conjuntos de datos ha generado debates sobre propiedad intelectual.​
+
+
+=== Impacto ambiental ===
+El entrenamiento de modelos de gran escala requiere importantes recursos computacionales y energéticos.​
+
+
+== Enlaces externos ==
+Reglamento de Inteligencia Artificial de la Unión Europea
+UNESCO – Inteligencia artificial
+National Institute of Standards and Technology (NIST) – AI
+
+
+== Véase también ==
+Modelo fundacional
+Deepfake
+Procesamiento de lenguaje natural
+
+
+== Referencias ==

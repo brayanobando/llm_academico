@@ -1,0 +1,43 @@
+Nils John Nilsson (Saginaw, Míchigan, 6 de febrero de 1933-Medford, Oregón, 22 de abril de 2019),​ también conocido como Nils Nilsson, fue un científico estadounidense, uno  de los investigadores fundadores en la disciplina de la inteligencia artificial, conocido por sus contribuciones en la investigación, planificación, representación del conocimiento y la robótica. Aparte, fue el primer Profesor Emérito de Ingeniería Kumagai de ciencias de la Computación en la Universidad de Stanford, posición que ocupó desde que el puesto se creó en 1990 hasta 1995.
+Su búsqueda se basó principalmente en la premisa de que la inteligencia se basa en el conocimiento que tiene que ser representado explícitamente.
+
+
+== Primeros años y educación ==
+Nilsson recibió su Ph.D. de Stanford en 1958, y pasó tiempo de su carrera en SRI Internacional, un laboratorio de investigación privado.
+
+
+== Carrera ==
+
+
+=== SRI International ===
+A partir de 1966, Nilsson, junto con Charles A. Rosen y Bertram Raphael, dirigió un equipo de búsqueda en la construcción de Shakey, un robot que construyó un modelo de su entorno desde datos obtenidos de un sensor, analizándolos arribó a un plan de acción, llevándolo a cabo con sus motores. Este paradigma ha sido enormemente influyente en IA. Libros de Texto como (Charniak & McDermott 1985), (Ginsberg 1993) y la primera edición de (Russell & Norvig 1992) reflejan esta influencia en casi todos los capítulos aunque el campo en su totalidad no ha permanecido siempre sujeto a su influencia. 
+A pesar de que la idea básica de utilizar razonamiento lógico para decidir en las acciones se debe a John McCarthy, Nilsson  el grupo era el primer para encarnar él en A* agente completo, a lo largo de la manera que inventa el A* algoritmo de búsqueda (Hart, Nilsson & Raphael 1968) y fundando el campo de automatizado temporal planificación. En la búsqueda última,  inventaron las CINTAS planner (Fikes & Nilsson 1971), cuya representación de acción es hoy todavía la base de muchos algoritmos de planificación. El subfield de automatizado temporal la planificación llamó la planificación clásica está basada sobre la mayoría de las suposiciones construyeron a CINTAS.
+
+
+=== Universidad de Stanford ===
+En 1985 Nilsson se sumó al claustro de profesores de la Universidad de Stanford, en el Departamento de Informática. Perteneció al departamento desde 1985 a 1990. Fue el cuarto Presidente  de la AAAI (Asociación Americana para la Inteligencia Artificial) (1982–83) y miembro fundador de esa organización. Nilsson escribió o compartió autoría en varios libros sobre IA 
+.
+
+
+== Premios y afiliaciones ==
+En 2011, Nilsson entró al Salón de la Fama de la inteligencia artificial de los Sistemas Inteligentes dentro de la IEEE por sus "contribuciones significativas al campo de la IA y a los sistemas inteligentes".​
+​
+
+
+== Referencias ==
+
+
+== Otras Bibliografías ==
+Charniak, Eugene; McDermott, Drew (1985), Charniak, Eugene; McDermott, Drew (1985), Introduction to Artificial Intelligence, Reading, Mass.: Addison-Wesley ., Lectura, Masa.: Addison-Wesley
+Fikes, Richard; Nilsson, Nils (1971), "CINTAS: Una aproximación nueva a la aplicación del teorema que prueba al problema que soluciona", Fikes, Richard; Nilsson, Nils (1971), «STRIPS: A new approach to the application of theorem proving to problem solving», Artificial Intelligence 2: 189-208, doi:10.1016/0004-3702(71)90010-5 ., : 189@–208, doi:10.1016/0004-3702(71)90010-5
+Genesereth, Michael; Nilsson, Nils (1987), Genesereth, Michael; Nilsson, Nils (1987), Logical Foundations of Artificial Intelligence, Los Altos, CA: Morgan Kaufmann ., Los Altos, CA: Morgan Kaufmann
+Ginsberg, Matthew (1993), Ginsberg, Matthew (1993), Essentials of Artificial Intelligence, Morgan Kaufmann Publishers Inc. ., Morgan Kaufmann Inc. de Editores
+Hart, P. E.; Nilsson, N. J.; Raphael, B. (1968), "Hart, P. E.; Nilsson, N. J.; Raphael, B. (1968), «A Formal Basis for the Heuristic Determination of Minimum Cost Paths», IEEE Transactions on Systems Science and Cybernetics SSC4 4 (2): 100-107, doi:10.1109/TSSC.1968.300136 ." (),  de  en Ciencia de Sistemas y Cibernética SSC, 4 (2): 100@–107, doi:10.1109/TSSC.1968.300136
+McCarthy, John (1968) [1960],  M. Minsky, ed., "Programas con sentido común", McCarthy, John (1968) [​1960​], «Programs with common sense»,  en M. Minsky, ed., Proceedings of the Teddington Conference on the Mechanization of Thought Processes (London: Her Majesty's Stationery Office): 403-418 ., Londres: Su Majestad  Stationery Oficina, pp.
+Nilsson, Nils (1980), Nilsson, Nils (1980), Principles of Artificial Intelligence., Palo Alto: Tioga Publishing Company ., Palo Alto: Tioga Compañía Editorial
+Russell, Stuart; Norvig, Peter (1992), Inteligencia Artificial: Una Aproximación Moderna (Russell, Stuart; Norvig, Peter (1992), Artificial Intelligence: A Modern Approach (1st edición), Prentice Hall ..),
+
+
+== Enlaces externos ==
+Nils John Nilsson (en inglés) en el Mathematics Genealogy Project.
+Entrevista de historia oral con Nils J. Nilsson

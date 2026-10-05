@@ -1,0 +1,29 @@
+Mycin es un sistema experto desarrollado a principios de los años 70 por Edward Shortliffe, en la Universidad de Stanford. Fue escrito en Lisp, e inicialmente estaba inspirado en Dendral, otro sistema experto que tuvo cierto éxito a finales de los años 60. Su principal función consistía en el diagnóstico de enfermedades infecciosas de la sangre; además, Mycin era capaz de “razonar” el proceso seguido para llegar a estos diagnósticos, y de recetar medicaciones personalizadas a cada paciente (según su estatura, peso, etc.).
+
+
+== Método ==
+El funcionamiento de Mycin se basaba principalmente en un sencillo motor de inferencia, que manejaba una base de conocimiento de aproximadamente unas 500 reglas. El programa capturaba las entradas a partir de una serie de preguntas (como por ejemplo, ¿Tiene el paciente molestias en el pecho?, o ¿Ha sido operado el paciente anteriormente?), que usualmente respondía el médico del paciente. Tras este proceso, Mycin mostraba la salida por pantalla, que consistía en una serie de posibles enfermedades (ordenadas por su probabilidad asociada), la explicación del por qué de cada uno de estos diagnósticos, y una serie de recomendaciones sobre el tratamiento a seguir por el paciente. Para calcular la probabilidad de cada uno de los resultados, los autores desarrollaron una técnica empírica basada en factores de certeza. Estos factores de certeza se calculaban de tal manera que en función de unas evidencias se asigna a la hipótesis un factor de certeza.
+
+
+== Resultados ==
+Las investigaciones realizadas por la Stanford Medical School, desvelaron que Mycin tuvo una tasa de aciertos de aproximadamente el 65%, lo cual mejoraba las estadísticas de la mayoría de los médicos no especializados en el diagnóstico de infecciones bacterianas (dominio en el que Mycin estaba especializado), que ejercían la profesión en aquellos años. Los médicos que trabajaban exclusivamente en este campo conseguían una tasa del 80%.
+
+
+== Actualidad ==
+Poco a poco Mycin fue cayendo en desuso, debido principalmente a alguna de las debilidades que el programa presentaba, y también, por cuestiones éticas y legales que surgían al volcar la responsabilidad de la salud de una persona a una máquina (por ejemplo, si Mycin se equivocaba en algún diagnóstico, ¿quién asumía la culpa, el programador o el médico?).
+Otro de los motivos se achaca a la excesiva dificultad que suponía el mantenimiento del programa. Era este uno de los principales problemas de Mycin, y en general, de los sistemas expertos de la época, en los cuales se dedicaban muchos esfuerzos y recursos a extraer el conocimiento necesario de los expertos en dominio para construir el motor de inferencia.
+
+
+== Véase también ==
+Lista de proyectos de inteligencia artificial.
+Otros sistemas expertos destacados, son:
+
+CADUCEUS
+Dendral
+Prospector
+XCon
+
+
+== Enlaces externos ==
+TMYCIN, Sistema basado en Mycin.
+Mycin Expert System - A Ruby Implementation

@@ -1,0 +1,36 @@
+El aprendizaje no supervisado es un método de aprendizaje automático (AA) donde un modelo se ajusta a las observaciones.​​ Se distingue del aprendizaje supervisado por el hecho de que no hay un conocimiento a priori. En el aprendizaje no supervisado, un conjunto de datos de objetos de entrada es tratado. Así, el aprendizaje no supervisado típicamente trata los objetos de entrada como un conjunto de variables aleatorias, siendo construido un modelo de densidad para el conjunto de datos.
+El aprendizaje no supervisado se puede usar en conjunto con la inferencia bayesiana para producir probabilidades condicionales, es decir, aprendizaje supervisado, para cualquiera de las variables aleatorias dadas. El santo grial del aprendizaje no supervisado es la creación de un código factorial de los datos, esto es, un código con componentes estadísticamente independientes. El aprendizaje supervisado normalmente funciona mucho mejor cuando los datos iniciales son primero traducidos en un código factorial.
+El aprendizaje no supervisado también es útil para la compresión de datos; fundamentalmente, todos los algoritmos de compresión dependen tanto explícita como implícitamente de una distribución de probabilidad sobre un conjunto de entrada.
+Otra forma de aprendizaje no supervisado es la agrupación (en ingl. clustering), el cual, en ocasiones, no es probabilístico.
+La teoría de resonancia adaptativa (ART) permite variar el número de agrupaciones en función del tamaño del problema, permitiendo al usuario el control del grado de similitud entre miembros de las mismas agrupaciones en términos de una constante definida por el usuario llamada el parámetro de vigilancia. Las redes de la ART se usan también en muchas tareas de reconocimiento de patrones, como el reconocimiento automático de objetivos o el procesamiento de señales sísmicas. La primera versión de la ART fue ART1, desarrollada por Carpenter y Grossberg (1988).
+
+
+== Características ==
+En este apartado se muestran las principales características de las redes de neuronas artificiales no supervisadas:​
+
+No necesitan de un profesor externo
+Muestran cierto grado de autoorganización
+La red descubre en los datos de entrada y de forma autónoma: características, regularidades, correlaciones y categorías
+Suelen requerir menores tiempos de formación que las supervisadas
+Arquitectura simple. Habitualmente son: (una sola capa o Feed-forward)
+Tipos fundamentales: Kohonen y Grossberg
+Abordan los siguientes tipos de problemas: familiaridad, análisis de componentes principales, agrupamiento, prototipado y extracción y relación de características
+
+
+== Bibliografía ==
+Geoffrey Hinton, Terrence J. Sejnowski (editors) (1999) Unsupervised Learning and Map Formation: Foundations of Neural Computation, MIT Press, ISBN 0-262-58168-X (Este libro se centra en el aprendizaje no supervisado con red neuronal artificial.)
+Horace Barlow, T. P. Kaushal, and G. J. Mitchison. Finding minimum entropy codes. Neural Computation, 1:412-423, 1989.
+Jürgen Schmidhuber. Learning factorial codes by predictability minimization. Neural Computation, 4(6):863-879, 1992
+
+
+== Véase también ==
+Algoritmo expectación-maximización
+Análisis de grupos
+Análisis multivariante
+Mapa autoorganizado
+Meta aprendizaje (Ciencias de la Computación)
+Redes de funciones de base radial
+Aprendizaje por diccionarios dispersos
+
+
+== Referencias ==

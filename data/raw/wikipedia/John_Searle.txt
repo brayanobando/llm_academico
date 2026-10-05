@@ -1,0 +1,129 @@
+John Rogers Searle (Denver, Colorado; 31 de julio de 1932-17 de septiembre de 2025)​  fue un filósofo y docente universitario estadounidense. Fue profesor Slusser de filosofía en la Universidad de California en Berkeley, y es célebre por sus contribuciones a la filosofía del lenguaje, a la filosofía de la mente y de la conciencia, a las características de las realidades sociales frente a las realidades físicas, y al razonamiento práctico. Le fue concedido el premio Jean Nicod en 2000 y es miembro de la Academia Europea de Ciencias y Artes.
+Aparte de su actividad académica, el profesor Searle fue también el primer profesor en ejercicio que se unió al Movimiento por la Libertad de Expresión en la Universidad de Berkeley. Searle estudió en la Universidad de Oxford gracias a una beca Rhodes.
+El trabajo de Searle sobre actos de habla, influido por la obra de J. L. Austin y Ludwig Wittgenstein, ayudó a establecer su reputación. John Searle es muy conocido por el desarrollo de un experimento mental llamado el argumento de la «habitación china», que intenta refutar la tesis de la inteligencia artificial «fuerte». Lo creó para demostrar que el pensamiento humano no se compone de simples procesos computacionales.
+Participó en el diálogo ciencia-fe, celebrado en la Ciudad del Vaticano el año 2000, como parte del Jubileo de los Científicos.​
+En 2013 fue elegido para impartir la cátedra Profesor Alberto Magno de la Universidad de Colonia, Alemania, misma que han impartido filósofos de la talla de Arthur C. Danto, Jean-Luc Nancy, Giorgio Agamben, Enrique Dussel, Noam Chomsky y Martha Nussbaum.​
+
+
+== Vida ==
+El padre de Searle era G.W. Searle, ingeniero eléctrico de AT&T, su madre Hester Beck Searle era médica. Searle comenzó a estudiar filosofía, ciencias políticas y economía en 1949 en la Universidad de Wisconsin a la edad de diecisiete años. Desde 1952 continuó con una beca Rhodes en la Universidad de Oxford. Aquí asistió a eventos de John Langshaw Austin y Peter Strawson. Searle enseñó en Oxford de 1956 a 1959 en el Christ Church College. Con su tesis doctoral supervisada por Peter Geach, Searle obtuvo su doctorado en 1959. En el mismo año, fue nombrado menor de 30 años como profesor en la reconocida Universidad de California, Berkeley. Perteneció a la facultad filosófica allí durante más de 50 años.
+En Berkeley, Searle apoyó las protestas estudiantiles emergentes y se convirtió en el primer profesor a tiempo completo en participar en el Movimiento de Libertad de Expresión. En 1969, Searle publicó su principal trabajo de filosofía del lenguaje, Speech Acts, que tuvo un gran impacto en la lingüística, entre otras cosas. En los años siguientes, Searle recurrió a otras áreas temáticas, incluida la filosofía de la mente, en la que criticó repetidamente los enfoques reduccionistas. En 2000 fue galardonado con el Premio Jean Nicod por su trabajo en esta área. En 2013 fue nombrado profesor de la cátedra Albertus Magnus en la Universidad de Colonia. También fue elegido para la Academia Estadounidense de Artes y Ciencias en 1977 y la Sociedad Filosófica Estadounidense en 2010.
+
+
+=== Acusaciones de acoso sexual ===
+En marzo de 2017, se hizo público que Searle fue acusado de violencia sexualizada contra una asistente de investigación de 24 años. En este contexto, se han conocido varios otros casos relevantes. El director del Centro John Searle de Ontología Social dijo que Searle tuvo múltiples relaciones sexuales con estudiantes a cambio de beneficios académicos y económicos. La Universidad de California Berkeley fue acusada de no responder adecuadamente y ocultar el incidente.
+En junio de 2019, el Presidium de UC Berkeley encontró a Searle culpable de acosar sexualmente a una exalumna y otros miembros del personal en 2016, después de lo cual fue privado de la membresía universitaria y del estatus de profesor emérito.
+
+
+== Actos de habla: Fuerza ilocutiva ==
+
+Las primeras obras de Searle continuaron los trabajos de sus maestros John Langshaw Austin y P. F. Strawson. Concretamente, en Actos de habla Searle desarrolla el análisis de Austin sobre los enunciados de acción o «performativos». Searle se centró en lo que Austin había llamado actos ilocutivos, actos que se realizan diciendo algo. En estas sentencias: (Actos de habla, p. 31)
+
+Juan fuma habitualmente.
+¿Juan fuma habitualmente?
+¡Juan, fuma habitualmente!
+Ojalá Juan fumase habitualmente.
+Cada una tiene el mismo contenido proposicional (Juan fumando), aunque difieren en su fuerza ilocutiva, ya que son, respectivamente, una aseveración, una pregunta, una orden y una expresión de deseo.
+Searle asume que las fuerzas ilocutivas de una oración pueden describirse siguiendo reglas o condiciones específicas. Estas reglas establecen las circunstancias y el propósito de diferentes actos ilocutivos. Searle utiliza cuatro tipos generales de reglas.
+Por lo general una ilocución tendrá cierto contenido proposicional. Por ejemplo, una petición tendrá cierta acción futura en su contenido, mientras que una sentencia puede tener cualquier proposición como contenido. Algunas ilocuciones, como los saludos, no disponen de contenido proposicional.
+Son necesarias ciertas condiciones previas para el éxito de cada tipo de ilocución. Por ejemplo, para realizar correctamente una petición es necesario que el oyente pueda realizar la acción solicitada y que el hablante crea que el oyente puede realizar dicha acción. Para que un saludo sea exitoso el oyente y el hablante bien acaban de encontrarse o acaban de haber sido presentados. Searle llama a esto condiciones preparatorias.
+Un saludo puede no ser sincero, pero para agradecer realmente algo a alguien, es necesario que el hablante sea sincero, y para realizar una pregunta sincera el hablante ha de querer conocer la respuesta. Searle llama a esto la condición de sinceridad.
+Según Searle, cada ilocución puede describirse en términos de lo que está intentando hacer. De esta forma una aseveración pretende que algo realmente es el caso. Una pregunta es un intento de elucidar cierta información. Agradecer pretende ser una expresión de gratitud. Este intento del hablante, o intencionalidad de una sentencia se convirtió en un aspecto principal de la obra posterior de Searle.
+A pesar de que muchos lo creen, Searle jamás ha propuesto una definición clara de lo que son realmente los actos ilocutivos. Los conceptos que sugiere varían sustancialmente a lo largo de los años (cf. Searle 1969, 1979, 1983).
+
+
+== Intencionalidad ==
+Searle posteriormente generalizó esta descripción basada en reglas de la fuerza ilocutiva como un caso específico de intencionalidad. Searle identifica una propiedad de los fenómenos intencionales llamada la dirección de encaje. Por ejemplo, cuando vemos una flor nuestro estado mental se encaja con el estado del mundo, y la dirección de encaje es mente-a-mundo. Pero si alargamos la mano para coger la flor nuestro objetivo es hacer que el mundo encaje con nuestro estado mental, y en este caso la dirección de encaje es mundo-a-mente.
+También desarrolla el término fondo (background), utilizado aquí de forma bastante técnica, y que ha sido el origen de cierta discusión filosófica. Básicamente es el contexto dentro del cual ocurre el acto intencional. De forma significativa incluye la comprensión del mundo por parte del actor, así como la participación de otros en las actividades intencionales.
+
+
+== Intencionalidad social ==
+Searle crea una fuerte base teórica para el uso de la noción de intencionalidad en un contexto social. La intencionalidad es un término técnico filosófico que significa dotación de contenido (aboutness). La intencionalidad indica que alguien asocia cierto significado a un objeto, tal como una creencia acerca de él, su posesión, su desprecio, etc. Incluye el uso ordinario de pretensión pero lo amplía. En Collective intentions and actions, Searle busca explicar las intenciones colectivas como una forma de intencionalidad. En sus obras anteriores proporciona normativas referentes a la intencionalidad en el lenguaje. Searle desarrolla este tema buscando un conjunto de reglas que sean esenciales para la intencionalidad colectiva.
+Searle sostiene este análisis con cinco tesis. Las tres primeras son:
+
+1.	El comportamiento intencional colectivo existe, y no es la suma de los comportamientos intencionales individuales.
+2.	La intencionalidad colectiva no puede reducirse a intencionalidades individuales.
+3.	Las dos tesis precedentes son consistentes con las siguientes restricciones:
+a.	La sociedad se compone exclusivamente de individuos; no existe nada parecido a la conciencia de grupo o al espíritu de grupo.
+b.	La intencionalidad de grupo o individual es independiente de la falsedad o veracidad de las creencias del individuo.
+Para satisfacer estas tesis, Searle desarrolla una notación para la intencionalidad colectiva que enlaza una intención individual con una colectiva, pero mantiene ambas intenciones separadas. En efecto, una intención individual puede tener como expresión una intención colectiva.
+La creación de una intención colectiva presupone que alguien comprende que otros pueden participar en la intención, de modo que:
+
+4.	La intención colectiva presupone un sentimiento de que el otro es un actor social que puede participar en una actividad colectiva.
+Juntas, estas tesis conducen a la afirmación de que:
+
+5.	La teoría de la intencionalidad junto a la noción de trasfondo puede explicar la intencionalidad colectiva.
+
+
+== Inteligencia artificial fuerte: La habitación china ==
+
+El argumento en contra de lo que Searle denomina «inteligencia artificial fuerte» es parte de una posición más amplia en lo que respecta a la relación mente-cuerpo. La tesis central de la inteligencia artificial fuerte es que los procesos realizados por una computadora son idénticos a los que realiza el cerebro, y por lo tanto se puede deducir que, si el cerebro genera consciencia, también las computadoras deben ser conscientes. Para refutar esta posición, Searle desarrolla el siguiente experimento mental.​
+Imaginemos que un individuo es colocado en una habitación cerrada al exterior en China. Por una rendija le son entregados papeles con símbolos chinos que desconoce absolutamente pues el individuo no conoce el idioma chino. Con unas instrucciones en inglés (o cualquiera que fuera su lengua madre) se le indica que debe sacar por la misma rendija una respuesta de acuerdo a un manual que se le ha entregado. En dicho manual solo aparecen símbolos chinos de entrada y los correspondientes símbolos de salida. Así, el individuo puede localizar los símbolos que le son entregados y puede sacar papeles con símbolos diferentes. Los chinos que estén fuera de la habitación pensarán que el de la habitación conoce el chino pues han recibido respuestas satisfactorias. (Cfr. Test de Turing)
+Searle considera que lo mismo ocurre con una computadora. Esta manipula diferentes códigos sintácticos que nada tienen que ver con la comprensión semántica de los contenidos procesados. Evidentemente, el concepto de Intencionalidad está en el fondo del argumento de la habitación china de Searle en contra de la inteligencia artificial.
+
+
+== Filosofía de la mente: Naturalismo biológico ==
+
+Searle considera que el famoso problema mente-cuerpo tiene una solución filosófica sencilla disponible desde hace más o menos un siglo: la conciencia es un fenómeno neurobiológico causado por el cerebro. La solución neurológica es más complicada y debemos esperar a que los neurocientíficos hagan su tarea.
+Searle se opone tanto al dualismo como al materialismo, en favor de una posición a la que llama «naturalismo biológico». El dualismo comete el error de considerar a la conciencia como una sustancia separada y por encima de lo material. El materialismo comete el error de negar los hechos básicos de la conciencia, inclusiva su existencia misma. Ambos están equivocados desde la raíz cartesiana que les dio origen. Las categorías físico y mental están cargadas con un significado antagónico del cual debemos deshacernos.
+El naturalismo biológico considera a la conciencia como un rasgo de nivel superior del sistema nervioso. Searle considera que, de la misma manera en que las moléculas de H2O.  tienen un modo de ser de tercera persona pero generan características de nivel superior como la solidez o la liquidez, de modo análogo el cerebro genera un rasgo a nivel del sistema que es la conciencia. La conciencia tiene una ontología (modo de existencia) de primera persona cuya principal característica es ser subjetiva, cualitativa y unificada, a diferencia de objetos no-conscientes cuya ontología es de tercera persona. Esta característica de la conciencia hace imposible reducirla a meros eventos neurobiológicos, a pesar de estar causada por ellos.
+
+
+== Construcción de la realidad social ==
+
+Searle ha aplicado recientemente su análisis de la intencionalidad a la construcción social. Su interés se centra en la forma en que ciertos aspectos de nuestro mundo se materializan como resultado de la intencionalidad combinada de aquellos que los usan. Por ejemplo, un billete de cinco euros es un billete de cinco euros tan solo en virtud de la intencionalidad colectiva. Se debe a que alguien piensa que vale cinco euros y que otro también piensa que vale cinco euros que puede realizar su función económica. Esto es así independientemente de que el gobierno respalde el valor de la moneda. Imaginemos un caso en el que intentemos comprarle algo a alguien que no reconoce el valor del billete. A menos que le convenzamos de su valor, lo único que tenemos es un trozo de papel de colores. Por otro lado, un objeto no respaldado por ningún gobierno, tal como un sello antiguo, puede ser un objeto válido en una transacción comercial si ambos participantes están de acuerdo en ello. Tales objetos construidos socialmente impregnan nuestras vidas. El lenguaje que utilizamos, el concepto de propiedad y las relaciones con los otros dependen fundamentalmente de tales intencionalidades implícitas. Searle extiende su análisis de la realidad social a la creación de instituciones como el matrimonio y las universidades. Sostiene que tanto el valor del billete de cinco euros como la institución de la universidad han sido creados por tres principios primitivos: la intencionalidad colectiva, la asignación de función y las reglas constitutivas.
+La aproximación de Searle a la construcción social es muy diferente y divergente de aquellos que sugieren que no existe una realidad independiente de la mente y que lo que llamamos realidad es una construcción social. Hacia el final de La construcción de la realidad social Searle presenta un argumento a favor del realismo. Sus argumentos no enfocan la construcción social de la realidad sino la construcción de la realidad social. Sostiene que «toda realidad social posee una estructura lógica constituida lingüísticamente» en un artículo llamado Social Reality and Linguistic Representation.
+
+
+=== Realismo y relativismo ===
+El papel central del concepto de construcción en la ontología de los fenómenos sociales de Searle sugiere que también puede describirse en general como constructivista. Sin embargo, este no es el caso; a Searle le gustaría ver tesis constructivistas limitadas al ámbito de la realidad social. La clave aquí es la distinción de Searle entre fenómenos dependientes del observador e independientes del observador. El mundo social consiste en fenómenos dependientes del observador, por lo que se puede hablar de la construcción de realidades sociales. En contraste, las ciencias naturales describen fenómenos independientes del observador, que en consecuencia no se construyen.
+Esta actitud crítica hacia posiciones generalmente constructivistas apunta a una posición filosófica general por la cual Searle ha abogado en los últimos años: Searle intenta defender las lecturas tradicionales y fuertes de los conceptos de verdad, realidad y racionalidad contra las corrientes filosóficas relativizantes. Considera que algunas formas de relativismo real o supuesto de autores como Richard Rorty o Jacques Derrida no solo son filosóficamente inverosímiles, sino también políticamente peligrosos, mientras defiende explícitamente otras formas, como el relativismo conceptual.
+
+En particular, Searle argumenta filosóficamente que sin nuestros conceptos tradicionales de verdad, realidad y racionalidad, nuestras prácticas lingüísticas serían incomprensibles. Rorty se opuso a este razonamiento trascendental a lo siguiente:"Dondequiera que Searle ve condiciones de comprensibilidad o condiciones previas, veo curvas retóricas, que están destinadas a dar a los usuarios de las prácticas en cuestión la sensación de que son leales a algo poderoso y poderoso, es decir, la naturaleza interna de la realidad".[cita requerida]
+
+
+== Obras ==
+Por John Searle:
+
+Consciousness - Annu Rev Neurosci. 2000;23:557-78. Review.
+'Is the Brain a Digital Computer? Presidential Address to the American Philosophical Association
+Speech Acts: An essay in the Philosophy of language,  (1969) (Actos de habla, Ed. Cátedra, 2001 -quinta edición-)
+The Campus War,  (1971)
+Expression and Meaning,   (1979)
+"Minds, Brains and Programs", The Behavioral and Brain Sciences.3, pp. 417-424. (1980)
+Intentionality: An essay in the Philosophy of Mind,   (1983) (Intencionalidad, Ed. Tecnos, 1992)
+Minds, Brains and Science, Harvard University Press, Cambridge, Mass. (1984) (Mentes, cerebros y ciencia, Ed. Cátedra, 2001)​
+"Collective intentions and actions".(1990)  in Intentions in Communication J. M. P. R. Cohen, & M. and E. Pollack. Cambridge, Mass.: . MIT Press: 401-416.
+The Rediscovery of the Mind, (1992) (El redescubrimiento de la mente, Ed. Crítica, 1994)​
+The Construction of Social Reality,  (1995) (La construcción de la realidad social, Ed. Paidos, 1997)​
+Mind, Language, and Society: Philosophy in the Real World (1998)​
+Rationality in Action, MIT Press, (2001)
+The Rediscovery of the Mind, (1992) ISBN 0-262-69154-X
+Mind: A Brief Introduction, (2004)​
+
+
+=== Ediciones en español ===
+Searle, John R. (1986). Actos de habla. Ediciones Cátedra. ISBN 978-84-376-0218-9. 
+Searle, John R. (1997). La construcción de la realidad social. Ediciones Paidós Ibérica. ISBN 978-84-493-0421-7. 
+Searle, John R. (1992). Intencionalidad. Editorial Tecnos. ISBN 978-84-309-2252-9. 
+Searle, John R. (1999). Intencionalidad en la filosofía de la mente. Ediciones Altaya. ISBN 978-84-487-1294-5. 
+Searle, John R. (2004). Lenguaje y ciencias sociales: diálogo entre John Searle y Crea. El Roure Editorial. ISBN 978-84-7976-030-4. 
+Searle, John R. (2004). Libertad y neurobiología: reflexiones sobre el libre albedrío, el lenguaje y el poder político. Ediciones Paidós Ibérica. ISBN 978-84-493-1666-1. 
+Searle, John R. (2004). Mente, lenguaje y sociedad: la filosofía en el mundo real. Alianza Editorial. ISBN 978-84-206-8605-9. 
+Searle, John R. (1985). Mentes, cerebros y ciencia. Ediciones Cátedra. ISBN 978-84-376-0569-2. 
+Searle, John R. (2000). El misterio de la conciencia. Ediciones Paidós Ibérica. ISBN 978-84-493-0895-6. 
+Searle, John R. (1996). El redescubrimiento de la mente. Editorial Crítica. ISBN 978-84-7423-742-9. 
+Searle, John R. (1977). La revolución de Chomsky en lingüística. Editorial Anagrama. ISBN 978-84-339-0354-9. 
+Searle, John R. (1977). ¿Qué es un acto de habla?. Universidad de Valencia. Servicio de Publicaciones. ISBN 978-84-370-0028-2. 
+Searle, John R. (2000). Razones para actuar: una teoría del libre albedrío (Valdés Villanueva, Luis M., trad.). Ediciones Nobel. ISBN 978-84-89770-75-1.  (Premio Internacional de Ensayo Jovellanos)
+Searle, John R. (2013). Razones para actuar: una teoría del libre albedrío (Codisis Beas, José M., trad.) (Actualizada edición). Ediciones Nobel. ISBN 978-84-89770-75-1.  (Premio Internacional de Ensayo Jovellanos)
+Searle, John R. (2014). Creando el mundo social: La estructura de la civilización humana. Grupo Planeta Spain. ISBN 9786079377212. 
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Conversaciones con Searle Archivado el 13 de junio de 2010 en Wayback Machine. ey. Entrevista en la serie Conversations with History Archivado el 12 de octubre de 2009 en Wayback Machine.. Disponible en webcast y podcast.
+Voz John Searle en Philosophica: Enciclopedia filosófica online
+Razones para actuar. Una teoría del libre albedrío

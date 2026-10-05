@@ -1,0 +1,122 @@
+La quinta generación de computadoras, también conocida por sus siglas en inglés, FGCS (de Fifth Generation Computer Systems), fue un proyecto hecho por Japón que comenzó en 1982. Su objetivo era el desarrollo de una nueva clase de computadoras que utilizarían técnicas y tecnologías de inteligencia artificial tanto en el plano del hardware como del software,​ usando el lenguaje PROLOG​​​ al nivel del lenguaje de máquina y serían capaces de resolver problemas complejos, como la traducción automática de una lengua natural a otra (del japonés al inglés, por ejemplo). Como unidad de medida del rendimiento y prestaciones de estas computadoras se empleaba la cantidad de LIPS (Logical Inferences Per Second) capaz de realizar durante la ejecución de las distintas tareas programadas. Para su desarrollo se emplearon diferentes tipos de arquitecturas VLSI (Very Large Scale Integration).
+El proyecto duró once años, pero no obtuvo los resultados esperados: las computadoras actuales siguieron así, ya que hay muchos casos en los que, o bien es imposible llevar a cabo una paralelización del mismo, o una vez llevada a cabo esta no se aprecia mejora alguna, o, en el peor de los casos, se produce una pérdida de rendimiento. Hay que tener claro que para realizar un programa paralelo debemos, para empezar, identificar dentro del mismo partes que puedan ser ejecutadas por separado en distintos procesadores. Además las demás generaciones casi ya no se usan; es importante señalar que un programa que se ejecuta de manera secuencial debe recibir numerosas modificaciones para que pueda ser ejecutado de manera paralela; es decir, primero sería interesante estudiar si realmente el trabajo que esto conlleva se ve compensado con la mejora del rendimiento de la tarea después de paralelizarla.
+
+
+== Historia y desarrollo del proyecto ==
+
+
+=== Antecedentes y diseño ===
+A través de las múltiples generaciones desde los años de 1950, Japón había sido el seguidor en términos del adelanto y construcción de las computadoras basadas en los modelos desarrollados en los Estados Unidos y el Reino Unido. Japón, a través de su Ministerio de Economía, Comercio e Industria (MECI), decidió romper con esta naturaleza de seguir a los líderes y a mediados de la década de 1970 comenzó a abrirse camino hacia un futuro en la industria de la informática. El Centro de Desarrollo y Proceso de la Información de Japón (JCDPI) fue el encargado de llevar a cabo un plan para desarrollar el proyecto. En 1979 ofrecieron un contrato de tres años para realizar estudios más profundos con la participación conjunta de empresas de la industria dedicadas a la tecnología e instituciones académicas, a instancias de Hazime Hiroshi. Fue durante este período cuando el término "computadora de quinta generación" comenzó a ser utilizado.
+
+
+=== Inicio ===
+En 1982, a iniciativa del MITI, se celebró una conferencia internacional, durante la cual Kazuhiro Fuchi anunció el programa de investigación, y el 14 de abril de 1982 el gobierno decidió lanzar oficialmente el proyecto, creando el Institute for New Generation Computer Technology (Instituto para la Nueva Generación de Tecnologías de Computación o ICOT por sus siglas en inglés), bajo la dirección de Fuchi,​ a quien sucedería en el puesto como director del instituto Tohru Moto-Oka, y con la participación de investigadores de diversas empresas japonesas dedicadas al desarrollo de hardware y software, entre ellas Fujitsu, NEC, Matsushita, Oki, Hitachi, Toshiba y Sharp.​
+Los campos principales para la investigación de este proyecto inicialmente eran:
+
+Tecnologías para el proceso del conocimiento.
+Tecnologías para procesar bases de datos y bases de conocimiento masivo.
+Sitios de trabajo del alto rendimiento.
+Informáticas funcionales distribuidas.
+Supercomputadoras para el cálculo científico.
+
+
+=== Impacto institucional e internacional ===
+Debido a la conmoción que causó que los japoneses fueran exitosos en el área de los artículos electrónicos durante la década de 1970, y que prácticamente hicieran lo mismo en el área de la automoción durante los años 1980, el proyecto de la quinta generación tuvo mucha reputación entre los otros países.​
+Tal fue su impacto que se crearon proyectos paralelos. En Estados Unidos, la Microelectronics and Computer Technology Corporation​ y la Strategic Computing Initiative; por parte europea, en Reino Unido fue ALVEY,​ y en el resto de Europa su reacción fue conocida como ESPRIT (European Strategic Programme for Research in Information Technology, en español Programa Estratégico Europeo en Investigación de la Tecnología de la Información).​
+
+
+=== Popularidad internacional ===
+Aparte de las reacciones a nivel institucional, en un plano más popular comenzó a ser conocido en Occidente gracias a la aparición de libros en los que se hablaba del proyecto de manera más o menos directa o era citado​ pero principalmente por artículos aparecidos en revistas dedicadas a los aficionados a la informática;​ así, por ejemplo, en el número de agosto de 1984 de la estadounidense Creative Computing se publicó un artículo que trataba ampliamente el tema, "The fifth generation: Japan's computer challenge to the world"​ (traducido, La quinta generación: El desafío informático japonés al mundo). En el ámbito de habla hispana se puede citar por ejemplo a la revista MicroHobby, que en julio de 1985 publicó​ una entrevista a Juan Pazos Sierra, Doctorado en Informática y vinculado en aquella época a la Facultad de Informática de la Universidad de Madrid, en la que describía someramente el proyecto como:
+
+ 
+
+Y sobre sus potenciales resultados, expresaba una opinión relativamente optimista, en la línea de lo augurado por los propios promotores del proyecto. Así, ante la pregunta de si se había obtenido algún resultado en el mismo, respondía:
+
+ 
+
+Por su parte, Román Gubern, en su ensayo El simio informatizado de 1987, consideraba que:
+
+ 
+
+
+=== Principales eventos y finalización del proyecto ===
+1981: se celebra la conferencia internacional en la que se perfilan y definen los objetivos y métodos del proyecto.
+1982: el proyecto se inicia y recibe subvenciones a partes iguales aportadas por sectores de la industria y por parte del gobierno.
+1985: se concluye el primer hardware desarrollado por el proyecto, conocido como Personal Sequential Inference machine (PSI) y la primera versión del sistema operativo Sequential Inference Machine Programming Operating System (SIMPOS). SIMPOS fue programado en Kernel Language 0 (KL0), una variante concurrente de Prolog​ con extensiones para la programación orientada a objetos, el metalenguaje ESP. Poco después de las máquinas PSI, fueron desarrolladas las máquinas CHI (Co-operative High-performance Inference machine).
+1986: se última la máquina Delta, basada en bases de datos relacionales.
+1987: se construye un primer prototipo del hardware llamado Parallel Inference Machine (PIM) usando varias máquinas PSI conectadas en red. El proyecto recibe subvenciones para cinco años más. Se desarrolla una nueva versión del lenguaje propuesto, Kernel Language 1 (KL1) muy similar al "Flat GDC" (Flat Guarded Definite Clauses), influenciada por desarrollos posteriores del Prolog y orientada a la computación paralela. El sistema operativo SIMPOS es reescrito en KL1 y rebautizado como Parallel Inference Machine Operating System, o PIMOS.
+1991: concluyen los trabajos en torno a las máquinas PIM.
+1992: el proyecto es prorrogado un año más a partir del plan original, que concluía este año.
+1993: finaliza oficialmente el proyecto de la quinta generación de computadoras, si bien para dar a conocer los resultados se inicia un nuevo proyecto de dos años de duración prevista, llamado FGCS Folow-on Project.​ El código fuente del sistema operativo PIMOS es lanzado bajo licencia de dominio público y el KL1 es portado a sistemas UNIX, dando como resultado el KLIC (KL1 to C compiler).
+1995: finalizan todas las iniciativas institucionales vinculadas con el proyecto.
+Como uno de los productos finales del Proyecto se desarrollaron cinco Máquinas de Inferencia Paralela (PIM), llamadas PIM/m, PIM/p, PIM/i, PIM/k y PIM/c, teniendo como una de sus características principales 256 elementos de Procesamiento Acoplados en red. El proyecto también produjo herramientas que se podían utilizar con estos sistemas tales como el sistema de gestión de bases de datos en paralelo Kappa, el sistema de razonamiento legal HELIC-II, el lenguaje de programación Quixote, un híbrido entre base de datos deductiva orientada a objetos y lenguaje de programación lógico​ y el demostrador automático de teoremas MGTP.
+Once años después del inicio del proyecto, la gran suma de dinero, infraestructura y recursos invertida en el mismo no se correspondía con los resultados esperados y se dio por concluido sin haber cumplido sus objetivos. William Zachman criticó el proyecto un año antes de su término, argumentando:
+
+ 
+
+El hardware propuesto y sus desarrollos de software no tenían cabida en el mercado informático, que había evolucionado desde el momento en el que se lanzara el proyecto, y en el que sistemas de propósito general ahora podían hacerse cargo de la mayoría de las tareas propuestas como objetivos iniciales de las máquinas de quinta generación, de manera semejante a como había pasado en el caso del mercado potencial de las máquinas Lisp, en el que sistemas para la creación de Sistemas Expertos basados en reglas como CLIPS, implementados sobre computadoras comunes, habían convertido a estas costosas máquinas en innecesarias y obsoletas.​
+Por otra parte, dentro de las disputas entre las diferentes ramas de la inteligencia artificial, el proyecto japonés partía del paradigma basado en la programación lógica y la programación declarativa, dominante tras la publicación en 1969 por Marvin Minsky y Seymour Papert del libro Perceptrons, que pasaría progresivamente a un segundo plano en favor de la programación de Redes Neuronales Artificiales (RNA) tras la publicación en 1986 por parte de McClelland y Rumelhart del libro Parallel Distributed Processing, lo que junto a sus escasos resultados contribuyó a que el proyecto de la quinta generación cayera en el olvido a su término en 1993.
+El Institute for New Generation Computer Technology (ICOT) fue renombrado en el año 1995 a Research Institute for Advanced Information Technology (AITEC), centro que fue clausurado en 2003, pasando todos sus recursos al Advanced IT Research Group (AITRG), dependiente del Departamento de Investigación del JIPDEC.
+
+
+== Hardware ==
+
+
+=== Primera etapa ===
+Máquinas secuenciales PSI (Personal Sequential Inference machine) y CHI (Co-operative High-performance Inference machine):
+
+PSI-I: 30 KLIPS (Logical Inference Per Second)
+PSI-II: PSI-I + CPU VLSI
+CHI-I: 285 KLIPS
+Máquinas en paralelo PIM (Parallel Inference Machine):
+
+PIM-D
+PIM-R
+Máquina de base de datos relacional:
+
+DELTA
+
+
+=== Segunda etapa ===
+Máquinas secuenciales:
+
+PSI-III
+CHI-II: 490 KLIPS
+Máquinas en paralelo:
+
+Multi-PSI.
+
+
+=== Tercera etapa ===
+Máquinas en paralelo:
+
+PIM/p: 512 microprocesadores RISC, 256 MB de memoria
+PIM/m: 256 microprocesadores CISC, 80 MB de memoria
+PIM/c: 256 microprocesadores CISC, 160 MB de memoria
+PIM/k: 16 microprocesadores RISC, 1 GB de memoria
+PIM/i: 16 microprocesadores RISC (tipo LIW), 320 MB de memoria
+
+
+== Véase también ==
+General Problem Solver
+Sistema experto
+Cuarta generación de computadoras
+Lenguaje de programación
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+"El proyecto de la quinta generación de computadoras" (título original en japonés), Kazuhiro Fuchi e Hirose Takeshi, 1984.
+"La quinta generación de computadoras" (título original en japonés), Murakami Kunio y Shunichi Uchida , editado por Kyoritsu Shuppan, 1985, ISBN 4-320-02278-5.
+Proceedings of the FGCS Project Evaluation Workshop, Shunichi Uchida y Kazuhiro Fuchi, Institute for New Generation Computer Technology (ICOT), 1992.
+"Historia de la computadora" (título original en japonés), Shigeru Takahashi, (Ed.) Ohmsha, 1996, ISBN 4-274-02319-2 (En WorldCat).
+"Historia del Centro de Desarrollo y Proceso de la Información de Japón" (título original en japonés), varios autores, (Ed.) Ohmsha, 1998, ISBN 4-274-07864-7 (En BookWeb).
+
+
+== Enlaces externos ==
+Página web oficial del ICOT, posteriormente llamado Research Institute for Advanced Information Technology (AITEC) y actualmente Advanced IT Research Group (AITRG) (en inglés).
+¿Qué son las tecnologías de quinta generación? (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última). De la página web oficial del ICOT (en inglés).
+Reportaje sobre la Conferencia de Computación de la Quinta Generación de 1988 Archivado el 6 de abril de 2012 en Wayback Machine. (en inglés).
+Actas de las Conferencias de FGCS de 1984, 1988 y 1992 Archivado el 3 de julio de 2014 en Wayback Machine. (en inglés).

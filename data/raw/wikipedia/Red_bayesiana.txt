@@ -1,0 +1,1984 @@
+Una red bayesiana, red de Bayes, red de creencia, modelo bayesiano (de Bayes) o modelo probabilístico en un grafo acíclico dirigido es un modelo grafo probabilístico (un tipo de modelo estático) que representa un conjunto de variables aleatorias y sus dependencias condicionales a través de un grafo acíclico dirigido (DAG por sus siglas en inglés). Por ejemplo, una red bayesiana puede representar las relaciones probabilísticas entre enfermedades y síntomas. Dados los síntomas, la red puede ser usada para computar la probabilidad de la presencia de varias enfermedades. Su nombre deriva del matemático inglés del siglo XVIII Thomas Bayes.
+Formalmente, las redes bayesianas son grafos dirigidos acíclicos cuyos nodos representan variables aleatorias en el sentido de Bayes: las mismas pueden ser cantidades observables, variables latentes, parámetros desconocidos o hipótesis. Las aristas representan dependencias condicionales; los nodos que no se encuentran conectados representan variables las cuales son condicionalmente independientes de las otras. Cada nodo tiene asociado una función de probabilidad que toma como entrada un conjunto particular de valores de las variables padres del nodo y devuelve la probabilidad de la variable representada por el nodo. Por ejemplo, si por padres son 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ variables booleanas entonces la función de probabilidad puede ser representada por una tabla de 
+  
+    
+      
+        
+          2
+          
+            m
+          
+        
+      
+    
+    {\displaystyle 2^{m}}
+  
+ entradas, una entrada para cada una de las 
+  
+    
+      
+        
+          2
+          
+            m
+          
+        
+      
+    
+    {\displaystyle 2^{m}}
+  
+ posibles combinaciones de los padres siendo verdadero o falso. Ideas similares pueden ser aplicadas a grafos no dirigidos, y posiblemente cíclicos; como son las llamadas redes de Markov.
+Existen algoritmos eficientes que llevan a cabo la inferencia y el aprendizaje en redes bayesianas. Las redes bayesianas que modelan secuencias de variables (ej. señales del habla o secuencias de proteínas) son llamadas redes bayesianas dinámicas. Las generalizaciones de las redes bayesianas que pueden representar y resolver problemas de decisión bajo incertidumbre son llamados diagramas de influencia.
+
+
+== Ejemplo ==
+
+Supongamos que hay dos eventos los cuales pueden causar que la hierba esté húmeda: que el rociador esté activado o que esté lloviendo. También supongamos que la lluvia tiene un efecto directo sobre el uso del rociador (usualmente cuando llueve el rociador se encuentra apagado). Entonces la situación puede ser modelada con una red Bayesiana (como hemos visto). Las tres variables tienen dos posibles valores, T (para verdadero) y F (para falso). La función de probabilidad conjunta es:
+
+  
+    
+      
+        
+          P
+        
+        (
+        G
+        ,
+        S
+        ,
+        R
+        )
+        =
+        
+          P
+        
+        (
+        G
+        
+          |
+        
+        S
+        ,
+        R
+        )
+        
+          P
+        
+        (
+        S
+        
+          |
+        
+        R
+        )
+        
+          P
+        
+        (
+        R
+        )
+      
+    
+    {\displaystyle \mathrm {P} (G,S,R)=\mathrm {P} (G|S,R)\mathrm {P} (S|R)\mathrm {P} (R)}
+  
+
+donde los nombres de las variables han sido abreviados a G = Hierba húmeda, S = Rociador activado, y R = Lloviendo.
+El modelo puede responder preguntas como "¿Cuál es la probabilidad de que esté lloviendo dado que la hierba está húmeda?" usando la fórmula de probabilidad condicional y sumando sobre todas las variables incordias:
+
+  
+    
+      
+        
+          P
+        
+        (
+        
+          
+            R
+          
+        
+        =
+        T
+        ∣
+        
+          
+            G
+          
+        
+        =
+        T
+        )
+        =
+        
+          
+            
+              
+                P
+              
+              (
+              
+                
+                  G
+                
+              
+              =
+              T
+              ,
+              
+                
+                  R
+                
+              
+              =
+              T
+              )
+            
+            
+              
+                P
+              
+              (
+              
+                
+                  G
+                
+              
+              =
+              T
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                ∑
+                
+                  
+                    
+                      S
+                    
+                  
+                  ∈
+                  {
+                  T
+                  ,
+                  F
+                  }
+                
+              
+              
+                P
+              
+              (
+              
+                
+                  G
+                
+              
+              =
+              T
+              ,
+              
+                
+                  S
+                
+              
+              ,
+              
+                
+                  R
+                
+              
+              =
+              T
+              )
+            
+            
+              
+                ∑
+                
+                  
+                    
+                      S
+                    
+                  
+                  ,
+                  
+                    
+                      R
+                    
+                  
+                  ∈
+                  {
+                  T
+                  ,
+                  F
+                  }
+                
+              
+              
+                P
+              
+              (
+              
+                
+                  G
+                
+              
+              =
+              T
+              ,
+              
+                
+                  S
+                
+              
+              ,
+              
+                
+                  R
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {P} ({\mathit {R}}=T\mid {\mathit {G}}=T)={\frac {\mathrm {P} ({\mathit {G}}=T,{\mathit {R}}=T)}{\mathrm {P} ({\mathit {G}}=T)}}={\frac {\sum _{{\mathit {S}}\in \{T,F\}}\mathrm {P} ({\mathit {G}}=T,{\mathit {S}},{\mathit {R}}=T)}{\sum _{{\mathit {S}},{\mathit {R}}\in \{T,F\}}\mathrm {P} ({\mathit {G}}=T,{\mathit {S}},{\mathit {R}})}}}
+  
+
+  
+    
+      
+        =
+        
+          
+            
+              (
+              0.99
+              ×
+              0.01
+              ×
+              0.2
+              =
+              
+                0.00198
+                
+                  T
+                  T
+                  T
+                
+              
+              )
+              +
+              (
+              0.8
+              ×
+              0.99
+              ×
+              0.2
+              =
+              
+                0.1584
+                
+                  T
+                  F
+                  T
+                
+              
+              )
+            
+            
+              
+                0.00198
+                
+                  T
+                  T
+                  T
+                
+              
+              +
+              
+                0.288
+                
+                  T
+                  T
+                  F
+                
+              
+              +
+              
+                0.1584
+                
+                  T
+                  F
+                  T
+                
+              
+              +
+              
+                0
+                
+                  T
+                  F
+                  F
+                
+              
+            
+          
+        
+        ≈
+        35.77
+        %
+        .
+      
+    
+    {\displaystyle ={\frac {(0.99\times 0.01\times 0.2=0.00198_{TTT})+(0.8\times 0.99\times 0.2=0.1584_{TFT})}{0.00198_{TTT}+0.288_{TTF}+0.1584_{TFT}+0_{TFF}}}\approx 35.77\%.}
+  
+
+Como está señalado explícitamente en el numerador del ejemplo, la función de probabilidad conjunta es usada para calcular cada iteración de la función de sumatoria, marginalizando sobre 
+  
+    
+      
+        
+          
+            S
+          
+        
+      
+    
+    {\displaystyle {\mathit {S}}}
+  
+ en el numerador y sobre 
+  
+    
+      
+        
+          
+            S
+          
+        
+      
+    
+    {\displaystyle {\mathit {S}}}
+  
+ y 
+  
+    
+      
+        
+          
+            R
+          
+        
+      
+    
+    {\displaystyle {\mathit {R}}}
+  
+ en el denominador.
+Si, por otra parte, deseamos responder una pregunta intermedia: "¿Cuál es la probabilidad de que llueva dado que la hierba está húmeda?" la respuesta puede ser dada por la post-intervención de la función de distribución conjunta 
+  
+    
+      
+        
+          P
+        
+        (
+        S
+        ,
+        R
+        
+          |
+        
+        d
+        o
+        (
+        G
+        =
+        T
+        )
+        )
+        =
+        P
+        (
+        S
+        
+          |
+        
+        R
+        )
+        P
+        (
+        R
+        )
+      
+    
+    {\displaystyle \mathrm {P} (S,R|do(G=T))=P(S|R)P(R)}
+  
+ obtenida eliminando el factor 
+  
+    
+      
+        
+          P
+        
+        (
+        G
+        
+          |
+        
+        S
+        ,
+        R
+        )
+      
+    
+    {\displaystyle \mathrm {P} (G|S,R)}
+  
+ de la distribución de pre-intervención. Como era de esperarse, la probabilidad de que llueva no es afectada por la acción: 
+  
+    
+      
+        
+          P
+        
+        (
+        R
+        
+          |
+        
+        d
+        o
+        (
+        G
+        =
+        T
+        )
+        )
+        =
+        P
+        (
+        R
+        )
+      
+    
+    {\displaystyle \mathrm {P} (R|do(G=T))=P(R)}
+  
+.
+Si por otra parte queremos predecir el impacto que tendrá encender el rociador, tenemos entonces 
+  
+    
+      
+        P
+        (
+        R
+        ,
+        G
+        
+          |
+        
+        d
+        o
+        (
+        S
+        =
+        T
+        )
+        )
+        =
+        P
+        (
+        R
+        )
+        P
+        (
+        G
+        
+          |
+        
+        R
+        ,
+        S
+        =
+        T
+        )
+      
+    
+    {\displaystyle P(R,G|do(S=T))=P(R)P(G|R,S=T)}
+  
+ con el término 
+  
+    
+      
+        P
+        (
+        S
+        =
+        T
+        
+          |
+        
+        R
+        )
+      
+    
+    {\displaystyle P(S=T|R)}
+  
+ eliminado, mostrando que la acción tiene efecto sobre la hierba pero no sobre la lluvia.
+Estas predicciones no son factibles cuando alguna de las variables no son observadas, como en la mayoría de los problemas de evaluación. El efecto de la acción 
+  
+    
+      
+        d
+        o
+        (
+        x
+        )
+      
+    
+    {\displaystyle do(x)}
+  
+ puede mantenerse predictivo, sin embargo, cada vez un criterio llamado "puerta trasera" es satisfecho.​ Los estados que, si un conjunto Z de nodos se puede observar que d-separa (o bloquea) todos los caminos de "puestra trasera" desde X hasta Y entonces 
+  
+    
+      
+        P
+        (
+        Y
+        ,
+        Z
+        
+          |
+        
+        d
+        o
+        (
+        x
+        )
+        )
+        =
+        P
+        (
+        Y
+        ,
+        Z
+        ,
+        X
+        =
+        x
+        )
+        
+          /
+        
+        P
+        (
+        X
+        =
+        x
+        
+          |
+        
+        Z
+        )
+      
+    
+    {\displaystyle P(Y,Z|do(x))=P(Y,Z,X=x)/P(X=x|Z)}
+  
+. Un camino de puestra trasera es uno que termina con una flecha hacia X. Los conjuntos que satisfacen el criterio de puerta trasera son llamados "suficientes" o "admisibles". Por ejemplo, el conjunto Z=R es admisible para predecir el efecto de S=T sobre G, porque R d-separa el (único) camino de puerta trasera S?R?G. Sin embargo, si S no es observado, no hay otro conjunto que d-separe este camino y el efecto de encender los rociadores (S=T) sobre la hierba (G) no puede ser predicho desde observaciones pasivas. Nosotros entonces decimos que 
+  
+    
+      
+        P
+        (
+        G
+        
+          |
+        
+        d
+        o
+        (
+        S
+        =
+        T
+        )
+        )
+      
+    
+    {\displaystyle P(G|do(S=T))}
+  
+ no está identificado. Esto refleja el hecho de que, careciendo de datos intervencionales, no podemos determinar si la dependencia observada entre S y G es debido a una conexión casual o debido a una artificial creada por una causa común, R. (ver paradoja de Simpson)
+Para determinar si una relación casual es identificada desde una red bayesiana arbitraria con variables no observadas, uno puede usar las tres reglas de "do-calculus"​​ y probar si todos los términos do pueden ser eliminados de la expresión de la relación, así conforme que la cantidad deseada es estimable desde la frecuencia de datos.​
+Usar una red bayesiana puede salvar las cantidades considerables de la memoria, si las dependencias en el reparto conjunto están escasas. Por ejemplo, una manera ingenua de guardar las probabilidades condicionales de 10 variables con dos valores como una tabla requiere el espacio de almacenamiento para 
+  
+    
+      
+        
+          2
+          
+            10
+          
+        
+        =
+        1024
+      
+    
+    {\displaystyle 2^{10}=1024}
+  
+ valores. Si las distribuciones locales de ninguna variable depende de más de 3 variables padre, la representación de la red de bayesiana solamente tiene que almacenar a lo sumo 
+  
+    
+      
+        10
+        ⋅
+        
+          2
+          
+            3
+          
+        
+        =
+        80
+      
+    
+    {\displaystyle 10\cdot 2^{3}=80}
+  
+ valores.
+Una ventaja de las redes bayesianas es que es intuitivamente más fácil para un ser humano comprender (un conjunto escaso de) dependencias directas y distribuciones locales que la distribución conjunta completa.
+
+
+== Inferencia de aprendizaje ==
+Hay tres tareas principales de inferencia para las redes bayesianas.
+
+
+=== Deducción de variables no observadas ===
+Debido a que una red bayesiana es un modelo completo de las variables y sus relaciones, se puede utilizar para responder a las consultas de probabilidad acerca de ellos. Por ejemplo, la red se puede utilizar para averiguar el conocimiento actualizado del estado de un subconjunto de variables cuando otras variables (las variables de evidencia) se observan. Este proceso de cálculo de la distribución posterior de las variables dada la evidencia que se llama inferencia probabilística. La posterior da un suficiente estadístico universal para aplicaciones de detección, cuando se quiere elegir los valores para la variable de un subconjunto que minimizan alguna función de pérdida esperada, por ejemplo, la probabilidad de error de decisión. Una red bayesiana de esta manera, puede considerarse como un mecanismo para aplicar automáticamente el teorema de Bayes a problemas complejos.
+Los métodos más comunes de inferencia exactas son: eliminación de variables, el cual elimina (mediante integración o suma) las variables no observadas y no consultadas una por una mediante la distribución de la suma sobre el producto; propagación en un árbol clique, que almacena en caché el cálculo de modo que muchas variables se pueden consultar en una vez y nueva evidencia se puede propagar rápidamente; y condicionamiento recursivo y búsqueda AND/OR, que permiten un equilibrio espacio-tiempo y realiza eficientemente la eliminación de variables cuando se usa suficiente espacio. Todos estos métodos tienen una complejidad que es exponencial con respecto al ancho del árbol. Los algoritmos de inferencia aproximada más comunes son muestreo de importancia, simulación estocástica MCMC (Markov Chain Monte Carlo), eliminación mini-cubo, LBP (Loopy Belief Propagation), GBP (Generalized Belief Propagation), y los métodos variacionales.
+
+
+=== Aprendizaje de Parámetros ===
+Para especificar completamente la red bayesiana y por lo tanto representar plenamente a la distribución de probabilidad conjunta , es necesario especificar para cada nodo X la distribución de probabilidad de X condicionada dado sus padres. La distribución de X condicionada dado sus padres puede tener cualquier forma. Es común trabajar con distribuciones discretas o gaussianas ya que simplifica los cálculos. A veces sólo restricciones sobre una distribución son conocidas; uno puede entonces utilizar el principio de máxima entropía para determinar una distribución única. (Análogamente, en el contexto específico de una red bayesiana dinámica, una que comúnmente especifica la distribución condicional para la evolución temporal del estado ocultos para maximizar la tasa de entropía del proceso estocástico implícito)
+A menudo, estas distribuciones condicionales incluyen parámetros que son desconocidos y deben estimarse a partir de los datos, a veces utilizando el enfoque de máxima probabilidad. La maximización directa de la probabilidad (o de la probabilidad posterior) es a menudo compleja cuando hay variables no observadas. Un método clásico de este problema es el algoritmo de expectación-maximización el cual alterna los valores esperados computados de las variables condicionales no observadas a datos observados, con la maximización de la probabilidad total (o posterior) suponiendo que previamente calculados los valores esperados son correctas. Bajo condiciones de regularidad leves este proceso converge en valores de probabilidad máxima (o máximo posterior) para los parámetros.
+Un enfoque más bayesiano es tratar a los parámetros como variables no observadas adicionales y para calcular la distribución posterior completa sobre todos los nodos condicionales de los datos observados, después, integrar los parámetros. Este enfoque puede ser costoso y llevar a modelos de grandes dimensiones, por lo que en la práctica enfoques de ajuste de parámetros clásicos son más comunes.
+
+
+=== Aprendizaje de Estructuras ===
+En el caso más simple, una red bayesiana se especifica por un experto y se utiliza entonces para realizar inferencia. En otras aplicaciones, la tarea de definir la red es demasiado compleja para los seres humanos. En este caso la estructura de la red y los parámetros de las distribuciones locales debe ser aprendido de datos.
+El aprendizaje automático de la estructura gráfica de una red bayesiana es un reto dentro del aprendizaje de máquina. La idea básica se remonta a un algoritmo de recuperación desarrollado por Rebane y Pearl (1987)​ y se basa en la distinción entre los tres tipos posibles de triplos adyacentes permitidos en un gráfico acíclico dirigido (DAG):
+
+ 
+  
+    
+      
+        X
+        →
+        Y
+        →
+        Z
+      
+    
+    {\displaystyle X\rightarrow Y\rightarrow Z}
+  
+
+ 
+  
+    
+      
+        X
+        ←
+        Y
+        →
+        Z
+      
+    
+    {\displaystyle X\leftarrow Y\rightarrow Z}
+  
+
+ 
+  
+    
+      
+        X
+        →
+        Y
+        ←
+        Z
+      
+    
+    {\displaystyle X\rightarrow Y\leftarrow Z}
+  
+
+Tipo 1 y tipo 2 representan las mismas dependencias (
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ y 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ son independientes dada 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+) y son, por tanto, indistinguibles. Tipo 3, sin embargo, puede ser identificado de forma única, ya que 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ y 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ son marginalmente independientes y todos los otros pares son dependientes. Así, mientras que los esqueletos (los grafos despojados de flechas) de estos tres triplos son idénticos, la direccionalidad de las flechas es parcialmente identificable. La misma distinción se aplica cuando 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ y 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ tienen padres comunes, excepto que uno debe condicionar primero en esos padres. Se han desarrollado algoritmos para determinar sistemáticamente el esqueleto del grafo subyacente y, a continuación, orientar todas las flechas cuya direccionalidad está dictada por las independencias condicionales observados.​​​​
+Un método alternativo de aprendizaje estructural utiliza la optimización basada en búsquedas. Se requiere una función de puntuación y una estrategia de búsqueda. Una función de puntuación común es la probabilidad posterior de la estructura dado los datos de formación. El requisito de tiempo de una búsqueda exhaustiva retornando una estructura que maximice la puntuación es superexponencial en el número de variables. Una estrategia de búsqueda local hace cambios incrementales destinados a mejorar la puntuación de la estructura. Un algoritmo de búsqueda global como la cadena de Markov Monte Carlo puede evitar quedar atrapado en mínimos locales. Friedman et al.​​ habla acerca del uso de la información mutua entre las variables y encontrar una estructura que maximiza esto. Lo hacen mediante la restricción del conjunto de padres candidatos a k nodos y exhaustivamente buscan en el mismo.
+
+
+== Introducción estadística ==
+Dados los datos 
+  
+    
+      
+        x
+        
+        
+      
+    
+    {\displaystyle x\,\!}
+  
+ y el parámetro 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+, Un simple análisis Bayesiano comienza con una probabilidad a priori (antes) 
+  
+    
+      
+        p
+        (
+        θ
+        )
+      
+    
+    {\displaystyle p(\theta )}
+  
+ y probabilidad 
+  
+    
+      
+        p
+        (
+        x
+        
+          |
+        
+        θ
+        )
+      
+    
+    {\displaystyle p(x|\theta )}
+  
+ para calcular una probabilidad posterior 
+  
+    
+      
+        p
+        (
+        θ
+        
+          |
+        
+        x
+        )
+        ∝
+        p
+        (
+        x
+        
+          |
+        
+        θ
+        )
+        p
+        (
+        θ
+        )
+      
+    
+    {\displaystyle p(\theta |x)\propto p(x|\theta )p(\theta )}
+  
+.
+A menudo, el antes en 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+, depende a su vez de otros parámetros 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ que no se mencionan en la probabilidad. Por lo tanto, la previa 
+  
+    
+      
+        p
+        (
+        θ
+        )
+      
+    
+    {\displaystyle p(\theta )}
+  
+ debe ser sustituido por una probabilidad 
+  
+    
+      
+        p
+        (
+        θ
+        
+          |
+        
+        φ
+        )
+      
+    
+    {\displaystyle p(\theta |\varphi )}
+  
+, y un previo 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ en los parámetros introducidos recientemente 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ se requiere, lo que resulta en una probabilidad posterior
+
+  
+    
+      
+        p
+        (
+        θ
+        ,
+        φ
+        
+          |
+        
+        x
+        )
+        ∝
+        p
+        (
+        x
+        
+          |
+        
+        θ
+        )
+        p
+        (
+        θ
+        
+          |
+        
+        φ
+        )
+        p
+        (
+        φ
+        )
+        .
+      
+    
+    {\displaystyle p(\theta ,\varphi |x)\propto p(x|\theta )p(\theta |\varphi )p(\varphi ).}
+  
+
+Este es el ejemplo más simple de un modelo jerárquico Bayesiano.
+El proceso se puede repetir, por ejemplo, los parámetros 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ pueden depender a su vez de parámetros adicionales 
+  
+    
+      
+        ψ
+        
+        
+      
+    
+    {\displaystyle \psi \,\!}
+  
+, lo que requerirá su propio previo. Finalmente, el proceso debe terminar, con previos que no dependen de otros parámetros no se han mencionado.
+
+
+=== Ejemplos Introductorios ===
+Supongamos que hemos medido las cantidades 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle x_{1},\dots ,x_{n}\,\!}
+  
+ cada una con una distribución normal de los errores conocidos y desviación estándar 
+  
+    
+      
+        σ
+        
+        
+      
+    
+    {\displaystyle \sigma \,\!}
+  
+,
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        ∼
+        N
+        (
+        
+          θ
+          
+            i
+          
+        
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle x_{i}\sim N(\theta _{i},\sigma ^{2})}
+  
+
+Supongamos que estamos interesados en estimar la 
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}}
+  
+. Un enfoque sería estimar la 
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}}
+  
+ utilizando un enfoque de máxima verosimilitud; ya que las observaciones son independientes, la probabilidad factoriza y la estimación de máxima probabilidad es simplemente
+
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+        =
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}=x_{i}}
+  
+
+Sin embargo, si las cantidades están relacionados, de modo que por ejemplo se puede pensar que los 
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}}
+  
+ individuales han sido extraídos de una distribución subyacente, a continuación, esta relación destruye la independencia y sugiere un modelo más complejo, por ejemplo,
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        ∼
+        N
+        (
+        
+          θ
+          
+            i
+          
+        
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle x_{i}\sim N(\theta _{i},\sigma ^{2}),}
+  
+
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+        ∼
+        N
+        (
+        φ
+        ,
+        
+          τ
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \theta _{i}\sim N(\varphi ,\tau ^{2})}
+  
+
+con previos inapropiados 
+  
+    
+      
+        φ
+        ∼
+      
+    
+    {\displaystyle \varphi \sim }
+  
+plana, 
+  
+    
+      
+        τ
+        ∼
+      
+    
+    {\displaystyle \tau \sim }
+  
+plano
+  
+    
+      
+        ∈
+        (
+        0
+        ,
+        ∞
+        )
+      
+    
+    {\displaystyle \in (0,\infty )}
+  
+. ¿Cuándo 
+  
+    
+      
+        n
+        ≥
+        3
+      
+    
+    {\displaystyle n\geq 3}
+  
+, este es un modelo identificado (es decir, existe una única solución para los parámetros del modelo), y la distribución posterior de la 
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}}
+  
+ individual tenderá a moverse o reducir la distancia de máxima verosimilitud estimada hacia su media común. Esta contracción es un comportamiento típico de los modelos jerárquicos bayesianos.
+
+
+=== Restricciones a los previos ===
+Hay que tener algún cuidado al elegir los previos en un modelo jerárquico, en particular sobre las variables de escala en los niveles superiores de la jerarquía, como la variable 
+  
+    
+      
+        τ
+        
+        
+      
+    
+    {\displaystyle \tau \,\!}
+  
+ en el ejemplo. Los previos habituales, tales como los previos de Jeffrey a menudo no funcionan, debido a que la distribución posterior será incorrecta (no normalizable), y estimaciones realizadas por reducir al mínimo la pérdida esperada será inadmisible .
+
+
+== Definiciones y conceptos ==
+Hay varias definiciones equivalentes de una red bayesiana. Por todo lo siguiente, sea G = (V, E) un gráfico acíclico dirigido (o DAG), y sea X = (Xv)v ? V un conjunto de variables aleatorias indexadas por V.
+
+
+=== Definición de factorización ===
+X es una red bayesiana con respecto a G si su función de densidad de probabilidad conjunta (con respecto a una medida de producto) se puede escribir como un producto de las funciones de densidad individuales, condicionadas a las variables de sus padres:​
+
+  
+    
+      
+        p
+        (
+        x
+        )
+        =
+        
+          ∏
+          
+            v
+            ∈
+            V
+          
+        
+        p
+        
+          
+            (
+          
+        
+        
+          x
+          
+            v
+          
+        
+        
+        
+          
+            |
+          
+        
+        
+        
+          x
+          
+            pa
+            ⁡
+            (
+            v
+            )
+          
+        
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle p(x)=\prod _{v\in V}p{\big (}x_{v}\,{\big |}\,x_{\operatorname {pa} (v)}{\big )}}
+  
+
+donde pa(v) es el conjunto de padres de v (es decir, los vértices apuntando directamente a v a través de una sola arista).
+Para cualquier conjunto de variables aleatorias, la probabilidad de cualquier miembro de una distribución conjunta se puede calcular a partir de las probabilidades condicionales utilizando la regla de la cadena (dado un ordenamiento topológico de X) como sigue:​
+
+  
+    
+      
+        
+          P
+        
+        (
+        
+          X
+          
+            1
+          
+        
+        =
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        =
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        
+          ∏
+          
+            v
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          P
+        
+        (
+        
+          X
+          
+            v
+          
+        
+        =
+        
+          x
+          
+            v
+          
+        
+        ∣
+        
+          X
+          
+            v
+            +
+            1
+          
+        
+        =
+        
+          x
+          
+            v
+            +
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        =
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \mathrm {P} (X_{1}=x_{1},\ldots ,X_{n}=x_{n})=\prod _{v=1}^{n}\mathrm {P} (X_{v}=x_{v}\mid X_{v+1}=x_{v+1},\ldots ,X_{n}=x_{n})}
+  
+
+Compárese esto con la definición anterior, que puede ser escrita como:
+
+  
+    
+      
+        
+          P
+        
+        (
+        
+          X
+          
+            1
+          
+        
+        =
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          X
+          
+            n
+          
+        
+        =
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        
+          ∏
+          
+            v
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          P
+        
+        (
+        
+          X
+          
+            v
+          
+        
+        =
+        
+          x
+          
+            v
+          
+        
+        ∣
+        
+          X
+          
+            j
+          
+        
+        =
+        
+          x
+          
+            j
+          
+        
+      
+    
+    {\displaystyle \mathrm {P} (X_{1}=x_{1},\ldots ,X_{n}=x_{n})=\prod _{v=1}^{n}\mathrm {P} (X_{v}=x_{v}\mid X_{j}=x_{j}}
+  
+ por cada 
+  
+    
+      
+        
+          X
+          
+            j
+          
+        
+        
+      
+    
+    {\displaystyle X_{j}\,}
+  
+ el cual es padre de 
+  
+    
+      
+        
+          X
+          
+            v
+          
+        
+        
+        )
+      
+    
+    {\displaystyle X_{v}\,)}
+  
+
+La diferencia entre las dos expresiones es la independencia condicional de las variables de cualquiera de sus no-descendientes, dados los valores de las variables de sus padres.
+
+
+=== Propiedad local de Markov ===
+X es una red bayesiana con respecto a V si satisface la propiedad local de Markov: cada variable es condicionalmente independiente de sus no-descendientes dado sus variables padres:​
+
+  
+    
+      
+        
+          X
+          
+            v
+          
+        
+        ⊥
+        
+        
+        
+        ⊥
+        
+          X
+          
+            V
+            ∖
+            de
+            ⁡
+            (
+            v
+            )
+          
+        
+        
+        
+          |
+        
+        
+        
+          X
+          
+            pa
+            ⁡
+            (
+            v
+            )
+          
+        
+        
+        
+          for all 
+        
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle X_{v}\perp \!\!\!\perp X_{V\setminus \operatorname {de} (v)}\,|\,X_{\operatorname {pa} (v)}\quad {\text{for all }}v\in V}
+  
+
+donde de(v) es el conjunto de descendientes de v.
+Esto también se puede expresar en términos similares a la primera definición, como
+
+  
+    
+      
+        
+          P
+        
+        (
+        
+          X
+          
+            v
+          
+        
+        =
+        
+          x
+          
+            v
+          
+        
+        ∣
+        
+          X
+          
+            i
+          
+        
+        =
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathrm {P} (X_{v}=x_{v}\mid X_{i}=x_{i}}
+  
+ para cada 
+  
+    
+      
+        
+          X
+          
+            i
+          
+        
+        
+      
+    
+    {\displaystyle X_{i}\,}
+  
+ la cual no es descendiente de 
+  
+    
+      
+        
+          X
+          
+            v
+          
+        
+        
+        )
+        =
+        P
+        (
+        
+          X
+          
+            v
+          
+        
+        =
+        
+          x
+          
+            v
+          
+        
+        ∣
+        
+          X
+          
+            j
+          
+        
+        =
+        
+          x
+          
+            j
+          
+        
+      
+    
+    {\displaystyle X_{v}\,)=P(X_{v}=x_{v}\mid X_{j}=x_{j}}
+  
+ para cada 
+  
+    
+      
+        
+          X
+          
+            j
+          
+        
+        
+      
+    
+    {\displaystyle X_{j}\,}
+  
+ que es padre de 
+  
+    
+      
+        
+          X
+          
+            v
+          
+        
+        
+        )
+      
+    
+    {\displaystyle X_{v}\,)}
+  
+
+Tenga en cuenta que el conjunto de los padres es un subconjunto del conjunto de los no descendientes porque el grafo es acíclico.
+
+
+=== Desarrollo de redes bayesianas ===
+Desarrollar una red bayesiana, que a menudo se desarrolla primero un DAG G tal que creemos que X satisface la propiedad local de Markov con respecto a G. A veces esto se hace creando un DAG casual. A continuación, determinar las distribuciones de probabilidad condicional de cada variable dados sus padres en G. En muchos casos, en particular en el caso donde las variables son discretas, si se define la distribución conjunta de X como el producto de las distribuciones condicionales, entonces X es una red bayesiana con respecto a G.​
+
+
+=== Modelo Oculto de Markov ===
+Un modelo oculto de Markov comparte propiedades estadísticas similares a un modelo normal de Markov, pero en lugar de hacer inferencias basadas en estados directamente, se utilizan observaciones basadas en esos estados.
+
+
+=== Manta de Markov ===
+
+La manta de Markov de un nodo es el conjunto de nodos vecinos: sus padres, sus hijos y otros padres de sus hijos. X es una red bayesiana con respecto a G si cada nodo es condicionalmente independiente de todos los demás nodos de la red, dada su manta Markov.​ Esto significa que la manta de Markov de un nodo es el único conocimiento necesario para predecir el comportamiento de ese nodo y sus hijos. 
+
+
+=== d-separación ===
+Esta definición puede ser más general mediante la definición de la "d" de separación de dos nodos, donde d es direccional.​​ Sea P un camino (es decir, una colección de aristas, que es como un camino, pero cada una de cuyas aristas pueden tener cualquier dirección) de un nodo de u a v. Entonces P se dice que es d-separado por un conjunto de nodos Z si y sólo si (al menos) uno de cumple lo siguiente:
+
+P contiene una cadena dirigida, 
+  
+    
+      
+        x
+        …
+        ←
+        m
+        ←
+        …
+        y
+      
+    
+    {\displaystyle x\ldots \leftarrow m\leftarrow \ldots y}
+  
+ o 
+  
+    
+      
+        y
+        …
+        →
+        m
+        →
+        …
+        x
+      
+    
+    {\displaystyle y\ldots \rightarrow m\rightarrow \ldots x}
+  
+, de manera tal que el nodo medio de m está en Z,
+P contiene una divergencia de m, 
+  
+    
+      
+        x
+        …
+        ←
+        m
+        →
+        …
+        y
+      
+    
+    {\displaystyle x\ldots \leftarrow m\rightarrow \ldots y}
+  
+, de manera tal que el nodo medio de m está en Z, o
+P contiene una convergencia a m, 
+  
+    
+      
+        x
+        …
+        →
+        m
+        ←
+        …
+        y
+      
+    
+    {\displaystyle x\ldots \rightarrow m\leftarrow \ldots y}
+  
+, de manera tal que el nodo medio de m no está en Z y el no descendiente de m está en Z.
+Así, u y v se dice que están d-separados por Z si todas las rutas entre ellos son d-separados. Si U y V no son d-separados, se les llama d-conectado.
+X es una red bayesiana con respecto a G si, para cualquier par de nodos u, v:
+
+  
+    
+      
+        
+          X
+          
+            u
+          
+        
+        ⊥
+        
+        
+        
+        ⊥
+        
+          X
+          
+            v
+          
+        
+        
+        
+          |
+        
+        
+        
+          X
+          
+            Z
+          
+        
+      
+    
+    {\displaystyle X_{u}\perp \!\!\!\perp X_{v}\,|\,X_{Z}}
+  
+
+donde Z es un conjunto que d-separa u y v. (La manta de Markov es el conjunto mínimo de nodos que d-separa al nodo v de todos los demás nodos)
+
+
+=== Modelos Jerárquicos ===
+El término modelo jerárquico a veces se considera un tipo particular de red bayesiana, pero no tiene una definición formal. A veces el término se reserva para los modelos con tres o más niveles de las variables aleatorias, en otras ocasiones, se reserva para los modelos con variables latentes. En general, sin embargo, cualquier red bayesiana moderadamente compleja suele llamarse "jerárquica".
+
+
+=== Redes Causales ===
+Aunque las redes bayesianas se utilizan a menudo para representar relaciones causales, esto no tiene por qué ser el caso: una arista dirigida de u a v no requiere que Xv sea causalmente dependiente de Xu. Esto se demuestra por el hecho de que las redes bayesianas en los grafos:
+
+  
+    
+      
+        a
+        ⟶
+        b
+        ⟶
+        c
+        
+        
+          and
+        
+        
+        a
+        ⟵
+        b
+        ⟵
+        c
+      
+    
+    {\displaystyle a\longrightarrow b\longrightarrow c\qquad {\text{and}}\qquad a\longleftarrow b\longleftarrow c}
+  
+
+son equivalentes, es decir imponen exactamente los mismos requisitos de independencia condicional.
+Una red causal es una red bayesiana con un requisito explícito de que la relación sea causal. Las semánticas adicionales de las redes causales especifican que si un nodo X está activamente causado a estar en un estado dado x (una acción escrita como lo hacen (X=x)), entonces la probabilidad de cambios de la función de densidad a la de la red obtenida por cortar los vínculos de los padres de X a X, y el seteando X al valor causada x.​ El uso de estas semánticas, se puede predecir el impacto de las intervenciones externas de los datos obtenidos antes de la intervención.
+
+
+== Aplicaciones ==
+Las redes bayesianas se utilizan para el modelado del conocimiento en biología computacional y bioinformática (redes reguladoras de genes, la estructura de la proteína, la expresión de genes de análisis,​ el aprendizaje de epistasis a partir de los conjuntos de datos de GWAS​), la medicina,​ biomonitoreo,​ la clasificación de documentos, recuperación de información,​ la búsqueda semántica,​ el procesamiento de imágenes, fusión de datos, sistemas de soporte de decisiones,​ la ingeniería, los juegos y la ley.​​​
+Otras de las aplicaciones actuales es a la ciencia de datos ya que se ayuda de tablas de probabilidades condicionales respecto a los nodos y ayuda para predicciones y análisis de datos[cita requerida].
+
+
+=== Software ===
+WinBUGS
+OpenBUGS (website), (código abierto) desarrollo adicional de WinBUGS.
+Just another Gibbs sampler (JAGS) (website).
+GeNIe&SMILE (website) — SMILE es una librería de C++ para BN e ID, y GeNIe es una GUI para ella.
+SamIam (website), otra GUI usando la librería SMILE.
+Redes de creencia y de decisión en AIspace.
+Hugin.
+Netica por Norsys.
+dVelox por Apara Software.
+
+
+== Historia ==
+El término "redes bayesianas" fue acuñado por Judea Pearl en 1985 para hacer hincapié en tres aspectos:​
+
+El carácter a menudo subjetivo de la información de entrada.
+La dependencia de acondicionamiento de Bayes como base para la actualización de la información.
+La distinción entre los modos causales y probatorio de razonamiento, lo que subraya Thomas Bayes en un documento publicado póstumamente en 1763.​
+A finales de 1980 los textos seminales Razonamiento Probabilístico en Sistemas Inteligentes​ y Razonamiento Probabilístico en Sistemas Expertos​ resume las propiedades de las redes Bayesianas y ayudó a establecer las mismas como un campo de estudio.
+Variantes informales de este tipo de redes se utilizaron por primera vez por el jurista John Henry Wigmore, en forma de grafos de Wigmore, para analizar la evidencia en un juicio en 1913.​ Otra variante, llamada diagrama de rutas, fue desarrollada por el genetista Sewall Wright​ y utilizado en ciencias de la conducta y sociales (en su mayoría con modelos paramétricos lineales).
+
+
+== Véase también ==
+ Portal:Inteligencia Artificial. Contenido relacionado con  Estadísticas.
+Inteligencia Artificial
+Teorema de Bayes
+Inferencia bayesiana
+Inteligencia Computacional
+Judea Pearl
+Filtro de Kalman
+Poliárbol
+Reconocimiento de voz
+Estimación bayesiana recursiva
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Ben-Gal, Irad (2007). Bayesian Networks (PDF).  En Ruggeri, Fabrizio; Kennett, Ron S.; Faltin, Frederick W, ed. «Encyclopedia of Statistics in Quality and Reliability». Encyclopedia of Statistics in Quality and Reliability. John Wiley & Sons. ISBN 978-0-470-01861-3. doi:10.1002/9780470061572.eqr089. Archivado desde el original el 23 de noviembre de 2016. Consultado el 20 de diciembre de 2012. 
+Bertsch McGrayne, Sharon (2011). The Theory That Would not Die. Yale. 
+Borgelt, Christian; Kruse, Rudolf (marzo  de 2002). Graphical Models: Methods for Data Analysis and Mining. Chichester, UK: Wiley. ISBN 0-470-84337-3. 
+Borsuk, Mark Edward (2008). «Ecological informatics: Bayesian networks».  En Jørgensen , Sven Erik, Fath, Brian, ed. Encyclopedia of Ecology. Elsevier. ISBN 978-0-444-52033-3. 
+Castillo, Enrique; Gutiérrez, José Manuel; Hadi, Ali S. (1997). «Learning Bayesian Networks». Expert Systems and Probabilistic Network Models. Monographs in computer science. Nueva York: Springer-Verlag. pp. 481–528. ISBN 0-387-94858-9. 
+Comley, Joshua W.; Dowe, David L. (October 2003). «Minimum Message Length and Generalized Bayesian Nets with Asymmetric Languages».  Escrito en Victoria, Australia.  En Grünwald, Peter D.; Myung, In Jae; Pitt, Mark A., eds. Advances in Minimum Description Length: Theory and Applications. Neural information processing series. Cambridge, Massachusetts: Bradford Books (MIT Press) (publicado el April 2005). pp. 265-294. ISBN 0-262-07262-9.  (This paper puts decision trees in internal nodes of Bayes networks using Minimum Message Length (MML). An earlier version is Comley and Dowe (2003), [1])
+Dowe, David L. (2010). MML, hybrid Bayesian network graphical models, statistical consistency, invariance and uniqueness, in Handbook of Philosophy of Science (Volume 7: Handbook of Philosophy of Statistics), Elsevier, ISBN 978-0-444-51862-0, pp 901-982.
+Fenton, Norman; Neil, Martin E. (November 2007). Managing Risk in the Modern World: Applications of Bayesian Networks – A Knowledge Transfer Report from the London Mathematical Society and the Knowledge Transfer Network for Industrial Mathematics. Londres (Reino Unido): London Mathematical Society.
+Fenton, Norman; Neil, Martin E. (23 de julio de 2004). «Combining evidence in risk analysis using Bayesian Networks» (PDF). Safety Critical Systems Club Newsletter 13 (4) (Newcastle upon Tyne, England). pp. 8-13. Archivado desde el original el 27 de septiembre de 2007. 
+Andrew Gelman; John B Carlin; Hal S Stern; Donald B Rubin (2003). «Part II: Fundamentals fo Bayesian Data Analysis: Ch.5 Hierachical models». Bayesian Data Analysis. CRC Press. pp. 120-. ISBN 978-1-58488-388-3. 
+Heckerman, David (1 de marzo de 1995). «Tutorial on Learning with Bayesian Networks».  En Jordan, Michael Irwin, ed. Learning in Graphical Models. Adaptive Computation and Machine Learning. Cambridge, Massachusetts: MIT Press (publicado el 1998). pp. 301-354. ISBN 0-262-60032-3. . :También aparece como Heckerman, David (marzo  de 1997). «Bayesian Networks for Data Mining». Data Mining and Knowledge Discovery (Netherlands: Springer Netherlands) 1 (1): 79-119. ISSN 1384-5810. doi:10.1023/A:1009730122752. :Una versión reciente aparece como Technical Report MSR-TR-95-06, Microsoft Research, March 1, 1995. The paper is about both parameter and structure learning in Bayesian networks.
+Jensen, Finn V; Nielsen, Thomas D. (6 de junio de 2007). Bayesian Networks and Decision Graphs. Information Science and Statistics series (2nd edición). Nueva York: Springer-Verlag. ISBN 978-0-387-68281-5. 
+Korb, Kevin B.; Nicholson, Ann E. (December 2010). Bayesian Artificial Intelligence. CRC Computer Science & Data Analysis (2nd edición). Boca Raton, Florida: Chapman & Hall (CRC Press). ISBN 1-58488-387-1. doi:10.1007/s10044-004-0214-5. 
+Lunn, D.; et al., D; Thomas, A; Best, N (2009). «The BUGS project: Evolution, critique and future directions». Statistics in Medicine 28 (25): 3049-3067. PMID 19630097. doi:10.1002/sim.3680. 
+Neil, Martin; Fenton, Norman E.; Tailor, Manesh (agosto  de 2005). «Using Bayesian Networks to Model Expected and Unexpected Operational Losses» (pdf).  En Greenberg, Michael R., ed. Risk Analysis: an International Journal (John Wiley & Sons) 25 (4): 963-972. PMID 16268944. doi:10.1111/j.1539-6924.2005.00641.x. 
+Pearl, Judea (septiembre  de 1986). «Fusion, propagation, and structuring in belief networks». Artificial Intelligence (Elsevier) 29 (3): 241-288. ISSN 0004-3702. doi:10.1016/0004-3702(86)90072-X. 
+Pearl, Judea (1988). Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference. Representation and Reasoning Series (2nd printing edición). San Francisco: Morgan Kaufmann. ISBN 0-934613-73-7. 
+Pearl, Judea; Russell, Stuart (noviembre  de 2002). «Bayesian Networks».  En Arbib, Michael A., ed. Handbook of Brain Theory and Neural Networks. Cambridge, Massachusetts: Bradford Books (MIT Press). pp. 157–160. ISBN 0-262-01197-2. 
+Zhang, Nevin Lianwen; Poole, David (mayo  de 1994). «A simple approach to Bayesian network computations». Proceedings of the Tenth Biennial Canadian Artificial Intelligence Conference (AI-94). (Banff, Alberta): 171-178.  This paper presents variable elimination for belief networks.
+
+
+== Enlaces externos ==
+Un tutorial sobre el aprendizaje con redes Bayesianas
+Una Introducción a las Redes Bayesianas y sus aplicaciones contemporáneas Archivado el 21 de mayo de 2017 en Wayback Machine.
+Tutorial en línea sobre redes bayesianas y probabilidad
+Redes Bayesianas en Tiempo Continuo
+Redes Bayesianas: Explicación y Analogía
+Un tutorial en vivo en el aprendizaje de redes bayesianas
+Un modelo jerárquico de Bayes para la manipulación de heterogeneidad de la muestra en problemas de clasificación, proporciona un modelo de clasificación teniendo en cuenta la incertidumbre asociada a la medición de muestras replicadas.
+Modelo Jerárquico Ingenuo de Bayes para el manejo de las muestras de incertidumbre Archivado el 28 de septiembre de 2007 en Wayback Machine., muestra cómo realizar la clasificación y el aprendizaje con las variables continuas y discretas con mediciones replicadas.

@@ -1,0 +1,868 @@
+Modelación del lenguaje hace referencia a la tarea de predecir la siguiente palabra o carácter en un documento. Esta técnica puede ser usada para entrenar modelos de lenguaje con una gran diversidad de aplicaciones, como la generación de texto o la clasificación de textos, entre otras.​
+Esto se realiza por medio de información estadística asociada con un vocabulario específico, que tiene el objetivo de predecir las palabras con más probabilidades de ser utilizadas.
+Contar con una forma de estimar la verosimilitud de diversas frases resulta sumamente útil en una variedad de aplicaciones dentro del procesamiento del lenguaje natural. Los modelos de lenguaje se emplean en el reconocimiento de voz, la traducción automática, el etiquetado de discurso, el análisis de texto, el reconocimiento de escritura, la recuperación de información y otras muchas aplicaciones.
+
+
+== Ejemplos ==
+En el reconocimiento de voz, la computadora se esfuerza por asociar los sonidos con secuencias de palabras. El modelo de lenguaje desempeña un papel fundamental al proporcionar un contexto que permite discernir entre palabras y frases que, a nivel auditivo, pueden parecer similares. Por ejemplo, en inglés americano, las frases "recognize speech" y "wreck a nice beach" se pronuncian de manera parecida, pero tienen significados completamente distintos. Estas ambigüedades se resuelven de manera más efectiva cuando se combina la información del modelo de lenguaje con los modelos de pronunciación y acústicos.​
+Los modelos del lenguaje se utilizan en la recuperación de información en el modelo de consulta probabilístico. Aquí, un modelo del lenguaje está asociado con cada documento en una colección. Los documentos se clasifican sobre la base de la probabilidad de la consulta 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ en el modelo del lenguaje del documento 
+  
+    
+      
+        P
+        (
+        Q
+        
+          |
+        
+        
+          M
+          
+            d
+          
+        
+        )
+      
+    
+    {\displaystyle P(Q|M_{d})}
+  
+. Comúnmente, el modelo del lenguaje unigrama (conocido también como el modelo bolsa de palabras) se utiliza para este propósito.
+La escasez de datos es un problema importante en la construcción de modelos de lenguaje. La mayoría de las posibles secuencias de palabras no serán observadas en el entrenamiento. Una solución es hacer la hipótesis de que la probabilidad sea posible.
+
+
+== Modelos unigrama ==
+Un modelo unigrama es utilizado en la recuperación de información y puede ser visto como la combinación de varios autómatas finitos de un solo estado.​ Divide las probabilidades de diferentes términos en un contexto, por ejemplo, desde 
+  
+    
+      
+        P
+        (
+        
+          t
+          
+            1
+          
+        
+        
+          t
+          
+            2
+          
+        
+        
+          t
+          
+            3
+          
+        
+        )
+        =
+        P
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          t
+          
+            2
+          
+        
+        
+          |
+        
+        
+          t
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          t
+          
+            3
+          
+        
+        
+          |
+        
+        
+          t
+          
+            1
+          
+        
+        
+          t
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle P(t_{1}t_{2}t_{3})=P(t_{1})P(t_{2}|t_{1})P(t_{3}|t_{1}t_{2})}
+  
+ a 
+  
+    
+      
+        
+          P
+          
+            u
+            n
+            i
+          
+        
+        (
+        
+          t
+          
+            1
+          
+        
+        
+          t
+          
+            2
+          
+        
+        
+          t
+          
+            3
+          
+        
+        )
+        =
+        P
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          t
+          
+            2
+          
+        
+        )
+        P
+        (
+        
+          t
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle P_{uni}(t_{1}t_{2}t_{3})=P(t_{1})P(t_{2})P(t_{3})}
+  
+.
+En este modelo, la probabilidad de acertar cada palabra depende por completo de sí, por lo que sólo tenemos autómatas finitos de un estado como unidades. Para cada autómata, solo tenemos una manera de alcanzar su único estado, asignado con una probabilidad. Visualizando todo el modelo, la suma de todas las probabilidades de alcanzar un estado debe ser uno. El siguiente es un modelo unigrama de un documento. 
+
+  
+    
+      
+        s
+        u
+        
+          m
+          
+            t
+            e
+            r
+            m
+             
+            i
+            n
+             
+            d
+            o
+            c
+          
+        
+        P
+        (
+        t
+        e
+        r
+        m
+        )
+        =
+        1
+      
+    
+    {\displaystyle sum_{term\ in\ doc}P(term)=1}
+  
+
+La probabilidad generada para una consulta específica se calcula como 
+  
+    
+      
+        P
+        (
+        q
+        u
+        e
+        r
+        y
+        )
+        =
+        
+          ∏
+          
+            t
+            e
+            r
+            m
+             
+            i
+            n
+             
+            q
+            u
+            e
+            r
+            y
+          
+        
+        P
+        (
+        t
+        e
+        r
+        m
+        )
+      
+    
+    {\displaystyle P(query)=\prod _{term\ in\ query}P(term)}
+  
+  
+Se pueden construir distintos modelos unigrama para variados documentos, para generar diferentes probabilidades de acierto en una consulta. Por tanto, podemos clasificar los documentos para una consulta de acuerdo a las probabilidades de generación. El siguiente es un ejemplo de dos modelos unigrama de dos documentos: 
+
+En contextos de recuperación de información, los modelos de lenguaje unigramas a menudo se suavizan para evitar casos en los que 
+  
+    
+      
+        P
+        (
+        t
+        e
+        r
+        m
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(term)=0}
+  
+. Un enfoque común es generar un modelo de máxima verosimilitud para la colección entera, e interpolar linealmente el modelo de colección con un modelo de máxima verosimilitud para cada documento para crear un modelo de documento suavizado.​
+
+
+== Modelos N-grama ==
+En un modelo de n-grama, la probabilidad 
+  
+    
+      
+        P
+        (
+        
+          w
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            m
+          
+        
+        )
+      
+    
+    {\displaystyle P(w_{1},\ldots ,w_{m})}
+  
+ de observar la frase 
+  
+    
+      
+        
+          w
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            m
+          
+        
+      
+    
+    {\displaystyle w_{1},\ldots ,w_{m}}
+  
+  se aproxima como 
+  
+    
+      
+        P
+        (
+        
+          w
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            m
+          
+        
+        )
+        =
+        
+          ∏
+          
+            i
+            =
+            1
+          
+          
+            m
+          
+        
+        P
+        (
+        
+          w
+          
+            i
+          
+        
+        
+          |
+        
+        
+          w
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            i
+            −
+            1
+          
+        
+        )
+        ≈
+        
+          ∏
+          
+            i
+            =
+            1
+          
+          
+            m
+          
+        
+        P
+        (
+        
+          w
+          
+            i
+          
+        
+        
+          |
+        
+        
+          w
+          
+            i
+            −
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            i
+            −
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle P(w_{1},\ldots ,w_{m})=\prod _{i=1}^{m}P(w_{i}|w_{1},\ldots ,w_{i-1})\approx \prod _{i=1}^{m}P(w_{i}|w_{i-(n-1)},\ldots ,w_{i-1})}
+  
+
+Aquí se asume que la probabilidad de observar la ith palabra wi  en la historia contexto de las palabras i-1 anteriores se puede aproximar por la probabilidad de observar que en la historia contexto abreviada de los n-1 anteriores palabras (orden nth Propiedad de Markov).  
+La probabilidad condicional puede calcularse a partir de recuentos de frecuencia n-grama: 
+
+  
+    
+      
+        P
+        (
+        
+          w
+          
+            i
+          
+        
+        
+          |
+        
+        
+          w
+          
+            i
+            −
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          w
+          
+            i
+            −
+            1
+          
+        
+        )
+        =
+        
+          
+            
+              c
+              o
+              u
+              n
+              t
+              (
+              
+                w
+                
+                  i
+                  −
+                  (
+                  n
+                  −
+                  1
+                  )
+                
+              
+              ,
+              …
+              ,
+              
+                w
+                
+                  i
+                  −
+                  1
+                
+              
+              ,
+              
+                w
+                
+                  i
+                
+              
+              )
+            
+            
+              c
+              o
+              u
+              n
+              t
+              (
+              
+                w
+                
+                  i
+                  −
+                  (
+                  n
+                  −
+                  1
+                  )
+                
+              
+              ,
+              …
+              ,
+              
+                w
+                
+                  i
+                  −
+                  1
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(w_{i}|w_{i-(n-1)},\ldots ,w_{i-1})={\frac {count(w_{i-(n-1)},\ldots ,w_{i-1},w_{i})}{count(w_{i-(n-1)},\ldots ,w_{i-1})}}}
+  
+  Las palabras bigrama' y modelo del lenguaje trigrama denotan modelos de lenguaje n-grama con n=2 y n=3, respectivamente.​ 
+Típicamente, sin embargo, las probabilidades de n-grama no se derivan directamente de los recuentos de frecuencia, porque los modelos derivados de esta manera tienen graves problemas cuando se enfrentan a cualquier n-grama que explícitamente no se ha visto antes. En cambio, alguna forma de suavizado es necesaria, asignando una porción de la probabilidad total a las palabras o n-gramas que no se han visto anteriormente. Se utilizan varios métodos, desde la técnica de suavizado simple "agrega-uno" (añade artificialmente una observación a todos los elementos del vocabulario) a modelos más sofisticados, como El descuento Good-Turing, modelos de back-off o interpolación.     
+
+
+=== Ejemplo ===
+En un modelo del lenguaje bígama (n = 2), la probabilidad de que la frase I saw the red house se aproxima como 
+
+  
+    
+      
+        P
+        (
+        I
+        ,
+        s
+        a
+        w
+        ,
+        t
+        h
+        e
+        ,
+        r
+        e
+        d
+        ,
+        h
+        o
+        u
+        s
+        e
+        )
+        ≈
+        P
+        (
+        I
+        
+          |
+        
+        <
+        s
+        >
+        )
+        P
+        (
+        s
+        a
+        w
+        
+          |
+        
+        I
+        )
+        P
+        (
+        t
+        h
+        e
+        
+          |
+        
+        s
+        a
+        w
+        )
+        P
+        (
+        r
+        e
+        d
+        
+          |
+        
+        t
+        h
+        e
+        )
+        P
+        (
+        h
+        o
+        u
+        s
+        e
+        
+          |
+        
+        r
+        e
+        d
+        )
+        P
+        (
+        <
+        
+          /
+        
+        s
+        >
+        
+          |
+        
+        h
+        o
+        u
+        s
+        e
+        )
+      
+    
+    {\displaystyle P(I,saw,the,red,house)\approx P(I|<s>)P(saw|I)P(the|saw)P(red|the)P(house|red)P(</s>|house)}
+  
+ 
+mientras que en un modelo del lenguaje trigrama (n = 3), la aproximación es
+
+  
+    
+      
+        P
+        (
+        I
+        ,
+        s
+        a
+        w
+        ,
+        t
+        h
+        e
+        ,
+        r
+        e
+        d
+        ,
+        h
+        o
+        u
+        s
+        e
+        )
+        ≈
+        P
+        (
+        I
+        
+          |
+        
+        <
+        s
+        >
+        ,
+        <
+        s
+        >
+        )
+        P
+        (
+        s
+        a
+        w
+        
+          |
+        
+        <
+        s
+        >
+        ,
+        I
+        )
+        P
+        (
+        t
+        h
+        e
+        
+          |
+        
+        I
+        ,
+        s
+        a
+        w
+        )
+        P
+        (
+        r
+        e
+        d
+        
+          |
+        
+        s
+        a
+        w
+        ,
+        t
+        h
+        e
+        )
+        P
+        (
+        h
+        o
+        u
+        s
+        e
+        
+          |
+        
+        t
+        h
+        e
+        ,
+        r
+        e
+        d
+        )
+        P
+        (
+        <
+        
+          /
+        
+        s
+        >
+        
+          |
+        
+        r
+        e
+        d
+        ,
+        h
+        o
+        u
+        s
+        e
+        )
+      
+    
+    {\displaystyle P(I,saw,the,red,house)\approx P(I|<s>,<s>)P(saw|<s>,I)P(the|I,saw)P(red|saw,the)P(house|the,red)P(</s>|red,house)}
+  
+ 
+Tenga en cuenta que el contexto de los primeros first 
+  
+    
+      
+        n
+        −
+        1
+      
+    
+    {\displaystyle n-1}
+  
+ n-gramas se llena con los marcadores de inicio de frase, denotado típicamente 
+<s>.  Además, sin un marcador de final de frase, la probabilidad de una secuencia no gramatical I saw the siempre sería superior a la de la sentencia I saw the red house.
+
+
+== Otros modelos ==
+Un modelo del lenguaje posicional​ es el que describe qué probabilidad hay de que ocurran ciertas palabras cerca una de la otra en un texto, sin la necesidad de que sean adyacentes. Del mismo modo, los modelos de bolsa de conceptos​ de apalancamiento en la semántica es asociada con expresiones de varias palabras como: "buy christmas present", incluso cuando se utilizan en oraciones ricas en información, como "today I bought a lot of very nice Christmas presents".
+
+
+== Véase también ==
+LLM (modelo grande de lenguaje)
+
+
+== Referencias ==
+  
+
+
+=== Bibliografía ===
+
+J M Ponte and W B Croft (1998). «A Language Modeling Approach to Information Retrieval». Research and Development in Information Retrieval. pp. 275-281. 
+F Song and W B Croft (1999). «A General Language Model for Information Retrieval». Research and Development in Information Retrieval. pp. 279-280. 
+
+
+== Enlaces externos ==
+DALM - Fast, Free software for language model queries
+IRSTLM - Free software for language modeling
+Kylm (Kyoto Language Modeling Toolkit) - Free language modeling toolkit in Java
+KenLM - Fast, Free software for language modeling
+LMSharp Archivado el 27 de diciembre de 2017 en Wayback Machine. - Free language model toolkit for Kneser-Ney smoothed n-gram models and recurrent neural network models
+MITLM - MIT Language Modeling toolkit.  Free software
+OpenGrm NGram library - Free software for language modeling.  Built on [OpenFst]].
+NPLM - Free toolkit for feedforward neural language models
+Positional Language Model Archivado el 8 de julio de 2019 en Wayback Machine.
+RandLM - Free software for randomised language modeling
+RNNLM - Free recurrent neural network language model toolkit
+SRILM - Proprietary software for language modeling
+VariKN - Free software for creating, growing and pruning Kneser-Ney smoothed n-gram models.
+Language models trained on newswire data
+Goldberg - Goldber, Y. (2015) A Primer on Neural Netwrok Models for Natural Language Processing.

@@ -1,0 +1,1922 @@
+La memoria larga a corto plazo, (en inglés, long short-term memory o LSTM) es una arquitectura de red neuronal recurrente (RNN) desarrollada para abordar el problema de desvanecimiento de gradiente,​ que afecta la capacidad de las RNN tradicionales para aprender dependencias a largo plazo en secuencias de datos. A diferencia de otros modelos como los modelos ocultos de Markov, los LSTM pueden retener información durante miles de pasos temporales, lo que los convierte en una herramienta eficaz para procesar datos secuenciales.​
+
+El núcleo de un LSTM es la célula de memoria, que retiene información durante intervalos de tiempo arbitrarios. Esta célula está controlada por tres tipos de puertas: la puerta de entrada, la puerta de salida​ y la puerta de olvido.​ La puerta de entrada regula qué nueva información se almacenará en la célula de memoria, la puerta de salida decide qué información se usará para generar la salida en el paso actual, y la puerta de olvido determina qué información debe eliminarse.​
+Además de sus aplicaciones en el procesamiento del lenguaje y el habla, los LSTM se utilizan en otras áreas como la predicción de series temporales, donde pueden prever valores futuros en secuencias basadas en patrones aprendidos de datos pasados. También se aplican en el control de robots,​​ ayudando a los sistemas a aprender comportamientos complejos a partir de datos sensoriales continuos.​​Otras aplicaciones incluyen la clasificación estadística,​​ procesamiento de datos, análisis de series temporales,​reconocimiento del habla,​​traducción automática,​​ videojuegos​​ y servicios de salud.​ En el reconocimiento de voz, por ejemplo, un LSTM puede identificar patrones en secuencias de audio que representan palabras o frases específicas, incluso en presencia de ruido o variaciones en el habla.​​
+
+
+== Motivación ==
+En teoría, las redes neuronales recurrentes clásicas (RNNs) pueden rastrear dependencias a largo plazo arbitrarias en las secuencias de entrada. Sin embargo, el problema con las RNNs clásicas es de naturaleza computacional (o práctica): al entrenar una RNN clásica utilizando retropropagación, los gradientes a largo plazo que se retropropagan pueden «desvanecerse», lo que significa que tienden a cero debido a la acumulación de números muy pequeños en los cálculos, causando que el modelo efectivamente deje de aprender. Las RNNs que utilizan unidades LSTM resuelven parcialmente el problema de desvanecimiento de gradiente, ya que las unidades LSTM permiten que los gradientes fluyan con poca o ninguna atenuación. Sin embargo, las redes LSTM aún pueden sufrir el problema de los gradientes que explotan.​
+La intuición detrás de la arquitectura LSTM es crear un módulo adicional en una red neuronal que aprenda cuándo recordar y cuándo olvidar información pertinente.​ En otras palabras, la red aprende efectivamente qué información podría necesitarse más adelante en una secuencia y cuándo esa información ya no es relevante. Por ejemplo, en el contexto del procesamiento del lenguaje natural, la red puede aprender dependencias gramaticales.​ Un LSTM podría procesar la oración: «Dave, como resultado de sus afirmaciones controvertidas, ahora es un paria» recordando el género gramatical y el número del sujeto Dave (probablemente masculino y singular), notar que esta información es pertinente para el pronombre sus y darse cuenta de que esta información ya no es importante después del verbo es.
+
+
+== Variantes ==
+En las ecuaciones a continuación, las variables en minúsculas representan vectores. Las matrices 
+  
+    
+      
+        
+          W
+          
+            q
+          
+        
+      
+    
+    {\displaystyle W_{q}}
+  
+ y 
+  
+    
+      
+        
+          U
+          
+            q
+          
+        
+      
+    
+    {\displaystyle U_{q}}
+  
+ contienen, respectivamente, los pesos de las conexiones de entrada y recurrentes, donde el subíndice 
+  
+    
+      
+        
+          
+          
+            q
+          
+        
+      
+    
+    {\displaystyle _{q}}
+  
+ puede referirse a la puerta de entrada 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+, la puerta de salida 
+  
+    
+      
+        o
+      
+    
+    {\displaystyle o}
+  
+, la puerta de olvido 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, o la célula de memoria 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, dependiendo de la activación que se esté calculando. En esta sección, se utiliza una «notación vectorial». Por ejemplo, 
+  
+    
+      
+        
+          c
+          
+            t
+          
+        
+        ∈
+        
+          
+            R
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle c_{t}\in \mathbb {R} ^{h}}
+  
+ no representa solo una unidad de una célula LSTM, sino que contiene 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ unidades de células LSTM.
+También existe un estudio empírico de ocho variantes arquitectónicas de LSTM.​
+
+
+=== LSTM con puerta de olvido ===
+Las formas compactas de las ecuaciones para el paso hacia adelante de una célula LSTM con una puerta de olvido son:​​
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  f
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    f
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    f
+                  
+                
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    f
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  i
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    i
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    i
+                  
+                
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    i
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  o
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    o
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    o
+                  
+                
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    o
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  
+                    
+                      
+                        c
+                        ~
+                      
+                    
+                  
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    c
+                  
+                
+                (
+                
+                  W
+                  
+                    c
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    c
+                  
+                
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    c
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  c
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  f
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  i
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  
+                    
+                      
+                        c
+                        ~
+                      
+                    
+                  
+                  
+                    t
+                  
+                
+              
+            
+            
+              
+                
+                  h
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  o
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  σ
+                  
+                    h
+                  
+                
+                (
+                
+                  c
+                  
+                    t
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}f_{t}&=\sigma _{g}(W_{f}x_{t}+U_{f}h_{t-1}+b_{f})\\i_{t}&=\sigma _{g}(W_{i}x_{t}+U_{i}h_{t-1}+b_{i})\\o_{t}&=\sigma _{g}(W_{o}x_{t}+U_{o}h_{t-1}+b_{o})\\{\tilde {c}}_{t}&=\sigma _{c}(W_{c}x_{t}+U_{c}h_{t-1}+b_{c})\\c_{t}&=f_{t}\odot c_{t-1}+i_{t}\odot {\tilde {c}}_{t}\\h_{t}&=o_{t}\odot \sigma _{h}(c_{t})\end{aligned}}}
+  
+
+donde los valores iniciales son 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle c_{0}=0}
+  
+  y 
+  
+    
+      
+        
+          h
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle h_{0}=0}
+  
+, además, el operador 
+  
+    
+      
+        ⊙
+      
+    
+    {\displaystyle \odot }
+  
+ denota el producto de Hadamard (producto elemento a elemento). El subíndice 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ indica el paso temporal.
+
+
+==== Variables ====
+Usando los superíndices 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ y 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ para referirse al número de características de entrada y al número de unidades ocultas, respectivamente:
+
+  
+    
+      
+        
+          x
+          
+            t
+          
+        
+        ∈
+        
+          
+            R
+          
+          
+            d
+          
+        
+      
+    
+    {\displaystyle x_{t}\in \mathbb {R} ^{d}}
+  
+: vector de entrada a la unidad LSTM.
+
+  
+    
+      
+        
+          f
+          
+            t
+          
+        
+        ∈
+        
+          
+            (
+            0
+            ,
+            1
+            )
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle f_{t}\in {(0,1)}^{h}}
+  
+: vector de activación de la puerta de olvido.
+
+  
+    
+      
+        
+          i
+          
+            t
+          
+        
+        ∈
+        
+          
+            (
+            0
+            ,
+            1
+            )
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle i_{t}\in {(0,1)}^{h}}
+  
+: vector de activación de la puerta de entrada/actualización.
+
+  
+    
+      
+        
+          o
+          
+            t
+          
+        
+        ∈
+        
+          
+            (
+            0
+            ,
+            1
+            )
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle o_{t}\in {(0,1)}^{h}}
+  
+: vector de activación de la puerta de salida.
+
+  
+    
+      
+        
+          h
+          
+            t
+          
+        
+        ∈
+        
+          
+            (
+            −
+            1
+            ,
+            1
+            )
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle h_{t}\in {(-1,1)}^{h}}
+  
+: vector del estado oculto, también conocido como el vector de salida de la unidad LSTM.
+
+  
+    
+      
+        
+          
+            
+              
+                c
+                ~
+              
+            
+          
+          
+            t
+          
+        
+        ∈
+        
+          
+            (
+            −
+            1
+            ,
+            1
+            )
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle {\tilde {c}}_{t}\in {(-1,1)}^{h}}
+  
+: vector de activación de la entrada de la célula.
+
+  
+    
+      
+        
+          c
+          
+            t
+          
+        
+        ∈
+        
+          
+            R
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle c_{t}\in \mathbb {R} ^{h}}
+  
+: vector del estado de la célula.
+
+  
+    
+      
+        W
+        ∈
+        
+          
+            R
+          
+          
+            h
+            ×
+            d
+          
+        
+      
+    
+    {\displaystyle W\in \mathbb {R} ^{h\times d}}
+  
+, 
+  
+    
+      
+        U
+        ∈
+        
+          
+            R
+          
+          
+            h
+            ×
+            h
+          
+        
+      
+    
+    {\displaystyle U\in \mathbb {R} ^{h\times h}}
+  
+ y 
+  
+    
+      
+        b
+        ∈
+        
+          
+            R
+          
+          
+            h
+          
+        
+      
+    
+    {\displaystyle b\in \mathbb {R} ^{h}}
+  
+: matrices de pesos y vector de sesgo, parámetros que deben ser aprendidos durante el entrenamiento.
+
+
+==== Funciones de activación ====
+
+  
+    
+      
+        
+          σ
+          
+            g
+          
+        
+      
+    
+    {\displaystyle \sigma _{g}}
+  
+: función sigmoide.
+
+  
+    
+      
+        
+          σ
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \sigma _{c}}
+  
+: función hiperbólica tangente.
+
+  
+    
+      
+        
+          σ
+          
+            h
+          
+        
+      
+    
+    {\displaystyle \sigma _{h}}
+  
+: función hiperbólica tangente o, como sugiere el artículo del LSTM con peephole, 
+  
+    
+      
+        
+          σ
+          
+            h
+          
+        
+        (
+        x
+        )
+        =
+        x
+      
+    
+    {\displaystyle \sigma _{h}(x)=x}
+  
+.​​
+
+
+=== LSTM con peephole ===
+Con el tiempo, se han desarrollado variantes de la arquitectura LSTM para mejorar su rendimiento y ampliar sus aplicaciones. La introducción de las conexiones peephole permite que las puertas accedan directamente al estado de la célula de memoria, mejorando la precisión en tareas que requieren un control más fino de la memoria.​
+
+La figura de la derecha es una representación gráfica de una unidad LSTM con conexiones peephole (es decir, LSTM con peephole).​​ Las conexiones peephole permiten que las puertas accedan al carrusel de error constante (CEC, constant error carrousel), cuya activación corresponde al estado de la célula.​ En este caso, 
+  
+    
+      
+        
+          h
+          
+            t
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle h_{t-1}}
+  
+ no se utiliza; en su lugar, se utiliza 
+  
+    
+      
+        
+          c
+          
+            t
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle c_{t-1}}
+  
+ en la mayoría de los casos:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  f
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    f
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    f
+                  
+                
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    f
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  i
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    i
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    i
+                  
+                
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    i
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  o
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    o
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    o
+                  
+                
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    o
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  c
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  f
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  i
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  σ
+                  
+                    c
+                  
+                
+                (
+                
+                  W
+                  
+                    c
+                  
+                
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  b
+                  
+                    c
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  h
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  o
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  σ
+                  
+                    h
+                  
+                
+                (
+                
+                  c
+                  
+                    t
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}f_{t}&=\sigma _{g}(W_{f}x_{t}+U_{f}c_{t-1}+b_{f})\\i_{t}&=\sigma _{g}(W_{i}x_{t}+U_{i}c_{t-1}+b_{i})\\o_{t}&=\sigma _{g}(W_{o}x_{t}+U_{o}c_{t-1}+b_{o})\\c_{t}&=f_{t}\odot c_{t-1}+i_{t}\odot \sigma _{c}(W_{c}x_{t}+b_{c})\\h_{t}&=o_{t}\odot \sigma _{h}(c_{t})\end{aligned}}}
+  
+
+Cada una de las puertas puede considerarse como una «neurona estándar» en una red neuronal de propagación hacia adelante (o de múltiples capas): es decir, calculan una activación (usando una función de activación) de una suma ponderada. 
+  
+    
+      
+        
+          i
+          
+            t
+          
+        
+        ,
+        
+          o
+          
+            t
+          
+        
+      
+    
+    {\displaystyle i_{t},o_{t}}
+  
+ y 
+  
+    
+      
+        
+          f
+          
+            t
+          
+        
+      
+    
+    {\displaystyle f_{t}}
+  
+ representan las activaciones de las puertas de entrada, salida y olvido, respectivamente, en el paso temporal 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+.
+Las tres flechas de salida desde la célular de memoria 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ hacia las tres puertas 
+  
+    
+      
+        i
+        ,
+        o
+      
+    
+    {\displaystyle i,o}
+  
+ y 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ representan las conexiones peephole. Estas conexiones peephole denotan las contribuciones de la activación de la célula de memoria 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ en el paso temporal 
+  
+    
+      
+        t
+        −
+        1
+      
+    
+    {\displaystyle t-1}
+  
+, es decir, la contribución de 
+  
+    
+      
+        
+          c
+          
+            t
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle c_{t-1}}
+  
+ (y no 
+  
+    
+      
+        
+          c
+          
+            t
+          
+        
+      
+    
+    {\displaystyle c_{t}}
+  
+, como podría sugerir la imagen). En otras palabras, las puertas 
+  
+    
+      
+        i
+        ,
+        o
+      
+    
+    {\displaystyle i,o}
+  
+ y 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ calculan sus activaciones en el paso temporal 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ (
+  
+    
+      
+        
+          i
+          
+            t
+          
+        
+        ,
+        
+          o
+          
+            t
+          
+        
+      
+    
+    {\displaystyle i_{t},o_{t}}
+  
+ y 
+  
+    
+      
+        
+          f
+          
+            t
+          
+        
+      
+    
+    {\displaystyle f_{t}}
+  
+, respectivamente) considerando también la activación de la célula de memoria 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ en el paso temporal 
+  
+    
+      
+        t
+        −
+        1
+      
+    
+    {\displaystyle t-1}
+  
+, es decir, 
+  
+    
+      
+        
+          c
+          
+            t
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle c_{t-1}}
+  
+.
+La única flecha de izquierda a derecha que sale de la célula de memoria no es una conexión peephole y denota 
+  
+    
+      
+        
+          c
+          
+            t
+          
+        
+      
+    
+    {\displaystyle c_{t}}
+  
+.
+Los pequeños círculos que contienen un símbolo 
+  
+    
+      
+        ×
+      
+    
+    {\displaystyle \times }
+  
+ representan una multiplicación elemento a elemento entre sus entradas. Los círculos grandes que contienen una curva en forma de «S» representan la aplicación de una función diferenciable (como la función sigmoide) a una suma ponderada.
+
+
+=== LSTM convolucional con peephole ===
+También existe el LSTM convolucional con peephole, que integra capacidades de procesamiento de imágenes, útil en aplicaciones como la predicción de precipitaciones.​El símbolo 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ denota el operador de convolución.
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  f
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    f
+                  
+                
+                ∗
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    f
+                  
+                
+                ∗
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  V
+                  
+                    f
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    f
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  i
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    i
+                  
+                
+                ∗
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    i
+                  
+                
+                ∗
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  V
+                  
+                    i
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    i
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  c
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  f
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  i
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  σ
+                  
+                    c
+                  
+                
+                (
+                
+                  W
+                  
+                    c
+                  
+                
+                ∗
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    c
+                  
+                
+                ∗
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    c
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  o
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    g
+                  
+                
+                (
+                
+                  W
+                  
+                    o
+                  
+                
+                ∗
+                
+                  x
+                  
+                    t
+                  
+                
+                +
+                
+                  U
+                  
+                    o
+                  
+                
+                ∗
+                
+                  h
+                  
+                    t
+                    −
+                    1
+                  
+                
+                +
+                
+                  V
+                  
+                    o
+                  
+                
+                ⊙
+                
+                  c
+                  
+                    t
+                  
+                
+                +
+                
+                  b
+                  
+                    o
+                  
+                
+                )
+              
+            
+            
+              
+                
+                  h
+                  
+                    t
+                  
+                
+              
+              
+                
+                =
+                
+                  o
+                  
+                    t
+                  
+                
+                ⊙
+                
+                  σ
+                  
+                    h
+                  
+                
+                (
+                
+                  c
+                  
+                    t
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}f_{t}&=\sigma _{g}(W_{f}*x_{t}+U_{f}*h_{t-1}+V_{f}\odot c_{t-1}+b_{f})\\i_{t}&=\sigma _{g}(W_{i}*x_{t}+U_{i}*h_{t-1}+V_{i}\odot c_{t-1}+b_{i})\\c_{t}&=f_{t}\odot c_{t-1}+i_{t}\odot \sigma _{c}(W_{c}*x_{t}+U_{c}*h_{t-1}+b_{c})\\o_{t}&=\sigma _{g}(W_{o}*x_{t}+U_{o}*h_{t-1}+V_{o}\odot c_{t}+b_{o})\\h_{t}&=o_{t}\odot \sigma _{h}(c_{t})\end{aligned}}}
+  
+
+
+== Entrenamiento ==
+El entrenamiento de un LSTM se realiza mediante el algoritmo de retropropagación a través del tiempo, combinado con métodos de optimización como el descenso de gradiente. Este proceso ajusta los parámetros de la red para minimizar el error entre las predicciones del modelo y los resultados esperados, lo cual permite que la red aprenda a hacer predicciones más precisas. En otras palabras, esto permite calcular los gradientes necesarios durante el proceso de optimización.​ Esto permite ajustar cada peso de la red LSTM en proporción a la derivada del error (en la capa de salida de la red) con respecto al peso correspondiente.
+Un problema del descenso por gradiente en RNN estándar es que los gradientes del error se desvanecen exponencialmente rápido con el tamaño del desfase temporal entre eventos importantes. Esto ocurre debido a que 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          W
+          
+            n
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \lim _{n\to \infty }W^{n}=0}
+  
+ si el radio espectral de 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ es menor que 1.​​
+Sin embargo, con las unidades LSTM, cuando los valores de error son retropropagados desde la capa de salida, el error permanece en la celda de la unidad LSTM. Este «carrusel de error» retroalimenta continuamente el error a cada una de las puertas de la unidad LSTM, hasta que estas aprenden a cortar el valor.
+
+
+=== Función de puntuación CTC ===
+Muchas aplicaciones utilizan pilas de redes LSTM RNA​ y las entrenan mediante clasificación temporal conexionista (CTC, connectionist temporal classification),​ con el objetivo de encontrar una matriz de pesos que maximice la probabilidad de las secuencias de etiquetas en un conjunto de entrenamiento dado el conjunto de secuencias de entrada. Esta función logra tanto alineación como reconocimiento.
+
+
+=== Alternativas ===
+En ocasiones, puede ser ventajoso entrenar partes de una LSTM mediante neuroevolución​ o métodos de gradiente de políticas, especialmente cuando no existe un «profesor» (es decir, no hay etiquetas de entrenamiento).
+
+
+== Aplicaciones ==
+Las aplicaciones de LSTM incluyen:
+
+Control de robots​
+Predicción de series temporales​
+Reconocimiento del habla​​​
+Aprendizaje de ritmos​
+Modelado hidrológico de lluvia–escorrentía​
+Composición musical​
+Aprendizaje de gramática​​​
+Reconocimiento de escritura a mano​​
+Reconocimiento de acciones humanas​
+Traducción de lenguaje de señas​
+Detección de homología de proteínas​
+Predicción de localización subcelular de proteínas​
+Detección de anomalías en series temporales​
+Predicción en gestión de procesos empresariales​
+Predicción en vías de atención médica​
+Análisis semántico​
+Cosegmentación de objetos​​
+Gestión de pasajeros en aeropuertos​
+Modelización de transporte a corto plazo​
+Diseño de fármacos​
+Predicción de mercados​
+Clasificación de actividades en video​
+
+
+== Acontecimientos importantes ==
+2015: Google comenzó a usar LSTM entrenado con CTC para el reconocimiento de voz en Google Voice,​​ de manera que disminuyó errores de transcripción en un 49 %.​
+2016: Google introdujo LSTM en su aplicación Allo para sugerir mensajes​ y en el sistema de traducción neuronal para Google Translate, de manera que disminuyó errores de traducción en un 60 %.​​​ En la conferencia Apple Worldwide Developers, Apple anunció su uso para QuickType​​​ en iPhone y Siri.​​ Amazon lanzó Polly, una tecnología que genera las voces detrás de Alexa, utilizando un LSTM bidireccional para la conversión de texto a voz.​
+2017: Facebook realizó 4.5 mil millones de traducciones automáticas diarias con redes LSTM.​ Microsoft alcanzó un 94.9 % de precisión en el reconocimiento de Switchboard utilizando LSTM orientado a sesiones de diálogo.​
+2018: OpenAI usó LSTM con gradientes de política para superar a humanos en el videojuego Dota 2​ y controlar una mano robótica con destreza sin precedentes.​​
+2019: DeepMind empleó LSTM entrenado con gradientes de política para sobresalir en el videojuego Starcraft II.​​
+
+
+== Historia ==
+
+
+=== Desarrollo ===
+Aspectos del LSTM fueron anticipados por el concepto de «retropropagación enfocada» (Mozer, 1989),​ citado en el artículo sobre LSTM.​
+La tesis de diploma en alemán de Sepp Hochreiter en 1991 analizó el problema de desvanecimiento de gradiente y desarrolló principios fundamentales del método.​ Su supervisor, Jürgen Schmidhuber, consideró la tesis de gran relevancia.​
+Una versión temprana de LSTM fue publicada en 1995 en un informe técnico por Sepp Hochreiter y Jürgen Schmidhuber​ y luego presentada en la conferencia NIPS de 1996.​
+La referencia más común para LSTM se publicó en 1997 en la revista Neural Computation.​ Al introducir las unidades de Carrusel de Error Constante (CEC), LSTM aborda el problema de desvanecimiento de gradiente. La versión inicial del bloque LSTM incluía celdas y puertas de entrada y salida.​
+En 1999, Felix Gers, Jürgen Schmidhuber y Fred Cummins​ introdujeron la puerta de olvido (también llamada «puerta de retención») en la arquitectura LSTM, permitiendo que el LSTM restablezca su propio estado.​ Esta es la versión más utilizada hoy en día.
+En 2000, Gers, Schmidhuber y Cummins añadieron las conexiones peephole,​​ y eliminaron la función de activación de salida.​
+
+
+=== Desarrollo de variantes ===
+2006: Graves, Fernandez, Gomez y Schmidhuber​ introdujeron una nueva función de error para LSTM, la Clasificación Temporal Conexionista (CTC), para alineación y reconocimiento simultáneos de secuencias.
+2005: Graves y Schmidhuber​ publicaron LSTM con retropropagación completa a través del tiempo y LSTM bidireccional.
+2014: Kyunghyun Cho et al.​ publicaron una variante simplificada del LSTM con puerta de olvido,​ denominada unidad recurrente cerrada (GRU).
+2015: Rupesh Kumar Srivastava, Klaus Greff y Schmidhuber usaron principios de LSTM​ para crear la red Highway, una red neuronal prealimentada directa con cientos de capas, mucho más profunda que las redes anteriores.​​​ Paralelamente, se desarrolló la arquitectura ResNet, equivalente a una red Highway sin puertas o con puertas abiertas.​
+2024: Un equipo liderado por Sepp Hochreiter publicó una actualización moderna del LSTM llamada xLSTM (Maximilian et al.).​ Uno de sus bloques, mLSTM, es paralelizable como la arquitectura de transformadores, mientras que otros bloques, sLSTM, permiten el seguimiento de estados.
+
+
+=== Aplicaciones ===
+2001: Gers y Schmidhuber entrenaron LSTM para aprender lenguajes imposibles de aprender con modelos tradicionales como los Modelos Ocultos de Markov.​​ Hochreiter et al. usaron LSTM para metaaprendizaje (es decir, aprender un algoritmo de aprendizaje).​
+2004: Primera aplicación exitosa de LSTM al reconocimiento de voz (Alex Graves et al.).​​
+2005: Wierstra, Gomez y Schmidhuber entrenaron LSTM mediante neuroevolución sin un maestro.​ Mayer et al. lo usaron para controlar robots.​
+2007: Wierstra, Foerster, Peters y Schmidhuber entrenaron LSTM con gradientes de política para aprendizaje por refuerzo sin un maestro.​ En el campo de la biología, Hochreiter, Heuesel y Obermayr aplicaron LSTM a la detección de homología de proteínas.​
+2009: Justin Bayer et al. introdujeron la búsqueda de arquitecturas neuronales para LSTM.​​ Un LSTM entrenado con CTC ganó la competencia de reconocimiento de escritura manual conectada en el ICDAR. Alex Graves lideró el equipo que presentó tres modelos,​ uno de los cuales fue el más preciso y otro el más rápido.​ Esta fue la primera vez que una RNN ganó competencias internacionales.​
+2013: Alex Graves, Abdel-rahman Mohamed y Geoffrey Hinton usaron redes LSTM como componente principal de una red que alcanzó un error del 17.7 % en fonemas en el conjunto de datos TIMIT de habla natural.​ Investigadores de Michigan State University, IBM Research y Cornell University publicaron un estudio en la conferencia KDD.​​​ Su LSTM Consciente del Tiempo (T-LSTM) mostró mejor rendimiento en ciertos conjuntos de datos comparado con el LSTM estándar.
+A pesar de sus ventajas, los LSTM pueden experimentar el problema del gradiente explosivo, donde los gradientes crecen exponencialmente y causan inestabilidad en el entrenamiento. Sin embargo, existen técnicas como la recorte de gradientes para gestionar estos problemas.​
+En la actualidad, los LSTM siguen siendo una herramienta fundamental en el aprendizaje profundo, especialmente en áreas que involucran secuencias temporales complejas. Su capacidad para aprender y retener información durante largos periodos de tiempo ha permitido avances en campos como el reconocimiento de voz, la traducción automática y la predicción de series temporales, consolidando su lugar como una de las arquitecturas más influyentes en la inteligencia artificial moderna.​
+
+
+== Véase también ==
+Atención (aprendizaje automático)
+Aprendizaje por refuerzo
+Aprendizaje profundo
+Red neuronal recurrente
+Serie temporal
+Transformador (modelo de aprendizaje automático)
+Unidades recurrentes cerradas
+Potenciación a largo plazo
+
+
+== Referencias ==
+
+
+== Bibliografía adicional ==
+Monner, Derek D.; Reggia, James A. (2010). «A generalized LSTM-like training algorithm for second-order recurrent neural networks». Neural Networks (en inglés) 25 (1): 70-83. PMC 3217173. PMID 21803542. doi:10.1016/j.neunet.2011.07.003. «Una extensión de alto rendimiento del LSTM, simplificada a un solo tipo de nodo, capaz de entrenar arquitecturas arbitrarias.» 
+Gers, Felix A.; Schraudolph, Nicol N.; Schmidhuber, Jürgen (2002). «Learning precise timing with LSTM recurrent networks». Journal of Machine Learning Research (en inglés) 3: 115-143. 
+Gers, Felix (2001). «Long Short-Term Memory in Recurrent Neural Networks». Tesis doctoral (en inglés). 
+Abidogun, Olusola Adeniyi (2005). Data Mining, Fraud Detection and Mobile Telecommunications: Call Pattern Analysis with Unsupervised Neural Networks (Tesis de Maestría) (en inglés). University of the Western Cape.  Archivado el 22 de mayo de 2012.
+Archivo original con dos capítulos dedicados a la explicación de las redes neurales recurrentes, especialmente en LSTM.
+
+
+== Enlaces externos ==
+Redes neurales recurrentes (en inglés), con más de treinta artículos realizados por Jürgen Schmidhuber y su equipo, para el Instituto Dalle Molle para la Investigación de Inteligencia Artificial.
+Zhang, Aston; Lipton, Zachary; Li, Mu; Smola, Alexander J. (2024). «10.1. Long Short-Term Memory (LSTM)». Dive into deep learning (en inglés). Cambridge New York Port Melbourne New Delhi Singapore: Cambridge University Press. ISBN 978-1-009-38943-3.

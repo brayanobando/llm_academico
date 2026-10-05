@@ -1,0 +1,38 @@
+La base de datos MNIST (por sus siglas en inglés, Modified National Institute of Standards and Technology database)​ es una extensa colección de base de datos que se utiliza ampliamente para el entrenamiento de diversos sistemas de procesamiento de imágenes.​​ También se emplea con frecuencia en el campo del aprendizaje automático para tareas de entrenamiento y prueba.​​
+Esta base de datos fue creada mediante la combinación de muestras de los conjuntos de datos originales del Instituto Nacional de Estándares y Tecnología (National Institute of Standards and Technology o NIST, en inglés).​ Los creadores tomaron esta decisión considerando que el conjunto de entrenamiento del NIST provenía de empleados de la Oficina del Censo estadounidense, mientras que el conjunto de prueba se obtenía de estudiantes de secundaria estadounidenses, lo que no era adecuado para experimentos de aprendizaje automático.​ Además, las imágenes en blanco y negro del NIST fueron normalizadas para ajustarse a un cuadro delimitador de 28x28 píxeles y se suavizaron, lo que introdujo niveles de escala de grises.​
+La base de datos MNIST consta de 60.000 imágenes de entrenamiento y 10.000 imágenes de prueba.​ La mitad de las imágenes de entrenamiento y la mitad de las imágenes de prueba se obtuvieron del conjunto de datos de entrenamiento del NIST, mientras que la otra mitad se tomó del conjunto de datos de prueba del NIST.​ Los creadores originales de la base de datos tienen una lista de algunos de los métodos que se probaron en ella.​ En su documento original, utilizaron una máquina de vectores de soporte para lograr una tasa de error del 0,8%.​
+El MNIST Extendido (en inglés, Extended MNIST o EMNIST) es un nuevo conjunto de datos desarrollado y publicado por el NIST como sucesor (definitivo) de MNIST.​​ Mientras que MNIST solo incluía imágenes de dígitos manuscritos, EMNIST incluye todas las imágenes de la Base de Datos Especial 19 del NIST, que abarca tanto letras mayúsculas como minúsculas, además de dígitos.​​ Las imágenes de EMNIST se han convertido al mismo formato de 28x28 píxeles y se han aplicado el mismo proceso de normalización que se utilizó en MNIST. Por lo tanto, es probable que las herramientas que funcionan con el conjunto de datos MNIST, que es más antiguo y más pequeño, también funcionen sin modificaciones con EMNIST.
+
+
+== Historia ==
+El conjunto de imágenes de la base de datos MNIST fue creado en 1994 mediante la combinación de dos bases de datos del NIST: la Base de Datos Especial 1 y la Base de Datos Especial 3. La Base de Datos Especial 1 contiene dígitos escritos por estudiantes de secundaria, mientras que la Base de Datos Especial 3 consiste en dígitos escritos por empleados de la Oficina del Censo de Estados Unidos.​
+El conjunto de datos original consistía en imágenes binarias de 128x128 píxeles, las cuales fueron procesadas y convertidas en imágenes de 28x28 píxeles en escala de grises. Inicialmente, tanto el conjunto de entrenamiento como el conjunto de pruebas contenían 60.000 muestras cada uno. Sin embargo, posteriormente se descartaron 50.000 muestras del conjunto de pruebas.​
+
+
+== Rendimiento ==
+Algunos investigadores han alcanzado un "rendimiento casi humano" en la base de datos MNIST utilizando un comité de redes neuronales. En el mismo artículo, los autores logran un rendimiento que duplica el de los humanos en otras tareas de reconocimiento.​ La tasa de error más alta registrada​ en el sitio web original de la base de datos es del 12%, y se logra utilizando un clasificador lineal simple sin preprocesamiento.​
+En 2004, expertos lograron alcanzar una tasa de error del 0,42% en el mejor de los casos utilizando un nuevo clasificador llamado LIRA. Este clasificador es un clasificador neuronal que consta de tres capas de neuronas y se basa en los principios del perceptrón de Rosenblatt.​
+Algunos investigadores han evaluado sistemas de inteligencia artificial utilizando la base de datos MNIST sometida a distorsiones aleatorias. En estos casos, los sistemas suelen ser redes neuronales y las distorsiones empleadas suelen ser transformaciones afines o deformaciones elásticas.​ En ocasiones, estos sistemas han tenido mucho éxito, como en el caso en el que se logró una tasa de error en la base de datos del 0,39%.​
+En 2011, se reportó una tasa de error del 0,27%, mejorando el mejor resultado previo, mediante el uso de un sistema similar de redes neuronales.​ En 2013, se afirmó que un enfoque basado en la regularización de las redes neuronales utilizando DropConnect lograba una tasa de error del 0,21%.​
+En 2016, se alcanzó el mejor rendimiento hasta el momento con una sola red neuronal convolucional, con una tasa de error del 0,25%.​ En agosto de 2018, la mejor tasa de error registrada con una sola red neuronal convolucional entrenada con datos de entrenamiento MNIST sin aumento de datos fue del 0,25%.​​ Además, el Parallel Computing Center (Khmelnytskyi, Ucrania) logró un conjunto de solo 5 redes neuronales convolucionales que alcanzaron una tasa de error del 0,21% en MNIST.​​
+Es importante tener en cuenta que algunas imágenes del conjunto de datos de prueba pueden ser apenas legibles y esto puede dificultar alcanzar tasas de error de prueba del 0%.​ En 2018, investigadores del Departamento de Ingeniería de Sistemas e Información de la Universidad de Virginia anunciaron un error del 0,18% utilizando tres tipos de redes neuronales apiladas simultáneamente: redes neuronales totalmente conectadas, recurrentes y convolucionales.​
+
+
+== Clasificadores ==
+La siguiente tabla muestra algunos métodos de aprendizaje automático utilizados en la base de datos MNIST y sus respectivos porcentajes de error, organizados por tipo de clasificador:  
+
+
+== Véase también ==
+ROC
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Ciresan, Dan; Meier, Ueli; Schmidhuber, Jürgen (Junio de 2012). «Multi-column deep neural networks for image classification». 2012 IEEE Conference on Computer Vision and Pattern Recognition (en inglés). New York: Institute of Electrical and Electronics Engineers. pp. 3642-3649. ISBN 9781467312264. OCLC 812295155. doi:10.1109/CVPR.2012.6248110. Consultado el 9 de diciembre de 2013. 
+
+
+== Enlaces externos ==
+Página web oficial. (en inglés)
+Visualización de la base de datos MNIST (grupos de imágenes de dígitos manuscritos MNIST en GitHub). (en inglés)

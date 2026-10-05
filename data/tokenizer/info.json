@@ -1,0 +1,12 @@
+{
+  "vocab_size": 16000,
+  "tokens_especiales": {
+    "[PAD]": 0,
+    "[UNK]": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<|usuario|>": 4,
+    "<|asistente|>": 5
+  },
+  "tokens_por_palabra": 1.308
+}

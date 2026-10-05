@@ -1,0 +1,307 @@
+La teoría de la información, también conocida como teoría matemática de la comunicación o teoría matemática de la información, es una propuesta teórica presentada por Claude E. Shannon y Warren Weaver a finales de la década de 1940. Esta teoría está relacionada con las leyes matemáticas que rigen la transmisión y el procesamiento de la información y se ocupa de la medición de la información y de la representación de la misma, así como también de la capacidad de los sistemas de comunicación para transmitir y procesar información.​ La teoría de la información es una rama de la teoría de la probabilidad que estudia la información y todo lo relacionado con ella: canales, compresión de datos y criptografía, entre otros.
+De manera sucinta, el término "información" especifica un estado (o configuración) específico de un medio físico. ​​​ Sobre todo, un estado que puede afectar al propio entorno físico o a cualquier otro. En consecuencia, la información consiste en una propiedad que puede poseer un sistema físico.​​​​ Y dado que la información es una propiedad de un sistema físico, es vulnerable a las leyes de la naturaleza (por ejemplo, el aumento de la entropía).​​​
+
+
+== Historia ==
+La teoría de la información surgió a finales de la Segunda Guerra Mundial, en los años cuarenta. Fue indicada por Claude E. Shannon a través de un artículo publicado en el Bell System Technical Journal en 1948, titulado Una teoría matemática de la comunicación (texto completo en inglés). En esta época se buscaba utilizar de manera más eficiente los canales de comunicación, enviando una cantidad de información por un determinado canal y midiendo su capacidad; se buscaba la transmisión óptima de los mensajes. 
+Esta teoría es el resultado de trabajos comenzados en la década 1910 por Andrei A. Markov, a quien le siguió Ralph Hartley en 1927, quien fue el precursor del lenguaje binario. A su vez, Alan Turing en 1936, realizó el esquema de una máquina capaz de tratar información con emisión de símbolos, y finalmente Claude Elwood Shannon, matemático, ingeniero electrónico y criptógrafo estadounidense, conocido como "el padre de la teoría de la información”, junto a Warren Weaver, contribuyó en la culminación y el asentamiento de la Teoría Matemática de la Comunicación de 1949 –que hoy es mundialmente conocida por todos como la Teoría de la Información-. Weaver consiguió darle un alcance superior al planteamiento inicial, creando un modelo simple y lineal: Fuente/codificador/mensaje canal/decodificador/destino.
+La necesidad de una base teórica para la tecnología de la comunicación surgió del aumento de la complejidad y de la masificación de las vías de comunicación, tales como el teléfono, las redes de teletipo y los sistemas de comunicación por radio. La teoría de la información también abarca todas las restantes formas de transmisión y almacenamiento de información, incluyendo la televisión y los impulsos eléctricos que se transmiten en las computadoras y en la grabación óptica de datos e imágenes.
+La idea es garantizar que el transporte masivo de datos no sea en modo alguno una merma de la calidad, incluso si los datos se comprimen de alguna manera. Idealmente, los datos se pueden restaurar a su forma original al llegar a su destino. En algunos casos, sin embargo, el objetivo es permitir que los datos de alguna forma se conviertan para la transmisión en masa, se reciban en el punto de destino y sean convertidos fácilmente a su formato original, sin perder ninguna de la información transmitida.​
+
+
+== Desarrollo de la teoría ==
+El modelo propuesto por Shannon es un sistema general de la comunicación que parte de una fuente de información que emite un mensaje. A través de un transmisor, se emite una señal que viaja por un canal, donde puede ser interferida por algún ruido. La señal sale del canal, llega a un receptor que decodifica la información convirtiéndola posteriormente en mensaje que pasa a un destinatario. Con el modelo de la teoría de la información se trata de llegar a determinar la forma más económica, rápida y segura de codificar un mensaje, sin que la presencia de algún ruido complique su transmisión. Para esto, el destinatario debe comprender la señal correctamente; el problema es que aunque exista un mismo código de por medio, esto no significa que el destinatario va a captar el significado que el emisor le quiso dar al mensaje. La codificación puede referirse tanto a la transformación de voz o imagen en señales eléctricas o electromagnéticas, como al cifrado de mensajes para asegurar su privacidad. Un concepto fundamental en la teoría de la información es que la cantidad de información contenida en un mensaje es un valor matemático bien definido y medible. El término cantidad no se refiere a la cuantía de datos, sino a la probabilidad de que un mensaje, dentro de un conjunto de mensajes posibles, sea recibido. En lo que se refiere a la cantidad de información, el valor más alto se le asigna al mensaje que menos probabilidades tiene de ser recibido. Si se sabe con certeza que un mensaje va a ser recibido, su cantidad de información es cero.​
+
+
+== Finalidad ==
+Otro aspecto importante dentro de esta teoría es la resistencia a la distorsión que provoca el ruido, la facilidad de codificación y decodificación, así como la velocidad de transmisión. Es por esto que se dice que el mensaje tiene muchos sentidos, y el destinatario extrae el sentido que debe atribuirle al mensaje, siempre y cuando haya un mismo código en común. La teoría de la información tiene ciertas limitaciones, como lo es la acepción del concepto del código. El significado que se quiere transmitir no cuenta tanto como el número de alternativas necesario para definir el hecho sin ambigüedad. Si la selección del mensaje se plantea únicamente entre dos alternativas diferentes, la teoría de Shannon postula arbitrariamente que el valor de la información es uno. Esta unidad de información recibe el nombre de bit. Para que el valor de la información sea un bit, todas las alternativas deben ser igual de probables y estar disponibles. Es importante saber si la fuente de información tiene el mismo grado de libertad para elegir cualquier posibilidad o si se halla bajo alguna influencia que la induce a una cierta elección. La cantidad de información crece cuando todas las alternativas son igual de probables o cuanto mayor sea el número de alternativas. Pero en la práctica comunicativa real no todas las alternativas son igualmente probables, lo cual constituye un tipo de proceso estocástico denominado Márkov. El subtipo de Márkov dice que la cadena de símbolos está configurada de manera que cualquier secuencia de esa cadena es representativa de toda la cadena completa.
+
+
+== Teoría aplicada a la tecnología ==
+La Teoría de la Información se encuentra aún hoy en día en relación con una de las tecnologías en boga, Internet. Desde el punto de vista social, Internet representa unos significativos beneficios potenciales, ya que ofrece oportunidades sin precedentes para dar poder a los individuos y conectarlos con fuentes cada vez más ricas de información digital. Internet fue creado a partir de un proyecto del departamento de defensa de los Estados Unidos llamado ARPANET (Advanced Research Projects Agency Network) iniciado en 1969 y cuyo propósito principal era la investigación y desarrollo de protocolos de comunicación para redes de área amplia para ligar redes de transmisión de paquetes de diferentes tipos capaces de resistir las condiciones de operación más difíciles, y continuar funcionando aún con la pérdida de una parte de la red (por ejemplo en caso de guerra). 
+Estas investigaciones dieron como resultado el protocolo TCP/IP (Transmission Control Protocol/Internet Protocol), un sistema de comunicaciones muy sólido y robusto bajo el cual se integran todas las redes que conforman lo que se conoce actualmente como Internet. 
+El enorme crecimiento de Internet se debe en parte a que es una red basada en fondos gubernamentales de cada país que forma parte de Internet, lo que proporciona un servicio prácticamente gratuito. A principios de 1994 comenzó a darse un crecimiento explosivo de las compañías con propósitos comerciales en Internet, dando así origen a una nueva etapa en el desarrollo de la red. 
+Descrito a grandes rasgos, TCP/IP mete en paquetes la información que se quiere enviar y la saca de los paquetes para utilizarla cuando se recibe. Estos paquetes pueden compararse con sobres de correo; TCP/IP guarda la información, cierra el sobre y en la parte exterior pone la dirección a la cual va dirigida y la dirección de quien la envía. Mediante este sistema, los paquetes viajan a través de la red hasta que llegan al destino deseado; una vez ahí, la computadora de destino quita el sobre y procesa la información; en caso de ser necesario envía una respuesta a la computadora de origen usando el mismo procedimiento.
+Cada máquina que está conectada a Internet tiene una dirección única; esto hace que la información que se envía no equivoque el destino. Existen dos formas de dar direcciones, con letras o con números. Realmente, las computadoras utilizan las direcciones numéricas para mandar paquetes de información, pero las direcciones con letras fueron implementadas para facilitar su manejo a los seres humanos. Una dirección numérica está compuesta por cuatro partes. Cada una de estas partes está dividida por puntos. 
+
+Ejemplo:	sedet.com.mx  107.248.185.1
+Una de las aplicaciones de la teoría de la información son los archivos ZIP, documentos que se comprimen para su transmisión a través de correo electrónico o como parte de los procedimientos de almacenamiento de datos. La compresión de los datos hace posible completar la transmisión en menos tiempo. En el extremo receptor, un software se utiliza para la liberación o descompresión del archivo, restaurando los documentos contenidos en el archivo ZIP a su formato original. La teoría de la información también entra en uso con otros tipos de archivo; por ejemplo, los archivos de audio y vídeo que se reproducen en un reproductor de MP3 / MP4 se comprimen para una fácil descarga y almacenamiento en el dispositivo. Cuando se accede a los archivos se descomprimen para que estén inmediatamente disponibles para su uso.​
+
+
+== Elementos de la teoría ==
+
+
+=== Fuente ===
+Una fuente es todo aquello que emite mensajes. Por ejemplo, una fuente puede ser una computadora y mensajes sus archivos; una fuente puede ser un dispositivo de transmisión de datos y mensajes los datos enviados, etc. Una fuente es en sí misma un conjunto finito de mensajes: todos los posibles mensajes que puede emitir dicha fuente. En compresión de datos se tomará como fuente el archivo a comprimir y como mensajes los caracteres que conforman dicho archivo.
+
+
+=== Tipos de fuente ===
+Por la naturaleza generativa de sus mensajes, una fuente puede ser aleatoria o determinista. Por la relación entre los mensajes emitidos, una fuente puede ser estructurada o no estructurada (o caótica).
+Existen varios tipos de fuente. Para la teoría de la información interesan las fuentes aleatorias y estructuradas. Una fuente es aleatoria cuando no es posible predecir cuál es el próximo mensaje a emitir por la misma. Una fuente es estructurada cuando posee un cierto nivel de redundancia; una fuente no estructurada o de información pura es aquella en que todos los mensajes son absolutamente aleatorios sin relación alguna ni sentido aparente. Este tipo de fuente emite mensajes que no se pueden comprimir; un mensaje, para poder ser comprimido, debe poseer un cierto grado de redundancia; la información pura no puede ser comprimida sin que haya una pérdida de conocimiento sobre el mensaje.​
+
+
+=== Mensaje ===
+Un mensaje es un conjunto de ceros y unos. Un archivo, un paquete de datos que viaja por una red y cualquier cosa que tenga una representación binaria puede considerarse un mensaje. El concepto de mensaje se aplica también a alfabetos de más de dos símbolos, pero debido a que tratamos con información digital nos referiremos casi siempre a mensajes binarios.
+
+
+=== Código ===
+Un código es un conjunto de unos y ceros que se usan para representar un cierto mensaje de acuerdo con reglas o convenciones preestablecidas. Por ejemplo, al mensaje 0010 lo podemos representar con el código 1101 usado para codificar la función (NOT). La forma en la cual codificamos es arbitraria. Un mensaje puede, en algunos casos, representarse con un código de menor longitud que el mensaje original. Supongamos que a cualquier mensaje S lo codificamos usando un cierto algoritmo de forma tal que cada S es codificado en L(S) bits; definimos entonces la información contenida en el mensaje S como la cantidad mínima de bits necesarios para codificar un mensaje.
+
+
+=== Información ===
+La información contenida en un mensaje es proporcional a la cantidad de bits que se requieren como mínimo para representar al mensaje. El concepto de información puede entenderse más fácilmente si consideramos un ejemplo. Supongamos que estamos leyendo un mensaje y hemos leído "cadena de c"; la probabilidad de que el mensaje continúe con "caracteres" es muy alta. Así, cuando efectivamente recibimos a continuación  "caracteres"  la cantidad de información que nos llegó es muy baja pues estábamos en condiciones de predecir qué era lo que iba a ocurrir. La ocurrencia de mensajes de alta probabilidad de aparición aporta menos información que la ocurrencia de mensajes menos probables. Si luego de "cadena de c" leemos "himichurri" la cantidad de información que estamos recibiendo es mucho mayor.
+
+
+== Entropía e información ==
+La información es tratada como magnitud física, caracterizando la información de una secuencia de símbolos utilizando la entropía. Es parte de la idea de que los canales no son ideales, aunque muchas veces se idealicen las no linealidades, para estudiar diversos métodos de envío de información o la cantidad de información útil que se pueda enviar a través de un canal.
+La información necesaria para especificar un sistema físico tiene que ver con su entropía. En concreto, en ciertas áreas de la física, extraer información del estado actual de un sistema requiere reducir su entropía, de tal manera que la entropía del sistema (
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+) y la  cantidad de  información  (
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+) extraíble están relacionadas por:
+
+  
+    
+      
+        S
+        ≥
+        S
+        −
+        I
+        ≥
+        0
+      
+    
+    {\displaystyle S\geq S-I\geq 0}
+  
+
+
+=== Entropía de una fuente ===
+
+De acuerdo con la teoría de la información, el nivel de información de una fuente se puede medir según la entropía de la misma. Los estudios sobre la entropía son de suma importancia en la teoría de la información y se deben principalmente a C. E. Shannon. Existe, a su vez, un gran número de propiedades respecto de la entropía de variables aleatorias debidas a A. Kolmogorov. Dada una fuente F que emite mensajes, resulta frecuente observar que los mensajes emitidos no resultan equiprobables sino que tienen una cierta probabilidad de ocurrencia dependiendo del mensaje. Para codificar los mensajes de una fuente intentaremos pues utilizar menor cantidad de bits para los mensajes más probables y mayor cantidad de bits para los mensajes menos probables, de forma tal que el promedio de bits utilizados para codificar los mensajes sea menor que la cantidad de bits promedio de los mensajes originales. Esta es la base de la compresión de datos. A este tipo de fuente se la denomina fuente de orden-0, pues la probabilidad de ocurrencia de un mensaje no depende de los mensajes anteriores. A las fuentes de orden superior se las puede representar mediante una fuente de orden-0 utilizando técnicas de modelización apropiadas.
+Definimos la probabilidad de ocurrencia de un mensaje en una fuente como la cantidad de apariciones de dicho mensaje dividido entre el total de mensajes. Supongamos que Pi es la probabilidad de ocurrencia del mensaje-i de una fuente, y supongamos que Li es la longitud del código utilizado para representar a dicho mensaje. La longitud promedio de todos los mensajes codificados de la fuente se puede obtener como:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          P
+          
+            i
+          
+        
+        
+          L
+          
+            i
+          
+        
+      
+    
+    {\displaystyle H=\sum _{i=0}^{n}P_{i}L_{i}}
+  
+
+Promedio ponderado de las longitudes de los códigos de acuerdo con sus probabilidades de ocurrencia, al número H se lo denomina "Entropía de la fuente" y tiene gran importancia. La entropía de la fuente determina el nivel de compresión que podemos obtener como máximo para un conjunto de datos. Si consideramos como fuente un archivo y obtenemos las probabilidades de ocurrencia de cada carácter en el archivo podremos calcular la longitud promedio del archivo comprimido. Se demuestra que no es posible comprimir estadísticamente un mensaje/archivo más allá de su entropía, lo cual implica que considerando únicamente la frecuencia de aparición de cada carácter la entropía de la fuente nos da el límite teórico de compresión. Mediante otras técnicas no-estadísticas puede, tal vez, superarse este límite.
+El objetivo de la compresión de datos es encontrar los Li que minimizan a H; además los Li se deben determinar en función de los Pi, pues la longitud de los códigos debe depender de la probabilidad de ocurrencia de los mismos (los más ocurrentes queremos codificarlos en menos bits). Se plantea pues:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          P
+          
+            i
+          
+        
+        f
+        (
+        
+          P
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle H=\sum _{i=0}^{n}P_{i}f(P_{i})}
+  
+
+A partir de aquí y tras intrincados procedimientos matemáticos que fueron demostrados por Shannon oportunamente se llega a que H es mínimo cuando f(Pi) = log2 (1/Pi). Entonces:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        
+          P
+          
+            i
+          
+        
+        (
+        −
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        
+          P
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle H=\sum _{i=0}^{n}P_{i}(-\log _{2}P_{i})}
+  
+
+La longitud mínima con la cual puede codificarse un mensaje puede calcularse como Li=log2(1/Pi) = -log2(Pi). Esto da una idea de la longitud a emplear en los códigos a usar para los caracteres de un archivo en función de su probabilidad de ocurrencia. Reemplazando Li podemos escribir H como:
+
+  
+    
+      
+        H
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+          
+        
+        −
+        
+          P
+          
+            i
+          
+        
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        
+          P
+          
+            i
+          
+        
+      
+    
+    {\displaystyle H=\sum _{i=0}^{n}-P_{i}\log _{2}P_{i}}
+  
+
+De aquí se deduce que la entropía de la fuente depende únicamente de la probabilidad de ocurrencia de cada mensaje de la misma; por ello la importancia de los compresores estadísticos (aquellos que se basan en la probabilidad de ocurrencia de cada carácter). Shannon demostró, oportunamente, que no es posible comprimir una fuente estadísticamente más allá del nivel indicado por su entropía.​​
+
+
+== Otros aspectos de la teoría ==
+Fuentes de información
+Entropía
+Información mutua
+Neguentropía
+Teorema de muestreo de Nyquist-Shannon
+Canales
+Capacidad
+Compresión de datos
+Codificación de fuente
+Códigos no-singulares
+Códigos unívocamente decodificables
+Extensión de código
+Códigos prefijo (o códigos instantáneos)
+Control de errores
+ARQ
+FEC
+Parada y espera
+Rechazo múltiple
+Rechazo selectivo
+Técnicas híbridas
+Concatenación de códigos
+Tipo 1
+Tipo 2
+Detección de errores
+Bits de redundancia
+Métodos de control de errores
+Paridad
+Códigos autochequeo y autocorrectores
+Códigos de bloque
+Distancia Hamming
+Paridad horizontal y vertical
+Códigos lineales
+Códigos cíclicos
+CRC16
+CRC32
+
+
+== Véase también ==
+Información de Fisher
+Paradoja de Freedman
+Sistema complejo
+Teoría algorítmica de la información
+Teoría de la información integrada
+
+
+== Referencias ==

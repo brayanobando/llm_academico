@@ -1,0 +1,322 @@
+Los teoremas de incompletitud de Gödel son dos célebres teoremas de lógica matemática demostrados por Kurt Gödel en 1931. Ambos están relacionados con la existencia de proposiciones indecidibles en ciertas teorías aritméticas.
+
+
+== Síntesis ==
+El primer teorema de incompletitud afirma que, bajo ciertas condiciones, ninguna teoría matemática formal capaz de describir los números naturales y la aritmética con suficiente expresividad es a la vez consistente y completa. Es decir, si los axiomas de dicha teoría no se contradicen entre sí, entonces existen enunciados que no se pueden probar ni refutar a partir de ellos. En particular, la conclusión del teorema se aplica siempre que la teoría aritmética en cuestión sea recursiva, esto es, una teoría en la que el proceso de deducción se pueda llevar a cabo mediante un algoritmo.[cita requerida]
+La prueba del teorema es totalmente explícita y en ella se construye una fórmula, denotada habitualmente G en honor a Gödel, para la que dada una demostración de la misma, se puede construir una refutación, y viceversa. Sin embargo, la interpretación natural de dicha sentencia en términos de números naturales es verdadera.​
+
+El segundo teorema de incompletitud es un caso particular del primero: afirma que una de las sentencias indecidibles de dicha teoría es aquella que «afirma» la consistencia de la misma. Es decir, que si el sistema de axiomas en cuestión es consistente, no es posible demostrarlo mediante dichos axiomas.
+Los teoremas de incompletitud de Gödel son uno de los grandes avances de la lógica matemática, y supusieron —según la mayoría de la comunidad matemática— una respuesta negativa al segundo problema de Hilbert.​ Los teoremas implican que los sistemas axiomáticos de primer orden tienen severas limitaciones para fundamentar las matemáticas, y supusieron un duro golpe para el llamado programa de Hilbert para la fundamentación de las matemáticas. Por otra parte, durante algún tiempo ni Hilbert ni otros de sus colaboradores fueron conscientes de la importancia del trabajo de Gödel para su programa.
+
+
+== Contexto ==
+Los teoremas de incompletitud de Gödel establecen ciertas limitaciones sobre lo que es posible demostrar mediante un razonamiento matemático. Para hablar con precisión sobre qué «puede demostrarse» o no, se estudia un modelo matemático denominado teoría formal. Una teoría formal consta de una serie de signos y un conjunto de reglas para manipularlos y combinarlos. Mediante estas reglas se pueden distinguir ciertas colecciones de signos como fórmulas, y ciertas sucesiones de fórmulas como demostraciones. Los teoremas de una cierta teoría son entonces todas las fórmulas que puedan demostrarse a partir de una cierta colección inicial de fórmulas que se asuman como axiomas.
+A una teoría formal se le pueden adjudicar ciertas propiedades en función de lo que sea capaz de demostrar. 
+
+Una teoría consistente no contiene contradicciones, es decir, no es posible demostrar a la vez una fórmula y su contraria. Una teoría que no sea consistente no tiene utilidad: debido al principio de explosión, a partir de una contradicción pueden demostrarse todas sus fórmulas, y no sirve para modelizar razonamientos matemáticos.
+Una teoría completa «responde cualquier pregunta», en el sentido de que para cada una de sus fórmulas o bien es demostrable, o bien existe una demostración de su contraria (es refutable). Una teoría completa es óptima, y se corresponde con la intuición sobre la verdad lógica: al igual que toda sentencia debe ser verdadera o falsa, en una teoría completa toda fórmula es demostrable o refutable.
+Sin embargo, el primer teorema de incompletitud establece que, bajo ciertas hipótesis, una teoría formal no puede tener ambas propiedades a la vez. La primera de ellas es que sea una teoría aritmética, es decir, que sus símbolos sirvan para describir los números naturales y sus operaciones y relaciones; y que sea capaz de demostrar algunas propiedades básicas sobre ellos. La segunda hipótesis es que sea una teoría recursiva, lo cual significa que las reglas para manipular sus signos y fórmulas en las demostraciones han de poder ejecutarse mediante un algoritmo: una serie precisa de pasos sin ambigüedad que pueda llevarse a cabo en un tiempo finito, e incluso implementarse mediante un programa informático.
+
+
+== Primer teorema ==
+El enunciado del primer teorema reza:
+
+La demostración de este teorema pasa por construir una cierta fórmula, la «sentencia de Gödel» G, que no puede ser probada ni refutada en la teoría aritmética recursiva T: ni G ni ¬G (la negación de G) son teoremas de T. Se dice entonces que G y ¬G son indecidibles o independientes en T.
+Para llegar a esta, Gödel desarrolló un método para codificar signos y fórmulas mediante números, llamado numeración de Gödel. Usando esta numeración, es posible traducir las propiedades de una teoría formal T, tales como «estos signos constituyen una fórmula» o «estas fórmulas no son una demostración en T», a propiedades aritméticas de dichos números. En particular, la sentencia de Gödel G es una fórmula aritmética cuyo significado es «no existe una demostración de G en la teoría T», o en otras palabras, «no soy demostrable en la teoría T».
+
+
+=== Consecuencias ===
+La sentencia de Gödel G no es demostrable pero es cierta, pues afirma precisamente su propia indemostrabilidad.​ Esto significa que ninguna teoría aritmética en las condiciones del teorema es capaz de demostrar todos los enunciados verdaderos de la aritmética.​ 
+Además, aunque ¬G sea falsa (por afirmar lo contrario que G) no es refutable (puesto G es indemostrable). Esta sentencia puede tomarse como axioma si se desea y esto no produce una contradicción. La teoría resultante contiene muchos de los enunciados verdaderos sobre los números naturales y algunos falsos, empezando por ¬G. Los objetos descritos por una teoría así forman un modelo no estándar de la aritmética.​
+Tomando G (o su contraria) como axioma se obtiene una nueva teoría T' en la que G (o su contraria) es demostrable automáticamente. Sin embargo esto no invalida el teorema, puesto que G afirma su indemostrabilidad relativa a la teoría T. La nueva teoría T' es también incompleta: puede encontrarse una nueva sentencia independiente G', que afirma «no soy demostrable en T'».
+En definitiva, en una teoría formal que sea consistente y completa debe fallar alguna de las hipótesis: o bien no es recursiva y no hay un algoritmo para distinguir los axiomas del resto de fórmulas; o bien no son aritméticas, y no incluyen las propiedades básicas necesarias de los números naturales. Por ejemplo, en la demostración del teorema de completitud semántica se utilizan teorías consistentes y completas que no son recursivas.​ Por otro lado, la aritmética de Presburger es una colección de axiomas sobre los números naturales que omite varias de sus propiedades, a tal punto que una teoría basada en ellos puede ser consistente y completa.​
+
+
+== Segundo teorema ==
+El segundo teorema de incompletitud muestra otro ejemplo explícito de una fórmula que ninguna teoría aritmética puede demostrar, además de G. De nuevo, usando la numeración de Gödel, puede encontrarse una fórmula, denotada Consis T, cuyo significado es «no puede encontrarse una contradicción en T», o en otras palabras, «T es consistente».
+
+La demostración del segundo teorema requiere traducir el primero a una fórmula. El primer teorema afirma, entre otras cosas, que si T es consistente, entonces G no es demostrable. La fórmula que afirma la consistencia de T es Consis T, mientras que la fórmula que afirma la indemostrabilidad de G es la propia G. La fórmula que traduce el primer teorema (una parte de él) es Consis T ⇒ G, donde «⇒» significa implicación. Gödel demostró que esta fórmula es un teorema,​ y que por lo tanto Consis T no es un teorema: si lo fuera, de las reglas básicas de T como teoría formal se deduciría que G es demostrable, en contradicción con el enunciado del primer teorema de incompletitud.
+
+
+=== Consecuencias ===
+El segundo teorema de incompletitud limita las posibilidades de demostrar la consistencia de una teoría formal T, puesto que no puede hacerse utilizando únicamente la propia T. Además, si se encuentra una teoría más fuerte T' en la que Consis T pueda demostrarse, la propia consistencia de T' no podrá demostrarse en T' ni tampoco en T. Por ello, el segundo teorema se considera una respuesta negativa al llamado programa de Hilbert, que proponía demostrar la corrección de los razonamientos matemáticos basados en objetos infinitos usando tan solo razonamientos basados en objetos finitos, menos potentes que los primeros.
+
+
+== Enunciados indecidibles ==
+
+El primer teorema de incompletitud de Gödel demuestra la existencia de enunciados indecidibles o independientes en la aritmética de Peano, y tanto el primero como el segundo muestran ejemplos concretos de enunciados indecidibles. Desde entonces se han encontrado otros ejemplos de enunciados independientes de los axiomas de Peano, como por ejemplo el teorema de Ramsey «fuerte». Existen además numerosos ejemplos de enunciados independientes en otras teorías formales más fuertes que la aritmética, como la hipótesis del continuo o el axioma de elección en teoría de conjuntos; o incluso en teorías no directamente relacionadas con la aritmética, como en el caso de la geometría euclídea y el postulado de las paralelas.
+
+
+== Discusión e implicaciones ==
+Los resultados de incompletitud afectan a la filosofía de las matemáticas, particularmente a los puntos de vista tales como el formalismo, que usa la lógica formal para definir sus principios.
+Se puede parafrasear el primer teorema diciendo que «nunca se podrá encontrar un sistema axiomático que sea capaz de demostrar todas las verdades matemáticas y ninguna falsedad».
+Por otra parte, desde una perspectiva estrictamente formalista esta paráfrasis se consideraría sin significado porque presupone que la «verdad» y «falsedad» matemáticas están bien definidas en un sentido absoluto, en lugar de ser relativas a cada sistema formal.
+La siguiente reformulación del segundo teorema es todavía más inquietante para los fundamentos de las matemáticas:
+
+Si se puede demostrar que un sistema axiomático es consistente a partir de sí mismo, entonces es inconsistente.
+Por tanto, para establecer la consistencia de un sistema 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ se necesita utilizar otro sistema 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+, pero una prueba en 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ no es totalmente convincente a menos que la consistencia de 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ ya se haya probado sin emplear 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+.
+La consistencia de los axiomas de Peano para los números naturales por ejemplo se puede demostrar en la teoría de conjuntos, pero no en la teoría de los números naturales por sí sola.
+Esto proporciona una respuesta negativa al problema número dos de la famosa lista de cuestiones abiertas importantes en matemáticas de David Hilbert (llamada problemas de Hilbert).
+En principio, los teoremas de Gödel todavía dejan alguna esperanza: podría ser posible producir un algoritmo general que para una afirmación dada determine si es indecidible o no, permitiendo a los matemáticos evitar completamente los problemas indecidibles. Sin embargo, la respuesta negativa al Entscheidungsproblem demuestra que no existe tal algoritmo.
+Es de notar que los teoremas de Gödel solo son aplicables a sistemas axiomáticos suficientemente fuertes. Este término significa que la teoría contiene la suficiente aritmética para llevar a cabo las instrucciones de codificación requeridas por la prueba del primer teorema de incompletud. Esencialmente, todo lo que se exige son algunos hechos básicos sobre la adición y la multiplicación tal y como por ejemplo se formalizan en la aritmética Q de Robinson.
+Hay sistemas axiomáticos incluso más débiles que son consistentes y completos, por ejemplo la aritmética de Presburger que demuestra todas las afirmaciones de primer orden ciertas aplicando solo la suma.
+El sistema axiomático puede consistir en un número infinito de axiomas (tal y como hace la aritmética de primer orden de Peano), pero para poder aplicarse el teorema de Gödel debe haber un algoritmo efectivo que sea capaz a verificar la corrección de las pruebas. Por ejemplo, el conjunto de todas las declaraciones de primer orden que son ciertas en el modelo estándar de los números naturales es completo. El teorema de Gödel no se puede aplicar porque no hay ningún procedimiento efectivo que decide si una cierta declaración es un axioma. De hecho, que esto sea así es una consecuencia del primer teorema de incompletud de Gödel.
+Otro ejemplo de una especificación de una teoría en la que el primer teorema de Gödel no es aplicable se puede construir de la siguiente manera: ordenemos todas las posibles declaraciones sobre los números naturales primero por su longitud y luego en orden lexicográfico; comencemos con un sistema axiomático inicialmente igual a los axiomas de Peano, repasemos la lista de declaraciones una a una, y, si la declaración actual no se puede demostrar ni refutar a partir del actual sistema de axiomas, entonces añadámosla a la lista.
+Esto crea un sistema que es completo, consistente y suficientemente potente, pero no recursivamente enumerable.
+El propio Gödel solo demostró una versión de los teoremas arriba expuestos que es técnicamente un poco más débil; la primera demostración de las versiones descritas arriba fue dada por J. Barkley Rosser en 1936.
+En esencia, la prueba del primer teorema consiste en construir una declaración 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ dentro de un sistema formal axiomático al que se le puede dar la siguiente interpretación meta matemática:
+
+  
+    
+      
+        p
+        =
+      
+    
+    {\displaystyle p=}
+  
+ «Esta declaración no se puede probar.»
+Como tal, puede verse como una versión moderna de la paradoja del mentiroso. Al contrario de la declaración del mentiroso, 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ no se refiere directamente a sí mismo; la interpretación de arriba solo se puede "ver" desde fuera del sistema formal.
+En un trabajo publicado en 1957 en Journal of Symbolic Logic, Raymond Smullyan mostró que los resultados de incompletitud de Gödel pueden obtenerse para sistemas mucho más elementales que los considerados por Gödel. Smullyan también ha reivindicado las pruebas más simples con el mismo alcance, basadas en los trabajos de Alfred Tarski sobre el concepto de verdad en los sistemas formales. Más simples, pero no menos perturbadoras filosóficamente. Smullyan no ha plasmado sus reflexiones sobre incompletitud solo en obras técnicas; también han inspirado célebres libros de divulgación como ¿Cómo se llama este libro? 
+Si el sistema axiomático es consistente, la prueba de Gödel muestra que 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ (y su negación) no se pueden demostrar en el sistema.
+Por tanto 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ es cierto (
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ afirma no ser demostrable y no lo es) y, sin embargo, no se puede probar formalmente en el sistema.
+Fíjese que añadir 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ a los axiomas del sistema no resolvería el problema: habría otra sentencia de Gödel para la teoría ampliada.
+Roger Penrose afirma que esta (presunta) diferencia entre lo que se puede probar mecánicamente y lo que los humanos pueden ver como cierto muestra que la inteligencia humana no es mecánica en su naturaleza. También John R. Lucas se ha ocupado de esta cuestión en Mentes, Máquinas y Gödel.​
+Esta perspectiva no está ampliamente aceptada, porque tal y como lo plantea Marvin Minsky, la inteligencia humana es capaz de errar y de comprender declaraciones que son en realidad inconsistentes o falsas. Sin embargo, Minsky ha informado de que Kurt Gödel le dijo a él en persona que él creía que los seres humanos tienen una forma intuitiva, no solamente computacional, de llegar a la verdad y por tanto su teorema no limita lo que puede llegar a ser sabido como cierto por los humanos.
+Véanse Refutaciones a la interpretación de Penrose en los Enlaces en Inglés de la sección Enlaces externos y referencias
+La posición de que el teorema muestra que los humanos tienen una habilidad que transciende la lógica formal también se puede criticar de la siguiente manera: No sabemos si la sentencia 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ es cierta o no, porque no sabemos (ni podemos saber) si el sistema es consistente.
+De modo que en realidad no sabemos ninguna verdad que esté fuera del sistema.
+Todo lo que sabemos es lo siguiente:
+
+O 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ es indemostrable dentro del sistema, o el sistema es inconsistente.
+Esta declaración es fácilmente demostrable dentro del sistema.
+Otra implicación es que el trabajo de Gödel motivó a Alan Turing (1912-1954) a estudiar qué funciones eran susceptibles de poder ser calculadas y cuáles no. Para ello se sirvió de su Máquina de Turing, una máquina de propósito general mediante la que formalizó las funciones y procedimientos de cálculo, demostrando que existían funciones que no son posibles de calcular mediante la Máquina de Turing. El paradigma de este conjunto de funciones lo representa la función que establece: «si dada una Máquina de Turing, esta produce un resultado o, por el contrario, se queda calculando indefinidamente». Esta función, conocida con el nombre de Problema de parada (Halting Problem), será pieza fundamental para demostrar la incomputabilidad de ciertas funciones.
+
+
+== Demostración de los teoremas ==
+Este portal es tan solo divulgación invitamos al lector consultar bibliografía muy seria lo que decimos son descripciones no demostraciones indispensables
+La demostración de los teoremas de incompletitud se basa en tres conceptos, siguiendo el artículo de 1931 
+"SOBRE SENTENCIAS FORMALMENTE INDECIDIBLES DE PRINCIPIA MATHEMATICA Y SISTEMAS AFINES" :
+
+La numeración de Gödel, que permite traducir las teorías formales a operaciones de aritmética pura.
+La potencia expresiva de las teorías formales aritméticas, cuyas expresiones recogen dichas operaciones.
+El lema diagonal, que permite que las fórmulas sean autorreferentes.
+El enunciado original debido a Gödel, cuya demostración se esboza en esta sección, es más débil que el presentado arriba, ya que en lugar de la consistencia de la teoría T se exige una propiedad más fuerte, la ω-consistencia.
+
+(Los numerales [n] son los símbolos que utilice el lenguaje de la teoría para especificar los números naturales concretos. En el ejemplo de la aritmética de Peano en la sección siguiente, los numerales son los símbolos dados por: [0] ≡ 0, [1] ≡ S0, [2] ≡ SS0, etc.).
+La ω-consistencia implica la consistencia (pero no al revés). El enunciado «fuerte», en el que solo se requiere la consistencia de la teoría fue probado por J. B. Rosser mediante un método muy similar.
+
+
+=== Numeración de Gödel ===
+
+La numeración de Gödel es una herramienta que permite relacionar las teorías formales con la aritmética. El lenguaje de una teoría formal de primer orden está compuesto por una cantidad —a lo sumo— numerable de signos, como por ejemplo:
+
+∃ , ⇒ , ¬ , |, =, x , y , z , ... , 0 , + , × , S
+en el caso del lenguaje de la aritmética de Peano, donde además de los símbolos lógicos y las variables, aparecen algunos símbolos adicionales para la arimética (donde S es el símbolo para denotar «el número siguiente a»). También el conjunto de todas las cadenas (sucesiones finitas de signos) es numerable, así como el conjunto de las sucesiones finitas de cadenas.
+Una numeración de Gödel es una asignación de un único número natural para cada elemento de cada uno de estos tres conjuntos: signos, cadenas de signos y sucesiones de cadenas.
+
+Puesto que la manipulación de estos signos, cadenas y sucesiones puede traducirse en manipulación de unos ciertos números, tanto la sintaxis que distingue las cadenas de signos «con sentido» —las fórmulas− como el cálculo deductivo que distingue las sucesiones de cadenas «que demuestran algo» —las demostraciones— se ven traducidas a operaciones aritméticas. Es decir, existen una serie de relaciones y funciones aritméticas que se corresponden con las reglas sintácticas y del cálculo deductivo, como por ejemplo:
+
+Sig x : x es (el número de Gödel de) un signo
+Cad x : x es (el número de Gödel de) una cadena (de signos)
+(Se omite «el número de Gödel de» en adelante)
+Suc x : x es una sucesión (de cadenas)
+Form x : la cadena x es una fórmula
+Ax x : la fórmula x es un axioma
+Cons(x, y, z): «x es una fórmula consecuencia inmediata de las fórmulas y y z»
+Dem(x, y): «la sucesión x es una demostración de la fórmula y»
+La forma precisa de estas funciones y relaciones es laboriosa y depende del criterio que se haya escogido para efectuar la numeración de Gödel. En particular la relación Ax x ha de construirse teniendo en cuenta un cierto conjunto de axiomas concreto, luego la relación Dem hace referencia a una teoría concreta que no se ha especificado.
+
+
+=== Expresabilidad y recursividad ===
+
+Mediante la numeración de Gödel, es posible «traducir» los signos y reglas de una teoría formal T en números y operaciones aritméticas. Es posible ir más allá, ya que T es una teoría aritmética y se pueden «recodificar» las mencionadas operaciones mediante el lenguaje formal de T, al igual que se puede hacer con otras funciones y relaciones aritméticas como por ejemplo:
+
+La función «multiplicar por 2» está representada por la fórmula: y = [2] × x
+La relación de orden x ≤ y, puede expresarse mediante: ∃z, z + x = y
+La relación «x e y son primos entre sí» puede expresarse como: ∀z, z ≠ [1] ∧ ∃w, x = z × w ⇒ ¬∃u, y = z × u.
+Cada una de estas relaciones es expresada por su fórmula correspondiente, en el sentido de que si dos números están relacionados, puede demostrarse la expresión formal correspondiente; y cuando no lo están, puede refutarse.​ Por ejemplo:
+
+Para cada entero n, se tiene que si n es par puede probarse la expresión formal ∃x, [n] = [2] × x; y si es impar, puede refutarse dicha fórmula.
+Para cada par de enteros m y n, si se tiene m ≤ n puede demostrarse la fórmula ∃z, z + [m] = [n]; cuando m > n, puede refutarse dicha expresión.
+Que las relaciones presentadas en la sección anterior —como Dem— sean expresables, implica que una teoría formal aritmética es lo suficientemente potente como para «hablar» de las características de una teoría formal arbitraria y, en particular, de sí misma.
+Probar que todas estas relaciones y funciones son expresables es sencillo si son recursivas, es decir, si pueden calcularse o verificarse mediante un algoritmo, ya que puede demostrarse que toda relación recursiva es expresable en una teoría aritmética. Las teorías formales para las que esto es posible —asignar los números de Gödel de manera que distinguir los signos, cadenas, sucesiones, fórmulas, consecuencias y axiomas, puede llevarse a cabo con un algoritmo— son las llamadas teorías recursivas, y por ello esta característica se asume como hipótesis en los teoremas de incompletitud.
+
+
+=== Diagonalización ===
+Para construir la sentencia autorreferente G ha de idearse una manera para que una fórmula hable de las propiedades de su número de Gödel correspondiente. Esto ha de hacerse de manera indirecta, ya que dada una fórmula φ con número de Gödel n, otra fórmula que «hable» de φ mediante el numeral [n] en general tendrá un número de Gödel mayor que n, y por tanto no puede ser la propia φ. Esto se consigue mediante el llamado lema diagonal.
+
+En definitiva, dada una propiedad cualquiera φ(x) existe una sentencia ψ que afirma «mi número de Gödel cumple la propiedad φ».
+
+
+=== Demostración del primer teorema ===
+Sea una teoría formal aritmética y recursiva T ω-consistente. Sea la fórmula ¬∃z, DEM(z, x), donde DEM es la fórmula que expresa la relación numérica Dem —relativa a la teoría formal T—. Por el lema de diagonalización existe una sentencia G con número de Gödel g, para la que se demuestra G ⇔ ¬∃z, DEM(z, [g]), es decir, que afirma «ningún número codifica una demostración (en T) de la fórmula representada por g», o de otro modo, «no soy demostrable (en T)». La negación de esta sentencia, ¬G, es equivalente a ∃z, DEM(z, [g]), o «mi negación es demostrable (en T)».
+Supóngase entonces que G puede demostrarse. Entonces existe un número n que cumple Dem(n, g), y en T puede probarse entonces DEM([n], [g]), lo cual implica formalmente ¬G; y esto es imposible si T es consistente. Por tanto no existe una demostración de G, y se cumple ¬Dem(n, g) para todos los números n, lo cual resulta en un número infinito de teoremas formales ¬DEM([n], [g]) para cada numeral [n]. Como T es ω-consistente, no puede ocurrir entonces que ∃x, DEM(x, [g]) sea un teorema, por lo que ¬G es indemostrable, y T es indecidible.
+
+
+=== Demostración del segundo teorema ===
+La demostración del segundo teorema de incompletitud requiere de un hecho técnico que Gödel originalmente no probó. Sea una teoría T en las condiciones anteriores y sea la fórmula Consis T ≡ ¬∃z, DEM(z, [k]), donde k es el número de Gödel de la sentencia 0 = 1. Consis T afirma que la teoría T es consistente (pues deja algo sin demostrar). La versión formal (de la primera parte) del primer teorema de incompletitud puede expresarse como Consis T ⇒ ¬∃y, DEM(y, [g]) y esto es equivalente precisamente a Consis T ⇒ G. De modo que, de poder probar formalmente esta sentencia, Consis T sería indemostrable puesto que se tendría entonces una demostración de G, en contradicción con el primer teorema.
+El hecho técnico que se necesita es precisamente una prueba de que la demostración del primer teorema de incompletitud puede «traducirse» en una demostración formal de la sentencia Consis T ⇒ ¬∃y, DEM(y, [g]). Esto es posible en toda teoría aritmética recursiva, ya que verifican unas ciertas condiciones de demostrabilidad.
+
+
+== Véase también ==
+Sobre proposiciones formalmente indecidibles de Principia Mathematica y sistemas relacionados
+Filosofía de las matemáticas
+Consistencia lógica
+Autorreferencia
+Argumento de Penrose-Lucas
+Logicismo
+Platonismo matemático
+Teorema de completitud de Gödel
+Teorema de Löb
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Barwise, Jon (1989). Handbook of mathematical logic (en inglés). Elsevier. ISBN 9780444863881. 
+Boolos, George; Burgess, John P.; Jeffrey, Richard C. (2007). Computability and logic (en inglés). Cambridge University Press. ISBN 9780521701464. .
+Domeisen, Norbert (1990).  Peter Lang, ed. Zentralblatt MATH Logik der Antinomien (en alemán). ISBN 3-261-04214-1.  (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).
+Gödel, Kurt (1931). «Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme, I». Monatshefte für Mathematik und Physik (en alemán) 38: 173-198. doi:10.1007/BF01700692. 
+Traducido al castellano en:
+——— (1981).  Jesús Mosterín, ed. Obras completas. Alianza Editorial. ISBN 84-206-2286-9. 
+——— (2006). Sobre proposiciones formalmente indecidibles de los Principia Mathematica y sistemas afines. KRK Ediciones. ISBN 978-84-96476-95-0. 
+Hofstadter, Douglas R. (1989). Gödel, Escher, Bach. Tusquets editores. ISBN 84-7223-459-2. 
+Hofstadter, Douglas R.; Nagel, Ernest; Newman, James Roy (2002). Gödel's Proof (en inglés). NYU Press. ISBN 0-8147-5816-9. 
+Ivorra, Carlos, Lógica y teoría de conjuntos, consultado el 27 de julio de 2011 ..
+Martínez, Guillermo (2009). Gödel para todos. Seix Barral. ISBN 978-950-731-605-0. 
+Rosser, B. (1936). «Extensions of some theorems of Gödel and Church». Journal of Symbolic Logic 1 (3): 87-91. 
+Smullyan, Raymond (1992). Gödel's Incompleteness Theorems (en inglés). Oxford University Press. ISBN 0-19-504672-2. 
+
+
+== Enlaces externos ==
+Refutaciones a la interpretación de Penrose:
+Is Mathematical Insight Algorithmic?
+How Subtle is Gödel's Theorem
+Why Gödel's Theorem Cannot Refute Computationalism
+Human and Machine Understanding of Mathematics
+Ignacio Jané, La obra de Gödel en lógica matemática y teoría de conjuntos. Una introducción sintética e histórica que respeta los conceptos originales, evitando malentendidos.
+Reseña en castellano de Torkel Franzén, Gödel's Theorem: An Incomplete Guide to its Use and Abuse. El libro de Franzen, de 2005, es muy citado como obra de interés para introducir al verdadero sentido de los teoremas de Gödel y prevenir frente a su aplicación injustificada en campos no matemáticos.
+Kārlis Podnieks: Around Goedel's Theorem, http://www.ltn.lv/~podnieks/gt.html
+Hilbert's second problem
+Gödel, K. (1929). Über die Vollständigkeit des Logikkalküls. Disertación doctoral. Universidad de Viena.  Primera demostración del teorema de completitud.
+Gödel, K. (1930). «Die Vollständigkeit der Axiome des logischen Funktionenkalküls». Monatshefte für Mathematik (en alemán) 37: 349-360. doi:10.1007/BF01696781. JFM 56.0046.04. 
+Kurt Friedrich Gödel

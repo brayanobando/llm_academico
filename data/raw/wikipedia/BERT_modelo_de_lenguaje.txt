@@ -1,0 +1,39 @@
+BERT (Bidirectional Encoder Representations from Transformers) o Representación de Codificador Bidireccional de Transformadores es una técnica basada en redes neuronales para el pre-entrenamiento del procesamiento del lenguaje natural (PLN) desarrollada por Google.​ BERT fue creado y publicado en 2018 por Jacob Devlin y sus compañeros en Google​​y su uso original fue para comprender mejor las búsquedas de las personas usuarias.​ 
+Lo que distingue a BERT es su capacidad para captar el contexto bidireccional en una oración. Es decir,  que puede captar el significado de una palabra en relación con las palabras que la rodean. Esta mejora en la comprensión contextual ha llevado a un mayor rendimiento en diversas tareas de procesamiento del lenguaje natural. Lo cual ha sido aprovechado por Google para perfeccionar la comprensión de las búsquedas.​ La implementación de BERT ha llevado a resultados de búsqueda más precisos y relevantes, ya que el motor de búsqueda puede entender mejor el contexto detrás de las consultas. El modelo original de BERT se entrenó utilizando dos grandes conjuntos de datos en lengua inglesa: BookCorpus y Wikipedia en inglés. Desde su introducción, BERT ha sido adoptado en todo el mundo y se ha utilizado en diversas aplicaciones, desde mejorar la calidad de las respuestas automáticas hasta potenciar la capacidad de las máquinas para entender el lenguaje en contextos complejos.
+
+
+== Rendimiento ==
+Cuando se publicó BERT, logró un rendimiento de vanguardia en una serie de tareas de comprensión del lenguaje natural:  
+
+Conjunto de tareas GLUE (Evaluación de comprensión del lenguaje general) (que consta de 9 tareas)
+SQuAD (Stanford Question Answering Dataset) v1.1 y v2.0.
+SWAG (situaciones con generaciones adversas)
+Aún no se conocen bien los motivos del rendimiento de vanguardia de BERT en estas tareas de comprensión del lenguaje natural.​​ La investigación se ha centrado en comprender la relación detrás de la salida de BERT como resultado de secuencias de entrada cuidadosamente elegidas,​​ análisis de representaciones internas de vectores a través de clasificadores de prueba,​​ y las relaciones representadas por los pesos de atención.   
+
+
+== Historia ==
+BERT tiene su origen en los modelos de pre-entrenamiento para representación de contexto, incluido el aprendizaje de secuencia semi-supervisado.​ Ejemplos de estos modelos son: ELMo, desarrollado por una colaboración entre investigadores del Instituto Allen para la Inteligencia Artificial (de Microsoft) y la Universidad de Washington​ y ULMFit (ajuste del modelo de idioma universal para la clasificación de textos).​  
+No obstante, a diferencia de los modelos anteriores, BERT es una representación de lenguaje bidireccional (es decir que se juzgan las palabras ubicadas a la izquierda y a la derecha de cada uno de los términos),​ sin supervisión (es decir, que no requiere un corpus con las respuestas correctas, sino que se infieren directamente), pre-entrenada usando solo un corpus de texto plano.  
+Por otro lado, los modelos como word2vec o GloVe generan una representación de una sola palabra para cada palabra en el vocabulario, mientras que BERT tiene en cuenta el contexto para cada aparición de una palabra determinada. Por ejemplo, mientras que el vector para palabras polisémicas como "estrella" tendrá la misma representación vectorial de word2vec para sus dos ocurrencias en las oraciones "Es una estrella de rock" y "El sol es una estrella", BERT proporciona una representación diferente para cada oración. 
+El 25 de octubre de 2019, Google Search anunció que habían comenzado a aplicar modelos BERT para consultas de búsqueda en inglés dentro de Estados Unidos.​ El 9 de diciembre de 2019, se informó que BERT había sido integrado a Google Search para más de 70 idiomas.​
+Una encuesta de literatura de 2020 concluyó que "en poco más de un año, BERT se ha convertido en una línea de base omnipresente en los experimentos de procesamiento de lenguaje natural (NLP) que cuenta con más de 150 publicaciones de investigación que analizan y mejoran el modelo".​ 
+
+
+== Reconocimientos ==
+BERT ganó el Premio al Mejor Artículo Largo en la Conferencia Anual (2019) del Capítulo de América del Norte de la Asociación de Lingüística Computacional (NAACL).​ 
+
+
+== Véase también ==
+Word2vec
+Document-term matrix
+Feature extraction
+Feature learning
+Neural network language models
+Vector space model
+Thought vector
+fastText
+GloVe
+TensorFlow
+
+
+== Referencias ==

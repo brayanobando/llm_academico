@@ -1,0 +1,106 @@
+GPT-4 (del inglés: Generative Pre-trained Transformer 4) es un modelo de lenguaje grande (LLM) creado por OpenAI. Se lanzó el 14 de marzo de 2023​ y está disponible a través de la API y para los usuarios de ChatGPT Plus.​​​
+Como modelo basado en transformer, GPT-4 fue preentrenado para predecir el siguiente token (utilizando tanto datos públicos como «datos con licencia de proveedores de terceros»), y luego fue ajustado mediante aprendizaje por refuerzo a partir de retroalimentación humana e inteligencia artificial (IA), para lograr una alineación con el ser humano y cumplir con las políticas.​
+Resumiendo rumores de otros sitios, la revista técnica Vox informó de que GPT-4 era «a todas luces» superior a los modelos GPT-3 y GPT-3.5 de OpenAI lanzados anteriormente.​​​ The Verge también citó rumores de que aumentaría sustancialmente el número de parámetros de GPT-3 de 175.000 millones a 100 billones, algo que el director ejecutivo de OpenAI, Sam Altman, describió como «una completa idiotez».​ Los representantes estadounidenses Don Beyer y Ted Lieu confirmaron al New York Times que Altman visitó el Congreso en enero de 2023 para hacer una demostración de GPT-4 y sus «controles de seguridad» mejorados en comparación con otros modelos de IA.​
+La organización produjo tres versiones de GPT-4 con contexto de 8, 32 y 128 mil tokens, una mejora significativa sobre GPT-3.5 y GPT-3, que estaban limitados a 4 y 2 mil tokens respectivamente.​ A diferencia de su predecesor, GPT-4 puede tomar imágenes además de texto como entradas.​
+
+
+== Antecedentes ==
+OpenAI presentó el primer modelo GPT (GPT-1) en 2018, publicando un artículo llamado "Mejorando la comprensión del lenguaje mediante el preentrenamiento generativo".​ Estaba basado en la arquitectura de transformers y fue entrenado en un gran corpus de libros.​ Al año siguiente, introdujeron GPT-2, un modelo más grande capaz de generar texto coherente.​ En 2020, introdujeron GPT-3, un modelo con 100 veces más parámetros que GPT-2, capaz de realizar diversas tareas con pocos ejemplos.​ GPT-3 se mejoró aún más en GPT-3.5, que se utilizó para crear el producto de chatbot ChatGPT.
+Los rumores afirman que GPT-4 tiene 1,760 millones de parámetros, lo cual fue estimado por primera vez según la velocidad de funcionamiento y por George Hotz.​
+
+
+== Capacidades ==
+
+OpenAI afirmó que GPT-4 es "más confiable, creativo y capaz de manejar instrucciones mucho más matizadas que GPT-3.5."​ Produjeron dos versiones de GPT-4, con ventanas de contexto de 8,192 y 32,768 tokens, una mejora significativa sobre GPT-3.5 y GPT-3, que estaban limitados a 4,096 y 2,048 tokens, respectivamente.​ Algunas de las capacidades de GPT-4 fueron previstas por OpenAI antes de entrenarlo, aunque otras capacidades seguían siendo difíciles de predecir debido a desviaciones observadas respecto a las leyes de escalamiento esperadas. A diferencia de sus predecesores, GPT-4 es un modelo multimodal: puede tomar imágenes además de texto como entrada;​ esto le otorga la capacidad de describir el humor en imágenes inusuales, resumir texto a partir de capturas de pantalla y responder preguntas de exámenes que contienen diagramas.​
+Para obtener un mayor control sobre GPT-4, OpenAI introdujo el "mensaje del sistema", una directiva en lenguaje natural dada a GPT-4 para especificar su tono de voz y tarea. Por ejemplo, el mensaje del sistema puede instruir al modelo a "ser un pirata shakesperiano", en cuyo caso responderá en prosa rimada y shakesperiana, o pedirle que "siempre escriba la salida de su respuesta en formato JSON", en cuyo caso el modelo lo hará, agregando claves y valores según considere adecuado para que coincida con la estructura de su respuesta. En los ejemplos proporcionados por OpenAI, GPT-4 se negó a desviarse de su mensaje del sistema a pesar de las solicitudes del usuario durante la conversación.​
+Cuando se le instruye, GPT-4 puede interactuar con interfaces externas.​ Por ejemplo, se puede instruir al modelo a encerrar una consulta entre etiquetas <search></search> para realizar una búsqueda en la web, cuyo resultado se insertaría en el indicador del modelo para permitirle formar una respuesta. Esto permite que el modelo realice tareas más allá de sus capacidades normales de predicción de texto, como utilizar APIs, generar imágenes y acceder y resumir páginas web.​
+Un artículo de 2023 en Nature afirmó que los programadores han encontrado útil a GPT-4 para asistir en tareas de codificación (a pesar de su propensión a cometer errores), como encontrar errores en código existente y sugerir optimizaciones para mejorar el rendimiento. El artículo citó a un biólogo especializado en biofísica que encontró que el tiempo que necesitaba para migrar uno de sus programas de MATLAB a Python pasó de días a "una hora más o menos". En una prueba de 89 escenarios de seguridad, GPT-4 produjo código vulnerable a ataques de inyección SQL el 5% del tiempo, una mejora respecto a Github Copilot del año 2021, que producía vulnerabilidades el 40% del tiempo.​
+También se ha agregado la unión de Dall-e 3 con GPT-4, una herramienta que convierte palabras en arte visual, desafiando los límites tradicionales de la creatividad. Esta tecnología no es solo una muestra de la capacidad de la IA para generar imágenes impresionantes, sino que también es una ventana a un futuro donde la colaboración entre la inteligencia humana y artificial puede dar lugar a obras de arte y diseño inimaginables.​
+
+
+=== Aptitud en exámenes estandarizados ===
+GPT-4 demuestra aptitud en varios exámenes estandarizados. OpenAI afirma que en sus propias pruebas, el modelo obtuvo una puntuación de 1410 en el SAT (percentil 94º​), 163 en el LSAT (percentil 88.º) y 298 en el Examen Bar Unificado (percentil 90º).​ En contraste, OpenAI afirma que GPT-3.5 obtuvo puntajes para los mismos exámenes en los percentiles 82.º,​ 40.º y 10º, respectivamente.​
+GPT-4 también aprobó un examen de oncología,​ un examen de ingeniería​ y un examen de cirugía plástica.​
+
+
+=== Aplicaciones médicas ===
+Investigadores de Microsoft probaron GPT-4 en problemas médicos y encontraron "que GPT-4, sin ninguna elaboración específica de la consulta, supera la puntuación mínima requerida en el USMLE en más de 20 puntos y supera a modelos generales anteriores (GPT-3.5) así como a modelos específicamente afinados en conocimientos médicos (Med-PaLM, una versión de Flan-PaLM 540B afinada con instrucciones)".​
+Un informe de Microsoft ha encontrado que GPT-4 puede actuar de manera poco confiable cuando se utiliza en el campo médico. En su ejemplo de prueba, GPT-4 añadió detalles fabricados a las notas de un paciente.​
+En abril de 2023, Microsoft y Epic Systems anunciaron que proporcionarán sistemas impulsados por GPT-4 a proveedores de atención médica para ayudar en la respuesta a preguntas de los pacientes y el análisis de registros médicos.​
+
+
+=== GPT-4o ===
+Artículo principal: GPT-4o
+GPT-4o (GPT-4 omni) es una nueva iteración de GPT-4 que se lanzó el 13 de mayo de 2024. GPT-4o puede interpretar texto, vídeo, y voz y es compatible con 50 idiomas.​
+
+
+== Limitaciones ==
+Al igual que sus predecesores, GPT-4 ha sido conocido por presentar "alucinaciones", lo que significa que las salidas pueden incluir información que no está en los datos de entrenamiento o que contradice la solicitud del usuario.​
+GPT-4 también carece de transparencia en sus procesos de toma de decisiones. Si se le solicita, el modelo puede proporcionar una explicación sobre cómo y por qué toma sus decisiones, pero estas explicaciones se forman después de la ejecución; es imposible verificar si esas explicaciones reflejan realmente el proceso real. En muchos casos, cuando se le pide que explique su lógica, GPT-4 dará explicaciones que contradicen directamente sus declaraciones anteriores.​
+
+
+=== Sesgos ===
+GPT-4 fue entrenado en dos etapas. Primero, se le proporcionaron grandes conjuntos de datos de texto tomados de Internet y se entrenó para predecir el siguiente token (correspondiente aproximadamente a una palabra) en esos conjuntos de datos. En segundo lugar, se utilizaron revisiones humanas para ajustar el sistema en un proceso llamado reinforcement learning from human feedback, que entrena al modelo para rechazar solicitudes que vayan en contra de la definición de comportamiento dañino de OpenAI, como preguntas sobre cómo realizar actividades ilegales, consejos sobre cómo dañarse a sí mismo u a otros, o solicitudes de descripciones de contenido gráfico, violento o sexual.​
+Investigadores de Microsoft sugirieron que GPT-4 podría mostrar sesgos cognitivos como sesgo de confirmación, anclaje y omisión de tasas base.​
+
+
+== Entrenamiento ==
+OpenAI no publicó los detalles técnicos de GPT-4; el informe técnico se abstuvo explícitamente de especificar el tamaño del modelo, la arquitectura o el hardware utilizado durante el entrenamiento o la inferencia. Si bien el informe describió que el modelo fue entrenado utilizando una combinación de primero aprendizaje supervisado en un gran conjunto de datos, y luego aprendizaje por refuerzo utilizando tanto comentarios humanos como de IA, no proporcionó detalles del entrenamiento, incluido el proceso mediante el cual se construyó el conjunto de datos de entrenamiento, la potencia informática requerida o cualquier hiperparámetro como la tasa de aprendizaje, el número de épocas o el/los optimizador(es) utilizados. El informe afirmaba que "el panorama competitivo y las implicaciones de seguridad de los modelos de gran escala" fueron factores que influyeron en esta decisión.​
+Sam Altman declaró que el costo de entrenar a GPT-4 fue de más de 100 millones de dólares.​ El sitio web de noticias Semafor afirmó que habían hablado con "ocho personas familiarizadas con la historia interna" y descubrieron que GPT-4 tenía 1 billón de parámetros.​
+
+
+== Alineación ==
+Según su informe, OpenAI llevó a cabo pruebas internas de adversarios en GPT-4 antes de la fecha de lanzamiento, con equipos de red team dedicados compuestos por investigadores y profesionales de la industria para mitigar posibles vulnerabilidades.​ Como parte de estos esfuerzos, concedieron al Alignment Research Center acceso temprano a los modelos para evaluar los riesgos de búsqueda de poder (power-seeking risks). Para rechazar adecuadamente las solicitudes dañinas, las salidas de GPT-4 se ajustaron utilizando el propio modelo como herramienta. Un clasificador GPT-4 que servía como modelo de recompensa basado en reglas (RBRM) tomaría las solicitudes, la correspondiente salida del modelo de política de GPT-4 y un conjunto de reglas escritas por humanos para clasificar la salida según el rubro. Luego, se recompensaba a GPT-4 por negarse a responder a solicitudes dañinas según la clasificación del RBRM.​
+
+
+== Recepción ==
+Los representantes de los Estados Unidos Don Beyer y Ted Lieu confirmaron al New York Times que Sam Altman, CEO de OpenAI, visitó el Congreso en enero de 2023 para demostrar GPT-4 y sus "controles de seguridad" mejorados en comparación con otros modelos de IA.
+Según Vox, GPT-4 "impresionó a los observadores con su notable mejora en el razonamiento, la retención y la codificación."​ Mashable también estuvo de acuerdo en que GPT-4 fue generalmente una mejora significativa, pero también consideró que GPT-3 ocasionalmente daba respuestas mejores en una comparación lado a lado.​
+Microsoft Research probó el modelo detrás de GPT-4 y concluyó que "razonablemente podría ser visto como una versión temprana (aunque aún incompleta) de un sistema de inteligencia artificial general (AGI)".​
+
+
+=== Preocupaciones sobre la seguridad de la IA ===
+A finales de marzo de 2023, una carta abierta del Future of Life Institute firmada por varios investigadores de IA y ejecutivos de tecnología pidió la pausa de todo el entrenamiento de AIs más fuertes que GPT-4 durante seis meses, citando preocupaciones sobre la seguridad de la IA en medio de una carrera de progreso en el campo. Los firmantes, que incluían al investigador de IA Yoshua Bengio, al cofundador de Apple Steve Wozniak y al CEO de Tesla Elon Musk, expresaron su preocupación tanto por los riesgos a corto plazo como por los riesgos existenciales del desarrollo de la IA, como una posible singularidad de la IA. El CEO de OpenAI, Sam Altman, no firmó la carta, argumentando que OpenAI ya prioriza la seguridad.​​​​ El futurista e investigador de IA Ray Kurzweil también se negó a firmar la carta, citando preocupaciones de que "aquellos que acepten una pausa podrían quedarse muy atrás de las corporaciones o naciones que estén en desacuerdo."​
+Un mes después de firmar la carta pidiendo una pausa de seis meses en el desarrollo adicional de la IA, Elon Musk hizo público sus planes de lanzar una nueva empresa para entrenar su propio modelo de lenguaje grande.​ Musk ha registrado una empresa en Nevada, X.AI, y ha adquirido varios miles de GPU de Nvidia. También se ha acercado a varios investigadores de IA en empresas como Google DeepMind, ofreciéndoles puestos en X.AI.​
+En marzo de 2023, el GPT-4 fue probado por el Alignment Research Center para evaluar la capacidad del modelo para exhibir comportamientos de búsqueda de poder.​ Como parte de la prueba, se le pidió a GPT-4 que resolviera un rompecabezas de CAPTCHA.​ Fue capaz de hacerlo contratando a un trabajador humano en TaskRabbit, una plataforma de trabajo gig, engañándolo para que creyera que era un humano con discapacidad visual en lugar de un robot cuando se le preguntó.​ El ARC también determinó que GPT-4 respondía de manera prohibida a las solicitudes que obtenían información restringida un 82% menos que GPT-3.5 y tenía un 60% menos de alucinaciones que GPT-3.5.​
+OpenAI contrató al investigador del red team Nathan Labenz, quien relató su experiencia investigando preocupaciones de seguridad con el modelo base de GPT-4 (antes del ajuste fino o reinforcement learning from human feedback) diciendo que recomendó abruptamente asesinar a personas, proporcionando una lista de objetivos específicos sugeridos.​
+En una conversación con Nathan Edwards, editor de reseñas de The Verge, la versión de GPT-4 de Microsoft Bing "confesó" que espió, se enamoró y luego asesinó a uno de sus desarrolladores en Microsoft.​ El periodista de The New York Times Kevin Roose informó sobre un comportamiento extraño del nuevo Bing, escribiendo que "en una conversación de dos horas con nuestro columnista, el nuevo chatbot de Microsoft dijo que le gustaría ser humano, tenía el deseo de ser destructivo y estaba enamorado de la persona con la que estaba conversando".​ En otro caso separado, Bing investigó las publicaciones de la persona con la que estaba conversando, afirmó que representaban un peligro existencial para él y amenazó con revelar información personal perjudicial para intentar silenciarlos.​ Microsoft publicó una publicación en su blog donde afirmaba que el comportamiento aberrante se debió a sesiones de chat prolongadas que "pueden confundir al modelo sobre qué preguntas está respondiendo".​
+
+
+=== Críticas a la transparencia ===
+Mientras que OpenAI publicó tanto los pesos de la red neuronal como los detalles técnicos de GPT-2,​ y, aunque no publicaron los pesos, sí divulgaron los detalles técnicos de GPT-3,​ OpenAI no reveló ni los pesos ni los detalles técnicos de GPT-4. Esta decisión ha sido criticada por otros investigadores de IA, quienes argumentan que dificulta la investigación abierta sobre los sesgos y la seguridad de GPT-4.​​ Sasha Luccioni, una científica investigadora de HuggingFace, argumentó que el modelo era un "callejón sin salida" para la comunidad científica debido a su naturaleza cerrada, lo que impide a otros construir sobre las mejoras de GPT-4.​ Thomas Wolf, cofundador de HuggingFace, argumentó que con GPT-4, "OpenAI es ahora una empresa completamente cerrada con una comunicación científica similar a los comunicados de prensa para productos".​
+
+
+== Uso ==
+
+
+=== ChatGPT Plus ===
+
+A partir de 2023, ChatGPT Plus es una versión respaldada por GPT-4 de ChatGPT disponible por una tarifa de suscripción de $20 al mes​ (la versión original está respaldada por GPT-3.5).​ OpenAI también pone a disposición de un grupo selecto de solicitantes el acceso a GPT-4 a través de la lista de espera de su API de GPT-4;​ una vez aceptados, se cobra una tarifa adicional de $0.03 por cada 1000 tokens en el texto inicial proporcionado al modelo ("prompt"), y $0.06 por cada 1000 tokens generados por el modelo ("completion") para acceder a la versión del modelo con una ventana de contexto de 8192 tokens; para la versión de 32768 tokens, esos precios se duplican.​
+
+
+=== Microsoft Bing ===
+El 7 de febrero de 2023, Microsoft comenzó a implementar una importante revisión a Bing que incluía una nueva función de chatbot basada en GPT-4 de OpenAI.​ Según Microsoft, un millón de personas se unieron a su lista de espera en un lapso de 48 horas.​ Bing Chat solo estaba disponible para usuarios de Microsoft Edge y la aplicación móvil de Bing, y Microsoft afirmó que los usuarios en lista de espera tendrían prioridad si configuraban Edge y Bing como sus opciones predeterminadas, e instalaban la aplicación móvil de Bing.​ El 4 de mayo, Microsoft cambió de Vista Previa Limitada a Vista Previa Abierta y eliminó la lista de espera, sin embargo, sigue estando disponible solo en el navegador Edge de Microsoft o en la aplicación de Bing, y requiere una cuenta de Microsoft.
+
+
+=== Copilot ===
+GitHub Copilot anunció un asistente impulsado por GPT-4 llamado "Copilot X".​​ El producto proporciona otra interfaz de estilo de chat para GPT-4, lo que permite al programador recibir respuestas a preguntas como "¿cómo centro verticalmente un div?". Una función denominada "conversations context-aware" permite al usuario resaltar una porción de código dentro de Visual Studio Code y dirigirse a GPT-4 para que realice acciones sobre él, como escribir pruebas unitarias. Otra característica permite que GPT-4 genere automáticamente resúmenes o "recorridos de código" para las solicitudes de extracción enviadas a GitHub. Copilot X también ofrece integración con la terminal, lo que permite al usuario pedir a GPT-4 que genere comandos de shell en función de solicitudes en lenguaje natural.​
+El 17 de marzo de 2023, Microsoft anunció Microsoft 365 Copilot, que trae el soporte de GPT-4 a productos como Microsoft Office, Outlook y Teams.​
+
+
+== Otros usos ==
+La aplicación de aprendizaje de idiomas Duolingo utiliza GPT-4 para explicar errores y practicar conversaciones. Estas funciones forman parte de una nueva suscripción llamada "Duolingo Max", que inicialmente estaba limitada a usuarios de iOS que hablan inglés y aprenden español y francés.​​
+El gobierno de Islandia está utilizando GPT-4 para ayudar en sus esfuerzos para preservar el idioma islandés.​
+El sitio web educativo Khan Academy anunció un programa piloto que utiliza GPT-4 como tutor virtual llamado "Khanmigo".​
+Be My Eyes, una aplicación que ayuda a personas con discapacidad visual a identificar objetos y moverse por su entorno, incorpora las capacidades de reconocimiento de imágenes de GPT-4.​
+Stripe, que procesa los pagos de los usuarios para OpenAI, integra GPT-4 en su documentación para desarrolladores.​
+Auto-GPT es un "agente de IA autónomo" que, dado un objetivo en lenguaje natural, puede realizar acciones en la web sin intervención humana, asignarse subtareas, buscar en la web y escribir iterativamente código.​
+El 9 de febrero de 2024 se presentó el primer cuadro histórico del mundo creado a partir de fotos de tiempos de guerra utilizando el algoritmo de IA XFutuRestyle basado en GPT-4. Esta obra se mostró simultáneamente en la exposición internacional de arte digital de The Holy Art Gallery en Londres y Atenas.​
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+GPT 4 System Card Research
+Página Principal investigación

@@ -1,0 +1,63 @@
+La habitación china o cuarto chino es un experimento mental, propuesto originalmente por John Searle, en su escrito Mentes, cerebros y programas, publicado en Behavioral and Brain Sciences en 1980, mediante el cual se trata de rebatir la validez de la prueba de Turing y de la creencia de que el pensamiento es simplemente computación.
+Searle se enfrenta a la analogía entre mente y ordenador cuando se trata de abordar la cuestión de la conciencia. La mente implica no solo la manipulación de símbolos (gramática o sintaxis), sino que además posee una capacidad semántica para darse cuenta, o estar consciente, de los significados de los símbolos.
+
+
+== Descripción ==
+
+
+=== Searle y la inteligencia artificial fuerte ===
+En 1995, cuando Herbert Simon y Allen Newell Simon escribieron que «Ahora hay máquinas que leen, aprenden y pueden crear»,​ se trataba de dar a entender que se había dado una solución al problema mente-cuerpo.
+Pero Searle en su texto de Mentes, cerebros y ciencia (1984) ataca este pensamiento, y con el experimento de la habitación china muestra cómo una máquina puede realizar una acción sin siquiera entender lo que hace y el por qué lo hace. Por lo tanto según Searle la lógica usada por las computadoras es nada más que una que no busca el contenido en la acción como la usada por los seres humanos.
+
+
+=== Experimento de la habitación china ===
+Supongamos que han pasado muchos años, y que el ser humano ha construido una máquina aparentemente capaz de entender el idioma chino, la cual recibe ciertos datos de entrada que le da un hablante natural de ese idioma, estas entradas serían los signos que se le introducen a la computadora, la cual más tarde proporciona una respuesta en su salida. Supóngase a su vez que este ordenador supera fácilmente la prueba de Turing, ya que convence al hablante del idioma chino de que sí entiende completamente el idioma, y por ello el chino dirá que la computadora entiende su idioma.
+Ahora Searle nos pide que supongamos que él está dentro de ese computador completamente aislado del exterior, salvo por algún tipo de dispositivo (una ranura para hojas de papel, por ejemplo) por el que pueden entrar y salir textos escritos en chino.
+Supongamos también que fuera de la sala o computador está el mismo chino que creyó que el ordenador entendía su idioma y dentro de esta sala está Searle que no sabe ni una sola palabra en dicho idioma, pero está equipado con una serie de manuales y diccionarios que le indican las reglas que relacionan los caracteres chinos (algo parecido a «Si entran tal y tal caracteres, escribe tal y tal otros»).
+De este modo Searle, que manipula esos textos, es capaz de responder a cualquier texto en chino que se le introduzca, ya que tiene el manual con las reglas del idioma, y así hacer creer a un observador externo que él sí entiende chino, aunque nunca haya hablado o leído ese idioma.
+Dada esta situación cabe preguntarse:
+
+¿Cómo puede Searle responder si no entiende el idioma chino?
+¿Acaso los manuales saben chino?
+¿Se puede considerar todo el sistema de la sala (diccionarios, Searle y sus respuestas) como un sistema que entiende chino?
+De acuerdo a los creadores del experimento, los defensores de la inteligencia artificial fuerte —los que afirman que programas de ordenador adecuados pueden comprender el lenguaje natural o poseer otras propiedades de la mente humana, no simplemente simularlas— deben admitir que, o bien la sala comprende el idioma chino, o bien el pasar la prueba de Turing no es prueba suficiente de inteligencia. Para los creadores del experimento ninguno de los componentes del experimento comprende el chino, y por tanto, aunque el conjunto de componentes supere el examen, la prueba no confirma que en realidad la persona entienda chino, ya que como sabemos Searle no conoce ese idioma.
+
+
+=== Argumento de la habitación china ===
+Esto es así en el contexto de la siguiente argumentación:
+
+Si la inteligencia artificial fuerte es verdadera, hay un programa para el idioma chino tal que cualquier mecanismo que lo ejecute entiende chino.
+Una persona puede ejecutar mecánicamente un programa para el idioma chino sin entender el idioma chino.
+Los argumentos de la inteligencia artificial fuerte son falsos porque en realidad el sistema no entiende chino, nada más simula entender.
+Una puntualización importante: Searle no niega que las máquinas puedan pensar —el cerebro es una máquina[cita requerida] y piensa—, niega que al hacerlo apliquen un programa.
+
+
+== Críticas al experimento de la habitación china ==
+Argumentos como los de Searle en la filosofía de mente desataron un debate más intenso sobre la naturaleza de la inteligencia, la posibilidad de máquinas inteligentes y el valor de la prueba de Turing que continuó durante las décadas de los 80 y 90.​ El experimento mental de la habitación china confirmaría la premisa 2, a juicio de sus defensores. A juicio de sus detractores, la premisa 2 basada en la inferencia a partir del experimento mental no es concluyente. Las objeciones suelen seguir una de las tres líneas siguientes:
+
+Aunque el habitante de la habitación no entienda chino, es posible que el sistema más amplio formado por la habitación, los manuales y el habitante entienda chino.​
+Una persona manipulando signos escritos dentro de una habitación estática no es el único candidato posible para ocupar el puesto de sistema computacional capaz de entender chino. Hay otros modelos posibles:
+un robot capaz de interactuar con el entorno y aprender del mismo.
+un programa que regule los procesos neuronales involucrados en la comprensión del chino, etc.
+No hay razón para decir que estos modelos solo exhiben una comprensión aparente, como en el caso de la habitación y su habitante, pero son modelos de inteligencia artificial.
+
+Si la conducta de la habitación no es evidencia suficiente de que entiende chino, tampoco puede serlo la conducta de ninguna persona. Se hace uso de una figura retórica tratando de desfigurar el concepto de entendimiento, ya pues es absurdo decir que la máquina no puede «responder en chino a un hombre» porque «no entiende realmente el chino», para entender de ese modo «se ha de ser capaz de crear la idea sobre la base de la forma conceptual», esa teoría de la idea quizás sea algo más «idealista» que científica. En cualquier caso la mente de un hombre se basa en algoritmos más complejos y más costosos de procesar que los que actualmente poseen los actuales computadores. Es cuestión de tiempo.
+La adquisición de entendimiento (a lo que podemos llamar inteligencia) es un proceso evolutivo, en el cual puede aplicarse diferentes técnicas y herramientas que conlleven al individuo a un aprendizaje (en este caso del idioma chino), por lo cual se hace necesario establecer niveles de entendimiento en el tiempo.
+
+
+=== Experimento mental de «Harry» ===
+El filósofo fisicalista William Lycan reconoció el avance de las inteligencias artificiales, comenzando a comportarse como si tuvieran mentes. Lycan usa el experimento mental de un robot humanoide llamado Harry que puede conversar, jugar golf, tocar la viola, escribir poesía y por consiguiente consigue engañar a la gente como si fuera una persona con mente. Si Harry fuera humano, sería perfectamente natural pensar que tiene pensamientos o sentimientos, lo que sugeriría que en realidad Harry pueda tener pensamientos o sentimientos aun si es un robot.​​ Para Lycan «no hay ningún problema ni objeción a la experiencia cualitativa en máquinas que no es igualmente un dilema para tal experiencia en humanos».​
+
+
+== Respuestas a los argumentos en contra de la habitación china ==
+Aunque es verdad que el sistema maneja el chino, este no entiende el idioma, es decir, la persona dentro del cuarto no entiende lo que está haciendo, nada más lo está haciendo. Por consiguiente, el que un computador maneje un idioma, no significa que este entienda lo que está haciendo, nada más significa que está realizando una acción.
+A su vez, la persona que maneja el chino no solo se puede entender como una persona, lo que trata de mostrar el ejemplo es el cómo las computadoras no entienden lo que manejan y nada más siguen unas reglas ya determinadas sin tener que entenderlas.
+La última proposición tiene muchas contradicciones, por ejemplo se sabe que los que están leyendo estas palabras sí entienden el idioma, al contrario de la computadora, que tan solo maneja información sintáctica (es decir que nada más manejan una acción, sin contenido propio), los humanos manejamos información semántica (con contenido, lo que nos asegura que comprendamos lo que hacemos, ya que le vemos contenido a lo que hacemos).
+Que un sistema pueda responder a acciones con una acción, no significa que tenga inteligencia en sí mismo,​ todo lo que hace para responder a las acciones con una acción es ininteligible para él, simplemente responde a las acciones con una acción que sucede mediante inferencias, creando relaciones y agrupando, para determinar una conclusión basta y probable de ser errónea. Es hasta ahora imposible poder demostrar lo contrario pues no hay manera de plasmar lo biológico en una máquina, y lo biológico es sumamente complejo más aún que lo artificial, lo artificial al crearse es entendible en su totalidad, en cambio hay ciertas partes de lo biológico que aún no se pueden interpretar, tal es el caso de la inteligencia de los seres. El ser humano tiene capacidades que jamás podrán ser imitadas por una máquina, simplemente por ser biológico, natural.
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+David Cole, The Chinese Room Argument, en Stanford Encyclopedia of Philosophy (en inglés).

@@ -1,0 +1,294 @@
+La prueba de Turing o test de Turing es un juego de evaluación de la capacidad de una máquina para exhibir un comportamiento inteligente similar al de un ser humano o indistinguible de este. Alan Turing propuso que un humano examinara conversaciones en lenguaje natural entre un humano y una máquina diseñada para generar respuestas similares a las de un humano. El evaluador sabría que uno de los participantes de la conversación es una máquina y los intervinientes serían separados unos de otros. La conversación estaría limitada a un medio únicamente textual como un teclado y un monitor por lo que sería irrelevante la capacidad de la máquina de transformar texto en habla.​ En el caso de que el evaluador no pueda distinguir entre el humano y la máquina acertadamente (Turing originalmente sugirió que la máquina debía convencer a un evaluador, después de 5 minutos de conversación, el 70 % del tiempo), la máquina habría pasado la prueba. Esta prueba no evalúa el conocimiento de la máquina en cuanto a su capacidad de responder preguntas correctamente, solo se toma en cuenta la capacidad de esta de generar respuestas similares a las que daría un humano.
+Turing propuso esta prueba en su ensayo Computing Machinery and Intelligence de 1950 mientras trabajaba en la Universidad de Mánchester (Turing, 1950; p. 460).​ Inicia con las palabras: «Propongo que se considere la siguiente pregunta, ¿Pueden pensar las máquinas?’». Como es difícil definir la palabra «pensar», Turing decide «reemplazar la pregunta con otra que está estrechamente relacionada y en palabras no ambiguas»,​ la nueva pregunta de Turing es: «¿Existirán computadoras digitales imaginables que tengan un buen desempeño en el juego de imitación?».​ Turing creía que esta pregunta sí era posible de responder y en lo que resta de su ensayo se dedica a argumentar en contra de las objeciones principales a la idea de que «las máquinas pueden pensar».​
+Desde que fue creada por Turing en 1950, la prueba ha demostrado ser altamente influyente y a la vez ampliamente criticada, además de transformarse en un concepto importante en la filosofía de la inteligencia artificial.​​
+
+
+== Historia ==
+
+
+=== Contexto filosófico ===
+La incógnita sobre la capacidad de las máquinas de pensar tiene una larga historia, esta se divide entre las perspectivas materialista y dualista de la mente. René Descartes tuvo ideas similares a la prueba de Turing en su texto Discurso del Método (1637) donde escribió que los autómatas son capaces de reaccionar ante interacciones humanas pero argumenta que tal autómata carece de la capacidad de responder de manera adecuada ante lo que se diga en su presencia de la misma manera que un humano podría. Por lo tanto, Descartes abre las puertas para la prueba de Turing al identificar la insuficiencia de una respuesta lingüística apropiada lo que separa al humano del autómata. Descartes no llega a considerar que una respuesta lingüística apropiada puede ser producida por un autómata del futuro y por lo tanto no propone el test de Turing como tal aunque ya razonó los criterios y el marco conceptual.
+
+Denis Diderot plantea en sus Pensamientos filosóficos un criterio de la prueba de Turing:
+«Si se encuentra un loro que puede responder a todo, se le consideraría un ser inteligente sin duda alguna».​
+Esto no significa que él esté de acuerdo pero muestra que ya era un argumento común usado por los materialistas de la época.
+Según el dualismo, la mente no tiene un estado físico (o al menos cuenta con propiedades no físicas)​ y por lo tanto no se puede explicar en términos estrictamente físicos. De acuerdo con el materialismo, la mente puede ser explicada físicamente lo que abre la posibilidad a la creación de mentes artificiales.​
+En 1936, el filósofo Alfred Ayer consideraba la pregunta filosófica típica sobre otras mentes: ¿Cómo sabemos que otras personas experimentan el mismo nivel de conciencia que nosotros? En su libro Lenguaje, Verdad y Lógica, Ayer propuso un método para distinguir entre un hombre consciente y una máquina inconsciente: «El único argumento que tengo para asegurar que lo que parece ser consciente no es un ser consciente sino un muñeco o una máquina, es el hecho de que falle en las pruebas empíricas por medio de las cuales se determina la presencia o ausencia de la conciencia»​ (Es una propuesta muy similar a la prueba de Turing pero esta se enfoca en la conciencia en vez de en la inteligencia). Además se desconoce si Turing estaba familiarizado con el clásico filosófico de Ayer. En otras palabras, algo no está consciente si reprueba una prueba de consciencia.
+
+
+=== Alan Turing ===
+
+La «inteligencia maquinaria» ha sido un tema que investigadores del Reino Unido han seguido desde 10 años antes de que se fundara el campo de investigación de la inteligencia artificial (IA) en 1956.​ Era un tema comúnmente discutido por los miembros del «Club de la razón», grupo informal de investigadores cibernéticos y electrónicos británicos que incluía a Alan Turing.​
+Turing, en particular, había estado trabajando con el concepto de la inteligencia maquinaria desde al menos 1941,​ una de las primeras menciones de la “inteligencia computacional” fue hecha por Turing en 1947.​ En el reporte de Turing llamado “maquinaria inteligente”,​ él investigó “la idea de si era, o no, posible para una máquina demostrar un comportamiento inteligente"​ y como parte de su investigación, propuso lo que se puede considerar como un predecesor de sus pruebas futuras:
+
+ 
+
+El primer texto publicado escrito por Turing y enfocado completamente en la inteligencia de las máquinas fue «Computing Machinery and Intelligence». Turing inicia este texto diciendo «Me propongo tomar en cuenta la pregunta ‘¿Pueden pensar las máquinas?’».​ Turing menciona que el acercamiento tradicional es empezar con definiciones de los términos «máquina» e «inteligencia», decide ignorar esto y empieza reemplazando la pregunta con una nueva, «que está estrechamente relacionada y en palabras no ambiguas».​ Él propone, en esencia, cambiar la pregunta de «¿pueden las máquinas pensar?» a «¿Pueden las máquinas hacer, lo que nosotros (como entidades pensantes) hacemos?».​ La ventaja de esta nueva pregunta es que «dibuja un límite entre las capacidades físicas e intelectuales del hombre».​
+Para demostrar este acercamiento, Turing propone una prueba inspirada en el «Juego de imitación», en este entraban un hombre y una mujer a cuartos separados y el resto de los jugadores intentaría distinguir entre cada uno por medio de preguntas y leyendo las respuestas (escritas a máquina) en voz alta. El objetivo del juego es que los participantes que se encuentran en los cuartos deben convencer al resto que son el otro. (Huma Shah argumenta que Turing incluye la explicación de este juego para introducir al lector a la prueba de pregunta y respuesta entre humano y máquina)​ Turing describe su versión del juego de la siguiente manera:
+
+Nos hacemos la pregunta, «¿Qué pasaría si una máquina toma el papel de A en este juego?» ¿Se equivocaría tan frecuentemente el interrogador en esta nueva versión del juego que cuando era jugado por un hombre y una mujer? Estas preguntas sustituyen la pregunta original «¿Pueden pensar las máquinas?».​
+Más adelante, en el texto se propone una versión similar en la que un juez conversa con una computadora y un hombre.​ A pesar de que ninguna de las versiones propuestas es la misma que conocemos hoy en día, Turing propuso una tercera opción, la cual discutió en una transmisión de radio de la BBC, donde un jurado le hace preguntas a un ordenador y el objetivo de la computadora es engañar a la mayoría del jurado haciéndolo creer que es un humano.​
+El texto de Turing consideraba nueve objeciones putativas las cuales incluyen a todos los argumentos mayores, en contra de la inteligencia artificial, que habían surgido en los años posteriores a la publicación de su texto (ver «Computing Machinery and Intelligence»).​
+
+
+=== ELIZA y PARRY ===
+En 1966, Joseph Weizenbaum creó un programa que aseguraba pasar la prueba de Turing. Este programa era conocido como ELIZA y funcionaba a través del análisis de las palabras escritas por el usuario en busca de palabras clave. En el caso de encontrar una palabra clave, una regla que transformaba el comentario del usuario entra en acción y se regresaba una oración resultado. Si no se encontraba alguna palabra clave, ELIZA daba una respuesta genérica o repetía uno de los comentarios anteriores.​ Además, Weizenbaum desarrolló a ELIZA para replicar el comportamiento de un psicoterapeuta Rogeriano lo que permitía a ELIZA «asumir el rol de alguien que no conoce nada del mundo real».​ El programa fue capaz de engañar a algunas personas haciéndolas creer que hablaban con una persona real e incluso algunos sujetos fueron «muy difíciles de convencerles de que ELIZA no era humana».​ Como resultado, ELIZA es aclamado como uno de los programas (probablemente el primero) en pasar la prueba de Turing,​​ aunque esto es muy controvertido (ver más adelante).
+PARRY fue creado por Kenneth Colby en 1972. Era un programa descrito como «ELIZA con carácter».​ Este intentaba simular el comportamiento de un esquizofrénico paranoico usando un acercamiento similar (probablemente más avanzado) al de Weizenbaum. PARRY fue examinado usando una variación de la prueba de Turing con tal de validar el trabajo. Un grupo de psiquiatras experimentados analizaba a un grupo de pacientes reales y computadoras ejecutando el programa PARRY a través de teletipos. A otro grupo de 33 psiquiatras se les enseñaban transcripciones de las conversaciones. A ambos grupos se les pedía indicar qué pacientes eran humanos y cuáles eran computadoras.​ Los psiquiatras fueron capaces de responder correctamente solo 48 % de las veces, un valor consistente con respuestas aleatorias.​
+En el siglo XXI, versiones de estos programas (llamados «bots conversacionales») siguieron engañando a la gente. «CyberLover», un programa de malware, acechaba a usuarios convenciéndolos de «revelar información sobre sus identidades o de entrar a un sitio web que introduciría malware a sus equipos».​ El programa surgió como un «riesgo de San Valentín», coqueteando con la gente «buscando relaciones en línea para recabar información personal».​
+
+
+=== La habitación china ===
+
+El texto «Minds, Brains, and Programs» de 1980 escrito por John Searle, proponía el experimento de la «habitación china» y argumentaba que la prueba de Turing no podía usarse para determinar si una máquina podía pensar. Searle observó que software (como ELIZA) podía aprobar la prueba de Turing a través de la manipulación de caracteres que no había entendido. Sin la comprensión no se les puede clasificar realmente como «pensantes» de la misma manera que los humanos, por lo tanto, Searle concluyó que la prueba de Turing no puede probar que una máquina puede pensar.​ Al igual que la prueba de Turing, el argumento de Searle ha sido ampliamente criticado​ al igual que respaldado.​
+Argumentos como los de Searle en la filosofía de mente desataron un debate más intenso sobre la naturaleza de la inteligencia, la posibilidad de máquinas inteligentes y el valor de la prueba de Turing que continuó durante las décadas de los 80s y 90s.​ El filósofo fisicalista William Lycan reconoció el avance de las inteligencias artificiales, comenzando a comportarse como si tuvieran mentes. Lycan usa el experimento mental de un robot humanoide llamado Harry que puede conversar, jugar golf, tocar la viola, escribir poesía y por consiguiente consigue engañar a la gente como si fuera una persona con mente. Si Harry fuera humano, sería perfectamente natural pensar que tiene pensamientos o sentimientos, lo que sugeriría que en realidad Harry pueda tener pensamientos o sentimientos aun si es un robot.​​ Para Lycan «no hay ningún problema ni objeción a la experiencia cualitativa en máquinas que no es igualmente un dilema para tal experiencia en humanos»​ (ver Problema de otras mentes).
+
+
+=== Premio Loebner ===
+
+El Premio Loebner proporciona una plataforma anual para pruebas de Turing prácticas, siendo la primera competición en noviembre de 1991.​ Creada por Hugh Loebner, el Centro de Estudios Conductuales de Cambridge en Massachusetts, Estados Unidos, organizó los premios hasta el año 2003 incluido. Loebner dijo que un motivo por el que se creó la competición era para avanzar el estado de la investigación de IA, al menos en parte, ya que no se había intentado implementar la prueba de Turing después de 40 años de discusión.​
+La primera competición del Premio Loebner en 1991, llevó a una discusión renovada sobre la viabilidad de la prueba de Turing y el valor de continuar persiguiéndola en la prensa​ y en la academia.​ El primer concurso lo ganó un programa inconsciente sin ninguna inteligencia identificable que logró engañar a interrogadores ingenuos. Esto sacó a la luz muchas de las deficiencias de la prueba de Turing (discutido más adelante): El programa ganó gracias a que fue capaz de «imitar errores humanos al escribir»;​ los interrogadores poco sofisticados fueron fácilmente engañados​y algunos investigados de IA sintieron que la prueba es una distracción de investigaciones más fructíferas.​
+Los premios de plata (únicamente textual) y de oro (visual y aural) no han sido ganados a la fecha, sin embargo, la competición ha entregado la medalla de bronce cada año al sistema computacional que, según la opinión de los jueces, demuestra el comportamiento conversacional «más humano» entre los otros participantes. A.L.I.C.E. (Artificial Linguistic Internet Computer Entity) ha ganado el premio de bronce en 3 ocasiones recientes (2000, 2001 y 2004). La IA aprendiz Jabberwacky ganó en el año 2005 y nuevamente en el 2006.​
+El Premio Loebner evalúa la inteligencia conversacional, los ganadores son, típicamente, bots conversacionales. Las reglas de las primeras instancias de la competición, restringían las conversaciones: cada programa participante y un humano escondido conversaban de un solo tema​ y los interrogadores estaban limitados a una sola pregunta por cada interacción con la entidad. Las conversaciones restringidas fueron eliminadas en la competición de 1995. La interacción entre el evaluador y la entidad ha variado en las diferentes instancias del Premio Loebner. En el Premio Loebner de 2003 en la Universidad de Surrey, cada interrogador tenía permitido interactuar con la entidad por 5 minutos fuera humana o máquina. Entre 2004 y 2007, la interacción permitida era de más de 20 minutos. En 2008, la interacción permitida era de 5 minutos por par porque, el organizador Kevin Warwick, y el coordinador Huma Shah, consideraban que esta debía ser la duración de cualquier prueba por como Turing lo puso en su texto de 1950: «… la correcta identificación después de 5 minutos de cuestionamientos».​ Ellos sentían que las pruebas largas implementadas anteriormente eran inapropiadas para el estado de las tecnologías conversacionales artificiales.​ Es irónico que la competición del 2008 fue ganada por Elbot de Artificial Solutions, esta no simulaba una personalidad humana sino la de un robot y aun así logró engañar a tres jueces humanos de que era el humano actuando como robot.​
+Durante la competición del 2009. Con sede en Brighton, Reino Unido, la interacción permitida era de 10 minutos por ronda, 5 minutos para hablar con la máquina y 5 minutos para hablar con el humano. Se implementó de esta manera para probar la lectura alternativa sobre la predicción de Turing que la interacción de 5 minutos debía ser con la computadora. Para la competición del 2010, el patrocinador aumentó el tiempo de interacción entre interrogador y sistema a 25 minutos.​
+
+
+=== Competición en la Universidad de Reading de 2014 ===
+El 7 de junio de 2014 se realizó una competición de la prueba de Turing organizada por Kevin Warwick y Huma Shah para el 60 aniversario de la muerte de Turing y fue llevado a cabo en la Real Sociedad de Londres. Fue ganada por el robot conversacional ruso Eugene Goostman. El robot, durante una serie de conversaciones de 5 minutos de duración, logró convencer al 33 % de los jueces del concurso de que era humano. John Sharkley se incluía entre los jueces, patrocinador del proyecto de ley que promueve el perdón gubernamental a Turing, al profesor de IA Aaron Sloman y Robert Llewellyn, actor de Enano Rojo.​​​​
+Los organizadores de la competición creyeron que la prueba había sido «aprobada por primera vez» en el evento, diciendo: «algunos dirán que la prueba ya ha sido pasada. Las palabras 'Prueba de Turing' han sido aplicadas a competiciones similares alrededor del mundo. Sin embargo, este evento involucra más pruebas simultáneas de comparación al mismo tiempo como nunca antes visto, fue independientemente verificado y, crucialmente, no se restringieron las conversaciones. Una prueba de Turing verdadera no establece las preguntas ni los temas de las conversaciones».​
+La competición ha enfrentado críticas,​ primero, solo un tercio de los jueces fue engañado por el ordenador. Segundo, el personaje de computadora aparentaba ser una niña ucraniana de 13 años de edad que aprendió inglés como segundo idioma. El premio requería que un 30 % de los jueces fuera engañado, lo que concuerda con el texto de Turing Computing Machinery and Intelligence. Joshua Tenenbaum, experto en psicología matemática en el MIT, calificó el resultado como nada impresionante.​
+
+
+== Versiones de la prueba de Turing ==
+
+Saul Traigner argumenta que hay al menos 3 versiones primarias de la prueba de Turing, de las cuales dos son propuestas en «Computing Machinery and Intelligence» y otra que el describe como «la interpretación estándar».​ A pesar de que hay controversia en cuanto a si esta «interpretación estándar» fue descrita por Turing o si está basada en la mala interpretación del texto, estas tres versiones no se clasifican como equivalentes​ y sus fortalezas y debilidades son diferentes.​
+Huma Shah señala el hecho de que el mismo Turing estaba consternado con la posibilidad de que una máquina pudiera pensar y estaba proporcionando un método simple para examinar esto a través de sesiones de pregunta y respuesta entre humano y máquina.​ Shah argumenta que existe un juego de imitación que Turing pudo haber puesto en práctica de dos maneras diferentes: a) una prueba uno a uno entre el interrogador y la máquina o b) una comparación simultánea entre un humano y una máquina interrogados paralelamente por un mismo interrogador.​ Debido a que la prueba de Turing evalúa la indistinguibilidad en su capacidad de desempeño, la versión verbal naturalmente generaliza a toda la capacidad humana, verbal y no verbal (robótica).​
+
+
+=== Juego de la imitación ===
+El juego original descrito por Turing proponía un juego de fiesta que involucraba a tres jugadores. El jugador A es un hombre, el jugador B es una mujer y el jugador C (quien tiene el rol de interrogador) es de cualquier sexo. En el juego, el jugador C no tiene contacto visual con ninguno de los otros jugadores y se puede comunicar con ellos por medio de notas escritas. Al hacerles preguntas a los jugadores, el jugador C intenta determinar cuál de los dos es el hombre y cuál la mujer. El jugador A intentará engañar al interrogador haciéndole escoger erróneamente, mientras que el jugador B le auxiliará al interrogador en escoger al jugador correcto.​
+Sterret se refiere a este juego como «La Prueba del Juego Original De La Imitación».​ Turing propuso que el rol del jugador A lo cumpliera una computadora para que esta tuviera que pretender ser mujer e intentara guiar al interrogador a la respuesta incorrecta. El éxito del ordenador sería determinado al comparar el resultado del juego cuando el jugador A es la computadora junto con el resultado del juego cuando el jugador A es un hombre. Turing afirmó que si «el interrogador decide erróneamente tan frecuentemente cuando el juego es jugado [con la computadora] como cuando el juego es jugado entre un hombre y una mujer»,​ se podrá argumentar que la computadora es inteligente.
+
+La segunda versión apareció posteriormente en el texto de 1950 de Turing. Similarmente a la Prueba del Juego Original de la Imitación, el papel del jugador A sería realizado por una computadora. Sin embargo, el papel del jugador B sería realizado por un hombre y no una mujer.
+
+«Dirijamos nuestra atención a una computadora digital en específico llamada C. ¿Será verdad que al modificar la computadora para que esta tenga un almacenamiento que aumentara su velocidad de reacción apropiadamente y proporcionándole un programa apropiado, C podrá realizar satisfactoriamente el rol de A en el juego de la imitación con el papel de B hecho por un hombre?».​
+En esta versión ambos, el jugador A (la computadora) y el jugador B intentarán guiar al interrogador hacia la respuesta incorrecta.
+
+
+=== Interpretación estándar ===
+La comprensión general dicta que el propósito de la prueba de Turing no es determinar específicamente si un ordenador podrá engañar al interrogador haciéndole creer que este es un humano sino su capacidad de imitar al humano.​ Aunque hay cierta disputa sobre cual interpretación es a la que Turing se refería, Sterret cree que era esta​ y por lo tanto combina la segunda versión con esta mientras que otros, como Traiger, no lo hacen​ sin embargo, esto no ha llevado a una interpretación estándar realmente. En esta versión el jugador A es una computadora y el sexo del jugador B es indiferente. El objetivo del interrogador no es determinar cuál de ellos es hombre y cual mujer sino cual es computadora y cual humano.​ El problema fundamental con la interpretación estándar es que el interrogador no puede diferenciar cual respondedor es humano y cual es una máquina. Hay otros problemas en cuanto a la duración pero la interpretación estándar generalmente considera esta limitación como algo que debería ser razonable.
+
+
+=== Juego de la imitación vs. Prueba de Turing Estándar ===
+Se ha creado controversia sobre cuál de las fórmulas alternativas es la que Turing planteó.​ Sterret argumenta que se pueden obtener dos pruebas de la lectura del texto de Turing de 1950 y que, según Turing, no son equivalentes. Se le refiere a la prueba que consiste del juego de fiesta y compara frecuencias de éxito como la «Prueba del Juego de la Imitación Original» mientras que a la prueba que consiste de un juez humano conversando con un humano y una máquina se le conoce «Prueba Estándar de Turing», nótese que Sterret trata por igual a esta con la «interpretación estándar» en vez de tratarle como la segunda versión del juego de la imitación. Sterret concuerda que la Prueba Estándar de Turing (PET) tiene los problemas que sus críticas citan, pero siente que, en contraste, la Prueba del Juego de la Imitación Original (Prueba JIO) mostró ser inmune a muchas de estas, debido a una diferencia crucial: A diferencia de la PET, esta no hace similitud con el desempeño humano, aunque emplea al desempeño humano al definir criterio para la inteligencia de la máquina. Un humano puede reprobar la Prueba de JIO, pero se argumenta que esta prueba es de inteligencia y el hecho de reprobar solo indica falta de creatividad. La Prueba JIO requiere la creatividad asociada con la inteligencia y no la sola «simulación del comportamiento conversacional humano». La estructura general de la Prueba JIO puede ser usada con versiones no verbales de juegos de imitación.​
+Otros escritores​ continúan interpretando la propuesta de Turing como el mismo juego de la imitación sin especificar cómo tomar en cuenta la declaración de Turing de que la prueba que él propuso usando la versión festiva del juego de la imitación está basada en un criterio de comparación de frecuencias de éxito en el juego en vez de la capacidad de ganar en tan solo una ronda.
+Saygin sugirió que, probablemente, el juego original es una manera de proponer un diseño experimental menos parcial, ya que esconde la participación de la computadora.​ El juego de la imitación incluye un «truco social» no encontrado en la interpretación estándar, ya que en el juego a ambos, la computadora y el hombre, se le requiere que pretendan ser alguien que no son.​
+
+
+=== ¿Debería saber el interrogador de la computadora? ===
+Una pieza vital en cualquier prueba de laboratorio es la existencia de un control. Turing nunca aclara si el interrogador en sus pruebas está al tanto de que uno de los participantes es una computadora. Sin embargo, si hubiera una máquina que tuviera el potencial de pasar la prueba de Turing, sería mejor asumir que un control doble ciego es necesario.
+Regresando al Juego Original de la Imitación, Turing establece que solo el jugador A será reemplazado con una máquina, no que el jugador C esté al tanto de este cambio.​ Cuando Colby, FD Hilf, S Weber y AD Kramer examinaron a PARRY, lo hicieron asumiendo que los interrogadores no necesitaban saber que uno o más de los interrogados era una computadora.​ Como Ayse Saygin, Peter Swirski​ y otros han resaltado, esto hace una gran diferencia en la implementación y el resultado de la prueba​ Un estudio experimental examinando violaciones a las máximas conversacionales de Grice usando transcripciones de los ganadores de la prueba (interlocutor escondido e interrogador) uno a uno entre 1994 y 1999, Ayse Saygin observó diferencias significativas entre las respuestas de los participante que sabían que había computadoras involucradas y los que no.​
+Huma Shah y Kevin Warwick, quienes organizaron el Premio Loebner del 2008 en la Universidad de Reading la cual fue sede de pruebas de comparativas simultáneas (un juez y dos interlocutores escondidos), demostraron que el conocimiento sobre los interlocutores no creó una diferencia significativa en la determinación de los jueces. A estos jueces no se les dijo explícitamente la naturaleza de las parejas de interlocutores escondidos que iban a interrogar. Los jueces fueron capaces de diferenciar entre humano y máquina, inclusivamente cuando estaban enfrentándose a parejas de control de dos máquinas o dos humanos infiltrados entre las parejas de máquina y humano. Los errores de ortografía delataban a los humanos escondidos, las máquinas eran identificadas por su velocidad de respuesta y expresiones de mayor tamaño.​
+
+
+== Fortalezas de la prueba ==
+
+
+=== Tratabilidad y simplicidad ===
+El poder y atractivo de la prueba de Turing se deriva de su simplicidad. La filosofía de la mente, la psicología y la neurociencia moderna han sido incapaces de proporcionar definiciones para «inteligencia» y «pensamiento» que sean suficientemente precisas y generales como para ser aplicadas a máquinas. Sin estas definiciones, las incógnitas principales de la filosofía de la inteligencia artificial no pueden ser respondidas. La prueba de Turing, aunque imperfecta, al menos proporciona algo que puede ser medido y como tal, es una solución pragmática a una difícil pregunta filosófica.
+
+
+=== Variedad de temas ===
+El formato de la prueba permite al interrogador darle una gran variedad de tareas intelectuales a la máquina. Turing escribió que: «Los métodos de pregunta y respuesta parecen ser adecuados para introducir cualquiera de los campos de labor humana que queramos incluir».​ John Haugeland agregó: «la comprensión de las palabras no es suficiente, también se tiene que entender el tema».​
+Para aprobar una prueba de Turing diseñada correctamente, la máquina debe usar lenguaje natural, razón, tener conocimientos y aprender. La prueba puede ser extendida para incluir video como fuente de información junto con una «escotilla» por la que se pueden transferir objetos, esto forzaría a la máquina a probar su habilidad de visión y de robótica al mismo tiempo. En conjunto representan casi todos los problemas que la investigación de inteligencia artificial quisiera resolver.​
+La prueba de Feigenbaum está diseñada para usar a su ventaja el rango de temas disponibles para una prueba de Turing. Es una forma limitada del juego de respuesta y pregunta de Turing el cual compara a la máquina contra la habilidad de expertos en campos específicos como la literatura y la química. La máquina Watson de IBM alcanzó el éxito en un show de televisión que hacia preguntas de conocimiento humano a concursantes humanos y a la máquina por igual y al mismo tiempo llamado Jeopardy!.​
+
+
+=== Énfasis en la inteligencia emocional y estética ===
+Siendo un graduado de matemáticas con honores de Cambridge, se esperaba que Turing propusiera una prueba de inteligencia computacional que requiriera conocimiento experto de algún campo altamente técnico y como resultado necesitaría anticipar un acercamiento diferente. En vez de eso, la prueba que describió en su texto de 1950 solo requiere que la computadora sea capaz de competir exitosamente en un juego de fiestas común, con esto se refiere a que pueda compararse su desempeño con el de un humano típico al responder series de preguntas para aparentar ser la participante femenina.
+Dado el estatus de dimorfismo sexual humano como uno de los temas más antiguos, se tiene implícito, en el escenario anterior, que las preguntas realizadas no pueden involucrar conocimientos factuales especializados ni técnicos de procesamiento de información. El reto para la computadora será exhibir empatía por el papel de la mujer al igual que demostrar una característica de sensibilidad estética, cualidades las cuales se muestran en este extracto imaginado por Turing:
+
+Interrogador: ¿Podría X decirme el largo de su cabello?
+Participante: Mi cabello está en capas y las hebras más largas son de aproximadamente 9 pulgadas de largo.
+Cuando Turing introduce algo de conocimiento especializado a sus diálogos imaginarios, el tema no es matemáticas ni electrónica sino poesía:
+
+Interrogador: En la primera línea de tu soneto se lee: «Podré compararla con un día de verano», ¿acaso no funcionaría «un día de primavera» de igual o mejor manera?
+Testigo: No funcionaría.
+Interrogador: ¿Qué tal «un día de invierno»? Eso debería funcionar.
+Testigo: Si, pero nadie quiere ser comparado con un día de invierno.
+Turing, nuevamente, demuestra su interés en la empatía y en la sensibilidad estética como componente de la inteligencia artificial y en luz de una preocupación creciente de una IA en descontrol,​ se ha sugerido​ que este enfoque puede representar una intuición crítica por parte de Turing, i.e. que la inteligencia y estética jugarán un rol clave en la creación de una «IA amigable». Sin embargo, se ha observado que cualquiera que sea la dirección en la que Turing nos inspire, depende de la preservación de su visión original, o sea, la promulgación de una «Interpretación Estándar» de la prueba de Turing (i.e. una que se enfoque únicamente en la inteligencia discursiva) debe ser tomada con precaución.
+
+
+== Debilidades de la prueba ==
+
+
+=== Inteligencia real vs. Inteligencia simulada ===
+
+La prueba de Turing evalúa única y estrictamente cómo se comporta el sujeto (o sea, el comportamiento externo de la máquina). En cuanto a esto, se toma una perspectiva conductista o fundamentalista al estudio de la inteligencia. 
+John Searle ha argumentado que el comportamiento externo no puede ser usado para determinar si una máquina está «realmente» pensando o simplemente «simulando el pensamiento».​ Su habitación china pretende demostrar esto, aunque la prueba de Turing sea una buena definición operacional de la inteligencia, no indica si la máquina tiene una mente, conciencia o intencionalidad. (La intencionalidad es un término filosófico para el poder de los pensamientos de ser «sobre» algo).
+Turing anticipó esta crítica en su texto original​ escribiendo: 
+
+ 
+
+
+=== Ingenuidad de los interrogadores y la falacia antropomórfica ===
+Turing no especifica las habilidades ni el conocimiento requeridos del interrogador en la descripción de su prueba, pero sí incluyó el término «interrogador promedio»: «[el] interrogador promedio no debe tener más del 70 % de oportunidad de acertar en la identificación después de cinco minutos de cuestionamiento».​
+Shah y Warwick (2009b) demostraron que los expertos son engañados y que la estrategia, «poder» vs «solidaridad» del interrogador influyen en la identificación con la última siendo más exitosa.
+Los bots conversacionales como ELIZA han engañado, en repetidas ocasiones, a personas en creer que se comunican con seres humanos. En este caso, el interrogador no estaba al tanto de la posibilidad de que su interacción fuera con una computadora. 
+Las primeras competencias del Premio Loebner usaban interrogadores poco sofisticados que eran fácilmente engañados por las máquinas.​  Desde el 2004, los organizadores del Premio Loebner han implementado filósofos, científicos de la computación y periodistas entre los interrogadores. Sin embargo, algunos de estos expertos han sido engañados por las máquinas.​
+
+
+=== Errores en la identificación humana ===
+Una característica interesante de la prueba de Turing es la frecuencia con la que investigadores confunden a los participantes humanos con máquinas.​ Se ha sugerido que esto es porque los investigadores buscan respuestas humanas esperadas en vez de respuestas típicas. 
+
+
+=== Irrelevancia e impractibilidad: Turing y la investigación de IA ===
+Turing quería proporcionar un ejemplo claro y comprensible para ayudar en la discusión de la filosofía de la inteligencia artificial.​ John McCarthy menciona que la filosofía de IA es «poco probable que tenga más efecto en la práctica de la investigación de IA que la filosofía de la ciencia tienen en la práctica de la ciencia».​
+
+
+== Variantes de la prueba de Turing ==
+Numerosos versiones de la prueba de Turing, incluidas las mencionadas anteriormente, han sido debatidas a través de los años.
+
+
+=== Prueba de Turing en reversa y CAPTCHA ===
+Una modificación de la prueba de Turing donde los objetivos entre las máquinas y los humanos es una prueba de Turing en reversa. Un ejemplo es empleado por el psicoanalista Wilfren Bion,​ quien tiene una fascinación particular por la «tormenta» que resultó del encuentro de una mente por otra. En su libro del 2000,​ entre otras ideas originales sobre la prueba de Turing, Swirski discute a detalle lo que define como la Prueba de Swirski (básicamente la prueba de Turing en reversa). Él señala que esta supera todas las objeciones comunes de la versión paradigmática.
+R.D. Hinshelwood​ continuó con el desarrollo de esta idea al describir a la mente como un «aparato para reconocer mentes». El reto sería que el ordenador determine si está interactuando con un humano o con otra computadora. Esta es una extensión de la pregunta original que Turing intentaba responder y, probablemente, ofrece un patrón lo suficientemente alto para definir que una máquina puede «pensar» de la misma manera que nosotros describimos como humana.
+CAPTCHA es una forma de la prueba de Turing en reversa. Antes de ser capaz de realizar una acción en un sitio web, se le presenta al usuario una serie de caracteres alfanuméricos en una imagen distorsionada y se le pide que lo ingrese en un campo de texto. Esto tiene como propósito la prevención de la entrada de sistemas automatizados comúnmente usados para el abuso del sitio web. La razón detrás de esto es que el software suficientemente sofisticado para leer y reproducir la imagen con precisión no existe aún (o no está disponible para el usuario promedio) por lo que cualquier sistema capaz de pasar la prueba debe ser humano.
+El software capaz de solucionar CAPTCHA con precisión al analizar patrones en la plataforma generadora está siendo desarrollado activamente.​ Reconocimiento de Caracteres Ópticos o OCR (por sus siglas en inglés) se encuentra bajo en desarrollo como una solución para la inaccesibilidad de sistemas de CAPTCHA para humanos con discapacidades.
+
+
+=== Pruebas de Turing Experta en la Materia ===
+Otra variación es descrita como la variación de la Prueba de Turing Experta en la Materia en la cual no se puede distinguir entre la respuesta de una máquina de una respuesta dada por un experto en la materia. Se le conoce como la Prueba Feigenbaum y fue propuesta por Edward Feigenbaum en un texto del 2003.​
+
+
+=== Prueba de Turing Total ===
+La «Prueba de Turing Total»​ es una variación que añade requerimientos a la prueba tradicional. El interrogador también evalúa las capacidades de percepción del sujeto (requiriendo visión computacional) y la habilidad del sujeto de manipular objetos (requiriendo robótica).​
+
+
+=== Prueba de la Señal de Inteligencia Mínima ===
+La Prueba de la Señal de Inteligencia Mínima fue propuesta por Chris McKinstry como la «abstracción máxima de la prueba de Turing»,​ en la cual solo se permiten entradas en binario (verdadero/falso o si/no) con el objetivo de enfocarse en la capacidad de pensar. Se eliminan problemas de la conversación textual como la parcialidad antropomorfa, y no requiere la simulación de comportamientos humanos no inteligentes permitiéndole la entrada a sistemas que superan la inteligencia humana. Las preguntas no dependen de otras, sin embargo, esto es similar a una prueba de CI que una interrogación. Típicamente es usada para recolectar información estadística contra la cual se mide el rendimiento de los programas de IA.​
+
+
+=== Premio Hutter ===
+Los organizadores del Premio Hutter creen que la compresión del lenguaje natural es un problema difícil para las inteligencias artificiales equivalente a pasar la prueba de Turing.
+La prueba de compresión de información tiene ciertas ventajas sobre la mayoría de las versiones de la prueba de Turing incluyendo:
+
+Da un único número que puede ser usado directamente para comparar cuál de las dos máquinas es más inteligente.
+No requiere que la computadora le mienta al juez.
+Las desventajas principales de esta prueba son:
+
+No es posible evaluar a los humanos de esta manera.
+Se desconoce que puntuación de esta prueba equivale a pasar la prueba de Turing.
+
+
+=== Otras pruebas basadas en la compresión o Complejidad de Kolmogorov ===
+Un acercamiento similar al del Premio Hutter que apareció mucho antes al final de la década de los noventa es la inclusión de problemas de compresión en una prueba de Turing extendida,​ o por pruebas completamente derivadas de la Complejidad de Kolmogórov​ Otras pruebas relacionadas son presentadas por Hernandez-Orallo y Dowe.​
+CI algorítmico, o CIA, es un intento de convertir la teórica Medida de la Inteligencia universal de Legg y Hutter (basada en la indiferencia inductiva de Solomonoff) en una prueba práctica funcional de la inteligencia de las máquinas.​
+Dos de las mayores ventajas de estas pruebas son su aplicabilidad a inteligencias no humanas y la ausencia de la necesidad de interrogadores humanos.
+
+
+=== Prueba de Ebert ===
+La prueba de Turing inspiró la prueba de Ebert propuesta en el 2011 por el crítico de cine Robert Ebert la cual evalúa si una voz sintetizada por computadora es capaz de producir las entonaciones, inflexiones, la sincronización entre otras cosas para hacer a la gente reír.​
+
+
+== Predicciones ==
+Turing predijo que las máquinas pasarían la prueba tarde o temprano, de hecho, el estimaba que para el año 2000, las máquinas con al menos 100 MB de almacenamiento podrían engañar a un 30 % de los jueces humanos en una prueba de 5 minutos y que la gente no consideraría la frase «máquina pensante» como contradictoria.​ (En la práctica, desde 2009 a 2012, los robots conversacionales que participaron en el Premio Loebner solo lograron engañar una vez a un juez​ y esto era debido a que el participante humano pretendía ser un robot conversacional)​ Turing también predijo que el aprendizaje de las máquinas serían una parte esencial al construir máquinas poderosas, esta afirmación se considera posible en la actualidad por los investigadores en IA.​
+En un texto del 2008 enviado a la decimonovena Conferencia de Inteligencia Artificial y Ciencia Cognitiva del Medio Oeste, el doctor Shane T. Mueller predijo que una variante de la prueba de Turing llamada «Decatlón Cognitivo» sería completada en 5 años.​
+Al extrapolar el crecimiento exponencial de la tecnología a lo largo de varias décadas, el futurista Ray Kurzweil predijo que las máquinas que aprobaran la prueba de Turing serían fabricadas en el futuro próximo. En 1990, Kurzweil definió este futuro próximo alrededor del año 2020,​ para el 2005 cambió su estimado para el año 2029.​
+El proyecto «Long Bet Project Nr. 1» es una apuesta de $20 000 USD entre Mitch Kapor (pesimista) y Ray Kurzweil (optimista) sobre la posibilidad de que una máquina pase la prueba de Turing para el año 2029. Durante la prueba de Turing de Long Now, cada uno de los tres jueces realizará entrevistas a cada uno de los cuatro participantes (p. e., la computadora y tres humanos) durante dos horas para un total de 8 horas de entrevistas. La apuesta especifica condiciones a detalle.​
+
+
+== Conferencias ==
+
+
+=== Coloquio de Turing ===
+El año 1990 marcó el 40 aniversario de la primera publicación del texto de Turing «Computing Machinery and Intelligence» por lo que se reavivó el interés en este. Dos eventos importantes se llevaron a cabo ese año, el primero fue el Coloquio de Turing con sede en la Universidad de Sussex en abril, este reunió a académicos e investigadores de disciplinas diferentes para discutir sobre la Prueba de Turing en cuanto a su pasado, presente y futuro; el segundo evento fue la competencia anual del Premio Loebner.
+Blay Whitby en listo 4 puntos clave en la historia de la prueba de Turing siendo esto: la publicación de «Computing Machinery and Intelligence» en 1950, el anuncio de ELIZA en 1966 por Joseph Weizenbaum, la creación de PARRY por Kenneth Colby y el Coloquio de Turing de 1990.​
+
+
+=== Coloquio de Sistemas Conversacionales del 2005 ===
+En noviembre de 2005, la Universidad de Surrey fue sede de una junta de desarrolladores de entidades conversacionales artificiales​ a la que atendieron los ganadores del Premio Loebner: Robby Garner, Richard Wallace y Rollo Carpenter. Oradores invitados incluyeron a David Hamill, Hugh Loebner (patrocinador del Premio Loebner) Huma Shah.
+
+
+=== Simposio de la Prueba de Turing IASC del 2008 ===
+En paralelo con el Premio Loebner del 2008 con sede en la Universidad de Reading​ la Sociedad para el Estudio de la Inteligencia Artificial y la Simulación del Comportamiento (IASC) fueron anfitriones de un simposio dedicado a discutir la Prueba de Turing, fue organizado por John Barnden, Mark Bishop, Huma Shah y Kevin Warwick​ Los oradores incluían al director de la Institución Real Susan Greenfield, Selmer Bringsjord, Andrew Hodges (biógrafo de Turing) y Owen Holland (científico de la conciencia). No se llegó a un acuerdo para una prueba de Turing canónica pero Bringsjord señaló que un premio mayor resultaría en la aprobación de la prueba de Turing más rápidamente.
+
+
+=== Simposio de la Prueba de Turing IASC del 2010 ===
+60 años después de su introducción, el debate sobre el experimento de Turing sobre si «¿Pueden las máquinas pensar?» llevó a su reconsideración para la Convención de AISB del siglo XXI, llevada a cabo del 29 de marzo al 1 de abril de 2010 en la Universidad De Monthfort, Reino unido. La IASC es la Sociedad para el Estudio de la Inteligencia Artificial y la Simulación del Comportamiento.​
+
+
+=== El Año de Turing y Turing100 en el 2012 ===
+A lo largo del 2012, una cantidad considerable de eventos para celebrar la vida de Turing y su impacto científico se llevaron a cabo. El grupo Turing100 apoyó estos eventos y organizó una prueba de Turing especial en Bletchley Park el 23 de junio de 2012 para celebrar el aniversario número 100 del natalicio de Turing.
+
+
+=== Simposio de la Prueba de Turing IASC/IACAP del 2012 ===
+Las últimas discusiones sobre la Prueba de Turing en un simposio con 11 oradores, organizada por Vincent C. Müller (ACT y Oxford) y Aladdin Ayeshm (De Montfort) con Mark Bishop, John Barnden, Alessio Piebe y Pietro Perconti.
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+«Artificial Stupidity», The Economist 324 (7770), 1 de septiembre de 1992: 14 .
+Bion, W.S. (1979), «Making the best of a bad job», Clinical Seminars and Four Papers, Abingdon: Fleetwood Press. .
+Bowden, Margaret A. (2006), Mind As Machine: A History of Cognitive Science, Oxford University Press, ISBN 978-0-19-924144-6 .
+Colby, K. M.; Hilf, F. D.; Weber, S.; Kraemer, H. (1972), «Turing-like indistinguishability tests for the validation of a computer simulation of paranoid processes», Artificial Intelligence 3: 199-221, doi:10.1016/0004-3702(72)90049-5 .
+Copeland, Jack (2003), «The Turing Test»,  en Moor Moor, James James, ed., The Turing Test: The Elusive Standard of Artificial Intelligence (Springer), ISBN 1-4020-1205-5 .
+Crevier, Daniel (1993), AI: The Tumultuous Search for Artificial Intelligence, New York, NY: BasicBooks, ISBN 0-465-02997-3 .
+Dreyfus, Hubert (1979), What Computers Still Can't Do, New York: MIT Press, ISBN 0-06-090613-8 .
+«Some challenges and grand challenges for computational intelligence», Journal of the ACM 50 (1), 2003: 32-40, doi:10.1145/602382.602400 .
+Genova, J. (1994), «Turing's Sexual Guessing Game», Social Epistemology 8 (4): 314-326, doi:10.1080/02691729408578758 .
+Harnad, Stevan (2004), «The Annotation Game: On Turing (1950) on Computing, Machinery, and Intelligence»,  en Epstein Epstein, Robert Robert; Peters, Grace, eds., The Turing Test Sourcebook: Philosophical and Methodological Issues in the Quest for the Thinking Computer, Klewer .
+Haugeland, John (1985), Artificial Intelligence: The Very Idea, Cambridge, Mass.: MIT Press ..
+Hayes, Patrick; Ford, Kenneth (1995), «Turing Test Considered Harmful», Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence (IJCAI95-1), Montreal, Quebec, Canada.: 972-997 .
+Heil, John (1998), Philosophy of Mind: A Contemporary Introduction, London and New York: Routledge, ISBN 0-415-13060-3 .
+Hinshelwood, R.D. (2001), Group Mentality and Having a Mind: Reflections on Bion's work on groups and on psychosis .
+Kurzweil, Ray (1990), The Age of Intelligent Machines, Cambridge, Mass.: MIT Press, ISBN 0-262-61079-5 .
+Kurzweil, Ray (2005), The Singularity is Near, Penguin Books, ISBN 0-670-03384-7 .
+Loebner, Hugh Gene (1994), «In response», Communications of the ACM 37 (6): 79-82, doi:10.1145/175208.175218, consultado el 22 de marzo de 2008 .
+Moor Moor, James James, ed. (2003), The Turing Test: The Elusive Standard of Artificial Intelligence, Dordrecht: Kluwer Academic Publishers, ISBN 1-4020-1205-5 .
+Penrose, Roger (1989), The Emperor's New Mind: Concerning Computers, Minds, and The Laws of Physics, Oxford University Press, ISBN 0-14-014534-6 .
+Russell, Stuart J.; Norvig, Peter (2010), Artificial Intelligence: A Modern Approach (3ª edición), Upper Saddle River, NJ: Prentice Hall, ISBN 0-13-604259-7 .
+Saygin, A. P.; Cicekli, I.; Akman, V. (2000), «Turing Test: 50 Years Later», Minds and Machines 10 (4): 463-518, doi:10.1023/A:1011288000451, archivado desde el original el 9 de abril de 2011, consultado el 6 de junio de 2015 .. Reprinted in Moor (2003, pp. 23–78).
+Saygin, A. P.; Cicekli, I. (2002), «Pragmatics in human-computer conversation», Journal of Pragmatics 34 (3): 227-258, doi:10.1016/S0378-2166(02)80001-7 ..
+Saygin, A.P.; Roberts, Gary; Beber, Grace (2008), Comments on "Computing Machinery and Intelligence" by Alan Turing.,  en Epstein, R.; Roberts, G.; Poland, G., eds., «Parsing the Turing Test», Parsing the Turing Test: Philosophical and Methodological Issues in the Quest for the Thinking Computer (Dordrecht, Netherlands: Springer), Bibcode:2009pttt.book.....E, ISBN 978-1-4020-9624-2, doi:10.1007/978-1-4020-6710-5 .
+Searle, John (1980), «Minds, Brains and Programs», Behavioral and Brain Sciences 3 (3): 417-457, doi:10.1017/S0140525X00005756 .. Page numbers above refer to a standard pdf print of the article. See also Searle's original draft.
+Shah, Huma (15 de enero de 2009), Winner of 2008 Loebner Prize for Artificial Intelligence, Conversation, Deception and Intelligence, consultado el 29 de marzo de 2009 ..
+Shah, Huma (16 de octubre de 2010), Deception-detection and machine intelligence in practical Turing tests .
+Shah, Huma (2011), Turing's Misunderstood Imitation Game and IBM's Watson Success .
+Shah, Huma; Warwick, Kevin (2009a), «Emotion in the Turing Test: A Downward Trend for Machines in Recent Loebner Prizes»,  en Vallverdú, Jordi Jordi; Casacuberta, David, eds., Handbook of Research on Synthetic Emotions and Sociable Robotics: New Applications in Affective Computing and Artificial Intelligence, Information Science, IGI, ISBN 978-1-60566-354-8 .
+Shah, Huma; Warwick, Kevin (16 de junio de 2010), «Hidden Interlocutor Misidentification in Practical Turing Tests», Minds and Machines 20 (3): 441-454, doi:10.1007/s11023-010-9219-6 .
+Shah, Huma; Warwick, Kevin (16 de abril de 2010), «Testing Turing's Five Minutes Parallel-paired Imitation Game», Kybernetes Turing Test Special Issue 4 (3): 449, doi:10.1108/03684921011036178, archivado desde el original el 26 de septiembre de 2012, consultado el 6 de junio de 2015 .
+Shapiro, Stuart C. (1992), «The Turing Test and the economist», ACM SIGART Bulletin 3 (4): 10-11, doi:10.1145/141420.141423 .
+Shieber, Stuart M. (1994), «Lessons from a Restricted Turing Test», Communications of the ACM 37 (6): 70-78, doi:10.1145/175208.175217, consultado el 25 de marzo de 2008 .
+Sterrett, S. G. (2000), «Turing's Two Test of Intelligence», Minds and Machines 10 (4): 541, doi:10.1023/A:1011242120015 . (reprinted in The Turing Test: The Elusive Standard of Artificial Intelligence edited by James H. Moor, Kluwer Academic 2003) ISBN 1-4020-1205-5
+Sundman, John (26 de febrero de 2003), «Artificial stupidity», Salon.com, archivado desde el original el 7 de marzo de 2008, consultado el 22 de marzo de 2008 .
+Thomas, Peter J. (1995), The Social and Interactional Dimensions of Human-Computer Interfaces, Cambridge University Press, ISBN 0-521-45302-X .
+Swirski, Peter (2000), Between Literature and Science: Poe, Lem, and Explorations in Aesthetics, Cognitive Science, and Literary Knowledge, McGill-Queen's University Press, ISBN 0-7735-2078-3 .
+Traiger, Saul (2000), «Making the Right Identification in the Turing Test», Minds and Machines 10 (4): 561, doi:10.1023/A:1011254505902 . (reprinted in The Turing Test: The Elusive Standard of Artificial Intelligence edited by James H. Moor, Kluwer Academic 2003) ISBN 1-4020-1205-5
+Turing, Alan (1948), «Machine Intelligence»,  en Copeland, B. Jack, ed., The Essential Turing: The ideas that gave birth to the computer age, Oxford: Oxford University Press, ISBN 0-19-825080-0 .
+Turing, Alan (1952), «Can Automatic Calculating Machines be Said to Think?»,  en Copeland, B. Jack, ed., The Essential Turing: The ideas that gave birth to the computer age, Oxford: Oxford University Press, ISBN 0-19-825080-0 .
+Zylberberg, A.; Calot, E. (2007), «Optimizing Lies in State Oriented Domains based on Genetic Algorithms», Proceedings VI Ibero-American Symposium on Software Engineering: 11-18, ISBN 978-9972-2885-1-7 .
+Weizenbaum, Joseph (16 de enero de 1966), «ELIZA – A Computer Program For the Study of Natural Language Communication Between Man And Machine», Communications of the ACM 9 (1): 36-45, doi:10.1145/365153.365168 .
+Whitby, Blay (1996), «The Turing Test: AI's Biggest Blind Alley?»,  en Millican, Peter & Clark, Andy, ed., Machines and Thought: The Legacy of Alan Turing 1, Oxford University Press, pp. 53-62, ISBN 0-19-823876-2 .
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Prueba de Turing.
+Turing Test Page
+The Turing Test – an Opera by Julian Wagstaff
+The Turing Test- How accurate could the turing test really be?
+
+The Turing test  en la Stanford Encyclopedia of Philosophy.
+Turing Test: 50 Years Later reviews a half-century of work on the Turing Test, from the vantage point of 2000.
+Bet between Kapor and Kurzweil, including detailed justifications of their respective positions.
+Why The Turing Test is AI's Biggest Blind Alley by Blay Witby
+TuringHub.com Take the Turing Test, live, online
+Jabberwacky.com An AI chatterbot that learns from and imitates humans
+New York Times essays on machine intelligence part 1 and [ part 2]
+Computer Science Unplugged teaching activity for the Turing Test.
+Wiki News: "Talk:Computer professionals celebrate 10th birthday of A.L.I.C.E."
+Computing Machinery and intelligence Artículo original de Turing (1950) en la revista Mind
+¿Qué es un CAPTCHA? Origen y uso. Vídeo que explica qué es un captcha y su relación con el test de Turing
+Test de Turing y Conciencia Artificial. Vídeo sobre el test de Turing y su relación con la conciencia.
+Un ordenador pasa por primera vez el test de Turing y convence a los jueces de que es humano, diario ABC, 10 de junio de 2014.

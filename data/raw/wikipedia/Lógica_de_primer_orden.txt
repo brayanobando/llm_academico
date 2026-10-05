@@ -1,0 +1,574 @@
+Una lógica de primer orden, también llamada lógica predicativa, lógica de predicados, cálculo de predicados o lógica predicativa de calculo, es un sistema formal diseñado para estudiar la inferencia en los lenguajes de primer orden.​ Los lenguajes de primer orden son, a su vez, lenguajes formales con cuantificadores que alcanzan solo a variables de individuo, y con predicados y funciones cuyos argumentos son solo constantes o variables de individuo, lo que garantiza que toda inferencia sea computacionalmente decidible.​
+La lógica de primer orden tiene un poder expresivo superior al del Razonamiento deductivo.
+
+
+== Introducción ==
+El desarrollo histórico y las aplicaciones de la lógica de primer orden están muy ligados a la matemática. En lo que sigue se hará una introducción que contemple e ilustre esta relación, tomando ejemplos tanto de la matemática como del lenguaje natural. Primero se introducen cada uno de los conceptos básicos del sistema, y luego se muestra cómo utilizarlos para analizar argumentos.
+
+
+=== Predicados ===
+Un predicado es una expresión lingüística que se puede conectar con una o varias otras expresiones para formar una oración.​ Por ejemplo, en la oración «Marte es un planeta», la expresión «es un planeta» es un predicado que se conecta con la expresión «Marte» para formar una oración. Y en la oración «Júpiter es más grande que Marte», la expresión «es más grande que» es un predicado que se conecta con dos expresiones, «Júpiter» y «Marte», para formar una oración.
+En lógica matemática, cuando un predicado se conecta con una expresión, se dice que expresa una propiedad (como la propiedad de ser un planeta), y cuando se conecta con dos o más expresiones, se dice que expresa una relación (como la relación de ser más grande que). Sin embargo, la lógica de primer orden no hace ningún supuesto sobre si existen o no las propiedades o las relaciones. Solo se ocupa de estudiar el modo en que hablamos y razonamos con expresiones lingüísticas.
+En la lógica de primer orden, los predicados son tratados como funciones. Una función es, metafóricamente hablando, una máquina que recibe un conjunto de cosas, las procesa, y devuelve como resultado una única cosa. A las cosas que entran a las funciones se las llama argumentos,​ y a las cosas que salen, valores o imágenes. Considérese por ejemplo la siguiente función matemática:
+
+f(x) = 2x
+Esta función toma números como argumentos y devuelve más números como valores. Por ejemplo, si toma el número 1, devuelve el número 2, y si toma el 5, devuelve el 10. En la lógica de primer orden, se propone tratar a los predicados como funciones que no solo toman números como argumentos, sino expresiones como «Marte», «Mercurio» y otras que se verán más adelante. De este modo, la oración «Marte es un planeta» puede transcribirse, siguiendo la notación propia de las funciones, de la siguiente manera:
+
+Planeta(Marte)
+O, más abreviadamente:
+
+P(m)
+En la matemática existen además funciones que toman varios argumentos. Por ejemplo:
+
+f(x,y) = x + y
+Esta función, si toma los números 1 y 2, devuelve el número 3, y si toma el -5 y el -3, devuelve el -8. Siguiendo esta idea, la lógica de primer orden trata a los predicados que expresan relaciones, como funciones que toman dos o más argumentos. Por ejemplo, la oración «Caín mató a Abel» se puede formalizar así:
+
+Mató(Caín,Abel)
+O abreviando:
+
+M(c,a)
+Este procedimiento se puede extender para tratar con predicados que expresan relaciones entre muchas entidades. Por ejemplo, la oración «Ana está sentada entre Bruno y Carlos» puede formalizarse:
+
+S(a,b,c)
+
+
+=== Constantes individuales ===
+Una constante individual es una expresión lingüística que refiere a una entidad. Por ejemplo «Marte», «Júpiter», «Caín» y «Abel» son constantes de individuo. También lo son las expresiones «1», «2», etc., que refieren a números. Una entidad no tiene que existir para que se pueda hablar acerca de ella, de modo que la lógica de primer orden tampoco hace supuestos acerca de la existencia o no de las entidades a las que refieren sus constantes individuales.
+
+
+=== Variables individuales ===
+Además de las constantes individuales que hacen referencia a entidades determinadas, la lógica de primer orden cuenta con otras expresiones, las variables, cuya referencia no está determinada. Su función es similar a la de las expresiones del lenguaje natural como «él», «ella», «esto», «eso» y «aquello», cuyo referente varía con el contexto. Las variables generalmente se representan con letras minúsculas cerca del final del alfabeto latino, principalmente la x, y y z. Del mismo modo, en la matemática, la x en la función f(x) = 2x no representa ningún número en particular, sino que es algo así como un espacio vacío donde se pueden insertar distintos números. En conclusión, podemos representar una expresión como «esto es antiguo» con la expresión:
+
+Antiguo(x)
+O abreviadamente:
+
+A(x)
+Es evidente, sin embargo, que hasta que no se determine a qué refiere la x, no es posible asignar un valor de verdad a la expresión «esto es antiguo», del mismo modo que hasta que no se determine un número para la x en la función f(x) = 2x, no será posible calcular ningún valor para la función.
+Por supuesto, al igual que con las constantes individuales, las variables sirven también para formalizar relaciones. Por ejemplo, la oración «esto es más grande que aquello» se formaliza:
+
+G(x,y)
+Y también se pueden combinar constantes individuales con variables. Por ejemplo en la oración «ella está sentada entre Bruno y Carlos»:
+
+S(x,b,c)
+
+
+=== Cuantificadores ===
+Considérese ahora la siguiente expresión matemática:
+
+x > 3
+Esta expresión no es ni verdadera ni falsa, y parece que no lo será hasta que no reemplacemos a la x por algún número cualquiera. Sin embargo, también es posible dar un valor de verdad a la expresión si se le antepone un cuantificador. Un cuantificador es un operador sobre un conjunto de individuos, se trata de un recurso expresivo que permite construir proposiciones sobre conjuntos o dicho de otra forma,​ un cuantificador es una expresión que afirma que una condición se cumple para un cierto número de individuos.​ En la lógica clásica, los dos cuantificadores más estudiados son el cuantificador universal y el cuantificador existencial.​ El primero afirma que una condición se cumple para todos los individuos de los que se está hablando,​ y el segundo que se cumple para al menos uno de los individuos.​ Por ejemplo, la expresión "para todo x" es un cuantificador universal, que antepuesto a "x < 3", produce:
+
+Para todo x, x < 3
+Esta es una expresión con valor de verdad, en particular, una expresión falsa, pues existen muchos números (muchos x) que son mayores que tres. Anteponiendo en cambio la expresión "para al menos un x", un cuantificador existencial, se obtiene:
+
+Para al menos un x, x < 3
+La cual resulta ser una expresión verdadera.
+Adviértase ahora, sin embargo, que el valor de verdad de las dos expresiones anteriores depende de qué números se esté hablando. Si cuando se afirma "para todo x, x < 3", se está hablando solo de los números negativos, por ejemplo, entonces la afirmación es verdadera. Y si al afirmar "para al menos un x, x < 3" se está hablando solamente de los números 3, 4 y 5, entonces la afirmación es falsa. En lógica, a aquello de lo que se está hablando cuando se usa algún cuantificador, se lo llama el dominio de discurso.​
+Esta maquinaria se puede adaptar fácilmente para formalizar oraciones con cuantificadores del lenguaje natural. Tómese por caso la afirmación "todos son amigables". Esta oración se puede traducir así:
+
+Para todo x, x es amigable.
+Y una oración como "alguien está mintiendo" puede traducirse:
+
+Para al menos un x, x está mintiendo.
+También es frecuente traducir esta última oración así:
+
+Existe al menos un x, tal que x está mintiendo.
+A continuación se formalizan ambas oraciones, introduciendo a la vez la notación especial para los cuantificadores:
+
+
+=== Conectivas ===
+
+La lógica de primer orden incorpora además las conectivas de la lógica proposicional. Combinando las conectivas con los predicados, constantes, variables y cuantificadores, es posible formalizar oraciones como las siguientes:
+
+
+=== Argumentos ===
+Considérese el siguiente argumento clásico:
+
+Todos los hombres son mortales.
+Sócrates es un hombre.
+Por lo tanto, Sócrates es mortal.
+La tarea de la lógica de primer orden consiste en determinar por qué los argumentos como este resultan válidos. Para eso, el primer paso es traducirlos a un lenguaje más preciso, que pueda ser analizado mediante métodos formales. Según lo visto más arriba, la formalización de este argumento es la siguiente:
+
+∀x (Hx → Mx)
+Hs
+∴ Ms
+
+
+== Sistema formal ==
+A continuación se define un lenguaje formal, Q, y luego se definen axiomas y reglas de inferencia sobre ese lenguaje que dan como resultado el sistema lógico SQ.
+
+
+=== Sintaxis ===
+El alfabeto del lenguaje formal Q consta de los siguientes símbolos:
+
+a   x   f   P   *   '   ¬   ∧   ∨   →   ↔   ∀   ∃   (   )
+A partir de estos símbolos, se definen las siguientes nociones:
+Un nombre (o constante individual) es una a seguida de una o más comillas. Por ejemplo, a', a'' y a'''''' son nombres. Para facilitar la lectura, se suelen omitir las comillas y utilizar distintas letras cerca del comienzo del alfabeto latino, con o sin subíndices, para distinguir nombres distintos: a, b, c, d, e, a1, a3, c9, etc.
+Una variable (o variable individual) es una x seguida de una o más comillas. Por ejemplo, x', x'' y x'''''' son variables. Para facilitar la lectura, se suelen omitir las comillas y utilizar distintas letras cerca del final del alfabeto latino, con o sin subíndices, para distinguir variables distintas: x, y, z, x1, x3, z9, etc.
+Un functor es una f seguida de uno o más asteriscos, y luego de una o más comillas. Por ejemplo, f *', f **'''' y f ****'' son functores. El número de asteriscos indica la aridad del functor. Para facilitar la lectura, se suelen omitir los asteriscos y las comillas y utilizar distintas letras del alfabeto latino cerca de la f, con o sin subíndices, para distinguir functores distintos: f, g, h, f1, f3, h9, etc.
+Un predicado es una P seguida de uno o más asteriscos, y luego de una o más comillas. Por ejemplo, P *', P **'''' y P ****'' son predicados. El número de asteriscos indica la aridad del predicado. Para facilitar la lectura, se suelen omitir los asteriscos y las comillas y utilizar distintas letras en mayúscula a lo largo del alfabeto latino para distinguir predicados distintos: P, A, B, C, S, T, etc.
+La noción de término se define recursivamente mediante las siguientes cláusulas:
+
+Todos los nombres son términos.
+Todas las variables son términos.
+Si f es un functor de aridad n ≥ 1 y t1,...,tn son términos, entonces f(t1,...,tn) es un término.
+Nada más es un término.
+Según esta definición, las siguientes cadenas de caracteres son términos:
+
+Y en cambio, las siguientes cadenas de caracteres no son términos:
+
+La noción de fórmula bien formada de Q se define a través de las siguientes cláusulas:
+
+Si P es un predicado de aridad n ≥ 1 y t1,...,tn son términos, entonces P(t1,...,tn) es una fórmula bien formada.
+Si A es una fórmula bien formada, entonces ¬A también lo es.
+Si A y B son fórmulas bien formadas, entonces (A ∧ B), (A ∨ B), (A → B) y (A ↔ B) también lo son.
+Si A es una fórmula bien formada y x es una variable, entonces ∀x A y ∃x A son fórmulas bien formadas.
+Nada más es una fórmula bien formada.
+Según esta definición, las siguientes cadenas de caracteres son fórmulas bien formadas:
+
+Y en cambio, las siguientes cadenas de caracteres no son fórmulas bien formadas:
+
+Para ciertos predicados muy utilizados, la notación estándar puede tener la forma a R b en vez de R(a,b). Por ejemplo, se escribe 2 > 1 en vez de >(2,1), y 4 = 4 en vez de =(4,4). Análogamente, si f es un functor de aridad 2, a veces se escribe a f b en vez de f(a,b). Por ejemplo, se escribe 1 + 2 en vez de +(1,2).
+
+
+==== Observaciones ====
+El símbolo de identidad a veces se incluye entre los símbolos primitivos del alfabeto y se comporta sintácticamente como un predicado binario. A una lógica de primer orden que incluye el símbolo de identidad se la llama, justamente, lógica de primer orden con identidad.
+Los nombres pueden ser definidos como functores de aridad 0, de modo que es posible omitir la a de entre los símbolos primitivos.
+En la definición anterior se requiere que los predicados tengan aridad mayor o igual que 1. Es posible permitir predicados de aridad 0, considerándolos como variables proposicionales de la lógica proposicional.
+Es posible reducir el número de símbolos primitivos hasta quedarse con solo nueve: x   f   P   *   '   ↓   ∀   (   )
+Hay diferentes convenciones acerca de dónde poner los paréntesis. Por ejemplo, algunos escriben (∀x) en vez de ∀x. A veces se usan dos puntos (:) o un punto (.) en vez de paréntesis para desambiguar fórmulas. Una notación interesante pero poco usual es la notación polaca, donde se omiten todos los paréntesis y se escribe ∧, ∨, delante de los argumentos en vez de entre ellos. La notación polaca es compacta pero poco común por ser difícil para ser leída por los humanos.
+Una observación técnica es que si existe un símbolo de función de aridad 2 representando el par ordenado (o símbolo de predicado de aridad 2 representando la relación) no se necesitan funciones y predicados de aridad mayor que 2.
+Usualmente se considera que el conjunto de constantes, funciones y relaciones forman un lenguaje, mientras que las variables, los operadores lógicos y cuantificadores se los considera pertenecientes a la lógica. Por ejemplo, el lenguaje de la teoría de grupos consiste de una constante (el elemento identidad), una función de aridad 1 (la inversa), una función de aridad 2 (el producto), y una relación de aridad 2 (la igualdad), omitida por los autores que incluyen la igualdad en la lógica subyacente.
+
+
+==== Substitución de variables libres ====
+Las nociones de variable libre y variable ligada se introducen para evitar un posible error en el proceso de substitución. Supongamos por un momento la fórmula 
+  
+    
+      
+        ∀
+        x
+        (
+        x
+        ≤
+        y
+        )
+      
+    
+    {\displaystyle \forall x(x\leq y)}
+  
+. Intuitivamente, esta fórmula dice que para todo x, x es menor o igual que y (es decir, que y es máximo). En esta fórmula, y es una variable libre, o sea que no está bajo el alcance de ningún cuantificador. Si substituimos y por cualquier otro término t, entonces la fórmula pasará a decir que t es máximo. Pero supongamos ahora que substituimos a y por x mismo (a fin de cuentas, x es un término). En ese caso, y pasa a estar ligada por un cuantificador universal, porque la nueva fórmula es: 
+  
+    
+      
+        ∀
+        x
+        (
+        x
+        ≤
+        x
+        )
+      
+    
+    {\displaystyle \forall x(x\leq x)}
+  
+. Pero esta fórmula ya no dice de un término que es máximo, sino algo muy distinto. Para evitar este tipo de desplazamiento de significado, convenimos que al substituir una variable libre por un término cualquiera, hay que evitar que las variables libres en el nuevo término queden ligadas por algún cuantificador. Es decir, que permanezcan libres.
+Dicho de una manera más general, si t es un término y 
+  
+    
+      
+        ϕ
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle \phi (x)\,}
+  
+ es una fórmula que posiblemente contiene a x como una variable libre, entonces 
+  
+    
+      
+        ϕ
+        (
+        t
+        )
+        
+      
+    
+    {\displaystyle \phi (t)\,}
+  
+ es el resultado de substituir todas las apariciones libres de x por t, suponiendo que ninguna variable libre en t se vuelva ligada en este proceso. Si alguna variable libre de t se volviera ligada, entonces para substituir t por x se necesita cambiar los nombres de las variables ligadas de 
+  
+    
+      
+        ϕ
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle \phi (x)\,}
+  
+ por otros que no coincidan con las variables libres de t.
+
+
+==== Identidad ====
+Hay varias maneras diferentes de introducir la noción de identidad en la lógica de primer orden, pero todas son esencialmente las mismas consecuencias. Esta sección resume las principales:
+
+La manera más común de introducir a la identidad es incluyendo al símbolo entre los primitivos, y agregando axiomas que definan el comportamiento del mismo. Estos son:
+
+  
+    
+      
+        ∀
+        x
+        (
+        x
+        =
+        x
+        )
+      
+    
+    {\displaystyle \forall x(x=x)}
+  
+
+  
+    
+      
+        ∀
+        x
+        ∀
+        y
+        
+          
+            (
+          
+        
+        (
+        x
+        =
+        y
+        )
+        →
+        ∀
+        f
+        
+          
+            (
+          
+        
+        (
+        f
+        (
+        .
+        .
+        .
+        x
+        .
+        .
+        .
+        )
+        =
+        f
+        (
+        .
+        .
+        .
+        y
+        .
+        .
+        .
+        )
+        
+          
+            )
+          
+        
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle \forall x\forall y{\bigg (}(x=y)\to \forall f{\Big (}(f(...x...)=f(...y...){\Big )}{\bigg )}}
+  
+
+  
+    
+      
+        ∀
+        x
+        ∀
+        y
+        
+          
+            (
+          
+        
+        (
+        x
+        =
+        y
+        )
+        →
+        ∀
+        P
+        
+          
+            (
+          
+        
+        (
+        P
+        (
+        .
+        .
+        .
+        x
+        .
+        .
+        .
+        )
+        ↔
+        P
+        (
+        .
+        .
+        .
+        y
+        .
+        .
+        .
+        )
+        
+          
+            )
+          
+        
+        
+          
+            )
+          
+        
+      
+    
+    {\displaystyle \forall x\forall y{\bigg (}(x=y)\to \forall P{\Big (}(P(...x...)\leftrightarrow P(...y...){\Big )}{\bigg )}}
+  
+
+Otra manera es incluir al símbolo de identidad como una de las relaciones de la teoría y agregar los axiomas de identidad a la teoría. En la práctica esta convención es casi indistinguible de la anterior, salvo en el caso inusual de las teorías sin noción de identidad. Los axiomas son los mismos. La única diferencia es que unos se llaman axiomas lógicos y los otros axiomas de la teoría.
+En las teorías sin funciones y con un número finito de relaciones, es posible definir la identidad en términos de las relaciones. Esto se hace definiendo que dos términos a y b son iguales si y solo si ninguna relación presenta cambios reemplazando a por b en cualquier argumento. Por ejemplo, en teoría de conjuntos con una relación de pertenencia (∈), definiríamos a = b como una abreviación para ∀x [(a ∈ x) ↔ (b ∈ x)] ∧ [(x ∈ a) ↔ (x ∈ b)]. Esta definición de identidad automáticamente satisface los axiomas de identidad.
+En algunas teorías es posible dar definiciones ad hoc para la identidad. Por ejemplo, en una teoría de órdenes parciales con una relación de menor o igual (≤) podríamos definir a = b como una abreviación para (a ≤ b) ∧ (b ≤ a).
+
+
+=== Reglas de inferencia ===
+
+La lógica de primer orden tiene dos reglas de inferencia. La primera es el modus ponens, heredada de la lógica proposicional. La segunda es la regla de Generalización universal, que es característica de la lógica de primer orden. La misma dice:
+
+  
+    
+      
+        
+          
+            
+              
+                A
+              
+            
+            
+              
+                ∀
+                x
+                A
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{l}A\\\hline \forall xA\end{array}}}
+  
+
+O en la notación del cálculo de secuentes:
+
+  
+    
+      
+        A
+        ⊢
+        ∀
+        x
+        A
+      
+    
+    {\displaystyle A\vdash \forall xA}
+  
+
+Es decir: a partir de A es posible concluir que ∀x A.
+Nótese que la regla de generalización universal es análoga a la regla de Necesitación de la lógica modal.
+
+
+=== Axiomas ===
+Los axiomas considerados aquí son los axiomas lógicos los cuales son parte del cálculo de predicados. Al formalizar teorías de primer orden particulares (como la aritmética de Peano) se agregan axiomas no-lógicos específicos, es decir axiomas que no se consideran verdades de la lógica pero sí verdades de una teoría particular.
+Cuando el conjunto de axiomas es infinito, se requiere de un algoritmo que pueda decidir para una fórmula bien formada si es un axioma o no. Más aún, debería existir un algoritmo que pueda decidir si la aplicación de una regla de inferencia es correcta o no.
+Es importante notar que el cálculo de predicados puede ser axiomatizado de varias formas diferentes. No existe nada canónico sobre los axiomas y reglas de inferencia aquí dadas, pero cualquier formalización produce los mismos teoremas de la lógica (y permite deducir los mismos teoremas de cualquier conjunto de axiomas no-lógicos).
+Los siguientes tres axiomas son heredados de la lógica proposicional y se incorporan a la lógica de primer orden. Sean A, B y C fórmulas bien formadas de Q. Luego, los siguientes son axiomas lógicos:
+
+Ax1: A → (B → A)
+Ax2: (A → (B → C)) → ((A → B) → (A → C))
+Ax3: (¬A → ¬B) → (B → A)
+Los dos axiomas siguientes son característicos de la lógica de primer orden. Sean A y B fórmulas bien formadas de Q con como máximo una variable libre, x. Sea t un término cerrado y A(x/t) el resultado de reemplazar toda aparición de x en A por t. Luego, los siguientes son axiomas lógicos:
+
+Ax4: ∀x A → A(x/t)
+Ax5: ∀x (A → B) → (∀x A → ∀x B)
+Intuitivamente, el cuarto axioma dice que lo que vale para todos vale para cualquiera. Por ejemplo, un caso particular del axioma podría ser: «Si todos son mortales, entonces Abel es mortal»; o también: «Si todos son mortales, entonces el padre de Mateo es mortal» El quinto axioma es análogo al axioma K de la lógica modal, y un caso particular del mismo podría ser: «Si todos los humanos son mortales, entonces, si todos son humanos, todos son mortales.»
+
+
+=== Semántica ===
+Una interpretación es un par <D,I>, donde D es un conjunto no vacío llamado el dominio de discurso e I es una función llamada la función de interpretación definida como sigue:
+
+Si a es un nombre, entonces I le asigna un elemento del dominio.
+Si f es un functor de aridad n, entonces I le asigna una función de n argumentos que toma elementos del dominio y devuelve elementos del dominio.
+Si P es un predicado de aridad n, entonces I le asigna un conjunto de n-tuplas construidas a partir del dominio.
+Luego es posible definir la noción de verdad para una interpretación (para las oraciones de Q):​
+
+P(t1,...,tn) es verdadera para la interpretación M si y solo si la n-tupla formada por las interpretaciones de t1,...,tn es un elemento de la interpretación de P.
+¬A es verdadera para la interpretación M si y solo si A es falsa bajo esa interpretación.
+(A ∧ B) es verdadera para la interpretación M si y solo si A es verdadera y B es verdadera bajo esa interpretación.
+(A ∨ B) es verdadera para la interpretación M si y solo si A es verdadera o B es verdadera bajo esa interpretación.
+(A → B) es verdadera para la interpretación M si y solo si A es falsa o B es verdadera bajo esa interpretación.
+(A ↔ B) es verdadera para la interpretación M si y solo si A y B son ambas verdaderas o ambas falsas bajo esa interpretación.
+Para dar las definiciones de verdad para fórmulas con la forma ∀x A o ∃x A, primero son necesarias algunas definiciones preliminares: Sea A(x/a) el resultado de reemplazar toda aparición de x en A por un nombre a (que no haya sido utilizado en la fórmula). Además, si M y M' son interpretaciones y a un nombre, entonces M' es una a-variante de M si y solo si M' es idéntica a M o difiere solo en el elemento del dominio que le asigna al nombre a.​
+
+∀x A es verdadera para M si y solo si A(x/a) es verdadera para toda a-variante de M.
+ ∃x A es verdadera para M si y solo si A(x/a) es verdadera para al menos una a-variante de M.
+Una fórmula es falsa bajo una interpretación si y solo si no es verdadera bajo esa interpretación.
+A partir de esto se pueden definir varias otras nociones semánticas:
+
+Una fórmula es una verdad lógica si y solo si es verdadera para toda interpretación.
+Una fórmula es una contradicción si y solo si es falsa para toda interpretación.
+Una fórmula es consistente si y solo si existe al menos una interpretación que la haga verdadera.
+Una fórmula A es una consecuencia semántica de un conjunto de fórmulas 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+ si y solo si no hay ninguna interpretación que haga verdaderas a todas las fórmulas en 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+ y falsa a A. Cuando A es una consecuencia semántica de 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+ en un lenguaje Q, se escribe: 
+  
+    
+      
+        Γ
+        
+          ⊨
+          
+            Q
+          
+        
+        A
+      
+    
+    {\displaystyle \Gamma \models _{Q}A}
+  
+
+Una fórmula A es lógicamente válida si y solo si es una consecuencia semántica del conjunto vacío. Cuando A es una fórmula lógicamente válida de un lenguaje Q, se escribe: 
+  
+    
+      
+        
+          ⊨
+          
+            Q
+          
+        
+        A
+      
+    
+    {\displaystyle \models _{Q}A}
+  
+
+
+== Metalógica ==
+Una cuestión fundamental en lógica es estudiar las relaciones que se establecen en los cálculos entre las estructuras sintácticas y sus interpretaciones semánticas que se establecen en los cálculos. Este estudio proporciona una visión de la utilidad del cálculo como herramienta deductiva. Pues bien la disciplina que estudia los cálculos lógicos es la Metalógica y las propiedades importantes que pretende establecer para estos cálculos son Consistencia, Completitud y Decidibilidad .​
+La lógica de primer orden es uno de los sistemas lógicos con propiedades metalógicas mejor conocidas. A continuación se introducen algunas de las más importantes.
+
+
+=== Consistencia​ ===
+Un cálculo es consistente si toda fórmula que se deriva en el cálculo es una verdad lógica.
+Formalmente el teorema de consistencia se expresa de la siguiente forma:
+Interpretando: ├ como 'se deduce lógicamente de' y ╞ como 'es consecuencia semántica de'
+Si ├ A, entonces ╞ A
+O si se considera como consecuencia de un conjunto de fórmulas, Γ:
+Si Γ ├ A, entonces Γ ╞ A
+
+
+=== Completitud ===
+
+El teorema de completitud de Gödel, demostrado por Kurt Gödel en 1929, establece que existen sistemas de primer orden en los que todas las fórmulas lógicamente válidas son demostrables. Esto quiere decir que dado un lenguaje de primer orden Q, es posible seleccionar algunas fórmulas como axiomas, y algunas reglas de inferencia, de modo tal que todas las fórmulas lógicamente válidas (verdaderas bajo cualquier interpretación) sean demostrables a partir de los axiomas y las reglas de inferencia. Un ejemplo de axiomas y reglas de inferencia que permiten demostrar completitud son los que se dieron más arriba en este artículo.
+
+
+=== Decidibilidad ===
+Un sistema es decidible cuando existe al menos un método efectivo (un algoritmo) para decidir si una fórmula cualquiera del lenguaje del sistema es lógicamente válida o no. Por ejemplo, en la lógica proposicional, la evaluación de las fórmulas mediante tablas de verdad es un método efectivo para decidir si una fórmula cualquiera es lógicamente válida (una tautología). En este sentido, la lógica de primer orden es indecidible, siempre y cuando tenga al menos un predicado de aridad 2 o más (distinto de la identidad). Este resultado fue alcanzado de manera independiente por Alonzo Church en 1936 y por Alan Turing en 1937, dando así una respuesta negativa al Entscheidungsproblem planteado por David Hilbert en 1928. Por otra parte, la lógica de primer orden monádica (con o sin identidad) es decidible, como lo demostró Leopold Löwenheim en 1915.
+
+
+=== El teorema de Löwenheim-Skolem ===
+
+El teorema de Löwenheim-Skolem establece que si una teoría de primer orden numerable tiene un modelo infinito, entonces para cualquier número cardinal K, la teoría tiene un modelo de cardinalidad K.
+En este contexto, una teoría de primer orden es simplemente un conjunto de fórmulas en un lenguaje de primer orden. Una teoría es numerable si sus fórmulas pueden ser puestas en correspondencia biunívoca con algún subconjunto (finito o infinito) de los números naturales. Y una teoría tiene un modelo infinito si tiene al menos una interpretación con un dominio infinito que hace verdaderas a todas las fórmulas de la teoría. Lo que el teorema de Löwenheim-Skolem afirma, entonces, es que si una teoría tiene una interpretación con un dominio infinito que hace verdaderas a todas las fórmulas de la teoría, entonces también tiene interpretaciones con dominios de cualquier cardinalidad que hacen verdaderas a todas las fórmulas de la teoría.
+Esto significa que las lógicas de primer orden son incapaces de controlar la cardinalidad de sus modelos infinitos: si una teoría tiene un modelo infinito, entonces también tiene modelos infinitos de todas las cardinalidades. Una consecuencia de esto es que por ejemplo, la aritmética de Peano, que es una teoría de primer orden, tendrá como modelo no solo al conjunto de los números naturales (que sería lo deseable), sino también al conjunto de los números reales e infinitos otros conjuntos de mayor cardinalidad.
+
+
+=== El teorema de compacidad ===
+
+El teorema de compacidad afirma que un conjunto de fórmulas de primer orden tiene un modelo si y solo si todo subconjunto finito de ese conjunto tiene un modelo. Esto implica que si una fórmula es una consecuencia lógica de un conjunto infinito de axiomas, entonces es una consecuencia lógica de algún subconjunto finito de ellos.
+El teorema fue demostrado por primera vez por Kurt Gödel como una consecuencia del teorema de completitud, pero con el tiempo se han encontrado varias demostraciones adicionales. El teorema es una herramienta central en teoría de modelos, ya que provee un método fundamental para construir modelos.
+
+
+=== El teorema de Lindström ===
+El teorema de Lindström establece que la lógica de primer orden es el sistema lógico más fuerte que cumple con el teorema de compacidad y el teorema descendente de Löwenheim-Skolem. Esto significa que el cumplimiento de esos dos teoremas caracteriza a la lógica de primer orden. Fue demostrado por Per Lindström, quien también definió la clase de los sistemas lógicos abstractos, permitiendo así la comparación entre sistemas.
+
+
+== Historia ==
+Dónde ubicar los orígenes de la lógica de primer orden depende de lo que se entienda por lógica de primer orden. Si se entiende cualquier sistema lógico en torno a la cuantificación sobre individuos, entonces la lógica de primer orden es tan antigua como la lógica misma, y sus orígenes se remontan al Órganon de Aristóteles. Aristóteles realizó una gran cantidad de observaciones y contribuciones acerca del comportamiento de los cuantificadores «todos», «algunos», «ningún», etc. Construyó, por ejemplo, el famoso cuadro de oposición de los juicios, y ofreció una influyente clasificación para los distintos juicios con cuantificadores.
+Sin embargo, si por lógica de primer orden se entiende un sistema lógico similar al expuesto en este artículo, entonces los orígenes de la lógica de primer orden se deben buscar recién en el siglo XIX, en la obra de Gottlob Frege.​ En 1879, Frege publicó su Conceptografía (Begriffsschrift), donde presentó el primer sistema de lógica de predicados tal como lo entendemos hoy (aunque con una notación muy diferente a la actual).​ Luego lo refinaría en un trabajo de 1893 (y reeditado en 1903) titulado Los fundamentos de la aritmética (Grundgesetze der Arithmetik).​ Sin embargo, la notación de Frege era difícil de entender,​ y sus revolucionarias contribuciones permanecieron desconocidas por varios años.​
+Entre 1910 y 1913, Bertrand Russell y Alfred North Whitehead publicaron Principia Mathematica, una monumental obra directamente influida por los trabajos de Frege.​ Con ella la lógica de predicados en general, y la lógica de primer orden en particular, cobraron una forma más familiar y alcanzaron una mayor audiencia.​
+Luego de Principia Mathematica comenzó una fértil época de resultados metalógicos para la lógica de primer orden (y otras). En 1915, Leopold Löwenheim demostró la consistencia, completitud semántica y decidibilidad de la lógica de primer orden monádica. En 1928, David Hilbert y Wilhelm Ackermann demostraron la consistencia de la lógica de primer orden. En 1929, Kurt Gödel demostró la completitud semántica de la lógica de primer orden. Y en 1936, Alonzo Church y Alan Turing demostraron, de manera independiente, la indecibilidad de la lógica de primer orden (no monádica).
+En 1933, Alfred Tarski abrió otro capítulo en la historia de la lógica de primer orden (y de la lógica en general), con la publicación de sus definiciones de verdad para lenguajes formales. Las mismas permitieron el surgimiento de la teoría de modelos. En su trabajo, Tarski ofreció una definición de verdad para el lenguaje de la lógica de primer orden (entre otros) que todavía se utiliza. Dicha definición permitió refinar las demostraciones de consistencia y completitud semántica para la lógica de primer orden.
+En 1934-1935, Gerhard Gentzen publicó Investigaciones sobre la inferencia lógica (Untersuchungen über das logische Schliessen), donde introdujo una alternativa a la construcción axiomática de los sistemas lógicos (incluyendo la lógica de primer orden), conocida como la deducción natural.​ Gentzen pronto desarrollaría la deducción natural hasta llegar al cálculo de secuentes, y con la demostración del teorema de corte-eliminación (cut-elimination theorem), proveyó una nueva aproximación a la teoría de la demostración.​
+
+
+== Véase también ==
+Lógica de orden cero
+Lógica de segundo orden
+Lógica de orden superior
+Cuantificador
+Argumento
+Cálculo lógico
+Predicado (lógica matemática)
+
+
+== Referencias ==

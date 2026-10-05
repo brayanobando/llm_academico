@@ -1,0 +1,35 @@
+Seymour Papert (Pretoria, Sudáfrica, 29 de febrero de 1928-Blue Hill, Hancock, Maine, 31 de julio de 2016)​ fue un pionero de la inteligencia artificial, inventor del lenguaje de programación Logo en 1968. Es considerado como destacado científico computacional, matemático y educador. En 1949 obtuvo un bachillerato de la Universidad de Witwatersrand y un doctorado en matemáticas en 1952. En 1959 obtuvo su segundo doctorado de matemáticas en la Universidad de Cambridge.
+Seymour Papert trabajó con el psicólogo educativo Jean Piaget en la Universidad de Ginebra, desde 1959 hasta 1963.
+En 1963 fue invitado a unirse al Instituto Tecnológico de Massachusetts (MIT), donde en unión de Marvin Minsky fundó el Laboratorio de Ciencias de la Computación e Inteligencia Artificial del Instituto de Tecnología de Massachusetts.
+
+
+== Contribuciones ==
+
+Basándose en los trabajos sobre constructivismo de Jean Piaget, ha desarrollado una visión del aprendizaje llamada construccionismo.
+Aplica la teoría de Piaget para desarrollar un lenguaje de programación de ordenadores llamado Logo. Logo funciona como un instrumento didáctico que permite a los alumnos, sobre todo a los más pequeños, construir sus conocimientos. Es una potente herramienta para el desarrollo de los procesos de pensamiento lógico-matemáticos. Para ello, construyó un robot llamado la "tortuga de Logo", que permitía a los alumnos resolver problemas.
+Trabajó con Piaget en 1960 y se le suele considerar como uno de sus más destacados discípulos. Se cuenta que en una ocasión Piaget dijo que nadie entendía sus ideas tan bien como Papert.
+Creó el "Epistemology & Learning Research Group" ("Grupo de Investigación sobre el Aprendizaje y la Epistemología") en el Instituto Tecnológico de Massachusetts (MIT).
+Colaboró con LEGO en un producto programable en Logo.
+
+
+== Accidente ==
+A finales de 2006 fue arrollado por una motocicleta en Hanói, Vietnam, por lo que estuvo en coma durante un tiempo.​
+
+
+== Libros ==
+Perceptrons, (con Marvin Minsky), MIT Press, 1969 (edición expandida, 1988), ISBN 0-262-63111-3 (en inglés)
+Counter-free automata, 1971, ISBN 0-262-13076-9 (en inglés)
+Tormentas de Mentes (Mindstorms), Niños, Computadoras e Ideas poderosas (1980), ISBN 0-465-04674-6.
+Desafío a la mente. Computadoras y Educación (1981).
+Papert, S. & Harel, I. (eds). (1991) Constructionism: research reports and essays 1985 - 1990 por el Grupo de Investigación de Aprendizaje y Epistemiología, the Media Lab, Massachusetts Institute of Technology, Ablex Pub. Corp, Norwood, NJ. (en inglés)
+La máquina de los niños. Replantearse la educación en la era de los ordenadores (1995), ISBN 0-465-01063-6.
+La familia conectada. Padres, hijos y computadoras (1997), ISBN 1-56352-335-3.
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Página de Seymour Papert en inglés
+Artículos en español y traducciones parciales de los libros de Seymour Papert
+Logo Foundation (en inglés)

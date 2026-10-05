@@ -1,0 +1,95 @@
+La lógica difusa (también llamada lógica borrosa (en inglés: fuzzy logic) es una lógica paraconsistente multivaluada en la cual los valores de verdad de las variables pueden ser cualquier número real comprendido entre 0 y 1. Fue formulada por el matemático e ingeniero Lotfi A. Zadeh.​
+Este tipo de lógica se ha empleado para estudiar la verdad parcial, es decir, aquella en la que los valores de verdad pueden variar entre "completamente verdadero" o "completamente falso". La lógica difusa tiene como base los denominados conjuntos difusos y posee un sistema de inferencia basado en reglas de producción "SI antecedente ENTONCES consecuente", donde los valores lingüísticos del antecedente y el consecuente están definidos por conjuntos difusos.
+
+
+== Funcionamiento ==
+La lógica difusa (fuzzy logic, en inglés) permite tomar decisiones más o menos intensas en función de grados intermedios de cumplimiento de una premisa; se adapta mejor al mundo real en el que vivimos, e incluso puede comprender y funcionar con nuestras expresiones, del tipo «hace mucho calor», «no es muy alto», «el ritmo del corazón está un poco acelerado», etc.
+Toma dos valores aleatorios, pero contextualizados y referidos entre sí. Por ejemplo, una persona que mida dos metros es claramente una persona alta, si previamente se ha tomado el valor de persona baja y se ha establecido en un metro. Ambos valores están contextualizados a personas y referidos a una medida métrica lineal.
+La clave de esta adaptación al lenguaje se basa en comprender los cuantificadores de cualidad para nuestras inferencias (en los ejemplos de arriba, «mucho», «muy» y «un poco»).
+En la teoría de conjuntos difusos se definen también las operaciones de unión, intersección, diferencia, negación o complemento, y otras operaciones sobre conjuntos (véase también subconjunto difuso), en los que se basa esta lógica.
+Para cada conjunto difuso, existe asociada una función de pertenencia para sus elementos, que indica en qué medida el elemento forma parte de ese conjunto difuso. Las formas de las funciones de pertenencia más típicas son trapezoidal, lineal y curva.
+Se basa en reglas heurísticas de la forma SI (antecedente) ENTONCES (consecuente), donde el antecedente y el consecuente son también conjuntos difusos, ya sea puros o resultado de operar con ellos. Sirvan como ejemplos de regla heurística para esta lógica (nótese la importancia de las palabras «muchísimo», «drásticamente», «un poco» y «levemente» para la lógica difusa):
+
+SI hace muchísimo frío. ENTONCES descendió drásticamente la temperatura.
+SI voy a llegar un poco tarde. ENTONCES aumento levemente la velocidad.
+Los métodos de inferencia para esta base de reglas deben ser sencillos, versátiles y eficientes. Los resultados de dichos métodos son un área final, fruto de un conjunto de áreas solapadas entre sí (cada área es resultado de una regla de inferencia). Para escoger una salida concreta a partir de tanta premisa difusa, el método más usado es el del centroide, en el que la salida final será el centro de gravedad  del área total resultante.
+Las reglas de las que dispone el motor de inferencia de un sistema difuso pueden ser formuladas por expertos o bien aprendidas por el propio sistema, haciendo uso en este caso de redes neuronales para fortalecer las futuras tomas de decisiones.
+Los datos de entrada suelen ser recogidos por sensores que miden las variables de entrada de un sistema. El motor de inferencias se basa en chips difusos, que están aumentando exponencialmente su capacidad de procesamiento de reglas año a año.
+Un esquema de funcionamiento típico para un sistema difuso podría ser de la siguiente manera:
+
+En la figura, el sistema de control hace los cálculos con base en sus reglas heurísticas, comentadas anteriormente. La salida final actuaría sobre el entorno físico, y los valores sobre el entorno físico de las nuevas entradas (modificado por la salida del sistema de control) serían tomadas por sensores del sistema.
+Por ejemplo, imaginando que nuestro sistema difuso fuese el climatizador de un coche que se autorregula según las necesidades: Los chips difusos del climatizador recogen los datos de entrada, que en este caso bien podrían ser la temperatura y humedad simplemente. Estos datos se someten a las reglas del motor de inferencia (como se ha comentado antes, de la forma SI... ENTONCES... ), resultando un área de resultados. De esa área se escogerá el centro de gravedad, proporcionándola como salida. Dependiendo del resultado, el climatizador podría aumentar la temperatura o disminuirla dependiendo del grado de la salida.
+
+
+== Lógica Difusa Compensatoria (LDC) ==
+La LDC es un modelo lógico multivalente que permite la modelación simultánea de los procesos deductivos y de toma de decisiones. El uso de la LDC en los modelos matemáticos permite utilizar conceptos relativos a la realidad siguiendo patrones de comportamiento similares al pensamiento humano. Las características más importantes de estos modelos son: La flexibilidad, la tolerancia con la imprecisión, la capacidad para moldear problemas no lineales y su fundamento en el lenguaje de sentido común. Bajo este fundamento se estudia específicamente cómo acondicionar el modelo sin condicionar la realidad.
+La LDC utiliza la escala de la LD, la cual puede variar de 0 a 1 para medir el grado de verdad o falsedad de sus proposiciones, donde las proposiciones pueden expresarse mediante predicados. Un predicado es una función del universo X en el intervalo [0, 1], y las operaciones de conjunción, disyunción, negación e implicación, se definen de modo que restringidas al dominio [0, 1] se obtenga la Lógica Booleana. 
+Las distintas formas de definir las operaciones y sus propiedades determinan diferentes lógicas multivalentes que son parte del paradigma de la LD. Las lógicas multivalentes se definen en general como aquellas que permiten valores intermedios entre la verdad absoluta y la falsedad total de una expresión. Entonces el 0 y el 1 están asociados ambos a la certidumbre y la exactitud de lo que se afirma o se niega y el 0,5 a la vaguedad y la incertidumbre máximas. 
+En los procesos que requieren toma de decisiones, el intercambio con los expertos lleva a obtener formulaciones complejas y sutiles que requieren de predicados compuestos. Los valores de verdad obtenidos sobre estos predicados compuestos deben poseer sensibilidad a los cambios de los valores de verdad de los predicados básicos. 
+Esta necesidad se satisface con el uso de la LDC, que renuncia al cumplimiento de las propiedades clásicas de la conjunción y la disyunción, contraponiendo a éstas la idea de que el aumento o disminución del valor de verdad de la conjunción o la disyunción provocadas por el cambio del valor de verdad de una de sus componentes, puede ser “compensado” con la correspondiente disminución o aumento de la otra. Estas propiedades hacen posible de manera natural el trabajo de traducción del lenguaje natural al de la Lógica, incluidos los predicados extensos si éstos surgen del proceso de modelación. 
+En la LDC, el operador conjunción, expresado como c (and) es la media geométrica.
+[1]
+
+
+== La modelización de la vaguedad en la Lógica Difusa Compensatoria ==
+En la LDC la modelización de la vaguedad se logra a través de variables lingüísticas, lo que permite aprovechar el conocimiento de los expertos, al contrario de lo que ocurre en otros métodos más cercanos a las cajas negras y exclusivamente basados en datos, como por ejemplo las redes neuronales.
+Existen autores como Jesús Cejas Montero en su Artículo La Lógica Difusa Compensatoria publicado en el 2011 por la Revista Ingeniería Industrial del Instituto Superior Politécnico José Antonio Echeverría, que marcó un hito en la difusión de la LDC, que recomiendan el uso de funciones de pertenencia sigmoidales para funciones crecientes o decrecientes. Los parámetros de estas funciones quedan determinados fijando dos valores. El primero de ellos es el valor a partir del cual se considera que la afirmación contenida en el predicado es más cierta que falsa, por ejemplo pudiera establecerse a partir de 0.5. El segundo es el valor para el cual el dato hace casi inaceptable la afirmación correspondiente, por ejemplo pudiera establecerse a partir de 0.1.
+En la actualidad existe un Sistema de Soporte a Decisiones Basado en Árboles con Operadores de Lógica Difusa cuyo nombre es Fuzzy Tree Studio 1.0, desarrollado en forma conjunta entre Universidad CAECE y la Universidad Nacional de Mar del Plata (Argentina), que posee un módulo que trabaja con la LDC. Ello permite al agente decisor despreocuparse por el trasfondo matemático y centrarse en la formulación verbal del modelo que le permita tomar una decisión. 
+En general los modelos basados en LDC combinan la experiencia y el conocimiento con datos numéricos, por lo que puede ser visto como una “caja gris”. Los modelos basados en LD pueden verse como “cajas blancas”, dado que permiten ver su estructura explícitamente. En contraposición a los modelos basados en datos exclusivamente, como las Redes Neuronales, que corresponderían a “cajas negras”.
+Estos modelos pueden ser optimizados cuando se dispone de datos reales numéricos. El método de optimización puede provenir de la Inteligencia Computacional. En este contexto, los Algoritmos Genéticos presentan una alternativa interesante. Este enfoque constituye el fundamento de los sistemas híbridos. 
+La tendencia de las investigaciones sobre gestión empresarial, mediante las técnicas de la LDC, está orientada a la creación de sistemas híbridos que integren esta con las habilidades de las Redes Neuronales y las posibilidades de los Algoritmos Genéticos y la Lógica de Conjuntos. La creación e implementación de estos sistemas mixtos permite resolver problemas complejos y de difícil solución; en las que se usan estimaciones subjetivas sustentadas en la experiencia y en la información disponible, como son: modelos de decisión utilizados con criterios de optimización, ubicación de centros comerciales, estrategia de entrada a mercados, selección de carteras de productos y servicios, desarrollo de aplicaciones informáticas, métodos para problemas de descubrimiento de conocimiento, métodos para evaluar la eficiencia de diferentes tipos de instituciones, entre otras. 
+La Lógica Difusa Compensatoria es un modelo lógico multivalente que renuncia a varios axiomas clásicos para lograr un sistema idempotente y “sensible”, al permitir la “compensación” de los predicados. En la LD el valor de verdad de la conjunción es menor o igual a todas las componentes, mientras que el valor de verdad de la disyunción es mayor o igual a todas las componentes. La renuncia de estas restricciones constituye la idea básica de la LDC.
+
+
+== Aplicaciones ==
+
+
+=== Aplicaciones generales ===
+La lógica difusa se utiliza cuando la complejidad del proceso en cuestión es muy alta y no existen modelos matemáticos precisos, para procesos altamente no lineales y cuando se envuelven definiciones y conocimiento no estrictamente definido (impreciso o subjetivo). 
+En cambio, no es una buena idea usarla cuando algún modelo matemático ya soluciona eficientemente el problema, cuando los problemas son lineales o cuando no tienen solución.
+Esta técnica se ha empleado con bastante éxito en la industria, principalmente en Japón, extendiéndose sus aplicaciones a multitud de campos. La primera vez que se usó de forma importante fue en el metro japonés, con excelentes resultados. Posteriormente se generalizó según la teoría de la incertidumbre desarrollada por el matemático y economista español Jaume Gil Aluja.
+A continuación se citan algunos ejemplos de su aplicación:
+
+Sistemas de control de acondicionadores de aire​
+Sistemas de foco automático en cámaras fotográficas​
+Electrodomésticos familiares (frigoríficos, lavadoras...)​
+Control y optimización de procesos y sistemas industriales​​​
+Sistemas de escritura​
+Mejora en la eficiencia del uso de combustible en motores​
+Mejora del medio ambiente​
+Sistemas expertos del conocimiento (emular el comportamiento de un experto humano)
+Robótica​​
+Vehículos y conducción autónoma​​​
+Tecnología informática
+Bases de datos difusas: Almacenar y consultar información imprecisa. Para este punto, por ejemplo, existe el lenguaje FSQL.
+...y, en general, en la gran mayoría de los sistemas de control que no dependen de un Sí/No.
+
+
+=== Lógica difusa en inteligencia artificial ===
+En la inteligencia artificial, la lógica difusa se encarga de analizar información de la realidad en una escala entre lo verdadero y lo falso y manipula conceptos vagos, por ejemplo: caliente, húmedo o despacio. Esto permite a los ingenieros y expertos construir dispositivos que juzguen la información de una manera determinada y actúen tras interpretar esa información.  
+En concreto, la lógica borrosa o difusa se encarga de resolver una variedad de problemas estrictamente relacionados con el control de procesos industriales complejos y sistemas de decisión. Éstos sistemas tratan de imitar la forma de tomar decisiones de los humanos, en este caso además de tomar decisiones más rápidamente, lo hacen según la proximidad de los valores de verdad a 0 o a 1, es decir, a "completamente falso" o "completamente verdadero". Un ejemplo de decisión sería: Si hace muchísimo calor, entonces pongo el aire acondicionado al máximo
+
+Existen algunos lenguajes de programación lógica, como PROLOG, que han incorporado lógica difusa en sus implementaciones. Aquí podemos observar un ejemplo de implementación en PROLOG:Con la lógica tradicional, las computadoras sólo pueden trabajar con dos valores, 0 o 1 o verdadero o falso; pero en lógica difusa se emplean métodos matemáticos para describir estados subjetivos, es decir, se asocia un valor concreto para ese estado y según ese valor el computador actúa de una manera u otra dependiendo de cómo esté programado para actuar.
+La lógica difusa es una rama de la inteligencia artificial que le permite a una computadora analizar información del mundo real en una escala entre lo falso y lo verdadero, manipula conceptos vagos, como "caliente" o "húmedo", y permite a los ingenieros construir dispositivos que juzgan la información difícil de definir.  
+En Inteligencia artificial, la lógica difusa, o lógica borrosa se utiliza para la resolución de una variedad de problemas, principalmente los relacionados con control de procesos industriales complejos y sistemas de decisión en general, la resolución y la compresión de datos. Los sistemas de lógica difusa están también muy extendidos en la tecnología cotidiana, por ejemplo en cámaras digitales, sistemas de aire acondicionado, lavadoras, etc. Los sistemas basados en lógica difusa imitan la forma en que toman decisiones los humanos, con la ventaja de ser mucho más rápidos. Estos sistemas son generalmente robustos y tolerantes a imprecisiones y ruidos en los datos de entrada. Algunos lenguajes de programación lógica que han incorporado la lógica difusa serían por ejemplo las diversas implementaciones de Fuzzy PROLOG o el lenguaje Fril.
+Consiste en la aplicación de la lógica difusa con la intención de imitar el razonamiento humano en la programación de computadoras. Con la lógica convencional, las computadoras pueden manipular valores estrictamente duales, como verdadero/falso, sí/no o ligado/desligado. En la lógica difusa, se usan modelos matemáticos para representar nociones subjetivas, como caliente/tibio/frío, para valores concretos que puedan ser manipuladas por los ordenadores.
+En este paradigma, también tiene un especial valor la variable del tiempo, ya que los sistemas de control pueden necesitar retroalimentarse en un espacio concreto de tiempo, pueden necesitarse datos anteriores para hacer una evaluación media de la situación en un período anterior.
+
+
+== Ventajas e inconvenientes ==
+Como principal ventaja, cabe destacar los excelentes resultados que brinda un sistema de control basado en lógica difusa: ofrece salidas de una forma veloz y precisa, disminuyendo así las transiciones de estados fundamentales en el entorno físico que controle. Por ejemplo, si el aire acondicionado se encendiese al llegar a la temperatura de 30°, y la temperatura actual oscilase entre los 29°-30°, nuestro sistema de aire acondicionado estaría encendiéndose y apagándose continuamente, con el gasto energético que ello conllevaría. Si estuviese regulado por lógica difusa, esos 30° no serían ningún umbral, y el sistema de control aprendería a mantener una temperatura estable sin continuos apagados y encendidos.
+También está la indecisión de decantarse bien por los expertos o bien por la tecnología (principalmente mediante redes neuronales) para reforzar las reglas heurísticas iniciales de cualquier sistema de control basado en este tipo de lógica.
+
+
+== Véase también ==
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Centro de investigación español, organiza cursos y seminarios sobre lógica difusa Archivado el 8 de diciembre de 2008 en Wayback Machine.
+[2] (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).
+Morillas Raya, A. (2006): Introducción al análisis de datos difusos PDF
+Curso Introductorio de Conjuntos y Sistemas Difusos (Lógica Difusa y Aplicaciones), por el Dr. José Galindo G., Universidad de Málaga (España)
+[3] Aplicación de la lógica difusa compensatoria en el sector empresarial, por el Msc. Jesús Cejas Montero, Dr. Daniel Alfonso Robaina, Dr. Rafael Espín Andrade Universidad de La Habana (Cuba)

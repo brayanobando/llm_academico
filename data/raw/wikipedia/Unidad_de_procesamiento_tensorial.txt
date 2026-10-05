@@ -1,0 +1,43 @@
+Una unidad de procesamiento tensorial o TPU (acrónimo del inglés Tensor Processing Unit) es un circuito integrado diseñado para optimizar las cargas de trabajo durante el entrenamiento de modelos de inteligencia artificial. Estas unidades de procesamiento gestionan eficientemente operaciones avanzadas de álgebra lineal, las cuales son ampliamente utilizadas en el ámbito de la inteligencia artificial. Este circuito fue diseñado e implementado por Google y se puede utilizar a través de su infraestructura en la nube, Google Cloud.  
+En comparación con las unidades de procesamiento gráfico (que a partir de 2016 se usan con frecuencia para las mismas tareas), estas unidades están diseñadas para un mayor volumen de cálculo de precisión reducida (por ejemplo, desde 8 bits de precisión) y carecen de hardware para la rasterización/cartografía de textura.​​ El término ha sido acuñado para un chip específico diseñado para el marco TensorFlow de Google. Otros diseños de aceleradores de IA están apareciendo también en otros proveedores y están dirigidos a mercados de robótica e incrustados.
+Google también ha utilizado las TPU para el procesamiento de texto de Street View y ha podido encontrar todo el texto en la base de datos de Street View en menos de cinco días. En Fotos, una TPU individual puede procesar más de 100 millones de fotos al día. También se utiliza en Rank Brain, utilizado por Google para proporcionar resultados de búsqueda.​ La unidad de procesamiento de tensores se anunció en 2016 en Google I/O, aunque la compañía declaró que el TPU había sido utilizado dentro de su centro de datos durante más de un año antes
+El tamaño del chip puede caber en una ranura de disco duro dentro de un bastidor de un centro de datos, de acuerdo con el ingeniero de hardware Norm Jouppi de Google.
+Google ha declarado que sus unidades de procesamiento de tensor propietaria se utilizaron en la serie AlphaGo contra Lee Sedol de juegos Go hombre vs máquina.​
+La primera generación de las TPU de Google se presentó en la conferencia I/O 2016, diseñado específicamente para ejecutar redes neuronales entrenadas.​ Estas TPU tienen menos precisión en comparación con los cómputos realizados en una CPU o GPU normales, pero es suficiente para los cálculos que tienen que realizar.
+
+
+== Arquitectura ==
+
+
+=== Primera generación ===
+En la primera generación, la TPU es un motor de multiplicación matricial de 8 bits, controlado con un juego de instrucciones CISC por un procesador host sobre un bus PCIe 3.0. Está fabricado con un proceso de 28nm en un chip con tamaño ≤ 331 mm². Tiene un reloj a 700 MHz y un diseño térmico de potencia de 28-40 W. Tiene 28 MB de memoria en chip y 4 MB de acumuladores de 32 bits, que toman los resultados de una matriz 256 × 256 de multiplicadores de 8 bits. Las instrucciones transfieren datos hacia o desde el anfitrión o host, realizando multiplicaciones matriciales o convoluciones, y aplicando funciones de activación​
+
+
+=== Segunda generación ===
+La segunda generación de la TPU de Google se presentó en el I/O 2017. Esto no solo va a acelerar la aplicación de redes neuronales (inferencia), sino también la formación de estas redes. Estas TPU tienen una potencia de procesamiento de 180 TFLOPS y están interconectados a un con 11.5 PFLOPS. La topología de la arquitectura del sistema de grupos tiene esferas en forma de red de 8 × 8 TPU.
+La TPU de segunda generación forman parte del Google Compute Engine, una oferta de servicios en la nube de la compañía.
+Los detalles técnicos de la segunda generación actualmente (mayo de 2017) no están disponibles. Sin embargo, se supone que utiliza memoria GDDR5. 
+
+
+=== Tercera generación ===
+La TPU de tercera generación se anunció el 8 de mayo de 2018.​ Google anunció que los procesadores en sí son dos veces más potentes que los TPU de segunda generación y se implementarían en módulos con cuatro veces más chips que la generación anterior.​ Esto da como resultado un aumento de 8 veces en el rendimiento por pod (con hasta 1024 chips por pod) en comparación con la implementación de TPU de segunda generación.
+
+
+=== Cuarta generación ===
+El 18 de mayo de 2021, el director ejecutivo de Google, Sundar Pichai, habló sobre las unidades de procesamiento de tensor TPU v4 durante su discurso de apertura en la conferencia virtual Google I/O. TPU v4 mejoró el rendimiento en más del doble que los chips TPU v3. Cada pod v4 contiene 4096 chips v4, y cada pod tiene 10 veces el ancho de banda de interconexión por chip a escala.​
+También existe una versión de "inferencia", llamada v4i, que no requiere refrigeración líquida.​
+
+
+=== Quinta generación ===
+En 2021, Google reveló que el diseño físico de TPU v5 se está realizando mediante una novedosa aplicación de aprendizaje por refuerzo profundo.​ 
+De manera similar a que v4i, la quinta generación tiene una versión más liviana llamada v5e.​
+
+
+=== Google Tensor ===
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio web oficial de TensorFlow

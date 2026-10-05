@@ -1,0 +1,18 @@
+{
+  "vocab_size": 16000,
+  "context": 256,
+  "tokens_totales": 506405,
+  "bloques": {
+    "valid": 98,
+    "test": 98,
+    "train": 1782
+  },
+  "tokens_especiales": {
+    "pad": 0,
+    "unk": 1,
+    "bos": 2,
+    "eos": 3
+  },
+  "tokenizer": "data/tokenizer/tokenizer.json",
+  "seed": 42
+}

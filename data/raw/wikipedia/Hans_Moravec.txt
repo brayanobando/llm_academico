@@ -1,0 +1,20 @@
+Hans Moravec (Kautzen, Austria, 30 de noviembre de 1948) es un investigador en robótica en la Carnegie Mellon University. Es conocido por sus escritos sobre robótica, inteligencia artificial, y en general sobre el impacto de la tecnología en la sociedad. Se le considera un futurólogo que ha publicado diversos artículos desde la óptica del transhumanismo. En su trabajo como ingeniero Moravec ha desarrollado diversas técnicas de visión artificial.
+
+
+== Trayectoria ==
+Moravec asistió a Loyola College a Montreal durante dos años, después se trasladó a la Universidad de Acadia, donde obtuvo su BSc en matemáticas el 1969. Obtuvo su maestría en ciencias de la computación el 1971 de la Universidad de Western Ontario.​ Más tarde obtuvo un doctorado en Stanford el 1980 para un robot con TV integrada, controlable remotamente con un ordenador. El robot podía hacer carreras de obstáculos. Otro éxito en robótica fue el descubrimiento de nuevos enfoques para la representación espacial de un robot, por ejemplo las rejas de ocupación 3D. También desarrolló la idea de los robots de Bush. El 2003, a Pittsburgh, Pensilvania, Moravec cofundó Seegrid Corporation, una empresa de robótica con el objetivo de desarrollar un robot totalmente autónomo capaz de moverse sin intervención humana. Moravec también es conocido por su trabajo a Space tethers y la paradoja que lleva su nombre.
+
+
+== Impacto en el arte ==
+Su propio apellido da nombre a una especie de seres sintientes llamados moravecs dentro de la tetralogía de ficción Ilión/Olympo de Dan Simmons. Estos seres son la evolución de los robots que envió la humanidad para explorar el sistema solar exterior, y cuentan con características humanoides (como la pasión por el arte y algunos órganos funcionales), robóticas (como brazos, cuerpos blindados o actuadores), y cibernéticas (como cerebros ampliados).
+
+
+== Véase también ==
+Paradoja de Moravec
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Página oficial

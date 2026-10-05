@@ -1,0 +1,22 @@
+John McCarthy (Boston, Massachusetts, 4 de septiembre de 1927-Stanford, California, 24 de octubre de 2011),​​​ fue un informático estadounidense que recibió el Premio Turing en 1971 por sus importantes contribuciones en el campo de la inteligencia artificial. Fue el responsable de introducir el término inteligencia artificial, concepto que acuñó en la Conferencia de Dartmouth en 1956. También se le atribuye el concepto de cloud computing.​​
+
+
+== Orígenes, formación y vida académica ==
+John Patrick McCarthy, mayor de dos hermanos, fue hijo de un irlandés inmigrado y militante sindical, y de una judía lituana, sufragista, ambos pertenecientes al Partido Comunista de EE. UU. por los años treinta. A causa de la salud del hijo, la familia emigró en 1944 a California. Educado en el pensamiento lógico, y muy aficionado a los libros, mientras trabajaba como carpintero, pescador, organizador sindical e inventor,​ en 1948 el joven McCarthy se licenció en Matemáticas en el Instituto de Tecnología de California, doctorándose en la misma disciplina en 1951, en la Universidad de Princeton. Tras cortas estancias en Princeton, Stanford, Dartmouth, y el MIT, pasó a ser profesor a tiempo completo en la Universidad de Stanford en 1962, en la que permaneció como docente e investigador hasta su retiro a finales del 2000. Tras su jubilación fue nombrado Profesor Emérito de dicha universidad.
+McCarthy inventó el lenguaje de programación Lisp y publicó su diseño en Comunicaciones del ACM en 1960.
+En 1957, John McCarthy fundó, junto con Marvin Minsky, el Laboratorio de Inteligencia Artificial del MIT, y ayudó a motivar la creación del Proyecto MAC. En 1962 se marchó de él, y se fue a la Universidad de Stanford, en la que, en 1963, fundó también el respectivo Laboratorio de IA, que durante muchos años fue un rival amistoso del Proyecto MAC.
+En 1961 fue el primero en sugerir públicamente (en un discurso para celebrar el centenario del MIT) que la tecnología de tiempo compartido de las computadoras​ podría conducir a un futuro en el que el poder del cómputo e incluso aplicaciones específicas podrían ser vendidas como un servicio (como el agua o la electricidad).
+La idea de una computadora o un sistema informático como servicio era muy popular a fines de la década de 1960, pero se desvaneció hacia mediados de los 70 cuando quedó claro que el hardware, software y las tecnologías de telecomunicación simplemente no estaban preparadas. Sin embargo, desde el 2000, la idea reapareció en diferentes formas.
+Además del Premio Turing, McCarthy recibió otras varias distinciones[1], y fue miembro de distintas academias. En 2010 ingresó en el llamado "IEEE Intelligent Systems Hall of Fame".​
+
+
+== Vida privada y activismo ==
+McCarthy contrajo matrimonio tres veces. La segunda, en los años setenta, con la programadora de la IBM Vera Watson (nacida en China de padres rusos y llegada a EE. UU. en los cincuenta) que era además una escaladora de nivel internacional, afición que compartía con McCarthy; en 1976 fue la primera mujer en escalar en solitario el Aconcagua, falleciendo en 1978, en un accidente mientras trataba de coronar el Annapurna.​ Del primer y del tercer y último matrimonio McCarthy tuvo dos hijas y un hijo, que le sobreviven. 
+Aunque rechazó el marxismo como poco científico, la política nunca dejó de interesarle, y a lo largo de su vida participó en numerosas campañas públicas. Tuvo un especial interés en que la computación fuera cada vez más de dominio público; en los años 90 luchó para que se introdujera una enmienda a la Carta de Derechos de los Estados Unidos que protegiera específicamente los datos y comunicaciones informáticas, así como el derecho de los usuarios a poder leer, corregir y limitar el acceso a los propios archivos.​
+
+
+== Véase también ==
+Función 91 de McCarthy
+
+
+== Referencias ==

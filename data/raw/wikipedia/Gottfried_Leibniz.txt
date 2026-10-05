@@ -1,0 +1,490 @@
+Gottfried Wilhelm Leibniz, a veces Gottfried Wilhelm von Leibniz​ (Leipzig, 1 de julio de 1646-Hannover, 14 de noviembre de 1716), fue un filósofo, matemático, lógico, polímata, teólogo, jurista, bibliotecario y diplomático.
+Fue uno de los grandes pensadores de los siglos XVII y XVIII, y se le reconoce como el «último genio universal», esto es, la última persona que pudo formarse suficientemente en todos los campos del conocimiento; después ya solo hubo especialistas. Realizó profundas e importantes contribuciones en las áreas de metafísica, epistemología, lógica, filosofía de la religión, así como en la matemática, física, geología, jurisprudencia e historia. Incluso Denis Diderot, el filósofo deísta francés del siglo XVIII, cuyas opiniones no podrían estar en mayor oposición a las de Leibniz, no podía evitar sentirse sobrecogido ante sus logros, y escribió en la Encyclopédie: «Quizás nunca haya un hombre que haya leído tanto, estudiado tanto, meditado más y escrito más que Leibniz… Lo que ha elaborado sobre el mundo, sobre Dios, la naturaleza y el alma es de la más sublime elocuencia. Si sus ideas hubiesen sido expresadas con el olfato de Platón, el filósofo de Leipzig no cedería en nada al filósofo de Atenas».​
+De hecho, el tono de Diderot es casi de desesperanza en otra observación, que contiene igualmente mucha verdad: «Cuando uno compara sus talentos con los de Leibniz, uno tiene la tentación de tirar todos sus libros e ir a morir silenciosamente en la oscuridad de algún rincón olvidado». La reverencia de Diderot contrasta con los ataques que otro importante filósofo, Voltaire, lanzaría contra el pensamiento filosófico de Leibniz, consecuencia del aprecio que sentía por  Newton  y del desprecio que sentía por el optimismo en que desembocaba su sistema filosófico. A pesar de reconocer la vastedad de la obra de este, Voltaire sostenía que en toda ella no había nada útil que fuera original, ni nada original que no fuera absurdo y risible.
+Ocupa un lugar igualmente importante tanto en la historia de la filosofía como en la de la matemática. De manera independiente al trabajo de Newton (quien lo había desarrollado 10 años antes pero no lo había publicado debido a su trauma por la crítica que una vez le hiciera Hooke) desarrolló el cálculo infinitesimal y su notación que es la que se emplea desde entonces.​​ También inventó el sistema binario, fundamento virtual de todas las arquitecturas de las computadoras actuales.​ Fue uno de los primeros intelectuales europeos que reconocieron el valor y la importancia del pensamiento chino y de China como potencia desde todos los puntos de vista.​​
+René Descartes, Baruch Spinoza y Leibniz integran la terna de los tres grandes racionalistas del siglo XVII. Su filosofía se vincula también con la tradición escolástica y anticipa la lógica moderna y la filosofía analítica. Leibniz hizo asimismo contribuciones a la tecnología y anticipó nociones que aparecieron mucho más tarde en biología, medicina, geología, teoría de la probabilidad, lógica modal, psicología, ingeniería y ciencias de la computación. Sus contribuciones a esta vasta lista de temas se recoge en diarios y en decenas de miles de cartas y manuscritos inéditos. Hasta el momento, no se ha realizado una edición completa de sus escritos, y por ello no es posible aún hacer un recuento integral de sus logros.​
+
+
+== Biografía ==
+
+
+=== Primeros años ===
+Gottfried Leibniz nació el 1 de julio de 1646 en Leipzig, dos años antes de que terminara la Guerra de los Treinta Años, hijo de Federico Leibniz, jurista y profesor de filosofía moral en la Universidad de Leipzig, y Catherina Schmuck, hija de un profesor de leyes. Siendo adulto, frecuentemente firmaba como «von Leibniz» y numerosas ediciones póstumas de sus obras lo nombran como «Freiherr [barón] G. W. von Leibniz»; sin embargo, no se ha encontrado documento alguno que confirme que se le haya concedido un título nobiliario.​
+Su padre falleció cuando tenía seis años, de modo que su educación quedó en manos de su madre y de su tío, y según sus propias palabras, de sí mismo. Al morir su padre, dejó una biblioteca personal de la que Leibniz pudo hacer uso libremente a partir de los siete años, y procedió a beneficiarse de su contenido, en particular los volúmenes de historia antigua y de los Padres de la Iglesia.
+Para cuando tenía doce años había aprendido por sí mismo latín, el cual utilizó durante el resto de su vida, y había empezado a estudiar griego. En 1661, a la edad de catorce años, se matriculó en la Universidad de Leipzig y completó sus estudios a los veinte años, especializándose en leyes y mostrando dominio de los clásicos, lógica y filosofía escolástica. Sin embargo, su educación en matemáticas no estaba a la altura de franceses o británicos.
+En 1666 publicó su primer libro y también su tesis de habilitación, Disertación acerca del arte combinatorio. Cuando la universidad declinó el asegurarle un puesto docente en leyes tras su graduación, Leibniz optó por entregar su tesis a la Universidad de Altdorf y obtuvo su doctorado en cinco meses. Declinó después la oferta de un puesto académico en Altdorf y dedicó el resto de su vida al servicio de dos prominentes familias de la nobleza alemana.
+
+
+=== Casa de Schönborn (1666-1674) ===
+
+
+==== Asesor en Maguncia ====
+El primer puesto de Leibniz fue como alquimista asalariado en Núremberg, aunque no tenía ningún conocimiento sobre el tema. Entró en contacto con Johann Christian von Boineburg (1622–1672), antiguo ministro en jefe del elector de Maguncia, Johann Philipp Franz von Schönborn, quien lo contrató como asistente y poco después lo presentó al elector, tras reconciliarse con él. Leibniz le dedicó un ensayo al elector con la esperanza de obtener un empleo. La estrategia funcionó, pues el elector le solicitó ayuda para una nueva redacción del código legal de su electorado, y en 1669 fue nombrado asesor de la Corte de Apelaciones. Aunque von Boineburg murió en 1672, permaneció al servicio de su viuda hasta 1674.
+Von Boineburg hizo mucho por promover su reputación, y su servicio con el elector pronto tomó un rol más diplomático. Publicó un ensayo bajo el seudónimo de un noble polaco, en el que argumentaba (sin éxito) en favor del candidato alemán a la Corona polaca. El principal factor en la geopolítica europea durante su vida adulta fueron las ambiciones de Luis XIV de Francia, respaldadas por su ejército y su poderío económico. La Guerra de los Treinta Años había dejado exhausta a la Europa de habla alemana, además de fragmentada y económicamente atrasada. Leibniz propuso protegerla distrayendo a Luis XIV de la siguiente manera: Se invitaría a Francia a tomar Egipto como un primer paso hacia una eventual conquista de las Indias Orientales Neerlandesas. A cambio, Francia se comprometería a no perturbar a Alemania ni a Países Bajos. El plan recibió un apoyo cauteloso del elector. En 1672 el gobierno francés invitó a Leibniz a París para su discusión, pero el plan se vio pronto superado por los acontecimientos y se tornó irrelevante.
+
+
+==== Estancias en París y Londres ====
+De esta forma Leibniz inició una estancia de varios años en París, durante la cual incrementó considerablemente sus conocimientos de matemáticas y física y empezó a realizar contribuciones en ambas disciplinas. Conoció a Malebranche y a Antoine Arnauld, el principal filósofo francés de la época, estudió los escritos de Descartes, de Pascal, tanto los publicados como los inéditos y entabló amistad con el matemático alemán Ehrenfried Walther von Tschirnhaus, con quien mantuvo correspondencia hasta el final de su vida. Especialmente oportuno fue el conocer al físico y matemático neerlandés Christiaan Huygens, quien por entonces también se encontraba en París. Al llegar a París, Leibniz recibió un duro despertar, pues sus conocimientos de física y matemáticas eran fragmentarios. Con Huygens como mentor, inició un programa autodidacta que pronto resultó en la realización de grandes contribuciones en ambos campos, incluyendo el descubrimiento de su versión del cálculo diferencial y su trabajo en las series infinitas.
+
+A principios de 1673, cuando quedó claro que Francia no llevaría adelante su parte del plan de Leibniz respecto de Egipto, el elector envió a su propio sobrino, acompañado por Leibniz, en una misión diplomática ante el gobierno británico. En Londres Leibniz conoció a Henry Oldenburg y a John Collins. Después de mostrar ante la Royal Society una máquina capaz de realizar cálculos aritméticos conocida como la Stepped Reckoner, que había estado diseñando y construyendo desde 1670, la primera máquina de este tipo que podía ejecutar las cuatro «operaciones aritméticas básicas», la Sociedad le nombró miembro externo. La misión concluyó abruptamente al recibir la noticia de la muerte del elector. Leibniz regresó inmediatamente a París y no a Maguncia, como tenía planeado.
+La muerte repentina de los dos mecenas de Leibniz en el mismo invierno significó que debía buscar un nuevo rumbo para su carrera. A este respecto, fue oportuna una invitación del duque de Brunswick en 1669 para visitar Hannover. Allí declinó la invitación, pero empezó a escribirse con el duque en 1671. En 1673 este le ofreció un puesto de consejero, que aceptó con renuencia dos años más tarde, solo después de que estuviera claro que no obtendría ningún empleo en París (cuyo estímulo intelectual apreciaba) o en la Corte imperial de los Habsburgo.
+
+
+=== Casa de Hannover (1676-1716) ===
+
+
+==== Segundo viaje a Londres ====
+Logró retrasar su arribo a Hannover hasta finales de 1676, después de otro breve viaje a Londres, donde posiblemente le mostraron algunas de las obras sin publicar de Isaac Newton (claro que esto es simplemente una conjetura dada la conocida renuencia de Newton a mostrar sus escritos), aunque la mayor parte de los historiadores de las matemáticas afirman ahora que Newton y Leibniz desarrollaron sus ideas de forma independiente: Newton desarrolló las ideas primero y Leibniz fue el primero en publicarlas.
+En el viaje de Londres a Hannover se detuvo en La Haya, donde conoció a Leeuwenhoek, quien mejoró el microscopio y descubrió los microorganismos. Igualmente dedicó varios días de intensa discusión con Spinoza, quien recientemente había concluido su obra maestra, Ética. Leibniz sentía respeto por el poderoso intelecto de Spinoza, pero estaba consternado por sus conclusiones, que contradecían la ortodoxia cristiana.
+
+
+==== Consejero político ====
+En 1677 fue promovido, por propia petición, a consejero privado de Justicia, cargo que mantuvo durante el resto de su vida. Leibniz sirvió a tres gobernantes consecutivos de la Casa de Brunswick como historiador, consejero político y como bibliotecario de la Biblioteca Ducal.​ Desde entonces empleó su pluma en los diversos asuntos políticos, históricos y teológicos que involucraban a la Casa de Brunswick; los documentos resultantes constituyen una parte valiosa de los registros históricos del período.
+Entre las pocas personas que acogieron a Leibniz en el norte de Alemania se contaban la electora, su hija Sofía Carlota de Hannover (1630–1714), la reina de Prusia y su discípulo confeso, y Carolina de Brandeburgo-Ansbach, la consorte de su nieto, el futuro Jorge II. Para cada una de estas mujeres, Leibniz fue correspondiente, consejero y amigo. Cada una de ellas lo acogió con más calidez de lo que lo hicieron sus respectivos esposos y el futuro rey Jorge I de Gran Bretaña.​
+Hannover contaba entonces solo con unos 10 000 habitantes y su provincianismo desagradaba a Leibniz. Sin embargo, ser un cortesano importante en la Casa de Brunswick constituía un gran honor, especialmente en vista del meteórico ascenso en el prestigio de dicha Casa mientras duró la relación de Leibniz con ella. En 1692, el duque de Brunswick se convirtió en elector hereditario del Sacro Imperio Romano Germánico. La Ley de Asentamiento de 1701 designó a la electora Sofía y a su descendencia como la familia real del Reino Unido, una vez que tanto el rey Guillermo III como su cuñada y sucesora, la reina Ana, hubieran muerto. Leibniz participó en las iniciativas y negociaciones que condujeron a la Ley, pero no siempre de manera eficaz. Por ejemplo, algo que publicó en Inglaterra, pensando que promovería la causa de Brunswick, fue formalmente censurado por el Parlamento Británico.
+
+
+==== Trabajos intelectuales ====
+
+Los Brunswick toleraron los enormes esfuerzos que dedicaba Leibniz a sus proyectos intelectuales sin relación con sus deberes de cortesano, proyectos tales como el perfeccionamiento del cálculo, sus escritos sobre matemáticas, lógica, física y filosofía, y el mantenimiento de una vasta correspondencia. Empezó a trabajar en cálculo en 1674, y para 1677 tenía ya entre manos un sistema coherente, pero no lo publicó hasta 1684. Sus documentos más importantes de matemáticas salieron a luz entre 1682 y 1692, por lo general en una revista que él y Otto Mencke habían fundado en 1682, la Acta Eruditorum. Dicha revista jugó un papel clave en los progresos de su reputación científica y matemática, la cual a su vez incrementó su eminencia en la diplomacia, en historia, en teología y en filosofía.
+El elector Ernesto Augusto le comisionó a Leibniz una tarea de enorme importancia, la historia de la Casa de Brunswick, remontándose a la época de Carlomagno o antes, con la esperanza de que el libro resultante ayudaría a sus ambiciones dinásticas. Entre 1687 y 1690 Leibniz viajó extensamente por Alemania, Austria e Italia en busca de materiales de archivo de relevancia para este proyecto. Pasaron las décadas y el libro no llegaba, de modo que el siguiente elector se mostró bastante molesto ante la evidente falta de progresos. Leibniz nunca concluyó el proyecto, en parte a causa de su enorme producción en otros ámbitos, pero también debido a su insistencia en escribir un libro meticulosamente investigado y erudito basado en fuentes de archivo. Sus patrones habrían quedado bastante satisfechos con un breve libro popular, un libro que fuera quizás un poco más que una genealogía comentada, a ser completada en tres años o menos. Nunca supieron que, de hecho, había llevado a cabo una buena parte de la tarea asignada: cuando los escritos de Leibniz se publicaron en el siglo XIX, el resultado fueron tres volúmenes.
+El 23 de enero de 1698 murió Ernesto Augusto y le sucedió su hijo Jorge Luis. Leibniz se encontró frente a un príncipe grosero, inculto y juerguista que le mantenía en un segundo plano. Leibniz aprovechaba cualquier pretexto para abandonar Hannover; estaba en constante movimiento; su único consuelo residía en su amistad con Sofía Carlota y su madre, la princesa Sofía. 
+
+
+==== Últimos años ====
+
+En 1711 John Keill, al escribir en la revista de la Royal Society y, con la supuesta bendición de Newton, acusó a Leibniz de haber plagiado el cálculo de Newton, dando inicio de esta manera a la disputa sobre la paternidad del cálculo. Comenzó una investigación formal por parte de la Royal Society (en la cual Newton fue participante reconocido) en respuesta a la solicitud de retracción de Leibniz, respaldando de esta forma las acusaciones de Keill.
+Ese mismo año, durante un viaje por el norte de Europa, el zar ruso Pedro el Grande se detuvo en Hannover y se reunió con Leibniz, quien después mostró interés por los asuntos rusos durante el resto de su vida. En 1712 Leibniz inició una estancia de dos años en Viena, donde se le nombró consejero de la Corte imperial de los Habsburgo.
+Tras la muerte de la reina Ana en 1714, el elector Jorge Luis se convirtió en el rey Jorge I de Gran Bretaña bajo los términos de la Acta de Establecimiento de 1701. Aunque Leibniz había hecho bastante para favorecer dicha causa, no habría de ser su hora de gloria. A pesar de la intervención de la princesa de Gales Carolina de Brandeburgo-Ansbach, Jorge I le prohibió a Leibniz reunirse con él en Londres hasta que hubiera completado por lo menos un volumen de la historia de la familia Brunswick encargada por su padre casi 30 años atrás. Además, la inclusión de Leibniz en su corte de Londres habría resultado insultante para Newton, quien era visto como el triunfador de la disputa sobre la prioridad del cálculo y cuya posición en los círculos oficiales británicos no podría haber sido mejor. Finalmente, su querida amiga y defensora, la dignataria electora consorte Sofía de Wittelsbach, viuda de Ernesto Augusto y madre de Jorge I, murió en 1714.
+
+
+=== Fallecimiento ===
+
+En junio de 1716, en Bad-Pyrmont, Leibniz se encontró por última vez con Pedro el Grande. A partir de ese momento sufrió enormemente de gota y se vio obligado a guardar cama hasta el momento de su fallecimiento. Leibniz falleció en Hannover en noviembre de ese mismo año: para entonces, estaba tan fuera del favor en la Corte que ni Jorge I (quien se encontraba cerca de Hannover en ese momento) ni ningún otro cortesano, más que su secretario personal, asistieron al funeral. Aun cuando Leibniz era miembro vitalicio de la Royal Society y de la Academia Prusiana de las Ciencias, ninguna de las dos entidades consideró conveniente honrar su memoria.
+Su tumba permaneció en el anonimato hasta que Leibniz fue exaltado por Fontenelle ante la Academia de Ciencias de Francia, la cual lo había admitido como miembro extranjero en 1700. La exaltación se redactó a petición de la duquesa de Orleans, nieta de la electora Sofía.
+
+
+=== Resumen cronológico ===
+
+
+== Obra ==
+Leibniz escribió principalmente en tres idiomas: latín escolástico (ca. 40 %), francés (ca. 35 %) y alemán (menos del 25 %). Durante su vida publicó muchos panfletos y artículos académicos, pero solo dos libros filosóficos, Disertación acerca del arte combinatorio y la Théodicée.
+
+Publicó numerosos panfletos, con frecuencia anónimos, en nombre de la Casa de Brunswick, entre los que se destaca De jure suprematum, una importante consideración sobre la naturaleza de la soberanía. Otro libro sustancial apareció póstumamente: su Nouveaux essais sur l'entendement humain (Nuevos ensayos sobre el entendimiento humano), el cual había evitado publicar tras la muerte de John Locke.
+Hasta 1895, cuando Bodemann completó su catálogo de los manuscritos y la correspondencia de Leibniz, no se esclareció la enorme extensión de su legado: aproximadamente 15 000 cartas a más de 1000 destinatarios, además de 40 000 ítems adicionales, sin contar que muchas de dichas cartas tienen la extensión de un ensayo. Gran parte de su vasta correspondencia, en particular las cartas fechadas después de 1685, permanecen inéditas, y mucho de lo que se ha publicado lo ha sido apenas en décadas recientes. La cantidad, la variedad y el desorden de los escritos de Leibniz son el resultado predecible de una situación que él describió de la siguiente manera:
+
+ 
+
+Las partes existentes de los escritos en edición crítica de Leibniz están organizadas de la siguiente manera:​
+
+Serie 1. Correspondencia política, histórica y general. 25 vols. 1666-1701.
+Serie 2. Correspondencia filosófica. 1 vol. 1663-1685.
+Serie 3. Correspondencia matemática, científica y técnica. 8 vols. 1672-1696.
+Serie 4. Escritos políticos. 7 vols. 1667-1699.
+Serie 5. Escritos históricos y lingüísticos. Inactivo.
+Serie 6. Escritos filosóficos. 5 vols. 1663-1690 y Nouveaux essais sur l'entendement humain.
+Serie 7. Escritos matemáticos. 6 vols. 1672-1676.
+Serie 8. Escritos científicos, médicos y técnicos. 1 vol. 1668-1676.
+La catalogación de la totalidad del legado de Leibniz se inició en 1901. Dos guerras mundiales (con el holocausto judío de por medio, incluyendo a un empleado del proyecto y otras consecuencias personales) y décadas de división alemana (dos Estados divididos por una cortina de hierro, que separaron a los académicos y dispersaron también partes de su legado literario) obstaculizaron grandemente el ambicioso proyecto de edición que debe tratar con el empleo de siete idiomas en cerca de 200 000 páginas de material impreso.
+En 1985 fue reorganizado e incluido en un programa conjunto de academias federales y estatales alemanas. Desde entonces las ramas en Potsdam, Münster, Hannover y Berlín han publicado en conjunto 25 volúmenes de la edición crítica (hasta 2006), con un promedio de 870 páginas por volumen (comparado con los 19 volúmenes desde 1923), más la preparación de índices y la labor de concordancia.
+
+
+== Celebridad póstuma ==
+
+Al momento de fallecer Leibniz, su reputación estaba en declive; se le recordaba únicamente por un libro, la Théodicée, cuyo supuesto argumento central fue caricaturizado por Voltaire en su Cándido. La descripción que hizo Voltaire de las ideas de Leibniz fue tan influyente que muchos la tomaron como una descripción precisa (esta malinterpretación puede seguir ocurriendo entre ciertas personas legas). De modo que Voltaire tiene algo de responsabilidad en el hecho de que muchas de las ideas de Leibniz sigan sin ser comprendidas. Además, Leibniz tuvo un ardiente discípulo, el filósofo Christian Wolff, cuya apariencia dogmática y superficial contribuyó a dañar considerablemente la reputación de Leibniz. En cualquier caso, el movimiento filosófico se estaba apartando del racionalismo y de la construcción de sistemas del siglo XVII, del cual Leibniz había sido un gran exponente. Su trabajo en derecho, diplomacia e historia fue percibido como efímero en su interés, y la vastedad y la riqueza de su correspondencia se pasó por alto.
+Gran parte de Europa llegó a dudar de que hubiera descubierto el cálculo independientemente de Newton, y por ende se despreció la totalidad de su trabajo en matemáticas y física. Voltaire, quien admiraba a Newton, también escribió su Cándido, al menos en parte, para desacreditar la aseveración de Leibniz de su descubrimiento del cálculo y su opinión de que la teoría de la gravitación universal de Newton era incorrecta. El surgimiento de la relatividad y el trabajo subsiguiente en la historia de las matemáticas situaron la posición de Leibniz bajo una luz más favorable.
+El largo recorrido de Leibniz hasta su gloria presente empezó con la publicación en 1765 de sus Nouveaux Essais, los cuales fueron leídos rigurosamente por Kant. En 1768 Dutens publicó la primera edición en varios volúmenes de la obra de Leibniz, seguida en el siglo XIX por varias más, incluyendo la de  Erdmann, Foucher de Careil, Gerhardt, Gerland, Klopp y Mollat, así como la publicación de su correspondencia con personajes notables, como Antoine Arnauld, Samuel Clarke, Sofía de Hannover y la hija de esta, Sofía Carlota de Hannover.
+En 1900 Bertrand Russell publicó un estudio crítico acerca de la metafísica de Leibniz, y poco después Louis Couturat publicó un importante estudio sobre Leibniz​ y editó un volumen de escritos hasta entonces no divulgados, principalmente de lógica. Aunque dichas conclusiones, especialmente las de Russell, se pusieron en duda y a menudo se desecharon, le dieron a Leibniz algo más de respetabilidad entre los filósofos analíticos y lingüísticos del siglo XX del mundo de habla inglesa (Leibniz había sido ya de gran influencia para varios alemanes, como Bernhard Riemann). Sin embargo, la literatura secundaria en habla inglesa sobre Leibniz no floreció realmente hasta después de la Segunda Guerra Mundial, en la bibliografía de Brown.​ Menos de treinta de las entradas en inglés se publicaron antes de 1946.
+Nicholas Jolley​ ha dicho que la reputación de Leibniz como filósofo es quizás ahora más alta de lo que lo fue en cualquier momento desde la época de Leibniz, por las siguientes razones:
+
+El trabajo en la historia de las ideas de los siglos XVII y XVIII ha revelado con mayor claridad la «Revolución intelectual» que precedió a la más conocida Revolución industrial y comercial de los siglos XVIII y XIX.
+El menosprecio de la metafísica, característico de la filosofía analítica y lingüística, se ha atenuado.
+La filosofía analítica contemporánea continúa recurriendo a ideas diversas de Leibniz acerca de la identidad, la individuación, los mundos posibles.
+Se le ve ahora como una importante prolongación del poderoso esfuerzo iniciado por Platón y Aristóteles: el universo y el lugar del hombre en él es atribuible a la razón humana.
+En 1985 el gobierno alemán instituyó el Premio Gottfried Wilhelm Leibniz, que se entrega anualmente. El importe económico del premio en 2018, para cada uno de los once premiados, ascendió a 2,5 millones de euros para nueve de ellos y a 1,25 millones de euros para otros dos premiados. Es el premio más importante que se concede en Alemania para las contribuciones científicas.​
+En 1970 la Unión Astronómica Internacional decidió llamar en su honor «Leibniz» a un cráter de impacto ubicado en el hemisferio sur de la cara oculta de la Luna.​
+En 2006, la Universidad de Hannover fue renombrada «Gottfried Wilhelm Leibniz» en su honor.
+
+
+== Filosofía ==
+El pensamiento filosófico de Leibniz aparece de forma fragmentada, ya que sus escritos filosóficos consisten principalmente en una multitud de textos cortos: artículos de revistas, manuscritos publicados mucho después de su muerte y gran cantidad de cartas con múltiples personas. Escribió únicamente dos tratados de filosofía, y el que se publicó durante su vida, la Théodicée de 1710, es tanto teológico como filosófico.
+El propio Leibniz fecha su inicio como filósofo con su Discurso de metafísica, el cual elaboró en 1686 como un comentario a una disputa entre Malebranche y Antoine Arnauld. Esto condujo a una extensa y valiosa disputa con Arnauld;​​ dicho comentario y el Discurso no se publicaron sino hasta el siglo XIX.
+En 1695 Leibniz realizó su entrada pública a la filosofía europea con un artículo titulado Nuevo sistema de la naturaleza y comunicación de las sustancias.​​​ En el período 1695-1705 elaboró sus Nuevos ensayos sobre el entendimiento humano, un extenso comentario sobre Ensayo sobre el entendimiento humano (1690) de John Locke, pero al enterarse de la muerte de Locke en 1704 perdió el deseo de publicarlo, de modo que los Nuevos ensayos no se publicaron sino hasta 1765. La Monadología, otra de sus obras importantes, compuesta en 1714 y publicada póstumamente, consta de noventa aforismos; en ella se ha visto la influencia de Giordano Bruno, cuya obra conocía, y para su composición se utilizaron los legajos que el autor confeccionó durante su última etapa en Hannover.​
+Leibniz conoció a Spinoza en 1676 y leyó algunos de sus escritos sin publicar, y se sospecha desde entonces que se apropió de algunas de sus ideas. A diferencia de Descartes, Leibniz y Spinoza tenían una educación filosófica rigurosa. La disposición escolástica y aristotélica de su mente revelan la fuerte influencia de uno de sus profesores en Leipzig, Jakob Thomasius, quien supervisó además su tesis de grado. Leibniz también leyó vorazmente a Francisco Suárez, el jesuita español respetado incluso en las universidades luteranas. Tenía un profundo interés por los nuevos métodos y conclusiones de Descartes, Huygens, Newton y Boyle, pero observaba sus trabajos desde una perspectiva bastante influida por las nociones escolásticas. Sin embargo, sigue siendo notable el que sus métodos y preocupaciones anticipan con frecuencia la lógica y la filosofía analítica y lingüística del siglo XX.
+Fue uno de los primeros intelectuales europeos que reconocieron el valor y la importancia del pensamiento chino.​​
+
+
+=== Los principios ===
+Leibniz recurría de forma libre a uno u otro de nueve principios fundamentales:​​
+
+Identidad/contradicción. Si una proposición es verdadera, entonces su negación es falsa, y viceversa.
+Sustancia. La sustancia es aquello que en un predicado se corresponde con el sujeto, y que individualiza el mundo. Es la unidad individual básica del mundo, que tiene capacidad de percepción y apetencia y cuyos atributos solo pueden venir causados por sí misma (autocausados, puesto que es sustancia).
+Identidad de los indiscernibles. Dos cosas son idénticas si y solo si comparten las mismas propiedades. A este principio se le llama con frecuencia «ley de Leibniz».​ Dicho principio ha sido objeto de grandes controversias, en particular de la filosofía corpuscular y la mecánica cuántica.
+Principio de razón suficiente. «Debe existir una razón suficiente (a menudo solo por Dios conocida) para que cualquier cosa exista, para que cualquier evento se produzca, para que cualquier verdad pueda obtenerse». (LL 717)
+Armonía preestablecida.​ «La naturaleza apropiada de cada sustancia hace que lo que le ocurre a una corresponda a lo que le ocurre a las otras, sin embargo, sin que actúen entre ellas directamente». (Discurso de metafísica, XIV). «Un vaso que se cae se hace añicos porque “sabe” que ha tocado el suelo, y no porque el impacto con el suelo lo compela a partirse».
+Continuidad. Natura non facit saltum. Un concepto análogo en matemáticas a este principio sería el siguiente: Si una función describe una transformación o algo a lo cual se aplica la continuidad, entonces su dominio y su rango serán ambos conjuntos densos.
+Optimismo. «Indudablemente Dios siempre elige lo mejor». (LL 311).
+Plenitud. «El mejor de los mundos posibles actualizaría cada posibilidad genuina, y el mejor de los mundos posibles contendrá todas las posibilidades, con nuestra experiencia finita de la eternidad que no provee razones para disputar la perfección de la naturaleza».
+Principio de conveniencia: o «la elección de lo mejor», que a diferencia de la lógica que parte del principio de la necesidad, esta tiene como base la contingencia (Monadología, 46).
+
+
+=== Principio de razón suficiente ===
+El principio de razón suficiente, enunciado en su forma más acabada por Gottfried Leibniz en su Teodicea, afirma que no se produce ningún hecho sin que haya una razón suficiente para que sea así y no de otro modo. De ese modo, sostiene que los eventos considerados azarosos o contingentes parecen tales porque no disponemos de un conocimiento acabado de las causas que lo motivaron.
+
+ 
+
+El principio de razón suficiente es complementario del principio de no contradicción, y su terreno de aplicación preferente son los enunciados de hecho; el ejemplo tradicional es el enunciado «César pasó el Rubicón», del cual se afirma que, si tal cosa sucedió, algo debió motivarlo.
+De acuerdo a la concepción racionalista, el principio de razón suficiente es el fundamento de toda verdad, porque nos permite establecer cuál es la condición —esto es, la razón— de la verdad de una proposición. Para Leibniz, sin una razón suficiente no se puede afirmar cuándo una proposición es verdadera. Y dado que todo lo que sucede por algo, es decir, si todo lo que sucede responde siempre a una razón determinante, conociendo esa razón se podría saber lo que sucederá en el futuro. Este es el fundamento de la ciencia experimental.
+Sin embargo, dados los límites del intelecto humano, hemos de limitarnos a aceptar que nada ocurre sin razón, a pesar de que dichas razones muy a menudo no pueden ser conocidas por nosotros.
+Una de las consecuencias generales para la física del principio de razón suficiente fue condensada por Leibniz en forma de aforismo: «En el mejor de los mundos posibles la naturaleza no da saltos y nada sucede de golpe», lo cual vincula dicho principio con el problema del continuo y de la infinita divisibilidad de la materia.
+
+
+=== Las mónadas ===
+
+La contribución más importante de Leibniz a la metafísica es su teoría de las mónadas, tal como la expuso en la Monadología. Las mónadas son al ámbito metafísico, lo que los átomos, al ámbito físico/fenomenal; las mónadas son los elementos últimos del universo. Son «formas del ser substanciales» con las consiguientes propiedades: son eternas, no pueden descomponerse, son individuales, están sujetas a sus propias leyes, no son interactivas y cada una es un reflejo de todo el universo en una armonía preestablecida (un ejemplo históricamente importante de pampsiquismo).
+Las mónadas, sin entrar en un gran misterio, son sustancias simples. Además, no tienen extensión, el primer accidente de la materia, cada mónada es una sustancia espiritual, cada mónada tiene un apetito, y cada mónada, como se dijo, se desarrolla según su ley interior.
+Las mónadas son centros de fuerza;​ la substancia es fuerza, mientras el espacio, la materia, y el movimiento son meramente fenomenales. El espacio es fenoménico y no absoluto,​ sino relativo, y consiste en la percepción de las relaciones espaciales entre unas mónadas y otras (o conjunto de ellas). Así, la espacialidad se da cuando percibo que una silla está frente a una mesa, la mesa en el centro de las paredes de la habitación, la ventana en una de ellas, etc. No puede ser absoluto porque no hay una razón suficiente para considerar que el universo está situado en un área y no en otra. En cuanto a la materialidad o extensión de las mónadas, no existe porque entonces habríamos de aceptar que un objeto, al dividirse en dos por algo externo, está siendo modificado por una causa ajena a sí, lo que entraría en contradicción con la autocausación inherente de la sustancia. Esto se resuelve, en lo que al mundo fenoménico concierne (es decir, el mundo de las ciencias naturales), con el principio de armonía preestablecida, en la que todo sucede según un orden simultáneo y coherente de «reflejos».
+La esencia ontológica de una mónada es su simpleza irreductible. A diferencia de los átomos, las mónadas no poseen un carácter material o espacial. También difieren de los átomos en su completa independencia mutua, de modo que las interacciones entre mónadas son solo aparentes. Por el contrario, en virtud del principio de la armonía preestablecida, cada mónada obedece un conjunto particular de «instrucciones» preprogramadas, de modo que una mónada «sabe» qué hacer en cada momento (Estas «instrucciones» pueden entenderse como análogas a las leyes científicas que gobiernan a las partículas subatómicas). En virtud de estas instrucciones intrínsecas, cada mónada es como un pequeño espejo del universo. Las mónadas son necesariamente «pequeñas»; p. ej., cada ser humano constituye una mónada, en cuyo caso el libre albedrío se torna problemático. Igualmente, Dios es una mónada, y su existencia puede inferirse de la armonía prevaleciente entre las mónadas restantes; Dios desea la armonía preestablecida.
+Se supone que las mónadas se han deshecho de lo problemático:
+
+de la interacción entre la mente y el cuerpo (véase el problema mente-cuerpo que surge en el sistema de Descartes);
+de la falta de individuación inherente al sistema de Spinoza, el cual presenta a las criaturas individuales como meramente accidentales.
+La monadología fue vista como arbitraria, excéntrica incluso, en la época de Leibniz y desde entonces.
+
+
+=== Existencia de Dios ===
+El Dios de Leibniz no es el Motor inmóvil de Aristóteles, la Natura naturans de Spinoza, ni el Gran Ser de Newton o el Espíritu Universal en Hegel; sino «un Dios vivo y personal que se revela tanto al corazón como a la razón», tratando así de fundamentar racionalmente al Dios cristiano con sus atributos clásicos.​ Dentro de la filosofía de Leibniz se pueden encontrar cuatro tipos de argumentos respecto a la existencia de Dios:​
+El argumento ontológico y/o modal;​
+el argumento cosmológico;
+el argumento de las verdades eternas, inspirado por san Agustín;​
+el argumento de la armonía preestablecida (o argumento fisicoteológico según Kant).
+Leibniz sostuvo que el concepto de Dios es posible​​ y escribió varias formulaciones del argumento ontológico de San Anselmo en sus obras y cartas. En su Monadología escribió:​
+
+ 
+
+Además, Leibniz formuló un argumento cosmológico de la contingencia a favor de la existencia de Dios con su principio de razón suficiente en su Monadología. «No se puede encontrar ningún hecho que sea verdadero o existente, ni ninguna proposición verdadera», escribió, «sin que haya una razón suficiente para que sea así y no de otra manera, aunque no podemos conocer estos motivos en la mayoría de los casos». Formuló el argumento cosmológico sucintamente: «¿Por qué hay algo en lugar de nada? La razón suficiente [...] se encuentra en una sustancia que [...] es un ser necesario que lleva la razón de su existencia dentro de sí mismo».​ Martin Heidegger llamó a esta pregunta «la cuestión fundamental de la metafísica».​​ Este argumento es uno de los argumentos cosmológicos más populares en filosofía de la religión y ha sido reformulado por Alexander Pruss​ y William Lane Craig.​ Filósofos como Kant y Bertrand Russell criticaron ambos argumentos respectivamente.​ 
+El argumento de las verdades eternas se apoya también en el principio de razón suficiente: «las verdades eternas no tienen en sí mismas la razón de su existencia y, por tanto, esta debe buscarse en el Ser Supremo. [...] La razón suficiente de las verdades eternas es Dios mismo, ya que el conjunto de todas ellas no es otra cosa que el propio entendimiento divino».​​ El argumento de la armonía preestablecida se basa en la armonía de la mónadas: «según Leibniz, el mundo y cada una de las criaturas que lo componen se desarrollan con sus propias fuerzas, pero estas últimas fueron creadas y elegidas por Dios de modo necesario para preestablecer la mejor organización del mundo».​
+
+
+=== La Teodicea y el optimismo ===
+
+El término «optimismo» es utilizado aquí en el sentido de «óptimo», y no en el más común de la palabra, es decir, «estado de ánimo», contrario al pesimismo.
+La Teodicea intenta justificar las evidentes imperfecciones del mundo, afirmando que se trata del mejor de los mundos posibles. Tiene que ser el mejor y más equilibrado de los mundos posibles, ya que fue creado por un Dios perfecto. En Rutherford (1998) se encuentra un estudio académico detallado acerca de la Teodicea de Leibniz.
+La concepción de «el mejor de los mundos posibles» se justifica por la existencia de un Dios con capacidad ordenadora, no moral sino matemáticamente. Para Leibniz, este es el mejor de los mundos posibles, sin entender «mejor» de un modo moralmente bueno, sino matemáticamente bueno, ya que Dios, de las infinitas posibilidades de mundos, ha encontrado la más estable entre variedad y homogeneidad. Es el mundo matemática y físicamente más perfecto, puesto que sus combinaciones (sean moralmente buenas o malas, no importa) son las mejores posibles. Leibniz reescribe al final de este libro una fábula que viene a simbolizar esto mismo: la perfección matemática de este mundo real frente a todos los mundos posibles, que siempre se encuentran en la imperfección y descompensación de hetereogeneidad y homogeneidad, siendo el infierno el máximo homogéneo (los pecados se repiten eternamente) y el paraíso el máximo heterogéneo.
+La afirmación de que «vivimos en el mejor de los mundos posibles» le atrajo a Leibniz numerosas burlas, especialmente de Voltaire, quien lo caricaturizó en su novela cómica Cándido, al introducir el personaje del Dr. Pangloss (una parodia de Leibniz) quien repite la frase como un mantra cada vez que el infortunio caía sobre sus acompañantes. De ahí proviene el adjetivo «panglosiano», para describir a alguien tan ingenuo como para creer que nuestro mundo es el mejor de los mundos posibles.
+El matemático Paul du Bois-Reymond escribió, en sus Pensamientos de Leibniz sobre la ciencia moderna, que Leibniz pensaba en Dios como un matemático.
+
+ 
+
+Una defensa cautelosa del optimismo de Leibniz recurriría a ciertos principios científicos que emergieron en los dos siglos desde su muerte y que están ahora establecidos: el principio de mínima acción, la ley de conservación de la masa y la conservación de la energía.
+
+
+=== Teoría del conocimiento ===
+
+Las mónadas tienen percepciones. Pueden ser claras u oscuras. Las cosas tienen percepciones sin conciencia. Cuando las percepciones tienen claridad y conciencia y a un tiempo van acompañadas por la memoria, son apercepción, propia de las almas. Las humanas pueden conocer verdades universales y necesarias. Así, el alma es espíritu. En la cumbre de la escala de las mónadas está la divina. Una buena fuente para profundizar esto último se encuentra en la Monadología.
+Leibniz distingue entre verdades de razón y verdades de hecho. Las primeras son necesarias. Las segundas no se justifican a priori, sin más. «Dos y dos son cuatro» es una verdad de razón. «Colón descubrió América» es una verdad de hecho, porque pudo haber sido de otra manera, es decir, «Colón no descubrió América». Pero Colón descubrió América porque ello estaba en su ser individual, Colón (mónada). Las verdades de hecho están incluidas en la esencia de la mónada. Pero solamente Dios conoce todas las verdades de hecho, porque en su omnisciencia y omnipotencia no puede haber distinciones de verdades de razón y de hecho de cada mónada. Solo Dios puede comprender las verdades de hecho, pues ello presupone un análisis infinito.
+Leibniz, en el orden del conocimiento, afirmará un tipo de innatismo. Todas las ideas sin exclusión proceden de la actividad interna que le es propia a cada mónada. Las ideas, por ello, son innatas. Leibniz se opondrá a Locke y a todo el empirismo inglés.
+
+
+=== Pensamiento simbólico ===
+Leibniz creía que gran parte del razonamiento humano podía reducirse a algún tipo de cálculo, y que tales cálculos podían resolver muchas diferencias de opinión:La única manera de rectificar nuestros razonamientos es hacerlos tan tangibles como los de los Matemáticos, para que podamos encontrar nuestro error de un vistazo, y cuando haya disputas entre personas, podemos simplemente decir: Calculemos [calculemus], sin mas dilación, a ver quien tiene razón.​El calculus ratiocinator de Leibniz, que se asemeja a la lógica simbólica, puede verse como una forma de hacer factibles tales cálculos. Leibniz escribió memorandos​que ahora pueden leerse como intentos de levantar la lógica simbólica y, por lo tanto, su cálculo. Estos escritos permanecieron inéditos hasta la aparición de una selección editada por Carl Immanuel Gerhardt (1859). Louis Couturat publicó una selección en 1901; en ese momento los principales desarrollos de la lógica moderna habían sido creados por Charles Sanders Peirce y por Gottlob Frege.
+Leibniz pensó que los símbolos eran importantes para la comprensión humana. Le dio tanta importancia al desarrollo de buenas notaciones que atribuyó todos sus descubrimientos en matemáticas a esto. Su notación para el cálculo es un ejemplo de su habilidad en este sentido. La pasión de Leibniz por los símbolos y la notación, así como su creencia de que estos son esenciales para el buen funcionamiento de la lógica y las matemáticas, lo convirtió en un precursor de la semiótica.​
+
+Pero Leibniz llevó sus especulaciones mucho más allá. Definiendo un carácter como cualquier signo escrito, luego definió un carácter "real" como aquel que representa una idea directamente y no simplemente como la palabra que encarna la idea. Algunos caracteres reales, como la notación de la lógica, sirven únicamente para facilitar el razonamiento. Muchos caracteres bien conocidos en su época, incluidos los jeroglíficos egipcios, los caracteres chinos y los símbolos de la astronomía y la química, los consideró no reales.​ En cambio, propuso la creación de una characteristica universalis o "característica universal", construida sobre un alfabeto del pensamiento humano (alphabetum cogitationum humanarum) en el que cada concepto fundamental estaría representado por un único carácter "real":Es obvio que si pudiéramos encontrar caracteres o signos adecuados para expresar todos nuestros pensamientos con tanta claridad y exactitud como la aritmética expresa los números o la geometría expresa las líneas, podríamos hacer en todas las materias en cuanto están sujetas al razonamiento todo lo que podemos hacer en aritmética y geometría. Porque todas las investigaciones que dependan del razonamiento se realizarían por transposición de estos caracteres y por una especie de cálculo.​Los pensamientos complejos se representarían combinando caracteres para obtener pensamientos más simples. Leibniz vio que la unicidad de la descomposición en factores primos sugiere un papel central para los números primos en la característica universal, una sorprendente anticipación de la numeración de Gödel. Por supuesto, no existe una forma intuitiva o mnemotécnica de numerar cualquier conjunto de conceptos elementales utilizando los números primos.
+Debido a que Leibniz era un novato en matemáticas cuando escribió por primera vez sobre la característica, al principio no la concibió como un álgebra sino como un lenguaje o escritura universal. Recién en 1676 concibió una especie de "álgebra del pensamiento", modelada e incluyendo el álgebra convencional y su notación. La característica resultante incluía un cálculo lógico, algo de combinatoria, álgebra, su analysis situs (geometría de la situación), un lenguaje conceptual universal y más. Es posible que nunca se establezca lo que Leibniz realmente pretendía con sus characteristica universalis y calculus ratiocinator, y hasta qué punto la lógica formal moderna hace justicia al cálculo.​ La idea de Leibniz de razonar a través de un lenguaje universal de símbolos y cálculos presagia notablemente los grandes desarrollos del siglo XX en los sistemas formales, como la completitud de Turing, donde se utilizó la computación para definir lenguajes universales equivalentes (ver: Grado de Turing).
+
+
+=== Lógica formal ===
+
+Leibniz ha sido señalado como uno de los lógicos más importantes entre los tiempos de Aristóteles y Gottlob Frege.​ Leibniz enunció las principales propiedades de lo que ahora llamamos conjunción, disyunción, negación, identidad, subconjunto y el conjunto vacío. Los principios de la lógica de Leibniz y, posiblemente, de toda su filosofía, se reducen a dos:
+
+Todas nuestras ideas se componen de un número muy pequeño de ideas simples, que forman el alfabeto del pensamiento humano.
+Las ideas complejas proceden de estas ideas simples mediante una combinación uniforme y simétrica, análoga a la multiplicación aritmética.
+La lógica formal que surgió a principios del siglo XX también requiere, como mínimo, una negación unaria y variables cuantificadas que abarquen algún universo de discurso.
+Leibniz no publicó nada sobre lógica formal durante su vida; la mayor parte de lo que escribió sobre el tema consiste en borradores de trabajo. En su Historia de la filosofía occidental, Bertrand Russell llegó a afirmar que Leibniz había desarrollado la lógica en sus escritos inéditos hasta un nivel que alcanzó solo 200 años después.
+El trabajo principal de Russell sobre Leibniz encontró que muchas de las ideas y afirmaciones filosóficas más sorprendentes de Leibniz (por ejemplo, que cada una de las mónadas fundamentales refleja el universo entero) se derivan lógicamente de la elección consciente de Leibniz de rechazar las relaciones entre las cosas como irreales. Consideraba tales relaciones como cualidades (reales) de las cosas (Leibniz admitía únicamente predicados unarios): para él, "María es la madre de Juan" describe cualidades separadas de María y de Juan. Esta visión contrasta con la lógica relacional de De Morgan, Peirce, Schröder y el mismo Russell, ahora estándar en la lógica de predicados. En particular, Leibniz también declaró que el espacio y el tiempo son inherentemente relacionales.​
+El descubrimiento de Leibniz en 1690 de su álgebra de conceptos​​(deductivamente equivalente al álgebra booleana)​ y la metafísica asociada, son de interés en la metafísica computacional actual.​
+
+
+== Política y derecho ==
+Los escritos de Leibniz sobre derecho, ética y política​ fueron pasados por alto durante mucho tiempo por los estudiosos de habla inglesa, pero esto ha cambiado últimamente.​
+
+Si bien Leibniz no fue un apologista de la monarquía absoluta como Thomas Hobbes, o de la tiranía en cualquier forma, tampoco se hizo eco de las opiniones políticas y constitucionales de su contemporáneo John Locke, opiniones invocadas en apoyo del liberalismo, en la América del siglo XVIII y más tarde en otros lugares. El siguiente extracto de una carta de 1695 al hijo del barón JC Boyneburg, Philipp, es muy revelador de los sentimientos políticos de Leibniz:En cuanto a... la gran cuestión del poder de los soberanos y la obediencia que les deben sus pueblos, suelo decir que sería bueno que los príncipes se convencieran de que su pueblo tiene derecho a resistirlos, y que el pueblo, en por otro lado, ser persuadido a obedecerlos pasivamente. Soy, sin embargo, bastante de la opinión de Grocio, que uno debe obedecer como regla, siendo el mal de la revolución más grande sin comparación que los males que la causan. Sin embargo, reconozco que un príncipe puede llegar a tal exceso y poner en tal peligro el bienestar del estado, que cesa la obligación de soportar. Esto es muy raro, sin embargo, y el teólogo que autoriza la violencia bajo este pretexto debe cuidarse de los excesos; el exceso es infinitamente más peligroso que la deficiencia.​En 1677, Leibniz convocó a una confederación europea, gobernada por un consejo o senado, cuyos miembros representarían a naciones enteras y serían libres de votar en conciencia;​esto a veces se considera una anticipación de la Unión Europea. Creía que Europa adoptaría una religión uniforme. Reiteró estas propuestas en 1715.
+Pero, al mismo tiempo, llegó a proponer un proyecto interreligioso y multicultural para crear un sistema universal de justicia, lo que requería de él una amplia perspectiva interdisciplinaria. Para proponerlo combinó la lingüística (especialmente la sinología), la filosofía moral y jurídica, la gestión, la economía y la política.​
+
+
+=== Ley ===
+Leibniz se formó como académico del derecho, pero bajo la tutela del simpatizante cartesiano Erhard Weigel ya vemos un intento de resolver problemas legales mediante métodos matemáticos racionalistas (la influencia de Weigel es más explícita en el Specimen Quaestionum Philosophicarum ex Jure collectarum (An Essay of Collected Philosophical Problemas de Derecho). Por ejemplo, la Disputación inaugural sobre casos desconcertantes​utiliza la combinatoria temprana para resolver algunas disputas legales, mientras que la Disertación sobre el arte combinatorio de 1666​incluye problemas legales simples a modo de ilustración.
+El uso de métodos combinatorios para resolver problemas jurídicos y morales parece, a través de Athanasius Kircher y Daniel Schwenter, de inspiración lullista: Ramon Llull intentó resolver disputas ecuménicas recurriendo a un modo de razonamiento combinatorio que consideraba universal (a mathesis universalis).​
+A fines de la década de 1660, el ilustrado príncipe-obispo de Maguncia, Johann Philipp Franz von Schönborn, anunció una revisión del sistema legal y puso a disposición un puesto para apoyar a su comisionado legal actual. Leibniz dejó Franconia y se dirigió a Maguncia antes incluso de obtener el papel. Al llegar a Fráncfort del Meno, Leibniz escribió El nuevo método de enseñanza y aprendizaje de la ley, a modo de aplicación.​ El texto proponía una reforma de la educación jurídica y es característicamente sincrético, integrando aspectos del tomismo, el hobbesianismo, el cartesianismo y la jurisprudencia tradicional. El argumento de Leibniz de que la función de la enseñanza del derecho no era imprimir reglas como se podría adiestrar a un perro, sino ayudar al estudiante a descubrir su propia razón pública, evidentemente impresionó a von Schönborn cuando consiguió el puesto.
+El próximo gran intento de Leibniz de encontrar un núcleo racional universal para el derecho y así fundar una “ciencia del derecho” legal,se produjo cuando Leibniz trabajó en Maguncia entre 1667 y 1672. Partiendo inicialmente de la doctrina mecanicista del poder de Hobbes, Leibniz volvió a los métodos lógico-combinatorios en un intento de definir la justicia.Como avanzó el llamado Elementa Juris Naturalis de Leibniz, incorporó nociones modales de derecho (posibilidad) y obligación (necesidad) en las que vemos quizás la elaboración más temprana de su doctrina de los mundos posibles dentro de un marco deóntico.​Mientras que finalmente los Elementa permanecieron inéditos, Leibniz continuó trabajando en sus borradores y promoviendo sus ideas a los corresponsales hasta su muerte.
+
+
+== Actividades científicas ==
+
+
+=== Lógica ===
+
+En el campo de lógica, Gottfried Wilhelm Leibniz desarrolló la doctrina de análisis y síntesis. Entendía la lógica como la ciencia de todos los mundos posibles. Leibniz pertenece a la primera en la historia de la formulación de la ley de la razón suficiente; también es el autor de la expresión ley de identidad adoptada en la lógica moderna​. Consideraba que la ley de identidad era el principio supremo de la lógica​. "La naturaleza de la verdad en general consiste en el hecho de que es algo idéntico".​
+La ley de identidad formulada por Leibniz se usa actualmente en la mayoría de los cálculos lógico-matemáticos modernos​. El principio de sustitución es equivalente a la ley de identidad: “Si A es B y B es A, entonces A y B se llaman  'lo mismo' '“. O: A y B son iguales si pueden sustituirse por uno en lugar de otro ".​
+Para Leibniz, los principios de identidad, sustitución equivalente y contradicción son los medios principales de cualquier prueba deductiva; confiando en ellos, Leibniz intentó probar algunos de los llamados axiomas​. Creía que los axiomas son oraciones no comprobables, que son identidades, pero en matemáticas no todas las posiciones dadas como axiomas son identidades y, por lo tanto, desde el punto de vista de Leibniz, es necesario probarla​. El criterio de identificación y distinción de los nombres introducidos por Leibniz corresponde en cierta medida a la distinción moderna entre el significado y el significado de los nombres y expresiones, por ejemplo, el ejemplo bien conocido con la equivalencia de las expresiones "Sir Walter Scott" y "el autor de Waverley", que se remonta a Russell, literalmente repite este pensamiento.
+
+Leibniz no desarrolló un sistema unificado de designaciones, desarrolló el cálculo de signo más negativo.​ La exitosa presentación de Leibniz de los modos de silogismo correctos fue la presentación de juicios por medio de segmentos o círculos paralelos ("Experiencia de silogística basada en evidencia" en el libro Opuscules et fragments inédits de Leibniz).​ El importante lugar de Leibniz estaba ocupado por la protección del objeto y el método de la lógica formal​. Escribió a G. Wagner el siguiente:​ … aunque el Sr. Antoine Arnauld (hijo), en su arte de pensar, argumentó que las personas rara vez cometen errores de forma, pero casi en esencia, de hecho, la situación es completamente diferente y ya Huygens, junto conmigo, notó que generalmente los errores matemáticos, llamados paralogismo, son causados por desorden de forma. Y, por supuesto, Aristóteles no derivó en nada leyes estrictas para estas formas y, por lo tanto, fue el primero en escribir matemáticamente fuera de las matemáticas.  
+Leibniz hizo la clasificación más completa de definiciones para su época, además, desarrolló una teoría de definiciones genéticas. En su trabajo "El arte de la combinatoria", escrito en 1666, Leibniz anticipó algunos aspectos de la lógica matemática​. Combinatoria llamada Leibniz desarrollada por él bajo la influencia de  R. Lully la idea del "gran arte" del descubrimiento, que, basada en las "primeras verdades" obvias, permitiría lógicamente derivar de ellos todo el sistema de conocimiento​. Este tema se ha convertido en uno de los temas clave de toda la vida y desarrolló los principios de la "ciencia universal", sobre los cuales, según él, "el bienestar de la humanidad depende sobre todo de". Gottfried Wilhelm Leibniz escribió la idea de utilizar  símbolos matemáticos en lógica y la construcción de cálculos lógicos. Avanzó en la tarea de corroborar verdades matemáticas sobre principios lógicos generales, y también propuso usar un sistema numérico binario, es decir, binario, para los propósitos de las matemáticas computacionales. Leibniz justificó la importancia del simbolismo racional para la lógica y para las conclusiones heurísticas; Argumentó que el conocimiento se reduce a pruebas de afirmaciones, pero para encontrar pruebas es necesario mediante un cierto método.​
+Según Leibniz, el método matemático en sí mismo no es suficiente para descubrir todo lo que estamos buscando, pero protege de los errores​. Esto último se explica por el hecho de que, en matemáticas, las declaraciones se formulan con la ayuda de ciertos signos y actúan de acuerdo con ciertas reglas, y el chequeo, que es posible en cada etapa, requiere "solo papel y tinta" ​. Leibniz también expresó por primera vez la idea de la posibilidad del modelado a máquina de funciones humanas, también posee el término "modelo" ​. Leibniz hizo una gran contribución al desarrollo del concepto de "necesidad". Entendió la necesidad como algo que debe ser. Según Leibniz, la primera necesidad es metafísica, absoluta, así como la necesidad lógica y geométrica. Se basa en las leyes de identidad y contradicción, por lo tanto admite la única posibilidad de eventos. Leibniz también observó otras características de la necesidad. Contrastó la necesidad de azar, entendiéndola no como una apariencia subjetiva, sino como una conexión objetiva de fenómenos, que depende de decisiones libres y del curso de los procesos en el Universo. Lo entendió como un accidente relativo, de naturaleza objetiva y que surge en la intersección de ciertos procesos necesarios. En "Nuevas experiencias" (Libro 4), Leibniz hizo un análisis deductivo de la lógica tradicional, mostrando que las figuras 2 y 3 del silogismo pueden obtenerse como consecuencia del modo "Barbara" usando la ley de la contradicción, y la 4ta figura. - utilizar la ley de tratamiento; aquí dio una nueva clasificación de los modos de silogismo.​ Las ideas lógicas originales de Leibniz, las más valoradas hoy en día, solo se conocieron en el siglo XX.​ Los resultados de Leibniz tuvieron que ser redescubiertos, ya que su propio trabajo fue enterrado en pilas de manuscritos de la biblioteca real en Hannover.​
+
+
+=== Matemáticas ===
+Antes de Leibniz se crearon varias técnicas para resolver los problemas de tangente, encontrar extremos y calcular cuadratura, pero en las obras de sus antecesores no había ningún estudio limitado principalmente por funciones algebraicas completas a cualquier fraccional e irracional y especialmente a  funciones trascendentales. En estos trabajos, los conceptos básicos de análisis no se distinguieron claramente de ninguna manera, y sus interrelaciones no se establecieron, no hubo un simbolismo desarrollado y uniforme. Gottfried Leibniz reunió técnicas privadas y dispares en un solo sistema de conceptos de análisis interrelacionados, expresados en notación, permitiendo realizar acciones con infinitamente pequeñas de acuerdo con las reglas de un cierto algoritmo.
+
+1675: Leibniz creó el cálculo diferencial e integral y posteriormente publicó los principales resultados de su descubrimiento, por delante de Newton, quien había llegado a resultados similares antes que Leibniz, pero no los publicó en ese momento, aunque Leibniz tenía algunos de ellos conocidos en orden privada​.
+1684: Leibniz publicó el primer trabajo importante del mundo sobre Cálculo diferencial: "El nuevo método de máximos y mínimos", trabajo en el cual el nombre de  Newton ni siquiera se menciona, y en el segundo mérito de Newton descrito no está del todo claro. Entonces Newton no le prestó atención. Sus trabajos de análisis comenzaron a publicarse solo en 1704. Posteriormente, sobre este tema, surgió una larga disputa entre Newton y Leibniz sobre la prioridad del descubrimiento del cálculo diferencial​.
+El documento de Leibniz establece los conceptos básicos del cálculo diferencial, las reglas de  diferenciación de las expresiones. Utilizando la interpretación geométrica de la relación 
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {dy}{dx}}}
+  
+, explica brevemente los signos de aumento y disminución,  máximo y mínimo, convexidad y concavidad (por lo tanto, condiciones suficientes extremo y para el caso más simple), así como puntos de inflexión. En el camino, las "diferenciales de diferenciales" (múltiplos de diferenciales), denotadas por "
+  
+    
+      
+        d
+        d
+        v
+      
+    
+    {\displaystyle ddv}
+  
+", se introducen sin ninguna explicación. Leibniz escribió: «Lo que una persona versada en este cálculo puede resolver en tres líneas, otros hombres eruditos se vieron obligados a buscar siguiendo complejos desvíos».
+
+1686 Por primera vez, introdujo el símbolo 
+  
+    
+      
+        ∫
+      
+    
+    {\displaystyle \int }
+  
+ para la integración, e indicó que esta operación es inversa a la  diferenciación.
+1692: Se introduce el concepto del envolvente de una familia de curvas de un parámetro, se deriva su ecuación. La teoría de las envolturas de la familia de curvas fue desarrollada por Leibniz simultáneamente con X. Huygens en 1692 - 1694.
+1693: Leibniz abordó el problema de la solvencia de sistemas lineales; sus resultados introdujeron el concepto de determinante. Pero este descubrimiento no despertó interés entonces, y el álgebra lineal surgió solo medio siglo después.
+1695: Leibniz introdujo la función exponencial en la forma más general: 
+  
+    
+      
+        
+          u
+          
+            v
+          
+        
+      
+    
+    {\displaystyle u^{v}}
+  
+. Más tarde, en 1697 y, Johann Bernoulli estudió el cálculo de la función exponencial.
+1702: Junto con Johann Bernoulli, Leibniz descubrió el método de descomposición en fracciones parciales. Esto resolvió muchos problemas de integración de funciones racionales.
+En el enfoque de Leibniz para el análisis matemático había algunas características. Leibniz concibió el análisis más alto no de forma cinemática, sino que algebraicamente, a diferencia de Newton. En sus primeros artículos, parecía entender infinitesimales como objetos reales comparables entre sí solo si son del mismo orden. Tal vez esperaba establecer su conexión con su concepto de mónadas. Al final de su vida, habló bastante a favor de variables potencialmente infinitas, aunque no explicó lo que quería decir con eso. En términos filosóficos generales, consideraba el infinitesimal como el soporte de la continuidad en la naturaleza. Los intentos de Leibniz de realizar un análisis riguroso del análisis no tuvieron éxito, dudó entre varias interpretaciones de infinitamente pequeñas, a veces intentó recurrir a ideas no especificadas de límite y continuidad. Las opiniones de Leibniz sobre la naturaleza de lo infinitamente pequeño y sobre la razón de las operaciones en ellas causaron críticas incluso durante su vida, y la razón para el análisis que satisface los requisitos científicos modernos solo podría darse en el siglo XIX.
+
+Gottfried Wilhelm Leibniz demostró la solidez de sus métodos generales al resolver varios problemas difíciles. Por ejemplo, en 1691 estableció que un hilo pesado y uniforme que colgaba en dos extremos tenía la forma de una catenaria y, junto con Isaac Newton, Jacob y Johann Bernoulli, y también L'Hôpital, en 1696, resolvió el problema de la Curva braquistócrona.
+Un papel importante en la difusión de ideas de Leibniz fue desempeñado por su extensa correspondencia. Leibniz declaró algunos descubrimientos solo con letras: los inicios de la teoría de determinantes en 1693 y, una generalización del concepto de un diferencial a indicadores negativos y fraccionarios en 1695 y, un signo de convergencia de una serie de signos alternos (atributo Leibniz, 1682), métodos para resolver cuadraturas de varios tipos de ecuaciones diferenciales ordinarias.
+Leibniz introdujo los siguientes términos: " diferencial", "cálculo diferencial", "ecuación diferencial", " función", " variable", "constante", "coordenadas", "abscisa", "curvas algebraicas y trascendentales", "algoritmo"(en un sentido cercano al moderno). Aunque el concepto matemático de una función estaba implícito en trigonometría y en las tablas logarítmicas que existían en su época, Leibniz fue el primero en usarlo explícitamente para referirse a cualquiera de varios conceptos geométricos derivados de una curva, como la abscisa, ordenada, tangente,  cuerda y normal.​
+Leibniz formuló el concepto de diferencial como una diferencia infinitamente pequeña entre dos valores infinitamente cercanos de una variable e integral como la suma de un número infinito de diferenciales y dio las reglas más simples para la diferenciación e integración ya en sus notas manuscritas de París relativas a octubre y noviembre de 1675; aquí en Leibniz por primera vez hay signos modernos del diferencial "
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+" y la integral. Leibniz dio la definición y el signo del diferencial en 1684, en la primera memoria sobre cálculo diferencial, "Un nuevo método de máximos y mínimos". En el mismo trabajo, las reglas para diferenciar la suma, diferencia, producto, parcial, cualquier grado constante, función de la función (invariancia del primer diferencial), así como las reglas para encontrar y distinguir (usando el segundo diferencial) máximos y mínimos y encontrar puntos de inflexión. El diferencial de una función se definió como la relación de la ordenada al sub-tangente, multiplicada por el diferencial del argumento, cuyo valor puede tomarse arbitrariamente; Al mismo tiempo, Leibniz indicó que los diferenciales son proporcionales a incrementos infinitesimales de magnitudes y que, en base a esto, es fácil obtener una prueba de sus reglas.
+El ensayo de 1684 fue seguido por una serie de otros ensayos de Leibniz, que cubren en su totalidad todas las divisiones básicas de cálculo diferencial e integral. En estas obras, Gottfried Wilhelm Leibniz definió y el signo integral (1686), enfatizando la naturaleza recíproca de las dos operaciones de análisis principales, indicó las reglas para diferenciar la función exponencial y la diferenciación múltiple de una obra (fórmula Leibniz, [1695]), y también inició la integración de fracciones racionales (1702 - 1703). Además, Leibniz otorgó una importancia fundamental al uso de series de potencias infinitas para el estudio de funciones y la solución de ecuaciones diferenciales (1693).
+Debido no solo a publicaciones anteriores, sino también a designaciones significativamente más convenientes y transparentes del trabajo de Leibniz sobre el cálculo diferencial e integral, tuvieron una influencia mucho mayor en los contemporáneos que la teoría de Newton. Incluso los compatriotas de Newton, que durante mucho tiempo prefirieron el método de fluxiones, aprendieron gradualmente la notación Leibniz más conveniente. Leibniz también describió sistemas binarios con los números 0 y 1. El moderno sistema binario fue completamente descrito por él en la obra  Explication de l’Arithmétique Binair. Como una persona interesada en la cultura china, Leibniz conoció el Libro de Cambios y notó que los  Hexagramas corresponden a números binarios del 0 al 111111. Admiró el hecho de que este mapeo es evidencia de importantes logros chinos en las matemáticas filosóficas de la época.​ Leibniz pudo haber sido el primer programador y teórico de la información.​ Encontró que si escribes ciertos grupos de números binarios uno debajo del otro, entonces los ceros y los de las columnas verticales se repetirán con regularidad, y este descubrimiento lo llevó a creer que hay leyes completamente nuevas de las matemáticas. Leibniz se dio cuenta de que el código binario es óptimo para el sistema de mecánica, que puede funcionar sobre la base de ciclos activos, pasivos y pasivos intermitentes. Intentó aplicar código binario en mecánica e incluso hizo un dibujo de una computadora que funcionaba sobre la base de sus nuevas matemáticas, pero pronto se dio cuenta de que las capacidades tecnológicas de su tiempo no permitían crear una máquina de este tipo. El proyecto de la computadora que opera en el sistema binario, en el que se usó el prototipo tarjeta perforada, Leibniz describió en un trabajo escrito en 1679 y (antes describió la aritmética binaria en detalle en 1703 a  Explication de l'Arithmétique Binaire ). Las unidades y los ceros en una máquina imaginaria estaban representados respectivamente por orificios abiertos o cerrados en un frasco en movimiento, a través de los cuales se suponía que pasaban bolas cayendo en las ranuras debajo de él. Leibniz también escribió sobre la posibilidad de modelar a máquina las funciones del cerebro humano.
+
+
+=== Ciencias naturales ===
+Al proponer que la Tierra tiene un núcleo fundido, se anticipó a la geología moderna. En embriología, fue un preformista, pero también propuso que los organismos son el resultado de una combinación de un número infinito de microestructuras posibles y de sus poderes. En las ciencias de la vida y la paleontología, reveló una asombrosa intuición transformista, alimentada por su estudio de la anatomía comparada y los fósiles. Uno de sus principales trabajos sobre este tema, Protogaea, inédito en vida, se ha publicado recientemente en inglés por primera vez. Él elaboró una teoría organísmica primaria.​ En medicina, exhortó a los médicos de su época, con algunos resultados, a fundamentar sus teorías en detalladas observaciones comparativas y experimentos verificados, ya distinguir firmemente los puntos de vista científico y metafísico.
+
+
+=== Psicología ===
+La psicología había sido un interés central de Leibniz.​​ Parece ser un "pionero subestimado de la psicología".​Escribió sobre temas que ahora se consideran campos de la psicología: atención, conciencia, memoria, aprendizaje (asociación), motivación (el acto de "esfuerzo"), la individualidad emergente, la dinámica general del desarrollo (psicología evolutiva).[cita requerida] Sus discusiones en Nuevos ensayos and Monadología menudo se basa en observaciones cotidianas, como el comportamiento de un perro o el ruido del mar, y desarrolla analogías intuitivas (el funcionamiento sincrónico de los relojes o el resorte de equilibrio de un reloj). También ideó postulados y principios que se aplican a la psicología: el continuo de las pequeñas percepciones inadvertidas a la apercepción distinta autoconsciente, y el paralelismo psicofísico desde el punto de vista de la causalidad y del propósito: "Las almas actúan de acuerdo con las leyes de la final". causas, a través de aspiraciones, fines y medios. Los cuerpos actúan según las leyes de las causas eficientes, es decir, las leyes del movimiento. Y estos dos reinos, el de las causas eficientes y el de las causas finales, armonizan entre sí".​ Esta idea se refiere al problema mente-cuerpo, afirmando que la mente y el cerebro no actúan uno sobre el otro, sino que actúan uno al lado del otro por separado pero en armonía.​ Leibniz, sin embargo, no utilizó el término psicología. La posición epistemológica de Leibniz, contra John Locke y el empirismo inglés (sensualismo), quedó clara: "Nihil est in intellectu quod non fuerit in sensu, nisi intellectu ipse". – "Nada hay en el intelecto que no haya sido primero en los sentidos, excepto el intelecto mismo".​ Principios que no están presentes en las impresiones sensoriales pueden reconocerse en la percepción y la conciencia humanas: inferencias lógicas, categorías de pensamiento, el principio de causalidad y el principio de propósito (teleología).
+Leibniz encontró a su intérprete más importante en Wilhelm Wundt, fundador de la psicología como disciplina. Wundt usó la cita "... nisi intellectu ipse" de 1862 en la portada de su Beiträge zur Theorie der Sinneswahrnehmung (Contribuciones sobre la teoría de la percepción sensorial) y publicó una detallada y aspirante monografía sobre Leibniz.​ Wundt dio forma al término apercepción, introducido por Leibniz, en una psicología de la apercepción basada en la psicología experimental que incluía el modelado neuropsicológico, un excelente ejemplo de cómo un concepto creado por un gran filósofo podría estimular un programa de investigación psicológica. Un principio en el pensamiento de Leibniz desempeñó un papel fundamental: "el principio de igualdad de puntos de vista separados pero correspondientes". Wundt caracterizó este estilo de pensamiento (perspectivismo) de una manera que también se aplicaba a él: puntos de vista que "se complementan entre sí, al mismo tiempo que pueden aparecer como opuestos que solo se resuelven cuando se consideran más profundamente".​​ Gran parte del trabajo de Leibniz tuvo un gran impacto en el campo de la psicología. Leibniz pensó que hay muchas percepciones pequeñas de las que percibimos pero de las que no somos conscientes. Creía que por el principio de que los fenómenos que se encuentran en la naturaleza eran continuos por defecto, era probable que la transición entre los estados consciente e inconsciente tuviera pasos intermedios. Para que esto sea cierto, también debe haber una parte de la mente de la que no somos conscientes en un momento dado.​ Su teoría sobre la conciencia en relación con el principio de continuidad puede verse como una teoría temprana sobre las etapas del sueño. De esta manera, la teoría de la percepción de Leibniz puede verse como una de las muchas teorías que conducen a la idea del inconsciente. Leibniz fue una influencia directa en Ernst Platner, a quien se le atribuye haber acuñado originalmente el término Unbewußtseyn (inconsciente).​ Además, la idea de los estímulos subliminales se remonta a su teoría de las pequeñas percepciones.​ Las ideas de Leibniz sobre la música y la percepción tonal influyeron en los estudios de laboratorio de Wilhelm Wundt.​ 
+
+
+== Matemática ==
+Aunque la noción matemática de función estaba implícita en la trigonometría y las tablas logarítmicas, las cuales ya existían en sus tiempos, Leibniz fue el primero, en 1692 y 1694, en emplearlas explícitamente para denotar alguno de los varios conceptos geométricos derivados de una curva, tales como abscisa, ordenada, tangente, cuerda y perpendicular.​ Leibniz fue el primero en proponer el uso del punto como multiplicador en la notación matemática en vez de la letra equis (x) que usaban en Inglaterra para ello. La letra equis (x) se utilizó desde entonces como nombre de variable, especialmente para el cálculo en tres dimensiones XYZ.​ En el siglo XVIII, el concepto de «función» perdió estas asociaciones meramente geométricas.
+Leibniz fue el primero en ver que los coeficientes de un sistema de ecuaciones lineales podían ser organizados en un arreglo, ahora conocido como matriz, el cual podía ser manipulado para encontrar la solución del sistema, si la hubiera. Este método fue conocido más tarde como «eliminación gaussiana». Leibniz también hizo aportes en el campo del álgebra booleana y la lógica simbólica.
+
+
+=== Cálculo infinitesimal ===
+
+La invención del cálculo infinitesimal es atribuida a Leibniz y Newton. De acuerdo con los cuadernos de Leibniz, el 11 de noviembre de 1675 tuvo lugar un acontecimiento fundamental. Ese día empleó por primera vez el cálculo integral para encontrar el área bajo la curva de una función y=f(x).
+Leibniz introdujo varias notaciones usadas en la actualidad, tal como, por ejemplo, el signo «integral» ∫, que representa una S alargada, derivado del latín summa, y la letra «d» para referirse a los «diferenciales», del latín differentia. Esta ingeniosa y sugerente notación para el cálculo es probablemente su legado matemático más perdurable. Actualmente se emplea la notación del cálculo creada por Leibniz, no la de Newton.
+Leibniz no publicó nada acerca de su calculus hasta 1684.​ La regla del producto del cálculo diferencial es aún denominada «regla de Leibniz para la derivación de un producto». Además, el teorema que dice cuándo y cómo diferenciar bajo el símbolo integral, se llama la «regla de Leibniz para la derivación de una integral».
+Desde 1711 hasta su muerte, la vida de Leibniz estuvo emponzoñada con una larga disputa con John Keill, Newton y otros sobre si había inventado el cálculo independientemente de Newton, o si meramente había inventado otra notación para las ideas de Newton.​ Leibniz pasó entonces el resto de su vida tratando de demostrar que no había plagiado las ideas de Newton.
+
+
+=== Geometría ===
+La fórmula de Leibniz para π/4 establece que:
+
+  
+    
+      
+        1
+        
+        −
+        
+        
+          
+            1
+            3
+          
+        
+        
+        +
+        
+        
+          
+            1
+            5
+          
+        
+        
+        −
+        
+        
+          
+            1
+            7
+          
+        
+        
+        +
+        
+        
+          
+            1
+            9
+          
+        
+        
+        −
+        
+        ⋯
+        
+        =
+        
+        
+          
+            π
+            4
+          
+        
+      
+    
+    {\displaystyle 1\,-\,{\frac {1}{3}}\,+\,{\frac {1}{5}}\,-\,{\frac {1}{7}}\,+\,{\frac {1}{9}}\,-\,\cdots \,=\,{\frac {\pi }{4}}}
+  
+
+Leibniz escribió que los círculos "pueden expresarse de la manera más simple mediante esta serie, es decir, el agregado de fracciones alternativamente sumadas y restadas".​ Sin embargo, esta fórmula solo es precisa con un gran número de términos, utilizando 10 000 000 términos para obtener el valor correcto de π/4 a 8 decimales.​ Leibniz intentó crear una definición para una línea recta al intentar probar el postulado de las paralelas.​ Si bien la mayoría de los matemáticos definieron una línea recta como la línea más corta entre dos puntos, Leibniz creía que esto era simplemente una propiedad de una línea recta en lugar de la definición.​
+
+
+=== Topología ===
+Leibniz también publicó la idea de la ciencia que ahora se llama Topología, que se ocupa de las propiedades del espacio que se conservan bajo deformaciones continuas, a la que llamó "geometría de posición" (Geometria Situs) y "análisis de posición" (Analysis Situs). Leibniz fue el primero en utilizar el término analysis situs, que luego se utilizaría en el siglo XIX para referirse a lo que se conoce como topología.
+
+
+== Eponimia ==
+Además de los distintos conceptos matemáticos que llevan su nombre, se tiene que:
+
+El cráter lunar Leibnitz lleva este nombre en su memoria.​
+El asteroide (5149) Leibniz también conmemora su nombre.
+
+
+== Véase también ==
+Notación de Leibniz
+Fórmula de Leibniz que es igual a Pi
+Calculus ratiocinator
+Regla de Leibniz
+La garra del león
+Serie de Leibniz
+Criterio de Leibniz
+Monadología
+Metafísica
+Vis viva
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Leibniz, Gottfried Wilhelm, Obras filosóficas y científicas, coord. Juan Antonio Nicolás, Granada: Comares, 2007ss. (publicados: volumen 2, "Metafísica" (2010); volumen 3. Ciencia general y enciclopedia (2023); volumen 5, "Lengua universal, característica y lógica" (2013); volumen 7a  "Escritos matematicos" (2015); volumen 7b "Escritos matematicos" (2015); volumen 8, "Escritos Científicos" (2009); volumen 10: "Ensayos de Teodicea" (2012); volumen 11: "Escritos teologicos y religiosos" (2019); volumen 14: "Correspondencia I: Arnauld - Des Bosses" (2007); volumen 15: "Correspondencia II" (2022); volumen 16a: "Correspondencia III" (2011); volumen 16b: "Correspondencia III" (2011);  volumen 17a: "Correspondencia IV" (2024);  volumen 18: "Correspondencia V" (2017).
+Leibniz, Gottfried Wilhelm (2011).  Javier Echeverría, ed. Obras completas. Biblioteca de Grandes Pensadores. Escritos metodológicos y epistemológicos; Escritos filosóficos; Escritos lógico-matemáticos; Escritos sobre máquinas y ciencias físico-naturales; Escritos jurídicos, políticos y sociales; Escritos teológicos y religiosos; Apéndice: esbozo autobiográfico. Madrid: Editorial Gredos. ISBN 9788424921309. 
+Leibniz, Gottfried Wilhelm: Discurso sobre la teología natural de los chinos, edición bilingüe. Traducción, introducción y notas por Lourdes Rensoli Laliga. Buenos Aires: Biblioteca universal Martin Heidegger, 2000 (reimpr. Buenos Aires: Prometeo, 2005).
+Leibniz, Gottfried Wilhelm (1982).  Olaso, Ezequiel de, ed. Escritos filosóficos (Roberto Torretti, Tomás E. Zwanck, y Ezequiel de Olaso, trads.). Buenos Aires: Charcas. ISBN 9788477747659. 
+Leibniz, Gottfried Wilhelm, "Teodicea", traducción Eduardo Ovejero y Amaury, Aguilar, Madrid,1596.
+Sobre Leibniz
+Aiton, E. J. (1985). Leibniz A Biography (en inglés). CRC Press. ISBN 978-0852744703. 
+Artosi, Alberto, Pieri, Bernardo, Sartor, Giovanni (eds.), 2014. Leibniz: Logico-Philosophical Puzzles in the Law, Springer.
+Cerqueiro Daniel, Leibnitz y la ciencia del infinito, Buenos Aires: Pequeña Venecia ISBN 978-987-9239-24-7. 2014.
+Connelly, Stephen, 2021. ‘’Leibniz: A Contribution to the Archaeology of Power’’, Edinburgh University Press ISBN 978-1-4744-1808-9.
+Coudert, A. P.; Popkin, R. H.; Weiner, G. M., eds. (1998). Leibniz, Mysticism and Religion (en inglés). Springer. ISBN 978-0792352235. 
+Couturat, Louis, 1901. La Logique de Leibniz. Paris: Felix Alcan.
+Fédier, François (2011). Leibniz - Deux cours: Principes de la nature et de la grâce fondés en raison, Monadologie (en francés). Lettrage. ISBN 9782951431102. 
+Hall, Alfred Rupert (2002). Philosophers at War: The Quarrel between Newton and Leibniz (en inglés). Cambridge University Press. ISBN 978-0521524896. 
+Heidegger, Martin (2003). La proposición del fundamento (Félix Duque y Jorge Pérez de Tudela Velasco, trads.) (2.ª edición). Ediciones del Serbal. ISBN 9788476284209. 
+Hostler, John, 1975. Leibniz's Moral Philosophy. UK: Duckworth.
+Jolley, Nicholas (2005). Leibniz. Routledge. ISBN 978-1-138-39133-8. OCLC 1104220207. 
+Jolley, Nicholas, ed. (1994). The Cambridge Companion to Leibniz (en inglés). Cambridge University Press. ISBN 9781139000277. 
+Liske, Michael-Thomas (2000). Gottfried Wilhelm Leibniz (en alemán). Beck C. H. ISBN 978-3406419553. 
+Loemker, Leroy, (ed.), 1969 [1956]. Leibniz: Philosophical Papers and Letters. Reidel.
+Martínez Marzoa, Felipe (1991). Cálculo y ser: (Aproximación a Leibniz). La balsa de la Medusa. ISBN 978-8477745433. 
+Mates, Benson (1989). The Philosophy of Leibniz: Metaphysics and Language (en inglés). OUP USA. ISBN 978-0195059465. 
+Mercer, Christia (2007). Leibniz's Metaphysics: Its Origins and Development (en inglés). Cambridge University Press. ISBN 978-0521029926. 
+Nicolás, Juan Antonio (1995). Razón, verdad y libertad en G. W. Leibniz. Universidad de Granada. ISBN 9788433817914. 
+Orio de Miguel, Bernardino (1987). Leibniz y la Tradición Teosófico-Kabbalística: Fr. M. van Helmont (Tesis doctoral). Madrid: Universidad Complutense. 
+Orio de Miguel, Bernardino.(2011) Leibniz. Crítica de la Razón Simbólica. Colección “Nova Leibniz”, n. 1, ed. Comares, Granada. ISBN 9788498368048
+Orio de Miguel, Bernardino. (2011) G. W. Leibniz. Obras filosóficas y científicas. Correspondencia III. Vol. 16A-16B: Correspondencia con Johann Bernoulli y con Burcher de Volder. Introducción, traducción, notas e índices. Ed. Comares. ISBN 978-84-9836-795-9 ISBN 978-8498368604
+Orio de Miguel, Bernardino (2021). Leibniz. Variaciones sobre la ciencia general. Textos. Madrid ISBN 978-84-09-31679-3
+Orio de Miguel, Bernardino (2022). La filosofía de Lady Anne Conway. Un proto-Leibniz. “Principia Philosophiae Antiquissimae et Recentissimae” Madrid ISBN 978-84-09-42727-7
+Orio de Miguel, Bernardino (2024). Leibniz y el pensamiento hermético. A propósito de las “Cogitationes in Genesim de F. M. van Helmont. Madrid ISBN 978-84-09-56596-2
+Ortega y Gasset, José (1992). La idea de principio en Leibniz y la evolución de la teoría deductiva. Alianza. ISBN 978-8420641034. 
+Rensoli Laliga, Lourdes (2002). El problema antropológico en la concepción filosófica de Gottfried Wilhelm Leibniz. Valencia: Universidad Politécnica. ISBN 978-84-9705-147-7. 
+Riley, Patrick, 1996. Leibniz's Universal Jurisprudence: Justice as the Charity of the Wise. Harvard University Press.
+Sánchez Rodríguez, Manuel; Rodero Cilleros, Sergio, eds. (2010). Leibniz en la filosofía y la ciencia modernas. Granada: Comares. ISBN 978-84-9836-690-7. 
+Sepioł, Zbigniew (2003). «Legal and political thought of Gottfried Wilhelm Leibniz». Studia Iuridica (en polish) 41: 227-250. ISSN 0137-4346. 
+Wiener, Philip P. (1951). Leibniz Selections (en inglés). Scribners. ISBN 978-1299907997. 
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una galería multimedia sobre Gottfried Leibniz.
+ Wikisource contiene obras originales de o sobre [[s::Gottfried Leibniz|]]. Chisholm, Hugh, ed. (1910-1911). «Leibnitz, Gottfried Wilhelm». Encyclopædia Britannica. A Dictionary of Arts, Sciences, Literature, and General information (en inglés) (11.ª edición). Encyclopædia Britannica, Inc.; actualmente en dominio público. 
+ Wikiquote alberga frases célebres de o sobre Gottfried Leibniz.
+Proyecto de Investigación "Leibniz en español", dedicado a la traducción y edición crítica de las Obras filosóficas y científicas de Leibniz en 20 vols. (Granada: Comares, 2007ss.).
+Biblioteca Hispánica Leibniz. Base de datos para búsquedas bibliográficas de materiales de Leibniz y sobre Leibniz, en el mundo académico iberoamericano. Cuenta con unos 1500 documentos, y buena parte de los mismos pueden ser descargados directamente o recibidos por correo electrónico. Gestión: Red Iberoamericana Leibniz y Universidad de Granada.
+Voz Gottfried Wilhelm Leibniz en Philosophica: Enciclopedia filosófica online
+Red Iberoamericana Leibniz, de la AUIP.
+Algunos textos de Leibniz en original según la edición de la Akademie Archivado el 10 de septiembre de 2015 en Wayback Machine.
+Monadología en español, versión gratuita en PDF.
+La edición de Gerhardt de las obras de Leibniz
+Julián Marías: Conferencia sobre Leibniz
+Julián Marías: Amistad con Leibniz
+Página de divulgación sobre Leibniz en español con traducciones inéditas, artículos y ensayos realizados por el filósofo Bernardino Orio de Miguel
+Artículo enciclopédico de la Universidad Stanford sobre Leibniz (Stanford Encyclopedia of Philosophy)
+Leibniz: teoría y práctica de la interdisciplinariedad. Actas del Congreso Asociado Leibniz 2009, organizado por la Fundación Canaria Orotava de Historia de la Ciencia. ISSN 0210-8365. Thémata. Revista de Filosofía. Número 42. 2009. Edición digital.
+Mubodilefa, artículo sobre Leibniz y el arte de la memoria en el blog de La pastilla verde.

@@ -1,0 +1,81 @@
+Generative Pre-trained Transformer 3 (Transformador generativo preentrenado) , conocida por sus siglas (GPT-3), es un modelo de lenguaje autorregresivo que emplea aprendizaje profundo para producir textos que simulan la redacción humana. Es la tercera generación de los modelos de predicción de lenguaje perteneciente a la serie GPT, creados por OpenAI, un laboratorio de investigación de inteligencia artificial con sede en San Francisco.​ La versión completa de GPT-3 tiene una capacidad de 175.000 millones de parámetros de aprendizaje automatizado, lo cual supera la magnitud de su predecesor, GPT-2. GPT-3 fue introducido en mayo de 2020 y, hasta julio de 2020, se encontraba en fase beta.​ Es parte de una tendencia en sistemas de procesamiento de lenguaje natural (NLP) basados en "representaciones de lenguaje pre-entrenadas".​ Previo a la liberación de GPT-3, el modelo de lenguaje más grande era Turing NLG desarrollado por Microsoft, presentado en febrero de 2020, con una capacidad diez veces menor que el de GPT-3.
+GPT-3 fue presentado oficialmente el 28 de mayo de 2020, a través de la publicación de la investigación realizada en coautoría por 31  investigadores e ingenieros de OpenAI y de la Universidad Johns Hopkins,​ titulada Language Models are Few-Shot Learners.​  
+La calidad de los textos generados por GPT-3 es tan alta que es difícil distinguirlos de aquellos escritos por humanos, lo cual ha generado la puntualización de los beneficios y riesgos que esto conlleva. En la publicación del 28 de mayo de 2020, los creadores advierten sobre peligros potenciales de GPT-3 al tiempo que solicitan ayuda para mitigar dichos riesgos. David Chalmers, filósofo australiano, describió a GPT-3 como "uno de los más interesantes e importantes sistemas de inteligencia artificial nunca antes creados.".​
+Por otro lado, se ha señalado la carencia de coherencia en algunos textos debido a que el procesamiento de palabras llevado a cabo por GPT-3 es meramente sintáctico, sin atender a la semántica del texto.​
+
+
+== Contexto ==
+Según The Economist, algoritmos mejorados, computadoras potentes y un aumento en la digitalización de datos han impulsado una revolución en el aprendizaje automático, con nuevas técnicas en la década de 2010 que resultaron en "mejoras rápidas en tareas" que incluyen la manipulación del lenguaje. Los modelos de software se entrenan para aprender utilizando miles o millones de ejemplos en una "estructura... basada vagamente en la arquitectura neural del cerebro". Una arquitectura utilizada en el procesamiento del lenguaje natural (NLP) es una red neural basada en un modelo de aprendizaje profundo que fue introducido por primera vez en 2017: la arquitectura de transformador. Existen varios sistemas de NLP capaces de procesar, extraer, organizar, conectar y contrastar información textual, así como de responder correctamente preguntas.
+El 11 de junio de 2018, los investigadores e ingenieros de OpenAI publicaron su artículo original presentando el primer transformador preentrenado generativo (GPT), un tipo de modelo de lenguaje generativo preentrenado con un enorme y diverso corpus de texto a través de conjuntos de datos, seguido de un ajuste discriminativo para enfocarse en una tarea específica. Los modelos GPT son arquitecturas de redes neuronales de aprendizaje profundo basadas en transformadores. Hasta ese momento, los modelos de NLP neurales con mejor rendimiento comúnmente empleaban el aprendizaje supervisado a partir de grandes cantidades de datos etiquetados manualmente, lo que hacía prohibitivamente costoso y lento entrenar modelos de lenguaje extremadamente grandes. El primer modelo GPT se conoce como "GPT-1" y fue seguido por "GPT-2" en febrero de 2019. GPT-2 fue creado como una ampliación directa de GPT-1, con un aumento de diez veces en la cantidad de parámetros y el tamaño del conjunto de datos. Tenía 1.500 millones de parámetros y fue entrenado en un conjunto de datos de 8 millones de páginas web.
+En febrero de 2020, Microsoft presentó su modelo de Generación de Lenguaje Natural Turing (T-NLG), que se afirmó ser el "modelo de lenguaje más grande jamás publicado con 17 mil millones de parámetros". Demostró un mejor rendimiento que cualquier otro modelo de lenguaje en una variedad de tareas, que incluyen resumir textos y responder preguntas.
+
+
+== Capacidades y entrenamiento ==
+|title = Un ejemplo de ensayo de un estudiante sobre pedagogía escrito por GPT-3
+|quote = La noción de "estilos de aprendizaje" es problemática porque no tiene en cuenta los procesos a través de los cuales se moldean esos estilos de aprendizaje. Algunos estudiantes podrían desarrollar un estilo de aprendizaje particular debido a experiencias específicas. Otros podrían desarrollar un estilo de aprendizaje particular al tratar de adaptarse a un entorno de aprendizaje que no se ajustaba bien a sus necesidades de aprendizaje. En última instancia, necesitamos comprender las interacciones entre los estilos de aprendizaje y los factores ambientales y personales, y cómo estos dan forma a cómo aprendemos y a los tipos de aprendizaje que experimentamos.
+|source = - Texto generado por Mike Sharples​
+|align = right
+|width = 300px
+}}
+El 28 de mayo de 2020, un preimpreso de arXiv escrito por un grupo de 31 ingenieros e investigadores de OpenAI describió el logro y el desarrollo de GPT-3, un modelo de lenguaje de tercera generación "de última generación". El equipo aumentó la capacidad de GPT-3 en más de dos órdenes de magnitud con respecto a su predecesor, GPT-2, convirtiendo a GPT-3 en el modelo de lenguaje no disperso más grande hasta la fecha. Debido a que GPT-3 es estructuralmente similar a sus predecesores, su mayor precisión se atribuye a su mayor capacidad y a un mayor número de parámetros. La capacidad de GPT-3 es diez veces mayor que la del modelo de NLP más grande conocido en ese momento, el Turing NLG de Microsoft.
+Lambdalabs estimó un costo hipotético de alrededor de 4,6 millones de dólares estadounidenses y 355 años para entrenar GPT-3 en una sola GPU en 2020, con un tiempo de entrenamiento real más bajo utilizando más GPUs en paralelo. El 60% del conjunto de datos de preentrenamiento ponderado para GPT-3 proviene de una versión filtrada de Common Crawl que consta de 410 mil millones de tokens codificados con pares de bytes. Otras fuentes son 19 mil millones de tokens de WebText2, que representan el 22% del total ponderado, 12 mil millones de tokens de Books1, que representan el 8%, 55 mil millones de tokens de Books2, que representan el 8%, y 3 mil millones de tokens de Wikipedia, que representan el 3%. GPT-3 fue entrenado con cientos de miles de millones de palabras y también es capaz de codificar en CSS, JSX, Python, entre otros.
+
+Dado que los datos de entrenamiento de GPT-3 son abarcadores, no requiere más entrenamiento para tareas de lenguaje distintas. Sin embargo, el conjunto de datos de entrenamiento contiene ocasionalmente lenguaje tóxico y GPT-3 ocasionalmente genera lenguaje tóxico como resultado de imitar sus datos de entrenamiento. Un estudio de la Universidad de Washington encontró que GPT-3 produjo lenguaje tóxico a un nivel de toxicidad comparable a los modelos similares de procesamiento de lenguaje natural de GPT-2 y CTRL. OpenAI ha implementado varias estrategias para limitar la cantidad de lenguaje tóxico generado por GPT-3. Como resultado, GPT-3 produjo menos lenguaje tóxico en comparación con su modelo predecesor, GPT-1, aunque produjo tanto más generaciones como una toxicidad más alta de lenguaje tóxico en comparación con CTRL Wiki, un modelo de lenguaje entrenado completamente en datos de Wikipedia.
+El 11 de junio de 2020, OpenAI anunció que los usuarios podían solicitar acceso a su API GPT-3 fácil de usar, un "conjunto de herramientas de aprendizaje automático", para ayudar a OpenAI a "explorar las fortalezas y limitaciones" de esta nueva tecnología. La invitación describió cómo esta API tenía una interfaz "texto de entrada, texto de salida" de propósito general que puede completar casi "cualquier tarea en inglés", en lugar del caso de uso único habitual. Según un usuario que tuvo acceso a un lanzamiento temprano privado del API de OpenAI GPT-3, GPT-3 era "inquietantemente bueno" al escribir un "texto asombrosamente coherente" con solo algunas indicaciones simples. En un experimento inicial, se pidió a 80 sujetos de EE. UU. que juzgaran si artículos cortos de aproximadamente 200 palabras fueron escritos por humanos o por GPT-3. Los participantes acertaron correctamente el 52% de las veces, solo un poco mejor que el azar.
+El 18 de noviembre de 2021, OpenAI anunció que se habían implementado suficientes salvaguardias y que el acceso a su API sería irrestricto. OpenAI proporcionó a los desarrolladores una herramienta de moderación de contenido que les ayuda a cumplir con la política de contenido de OpenAI. El 27 de enero de 2022, OpenAI anunció que sus modelos de lenguaje GPT-3 más nuevos, denominados colectivamente InstructGPT, eran ahora el modelo de lenguaje predeterminado utilizado en su API. Según OpenAI, InstructGPT producía contenido que estaba mejor alineado con las intenciones del usuario, siguiendo mejor las instrucciones, generando menos hechos inventados y produciendo contenido algo menos tóxico.
+Debido a que GPT-3 puede "generar artículos de noticias que los evaluadores humanos tienen dificultades para distinguir de los artículos escritos por humanos", GPT-3 tiene el "potencial de avanzar tanto las aplicaciones beneficiosas como las perjudiciales de los modelos de lenguaje". En su artículo del 28 de mayo de 2020, los investigadores describieron detalladamente los posibles "efectos perjudiciales de GPT-3", que incluyen "desinformación, correo no deseado, phishing, abuso de procesos legales y gubernamentales, escritura fraudulenta de ensayos académicos y pretextos de ingeniería social". Los autores llaman la atención sobre estos peligros para solicitar investigaciones sobre mitigación de riesgos.
+GPT-3 es capaz de realizar aprendizaje sin muestras y con pocas muestras (incluido un ejemplo). En junio de 2022, Almira Osmanovic Thunström escribió que GPT-3 era el autor principal de un artículo sobre sí mismo que habían enviado para su publicación y que había sido prepublicado mientras esperaba la finalización de su revisión.
+
+
+== InstructGPT ==
+InstructGPT es una versión afinada de GPT-3. Ha sido entrenado en un conjunto de datos de instrucciones escritas por humanos. Este entrenamiento permite a InstructGPT comprender mejor lo que se le pide y generar resultados más precisos y relevantes.
+
+InstructGPT puede seguir instrucciones dadas en lenguaje natural.
+InstructGPT puede responder preguntas formuladas en lenguaje natural.
+InstructGPT es más preciso y relevante que GPT-3 al seguir instrucciones y responder preguntas.
+InstructGPT puede ser utilizado en diversas aplicaciones, como servicio al cliente, educación y automatización.
+
+
+== Modelos GPT-3 ==
+Hay muchos modelos en la familia GPT-3, algunos con propósitos diferentes. En el artículo de investigación inicial publicado por OpenAI, mencionaron 8 tamaños diferentes del modelo principal de GPT-3:
+
+La mitad de los modelos son accesibles a través de la API, a saber, GPT-3-small, GPT-3-xl, GPT-3-6.7B y GPT-3-175b, que se denominan ada, babbage, curie y davinci, respectivamente.
+
+
+== GPT-3.5 ==
+
+Generative Pre-trained Transformer 3.5 (GPT-3.5) es una subclase de los Modelos GPT-3 creada por OpenAI en 2022.
+El 15 de marzo de 2022, OpenAI puso a disposición nuevas versiones de GPT-3 y Codex en su API con capacidades de edición e inserción bajo los nombres "text-davinci-002" y "code-davinci-002". Estos modelos fueron descritos como más capaces que las versiones anteriores y se entrenaron con datos hasta junio de 2021. El 28 de noviembre de 2022, OpenAI presentó text-davinci-003. El 30 de noviembre de 2022, OpenAI comenzó a referirse a estos modelos como pertenecientes a la serie "GPT-3.5" y lanzó ChatGPT, que se ajustó a partir de un modelo de la serie GPT-3.5. OpenAI no incluye GPT-3.5 en GPT-3.
+
+
+=== Modelos ===
+Existen cuatro modelos:​
+
+Chat
+gpt-3.5-turbo
+Completado de texto
+text-davinci-003
+text-davinci-002
+
+
+=== GPT-3.5 con navegación ===
+El 10 de abril de 2023, OpenAI introdujo una nueva variante de su modelo de la serie GPT-3.5, conocida como GPT-3.5 con Navegación (ALPHA).​ Se describió que este modelo actualizado se basa en las capacidades de sus predecesores "text-davinci-002" y "code-davinci-002".​ El modelo GPT-3.5 con Navegación (ALPHA) incorpora la capacidad de acceder y navegar por información en línea. Esto ha llevado a respuestas más precisas y actualizadas a las consultas de los usuarios.
+El modelo GPT-3.5 con Navegación (ALPHA) ha sido entrenado con datos hasta septiembre de 2021, lo que le brinda más información en comparación con los modelos anteriores de GPT-3.5, que se entrenaron con datos hasta junio de 2021. El modelo intenta proporcionar a los desarrolladores y usuarios una herramienta avanzada de procesamiento de lenguaje natural que pueda recuperar y sintetizar eficazmente información en línea.
+Para habilitar las capacidades de navegación, OpenAI implementó una nueva API que permite al modelo GPT-3.5 con Navegación (ALPHA) acceder a recursos en línea seleccionados durante su funcionamiento.​ Esta función permite a los usuarios hacer preguntas o solicitar información con la expectativa de que el modelo proporcionará respuestas actualizadas, precisas y relevantes basadas en las últimas fuentes en línea disponibles para él.
+El 27 de abril de 2023, OpenAI puso el modelo GPT-3.5 con Navegación (ALPHA) a disposición del público para los usuarios de GPT Plus. Esto permitió que más personas accedieran a sus nuevas características.​
+
+
+== Revisiones y críticas ==
+El 29 de julio de 2020 el The New York Times publicó la revisión de Farhad Manjoo,  que dijo que GPT-3 no es solo "asombrosa", "espeluznante", y "aleccionadora", sino también "un poco más que poco aterradora".​
+La revista Wired escribió que GPT-3 estaba "provocando escalofríos por Silicon Valley ".​
+Un artículo en el MIT Technology Review declaró que GPT-3 carece de "comprensión del mundo" por lo que realmente "no se puede confiar en lo que dice",​ refiriéndose a que modelos como los de GPT-3 solo analizan la relación entre palabras (sintaxis) sin un análisis del significado de las palabras (semántica).
+
+
+== Véase también ==
+Transformador de visión
+
+
+== Notas ==
+
+
+== Referencias ==

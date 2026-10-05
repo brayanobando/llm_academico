@@ -1,0 +1,190 @@
+# Artículos de Wikipedia en español para el corpus "Historia de la IA".
+# Un título por línea. Las líneas que empiezan con # se ignoran.
+# Puedes agregar o quitar títulos y volver a ejecutar download_wikipedia.py
+# (los artículos ya descargados no se vuelven a bajar).
+
+# --- Visión general ---
+Historia de la inteligencia artificial
+Inteligencia artificial
+Inteligencia artificial general
+Inteligencia artificial simbólica
+Conexionismo
+Inteligencia artificial en la ficción
+
+# --- Antecedentes (siglos XIII-XIX) ---
+Ramon Llull
+Gottfried Leibniz
+Autómata (mecánico)
+El Turco
+Charles Babbage
+Máquina analítica
+Ada Lovelace
+George Boole
+Álgebra de Boole
+
+# --- Fundamentos lógicos y computación (1930-1950) ---
+Kurt Gödel
+Teoremas de incompletitud de Gödel
+Lógica de primer orden
+Alan Turing
+Máquina de Turing
+Prueba de Turing
+John von Neumann
+ENIAC
+Claude Shannon
+Teoría de la información
+Norbert Wiener
+Cibernética
+Warren McCulloch
+Walter Pitts
+Neurona artificial
+Computadora
+Anexo:Historia de la computación
+Grace Murray Hopper
+Lenguaje de programación
+
+# --- Nacimiento de la IA (1956-1970) ---
+Conferencia de Dartmouth
+John McCarthy (científico)
+Marvin Minsky
+Herbert Alexander Simon
+Allen Newell
+Logic Theorist
+General Problem Solver
+Arthur L. Samuel
+Lisp
+Perceptrón
+Frank Rosenblatt
+ELIZA
+Joseph Weizenbaum
+SHRDLU
+Terry Winograd
+Nils John Nilsson
+Algoritmo de búsqueda A*
+
+# --- Primer invierno, sistemas expertos y segundo invierno (1970-1990) ---
+Perceptrons (libro)
+Seymour Papert
+Invierno IA
+Sistema experto
+Ingeniería del conocimiento
+Edward Feigenbaum
+Dendral
+Mycin
+Prolog
+Quinta generación de computadoras
+Cyc
+Representación del conocimiento
+Razonamiento automático
+Lógica difusa
+Lotfi A. Zadeh
+Paradoja de Moravec
+Hans Moravec
+Rodney Brooks
+
+# --- Redes neuronales y aprendizaje automático (1980-2010) ---
+Red neuronal artificial
+Retropropagación
+John Hopfield
+Máquina de Boltzmann
+Mapa autoorganizado
+Geoffrey Hinton
+Yann LeCun
+Yoshua Bengio
+Aprendizaje automático
+Aprendizaje supervisado
+Aprendizaje no supervisado
+Aprendizaje por refuerzo
+Algoritmo genético
+Computación evolutiva
+Red bayesiana
+Judea Pearl
+Máquina de vectores de soporte
+Árbol de decisión
+Agente inteligente (inteligencia artificial)
+Sistema multiagente
+Minería de datos
+Base de datos MNIST
+
+# --- Juegos ---
+Ajedrez por computadora
+Deep Blue (computadora)
+Stockfish
+Leela Chess Zero
+Watson (inteligencia artificial)
+AlphaGo
+Lee Sedol
+AlphaZero
+AlphaFold
+Google DeepMind
+Demis Hassabis
+
+# --- Aprendizaje profundo (2010-2017) ---
+Aprendizaje profundo
+Red neuronal convolucional
+Red neuronal recurrente
+Redes neuronales recurrentes
+Memoria larga a corto plazo
+Word embedding
+Word2vec
+Red generativa adversativa
+Unidad de procesamiento gráfico
+Unidad de procesamiento tensorial
+Ley de Moore
+Macrodatos
+Ciencia de datos
+Andrew Ng
+
+# --- Transformers y modelos de lenguaje (2017-actualidad) ---
+Atención (aprendizaje automático)
+Transformador (modelo de aprendizaje automático)
+Modelación del lenguaje
+BERT (modelo de lenguaje)
+Transformador generativo preentrenado
+Modelo de lenguaje de gran tamaño
+GPT-3
+GPT-4
+ChatGPT
+OpenAI
+LLaMA (gran modelo de lenguaje)
+Gemini (modelo de lenguaje)
+Claude (chatbot)
+Anthropic
+Microsoft Copilot
+Inteligencia artificial generativa
+Stable Diffusion
+Dall-e
+Alucinación (inteligencia artificial)
+Ingeniería de instrucciones
+Aprendizaje por transferencia
+Ajuste fino (aprendizaje profundo)
+
+# --- Aplicaciones ---
+Procesamiento de lenguajes naturales
+Bot conversacional
+Asistente virtual
+Siri
+Reconocimiento del habla
+Traducción automática
+Visión artificial
+Sistema de reconocimiento facial
+Vehículo autónomo
+Robótica
+Robot
+Androide
+Historia de los robots
+
+# --- Filosofía, ética y futuro ---
+Teoría computacional de la mente
+Habitación china
+John Searle
+Singularidad tecnológica
+Raymond Kurzweil
+Nick Bostrom
+Alineación de la inteligencia artificial
+Ética de la inteligencia artificial
+Premio Turing
+Isaac Asimov
+Tres leyes de la robótica
+Karel Čapek
+HAL 9000

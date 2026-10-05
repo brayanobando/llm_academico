@@ -1,0 +1,14 @@
+La ingeniería del conocimiento es aquella disciplina moderna que forma parte de la Inteligencia Artificial y cuyo fin es el diseño y desarrollo de Sistemas Expertos. Para esto, se apoya en metodologías instruccionales y en las ciencias de la computación y de las tecnologías de la información, intentando representar el conocimiento y razonamiento humanos en un determinado dominio, dentro de un sistema artificial. 
+El trabajo de los ingenieros del conocimiento consiste en extraer el conocimiento de los 
+expertos humanos en una determinada área, y en codificar dicho conocimiento de manera que pueda ser procesado por un sistema.
+El problema es que el ingeniero del conocimiento no es un experto en el campo que intenta modelar, mientras que el experto en el tema no tiene experiencia modelando su conocimiento (basado en la heurística) de forma que pueda ser representado de forma genérica en un sistema.
+La ingeniería del conocimiento engloba a los científicos, tecnología y metodología necesarios para procesar el conocimiento. Su objetivo es extraer, articular e informatizar el conocimiento de un experto.
+
+
+== Véase también ==
+ Portal:Ingeniería. Contenido relacionado con  Ingeniería.
+ Wikilibros alberga un libro o manual sobre Ingeniería del conocimiento.
+Gestión del conocimiento
+Sistemas de workflow
+Instituto de Ingeniería del Conocimiento
+Copalred

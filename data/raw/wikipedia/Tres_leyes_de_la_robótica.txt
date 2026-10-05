@@ -1,0 +1,102 @@
+Las tres leyes de la robótica o leyes de Asimov son un conjunto de normas elaboradas por el escritor de ciencia ficción Isaac Asimov que se aplican a la mayoría de los robots de sus obras y que están diseñados para cumplir órdenes. Aparecidas por primera vez en el relato Círculo vicioso (Runaround) de 1942, establecen lo siguiente:
+
+Primera Ley
+
+Un robot no hará daño a un ser humano, ni por inacción permitirá que un ser humano sufra daño.
+Segunda Ley
+
+Un robot debe cumplir las órdenes dadas por los seres humanos, a excepción de aquellas que entren en conflicto con la primera ley.
+Tercera Ley
+
+Un robot debe proteger su propia existencia en la medida en que esta protección no entre en conflicto con la primera o con la segunda ley.​
+Estas leyes forman un principio organizador y un tema unificador para la ficción basada en robótica de Asimov, que aparece en su serie Robot, las historias vinculadas a ella y su serie Lucky Starr de ficción para adultos jóvenes. En ese universo, las leyes son «formulaciones matemáticas impresas en los senderos positrónicos del cerebro» de los robots (líneas de código del programa que regula el cumplimiento de las leyes guardado en la memoria principal de éstos), y no se pueden eludir, ya que están pensadas como una característica de seguridad.
+Las leyes originales han sido modificadas y desarrolladas por Asimov y otros autores. El propio Asimov hizo ligeras modificaciones a los tres primeros en varios libros e historias cortas para desarrollar aún más cómo los robots interactuarían con los humanos y entre ellos. En la ficción posterior donde los robots habían asumido la responsabilidad del gobierno de planetas enteros y civilizaciones humanas, Asimov también agregó una cuarta, o ley cero, para preceder a las demás:
+
+Ley Cero
+Un robot no puede dañar a la humanidad o, por inacción, permitir que la humanidad sufra daños.
+Las Tres Leyes y la Ley Cero han impregnado la ciencia ficción y se mencionan en muchos libros, películas y otros medios. También han impactado el pensamiento sobre la ética de la inteligencia artificial.
+
+
+== Propósito ==
+Estas tres leyes surgen únicamente como medida de protección para los seres humanos. Según el propio Asimov, la concepción de las leyes de la robótica quería contrarrestar un supuesto "complejo de Frankenstein", es decir, un temor que el ser humano desarrollaría frente a unas máquinas que hipotéticamente pudieran rebelarse y alzarse contra sus creadores. De intentar siquiera desobedecer una de las leyes, el cerebro positrónico del robot resultaría dañado irreversiblemente y el robot "moriría".  A un primer nivel no presenta ningún problema dotar a los robots con tales leyes, a fin de cuentas, son máquinas creadas por el hombre para su ayuda en diversas tareas. La complejidad reside en que el robot pueda distinguir cuáles son todas las situaciones que abarcan las tres leyes, o sea poder deducirlas en el momento. Por ejemplo saber en determinada situación si una persona está corriendo peligro o no, y deducir cuál es la fuente del daño o la solución.
+Las tres leyes de la robótica representan el código moral del robot. Un robot va a actuar siempre bajo los imperativos de sus tres leyes. Para todos los efectos, un robot se comportará como un ser moralmente correcto. Sin embargo, es lícito preguntar: ¿Es posible que un robot viole alguna ley? ¿Es posible que un robot "dañe" a un ser humano? La mayor parte de las historias de robots de Asimov se basan en situaciones paradójicas en las que, a pesar de las tres leyes, podríamos responder a las anteriores preguntas con un "sí".
+
+
+== Historia ==
+En El resto de los robots, publicado en 1964, Isaac Asimov señaló que cuando comenzó a escribir en 1940 sintió que "una de las tramas comunes de la ciencia ficción era... los robots fueron creados y destruyeron a su creador. El conocimiento tiene sus peligros, sí, pero ¿la respuesta debe ser un retiro del conocimiento? ¿O el conocimiento debe usarse como una barrera a los peligros que trae? " Decidió que en sus historias un robot no "se volvería estúpidamente contra su creador sin más propósito que demostrar, una vez más, el crimen y el castigo de Fausto".​
+El 3 de mayo de 1939, Asimov asistió a una reunión de la Sociedad de Ciencia Ficción de Queens (Nueva York) donde conoció a Earl y Otto Binder, quienes habían publicado recientemente un cuento "Yo, Robot" con un simpático robot llamado Adam Link que fue incomprendido y motivado por el amor y el honor. (Esta fue la primera de una serie de diez historias; al año siguiente, "La venganza de Adam Link" (1940) presentó a Adam pensando "Un robot nunca debe matar a un humano, por su propia voluntad").​ Asimov admiró la historia. Tres días después, Asimov comenzó a escribir "mi propia historia de un robot simpático y noble", su decimocuarta historia.​ Trece días después llevó "Robbie" a John W. Campbell, editor de Astounding Science-Fiction. Campbell lo rechazó, alegando que se parecía demasiado a "Helen O'Loy" de Lester del Rey, publicada en diciembre de 1938, la historia de un robot que se parece tanto a una persona que se enamora de su creador. y se convierte en su esposa ideal.​ Frederik Pohl publicó la historia bajo el título "Strange Playfellow" en Super Science Stories de septiembre de 1940.​​
+Asimov atribuye las Tres Leyes a John W. Campbell, de una conversación que tuvo lugar el 23 de diciembre de 1940. Campbell afirmó que Asimov ya tenía las Tres Leyes en su mente y que simplemente necesitaban ser declaradas explícitamente. Varios años más tarde, el amigo de Asimov, Randall Garrett, atribuyó las Leyes a una asociación simbiótica entre los dos hombres, una sugerencia que Asimov adoptó con entusiasmo.​ Según sus escritos autobiográficos, Asimov incluyó la cláusula de "inacción" de la Primera Ley debido al poema de Arthur Hugh Clough "El último decálogo" (texto en Wikisource), que incluye las líneas satíricas "No matarás, pero no tienes que esforzarte por mantenerte vivo".​
+Aunque Asimov fija la creación de las Tres Leyes en una fecha en particular, su aparición en su literatura ocurrió durante un período. Escribió dos historias de robots sin mención explícita de las Leyes, "Robbie" y "Reason". Sin embargo, asumió que los robots tendrían ciertas salvaguardas inherentes. "¡Embustero!", su tercera historia de robots, menciona por primera vez la Primera Ley, pero no las otras dos. Las tres leyes finalmente aparecieron juntas en "Runaround". Cuando estas historias y varias otras se compilaron en la antología I, Robot, "Reason" y "Robbie" se actualizaron para reconocer las Tres Leyes, aunque el material que Asimov agregó a "Reason" no es del todo consistente con las Tres Leyes como las describió en otra parte.​
+En su cuento "Evidencia", Asimov deja que su personaje recurrente, la Dra. Susan Calvin, exponga una base moral detrás de las Tres Leyes. Calvin señala que típicamente se espera que los seres humanos se abstengan de dañar a otros seres humanos (excepto en tiempos de extrema coacción como la guerra, o para salvar a un número mayor) y esto es equivalente a la Primera Ley de un robot. Asimismo, según Calvin, la sociedad espera que los individuos obedezcan las instrucciones de autoridades reconocidas como médicos, maestros, etc., lo que equivale a la Segunda Ley de la Robótica. Por último, normalmente se espera que los humanos eviten hacerse daño a sí mismos, que es la Tercera Ley para un robot.
+La trama de "Evidencia" gira en torno a la cuestión de diferenciar a un ser humano de un robot construido para parecer humano; Calvin razona que si tal individuo obedece las Tres Leyes, puede ser un robot o simplemente "un hombre muy bueno". Otro personaje le pregunta a Calvin si los robots son muy diferentes de los seres humanos después de todo. Ella responde: "Mundos diferentes. Los robots son esencialmente decentes".
+Asimov escribió más tarde que no debería ser elogiado por crear las Leyes, porque son "obvias desde el principio, y todo el mundo las conoce de manera subliminal. Las Leyes nunca se expresaron en frases breves hasta que logré hacer el trabajo. Las Leyes se aplican, por supuesto, a todas las herramientas que utilizan los seres humanos",  y "los análogos de las Leyes están implícitos en el diseño de casi todas las herramientas, robóticas o no":​
+
+Ley 1: El uso de una herramienta no debe ser peligroso. Los martillos tienen mangos y los destornilladores tienen empuñaduras para ayudar a aumentar el agarre. Por supuesto, es posible que una persona se lesione con una de estas herramientas, pero esa lesión solo se debe a su incompetencia, no al diseño de la herramienta.
+Ley 2: Una herramienta debe realizar su función de manera eficiente a menos que esto perjudique al usuario. Esta es la única razón por la que existen los interruptores de circuito por falla a tierra. Cualquier herramienta en funcionamiento tendrá su corte de energía si un circuito detecta que algo de corriente no está regresando al cable neutro y, por lo tanto, podría estar fluyendo a través del usuario. La seguridad del usuario es primordial.
+Ley 3: Una herramienta debe permanecer intacta durante su uso a menos que su destrucción sea necesaria para su uso o por seguridad. Por ejemplo, los discos Dremel están diseñados para ser lo más resistentes posible sin romperse a menos que el trabajo requiera gastarlos. Además, están diseñados para romperse en un punto antes de que la velocidad de la metralla pueda lesionar gravemente a alguien (además de los ojos, aunque de todos modos se deben usar gafas de seguridad en todo momento).
+Asimov creía que, idealmente, los humanos también seguirían las Leyes:​
+
+ 
+
+
+== La ley cero ==
+La "ley cero de la robótica" es una variación introducida en las leyes de la robótica que aparece por primera vez en la novela de Isaac Asimov Robots e Imperio (1985). En dicha obra, la ley es elaborada por R. Daneel Olivaw tras una discusión mantenida con el terrícola Elijah Baley en su lecho de muerte.[cita requerida] Posteriormente en la novela, Daneel cita por primera vez la ley con la siguiente formulación[cita requerida]:
+
+ 
+
+derivándose de la denominación "cero" que las otras tres leyes de la robótica quedan subordinadas jerárquicamente a esta nueva ley. Sin embargo, en la propia novela se pone en duda la capacidad de un robot de cumplir con dicha jerarquía cuando R. Giskard Reventlov queda destruido tras incumplir la primera ley tratando de aplicar la ley cero.[cita requerida]
+Asimov utilizó la ley cero como nexo entre sus novelas de robots y aquellas pertenecientes a la serie de la Fundación.[cita requerida] El personaje de R. Daneel Olivaw  aparece en novelas posteriores como Fundación y Tierra (1986) y Preludio a la Fundación (1988) en el papel de protector secreto y guía de la especie humana en su expansión por la galaxia, así como en el de instigador de la creación tanto del Imperio Galáctico como posteriormente de la psicohistoria. En dichas obras Daneel implica que sus acciones son derivadas de la aplicación de dicha ley cero.[cita requerida]
+
+
+== Aplicaciones a la tecnología futura ==
+
+Los robots y las inteligencias artificiales no contienen ni obedecen inherentemente las Tres Leyes; sus creadores humanos deben programarlos. Se necesitan avances significativos en inteligencia artificial para ello, e incluso si la IA pudiera alcanzar la inteligencia a nivel humano, la complejidad ética inherente, así como la dependencia cultural o contextual de las leyes, les impide ser un buen candidato para formular restricciones de diseño robótico.​ Sin embargo, a medida que ha aumentado la complejidad de los robots, también ha aumentado el interés en desarrollar directrices y salvaguardias para su funcionamiento.​​
+En un editorial invitado de 2007 en la revista Science sobre el tema de "Ética de los robots", el autor de ciencia ficción Robert J. Sawyer sostiene que, dado que el ejército de EE. UU. es una fuente importante de financiación para la investigación robótica (y ya utiliza vehículos aéreos no tripulados armados para matar enemigos) es poco probable que tales leyes se incluyan en sus diseños.​ En un ensayo separado, Sawyer generaliza este argumento para cubrir otras industrias que afirman:
+
+El desarrollo de la IA es un negocio, y las empresas son notoriamente desinteresadas en las salvaguardas fundamentales, especialmente las filosóficas. (Algunos ejemplos rápidos: la industria del tabaco, la industria automotriz, la industria nuclear. Ninguno de ellos ha dicho desde el principio que las salvaguardias fundamentales son necesarias, cada uno de ellos ha resistido las salvaguardias impuestas desde el exterior y ninguno ha aceptado un edicto absoluto. en contra de causar daño a los humanos).​
+David Langford ha sugerido un conjunto de leyes irónico:
+
+Un robot no dañará al personal gubernamental autorizado, pero eliminará a los intrusos con un perjuicio extremo.
+Un robot obedecerá las órdenes del personal autorizado, excepto cuando dichas órdenes entren en conflicto con la Tercera Ley.
+Un robot protegerá su propia existencia con armamento antipersonal letal, porque un robot es muy caro.
+Roger Clarke (también conocido como Rodger Clarke) escribió un par de artículos analizando las complicaciones en la implementación de estas leyes en el caso de que algún día los sistemas fueran capaces de emplearlas. Argumentó que "Las leyes de la robótica de Asimov han sido un dispositivo literario muy exitoso. Quizás irónicamente, o quizás porque era artísticamente apropiado, la suma de las historias de Asimov refuta la afirmación con la que comenzó: No es posible restringir de manera confiable el comportamiento de los robots. ideando y aplicando un conjunto de reglas ".​ Por otro lado, las últimas novelas de Asimov The Robots of Dawn, Robots and Empire y Foundation and Earth implican que los robots infligieron su peor daño a largo plazo al obedecer perfectamente las Tres Leyes, privando así a la humanidad de una conducta inventiva o arriesgada.
+En marzo de 2007, el gobierno de Corea del Sur anunció que ese año emitiría una "Carta de ética robótica" que establecería estándares tanto para usuarios como para fabricantes. Según Park Hye-Young del Ministerio de Información y Comunicación, la Carta puede reflejar las Tres Leyes de Asimov, intentando establecer reglas básicas para el futuro desarrollo de la robótica.​
+El futurista Hans Moravec (una figura prominente en el movimiento transhumanista) propuso que las leyes de la robótica deberían adaptarse a las "inteligencias corporativas", las corporaciones impulsadas por la inteligencia artificial y el poder de fabricación robótica que Moravec cree que surgirán en un futuro próximo.​ En contraste, la novela de David Brin Foundation's Triumph (1999) sugiere que las Tres Leyes pueden caer en obsolescencia: los robots usan la Ley Cero para racionalizar la Primera Ley y los robots se esconden de los seres humanos para que la Segunda Ley nunca llegue. en juego. Brin incluso retrata a R. Daneel Olivaw preocupándose de que, si los robots continúan reproduciéndose, las Tres Leyes se convertirían en una desventaja evolutiva y la selección natural barrería las Leyes, la cuidadosa base de Asimov deshecha por la computación evolutiva. Aunque los robots no evolucionarían a través del diseño en lugar de la mutación porque los robots tendrían que seguir las Tres Leyes al diseñar y se garantizaría la prevalencia de las leyes,​ los defectos de diseño o los errores de construcción podrían reemplazar funcionalmente a la mutación biológica.
+En la edición de julio/agosto de 2009 de IEEE Intelligent Systems, Robin Murphy (profesor Raytheon de Ciencias de la Computación e Ingeniería en Texas A&M) y David D. Woods (director del Laboratorio de Ingeniería de Sistemas Cognitivos en el estado de Ohio) propusieron "Las tres leyes de la robótica responsable" como una forma de estimular la discusión sobre el papel de la responsabilidad y la autoridad al diseñar no solo una plataforma robótica única sino el sistema más grande en el que opera la plataforma. Las leyes son las siguientes:
+
+Un ser humano no puede desplegar un robot sin que el sistema de trabajo humano-robot cumpla con los más altos estándares legales y profesionales de seguridad y ética.
+Un robot debe responder a los humanos según sea apropiado para sus roles.
+Un robot debe estar dotado de suficiente autonomía situada para proteger su propia existencia siempre que dicha protección proporcione una transferencia de control sin problemas que no entre en conflicto con la Primera y Segunda Leyes.​
+Woods dijo: "Nuestras leyes son un poco más realistas y, por lo tanto, un poco más aburridas" y que "La filosofía ha sido, 'claro, la gente comete errores, pero los robots serán mejores, una versión perfecta de nosotros mismos'. Queríamos escribir tres leyes nuevas para que la gente pensara en la relación humano-robot de formas más realistas y fundamentadas".​
+En octubre de 2013, Alan Winfield sugirió en una reunión de la EUCog​ 5 leyes revisadas que habían sido publicadas, con comentarios, por el grupo de trabajo EPSRC / AHRC en 2010.:​
+
+Los robots son herramientas de usos múltiples. Los robots no deben diseñarse única o principalmente para matar o dañar a humanos, excepto en interés de la seguridad nacional.
+Los seres humanos, no los robots, son agentes responsables. Los robots deben diseñarse y operarse en la medida de lo posible para cumplir con las leyes vigentes, los derechos y libertades fundamentales, incluida la privacidad.
+Los robots son productos. Deben diseñarse utilizando procesos que garanticen su seguridad y protección.
+Los robots son artefactos manufacturados. No deben diseñarse de manera engañosa para explotar a los usuarios vulnerables; en cambio, su naturaleza de máquina debería ser transparente.
+Se debe atribuir a la persona con la responsabilidad legal de un robot.
+
+
+== Críticas ==
+El filósofo James H. Moor dice que si se aplica a fondo produciría resultados inesperados. Da el ejemplo de un robot que deambula por el mundo tratando de evitar que los seres humanos sufran daños.​
+Marc Rotenberg, presidente y director ejecutivo del Electronic Privacy Information Center (EPIC) y profesor de leyes de privacidad de la información en Georgetown Law, sostiene que las leyes de la robótica deberían ampliarse para incluir dos nuevas leyes:
+
+una Cuarta Ley, según la cual un Robot debe poder identificarse ante el público ("identificación simétrica")
+una Quinta Ley, que dicta que un Robot debe poder explicar al público su proceso de toma de decisiones ("transparencia algorítmica").
+
+
+== Véase también ==
+Leyes de la robótica
+Leyes de Clarke
+Leyes de Niven
+ Yo, robot
+ Yo, robot (película)
+Robot
+Robot militar
+Roboética
+La apuesta transhumanista
+Knight Rider (serie de Glen A. Larson de 1980)
+Alien (franquicia)
+
+
+== Referencias ==

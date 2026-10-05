@@ -1,0 +1,31 @@
+Este artículo presenta diversas menciones a la inteligencia artificial en libros, cine y tradición. Aunque el término Inteligencia artificial fue acuñado por John McCarthy en 1956, numerosas son las menciones en literatura y ficción a entidadas creadas por el hombre que demuestran algún rasgo de inteligencia.
+
+
+== Tradición y literatura ==
+Una de las referencias más antiguas se encuentra en la tradición judía. El Golem es un ser de arcilla creado mediante un procedimiento que imita la creación del hombre por Dios.
+En literatura existen también referencias a seres artificiales creados por el hombre, tales como Frankenstein (1818) o Pinocho (1882).
+
+
+== Autómatas inteligentes ==
+El Turco era un autómata que jugaba ajedrez. Construido en 1769, derrotó, entre otros, a Napoleón Bonaparte y Benjamin Franklin. Más tarde se descubrió que el invento era una farsa.
+
+
+== IA en el cine ==
+Numerosas son las películas en donde se hace mención a la inteligencia artificial. Entre las más populares se encuentran:
+
+2001: A Space Odyssey (película), en donde HAL, un computador inteligente comanda la nave espacial.
+Blade Runner, en donde el protagonista debe identificar replicantes (cyborgs)
+The Terminator, en donde un robot inteligente venido desde el futuro debe cumplir una misión.
+
+
+== Véase también ==
+Seguridad de la inteligencia artificial
+Anexo:Robots y androides ficticios
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+lista de películas sobre IA (en inglés)
+Cine e inteligencia artificial, una brevísima historia - InfoHispania (en español)

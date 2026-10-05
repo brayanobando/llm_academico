@@ -1,0 +1,103 @@
+Claude Elwood Shannon (Petoskey, Michigan, 30 de abril de 1916 - Medford, Massachusetts, 24 de febrero de 2001) fue un matemático, ingeniero eléctrico y criptógrafo estadounidense recordado como «el padre de la teoría de la información».​​
+Shannon es reconocido por haber fundado el campo de la teoría de la información con la publicación Una teoría matemática de la comunicación, que supuso un hito en 1948. Es quizás igualmente conocido por haber sentado las bases de la teoría del diseño de circuitos digitales en 1937, con apenas 21 años de edad. Mientras realizaba su maestría en el Massachusetts Institute of Technology (MIT), demostró en su tesis que las aplicaciones electrónicas de álgebra booleana podrían construir cualquier relación lógico-numérica.​ Shannon contribuyó asimismo al campo del criptoanálisis para la defensa de Estados Unidos durante la Segunda Guerra Mundial, con trabajos sobre el descifrado de códigos y la seguridad en las telecomunicaciones. Es considerado  con el mismo grado de  abstracción  que el que poseía Albert Einstein.​
+En su honor se bautizó la IA de Anthropic, Claude.
+
+
+== Biografía ==
+La familia Shannon vivía en Gaylord (Míchigan), y Claude nació en un hospital en la cercana Petoskey.​ Su padre, Claude Sr. (1862-1934), fue empresario y, durante un tiempo, juez de sucesiones en Gaylord. Su madre, Mabel Wolf Shannon (1880-1945), fue profesora de idiomas y directora de la escuela secundaria de Gaylord.​ Claude Sr. era descendiente de colonos de Nueva Jersey, mientras que Mabel era hija de inmigrantes alemanes.​ La familia de Shannon participó activamente en la Iglesia Metodista durante su juventud.​
+Los primeros años de su vida los pasó en Gaylord, donde se graduó de la secundaria en 1932. Desde joven, Shannon mostró una clara inclinación hacia las cosas mecánicas. Resaltaba respecto a sus compañeros en las asignaturas de ciencias. Su héroe de la niñez era Edison, de quien más tarde supo que era un primo lejano. Tanto Shannon como Edison eran descendientes de John Ogden (1609-1682), líder colonial y antepasado de muchas personas distinguidas.​​
+En 1932 ingresó en la Universidad de Míchigan, donde su hermana Catherine se doctoró como matemática. En 1936 obtuvo los títulos de ingeniero eléctrico y matemático. Su interés por la matemática y la ingeniería continuó durante toda su vida.
+En 1936 aceptó el puesto de asistente de investigación en el departamento de ingeniería eléctrica en el Instituto Tecnológico de Massachusetts (MIT). Su situación le permitió continuar estudiando mientras trabajaba por horas para el departamento, donde trabajó en el computador analógico más avanzado de esa era, el analizador diferencial de Vannevar Bush.​
+
+
+== Primeros descubrimientos ==
+
+
+=== Circuitos de relés complejos y álgebra booleana ===
+En ese momento surgió su interés hacia los circuitos de relés complejos.​ Intentando simplificar centralitas telefónicas de relés, se dio cuenta de que estos podían usarse para hacer cálculos. Sumado esto a su gusto por la lógica y el álgebra booleana, pudo desarrollar esta idea durante el verano de 1937, que pasó en los laboratorios Bell en la ciudad de Nueva York.
+
+
+=== Álgebra booleana y circuitos digitales ===
+En su tesis doctoral en el MIT​ demostró cómo el álgebra booleana se podía utilizar en el análisis y la síntesis de la conmutación y de los circuitos digitales. La tesis despertó un interés considerable cuando apareció en 1938 en las publicaciones especializadas. En 1940 le fue concedido el Premio Alfred Noble​​ para ingenieros estadounidenses por parte de la Sociedad Estadounidense de Ingenieros Civiles de los Estados Unidos, otorgado cada año a una persona de no más de treinta años. Un cuarto de siglo más tarde, Herman Goldstine, en su libro Las computadoras desde Pascal hasta Von Neumann, citó su tesis como una de las más importantes de la historia que ayudó a cambiar el diseño de circuitos digitales.​
+Durante el verano de 1938 realizó trabajos de investigación en el MIT y le fue concedida la beca Bolles cuando trabajaba como ayudante de enseñanza mientras realizaba un doctorado en matemática. En 1940 estudió un máster en ingeniería eléctrica y se doctoró en filosofía de la matemática.
+En 1940, Shannon se convirtió en Investigador Nacional en el Instituto de Estudios Avanzados de Princeton, Nueva Jersey. En Princeton, Shannon tuvo la oportunidad de discutir sus ideas con científicos y matemáticos influyentes como Hermann Weyl y John von Neumann, y también mantuvo encuentros ocasionales con Albert Einstein y Kurt Gödel. Shannon trabajó con libertad en diversas disciplinas, y esta capacidad pudo haber contribuido a su posterior desarrollo de la teoría matemática de la información.​
+
+
+== Laboratorios Bell ==
+
+Shannon había trabajado en Bell Labs durante unos meses en el verano de 1937,​ y regresó allí para trabajar en sistemas de control de fuego y criptografía durante la Segunda Guerra Mundial, bajo un contrato con la sección D-2 (sección de Sistemas de Control) del Comité Nacional de Investigación de Defensa (NDRC). A Shannon se le atribuye la invención de los gráficos de flujo de señales, en 1942. Descubrió la fórmula de ganancia topológica mientras investigaba el funcionamiento de una computadora analógica.​
+Shannon pasó quince años en los laboratorios Bell, una asociación muy fructífera con muchos matemáticos y científicos de primera línea como Harry Nyquist, Walter Houser Brattain, John Bardeen y William Bradford Shockley, inventores del transistor; George Stibitz, quien construyó computadoras basadas en relés; Warren Weaver, quien escribió una extensa y aclaradora introducción a su obra Una teoría matemática de la comunicación y muchos otros más.​​​
+
+
+=== Teoría matemática de la información ===
+Durante este período Shannon trabajó en muchas áreas, y lo más notable fue todo lo referente a la teoría de la información, que se publicó en 1948 con el nombre de Una teoría matemática de la comunicación. En este trabajo se demostró que todas las fuentes de información (telégrafo eléctrico, teléfono, radio, la gente que habla, las cámaras de televisión, etcétera) pueden medirse, y que los canales de comunicación tienen una unidad de medida similar, determinando la velocidad máxima de transferencia o capacidad de canal. Demostró también que la información se puede transmitir sobre un canal si y solamente si la magnitud de la fuente no excede la capacidad de transmisión del canal que la conduce, y sentó las bases para la corrección de errores, supresión de ruidos y redundancia.
+Otro artículo destacado publicado en 1949 es "Teoría de la Comunicación de los Sistemas de Secreto", una versión desclasificada de su trabajo durante la guerra sobre la teoría matemática de la criptografía, en el que demostró que todos los cifrados teóricamente irrompibles deben cumplir los mismos requisitos que el bloc de notas de un solo uso. Se le atribuye la introducción del teorema de muestreo, que había derivado ya en 1940​  y que se ocupa de la representación de una señal continua a partir de un conjunto discreto (uniforme) de muestras. Esta teoría fue esencial para permitir la transición de las telecomunicaciones de los sistemas de transmisión analógicos a los digitales en la década de 1960 y posteriormente. Además, escribió un artículo en 1956 sobre la codificación para un canal ruidoso, que también se convirtió en un clásico en el campo de la teoría de la información.​ Sin embargo, también en 1956 escribió un editorial de una página para "IRE Transactions on Information Theory" titulado "The Bandwagon" que comenzaba observando: "La teoría de la información se ha convertido, en los últimos años, en una especie de carro científico" y que concluía advirtiendo: "Solo manteniendo una actitud completamente científica podemos lograr un progreso real en la teoría de la comunicación y consolidar nuestra posición actual".​
+
+
+=== Programación de computadoras para el ajedrez ===
+En el área de las computadoras y de la inteligencia artificial, publicó en 1949 un trabajo que describía la programación de una computadora para jugar al ajedrez, convirtiéndose en la base de posteriores desarrollos.​​
+
+
+== Vida final y fallecimiento ==
+Claude Shannon fue una celebridad en las comunidades científicas, aunque él rechazaba entrevistas, reconocimientos y evitaba la exposición al público, asistía de cuando en cuando a convenciones y seminarios. En 1985, Shannon comenzó a ser afectado por lapsus de memoria y en 1993 se le diagnosticó la enfermedad de Alzheimer, falleció en 2001 en un asilo de ancianos.​​​
+
+
+== Otras contribuciones y reconocimientos ==
+En el campo de la biblioteconomía y la documentación, el desarrollo booleano revolucionó las búsquedas en catálogos de bibliotecas o en bases de datos de centros de documentación.
+A lo largo de su vida recibió numerosas condecoraciones y reconocimientos de universidades e instituciones de todo el mundo.
+Ante la pregunta de un periodista de si las máquinas podían pensar, replicó: «¡Naturalmente! ¡Usted y yo somos máquinas y vaya si pensamos!».
+
+
+== Premios y distinciones ==
+El Premio Claude Shannon se creó en su honor; También fue su primer galardonado, en 1973.
+Medalla Stuart Ballantine del Franklin Institute, 1955
+Miembro de Academia Estadounidense de las Artes y las Ciencias, 1957
+Premio Harvey, Technion de Haifa, Israel, 1972
+Premio Alfred Noble, 1939 (premio de las sociedades de ingeniería civil de Estados Unidos)
+Medalla Nacional de Ciencia, 1966, entregada por el presidente Lyndon B. Johnson
+Premio Kioto, 1985
+Premio Conmemorativo Morris Liebmann del Institute of Radio Engineers, 1949
+Academia Nacional de Ciencias (Estados Unidos), 1956
+Medalla de Honor del Institute of Electrical and Electronics Engineers, 1966
+Premio Plato de Oro de la Academia Estadounidense del Logro, 1967
+Real Academia de Artes y Ciencias de los Países Bajos (KNAW), miembro extranjero, 1975
+Miembro de la Sociedad Filosófica Estadounidense, 1983
+Miembro de la Academia Real Irlandesa, 1985
+Miembro de la Academia Nacional de Ingeniería (Estados Unidos) (1985)
+Premio a la Investigación Básica, Fundación Eduard Rhein, Alemania, 1991
+Premio Marconi, 2000
+Profesor Donner de Ciencias, MIT, 1958–1979
+
+
+== Publicaciones ==
+Shannon, Claude Elwood (1948). «A mathematical theory of communication». Bell System Technical Journal 27 (379-423 and 623-656). ​
+Shannon, Claude Elwood (1949). «Communication theory of secrecy systems». Bell System Technical Journal 28 (656-715). ​
+
+
+== Véase también ==
+Abraham Lempel
+Ajedrez por computadora
+Minivac 601
+Libreta de un solo uso
+Número de Shannon
+shannon (unidad), equivalente a un bit de información
+Teorema de Shannon-Hartley
+Teorema de codificación de fuentes de Shannon
+Segundo teorema de Shannon
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Golom, Solomon W. et Al (2001). «Claude Elwood Shannon (1916-2001)». Notices of the AMS 49 (1). 
+
+
+== Enlaces externos ==
+
+ Wikimedia Commons alberga una categoría multimedia sobre Claude Shannon.
+
+ Wikiquote alberga frases célebres de o sobre Claude Shannon.
+Claude Shannon - Biografía en Infoamérica
+Claude Shannon – El pensamiento en Infoamérica
+Una teoría matemática de la comunicación Archivado el 31 de enero de 1998 en Wayback Machine. (en inglés)

@@ -1,0 +1,52 @@
+Judea Pearl (Tel Aviv, 4 de septiembre de 1936) es un matemático, científico de la computación y filósofo israelí, más conocido por desarrollar la aproximación probabilística a la inteligencia artificial, en particular utilizando las redes bayesianas, y la formalización del razonamiento causal (véase Causalidad).
+
+
+== Biografía ==
+Pearl recibió un Grado Ingeniería Eléctrica del Technion, Israel, en 1960, un Máster en Físicas de la Universidad Rutgers, EE. UU., en 1965, y un Doctorado en Ingeniería Eléctrica del Instituto Politécnico de Brooklyn, EE. UU. en 1965. Trabajó en los Laboratorios de Investigación RCA y posteriormente se unió a la UCLA en 1970, donde actualmente es profesor en Ciencias de la Computación y Estadística y director del Laboratorio de Sistemas Cognitivos. En 2002, su hijo, Daniel Pearl fue secuestrado y asesinado en Pakistán, por lo que él y su familia crearon la Daniel Pearl Foundation [1]. Recibió el Premio Turing en 2011 por sus contribuciones fundamentales a la inteligencia artificial a través del desarrollo de un cálculo de probabilidades y de razonamiento causal.
+
+
+== Investigación ==
+Judea Pearl fue uno de los pioneros de las Redes bayesianas y la aproximación probabilística a la inteligencia artificial y uno de los primeros en dar un formalismo matemático al fenómeno de la causalidad en las ciencias empíricas. Su trabajo también trata a un alto nivel un modelo cognitivo. Sus intereses son la filosofía de la ciencia, representación del conocimiento, lógicas no estándares y aprendizaje automático. Pearl es descrito como «uno de los gigantes en el campo de la inteligencia artificial» por el Richard Korf [2], de la UCLA. Su trabajo en causalidad ha «revolucionado el entendimiento de este campo en estadística, psicología, medicina y en las ciencias sociales»[3].
+
+
+=== Libros ===
+Heuristics, Addison-Wesley, 1984
+Probabilistic Reasoning in Intelligent Systems, Morgan-Kaufmann, 1988
+Causality: Models, Reasoning, and Inference, Cambridge University Press, 2000. ISBN 978-0521895606
+I Am Jewish: Personal Reflections Inspired by the Last Words of Daniel Pearl Archivado el 21 de octubre de 2008 en Wayback Machine., Jewish Lights, 2004.
+Causal Inference in Statistics: A Primer, (con Madelyn Glymour y Nicholas Jewell), Wiley, 2016. ISBN 978-1119186847
+The Book of Why: The New Science of Cause and Effect (con Dana Mackenzie),  2018. ISBN 978-0141982410
+
+
+=== Publicaciones científicas ===
+Lista de publicaciones en su web personal
+
+
+=== Conferencias ===
+Discurso de la toma de posesión del Doctorado Honorario en Ciencias recibido en la University of Toronto - discurso pronunciado el 21 de junio de 2007
+«The Art and Science of Cause and Effect» («El Arte y la Ciencia de la Causa y el Efecto»): una presentación y el tutorial de la conferencia
+Reasoning with Cause and Effect («Razonando con Causa y Efecto»).
+
+
+=== Premios ===
+2008--Benjamin Franklin Medal in Computers and Cognitive Science
+2007--University of Toronto, Honorary Doctorate
+2006--Purpose Prize
+2004--2003 ACM Allen Newell Award
+2003--Pekeris Memorial Lecture
+2002--Corresponding Member, Spanish Academy of Engineering
+2001--Lakatos Award, London School of Economics and Political Science
+2000--AAAI Classic Paper Award
+1999--IJCAI Award for Research Excellence in Artificial Intelligence
+1996--UCLA 81st Faculty Research Lecturer
+1995--Member, National Academy of Engineering
+1990--Fellow, American Association of Artificial Intelligence (AAAI)
+1988--Fellow, Institute of Electrical and Electronic Engineers (IEEE)
+1975--NATO Senior Fellowship in Science
+1965--RCA Laboratories Achievement Award
+
+
+== Enlaces externos ==
+Página personal de Judea Pearl
+Sitio web de la Fundación Daniel Pearl
+Entrevista con Judea Pearl.

@@ -1,0 +1,52 @@
+AlphaGo es un programa informático de inteligencia artificial desarrollado por Google DeepMind para jugar al juego de mesa Go. En octubre de 2015 se convirtió en la primera máquina de Go en ganar a un jugador profesional sin emplear piedras de handicap en un tablero de 19x19.
+Se enfrentó contra el jugador chino Fan Hui 2p en una serie de 5 partidas oficiales, las cuales AlphaGo ganó, seguidas por unas partidas informales que acabaron 3-2 a favor de la inteligencia artificial. En marzo de 2016, se enfrentó a uno de los mejores jugadores, Lee Sedol 9p. El 9 de marzo de 2016, AlphaGo ganó la primera partida de este enfrentamiento.​​ Hasta marzo del 2016, AlphaGo estaba clasificado como número dos del mundo en el ranking no oficial de Rémi Coulom, con un elo de 3611 hasta julio del 2016.​ En reconocimiento por vencer a Lee Sedol, AlphaGo fue galardonado con un honorario 9-dan por la Asociación Coreana de Baduk.
+En 2017, AlphaZero, del propio DeepMind, superó a la versión AlphaGo Zero y otros programas de ajedrez y Shōgi después de solo 24 horas de juego. Después de 4 horas de juegos adquirió un nivel superhumano.​​
+
+
+== Hardware ==
+AlphaGo se puso a prueba en hardware con varios números de CPU s y GPU s, que se ejecuta en modo asíncrono o distribuido. Dos segundos de tiempo de pensar se da a cada movimiento. El Elo resultante se enumera a continuación​
+
+
+=== AlphaGo Zero ===
+El equipo de AlphaGo publicó un artículo en la revista Nature el 19 de octubre de 2017, presentando AlphaGo Zero, una versión sin datos humanos y más sólida que cualquier otra versión humana anterior que derrotara al campeón.​ Al jugar juegos contra sí mismo, AlphaGo Zero superó la fuerza de AlphaGo Lee en tres días al ganar 100 juegos a 0, alcanzó el nivel de AlphaGo Master en 21 días y superó todas las versiones anteriores en 40 días.​
+
+
+== Algoritmo ==
+El algoritmo de AlphaGo utiliza una combinación de técnicas de aprendizaje automático y árbol de búsqueda, combinadas con una amplia formación, tanto desde el juego humano y como del ordenador. Utiliza árbol de búsqueda Monte Carlo, guiada por una «red de valor» y una «red de políticas», ambas implementadas mediante la tecnología de redes neuronales de aprendizaje profundo.​​ Una cantidad limitada de detección de características pre-procesamiento-juego específico se utiliza para generar las entradas a las redes neuronales.​
+Las redes neuronales del sistema fueron inicialmente bootstrapeadas a partir de la experiencia de juego humano. AlphaGo fue entrenado inicialmente para imitar el juego humano, tratando de igualar los movimientos de los jugadores expertos de juegos históricos registrados, utilizando una base de datos de alrededor de 30 millones de movimientos. Una vez que había alcanzado un cierto grado de habilidad, era entrenado aún más al ser llamado a desempeñar un gran número de partidos contra otras instancias de sí mismo, usando aprendizaje por refuerzo para mejorar su juego.​
+
+
+== Estilo de juego ==
+AlphaGo ha sido descrito por el jugador de 9-dan Myungwan Kim como jugar «contra un ser humano» en sus partidos contra Fan Hui.​ El árbitro del partido, Toby Manning, ha descrito el estilo del programa como «conservador».​
+
+
+== Respuestas ==
+AlphaGo ha sido aclamado como un hito en la investigación de la inteligencia artificial, como Go previamente ha sido considerado como un problema difícil en el aprendizaje de máquinas que se esperaba que este fuera del alcance de la tecnología de la época.​​ Toby Manning, el árbitro de AlphaGo contra Fan Hui y Hajin Lee, y el secretario general de la Federación Internacional de Go han dicho que en el futuro, los jugadores de Go contarán con la ayuda de las computadoras para aprender lo que han hecho mal en los juegos y mejorar sus habilidades.​
+
+
+== Sistemas similares ==
+Facebook también ha estado trabajando en su propio sistema de juego de Go, el darkforest, el cual también se basa en la combinación de máquina de aprendizaje y búsqueda de árbol.​ Aunque es un jugador fuerte contra otro programas de computadora de Go, hasta principios de 2016, todavía no había vencido a un jugador humano profesional.​ Darkforest perdió contra CrazyStone y Zen y se estima que es de una similar resistencia a ellos.​
+
+
+== Ejemplo de juegos ==
+AlphaGo (negro) v. Fan Hui, el Juego 4 (8 de octubre de 2015), AlphaGo ganó por abandono.​
+
+
+== Enfrentamiento ==
+
+
+== Referencias ==
+
+
+== Véase también ==
+AlphaGo versus Lee Sedol
+Cumbre del Futuro de Go
+Deep Blue (computadora)
+Watson (inteligencia artificial)
+AlphaGo (película)
+Lista de proyectos de inteligencia artificial
+
+
+== Enlaces externos ==
+Reproductor de Partidas
+Mastering the game of go with deep neural networks and tree search

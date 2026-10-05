@@ -1,0 +1,120 @@
+La cibernética es el estudio interdisciplinario de la estructura de los sistemas reguladores, en particular refiriéndose a la teoría del control aplicada a sistemas complejos.​ En otras palabras, es la ciencia que estudia los flujos de energía estrechamente vinculados a la teoría de control y a la teoría de sistemas.​ La cibernética se asocia a modelos en los que un monitor compara lo que le sucede a un sistema en distintos momentos de muestreo con algún estándar de lo que debería estar sucediendo, y un controlador ajusta el comportamiento del sistema en consecuencia.​
+Tanto en sus orígenes como en su evolución, en la segunda mitad del siglo XX, la cibernética es igualmente aplicable a los sistemas físicos y sociales. Los sistemas complejos afectan su ambiente externo y luego se adaptan a él. En términos técnicos, se centra en funciones de control y comunicación: ambos fenómenos externos e internos del/al sistema. Esta capacidad es natural en los organismos vivos y se ha imitado en máquinas y organizaciones. Especial atención se presta a la retroalimentación y sus conceptos derivados.
+El término «cibernética» proviene de la antigua palabra griega κυβερνητικός (kibernētikos, '(bueno para) gobernar', en el sentido de dirigir o conducir), que hace referencia al arte del timonel.​ En la primera mitad del siglo XIX, el físico francés André-Marie Ampère, en su clasificación de las ciencias, sugirió que la todavía inexistente ciencia del control de los gobiernos se llamara cibernética. Sin embargo, el término pronto cayó en el olvido y no volvió a utilizarse hasta que el matemático estadounidense Norbert Wiener publicó su libro Cibernética en 1948.​ En ese libro, Wiener hizo referencia a un artículo de 1868 del físico británico James Clerk Maxwell sobre governors (lit., «gobernadores», aunque a menudo traducido al castellano como «reguladores») y señaló que el término governor se deriva, vía latín, de la misma palabra griega que da origen a 'cibernética'. La fecha de publicación de Wiener se acepta generalmente como la que marca el nacimiento de la cibernética como ciencia independiente.​ El nombre corresponde un ejemplo de retroalimentación causal circular: el de gobernar un barco, en el que el timonel ajusta el timón en respuesta continua al efecto que se observa que tiene, formando un bucle de retroalimentación a través del cual se puede mantener un rumbo constante en un entorno cambiante, respondiendo a las perturbaciones de los vientos cruzados y las mareas.​​
+El carácter transdisciplinario de la cibernética​ ha significado que se interseca con varios otros campos, lo que le lleva a que tenga a la vez una amplia influencia y diversas interpretaciones. La cibernética, según el epistemólogo, antropólogo, cibernetista y padre de la terapia familiar, Gregory Bateson, es la rama de las matemáticas que se encarga de los problemas de control, recursividad e información. Bateson también afirma que la cibernética es «el más grande mordisco a la fruta del árbol del conocimiento que la humanidad haya dado en los últimos 2000 años».​
+Stafford Beer, filósofo de la teoría organizacional y gerencial, de quien el propio Wiener dijo que debía ser considerado como el padre de la cibernética de gestión, define a la cibernética como «la ciencia de la organización efectiva».
+Según Stafford Beer, la cibernética estudia los flujos de información que rodean un sistema, y la forma en que esta información es usada por el sistema como un valor que le permite controlarse a sí mismo: ocurre tanto para sistemas animados como inanimados indiferentemente. La cibernética es una ciencia interdisciplinar, y está tan ligada a la física como al estudio del cerebro como al estudio de los computadores, y tiene también mucho que ver con los lenguajes formales de la ciencia, proporcionando herramientas con las cuales describir de manera objetiva el comportamiento de todos estos sistemas.
+El propio Stafford Beer afirmó: «Probablemente la primera y más clara visión dentro de la naturaleza del control fue que este no trata de tirar de palancas para producir unos resultados deseados e inexorables. Esta noción del control se aplica solo a máquinas triviales».
+Nunca se aplica un sistema total que incluye cualquier clase de elemento probabilístico —desde la meteorología, hasta las personas; desde los mercados, a la política económica—. La característica de un sistema no-trivial que está bajo control es que a pesar de tratar con variables demasiado extensas para cuantificar, demasiado inciertas para ser expresadas, e incluso demasiado difíciles de comprender, algo puede ser hecho para generar un objetivo predecible.
+En una reflexión muy poética dada por Gordon Pask la cibernética es «la ciencia de las metáforas a ser defendidas».
+
+
+== Conceptos recurrentes para su investigación ==
+La Modelización significa observar elementos homogéneos pero distintos de un caso, separando los elementos persistentes y comunes, con la finalidad de que se llegue a la representación de un sistema abstracto, que sea capaz de describir todos los elementos individuales en el interior de dicho sistema. La modelización cibernética es una modelización lógico-matemática. Sin embargo, en el marco jurídico se trata de una modelización de tipo verbal o lógico-tradicional.
+Caja negra es uno de los métodos desarrollados por la cibernética para dar explicación a fenómenos parcialmente desconocidos. Se trata de un sistema del que no se conocen las reglas de funcionamiento, sino únicamente el dato de entrada y el dato de salida.
+Trial and error es un método que refiere a la determinación, prueba y corrección, indistintamente de su traducción exacta en intento y error. Además debe estudiarse en términos matemáticos debido a que es la base de la innovación.
+
+
+== Etimología ==
+El término «cibernética» proviene de la antigua palabra griega κυβερνητικός (kibernētikos, '(bueno para) gobernar'), que se refiere al arte del timonel.​ Norbert Wiener encontró justo la palabra que quería en la operación de los grandes barcos de la antigua Grecia. En el mar, los grandes barcos batallaban contra la lluvia, el viento y las mareas; cuestiones de ninguna forma predecibles. Sin embargo, si el hombre, operando sobre el timón, podía mantener su mirada sobre un lejano faro, podría manipular la caña del timón, ajustándola constantemente en tiempo real, hasta alcanzar la luz. Esta es la función del timonel. En los tiempos rudos de Homero la palabra griega para designar al timonel era kybernetes, que Wiener tradujo al inglés como cybernetics, en español cibernética.
+
+
+== Historia ==
+La cibernética es una ciencia nacida hacia 1942 e impulsada inicialmente por Norbert Wiener y Arturo Rosenblueth Stearns que tiene como objeto «el control y comunicación en el animal y en la máquina» o «desarrollar un lenguaje y técnicas que nos permitirán abordar el problema del control y la comunicación en general».
+Sin embargo, cabe aclarar que se puede tomar como comienzo de esta disciplina el año 1940, con las investigaciones de Norbert Wiener y Vannevar Bush sobre las máquinas de cálculo y sobre redes eléctricas con Yuk Wing Lee. Aunque el término no será acuñado hasta 1947. 
+En 1950, Ben Laposky, un matemático de Iowa, creó los oscilones o abstracciones electrónicas por medio de un ordenador analógico: se considera esta posibilidad de manipular ondas y de registrarlas electrónicamente como el despertar de lo que habría de ser denominado computer graphics y, luego, computer art e infoarte. También, durante la década del cincuenta, William Ross Ashby propone teorías relacionadas con la inteligencia artificial.
+La cibernética dio gran impulso a la teoría de la información a mediados de los 60; el computador digital sustituyó al analógico en la elaboración de imágenes electrónicas. En esos años aparece la segunda generación de computadores (con transistores en 1960) concretándose por entonces los primeros dibujos y gráficos de computador, y la tercera (con circuitos integrados, en 1964) así como los lenguajes de programación.
+En 1965 tuvo lugar en Stuttgart la exposición ”Computer-graphik”. Pero la muestra que consagró la tendencia fue la que tuvo lugar en 1968 bajo el título “Cybernetic Serendipity” en el Instituto de Arte Contemporáneo de Londres. También en ese año se destacó la exposición “Mindextenders” del Museum of Contemporary Crafts de Londres.
+En 1969 el Museo Brooklyn organizó la muestra “Some more Beginnings”. En ese mismo año, en Buenos Aires y otras ciudades de Argentina, se presentaba "Arte y cibernética", organizada por Jorge Glusberg. Con esta muestra se inaugurarían los principios de la relación arte/imagen digital en ese país. En España la primera manifestación fue la de “Formas computables”, 1969, “Generación automática de formas plásticas”, 1970, ambas organizadas por el Centro de Cálculo de la Universidad de Madrid. En los primeros meses de 1972, el Instituto Alemán de Madrid y el de Barcelona presentaron una de las muestras más completas que ha tenido lugar en España, titulada "Impulso arte computador".
+Las primeras experiencias de lo que luego se llamaría net.art se remontan al año 1994. Es importante aclarar que ya por los 1960 existían algunos antecedentes. De todas formas se puede establecer que las primeras experiencias donde la tecnología informática puesta al servicio de la comunidad funcionó como soporte estético trascurren por aquellos años y rompen con la idea de lectura lineal de la obra.
+
+
+=== La raíz de la teoría cibernética ===
+El término cibernética viene del griego Κυβερνήτης (kybernḗtēs, que se refiere al timonel, el cual "gobierna" la embarcación). La palabra cybernétique también fue utilizada en 1834 por el físico André-Marie Ampère (1775-1836) para referirse a las ciencias de gobierno en su sistema de clasificación de los conocimientos humanos.
+Históricamente los primeros mecanismos en utilizar regulación automática (aunque no se usaba la palabra cibernética entonces para ellos) fueron los desarrollados para medir el tiempo, como los relojes de agua. En ellos, el agua fluía de una fuente, como un tanque en un depósito y luego desde el depósito a los mecanismos del reloj. Ctesibio usó un dispositivo flotante en forma de cono para controlar el nivel del agua en su embalse y ajustar la velocidad del flujo del agua en consecuencia para mantener un nivel constante de agua en el embalse, de modo que no desbordó ni se le permitió funcionar en seco. Esta fue la primera prótesis verdaderamente automática de un dispositivo normativo que no requiere la intervención externa entre la retroalimentación y el control del mecanismo. Aunque no se referían a este concepto con el nombre de cibernética (lo consideraban como un campo de la ingeniería), Ktesibios y otros como Herón de Alejandría y Su Song son considerados algunos de los primeros en estudiar los principios cibernéticos.
+El estudio de la cibernética en su sentido actual comienza con los mecanismos de teleológica (del griego τέλος o telos para el final, meta o propósito) en máquinas con fechas de retroalimentación correctiva de finales de 1700, cuando aparece el motor de vapor de James Watt. Este motor estaba equipado con un gobernador, una válvula de bolas centrífugas para el control de la velocidad del motor. Alfred Russel Wallace lo identificó como el principio de la evolución en su famoso artículo de 1858. En 1868, James Clerk Maxwell publicó un artículo teórico sobre los gobernadores, uno de los primeros para discutir y perfeccionar los principios de la autorregulación de los dispositivos.
+Jakob von Uexküll aplica el mecanismo de retroalimentación a través de su modelo de ciclo de funcionamiento (Funktionskreis) con el fin de explicar el comportamiento de los animales y los orígenes del sentido en general, y utiliza por primera vez la palabra "cibernética" refiriéndose a los sistemas autorregulados. En su libro Cybernetic, que lo dedica a su compañero de ciencia Arturo Rosenblueth, fisiólogo con enfoque al sistema nervioso central, reta a Norbert Wiener a utilizar sus modelos matemáticos para reproducir el sistema automático de las redes neuronales que gobiernan el automatismo respiratorio [cita requerida]. De hecho, el espacio virtual que existe en las terminaciones dendríticas le hizo imaginar la navegación en un espacio virtual, de ahí que la cibernáutica o los cibernautas traducen lo que él quería decir: navegar en algo que existe pero que nadie ve.
+
+
+== Estructura ==
+La clasificación fue efectuada por Georg Klaus:
+
+Teoría de Sistema ha tenido un fuerte impacto en las ciencias sociales.
+Teoría de la Información elaborada sobre todo por Shannon con gran importancia en el ámbito del tratamiento electrónico.
+Teoría del Control se encarga del estudio de las técnicas para el gobierno de mecanismos y de estructuras físico-biológicas.
+Teoría de los Juegos Estratégicos elaborado por Oskar Morgenstern configura una de las bases para estudiar los programas de simulación.
+Teoría de los Algoritmos permite pasar de formulaciones del lenguaje ordinario y, por tanto, impreciso a formulaciones en lenguaje riguroso.
+
+
+== Cibernética y robótica ==
+Mucha gente asocia la cibernética con la robótica, los robots, computadoras y el concepto de cyborg debido al uso que se le ha dado en algunas obras de ciencia ficción, pero desde un punto de vista estrictamente científico, la cibernética trata acerca de sistemas de control basados en la retroalimentación.
+
+
+=== Aplicaciones ===
+
+Ciertas aplicaciones de la robótica pueden presentar algunas "desventajas"; por ejemplo:
+
+La creación de máquinas complejas que reemplacen a los trabajadores provocaría un recorte de personal.
+En un futuro ya no se ocuparía personal "viejo" y contratarían técnicos jóvenes para el mantenimiento de las máquinas.
+Es una tecnología muy potente sin embargo su gran limitación es encontrar la relación máquina-sistema nervioso, ya que para esto se debería conocer el sistema nervioso perfectamente.
+
+
+=== Ventajas ===
+
+La reducción de las jornadas laborales; los trabajos complejos o rutinarios pasarían a ser de las máquinas. Además, la cibernética brinda un gran aporte al campo medicinal.
+Un conocimiento mayor de cómo funcionan los sistemas complejos podría llevar a la solución de problemas también complejos como la criminalidad en las grandes ciudades.
+
+
+=== Desventajas ===
+
+Reemplazo de mano de obra humana por mano de obra robótica.
+Finalmente aumentaría la desigualdad social, favoreciendo a quienes tengan los recursos para adquirir y utilizar máquinas.
+Los países más industrializados ejercerían un control aun mayor sobre los países menos tecnologizados, que se harían peligrosamente dependientes de los primeros.
+
+
+=== Transformación de desventajas en ventajas ===
+
+La sustitución de la mano de obra "barata" por máquinas complejas emancipa al hombre de trabajos desagradables.
+Al masificarse cada vez más y más la cibernética y la automatización, el llamado "desempleo" se convertiría en lo que los griegos llamaban "ocio" u artes liberales de hombres libres o no esclavos.
+Al reemplazarse la mano de obra humana por mano de obra robótica el hombre quedaría por fin emancipado de trabajos molestos, rutinarios, alienantes, peligrosos, nocivos, degradantes, sosos, etc.
+No habría mayor razón para continuar con el sistema de explotación "del hombre por el hombre".
+
+
+== Cibernética y revolución tecnológica ==
+La cibernética ha desempeñado un papel decisivo en el surgimiento de la actual revolución tecnológica. Alan Turing, alumno de John von Neumann (otro de los pioneros de la cibernética), ambos precursores del computador y Claude Shannon alumno de Norbert Wiener con su Teoría de la Información
+
+
+== Cibernética y educación ==
+Los conceptos y principios de la cibernética también se han aplicado en la pedagogía conocida como pedagogía cibernética.
+
+
+== Véase también ==
+Stafford Beer
+Walter B. Cannon
+cibernética de segundo orden
+cibernética humanística
+conexionismo
+dinámica de sistemas
+robótica
+inteligencia artificial
+sistema dinámico
+pensamiento sistémico
+realimentación
+William Ross Ashby
+sistema complejo
+Joseph Weizenbaum
+Norbert Wiener
+teoría de Gaia
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikcionario  tiene definiciones y otra información sobre cibernética.
+Sociedad Americana para la Cibernética, en inglés
+Principia Cybernetica, en inglés
+Historia de la cibernética, en inglés
+What is cybernetics, por Stafford Beer
+THE SYSTEMS PERSPECTIVE:METHODS AND MODELS FOR THE FUTURE
+Laboratorio Cibernética Ingeniería Informática, Universidad de Santiago de Chile

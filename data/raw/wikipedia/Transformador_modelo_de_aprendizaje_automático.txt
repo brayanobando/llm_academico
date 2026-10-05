@@ -1,0 +1,493 @@
+Un transformador es un modelo de aprendizaje profundo que usa el mecanismo de autoatención, en el que se le da un peso diferente a cada parte de la entrada. Se usa en especial en el campo del procesamiento automático del lenguaje (PAL)​ y visión artificial.​
+
+
+== Arquitectura ==
+
+
+=== Entrada ===
+La entrada, un toquenizador codificador de pares de bytes segmenta la entrada de texto o imágenes en tokens. Un encaje léxico convierte cada token en un vector. Luego, se le agrega información posicional.
+
+
+=== Arquitectura codificador-decodificador ===
+En los modelos de secuencia a secuencia, el modelo original de transformador usaba una arquitectura de codificador-decodificador. El codificador consiste de capas de codificación que procesan la entrada de manera iterativa una capa tras otra mientras que el decodificador consiste de capas que hacen lo mismo con la salida del codificador.
+La función de cada capa de codificador es generar códigos que tienen información sobre qué partes de la entrada son relevantes entre sí. Pasa sus codificaciones a la nueva capa de codificador como entradas. Cada capa de decodificación hace lo contrario y toma todas las codificaciones y usa su información contextual incorporada para generar una oración de resultado.​ Cada capa de codificación y decodificación usa un mecanismo de atención para lograrlo.
+Para cada parte de la entrada, la atención mide la relevancia de cada otra parte y extrae de ellas para producir la salida.​
+
+
+=== Atención escalada del producto escalar ===
+El cálculo de atención para todos los tokens puede expresarse como un gran cálculo de matriz con la función exponencial normalizada, útil para entrenamiento por las optimización de operaciones de matrices que permiten cálculos rápidos. Las matrices 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+, 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ y 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ se definen como las matrices donde las filas 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ son vectores 
+  
+    
+      
+        
+          q
+          
+            i
+          
+        
+      
+    
+    {\displaystyle q_{i}}
+  
+, 
+  
+    
+      
+        
+          k
+          
+            i
+          
+        
+      
+    
+    {\displaystyle k_{i}}
+  
+ y 
+  
+    
+      
+        
+          v
+          
+            i
+          
+        
+      
+    
+    {\displaystyle v_{i}}
+  
+, respectivamente.
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Atención
+                
+                (
+                Q
+                ,
+                K
+                ,
+                V
+                )
+                =
+                
+                  softmax
+                
+                
+                  (
+                  
+                    
+                      
+                        Q
+                        
+                          K
+                          
+                            
+                              T
+                            
+                          
+                        
+                      
+                      
+                        
+                          d
+                          
+                            k
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                V
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\text{Atención}}(Q,K,V)={\text{softmax}}\left({\frac {QK^{\mathrm {T} }}{\sqrt {d_{k}}}}\right)V\end{aligned}}}
+  
+
+
+=== Atención multicabezal ===
+
+
+=== Codificador ===
+Cada codificador consiste de tres componentes principales: un mecanismo de autoatención, un mecanismo de atención sobre los códigos y una red neuronal prealimentada. El decodificador funciona de manera similar pero hay un mecanismo de atención adicional insertado que lleva atención de los códigos generados por los codificadores. Este mecanismo también es conocido como atención codificador-decodificador.
+La codificación posicional se define como función de tipo 
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          
+            R
+          
+          
+            d
+          
+        
+      
+    
+    {\displaystyle f:\mathbb {R} \to \mathbb {R} ^{d}}
+  
+, donde 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ es una integral par positiva, por 
+  
+    
+      
+        (
+        f
+        (
+        t
+        
+          )
+          
+            2
+            k
+          
+        
+        ,
+        f
+        (
+        t
+        
+          )
+          
+            2
+            k
+            +
+            1
+          
+        
+        )
+        =
+        (
+        sin
+        ⁡
+        (
+        θ
+        )
+        ,
+        cos
+        ⁡
+        (
+        θ
+        )
+        )
+        
+        ∀
+        k
+        ∈
+        {
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        d
+        
+          /
+        
+        2
+        −
+        1
+        }
+      
+    
+    {\displaystyle (f(t)_{2k},f(t)_{2k+1})=(\sin(\theta ),\cos(\theta ))\quad \forall k\in \{0,1,\ldots ,d/2-1\}}
+  
+donde 
+  
+    
+      
+        θ
+        =
+        
+          
+            t
+            
+              r
+              
+                k
+              
+            
+          
+        
+        ,
+        r
+        =
+        
+          N
+          
+            2
+            
+              /
+            
+            d
+          
+        
+      
+    
+    {\displaystyle \theta ={\frac {t}{r^{k}}},r=N^{2/d}}
+  
+. Aquí 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ es un parámetro libre que debería ser mucho mayor que el mayor 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ que sea entrada en la función de codificación posicional. En el artículo original,​ los autores eligieron un 
+  
+    
+      
+        N
+        =
+        10000
+      
+    
+    {\displaystyle N=10000}
+  
+.
+La función está en una forma más simple si se escribe como función compleja de tipo 
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          
+            C
+          
+          
+            d
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle f:\mathbb {R} \to \mathbb {C} ^{d/2}}
+  
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        
+          
+            (
+            
+              e
+              
+                i
+                t
+                
+                  /
+                
+                
+                  r
+                  
+                    k
+                  
+                
+              
+            
+            )
+          
+          
+            k
+            =
+            0
+            ,
+            1
+            ,
+            …
+            ,
+            
+              
+                d
+                2
+              
+            
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle f(t)=\left(e^{it/r^{k}}\right)_{k=0,1,\ldots ,{\frac {d}{2}}-1}}
+  
+where 
+  
+    
+      
+        r
+        =
+        
+          N
+          
+            2
+            
+              /
+            
+            d
+          
+        
+      
+    
+    {\displaystyle r=N^{2/d}}
+  
+.
+La principal razón por la que los autores escogieron esta como función de codificación posicional es que permite realizar oscilaciones como transformaciones lineares:
+  
+    
+      
+        f
+        (
+        t
+        +
+        Δ
+        t
+        )
+        =
+        
+          d
+          i
+          a
+          g
+        
+        (
+        f
+        (
+        Δ
+        t
+        )
+        )
+        f
+        (
+        t
+        )
+      
+    
+    {\displaystyle f(t+\Delta t)=\mathrm {diag} (f(\Delta t))f(t)}
+  
+where 
+  
+    
+      
+        Δ
+        t
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle \Delta t\in \mathbb {R} }
+  
+ es la distancia que uno quiere oscilar. Esto permite a que el transformador tome cualquier posición codificada y encontrar la codificación de la posición a un paso hacia adelante o un paso hacia atrás a través de una matriz multiplicativa.
+
+
+=== Decodificador ===
+Cada decodificador consiste de tres componentes principales: un mecanismo de autoatención, un mecanismo de atención sobre los códigos y una red neuronal prealimentada. El decodificador funciona de manera parecida al encodificador pero hay un mecanismo de atención adicional que saca información relevante de los códigos generados por los encodificadores. Este mecanismo también se conoce como atención codificador-decodificador.​​
+Como el primer codificador, el primer decodificador toma la información posicional y los embeddings de la secuencia de salida como su entrada en vez de los códigos. El transformador no debe usar la salida actual o futura, así que la secuencia de salida debe estar enmascarada parcialmente para evitar que fluya la información de manera inversa.​ Esto permite una generación de texto autoagresiva. Para todas las cabezas de atención no se puede poner atención en los siguientes tokens. El último decodificador es seguido por una transformación linear o de multiplicación de matriz y una capa de softmax para producir las probabilidades de salida sobre el vocabulario.
+El GPT tiene una arquitectura con solo un decodificador.
+
+
+== Implementaciones ==
+Se ha implementado el modelo de transformador en entornos como TensorFlow y PyTorch.
+La empresa Hugging Face tiene una biblioteca llamada transformers con arquitecturas y modelos preentrenados.
+
+
+== Véase también ==
+Transformador de visión
+Attention Is All You Need
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Turnstall, Lewis (2022). Natural Language Processing With Transformers (en inglés) (1 edición). O'Reilly. ISBN 978-1-098-10324-8.

@@ -1,0 +1,41 @@
+El aprendizaje por transferencia (TL) es una técnica de aprendizaje máquina (ML) en la que el conocimiento aprendido de una tarea se reutiliza para elevar el rendimiento en una tarea relacionada. ​ Por ejemplo, para la clasificación de imágenes, los conocimientos adquiridos al aprender a reconocer automóviles podrían aplicarse al intentar reconocer camiones. Este tema está relacionado con la literatura psicológica sobre la transferencia de aprendizaje, aunque los vínculos prácticos entre los dos campos son limitados. Reutilizar/transferir información de tareas previamente aprendidas a nuevas tareas tiene el potencial de mejorar significativamente la eficiencia del aprendizaje. ​
+Dado que el aprendizaje por transferencia hace uso de entrenamiento con múltiples funciones objetivo, está relacionado con aprendizaje máquina sensible a los costos y optimización multiobjetivo. ​
+
+
+== Historia ==
+En 1976, Bozinovski y Fulgosi publicaron un artículo abordando el aprendizaje por transferencia en entrenamiento de redes neuronales. ​ ​ El artículo ofrece un modelo matemático y geométrico del tema. 
+En 1981, un informe consideró la aplicación del aprendizaje por transferencia a un conjunto de datos de imágenes que representan letras de terminales de computadora, demostrando experimentalmente el aprendizaje por transferencia positiva y negativa. ​
+En 1992, Pratt formuló el algoritmo de transferencia basada en discriminabilidad (DBT). ​
+En 1997, Pratt y Thrun editaron como invitados un número especial de Machine Learning dedicado al aprendizaje por transferencia, ​ y en 1998, el campo había avanzado para incluir el aprendizaje multitarea, ​ junto con fundamentos teóricos más formales. ​ Learning to Learn, ​ editado por Thrun y Pratt, es una revisión del tema realizada en 1998.
+El aprendizaje por transferencia se ha aplicado en la Ciencia cognitiva. Pratt editó como invitado un número de Connection Science en la reutilización de redes neuronales mediante transferencia en 1996. ​
+Andrew Ng dijo en su tutorial NIPS 2016 ​ ​ ​ que TL se convertiría en el próximo impulsor del éxito comercial del aprendizaje automático después del aprendizaje supervisado.
+En el artículo de 2020, "Rethinking Pre-Training and self-training", ​ Zoph et al. informó que el entrenamiento previo puede perjudicar la precisión y, en su lugar, recomienda el auto-entrenamiento.
+
+
+== Aplicaciones ==
+Hay algoritmos disponibles para el aprendizaje por transferencia en redes lógicas de Markov ​ y redes Bayesianas.​ El aprendizaje por transferencia se ha aplicado al descubrimiento de subtipos de cáncer, ​ utilización de edificios,​​ juegos generales,​ clasificación de texto,​​ reconocimiento de dígitos,​ imágenes médicas y filtrado de spam.​
+En 2020, se descubrió que, debido a sus naturalezas físicas similares, el aprendizaje por transferencia es posible entre señales electromiográficas (EMG) de los músculos y clasificar los comportamientos de las ondas cerebrales electroencefalográficas (EEG), desde el dominio de reconocimiento de gestos hasta el dominio de reconocimiento del estado mental. Se notó que esta relación funcionaba en ambas direcciones, mostrando que la electroencefalografía también puede usarse para clasificar la EMG.​ Los experimentos notaron que la precisión de las redes neuronales y las redes neuronales convolucionales mejoró​ a través de ambos aprendizajes por transferencia antes de cualquier aprendizaje (en comparación con la distribución de peso aleatoria estándar) y al final del proceso de aprendizaje. Esto es, los resultados mejoran al exponerse a otro dominio. Además, el usuario-final de un modelo previamente-entrenado puede cambiar la estructura de capas completamente-conectadas para mejorar el rendimiento.​
+
+
+== Software ==
+
+Varias compilaciones de aprendizaje por transferencia y algoritmos de adaptación de dominios han sido implementadas:
+
+ADAPT ​ (Python)
+TLlib ​ (Python)
+Domain-Adaptation-Toolbox ​ (Matlab)
+
+
+== Véase también ==
+Crossover (genetic algorithm)
+Domain adaptation
+General game playing
+Multi-task learning
+Multitask optimization
+Transfer of learning in educational psychology
+Zero-shot learning
+
+
+== Referencias ==
+
+Thrun, Sebastian; Pratt, Lorien (6 de diciembre de 2012). Learning to Learn. Springer Science & Business Media. ISBN 978-1-4615-5529-2.

@@ -1,0 +1,187 @@
+La computación evolutiva es una rama de la inteligencia artificial que involucra problemas de optimización combinatoria. Se inspira en los mecanismos de la evolución biológica.
+
+
+== Historia ==
+Durante los años 50 se comenzó a aplicar los principios de Charles Darwin en la resolución de problemas. Durante los años 60 y 70, varias corrientes de investigación independientes comenzaron a formar lo que ahora se conoce como computación evolutiva:
+
+Algoritmos genéticos
+Estrategias evolutivas
+Programación genética
+Programación evolutiva
+La idea surgió en la universidad de Míchigan. Fue el profesor J.H. Holland quien ideó originalmente que la programación debía seguir los ejemplos de la naturaleza. Posteriormente la patente de programación evolutiva se empleó por primera vez en la década de 1960 y su creador fue Lawrence J. Fogel. Este desarrollo comenzó como un esfuerzo encaminado a crear inteligencia artificial basado en la evolución de máquinas de estado finitas.
+Las estrategias evolutivas fueron propuestas por Ingo Rechenberg y Hans-Paul Schwefel en la década de 1970. Su principal objetivo era el de optimizar parámetros.
+Los algoritmos genéticos fueron propuestos por John H. Holland en 1975 y su motivación inicial fue la de proponer un modelo general de proceso adaptable.
+
+
+== Algoritmos evolutivos ==
+
+De manera general la computación evolutiva toma como base las ideas de la evolución propuestas por Charles Darwin y en los descubrimientos realizados por Gregor Mendel en el campo de la genética. A continuación se muestra el pseudocódigo de un algoritmo evolutivo genérico.
+
+t:= 0
+Inicialización P(t)
+Evaluación P(t)
+Hacer
+P'(t):= variación[P(t)]
+Evaluación[P'(t)]
+P(t+1):= selección[P'(t) U Q]
+t:= t+1
+Mientras no se cumpla condición de término
+Donde:
+
+La inicialización es la creación de la población inicial (
+  
+    
+      
+        P
+        (
+        0
+        )
+      
+    
+    {\displaystyle P(0)}
+  
+), usualmente asignando valores aleatorios a cada individuo.
+
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+ representa una población de 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ individuos en la generación 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+.
+La evaluación es la asignación de un indicador de aptitud (o capacidad para resolver el problema propuesto), para cada individuo de la población 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+, mediante la aplicación de una función de desempeño.
+
+  
+    
+      
+        
+          P
+          ′
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle P'(t)}
+  
+ es una población construida a partir de la aplicación de operadores como recombinación y mutación, sobre la población 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+.
+
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ es un conjunto especial de individuos que pueden ser considerados para la selección. Este conjunto puede ser vacío. Además, su utilización varía dependiendo del método de selección que se utilice.
+La población de la generación siguiente (
+  
+    
+      
+        P
+        (
+        t
+        +
+        1
+        )
+      
+    
+    {\displaystyle P(t+1)}
+  
+) se obtiene a partir de la selección obtenida de la unión de la población modificada, 
+  
+    
+      
+        
+          P
+          ′
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle P'(t)}
+  
+ con los individuos elegibles, 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+; considerando la función de desempeño utilizada.
+La condición de término es un criterio que indica cuándo se debe poner fin a la búsqueda. Este criterio puede ser un nivel de convergencia, un número de generaciones máximo, o un tiempo de ejecución máximo, entre otros.
+Cabe hacer notar que los operadores de variación, la selección y la manera en que son utilizados dependen del enfoque que se esté ocupando. Por ejemplo, la aplicación de la mutación no es la misma en los Algoritmos genéticos que en las Estrategias evolutivas.
+
+
+== Algoritmos genéticos ==
+Un algoritmo genético (o AG para abreviar) es una técnica de programación que imita a la evolución biológica como estrategia para resolver problemas. En un Algoritmo Evolutivo se define una estructura de datos que admita todas las posibles soluciones a un problema. Cada uno de los posibles conjuntos de datos admitidos por esa estructura será una solución al problema. Unas soluciones serán mejores, otras peores. 
+Solucionar el problema consistirá en encontrar la solución óptima, y por tanto, los Algoritmos Evolutivos son en realidad un método de búsqueda. Pero un método de búsqueda muy especial, en el que las soluciones al problema son capaces de reproducirse entre sí, combinando sus características y generando nuevas soluciones. En cada ciclo se seleccionan las soluciones que más se acercan al objetivo buscado, eliminando el resto de soluciones. Las soluciones seleccionadas se reproducirán entre sí, permitiendo de vez en cuando alguna mutación o modificación al azar durante la reproducción.
+
+
+== Aspectos a considerar ==
+Entre los principales aspectos a considerar en el diseño de algoritmos evolutivos se encuentran los siguientes:
+
+La elección de una codificación (representación de las variables del problema en el algoritmo evolutivo) tiene un gran efecto en el tamaño del espacio de búsqueda y por ende, en el tiempo y dificultad de resolución.
+La función de desempeño (fitness function), la cual considera en la función objetivo o función de la cual se desea obtener el valor óptimo.
+Los algoritmos evolutivos poseen diversos parámetros los cuales deben ser cuidadosamente elegidos para obtener un buen desempeño y evitar problemas tales como la Convergencia prematura.
+
+
+== Bibliografía ==
+Carmona, Enrique; Fernández, Severino (2020). Fundamentos de la Computación Evolutiva. Marcombo. ISBN 978-8426727558.
+
+
+== Enlaces externos ==
+https://web.archive.org/web/20121013005352/http://algoritmoevolutivo.blogspot.com/2011/10/computacion-evolutiva-ejemplo-i.html Blog con ejemplos prácticos sobre computación evolutiva escritos en Java y de licencia GPL.

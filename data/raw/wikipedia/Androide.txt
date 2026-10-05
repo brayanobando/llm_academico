@@ -1,0 +1,50 @@
+Un androide es un robot u organismo sintético antropomorfo que, además de imitar la apariencia humana, simula algunos aspectos de su conducta de manera autónoma. Es un término mencionado por primera vez por Alberto Magno en 1270 y popularizado por el autor francés Auguste Villiers en su novela de 1886 La Eva futura.
+Los androides son producidos o se reproducen o los hace su creador. El cual es similar a un humano.
+Etimológicamente, «androide» se refiere a los robots humanoides de aspecto masculino. A los robots de apariencia femenina se los llama ocasionalmente «ginoides», principalmente en las obras de ciencia ficción. En el lenguaje coloquial, el término «androide» suele usarse para ambos casos, aunque también se emplean las expresiones genéricas «robot humanoide» y «robot antropoide».
+
+
+== Los primeros androides ==
+Desde la Grecia Antigua existen leyendas narrando sobre seres humanoides fabricados en metal por el artesano y herrero de los dioses, Hefesto. Aunque el carácter monstruoso del androide parece haberse ganado con la cristianización del mundo occidental.
+Narra Hortensio Flamel en su "El libro Rojo"​
+, como Alberto Magno tras construir un androide, éste fue finalmente destruido a bastonazos por Santo Tomás de Aquino harto de su verborrea:
+
+«...Cest a Cologne quil fit son androide, ce famous automate doue du movement et de la parole, qui Saint Thomas-D'Aquin, son disciple, brisa a coups de baton a la première vue, dans lidee que cetait un agent du demon.»
+«...Fue en Colonia donde hizo su androide, este famoso autómata dotado de movimiento y palabra, que Santo Tomás De Aquino, su discípulo, rompió con un palo a primera vista, creyendo que era un agente del diablo.»
+
+
+== Androides en la cultura popular ==
+
+Un robot humanoide que se limita a imitar los actos y gestos de un controlador humano, no es visto por el público como un verdadero androide, sino como una simple marioneta animatrónica. El androide siempre ha sido representado como una entidad que imita al ser humano tanto en apariencia, como en capacidad mental e iniciativa. Antes incluso de haber visto un verdadero robot en acción, la mayoría de las personas asocian la idea de robot con la de androide, debido a su extrema popularidad como cliché de la ciencia ficción.
+La actitud de base entre el público frente a los androides varía en función del bagaje cultural que posea dicho público. En la cultura occidental la criatura humanoide, fabricada casi siempre por un sabio, es con bastante frecuencia un monstruo que se rebela contra su creador y en ocasiones lo destruye como castigo por su hibris; y el primero de los cuales no es necesariamente el monstruo de Frankenstein de Mary Shelley. Bien que dicho monstruo sea fácilmente el más famoso.
+De hecho es tan notorio este fenómeno, que el reconocido experto en inteligencia artificial Marvin Minsky, llegó a narrar como en ocasiones llegaba a sentirse incómodo frente a una de sus creaciones, el androide Cog, cuando este presentaba conductas inesperadas.
+En otras culturas las reacciones pueden ser bastante diferentes. Un ejemplo meritorio es la actitud japonesa de cara a los androides, donde el público no teme la antropomorfización de las máquinas y aceptan la idea que un robot tenga apariencia humana, entendiendo que este aspecto les  permite interactuar más fácilmente con seres humanos. Además, la apariencia humanoide hace que sean mejor aceptados por la gente en general.
+
+
+== Androides en la ciencia ==
+En la robótica la actitud de los expertos hacia los autómatas humanoides ha vacilado entre el entusiasmo y el escepticismo. Entusiasmo porque un robot humanoide puede tener enormes ventajas para cierta clase de funciones, escepticismo debido a que para que una máquina robótica sea útil se ha demostrado con ejemplos que la forma humana no es necesaria y a veces es incluso un estorbo (respecto a las capacidades actuales de los androides).
+La construcción de un robot que imite convincentemente, aunque sea una parte ínfima, la libertad de gestos y movimiento humanos, es una tarea de una enorme complejidad técnica. De hecho, es un problema que en varias instancias está todavía abierto a la investigación y a la mejora, aunque ya existen varios ejemplos bastante meritorios en ese sentido, de robots humanoides que imitan ciertas conductas y capacidades humanas. Un ejemplo conocido en este sentido es el robot ASIMO de Honda, que es capaz de marchar en dos pies, de subir y bajar escaleras y de otra serie de proezas de locomoción bípeda.
+
+
+== Ejemplos famosos de androides de ciencia ficción ==
+
+
+== Véase también ==
+Anexo:Robots y androides ficticios
+ASIMO de Honda.
+Autómata
+Cardea y Cog del MIT.
+Cíborg
+Ingeniería mecatrónica
+Robot
+Robot humanoide
+Sistema inteligente
+Valle inquietante
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+¿Van los robots al cielo? Un viaje al futuro del robot humanoide, película documental del proyecto InsideScience, Karlsruhe Institute of Technology (KIT).
+La robótica humanoide debe ser frenada Artículo de oposición al desarrollo de robótica humanoide
+Tecnología humanizada, nota sobre la sustitución del trabajo humano, estadísticas y consecuencias

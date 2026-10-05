@@ -1,0 +1,210 @@
+La minería de datos o exploración de datos (es la etapa de análisis de knowledge discovery in databases o KDD) es un campo de la estadística y las ciencias de la computación referido al proceso que intenta descubrir patrones en grandes volúmenes de conjuntos de datos.​​  Utiliza los métodos de la inteligencia artificial, aprendizaje automático, estadística y sistemas de bases de datos. El objetivo general del proceso de minería de datos consiste en extraer información de un conjunto de datos y transformarla en una estructura comprensible para su uso posterior. Además de la etapa de análisis en bruto, supone aspectos de gestión de datos y de bases de datos, de procesamiento de datos, del modelo y de las consideraciones de inferencia, de métricas de intereses, de consideraciones de la teoría de la complejidad computacional, de post-procesamiento de las estructuras descubiertas, de la visualización y de la actualización en línea.
+El término es un concepto de moda, y es frecuentemente mal utilizado para referirse a cualquier forma de datos a gran escala o procesamiento de la información (recolección, extracción, almacenamiento, análisis y estadísticas), pero también se ha generalizado a cualquier tipo de sistema informático de apoyo a decisiones, incluyendo la inteligencia artificial, aprendizaje automático y la inteligencia empresarial. En el uso de la palabra, el término clave es el descubrimiento, comúnmente se define como «la detección de algo nuevo». Incluso el popular libro «La minería de datos: sistema de prácticas herramientas de aprendizaje y técnicas con Java»  (que cubre todo el material de aprendizaje automático) originalmente iba a ser llamado simplemente «la máquina de aprendizaje práctico», y el término minería de datos se añadió por razones de marketing. A menudo, los términos más generales «análisis de datos», «análisis»; o, cuando se refieren a los métodos actuales, «inteligencia artificial» y «aprendizaje automático», son más apropiados.
+La tarea de minería de datos real es el análisis automático o semiautomático de grandes cantidades de datos para extraer patrones interesantes hasta ahora desconocidos, como los grupos de registros de datos (análisis clúster), registros poco usuales (la detección de anomalías) y dependencias (minería por reglas de asociación). Esto generalmente implica el uso de técnicas de bases de datos como los índices espaciales. Estos patrones pueden entonces ser vistos como una especie de resumen de los datos de entrada, y pueden ser utilizados en el análisis adicional o, por ejemplo, en el aprendizaje automático y análisis predictivo. Por ejemplo, el paso de minería de datos podría identificar varios grupos en los datos, que luego pueden ser utilizados para obtener resultados más precisos de predicción por un sistema de soporte de decisiones. Ni la recolección de datos, la preparación de datos, ni la interpretación de los resultados y la información son parte de la etapa de minería de datos, pero que pertenecen a todo el proceso KDD como pasos adicionales.​
+Los términos relacionados con la obtención de datos, la pesca de datos y espionaje de los datos se refieren a la utilización de métodos de minería de datos a las partes de la muestra de un conjunto de datos de población más grandes establecidas que son (o pueden ser) demasiado pequeñas para las inferencias estadísticas fiables que se hizo acerca de la validez de cualquier patrón descubierto. Estos métodos pueden, sin embargo, ser utilizados en la creación de nuevas hipótesis que se prueban contra poblaciones de datos más grandes.
+Si bien la minería de datos tiene muchas ventajas, incluida la capacidad de compartir información, también existen desventajas relacionadas con la privacidad. Al hacer que la información esté disponible, las empresas pueden promover los problemas de privacidad y seguridad. Algunas soluciones sugeridas por los investigadores implican diferentes formas de proteger la privacidad, incluida la limitación del acceso a los datos, la eliminación de agrupaciones que no son esenciales o el aumento de los datos.​
+
+
+== Proceso ==
+
+Un proceso, entendiéndose como conjunto de etapas sucesivas, típico de minería de datos consta de los siguientes pasos generales:
+
+Selección del conjunto de datos, tanto en lo que se refiere a las variables objetivo (aquellas que se quiere predecir, calcular o inferir), como a las variables independientes (las que sirven para hacer el cálculo o proceso), como posiblemente al muestreo de los registros disponibles.
+Análisis de las propiedades de los datos, en especial los histogramas, diagramas de dispersión, presencia de valores atípicos y ausencia de datos (valores nulos).
+Transformación del conjunto de datos de entrada, se realizará de diversas formas en función del análisis previo, con el objetivo de prepararlo para aplicar la técnica de minería de datos que mejor se adapte a los datos y al problema, a este paso también se le conoce como preprocesamiento de los datos. Un problema sustancial asociado al desarrollo de este tipo de sistemas cuando contienen texto en inglés es el tamaño de su vocabulario; que es más grande que el de cualquier otra Lengua en el mundo. Un método que se está ahora utilizando en estos casos es el de simplificación antes de proceder con el proceso, por medio de convertir dicho texto a Inglés básico; mismo que contiene solo 1000 palabras que también se utilizan para describir en notas al pie el sentido de las más de 30 000 palabras definidas en el «Diccionario Básico de Ciencias».​
+Selección y aplicación de la técnica de minería de datos, se construye el modelo predictivo, de clasificación o segmentación.
+Extracción de conocimiento, mediante una técnica de minería de datos, se obtiene un modelo de conocimiento, que representa patrones de comportamiento observados en los valores de las variables del problema o relaciones de asociación entre dichas variables. También pueden usarse varias técnicas a la vez para generar distintos modelos, aunque generalmente cada técnica obliga a un preprocesado diferente de los datos.
+Interpretación y evaluación de datos, una vez obtenido el modelo, se debe proceder a su validación comprobando que las conclusiones que arroja son válidas y suficientemente satisfactorias. En el caso de haber obtenido varios modelos mediante el uso de distintas técnicas, se deben comparar los modelos en busca de aquel que se ajuste mejor al problema. Si ninguno de los modelos alcanza los resultados esperados, debe alterarse alguno de los pasos anteriores para generar nuevos modelos.
+Si el modelo final no superara esta evaluación el proceso se podría repetir desde el principio o, si el creador lo considera oportuno, a partir de cualquiera de los pasos anteriores. Esta retroalimentación («feedback») se podrá repetir cuantas veces se considere necesario hasta obtener un modelo válido.
+Una vez validado el modelo, si resulta ser aceptable (proporciona salidas adecuadas o con márgenes de error admisibles) este ya está listo para su explotación. Los modelos obtenidos por técnicas de minería de datos se aplican incorporándolos en los sistemas de análisis de información de las organizaciones, e incluso, en los sistemas transaccionales. En este sentido cabe destacar los esfuerzos del Data Mining Group, que está estandarizando el lenguaje PMML (Predictive Model Markup Language), de manera que los modelos de minería de datos sean interoperables en distintas plataformas, con independencia del sistema con el que han sido construidos. Los principales fabricantes de sistemas de bases de datos y programas de análisis de la información hacen uso de este estándar.
+Tradicionalmente, las técnicas de minería de datos se aplicaban sobre información contenida en almacenes de datos. De hecho, muchas grandes empresas e instituciones han creado y alimentan bases de datos especialmente diseñadas para proyectos de minería de datos en las que centralizan información potencialmente útil de todas sus áreas de negocio. No obstante, actualmente está cobrando una importancia cada vez mayor la minería de datos desestructurados como información contenida en ficheros de texto, en Internet, etc.
+
+
+== Protocolo de un proyecto de minería de datos ==
+Un proyecto de minería de datos tiene cinco fases necesarias que son, esencialmente:
+
+Comprensión: del negocio y del problema que se quiere resolver.
+Determinación, obtención y limpieza: de los datos necesarios.
+Creación de modelos matemáticos.
+Validación, comunicación: de los resultados obtenidos.
+Integración: si procede, de los resultados en un sistema transaccional o similar.
+La relación entre todas estas fases solo es lineal sobre el papel. En realidad, es mucho más compleja y esconde toda una jerarquía de subfases. A través de la experiencia acumulada en proyectos de minería de datos se han ido desarrollando metodologías que permiten gestionar esta complejidad de una manera más o menos uniforme.​
+
+
+== Técnicas de minería de datos ==
+Las técnicas de la minería de datos son  algoritmos, que se aplican sobre un conjunto de datos con la finalidad de describir el conjunto de datos objetivos y predecir resultados mediante algoritmos provienen de la inteligencia artificial y de la estadística,​ dichas técnicas son:
+Las técnicas más representativas son:
+
+Redes neuronales.- Son un paradigma de aprendizaje y procesamiento automático inspirado en la forma en que funciona el sistema nervioso de los animales. Se trata de un sistema de interconexión de neuronas en una red que colabora para producir un estímulo de salida. Algunos ejemplos de red neuronal son:
+El perceptrón.
+El perceptrón multicapa.
+Los mapas autoorganizados, también conocidos como redes de Kohonen.
+Regresión lineal.- Es la más utilizada para formar relaciones entre datos. Rápida y eficaz pero insuficiente en espacios multidimensionales donde puedan relacionarse más de 2 variables.
+Árboles de decisión.- Un árbol de decisión es un modelo de predicción utilizado en el ámbito de la inteligencia artificial y el análisis predictivo, dada una base de datos se construyen estos diagramas de construcciones lógicas, muy similares a los sistemas de predicción basados en reglas, que sirven para representar y categorizar una serie de condiciones que suceden de forma sucesiva, para la resolución de un problema. Ejemplos:
+Algoritmo ID3.
+Algoritmo C4.5
+Modelos estadísticos.- Es una expresión simbólica en forma de igualdad o ecuación que se emplea en todos los diseños experimentales y en la regresión para indicar los diferentes factores que modifican la variable de respuesta.
+Agrupamiento o Clustering.- Es un procedimiento de agrupación de una serie de vectores según criterios habitualmente de distancia; se tratará de disponer los vectores de entrada de forma que estén más cercanos aquellos que tengan características comunes. Ejemplos:
+Algoritmo K-means
+Algoritmo K-medoids
+Reglas de asociación.- Se utilizan para descubrir hechos que ocurren en común dentro de un determinado conjunto de datos.
+Según el objetivo del análisis de los datos, los algoritmos utilizados se clasifican en supervisados y no supervisados (Weiss y Indurkhya, 1998):
+
+Algoritmos supervisados (o predictivos): predicen un dato (o un conjunto de ellos) desconocido a priori, a partir de otros conocidos.
+Algoritmos no supervisados (o del descubrimiento del conocimiento): se descubren patrones y tendencias en los datos.
+
+
+== Ejemplos de uso de la minería de datos ==
+
+
+=== Negocios ===
+La minería de datos puede contribuir significativamente en las aplicaciones de administración empresarial basada en la relación con el cliente. En lugar de contactar con el cliente de forma indiscriminada a través de un centro de llamadas o enviando correos electrónicos, solo se contactará con aquellos que se perciba que tienen una mayor probabilidad de responder positivamente a una determinada oferta o promoción.
+Las empresas que emplean minería de datos ven habitualmente el retorno de la inversión, pero también reconocen que el número de modelos predictivos desarrollados puede crecer muy rápidamente. En lugar de crear modelos para predecir qué clientes pueden cambiar, la empresa podría construir modelos separados para cada región o para cada tipo de cliente. También puede querer determinar qué clientes van a ser rentables durante una ventana de tiempo (una quincena, un mes, ...) y solo enviar las ofertas a las personas que es probable que sean rentables. Para mantener esta cantidad de modelos, es necesario gestionar las versiones de cada modelo y pasar a una minería de datos lo más automatizada posible.
+En un entorno tan cambiante donde los volúmenes de datos medibles crece exponencialmente gracias al marketing digital,​ «las esperas producidas por la dependencia entre departamentos técnicos y los expertos estadistas consiguen que al final los resultados de los análisis sean inservibles» a los responsables de negocio y toma de decisiones.​ Esto explica que los proveedores de herramientas de minería de datos estén trabajando en aplicaciones más fáciles de utilizar en lo que se conoce como minería de datos visual​ y la demanda de empleo de este tipo de usuario analista de negocio se esté disparando en los últimos años. Según Gartner es previsible que durante 2016-2017 solo haya «profesionales cualificados para cubrir una tercera parte de los puesto»".​
+
+
+==== Análisis de la cesta de la compra ====
+El ejemplo clásico de aplicación de la minería de datos tiene que ver con la detección de hábitos de compra en supermercados. Un estudio muy citado detectó que los viernes había una cantidad inusualmente elevada de clientes que adquirían a la vez pañales y cerveza. Se detectó que se debía a que dicho día solían acudir al supermercado padres jóvenes cuya perspectiva para el fin de semana consistía en quedarse en casa cuidando de su hijo y viendo la televisión con una cerveza en la mano. El supermercado pudo incrementar sus ventas de cerveza colocando el producto cerca de los pañales para fomentar las ventas compulsivas.
+
+
+==== Patrones de fuga ====
+Un ejemplo más habitual es el de la detección de patrones de fuga. En muchas industrias —como la banca, las telecomunicaciones, etc.— existe un comprensible interés en detectar cuanto antes aquellos clientes que puedan estar pensando en rescindir sus contratos para, posiblemente, pasarse a la competencia. A estos clientes —y en función de su valor— se les podrían hacer ofertas personalizadas, ofrecer promociones especiales, etc., con el objetivo último de retenerlos. La minería de datos ayuda a determinar qué clientes son los más proclives a darse de baja estudiando sus patrones de comportamiento y comparándolos con muestras de clientes que, efectivamente, se dieron de baja en el pasado.
+
+
+==== Fraudes ====
+Un caso análogo es el de la detección de transacciones de lavado de dinero o de fraude en el uso de tarjetas de crédito o de servicios de telefonía móvil e, incluso, en la relación de los contribuyentes con el fisco. Generalmente, estas operaciones fraudulentas o ilegales suelen seguir patrones característicos que permiten, con cierto grado de probabilidad, distinguirlas de las legítimas y desarrollar así mecanismos para tomar medidas rápidas frente a ellas.
+
+
+==== Recursos humanos ====
+La minería de datos también puede ser útil para los departamentos de recursos humanos en la identificación de las características de sus empleados de mayor éxito. La información obtenida puede ayudar a la contratación de personal, centrándose en los esfuerzos de sus empleados y los resultados obtenidos por estos. Además, la ayuda ofrecida por las aplicaciones para Dirección estratégica en una empresa se traducen en la obtención de ventajas a nivel corporativo, tales como mejorar el margen de beneficios o compartir objetivos; y en la mejora de las decisiones operativas, tales como desarrollo de planes de producción o gestión de mano de obra.
+
+
+=== Comportamiento en Internet ===
+También es un área en boga el del análisis del comportamiento de los visitantes —sobre todo, cuando son clientes potenciales— en un sitio web de Internet. O la utilización de la información —obtenida por medios más o menos legítimos— sobre ellos para ofrecerles publicidad adaptada específicamente a su perfil. O para, una vez que adquieren un determinado producto, saber inmediatamente qué otro ofrecerle teniendo en cuenta la información histórica disponible acerca de los clientes que han comprado el primero.
+
+
+=== Terrorismo ===
+La minería de datos ha sido citada como el método por el cual la unidad Able Danger del Ejército de los EE. UU. había identificado al líder de los atentados del 11 de septiembre de 2001, Mohammed Atta, y a otros tres secuestradores del 11-S como posibles miembros de una célula de Al Qaeda que operan en los EE. UU. más de un año antes del ataque. Se ha sugerido que tanto la Agencia Central de Inteligencia y su homóloga canadiense, Servicio de Inteligencia y Seguridad Canadiense, también han empleado este método.​
+
+
+=== Juegos ===
+Desde comienzos de la década de 1960, con la disponibilidad de oráculos para determinados juegos combinacionales, también llamados finales de juego de tablero (por ejemplo, para las tres en raya o en finales de ajedrez) con cualquier configuración de inicio, se ha abierto una nueva área en la minería de datos que consiste en la extracción de estrategias utilizadas por personas para estos oráculos. Los planteamientos actuales sobre reconocimiento de patrones, no parecen poder aplicarse con éxito al funcionamiento de estos oráculos. En su lugar, la producción de patrones perspicaces se basa en una amplia experimentación con bases de datos sobre esos finales de juego, combinado con un estudio intensivo de los propios finales de juego en problemas bien diseñados y con conocimiento de la técnica (datos previos sobre el final del juego). Ejemplos notables de investigadores que trabajan en este campo son Berlekamp en el juego de puntos-y-cajas (o Timbiriche) y John Nunn en finales de ajedrez.
+
+
+=== Videojuegos ===
+En el transcurrir de los años las tecnologías y los avances con relación a la minería de datos se vieron involucrados en diferentes procesos de negocios y la industria de los videojuegos no se quedó atrás en este campo, la necesidad por conocer a sus consumidores y el gusto de estos es parte fundamental para sobrevivir en un ambiente tan competitivo como lo es este, se necesitan de diferentes datos para antes de siquiera comenzar la idea de proyecto en un nuevo videojuego.
+Grandes compañías desarrolladoras han caído bajo el manto de cancelaciones, pérdidas, fracasos y en casos hasta la misma quiebra por el mal manejo de la información.
+En los últimos años estas empresas desarrolladoras de videojuegos entendieron la gran importancia del contenido que se maneja y como lo ve el consumidor por eso se enfocaron en la contratación de servicios de empresas especializadas en este sector de minería de datos para poder presentar productos de calidad y que realmente gusten al público basándose en el análisis de la información obtenida en el transcurrir de los años «videojugabilisticos» de su público objetivo.
+
+
+=== Ciencia e Ingeniería ===
+En los últimos años la minería de datos se está utilizando ampliamente en diversas áreas relacionadas con la ciencia y la ingeniería. Algunos ejemplos de aplicación en estos campos son:
+
+
+==== Genética ====
+En el estudio de la genética humana, el objetivo principal es entender la relación cartográfica entre las partes y la variación individual en las secuencias del ADN humano y la variabilidad en la susceptibilidad a las enfermedades. En términos más llanos, se trata de saber cómo los cambios en la secuencia de ADN de un individuo afectan al riesgo de desarrollar enfermedades comunes (como por ejemplo el cáncer). Esto es muy importante para ayudar a mejorar el diagnóstico, prevención y tratamiento de las enfermedades. La técnica de minería de datos que se utiliza para realizar esta tarea se conoce como «reducción de dimensionalidad multifactorial».​
+
+
+==== Ingeniería eléctrica ====
+En el ámbito de la ingeniería eléctrica, las técnicas de minería de datos han sido ampliamente utilizadas para monitorizar las condiciones de las instalaciones de alta tensión. La finalidad de esta monitorización es obtener información valiosa sobre el estado del aislamiento de los equipos. Para la vigilancia de las vibraciones o el análisis de los cambios de carga en transformadores se utilizan ciertas técnicas para agrupación de datos (clustering) tales como los mapas autoorganizativos (SOM: Self-organizing map). Estos mapas sirven para detectar condiciones anormales y para estimar la naturaleza de dichas anomalías.​
+
+
+==== Análisis de gases ====
+También se han aplicado técnicas de minería de datos para el análisis de gases disueltos (DGA: Dissolved gas analysis) en transformadores eléctricos. El análisis de gases disueltos se conoce desde hace mucho tiempo como la herramienta para diagnosticar transformadores. Los mapas autoorganizativos (SOM) se utilizan para analizar datos y determinar tendencias que podrían pasarse por alto utilizando las técnicas clásicas (DGA).
+
+
+== Minería de datos y otras disciplinas análogas ==
+Suscita cierta polémica el definir las fronteras existentes entre la minería de datos y las disciplinas análogas, como pueden serlo la estadística, la inteligencia artificial, etc. Hay quienes sostienen que la minería de datos no es sino estadística envuelta en una jerga de negocios que la conviertan en un producto vendible. Otros, en cambio, encuentran en ella una serie de problemas y métodos específicos que la hacen distinta de otras disciplinas.
+El hecho es que, en la práctica la totalidad de los modelos y algoritmos de uso general en minería de datos —redes neuronales, árboles de regresión y clasificación, modelos logísticos, análisis de componentes principales, etc.— gozan de una tradición relativamente larga en otros campos.
+
+
+=== De la estadística ===
+Ciertamente, la minería de datos bebe de la estadística, de la que toma las siguientes técnicas:
+
+Análisis de varianza, mediante el cual se evalúa la existencia de diferencias significativas entre las medias de una o más variables continuas en poblaciones distintas.
+Regresión: define la relación entre una o más variables y un conjunto de variables predictivas de las primeras.
+Prueba chi-cuadrado: por medio de la cual se realiza el contraste de la hipótesis de dependencia entre variables.
+Análisis de agrupamiento o clustering: permite la clasificación de una población de individuos caracterizados por múltiples atributos (binarios, cualitativos o cuantitativos) en un número determinado de grupos, con base en las semejanzas o diferencias de los individuos.
+Análisis discriminante: permite la clasificación de individuos en grupos que previamente se han establecido, permite encontrar la regla de clasificación de los elementos de estos grupos, y por tanto una mejor identificación de cuáles son las variables que definan la pertenencia al grupo.
+Series de tiempo: permite el estudio de la evolución de una variable a través del tiempo para poder realizar predicciones, a partir de ese conocimiento y bajo el supuesto de que no van a producirse cambios estructurales.
+
+
+=== De la informática ===
+De la informática toma las siguientes técnicas:
+
+Algoritmos genéticos: Son métodos numéricos de optimización, en los que aquella variable o variables que se pretenden optimizar junto con las variables de estudio constituyen un segmento de información. Aquellas configuraciones de las variables de análisis que obtengan mejores valores para la variable de respuesta, corresponderán a segmentos con mayor capacidad reproductiva. A través de la reproducción, los mejores segmentos perduran y su proporción crece de generación en generación. Se puede además introducir elementos aleatorios para la modificación de las variables (mutaciones). Al cabo de cierto número de iteraciones, la población estará constituida por buenas soluciones al problema de optimización, pues las malas soluciones han ido descartándose, iteración tras iteración.
+Inteligencia artificial: Mediante un sistema informático que simula un sistema inteligente, se procede al análisis de los datos disponibles. Entre los sistemas de inteligencia artificial se encuadrarían los Sistemas Expertos y las Redes Neuronales.
+Sistemas Expertos: Son sistemas que han sido creados a partir de reglas prácticas extraídas del conocimiento de expertos. Principalmente a base de inferencias o de causa-efecto.
+Sistemas Inteligentes: Son similares a los sistemas expertos, pero con mayor ventaja ante nuevas situaciones desconocidas para el experto.
+Redes neuronales: Genéricamente, son métodos de proceso numérico en paralelo, en el que las variables interactúan mediante transformaciones lineales o no lineales, hasta obtener unas salidas. Estas salidas se contrastan con los que tenían que haber salido, basándose en unos datos de prueba, dando lugar a un proceso de retroalimentación mediante el cual la red se reconfigura, hasta obtener un modelo adecuado.
+
+
+== Minería de datos basada en teoría de la información ==
+Todas las herramientas tradicionales de minería de datos asumen que los datos que usarán para construir los modelos contienen la información necesaria para lograr el propósito buscado: obtener suficiente conocimiento que pueda ser aplicado al negocio (o problema) para obtener un beneficio (o solución).
+El inconveniente es que esto no es necesariamente cierto. Además, existe otro problema mayor aún. Una vez construido el modelo no es posible conocer si el mismo ha capturado toda la información disponible en los datos. Por esta razón la práctica común es realizar varios modelos con distintos parámetros para ver si alguno logra mejores resultados.
+Un enfoque relativamente nuevo al análisis de datos soluciona estos problemas haciendo que la práctica de la minería de datos se parezca más a una ciencia que a un arte.
+En 1948 Claude Shannon publicó un trabajo llamado «Una teoría matemática de la comunicación». Posteriormente esta pasó a llamarse Teoría de la información y sentó las bases de la comunicación y la codificación de la información. Shannon propuso una manera de medir la cantidad de información a ser expresada en bits. 
+En 1999 Dorian Pyle publicó un libro llamado «Data Preparation for Data Mining» en el que propone una manera de usar la Teoría de la Información para analizar datos. En este nuevo enfoque, una base de datos es un canal que transmite información. Por un lado está el mundo real que captura datos generados por el negocio. Por el otro están todas las situaciones y problemas importantes del negocio. Y la información fluye desde el mundo real y a través de los datos, hasta la problemática del negocio.
+Con esta perspectiva y usando la Teoría de la información, es posible medir la cantidad de información disponible en los datos y qué porción de la misma podrá utilizarse para resolver la problemática del negocio. Como un ejemplo práctico, podría encontrarse que los datos contienen un 65 % de la información necesaria para predecir qué cliente rescindirán sus contratos. De esta manera, si el modelo final es capaz de hacer predicciones con un 60 % de acierto, se puede asegurar que la herramienta que generó el modelo hizo un buen trabajo capturando la información disponible. Ahora, si el modelo hubiese tenido un porcentaje de aciertos de solo el 10 %, por ejemplo, entonces intentar otros modelos o incluso con otras herramientas podría valer la pena.
+La capacidad de medir información contenida en los datos tiene otras ventajas importantes.
+Al analizar los datos desde esta nueva perspectiva se genera un mapa de información que hace innecesario la preparación previa de los datos, una tarea absolutamente imprescindible si se desea buenos resultados, pero que lleva enorme cantidad de tiempo.
+Es posible seleccionar un grupo de variables óptimo que contenga la información necesaria para realizar un modelo de predicción. 
+Una vez que las variables son procesadas con el fin de crear el mapa de información y luego seleccionadas aquellas que aportan la mayor información, la elección de la herramienta que se usará para crear el modelo deja de tener importancia, ya que el mayor trabajo fue realizado en los pasos previos.
+
+
+== Tendencias ==
+La Minería de Datos ha sufrido transformaciones en los últimos años de acuerdo con cambios tecnológicos, de estrategias de marketing, la extensión de los modelos de compra en línea, etc. Los más importantes de ellos son:
+
+La importancia que han cobrado los datos no estructurados (texto, páginas de Internet, etc.).
+La necesidad de integrar los algoritmos y resultados obtenidos en sistemas operacionales, portales de Internet, etc.
+La exigencia de que los procesos funcionen prácticamente en línea (por ejemplo, en casos de fraude con una tarjeta de crédito).
+Los tiempos de respuesta. El gran volumen de datos que hay que procesar en muchos casos para obtener un modelo válido es un inconveniente; esto implica grandes cantidades de tiempo de proceso y hay problemas que requieren una respuesta en tiempo real.
+
+
+== Detractores ==
+Problemas cuyo objetivo es predecir el valor de un atributo en particular basado en los valores de otros atributos. El atributo que se predice se denomina comúnmente atributo objetivo (o variable dependiente), mientras que los atributos que se utilizan para la predicción son conocidos como atributos explicativos (o variables independientes). Destacan aquí los problemas de clasificación o de estimación de valor y como técnicas podemos destacar los enfoques basados en estadística, regresión, árboles de decisión y redes neuronales.
+Problemas descriptivos cuyo objetivo es derivar patrones (correlaciones, tendencias, agrupaciones o clústeres, trayectorias y anomalías) que resuman las características inherentes a los datos.​
+
+
+== Herramientas de software ==
+Existen muchas herramientas de software para el desarrollo de modelos de minería de datos tanto libres como comerciales como, por ejemplo:
+
+RapidMiner
+KNIME
+Neural Designer
+OpenNN
+Orange
+R
+SPSS Modeler
+SAS
+STATISTICA
+Weka
+
+
+== Véase también ==
+Almacén operacional de los datos
+Análisis predictivo
+Aprendizaje automático
+Almacén de datos
+Delito informático
+Estadística
+Facts and authorities
+Inteligencia Empresarial
+Iconografía de las correlaciones
+Minería de datos espacial
+Minería de grafos
+Minería de procesos
+Minería de textos
+Reglas de asociación
+Sistemas de información ejecutiva
+Sistemas de soporte a decisiones
+Web mining
+Weka (aprendizaje automático)
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Programa de Minería de Datos, University of Central Florida
+Proyecto Medical Miner. Integración de minería de texto y de datos en biomedicina

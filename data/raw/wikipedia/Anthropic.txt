@@ -1,0 +1,22 @@
+Anthropic es una empresa emergente privada californiana de investigación y desarrollo de inteligencia artificial (IA) fundada por exmiembros de OpenAI.​​
+Anthropic se especializa en el desarrollo de sistemas de información y modelos de lenguaje; alega que enfatiza una ética empresarial de uso responsable de la IA.​ contando con modelos como Haiku, Sonnet, Opus, Fable y Mythos este último prohibido a uso al público, sólo usado por empresas para investigación incluidas en el project glasswing.
+Desde finales de 2022, Google ha invertido casi 400 millones de dólares en la empresa y Anthropic anunció una asociación formal con Google Cloud.​​​
+
+
+== Historia ==
+Anthropic fue fundada en 2021 por antiguos miembros de OpenAI, en particular los hermanos Dario y Daniela Amodei. Dario fue vicepresidente de investigación de OpenAI.​​​
+Los hermanos Amodei se encontraban entre los que abandonaron OpenAI, debido a diferencias de opinión con respecto a la asociación de OpenAI con Microsoft en 2019.​
+En febrero de 2023, la empresa Anthrop LLC con sede en Austin, Texas, demandó a Anthropic por usar la marca registrada "Anthropic AI".​En 2026 Anthropic contaba con alrededor de 2500 empleados.​  En 2026 la renuncia de Jacob Coxon alcanzó viralidad sin precedentes.​​
+
+
+== Proyectos ==
+
+
+=== Claude ===
+
+Compuesto por ex investigadores involucrados en ChatGPT de OpenAI, Anthropic comenzó el desarrollo de su propio bot conversacional de IA, llamado Claude. Similar a ChatGPT, Claude usa una interfaz de mensajería donde los usuarios pueden enviar preguntas o solicitudes y recibir respuestas muy detalladas y relevantes.​
+Claude tiene 52.000 millones de parámetros. Inicialmente disponible en versión beta cerrada a través de una integración de Slack, Claude ahora es accesible para los usuarios a través de la aplicación móvil Poe, con tecnología de Quora, junto con otros chatbots. La aplicación está actualmente disponible para iOS y Android.​
+Claude 2 se lanzó en julio de 2023 y está disponible en Estados Unidos y el Reino Unido. El periódico The Guardian informó que la seguridad informática fue una prioridad en el entrenamiento del modelo de inteligencia artificial.​
+
+
+== Referencias ==

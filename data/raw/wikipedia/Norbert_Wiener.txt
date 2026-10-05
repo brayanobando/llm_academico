@@ -1,0 +1,51 @@
+Norbert Wiener (Columbia, Misuri,  26 de noviembre de 1894-Estocolmo, 18 de marzo de 1964) fue un matemático y filósofo estadounidense, conocido como el fundador de la cibernética.​ Acuñó el término en su libro Cibernética o el control y comunicación en animales y máquinas, publicado en 1948.
+
+
+== Biografía ==
+Su padre, Leo Wiener fue profesor de lenguas eslavas en la Universidad de Harvard. Norbert se educó en casa hasta los siete años, edad a la que empezó a asistir al colegio, pero durante poco tiempo. Siguió con sus estudios en casa hasta que volvió al colegio en 1903, graduándose en el instituto de Ayer en 1906.
+En septiembre de 1906, a la edad de once años, ingresó en la Universidad Tufts para estudiar matemáticas.​ Se licenció en 1909 y entró en Harvard, en donde estudió zoología, pero en 1910 se trasladó a la Universidad Cornell para emprender estudios superiores en filosofía; sin embargo, meses después, volvió a Harvard. Wiener obtuvo el doctorado en dicha universidad en 1912, con una tesis que versaba sobre lógica matemática.
+De Harvard pasó a Cambridge, Inglaterra, donde estudió con Bertrand Russell y G. H. Hardy. En 1914 estudió en Gotinga, Alemania con David Hilbert y Edmund Landau. Luego regresó a Cambridge y de ahí a los EE. UU. Entre 1915 y 1916 enseñó filosofía en Harvard y trabajó para la General Electric y la Encyclopedia Americana antes de dedicarse a trabajar en cuestiones de balística en el campo de pruebas de Aberdeen (Aberdeen Proving Ground), en Maryland. Permaneció en Maryland hasta el final de la guerra, cuando consiguió un puesto de profesor de matemáticas en el MIT.
+Durante el tiempo que trabajó en el MIT hizo frecuentes viajes a Europa y es en esa época cuando entabla contacto con Leonardo Torres Quevedo y su máquina "El Ajedrecista".​ En 1926 se casó con Margaret Engemann y regresó a Europa con una beca Guggenheim.​ Pasó casi todo el tiempo en Gotinga o con Hardy en Cambridge. Trabajó en el movimiento browniano, la integral de Fourier, el problema de Dirichlet, el análisis armónico y en los teoremas tauberianos, entre otros problemas. Ganó el premio Bôcher en 1933.​
+Durante la Segunda Guerra Mundial trabajó para las Fuerzas Armadas de los Estados Unidos en un proyecto para guiar a la artillería antiaérea de forma automática mediante el empleo del radar.​ El objetivo del proyecto era predecir la trayectoria de los bombarderos y con ella orientar adecuadamente los disparos de las baterías, mediante correcciones basadas en las diferencias entre trayectoria prevista y real, conocidas como innovaciones del proceso. Como resultado de los descubrimientos realizados en este proyecto introduce en la ciencia los conceptos de feedback o retroalimentación, y de cantidad de información, con lo que se convierte en precursor de la teoría de la comunicación o la psicología cognitiva. Trabajó junto a Alan Turing en el desarrollo de la cibernética. Posteriormente, en 1956, formulará parte del concepto de Causalidad de Granger.
+
+
+== Publicaciones ==
+Cibernética o el control y comunicación en animales y máquinas (Cybernetics or Control and Communication in the Animal and the Machine) (1948)
+Extrapolation, Interpolation and Smoothing of Stationary Time Series with Engineering Applications (1949)
+Cibernética y sociedad (The Human Use of Human Beings: Cybernetics and Society) (1950)
+Ex-Prodigy: My Childhood and Youth (1953) (autobiografía)
+I am a Mathematician. The Later Life of an Ex-Prodigy (1956) (autobiografía)
+Nonlinear Problems in Random Theory (1958)
+The theory of Prediction (1956) Beckenback, E.F.(ed.) "Modern Mathematics for Engineers'. New York: McGraw-Hill.
+The Tempter (1959) (novela)
+Dios y Golem S.A. Comentarios sobre ciertos puntos en que chocan cibernética y religión (God & Golem, Inc. A Comment on Certain Points Where Cybernetics Impinges on Religion) (1964)
+Inventar: sobre la gestación y el cultivo de las ideas. Introducción de Steve Joshua Heims ; traducción de Ambrosio García. Barcelona: Tusquets, 1995. ISBN 84-7223-898-9
+Cybernetics of the Nervous System (1965) (póstumo)
+Differential Space, Quantum Systems and Prediction, con A. Siegel, B. Rankin, W. T. Martin (1966) (póstumo)
+
+
+== Publicaciones en castellano sobre Norbert Wiener ==
+Steve J. Heims (1986). Von Neumann y N. Wiener. Salvat. ISBN 84-345-8145-0. 
+José María Almira (2009). Norbert Wiener un matemático entre ingenieros. Nivola. ISBN 978-84-92493-49-4. 
+
+
+== Eponimia ==
+Además de los conceptos matemáticos que llevan su nombre, se tiene que:
+
+El cráter lunar Wiener lleva este nombre en su memoria.​
+El asteroide (18182) Wiener también conmemora su nombre.​
+Existe una universidad en Perú bajo el nombre Norbert Wiener conmemorándolo.
+
+
+== Véase también ==
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Norbert Wiener.
+ Wikiquote alberga frases célebres de o sobre Norbert Wiener.
+O'Connor, John J.; Robertson, Edmund F., «Norbert Wiener» (en inglés), MacTutor History of Mathematics archive, Universidad de Saint Andrews, https://mathshistory.st-andrews.ac.uk/Biographies/Wiener_Norbert/ .
+heise.de 26/11/2005  Das Gehirn ist ein Computer
+Spiegel 40/1956: Die Magie der Roboter

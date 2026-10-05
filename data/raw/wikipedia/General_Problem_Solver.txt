@@ -1,0 +1,44 @@
+El General Problem Solver (GPS), en español Solucionador General de Problemas, es un programa de ordenador creado en 1957 por Herbert Simon, J.C. Shaw, y Allen Newell con el objetivo de construir una máquina capaz de resolver problemas de carácter general. Cualquier problema simbólico formal puede ser resuelto, en principio, por el GPS. Por ejemplo: probar teoremas, resolver problemas geométricos, trabajar con lógica proposicional y jugar al ajedrez. Se basaba en el trabajo teórico previo de Simon y Newell sobre máquinas lógicas. El GPS fue el primer programa de computadora en el que se separó el conocimiento de los problemas de su estrategia sobre cómo resolverlos. Se implementó en el lenguaje de programación IPL (Information Processing Language).
+El GPS consiguió resolver problemas sencillos, como el de las Torres de Hanói, que podía ser expresado de una manera lo suficientemente formalizada, pero no podía resolver los problemas del mundo real.
+El usuario definía los objetos y las operaciones que se podría hacer con y sobre los objetos y el GPS generaba la heurística mediante un análisis de los medios y los objetivos, a fin de resolver los problemas. Para ello, se centraba en las operaciones disponibles, encontrando qué entradas eran aceptables, y qué resultados se generaban. Se creaban entonces sub-objetivos para conseguir aproximarse más y más a la meta anteriormente definida.
+El paradigma GPS evolucionó hasta convertirse en la arquitectura simbólico-cognitiva SOAR (State Operator And Result). 
+
+
+== Proceso ==
+Simon y Newell proponen el ejemplo sobre cómo transformar la proposición lógica L1= R*(-P => Q) en L2=(Q \/ P)*R (Newell y Simon, 1972, página 420). Esta transformación sería procesada por el GPS de la siguiente manera:
+
+Objetivo 1: Transforma L1 en L0
+Objetivo 2: Reduce la diferencia entre L1 y L0
+Objetivo 3: Aplica R1 a L1
+Objetivo 4: Transforma L1 en una condición (R1)
+Producto L2: (-P => Q) *R
+Objetivo 5: Transforma L2 en L0
+Objetivo 6: Reduce la diferencia entre (L2) y (L0)
+Objetivo 7: Aplica R5 a (L2)
+Objetivo 8: Transforma (L2) en una condición (R5)
+Objetivo 9: Reduce la diferencia entre (L2) y (R5)
+Rechazado: No es más simple que el Objetivo 6
+Objetivo 10: Aplica R6 a (L2)
+Objetivo 11: Transforma (L2) en una condición (R5)
+Producto L3: (P \/ Q) *R
+Objetivo 12: Transforma L3 en L0
+Objetivo 13: Reduce la diferencia entre (L3) y (L0)
+Objetivo 14: Aplica R1 a (L3)
+Objetivo 15: Transforma (L3) en una condición (R1)
+Producto L4: (Q \/ P)*R
+Objetivo 16: Transforma L4 en L0
+Identifica, QED
+
+
+== Referencias ==
+Newell, A.; Shaw, J.C.; Simon, H.A. (1959). Report on a general problem-solving program. Proceedings of the International Conference on Information Processing. pp. 256-264.
+A. Newell y H. A. Simon (1961). GPS, a program that simulates human thought, en E. Feigenbaum y J. Feldmann, Hrsg. (1995) Computers and Thought, ISBN 0262560925.
+Newell, A. (1963). A guide to the general problem-solver program GPS-2-2. RAND Corporation, Santa Mónica, California. Technical Report No. RM-3337-PR.
+Ernst, G.W. y Newell, A. (1969). GPS: a case study in generality and problem solving. Academic Press. (versión revisada de una disertación de Ernst de 1966, Carnegie Institute of Technology.)
+Newell, A., y Simon, H. A. (1972) Human problem solving. Englewood Cliffs, NJ: Prentice-Hall.
+Norvig, Peter. (1992). Paradigms of artificial intelligence programming: case studies in Common Lisp. pp 109-110.
+
+
+== Véase también ==
+Sistema experto
+Resolución numérica de ecuaciones no lineales

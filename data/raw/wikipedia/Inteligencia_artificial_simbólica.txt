@@ -1,0 +1,14 @@
+Inteligencia artificial simbólica es el nombre colectivo para todos los métodos de investigación de la inteligencia artificial que se basan en representaciones de alto nivel "simbólico" de los problemas, la lógica matemática y la búsqueda. IA simbólica fue el paradigma dominante de la investigación en IA desde mediados de los cincuenta hasta finales de los años ochenta. Después, se introdujeron enfoques sub-simbólicos más recientes a la IA, basado en redes neuronales, estadística, optimización numérica y otras técnicas. La IA simbólica se sigue aplicando en algunos dominios más pequeños (como la representación del conocimiento), pero la mayoría de las aplicaciones de IA en el siglo XXI no emplean símbolos legibles como sus objetos primarios.
+John Haugeland dio el nombre GOFAI (por sus siglas en inglés, Good Old-Fashioned Artificial Intelligence) a la IA simbólica en su libro de 1985 Inteligencia Artificial: La Idea Pura, que exploró las implicaciones filosóficas de la investigación de la inteligencia artificial. En robótica el término análogo es GOFAIR (por sus siglas en inglés, "Good Old-Fashioned Robotics").
+Este enfoque se basa en la suposición de que muchos aspectos de la inteligencia se pueden lograr mediante la manipulación de símbolos, un supuesto definido como la "hipótesis de sistemas de símbolos físicos" por Allen Newell y Herbert A. Simon a mediados de los años 60’s:
+La forma más exitosa de la IA simbólica son los sistemas expertos, los cuales utilizan una red de reglas de producción. Las normas de producción conectan símbolos en una relación similar a una instrucción “Si-Entonces” (If-Then). El sistema experto procesa las reglas para hacer deducciones y determinar qué información adicional se necesita, por ejemplo, qué preguntas hacer, usando simbología legible para el ser humano.
+Los opositores a la aproximación simbólica incluyen a expertos en robótica como Rodney Brooks, quien tiene como objetivo producir robots autónomos sin representación simbólica (o con sólo una mínima representación) y los investigadores de inteligencia computacional, que aplican técnicas como las redes neuronales y optimización para resolver problemas en el aprendizaje automático y la ingeniería de control.
+La IA simbólica estaba destinada a producir inteligencia similar a la humana en una máquina, mientras que la mayor parte de la investigación moderna se dirige a subproblemas específicos. La investigación sobre la inteligencia general está en estudio del subcampo llamado Inteligencia Artificial General.
+
+
+== Referencias ==
+Haugeland, John (1985), Artificial Intelligence: The Very Idea, Cambridge, Mass: MIT Press, ISBN 0-262-08153-9 .
+
+
+== Véase también ==
+Historia de la inteligencia artificial

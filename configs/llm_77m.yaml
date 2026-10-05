@@ -1,0 +1,29 @@
+# LLM de ~77M parámetros (Paso 4, lámina 5/8: "luego crecer a 77M")
+# Mismo código que el de 13M; solo cambia el tamaño. Con ~500 mil tokens de corpus este modelo
+# memoriza muy rápido: úsalo para comparar con el de 13M, no como modelo principal.
+
+modelo:
+  vocab_size: 16000
+  context: 256
+  d_model: 768
+  n_heads: 12              # 768 / 12 = 64 por cabeza
+  n_layers: 9
+  d_ff: 3072
+  dropout: 0.2
+  pos_encoding: sinusoidal
+  pre_norm: true
+  tie_weights: true
+  flash: true
+
+entrenamiento:
+  batch_size: 8            # más pequeño para que quepa en 4 GB de VRAM
+  epochs: 10
+  lr: 2.0e-4
+  min_lr: 2.0e-5
+  warmup_steps: 100
+  weight_decay: 0.1
+  grad_clip: 1.0
+  eval_every: 50
+  paciencia: 6             # parar si la validación no mejora en 6 evaluaciones seguidas (0 = nunca)
+  amp: fp16
+  seed: 42

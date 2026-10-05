@@ -1,0 +1,42 @@
+Yann André LeCun (/ ləˈkʌn / pronunciación en francés: [ləkɛ̃]; nacido el 8 de julio de 1960) es un informático franco-estadounidense especializado en aprendizaje automático, visión por computadora y neurociencia computacional. Es profesor Silver del Instituto Courant de Ciencias Matemáticas de la Universidad de Nueva York y vicepresidente y científico jefe de inteligencia artificial en Meta.
+Es conocido por sus contribuciones al desarrollo de redes neuronales convolucionales (CNN) y al aprendizaje profundo.
+
+
+== Trayectoria ==
+
+
+=== Formación ===
+LeCun estudió en la Universidad Pierre y Marie Curie (actual Sorbonne Université), donde obtuvo su doctorado en ciencias de la computación.​
+
+
+=== Bell Labs ===
+En 1988, LeCun se incorporó a AT&T Bell Laboratories en Holmdel, Nueva Jersey, donde trabajó en el desarrollo de redes neuronales convolucionales aplicadas al reconocimiento de escritura manuscrita.​
+También desarrolló métodos de regularización como «Optimal Brain Damage».​
+Estos métodos se aplicaron posteriormente al reconocimiento de documentos y OCR.​
+
+
+=== AT&T Labs ===
+En 1996, se incorporó a AT&T Labs-Research como jefe del Image Processing Research Department, donde trabajó en la tecnología de compresión de imágenes DjVu.​
+
+
+=== Universidad de Nueva York ===
+LeCun es profesor en el Instituto Courant de Ciencias Matemáticas de la Universidad de Nueva York.​
+En la universidad ha continuado su trabajo en aprendizaje automático y visión por computadora.
+
+
+=== Meta ===
+LeCun es vicepresidente y científico jefe de inteligencia artificial en Meta.​
+En este cargo dirige investigaciones en inteligencia artificial y aprendizaje profundo.
+
+
+== Contribuciones ==
+LeCun ha contribuido al desarrollo de redes neuronales convolucionales, ampliamente utilizadas en tareas de visión por computadora como el reconocimiento de imágenes y documentos.​
+También participó en el desarrollo de la tecnología de compresión de imágenes DjVu.​
+
+
+== Reconocimientos ==
+LeCun recibió el Premio Turing en 2018 junto con Geoffrey Hinton y Yoshua Bengio por sus contribuciones al aprendizaje profundo.​
+En 2022, recibió el Premio Princesa de Asturias de Investigación Científica y Técnica junto a Yoshua Bengio, Geoffrey Hinton y Demis Hassabis.​
+
+
+== Referencias ==

@@ -1,0 +1,67 @@
+LLaMA (Large Language Model Meta AI) es un gran modelo de lenguaje (LLM) lanzado por Meta AI en febrero de 2023. Se entrenó una variedad de modelos de tamaños diversos que van desde 7000 millones a 65 000 millones de parámetros. Los desarrolladores de LLaMA informaron que el rendimiento del modelo de 13 000 millones de parámetros en la mayoría de los puntos de referenciade NLP superó al mucho más grande del GPT-3 (con 175 000 millones de parámetros) y que el modelo más grande era competitivo con modelos de última generación como PaLM540B​ y Chinchilla70B.​​ Mientras que los LLM más poderosos generalmente han sido accesibles solo a través de API limitadas (si es que lo han hecho), Meta lanzó el modelo de LLaMA a la comunidad de investigación bajo una licencia no comercial.​ Una semana después del lanzamiento de LLaMA, sus datos se filtraron al público en 4chan a través de BitTorrent.​
+
+
+== Arquitectura y entrenamiento ==
+LLaMA utiliza la arquitectura transformer, la arquitectura estándar para el modelado de lenguajes desde 2018. Los desarrolladores de LLaMA centraron su esfuerzo en escalar el rendimiento del modelo aumentando el volumen de datos de entrenamiento, en lugar de la cantidad de parámetros, razonando que el costo dominante para los LLM es hacer inferencias en el modelo entrenado en lugar del costo computacional del proceso de entrenamiento. LLaMA se capacitó en 1400 millones de tokens, extraídos de fuentes de datos disponibles públicamente, que incluyen:​​
+
+Páginas web extraídas por CommonCrawl
+Repositorios de código abierto de código fuente de GitHub
+Wikipedia en veinte idiomas diferentes
+Libros de dominio público del Proyecto Gutenberg
+El código fuente de LaTeX para artículos científicos cargados en ArXiv
+Preguntas y respuestas de los sitios web de Stack Exchange
+
+
+== Publicación y filtración ==
+LLaMA se anunció el 23 de febrero de 2023 a través de una publicación de blog y un documento que describe el entrenamiento, la arquitectura y el rendimiento del modelo. El código utilizado para entrenar el modelo se hizo público bajo la licencia GPL 3 de código abierto.  El acceso a las ponderaciones del modelo se gestionó mediante un proceso de solicitud, con acceso que se otorgará «caso por caso a investigadores académicos, afiliados a organizaciones gubernamentales, de la sociedad civil y académicas, y laboratorios de investigación de la industria en todo el mundo».​
+El 2 de marzo de 2023,​ se subió un archivo que contenía los datos de LLaMA, con un enlace en el tablón de imágenes de 4chan y posteriormente difundido a través de las comunidades de IA en línea.  Ese mismo día, se abrió una solicitud de extracción en el repositorio principal de LLaMA, solicitando agregar el enlace magnético a la documentación oficial.​​ El 4 de marzo, se abrió una solicitud de extracción para agregar enlaces a los repositorios de HuggingFace que contienen el modelo.​​ El 6 de marzo, Meta presentó solicitudes de eliminación para eliminar los repositorios de HuggingFace vinculados en la solicitud de extracción, caracterizándolos como «distribución no autorizada» del modelo. HuggingFace cumplió con las solicitudes.​ El 20 de marzo, Meta presentó una solicitud de eliminación de DMCA por infracción de derechos de autor contra un repositorio que contenía un script que descargaba LLaMA de un espejo, y GitHub cumplió al día siguiente.​ Hasta el 25 de marzo, Facebook no había respondido a la solicitud de extracción que contiene el enlace magnético.​
+Las reacciones a la filtración variaron. Algunos especularon que el modelo se usaría con fines maliciosos, como spam más sofisticado. Algunos han celebrado la accesibilidad del modelo, así como el hecho de que las versiones más pequeñas del modelo se pueden ejecutar de manera relativamente económica, lo que sugiere que esto promoverá el florecimiento de desarrollos de investigación adicionales.  Múltiples comentaristas, como Simon Willison, compararon LLaMA con Stable Diffusion, un modelo de creación de iamgen a partir de texto que, a diferencia de los modelos sofisticados comparables que lo precedieron, se distribuyó abiertamente, lo que llevó a una rápida proliferación de herramientas, técnicas y software asociados.​
+
+
+== Modelos ==
+
+
+=== Llama 2 ===
+El 18 de julio de 2023, en colaboración con Microsoft, Meta anunció LLaMA-2. Meta entrenó y lanzó LLaMA-2 en tres tamaños de modelo: 7B, 13B y 70B parámetros [4]: respectivamente 7000, 13 000 y 70 000 millones de parámetros. La arquitectura del modelo se mantiene prácticamente igual a la de los modelos LLaMA-1, pero se utilizó un 40 % más de datos para entrenar los modelos fundacionales.​
+LLaMA-2 incluye modelos fundacionales y modelos ajustados para el diálogo, denominados LLaMA-2 Chat. A diferencia de LLaMA-1, todos los modelos se liberan con ponderaciones y son gratuitos para muchos casos de uso comercial.​
+
+
+=== Llama 3 ===
+El 18 de abril de 2024, Meta lanzó LLaMA-3 con dos tamaños: 8B y 70B parámetros.​​ Los modelos han sido preentrenados con aproximadamente quince mil millones de tokens de texto recogidos de «fuentes públicas», mientras que los modelos de instrucción se han ajustado con «conjuntos de datos de instrucción públicos, así como con más de diez millones de ejemplos anotados por humanos». Meta tiene previsto lanzar modelos multimodales, capaces de conversar en varios idiomas y con ventanas de contexto más amplias. Actualmente se está entrenando una versión con más de 400B parámetros.​
+
+
+=== Llama 4 ===
+
+La serie Llama-4 fue lanzada en 2025. La arquitectura se cambió a una mezcla de expertos. Son multimodales (entrada de texto e imagen, salida de texto) y multilingües (12 idiomas).​ Específicamente, el 5 de abril de 2025, se lanzaron las siguientes versiones tanto base como afinadas para instrucciones:​
+
+Scout: Modelo de 17 mil millones de parámetros activos con 16 expertos, ventana de contexto de 10M, con un total de 109B parámetros.
+Maverick: Modelo de 17 mil millones de parámetros activos con 128 expertos, con un total de 400B parámetros.
+También se mencionó Behemoth (aún no lanzado): Modelo de 288 mil millones de parámetros activos con 16 expertos y alrededor de 2T de parámetros en total. La versión Behemoth todavía estaba en entrenamiento en ese momento. Scout y Maverick fueron destilados de Behemoth.
+Los datos de entrenamiento incluyeron datos públicamente disponibles, datos con licencia y datos propiedad de Meta, como publicaciones compartidas públicamente de Instagram y Facebook e interacciones de personas con Meta AI. El corte de datos fue en agosto de 2024.​
+
+
+== Comparación de modelos ==
+Para la columna de costo de capacitación, solo se escribe el costo del modelo más grande. Así, por ejemplo, «21 000» es el coste de entrenamiento de LLaMA-2 69 000 en unidades de petaFLOP-día. Además, 1 petaFLOP-día = 1 petaFLOP/seg × 1 día = 8.64E19 FLOP.
+
+
+== Código abierto y reproducción ==
+El 17 de abril de 2023, Together lanzó un proyecto llamado RedPajama para reproducir y distribuir una versión de código abierto del conjunto de datos LLaMA.  El conjunto de datos tiene aproximadamente 1.2 billones de tokens y está disponible públicamente para su descarga.​
+
+
+== Aplicaciones ==
+El Centro de Investigación de Modelos Básicos (CRFM) del Instituto de Inteligencia Artificial Centrada en el Ser Humano (HAI) de la Universidad de Stanford lanzó Alpaca, un programa de entrenamiento basado en el modelo LLaMA 7B que utiliza el método de ajuste de instrucción «Autoinstrucción» para adquirir capacidades comparables al modelo de texto-davinci-003 de la serie OpenAI GPT-3.5 a un costo modesto.​  Múltiples proyectos de código abierto continúan este trabajo de ajuste fino de LLaMA con el conjunto de datos de Alpaca. 
+
+
+== Véase también ==
+Qwen
+DeepSeek
+Claude (chatbot)
+ChatGPT
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio web oficial
+ LLaMA en GitHub.

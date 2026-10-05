@@ -1,0 +1,48 @@
+Microsoft Copilot es un asistente virtual de inteligencia artificial desarrollado por Microsoft. Se lanzó el 7 de febrero de 2023 como el principal reemplazo para el descontinuado asistente virtual Cortana.​
+Originalmente, se introdujo como una característica propia de Microsoft Edge y Microsoft Bing bajo el nombre de Bing Chat,​ siendo gradualmente integrado también en Windows y Microsoft 365 con diferentes nombres. No obstante, durante el 2023, Microsoft fue unificando la marca "Copilot" en todos sus productos de tipo chatbot, estableciendo finalmente este nombre de forma definitiva para finales de ese mismo año.
+Copilot utiliza un modelo de lenguaje de gran tamaño, basado en los modelos de lenguaje GPT de OpenAI,​ para generar texto, traducir idiomas, crear diferentes tipos de contenido y responder preguntas de forma informativa.​ También puede realizar algunas tareas en Windows 11, como escribir código, crear presentaciones y editar documentos.
+
+
+== Capacidades técnicas ==
+Además de sus funciones de productividad y creatividad, Microsoft Copilot posee capacidades avanzadas en programación. 
+Puede generar, depurar y actualizar código en múltiples lenguajes, incluyendo PHP, Python, JavaScript, SQL, HTML, C, C++, Java, Go, Rust y Ruby. 
+Es capaz de asistir en migraciones de sistemas antiguos a versiones modernas, detectar errores y proponer correcciones, 
+optimizar estructuras y guiar a usuarios sin experiencia técnica en la creación de sitios web y aplicaciones. 
+Estas funciones lo convierten en una herramienta universal para restauración, modernización y enseñanza de programación.​​​
+
+
+== Disponibilidad ==
+Está disponible en dos versiones principales: Microsoft Copilot para Windows 11, para todos los usuarios,​ y Microsoft 365 Copilot, que está disponible solo para los suscriptores de Microsoft 365 (antes Microsoft Office).​
+Además, cuenta con una versión web y aplicaciones nativas para dispositivos móviles Android y iOS, así como una aplicación de escritorio para macOS.
+Desde enero de 2026 esta plataforma se encuentra bloqueada en las IP de algunos países (entre ellos Cuba, Sudán del Sur, Corea del Norte, China, Turquía y Venezuela), por lo que se hace necesario emplear VPN para acceder a la misma.​ 
+
+
+== Historia ==
+Microsoft implementó una importante actualización a Bing el 7 de febrero de 2023, conocida como el «nuevo Bing». Introdujeron una función de chatbot llamada Bing Chat, inicialmente disponible para usuarios de Microsoft Edge y la aplicación móvil de Bing.​ Según reportó Microsoft, más de un millón de personas se unieron a la lista de espera en las primeras 48 horas.​ Se eliminó la lista de espera en mayo, y en julio, Bing Chat se hizo disponible para navegadores no-Edge.​
+Durante demostraciones a periodistas, Bing Chat mostró algunas alucinaciones​ y fue criticado por su tendencia argumentativa en comparación con ChatGPT.​ En marzo, se incorporó un generador de imágenes AI basado en DALL-E 2 de OpenAI.​ En octubre, se actualizó a DALL-E 3,​ pero surgieron problemas con la generación inapropiada de imágenes,​ lo que llevó a Microsoft a imponer un filtro más estricto días después.​
+El 16 de marzo de 2023, Microsoft anunció Microsoft 365 Copilot, destinado a mejorar la productividad en las aplicaciones y servicios de Microsoft 365.​​ Se centró en realizar tareas tediosas para aumentar la creatividad y productividad del usuario. En julio, se lanzó Microsoft Copilot con un costo de $30 por usuario al mes para ciertos planes de Microsoft 365.​
+El 21 de septiembre de 2023, Microsoft renombró a "Microsoft 365 Copilot" como simplemente "Copilot" y lo hizo disponible para clientes empresariales de Microsoft 365. El 15 de noviembre, Bing Chat se renombró e integró al ecosistema Copilot.​ En diciembre de 2023, Copilot se agregó sin costo a muchas instalaciones de Windows 11, con más instalaciones y soporte limitado para Windows 10 programados para el futuro.​ En ese mismo mes, Microsoft lanzó la aplicación de Copilot para Android.​
+
+
+== Características ==
+Entre las características más relevantes de Copilot se encuentran:
+
+Autocompletación de código: puede completar código en una variedad de lenguajes de programación, incluyendo Python, JavaScript, C++ y Java.​
+Creación de contenido: permite crear diferentes tipos de contenido creativo, incluyendo artículos, guiones, poemas, canciones e imágenes.​
+Respuesta a preguntas: puede responder a preguntas de forma informativa, incluso si son abiertas, desafiantes o extrañas. Tiene tres estilos para responder, más creativo, más equilibrado y más preciso.
+Ayuda con tareas: Copilot puede realizar algunas tareas en Windows 11, crear presentaciones y editar documentos.​
+
+
+== Integración de GPT-4 ==
+En marzo de 2023 se conoció que Microsoft estaba integrando GPT-4 en el que sería su asistente virtual basado en inteligencia artificial.​​ Antes, ya lo había incluido en su buscador Bing y se podía utilizar con la función Bing Chat.
+
+
+== Gaming Copilot ==
+Gaming Copilot es un asistente virtual con inteligencia artificial desarrollado por Microsoft ​para jugadores de PC, presentado oficialmente en versión beta para mayores de 18 años en la mayoría de países. Puede activarse desde la Game Bar de Windows o dispositivos compatibles como la ROG Ally, y responde a comandos de voz y texto para brindar apoyo en tiempo real, como sugerir estrategias, guiar en misiones o recomendar tácticas contra jefes finales. El sistema utiliza información de la actividad del jugador en Xbox junto con datos públicos de Bing, y se prevé que integre aportes de creadores de contenido para fortalecer su ecosistema. Entre sus funciones destacan un modo mini flotante, botón push-to-talk configurable e interacción fluida sin interrumpir la partida. Forma parte de la estrategia de Microsoft para expandir el uso de la IA en su ecosistema, tras la inversión en OpenAI que también potenció servicios como Bing y Windows.
+
+
+== Referencias ==
+
+
+== Enlaces Oficiales ==
+Sitio web oficial

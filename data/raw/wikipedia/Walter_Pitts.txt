@@ -1,0 +1,56 @@
+Walter Harry Pitts (23 de abril de 1923-14 de mayo de 1969) fue un lógico estadounidense que trabajó en el campo de la neurociencia computacional.​
+Propuso teorías de importancia en actividad neuronal y procesos generativos que influyeron en diversos campos como psicología, ciencias cognitivas, filosofía, neurociencias, informática, redes neuronales artificiales, cibernética e inteligencia artificial, junto con lo que ha venido a ser conocido como ciencias generativas. Es recordado para haber escrito, junto con Warren McCulloch, un artículo titulado "Cálculo lógico de Ideas inherentes en la actividad nerviosa" (1943). El mismo propone el primer modelo matemático de una red neuronal artificial. La unidad de este modelo, una neurona sencilla, es todavía el estándar de referencia en el campo de redes neuronales. Es a menudo llamada neurona de McCulloch-Pitts.
+
+
+== Primeros años ==
+Walter Pitts nació en Detroit, Míchigan, el 23 de abril de 1923. Hijo de Walter Pitts y Marie Welsia. Fue autodidacta en lógica y matemáticas y era capaz de leer en varios idiomas como griego y latín. A la edad de 12 pasó tres días en la biblioteca leyendo Principia Mathematica y envió una carta a Bertrand Russell señalando lo que él consideraba problemas serios en la primera mitad del primer volumen. Russell lo apreció y le invitó a estudiar en el Reino Unido. A pesar de que esta oferta no fue aceptada, Pitts decidió convertirse en lógico.
+
+
+== Carrera académica ==
+Pitts probablemente siguió manteniendo correspondencia con Bertrand Russell; y a la edad de 15 asistió a las clases de Russell en la Universidad de Chicago.​​ Permaneció allí, sin registrarse como estudiante. Durante su estadía, en 1938 conoce a Jerome Lettvin, un estudiante de medicina, y los dos se volvieron amigos cercanos .​ Bertrand Russell era un profesor de intercambio en la Universidad de Chicago en el otoño de 1938 e impulsó a Pitts para que estudiase allí con el lógico Rudolf Carnap.​ Pitts conoció a Carnap en Chicago al entrar a su oficina durante horas de trabajo, y presentándole una versión con anotaciones del libro más reciente de Carnap sobre lógica, La Sintaxis lógica de lengua.​ Sin embargo, como Pitts no se presentó con su nombre, Carnap pasó meses buscándole y, cuando lo encontró, le consiguió un trabajo modesto en el universidad y reclutó a Pitts para estudiar con él. En ese momento Pitts no tenía casa y no contaba con ingresos.​ Dominó la lógica abstracta de Carnap y entonces conoció al físico matemático ucraniano Nicolas Rashevsky, quien también estaba en Chicago y era el fundador de la biofísica matemática, remodelando así la estructura de las ciencias físicas y lógica matemática.​ Pitts también trabajó cercanamente con el matemático Alston Householder quién era un miembro del grupo de Rashevsky.​​​
+Warren McCulloch se incorpora también a la Universidad de Chicago, y en la primera parte de 1942 invitó a Pitts, quien todavía no contaba con casa, junto con Lettvin para vivir con su familia.  En las tardes McCulloch y Pitts colaboraron.  Pitts conocía el trabajo de Gottfried Leibniz sobre cómputo y discutieron la idea de si el sistema nervioso podría ser considerado una clase de dispositivo de informática universal como fuera descrito por Leibniz. Esto dirigió a su artículo de redes neuronales "Un cálculo lógico de ideas inherentes en actividad nerviosa".
+En 1943 Lettvin presentó a PItts a Norbert Wiener en el MIT, quien había recientemente perdido su colaborador más cercano. En su primera reunión, donde hablaron la prueba de Wiener acerca del teorema ergódico, fue tan fructifera que Pitts se mudó a Boston para trabajar con Wiener. Pitts era un estudiante especial de Wiener en el MIT.​
+En 1944 Pitts fue contratado por Kellex Corporation (adquirida más tarde por Vitro Corporation en 1950) en la ciudad de Nueva York, como parte del Proyecto de Energía Atómica.​
+A partir de 1946, Pitts fue un miembro principal y estuvo envuelto en las Conferencias Macy cuyo propósito principal era establecer los cimientos para una ciencia general de las tareas de la mente humana.
+En 1951 Wiener convence a Jerry Wiesner para contratar algunos fisiólogos del sistema nervioso.  Un grupo fue establecido con Pitts, Lettvin, McCulloch, y Pat Wall.  Pitts escribió una tesis extensa sobre las propiedades de las redes neuronales conectadas en tres dimensiones.  Lettvin le describió como "el genio del grupo en ningún sentido incierto … cuándo le preguntabas algo, obtenías un libro entero".  Pitts era también descrito como excéntrico, rechazando dejar que su nombre fuese hecho público.  Rechazó todas las ofertas de grados académicos avanzados o posiciones oficiales en el MIT debido a que tendría que firmar con su nombre.
+Pitts fue miembro del Laboratorio de investigaciones electrónicas del MIT de 1952 a 1969.
+
+
+== Trauma emocional y decline ==
+Wiener repentinamente reviró contra McCulloch, por un asunto relacionado con su mujer Margaret Wiener, quién detestaba McCulloch, y rompió relaciones con cualquiera conectado a él, incluyendo Pitts. Esto envió a Walter Pitt a un decline e aislamiento social del que nunca se recuperó. Quemó el manuscrito en redes tridimensionales y tomó poco interés en cualquier trabajo.  La excepción única fue una colaboración con Robert Gesteland la cual produjo un artículo sobre el olfato.  Pitts murió en 1969 de várices hemorrágicas esofagales, una condición normalmente asociada con cirrosis.​​
+
+
+== Publicaciones ==
+Walter Pitt, "Algunas observaciones en el circuito de neurona sencillo (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).", Boletín de Biología Matemática, Volumen 4, Número 3, 121@–129, 1942.
+Warren McCulloch y Walter Pitt, "Un Cálculo Lógico de Ideas Immanent en Actividad Nerviosa", 1943, Boletín de Biofísica Matemática 5:115@–133.
+Reimpresión en Neurocomputing: Fundaciones de Búsqueda. Editado por James Un. Anderson y Edward Rosenfeld. MIT Prensa, 1988. Páginas 15@–27
+Warren McCulloch y Walter Pitt, "Encima cómo sabemos universals: La percepción de formas auditivas y visuales", 1947, Boletín de Biofísica Matemática 9:127@–147.
+Howland, R., Jerome Lettvin, Warren McCulloch, Walter Pitt, y P. D. Pared, "Reflex inhibición por interacción de raíz dorsal", 1955, Revista de Neurophysiology 18:1@–17.
+Pared, P. D., Warren McCulloch, Jerome Lettvin y Walter Pitt, "Efectos de strychnine con referencia especial a espinal afferent fibras", 1955, Epilepsia Serie 3, 4:29@–40.
+Jerome Lettvin, Humberto Maturana, Warren McCulloch, y Walter Pitt, "Lo que el ojo de la Rana Dice el cerebro de la Rana", 1959, Proceedings del Instituto de Ingenieros Radiofónicos 47: 1940@–1951.
+Humberto Maturana, Jerome Lettvin, Warren McCulloch, y Walter Pitt, "Anatomía y fisiología de visión en la rana", 1960, Revista de Fisiología General, 43:129—175.
+Robert Gesteland, Jerome Lettvin y Walter Pitt, "Transmisión Química en la Nariz de la Rana", 1965, J.Physiol. 181, 525@–529.
+
+
+== Véase también ==
+Ciencia cognitiva
+Jerome Lettvin
+Warren McCulloch
+
+
+== Referencias ==
+Aizawa, Kenneth, "Connectionism and artificial intelligence: history and philosophical interpretation" "Connectionism e inteligencia artificial: historia e interpretación filosófica", Revista de Experimental e Inteligencia Artificial Teórica, Volumen 4, Asunto 4, 1992, páginas 295@–313
+Aizawa, Kenneth; Schlatter, Mark, "Walter Pitt y 'Un Cálculo Lógico' (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).", Synthese (2008) 162:235@–250.
+Aizawa, Kenneth; Schlatter, Mark, "Otra Mirada en McCulloch y Pitt es 'Cálculo Lógico' Archivado el 8 de noviembre de 2016 en Wayback Machine.", Universidad de Centenario de Luisiana, Shreveport, Luisiana
+Anderson, James Un.; Rosenfeld, Edward (editores), Hablando Redes: Una Historia Oral de Redes Neuronales, 1998.[1]  La entrevista con Jerome Lettvin habla Walter Pitt.
+Conway, Flo; Siegelman, Jim, héroe Oscuro de la edad de información: en búsqueda de Norbert Wiener, el padre de Cibernética, Libros Básicos, 2005.[2] Cf. p.138 & varios.
+Easterling, Keller, "Walter Pitt", Gabinete, Asunto 5 Invierno 2001/02
+
+
+== Bibliografía ==
+Piccinini, Gualtiero, "La primera teoría computacional sobre la mente y el cerebro: Una mirada cercana al 'Cálculo Lógico de ideas iherentes en la actividad nerviosa' de McCulloch y Pitts", Synthese 141: 175@–215, 2004. Kluwer Editores académicos
+
+
+== Enlaces externos ==
+"Walter Pitts", sitio web del Profesor Charles Wallis, Departamento de Ciencia Cognitiva, Universidad Estatal de California en Playa Larga, accesado el 30 de enero de 2009 (archivado en 2009) (en inglés)
+"El hombre que intentó redimir al mundo con la lógica". Archivado el 14 de junio de 2016 en Wayback Machine. Nautilus 21, 5 de febrero de 2015 (en inglés)

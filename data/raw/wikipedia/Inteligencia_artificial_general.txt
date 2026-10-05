@@ -1,0 +1,52 @@
+La inteligencia artificial general (IAG, en inglés AGI), también llamada inteligencia general artificial e inteligencia artificial fuerte,​ es un tipo hipotético de inteligencia artificial que iguala o excede la inteligencia humana promedio.​ Si se hiciera realidad, una IAG sería capaz de realizar cualquier tarea intelectual que los seres humanos o los animales puedan llevar a cabo.​​ La IAG también se ha definido como un sistema autónomo que supera las capacidades humanas en la mayoría de las tareas económicamente valiosas.​ La creación de la IAG es un objetivo primordial de algunas investigaciones sobre inteligencia artificial y de empresas como OpenAI,​ DeepMind y Anthropic. La IAG es un tema habitual en la ciencia ficción y en los estudios sobre el futuro.
+Los plazos para el desarrollo de la inteligencia artificial siguen siendo objeto de debate entre investigadores y expertos. Algunos sostienen que podría realizarse en años o décadas; otros, que podría tardar un siglo o más; y una minoría cree que quizá nunca se consiga.​Existe un debate sobre la definición exacta de IAG y sobre si los modelos de lenguaje grandes modernos, como GPT-4, son formas tempranas pero incompletas de IAG.​
+En los últimos años, el debate sobre la inteligencia artificial general se ha intensificado por el rápido avance de los modelos fundacionales y multimodales, capaces de combinar texto, imagen, audio y otras modalidades en un mismo sistema. Estos avances han ampliado las capacidades de la inteligencia artificial en tareas de razonamiento, generación de contenido y resolución de problemas, aunque sigue sin existir consenso sobre si tales sistemas pueden considerarse formas auténticas de IAG.​​
+Al mismo tiempo, informes recientes sobre el estado de la inteligencia artificial subrayan que el rendimiento técnico de los sistemas actuales continúa mejorando con rapidez, pero que todavía persisten limitaciones importantes en robustez, generalización y fiabilidad. Por ello, una parte de la comunidad científica considera que la IAG sigue siendo un objetivo teórico y no una realidad alcanzada.​​
+Hay una amplia discusión sobre la posibilidad de que la IAG suponga una amenaza para la humanidad.​ Por ejemplo, OpenAI la considera un riesgo existencial, mientras que otros creen que el desarrollo de la inteligencia artificial es demasiado remoto como para suponer un riesgo.​​​
+Una encuesta realizada en 2020 identificó 72 proyectos activos de investigación y desarrollo en IAG distribuidos por 37 países.​
+
+
+== Problemas éticos y filosóficos ==
+El surgimiento y la aplicación de la inteligencia artificial general plantea incógnitas sobre la posición de los seres humanos ante un ser que, por su nueva inteligencia, podría considerarse como más que una máquina. Una incógnita es si esta podría alcanzar una conciencia emergente. 
+
+
+== Diferencia entre IAG e IA ==
+La intención básica del sector de la IAG consiste en implementar la inteligencia general (término acuñado por el psicólogo Charles Spearman) en un sistema computacional. Pei Wang y Ben Goertzel consideran que la diferencia clave entre los conceptos IAG e IA se halla en la “finalidad y alcance de la investigación.”​ Esto quiere decir que la inteligencia artificial trata propiedades específicas en sus proyectos, como por ejemplo la capacidad de aprendizaje lingüístico o reconocimiento de imágenes, sin pretender integrarlas en un sistema más amplio. La IAG, en cambio, se refiere a emprendimientos cuya ambición cubre la entera complejidad de la inteligencia humana.
+Es una fuente común de confusiones el hecho de que el significado original de IA se asemeja más a la actual IAG que a aquello que hoy en día se entiende, científicamente, como IA. Las habituales equivocaciones producidas entre ambos términos se deben a que, originariamente, IA designó el sueño de moda de la época (mediados del siglo XX): la conciencia artificial. En aquel momento parecía un campo de investigación prometedor pero, al devenir aparente la desproporción de las expectativas situadas sobre el sector  —y la realidad de que, aunque fuera posible alcanzar la conciencia artificial, esta meta sería mucho más lejana de lo anticipado— la decadencia en el estudio de aquello que se conocía con el nombre de IA fue notable.
+Posteriormente al fracaso de esa generación pionera de investigadores, aquellos que permanecieron en general trasladaron su trabajo a otras materias más asumibles (sobre todo aspectos particulares de la inteligencia), y no volvieron a acercarse al reto de la conciencia artificial. Así pues, la expresión IA cobró un nuevo significado y un extenso ámbito de investigación científica fue desprestigiado durante décadas.​
+
+
+== Diferencia entre IAG y conciencia artificial ==
+Nada garantiza que el desarrollo de una IAG implique el surgimiento de la conciencia artificial o que se genere una conciencia emergente, pero esta tiende a ser considerada como la posibilidad más plausible. La razón porque se cree que la existencia de uno de estos conceptos probablemente lleve al otro deriva de como de intrínsecamente entrelazadas se encuentran la conciencia y la inteligencia general en los seres vivos. Peter Voss, profesional del campo de la IAG, justifica la coincidencia fundamental de las cualidades necesarias para el desarrollo tanto de un sistema de IAG como de una conciencia artificial afirmando que las personas poseen "autoconciencia conceptual" (conceptos abstractos del yo físico y mental), característica que resultaría imprescindible en la IAG, ya que esta tendría que "poder conceptualizar qué acciones ha tomado, [...] de qué acciones es [...] capaz, y cuáles son sus efectos más probables".​
+
+
+== Aplicaciones en el avance científico ==
+Además de su uso en entornos empresariales, la inteligencia artificial está transformando la forma en que se desarrolla la investigación científica. Algunos ejemplos relevantes incluyen:  
+
+Biología molecular: El sistema AlphaFold, desarrollado por DeepMind, resolvió el problema del plegamiento de proteínas con una precisión sin precedentes, permitiendo predecir la estructura de más de 200 millones de proteínas conocidas y acelerando la investigación biomédica y biotecnológica.​
+Ciencia de materiales: El modelo GNoME (Graph Networks for Materials Exploration) predijo 2,2 millones de estructuras cristalinas inéditas, de las cuales unas 380.000 son estables y más de 700 ya fueron sintetizadas en laboratorio, con posibles aplicaciones en baterías, semiconductores y superconductores.​
+Medicina: Investigadores del MIT descubrieron el antibiótico halicina mediante IA, eficaz contra bacterias resistentes, y diversas compañías ya han diseñado fármacos con ayuda de algoritmos que se encuentran en ensayos clínicos.​
+Laboratorios autónomos: En 2023, el Lawrence Berkeley National Lab presentó A-Lab, un laboratorio autónomo que logró sintetizar 41 compuestos inéditos en 17 días, utilizando IA para guiar los experimentos con mínima intervención humana.​
+Física: En Suiza, un sistema de DeepMind controló el plasma de un reactor de fusión nuclear, estabilizándolo en formas que no se habían conseguido previamente.​ Además, el sistema Dingo del Instituto Max Planck analiza en segundos las señales de ondas gravitacionales, detectando incluso anomalías que podrían apuntar a fenómenos aún no descritos.​
+Estos avances sugieren que la inteligencia artificial puede convertirse en un catalizador del progreso científico, extendiendo su impacto más allá de los ámbitos productivos y de automatización.  
+​  
+
+
+== Véase también ==
+Inteligencia artificial
+Inteligencia artificial fuerte
+Historia de la inteligencia artificial
+Riesgo existencial de la inteligencia artificial
+Singularidad tecnológica
+Transferencia mental
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+
+
+== Enlaces externos ==
+AGI o IA Fuerte, la inteligencia artificial más avanzada de todas.
+Guía sobre inteligencia artificial general (AGI).

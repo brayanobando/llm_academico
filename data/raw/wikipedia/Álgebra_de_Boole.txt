@@ -1,0 +1,11088 @@
+En matemáticas, electrónica digital e informática, el álgebra de Boole, también llamada álgebra booleana, es una estructura algebraica que esquematiza operaciones lógicas.
+
+El álgebra booleana fue introducida por George Boole en su primer libro The Mathematical Analysis of Logic (1847)​ y expuesta más detalladamente en su An Investigation of the Laws of Thought (1854). Según Edward Vermilye Huntington, el término Boolean algebra fue sugerido por primera vez por Henry M. Sheffer en 1913, aunque Charles Sanders Peirce dio el título A Boolian Algebra with One Constant al primer capítulo de su The Simplest Mathematics en 1880.
+El álgebra de Boole ha sido fundamental en el desarrollo de la electrónica digital y está incluida en todos los lenguajes de programación modernos.​​ También se utiliza en teoría de conjuntos y la lógica.
+El álgebra booleana es una rama del álgebra. Se diferencia del álgebra elemental en dos aspectos. Primero, los valores de las variables son los valores de verdad: verdadero y falso, normalmente denotados por 1 y 0, mientras que en álgebra elemental los valores de las variables son números. En segundo lugar, el álgebra booleana utiliza operadores lógicos como la conjunción (y), denotada como ∧, la disyunción (o), denotada como ∨, y la negación (no), denotada como ¬. El álgebra elemental, por otro lado, utiliza operadores aritméticos como la suma, la multiplicación, la resta y la división. Por tanto, el álgebra de Boole es una modalidad formal de describir operaciones lógicas de la misma manera que el álgebra elemental describe operaciones numéricas.
+
+
+== Historia ==
+
+Se denomina así en honor a George Boole (1815-1864), matemático inglés autodidacta que fue el primero en definirla como parte de un sistema lógico,​ inicialmente en un pequeño folleto de 1847, The Mathematical Analysis of Logic,​ publicado en respuesta a una controversia en curso entre Augustus De Morgan y sir William Rowan Hamilton. El álgebra de Boole fue un intento de utilizar las técnicas algebraicas para tratar expresiones de la lógica proposicional. Más tarde fue extendido como un libro más importante: An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities (también conocido como An Investigation of the Laws of Thought ​ o simplemente The Laws of Thought​), publicado en 1854.
+.
+
+ 
+
+En la actualidad, el álgebra de Boole se aplica de forma generalizada en el ámbito del diseño electrónico. Claude Shannon fue el primero en aplicarla en el diseño de circuitos de conmutación eléctrica biestables, en 1948.​​ Esta lógica se puede aplicar a dos campos:
+
+Al análisis, porque es una forma concreta de describir cómo funcionan los circuitos.
+Al diseño, ya que teniendo una función se aplica dicha álgebra para poder desarrollar una implementación de la función.
+
+
+== Definición ==
+
+Dado un conjunto 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ en el que se han definido dos leyes de composición interna: suma lógica y producto lógico 
+  
+    
+      
+        ⊕
+        ,
+        ⊙
+      
+    
+    {\displaystyle \oplus ,\odot }
+  
+. La estructura 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ⊕
+        ,
+        ⊙
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\oplus ,\odot )}
+  
+es un álgebra de Boole si y solo si 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ⊕
+        ,
+        ⊙
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\oplus ,\odot )}
+  
+ es un Retículo distributivo​ y complementario, esto es:
+
+  
+    
+      
+        ⊙
+      
+    
+    {\displaystyle \odot }
+  
+ es distributiva respecto a 
+  
+    
+      
+        ⊕
+      
+    
+    {\displaystyle \oplus }
+  
+:
+
+  
+    
+      
+        a
+        ⊙
+        (
+        b
+        ⊕
+        c
+        )
+        =
+        (
+        a
+        ⊙
+        b
+        )
+        ⊕
+        (
+        a
+        ⊙
+        c
+        )
+      
+    
+    {\displaystyle a\odot (b\oplus c)=(a\odot b)\oplus (a\odot c)}
+  
+
+  
+    
+      
+        ⊕
+      
+    
+    {\displaystyle \oplus }
+  
+ es distributiva respecto a 
+  
+    
+      
+        ⊙
+      
+    
+    {\displaystyle \odot }
+  
+
+  
+    
+      
+        a
+        ⊕
+        (
+        b
+        ⊙
+        c
+        )
+        =
+        (
+        a
+        ⊕
+        b
+        )
+        ⊙
+        (
+        a
+        ⊕
+        c
+        )
+      
+    
+    {\displaystyle a\oplus (b\odot c)=(a\oplus b)\odot (a\oplus c)}
+  
+
+Basándose en esta definición se determina lo siguiente.
+
+
+== Principios ==
+Dado un conjunto: 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ formado cuando menos por los elementos: 
+  
+    
+      
+        ∅
+        ,
+        
+        U
+      
+    
+    {\displaystyle \varnothing ,\;U}
+  
+ en el que se ha definido:
+
+Una operación unaria interna, que llamaremos complemento:
+
+  
+    
+      
+        
+          
+            
+              
+                ∼:
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                →
+              
+              
+                b
+                =∼
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\sim :&{\mathfrak {B}}&\to &{\mathfrak {B}}\\&a&\to &b=\sim a\end{array}}}
+  
+
+En esta operación definimos una aplicación que, a cada elemento a de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, le asigna un b de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+.
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        b
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        b
+        =∼
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}\,:\quad \exists !b\in {\mathfrak {B}}\;/\quad b=\sim a}
+  
+
+Para todo elemento a en 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, se cumple que existe un único b en 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, tal que b es el complemento de a.
+La operación binaria interna, que llamaremos suma:
+
+  
+    
+      
+        
+          
+            
+              
+                ⊕
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ⊕
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\oplus :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\oplus b\end{array}}}
+  
+
+por la que definimos una aplicación que, a cada par ordenado (a, b) de 
+  
+    
+      
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}\times {\mathfrak {B}}}
+  
+, le asigna un c de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        ⊕
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a\oplus b}
+  
+
+Para todo par ordenado (a, b) en 
+  
+    
+      
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}\times {\mathfrak {B}}}
+  
+, se cumple que existe un único c en 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, tal que c es el resultado de sumar a con b.
+La operación binaria interna, que llamaremos producto:
+
+  
+    
+      
+        
+          
+            
+              
+                ⊙
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ⊙
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\odot :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\odot b\end{array}}}
+  
+
+Con lo que definimos una aplicación que, a cada par ordenado (a, b) de 
+  
+    
+      
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}\times {\mathfrak {B}}}
+  
+, le asigna un c de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        ⊙
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a\odot b}
+  
+
+Para todo par ordenado (a, b) en 
+  
+    
+      
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}\times {\mathfrak {B}}}
+  
+, se cumple que existe un único c en 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, tal que c es el resultado del producto a y b.
+Dada la definición del álgebra de Boole como una estructura algebraica genérica, según el caso concreto de que se trate, la simbología y los nombres de las operaciones pueden variar.
+
+
+=== Axiomas necesarios ===
+Diremos que este conjunto y las operaciones así definidas: 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ∼
+        ,
+        ⊕
+        ,
+        ⊙
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\sim ,\oplus ,\odot )}
+  
+ son un álgebra de boole, si cumple los siguientes axiomas:
+
+
+=== Teoremas fundamentales ===
+Partiendo de los cinco axiomas anteriores, se pueden deducir y demostrar los siguientes teoremas fundamentales:
+
+11: Ley de involución:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        ∼
+        (
+        ∼
+        a
+        )
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;\sim (\sim a)=a}
+  
+
+12: Ley del complemento:
+
+  
+    
+      
+        ∼
+        U
+        =
+        ∅
+        
+        ,
+        
+        ∼
+        ∅
+        =
+        U
+      
+    
+    {\displaystyle \sim U=\varnothing \;,\quad \sim \varnothing =U}
+  
+
+13: Principio del tercero excluido:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ⊕
+        (
+        ∼
+        a
+        )
+        =
+        U
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\oplus (\sim a)=U}
+  
+
+14: Principio de no contradicción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ⊙
+        (
+        ∼
+        a
+        )
+        =
+        ∅
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\odot (\sim a)=\varnothing }
+  
+
+
+=== Orden en el álgebra de Boole ===
+Sea: 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ∼
+        ,
+        ⊕
+        ,
+        ⊙
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\sim ,\oplus ,\odot )}
+  
+ un álgebra de Boole, sean a, b dos elementos del conjunto, podremos decir entonces que a antecede a b y lo denotamos:
+
+  
+    
+      
+        a
+        ⪯
+        b
+      
+    
+    {\displaystyle a\preceq b}
+  
+
+si se cumple alguna de las siguientes condiciones:
+
+  
+    
+      
+        a
+        ⊕
+        b
+        =
+        b
+      
+    
+    {\displaystyle a\oplus b=b}
+  
+
+  
+    
+      
+        a
+        ⊙
+        b
+        =
+        a
+      
+    
+    {\displaystyle a\odot b=a}
+  
+
+  
+    
+      
+        ∼
+        a
+        ⊕
+        b
+        =
+        U
+      
+    
+    {\displaystyle \sim a\oplus b=U}
+  
+
+  
+    
+      
+        a
+        ⊙
+        ∼
+        b
+        =
+        ∅
+      
+    
+    {\displaystyle a\odot \sim b=\varnothing }
+  
+
+Estas cuatro condiciones se consideran equivalentes y el cumplimiento de una de ellas implica necesariamente el cumplimiento de las demás. Definiendo un conjunto parcialmente ordenado.
+Si se cumple que:
+
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        
+        :
+        
+        a
+        ⪯
+        b
+        
+        ∨
+        
+        b
+        ⪯
+        a
+        
+        ⟶
+        
+        a
+        ,
+        b
+        →
+        
+          
+            c
+            o
+            m
+            p
+            a
+            r
+            a
+            b
+            l
+            e
+            s
+          
+        
+      
+    
+    {\displaystyle a,b\in {\mathfrak {B}}\;:\quad a\preceq b\;\lor \;b\preceq a\quad \longrightarrow \quad a,b\rightarrow {\mathit {comparables}}}
+  
+
+Para los valores a, b de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, que cumplen que a antecede a b, o que b antecede a a, se dice que a y b son comparables.
+Si se cumple que:
+
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        
+        :
+        
+        a
+        ⋠
+        b
+        
+        ∧
+        
+        b
+        ⋠
+        a
+        
+        ⟶
+        
+        a
+        ,
+        b
+        →
+        
+          
+            n
+            o
+            
+            c
+            o
+            m
+            p
+            a
+            r
+            a
+            b
+            l
+            e
+            s
+          
+        
+      
+    
+    {\displaystyle a,b\in {\mathfrak {B}}\;:\quad a\npreceq b\;\land \;b\npreceq a\quad \longrightarrow \quad a,b\rightarrow {\mathit {no\;comparables}}}
+  
+
+Para los valores a, b de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, que cumplen que a no antecede a b, y que b no antecede a a, se dice que a y b son no comparables.
+
+
+=== Principio de dualidad ===
+
+El concepto de dualidad permite formalizar este hecho: a toda relación o ley lógica le corresponderá su dual, formada mediante el intercambio de los operadores suma con los de producto, y de 
+  
+    
+      
+        U
+        
+      
+    
+    {\displaystyle U\;}
+  
+ con 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+.
+
+Con una estructura similar y las operaciones y los conjuntos permutados.
+
+
+== Otras formas de notación del álgebra de Boole ==
+En Lógica binaria se suele emplear la notación 
+  
+    
+      
+        (
+        {
+        0
+        ,
+        1
+        }
+        ,
+        
+          
+            
+              
+              ¯
+            
+          
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\{0,1\},{\bar {}},+,\cdot )}
+  
+, común en la tecnología digital, siendo la forma más usual y la más cómoda de representar.
+Por ejemplo las leyes de De Morgan se representan así:
+
+  
+    
+      
+        
+          
+            
+              a
+              +
+              b
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        ⋅
+        
+          
+            
+              b
+              ¯
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\overline {a+b}}={\bar {a}}\cdot {\bar {b}}\,}
+  
+
+  
+    
+      
+        
+          
+            
+              a
+              ⋅
+              b
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        +
+        
+          
+            
+              b
+              ¯
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\overline {a\cdot b}}={\bar {a}}+{\bar {b}}\,}
+  
+
+Cuando el álgebra de Boole se emplea en electrónica, suele emplearse la misma denominación que para las puerta lógica AND (Y), OR (O) y NOT (NO), ampliándose en ocasiones con X-OR (O exclusiva) y su negadas NAND (NO Y), NOR (NO O) y X-NOR (equivalencia). las variables pueden representarse con letras mayúsculas o minúsculas, y pueden tomar los valores {0, 1}.
+Empleando esta notación las leyes de De Morgan se representan:
+
+  
+    
+      
+        
+          
+            NOT 
+          
+        
+        (
+        a
+        
+          
+             OR 
+          
+        
+        b
+        )
+        =
+        
+          
+            NOT 
+          
+        
+        a
+        
+          
+             AND 
+          
+        
+        
+          
+            NOT 
+          
+        
+        b
+        
+      
+    
+    {\displaystyle {\mbox{NOT }}(a{\mbox{ OR }}b)={\mbox{NOT }}a{\mbox{ AND }}{\mbox{NOT }}b\,}
+  
+
+  
+    
+      
+        
+          
+            NOT 
+          
+        
+        (
+        a
+        
+          
+             AND 
+          
+        
+        b
+        )
+        =
+        
+          
+            NOT 
+          
+        
+        a
+        
+          
+             OR 
+          
+        
+        
+          
+            NOT 
+          
+        
+        b
+        
+      
+    
+    {\displaystyle {\mbox{NOT }}(a{\mbox{ AND }}b)={\mbox{NOT }}a{\mbox{ OR }}{\mbox{NOT }}b\,}
+  
+
+En su aplicación a la lógica se emplea la notación 
+  
+    
+      
+        ∧
+        ∨
+        ¬
+      
+    
+    {\displaystyle \land \lor \lnot }
+  
+ y las variables pueden tomar los valores {F, V}, falso o verdadero, equivalentes a {0, 1}
+Con la notación lógica las leyes de De Morgan serían así:
+
+  
+    
+      
+        ¬
+        
+          (
+          a
+          ∨
+          b
+          )
+        
+        =
+        ¬
+        
+          a
+        
+        ∧
+        ¬
+        
+          b
+        
+        
+      
+    
+    {\displaystyle \lnot {(a\lor b)}=\lnot {a}\land \lnot {b}\,}
+  
+
+  
+    
+      
+        ¬
+        
+          (
+          a
+          ∧
+          b
+          )
+        
+        =
+        ¬
+        
+          a
+        
+        ∨
+        ¬
+        
+          b
+        
+        
+      
+    
+    {\displaystyle \lnot {(a\land b)}=\lnot {a}\lor \lnot {b}\,}
+  
+
+En el formato de Teoría de conjuntos el Álgebra de Boole toma el aspecto: 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ,
+        ∼
+        ,
+        ∪
+        ,
+        ∩
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}}(U),\sim ,\cup ,\cap )}
+  
+
+En esta notación las leyes de De Morgan serían así:
+
+  
+    
+      
+        ∼
+        
+          (
+          a
+          ∪
+          b
+          )
+        
+        =
+        
+        ∼
+        
+          a
+        
+        
+        ∩
+        ∼
+        
+          b
+        
+        
+      
+    
+    {\displaystyle \sim {(a\cup b)}=\;\sim {a}\;\cap \sim {b}\,}
+  
+
+  
+    
+      
+        ∼
+        
+          (
+          a
+          ∩
+          b
+          )
+        
+        =
+        
+        ∼
+        
+          a
+        
+        
+        ∪
+        ∼
+        
+          b
+        
+        
+      
+    
+    {\displaystyle \sim {(a\cap b)}=\;\sim {a}\;\cup \sim {b}\,}
+  
+
+Otra forma en la álgebra de conjuntos del Álgebra de Boole, las leyes de De Morgan serían así:
+
+  
+    
+      
+        
+          
+            (
+            A
+            ∪
+            B
+            )
+          
+          
+            C
+          
+        
+        =
+        
+        
+          
+            A
+          
+          
+            C
+          
+        
+        ∩
+        
+          
+            B
+          
+          
+            C
+          
+        
+      
+    
+    {\displaystyle {(A\cup B)}^{C}=\;{A}^{C}\cap {B}^{C}}
+  
+
+  
+    
+      
+        
+          
+            (
+            A
+            ∩
+            B
+            )
+          
+          
+            C
+          
+        
+        =
+        
+        
+          
+            A
+          
+          
+            C
+          
+        
+        ∪
+        
+          
+            B
+          
+          
+            C
+          
+        
+      
+    
+    {\displaystyle {(A\cap B)}^{C}=\;{A}^{C}\cup {B}^{C}}
+  
+
+Desde el punto de vista práctico existe una forma simplificada de representar expresiones booleanas. Se emplean apóstrofos (') para indicar la negación, la operación suma (+) se representa de la forma normal en álgebra, y para el producto no se emplea ningún signo, las variables se representan, normalmente con una letra mayúscula, la sucesión de dos variables indica el producto entre ellas, no una variable nombrada con dos letras.
+La representación de las leyes de De Morgan con este sistema quedaría así, con letra minúsculas para las variables:
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        
+          )
+          ′
+        
+        =
+        
+          a
+          ′
+        
+        
+          b
+          ′
+        
+        
+      
+    
+    {\displaystyle (a+b)'=a'b'\,}
+  
+
+  
+    
+      
+        (
+        a
+        b
+        
+          )
+          ′
+        
+        =
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        
+      
+    
+    {\displaystyle (ab)'=a'+b'\,}
+  
+
+y así, empleando letras mayúsculas para representar las variables:
+
+  
+    
+      
+        (
+        A
+        +
+        B
+        
+          )
+          ′
+        
+        =
+        
+          A
+          ′
+        
+        
+          B
+          ′
+        
+        
+      
+    
+    {\displaystyle (A+B)'=A'B'\,}
+  
+
+  
+    
+      
+        (
+        A
+        B
+        
+          )
+          ′
+        
+        =
+        
+          A
+          ′
+        
+        +
+        
+          B
+          ′
+        
+        
+      
+    
+    {\displaystyle (AB)'=A'+B'\,}
+  
+
+Todas estas formas de representación son correctas, se utilizan de hecho, y pueden verse al consultar bibliografía. La utilización de una u otra notación no modifica el álgebra de Boole, solo su aspecto, y depende de la rama de las matemáticas o la tecnología en la que se esté utilizando para emplear una u otra notación.
+
+
+== Estructuras algebraicas que son álgebra de Boole ==
+
+Hay numerosos casos de distintos análisis de estructuras algebraicas que corresponden al álgebra de Boole, aunque en apariencia son muy diferentes, su estructura es la misma. Vamos a ver algunos de ellos, con el propósito de hacer palpable las similitudes en la estructura y los distintos ámbitos de aplicación y distinta terminología para referirse a las operaciones o a las variables.
+
+
+=== Lógica binaria ===
+
+La lógica binaria, basada en los ceros y los unos, posiblemente la forma más conocida de este álgebra, que en ocasiones da lugar a la interpretación que el álgebra de Boole es la lógica binaria exclusivamente. Así el conjunto 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ en este caso está formado por dos elementos {0,1}, o {F, V}, o {no, sí}, dos valores contrapuestos, que son las dos posibles alternativas entre dos situaciones posibles, aquí, sin pérdida de la generalidad, tomaremos el conjunto: {0,1} como ya hemos dicho:
+
+  
+    
+      
+        
+          
+            B
+          
+        
+        =
+        {
+        0
+        ,
+        1
+        }
+      
+    
+    {\displaystyle {\mathfrak {B}}=\{0,1\}}
+  
+
+Donde:
+
+  
+    
+      
+        ∅
+        =
+        0
+      
+    
+    {\displaystyle \varnothing =0}
+  
+
+  
+    
+      
+        U
+        =
+        1
+        
+      
+    
+    {\displaystyle U=1\;}
+  
+
+La operación unaria interna, que llamaremos negación:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                      ¯
+                    
+                  
+                
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                →
+              
+              
+                b
+                =
+                
+                  
+                    
+                      a
+                      ¯
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}{\bar {}}:&{\mathfrak {B}}&\to &{\mathfrak {B}}\\&a&\to &b={\bar {a}}\end{array}}}
+  
+
+La operación unaria interna negación, definimos una aplicación que a cada elemento a de {0,1}, le asigna un b de {0,1}.
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        b
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        b
+        =
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}\,:\quad \exists !b\in {\mathfrak {B}}\;/\quad b={\bar {a}}}
+  
+
+Para todo elemento a en {0,1}, se cumple que existe un único b en {0,1}, tal que b es la negación de a. Como se ve en la tabla.
+
+La operación binaria interna, que llamaremos suma, circuito de interruptores en paralelo:
+
+  
+    
+      
+        
+          
+            
+              
+                +
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                +
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}+:&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a+b\end{array}}}
+  
+
+Con la operación suma definimos una aplicación que, a cada par ordenado (a, b) de B por B, le asigna un c de B.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        +
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a+b}
+  
+
+Para todo par ordenado (a,b) en B por B, se cumple que existe un único c en B, tal que c es el resultado de sumar a con b.
+
+la operación binaria interna, que llamaremos producto, circuito de interruptores en serie:
+
+  
+    
+      
+        
+          
+            
+              
+                ⋅
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ⋅
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\cdot :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\cdot b\end{array}}}
+  
+
+Con la operación producto definimos una aplicación que, a cada par ordenado (a, b) de B por B, le asigna un c de B.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        ⋅
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a\cdot b}
+  
+
+Para todo par ordenado (a, b) en B por B, se cumple que existe un único c en B, tal que c es el resultado del producto a y b. Como se puede ver en la tabla.
+
+
+==== Axiomas ====
+Así 
+  
+    
+      
+        (
+        {
+        0
+        ,
+        1
+        }
+        ,
+        
+          
+            
+              
+              ¯
+            
+          
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\{0,1\},{\bar {}},+,\cdot )}
+  
+ es un álgebra de Boole al cumplir los siguientes axiomas:
+
+1a: La ley asociativa de la suma:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        (
+        a
+        +
+        b
+        )
+        +
+        c
+        =
+        a
+        +
+        (
+        b
+        +
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in \{0,1\}:\;(a+b)+c=a+(b+c)}
+  
+
+1b: La ley asociativa del producto:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        (
+        a
+        ⋅
+        b
+        )
+        ⋅
+        c
+        =
+        a
+        ⋅
+        (
+        b
+        ⋅
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in \{0,1\}:\;(a\cdot b)\cdot c=a\cdot (b\cdot c)}
+  
+
+2a: Existencia del elemento neutro para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        0
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a+0=a}
+  
+
+2b: Existencia del elemento neutro para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        1
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a\cdot 1=a}
+  
+
+3a: La ley conmutativa de la suma:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        b
+        =
+        b
+        +
+        a
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a+b=b+a}
+  
+
+3b: La ley conmutativa del producto:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        b
+        =
+        b
+        ⋅
+        a
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a\cdot b=b\cdot a}
+  
+
+4a: Ley distributiva de la suma respecto al producto:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        (
+        b
+        ⋅
+        c
+        )
+        =
+        (
+        a
+        +
+        b
+        )
+        ⋅
+        (
+        a
+        +
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in \{0,1\}:\;a+(b\cdot c)=(a+b)\cdot (a+c)}
+  
+
+4b: Ley distributiva del producto respecto a la suma:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        (
+        b
+        +
+        c
+        )
+        =
+        (
+        a
+        ⋅
+        b
+        )
+        +
+        (
+        a
+        ⋅
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in \{0,1\}:\;a\cdot (b+c)=(a\cdot b)+(a\cdot c)}
+  
+
+5a: Existe elemento complementario para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        ;
+        
+        ∃
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \forall a\in \{0,1\};\;\exists {\bar {a}}\in \{0,1\}:\;a+{\bar {a}}=1}
+  
+
+5b: Existe elemento complementario para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        ;
+        
+        ∃
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \forall a\in \{0,1\};\;\exists {\bar {a}}\in \{0,1\}:\;a\cdot {\bar {a}}=0}
+  
+
+Luego 
+  
+    
+      
+        (
+        {
+        0
+        ,
+        1
+        }
+        ,
+        
+          
+            
+              
+              ¯
+            
+          
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\{0,1\},{\bar {}},+,\cdot )}
+  
+ es álgebra de Boole.
+
+
+==== Teoremas fundamentales ====
+Partiendo de estos axiomas se puede demostrar los siguientes teoremas:
+
+6a: Ley de idempotencia para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        a
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a+a=a}
+  
+
+6b: Ley de idempotencia para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        a
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a\cdot a=a}
+  
+
+7a: Ley de dominación para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        1
+        =
+        1
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a+1=1}
+  
+
+7b: Ley de dominación para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        0
+        =
+        0
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a\cdot 0=0}
+  
+
+8a: Ley de identidad para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        0
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a+0=a}
+  
+
+8b: Ley de identidad para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        1
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a\cdot 1=a}
+  
+
+9a: Ley de absorción para la suma
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        (
+        a
+        ⋅
+        b
+        )
+        =
+        a
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a+(a\cdot b)=a}
+  
+
+9b: Ley de absorción para el producto
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        (
+        a
+        +
+        b
+        )
+        =
+        a
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a\cdot (a+b)=a}
+  
+
+10a: Ley de De Morgan para la suma:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        b
+        =
+        
+          
+            
+              
+                
+                  
+                    a
+                    ¯
+                  
+                
+              
+              ⋅
+              
+                
+                  
+                    b
+                    ¯
+                  
+                
+              
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a+b={\overline {{\bar {a}}\cdot {\bar {b}}}}}
+  
+
+10a: Ley de De Morgan para el producto:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        b
+        =
+        
+          
+            
+              
+                
+                  
+                    a
+                    ¯
+                  
+                
+              
+              +
+              
+                
+                  
+                    b
+                    ¯
+                  
+                
+              
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;a\cdot b={\overline {{\bar {a}}+{\bar {b}}}}}
+  
+
+11: Ley de involución:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        
+          
+            
+              
+                
+                  a
+                  ¯
+                
+              
+              ¯
+            
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;{\bar {\bar {a}}}=a}
+  
+
+12: Ley del complemento:
+
+  
+    
+      
+        
+          
+            
+              1
+              ¯
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\bar {1}}=0}
+  
+
+  
+    
+      
+        
+          
+            
+              0
+              ¯
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\bar {0}}=1}
+  
+
+13: Principio del tercero excluido:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        +
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a+{\bar {a}}=1}
+  
+
+14: Principio de no contradicción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        a
+        ⋅
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \forall a\in \{0,1\}:\;a\cdot {\bar {a}}=0}
+  
+
+
+==== Orden en el álgebra de Boole ====
+Partiendo de 
+  
+    
+      
+        (
+        {
+        0
+        ,
+        1
+        }
+        ,
+        
+          
+            
+              
+              ¯
+            
+          
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\{0,1\},{\bar {}},+,\cdot )}
+  
+ álgebra de Boole, dadas dos variables binarias: a, b, que cumplen alguna de estas condiciones:
+
+  
+    
+      
+        
+          
+          
+            
+              
+                
+                  a
+                  +
+                  b
+                  =
+                  b
+                
+              
+              
+                
+                  a
+                  ⋅
+                  b
+                  =
+                  a
+                
+              
+              
+                
+                  
+                    
+                      
+                        a
+                        ¯
+                      
+                    
+                  
+                  +
+                  b
+                  =
+                  1
+                
+              
+              
+                
+                  a
+                  ⋅
+                  
+                    
+                      
+                        b
+                        ¯
+                      
+                    
+                  
+                  =
+                  0
+                
+              
+            
+          
+          }
+        
+        ⟶
+        
+        a
+        ≤
+        b
+      
+    
+    {\displaystyle \left.{\begin{array}{l}a+b=b\\a\cdot b=a\\{\bar {a}}+b=1\\a\cdot {\bar {b}}=0\end{array}}\right\}\longrightarrow \quad a\leq b}
+  
+
+entonces a es menor o igual que b. Dados los valores binarios 0 y 1, podemos ver:
+
+  
+    
+      
+        0
+        +
+        1
+        =
+        1
+      
+    
+    {\displaystyle 0+1=1}
+  
+
+  
+    
+      
+        0
+        ⋅
+        1
+        =
+        0
+      
+    
+    {\displaystyle 0\cdot 1=0}
+  
+
+  
+    
+      
+        
+          
+            
+              0
+              ¯
+            
+          
+        
+        +
+        1
+        =
+        1
+      
+    
+    {\displaystyle {\bar {0}}+1=1}
+  
+
+  
+    
+      
+        0
+        ⋅
+        
+          
+            
+              1
+              ¯
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle 0\cdot {\bar {1}}=0}
+  
+
+Estas cuatro condiciones son equivalentes y el cumplimiento de una de ellas supone el cumplimiento de las otras, en este caso es sencillo comprobarlas todas. Luego podemos decir que 0 antecede a 1 y lo denotamos:
+
+  
+    
+      
+        0
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq 1}
+  
+
+Si además sabemos que 0 y 1 son valores distintos:
+
+  
+    
+      
+        
+          
+          
+            
+              
+                
+                  0
+                  ≤
+                  1
+                
+              
+              
+                
+                  0
+                  ≠
+                  1
+                
+              
+            
+          
+          }
+        
+        ⟶
+        
+        0
+        <
+        1
+      
+    
+    {\displaystyle \left.{\begin{array}{l}0\leq 1\\0\neq 1\end{array}}\right\}\longrightarrow \quad 0<1}
+  
+
+El valor binario 0 es menor que el valor binario 1.
+
+
+=== Álgebra de conjuntos ===
+
+Dado cualquier conjunto U, se llama conjunto potencia de U, al conjunto de todos los subconjuntos posibles de U y lo denotamos 
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle {\mathcal {P}}(U)}
+  
+.
+A título de ejemplo podemos considerar:
+
+  
+    
+      
+        U
+        =
+        {
+        a
+        ,
+        b
+        ,
+        c
+        ,
+        d
+        ,
+        e
+        ,
+        f
+        }
+        
+      
+    
+    {\displaystyle U=\{a,b,c,d,e,f\}\,}
+  
+
+Que tiene como conjunto potencia:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        =
+        
+          
+            {
+          
+        
+        {
+        }
+        ,
+        {
+        a
+        }
+        ,
+        {
+        b
+        }
+        ,
+        …
+        ,
+        {
+        a
+        ,
+        b
+        }
+        ,
+        {
+        a
+        ,
+        c
+        }
+        ,
+        …
+        ,
+        {
+        a
+        ,
+        b
+        ,
+        c
+        ,
+        d
+        ,
+        e
+        }
+        ,
+        …
+        ,
+        U
+        
+          
+            }
+          
+        
+      
+    
+    {\displaystyle {\mathcal {P}}(U)={\Big \{}\{\},\{a\},\{b\},\dots ,\{a,b\},\{a,c\},\dots ,\{a,b,c,d,e\},\dots ,U{\Big \}}}
+  
+
+El conjunto vacio es el que no tiene elementos y se representa:
+
+  
+    
+      
+        {
+        }
+        
+        ≡
+        
+        ∅
+        
+        ≡
+        
+        ∅
+      
+    
+    {\displaystyle \{\}\quad \equiv \quad \emptyset \quad \equiv \quad \varnothing }
+  
+
+Podemos definir:
+
+  
+    
+      
+        
+          
+            B
+          
+        
+        =
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle {\mathfrak {B}}={\mathcal {P}}(U)}
+  
+
+Y como es obvio:
+
+  
+    
+      
+        ∅
+        =
+        ∅
+      
+    
+    {\displaystyle \varnothing =\varnothing }
+  
+
+  
+    
+      
+        U
+        =
+        U
+        
+      
+    
+    {\displaystyle U=U\;}
+  
+
+Cardinalidad de un conjunto.
+Dado un conjunto 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+, su cardinalidad el número de elementos que tiene, que notaremos como: 
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle {\mathcal {C}}(U)}
+  
+.
+Siendo 
+  
+    
+      
+        n
+        
+      
+    
+    {\displaystyle n\,}
+  
+ la cardinalidad de un conjunto  
+  
+    
+      
+        U
+        
+      
+    
+    {\displaystyle U\,}
+  
+:
+
+  
+    
+      
+        n
+        =
+        
+          
+            C
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle n={\mathcal {C}}(U)}
+  
+
+y siendo el conjunto de todos los posibles subconjuntos de 
+  
+    
+      
+        U
+        
+      
+    
+    {\displaystyle U\,}
+  
+, el conjunto potencia de 
+  
+    
+      
+        U
+        
+      
+    
+    {\displaystyle U\,}
+  
+: 
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+      
+    
+    {\displaystyle {\mathcal {P}}(U)}
+  
+, la cardinalidad del conjunto potencia será:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        )
+        =
+        
+          2
+          
+            
+              
+                P
+              
+            
+            (
+            U
+            )
+          
+        
+        =
+        
+          2
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\mathcal {C}}({\mathcal {P}}(U))=2^{{\mathcal {P}}(U)}=2^{n}}
+  
+
+Por ejemplo consideremos el conjunto vacío: 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \varnothing }
+  
+, la cardinalidad del conjunto vacío es:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        ∅
+        )
+        =
+        0
+      
+    
+    {\displaystyle {\mathcal {C}}(\varnothing )=0}
+  
+
+la cardinalidad del conjunto vacío es cero, dado que no tiene ningún elemento, la cardinalidad del conjunto de las partes del conjunto vacío es:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        
+          
+            P
+          
+        
+        (
+        ∅
+        )
+        )
+        =
+        
+          2
+          
+            
+              
+                P
+              
+            
+            (
+            ∅
+            )
+          
+        
+        =
+        
+          2
+          
+            0
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\mathcal {C}}({\mathcal {P}}(\varnothing ))=2^{{\mathcal {P}}(\varnothing )}=2^{0}=1}
+  
+
+El conjunto de las partes del conjunto vacío tiene un elemento, el propio conjunto vacío:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        ∅
+        )
+        =
+        {
+        ∅
+        }
+      
+    
+    {\displaystyle {\mathcal {P}}(\varnothing )=\{\varnothing \}}
+  
+
+El conjunto vacío tiene un posible subconjunto, el conjunto vacío, y además es el único posible subconjunto que puede tener.
+Si consideramos un conjunto de un solo elemento:
+
+  
+    
+      
+        U
+        =
+        {
+        a
+        }
+      
+    
+    {\displaystyle U=\{a\}}
+  
+
+la cardinalidad de un conjunto que tiene un único elemento es:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        U
+        )
+        =
+        1
+      
+    
+    {\displaystyle {\mathcal {C}}(U)=1}
+  
+
+La cardinalidad de las partes del conjunto será:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        )
+        =
+        
+          2
+          
+            1
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle {\mathcal {C}}({\mathcal {P}}(U))=2^{1}=2}
+  
+
+El conjunto de las partes de 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ es:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        =
+        
+          
+            P
+          
+        
+        (
+        {
+        a
+        }
+        )
+        =
+        {
+        {
+        }
+        ,
+        {
+        a
+        }
+        }
+        ≡
+        {
+        ∅
+        ,
+        U
+        }
+      
+    
+    {\displaystyle {\mathcal {P}}(U)={\mathcal {P}}(\{a\})=\{\{\},\{a\}\}\equiv \{\varnothing ,U\}}
+  
+
+Si el conjunto tiene dos elemento:
+
+  
+    
+      
+        U
+        =
+        {
+        a
+        ,
+        b
+        }
+      
+    
+    {\displaystyle U=\{a,b\}}
+  
+
+la cardinalidad de un conjunto que tiene dos elementos es:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        U
+        )
+        =
+        
+          
+            C
+          
+        
+        (
+        {
+        a
+        ,
+        b
+        }
+        )
+        =
+        2
+      
+    
+    {\displaystyle {\mathcal {C}}(U)={\mathcal {C}}(\{a,b\})=2}
+  
+
+La cardinalidad de las partes del conjunto será:
+
+  
+    
+      
+        
+          
+            C
+          
+        
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        )
+        =
+        
+          2
+          
+            2
+          
+        
+        =
+        4
+      
+    
+    {\displaystyle {\mathcal {C}}({\mathcal {P}}(U))=2^{2}=4}
+  
+
+El conjunto de las partes de 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ es:
+
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        =
+        
+          
+            P
+          
+        
+        (
+        {
+        a
+        ,
+        b
+        }
+        )
+        =
+        {
+        {
+        }
+        ,
+        {
+        a
+        }
+        ,
+        {
+        b
+        }
+        ,
+        {
+        a
+        ,
+        b
+        }
+        }
+        ≡
+        {
+        ∅
+        ,
+        {
+        a
+        }
+        ,
+        {
+        b
+        }
+        ,
+        U
+        }
+      
+    
+    {\displaystyle {\mathcal {P}}(U)={\mathcal {P}}(\{a,b\})=\{\{\},\{a\},\{b\},\{a,b\}\}\equiv \{\varnothing ,\{a\},\{b\},U\}}
+  
+
+Para conjuntos de más elementos se aplica el mismo criterio.
+
+La operación unaria interna, que llamaremos complemento:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+
+                  
+                  
+                    C
+                  
+                
+                :
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+              
+                →
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+            
+            
+              
+              
+                A
+              
+              
+                →
+              
+              
+                B
+                =
+                
+                  A
+                  
+                    C
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}{}^{C}:&{\mathcal {P}}(U)&\to &{\mathcal {P}}(U)\\&A&\to &B=A^{C}\end{array}}}
+  
+
+En esta operación definimos una aplicación que, a cada elemento A de P(U), le asigna un B de P(U).
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        :
+        
+        ∃
+        !
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        
+          /
+        
+        
+        B
+        =
+        
+          A
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U)\,:\quad \exists !B\in {\mathcal {P}}(U)\;/\quad B=A^{C}}
+  
+
+Para todo elemento A en P(U), se cumple que existe un único B en P(U), tal que B es el complemento de A.
+Definiendo el complemento de un conjunto así:
+
+  
+    
+      
+        B
+        =
+        
+          A
+          
+            C
+          
+        
+        ⟶
+        
+        ∀
+        x
+        ∈
+        B
+        :
+        
+        x
+        ∈
+        U
+        
+        ∧
+        
+        x
+        ∉
+        A
+      
+    
+    {\displaystyle B=A^{C}\longrightarrow \quad \forall x\in B:\quad x\in U\;\land \;x\notin A}
+  
+
+B es el complemento de A, si se cumple que para todo x que pertenezca a B, x pertenece a U y x no pertenece a A.
+
+La primera operación binaria la llamaremos unión:
+
+  
+    
+      
+        
+          
+            
+              
+                ∪
+                :
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+                ×
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+              
+                →
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+            
+            
+              
+              
+                (
+                A
+                ,
+                B
+                )
+              
+              
+                →
+              
+              
+                C
+                =
+                A
+                ∪
+                B
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\cup :&{\mathcal {P}}(U)\times {\mathcal {P}}(U)&\to &{\mathcal {P}}(U)\\&(A,B)&\to &C=A\cup B\end{array}}}
+  
+
+Con esta operación binaria interna definimos una aplicación que, a cada par ordenado (A, B) de P(U) por P(U), le asigna un C de P(U).
+
+  
+    
+      
+        ∀
+        (
+        A
+        ,
+        B
+        )
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ×
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        :
+        
+        ∃
+        !
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        
+          /
+        
+        
+        C
+        =
+        A
+        ∪
+        B
+      
+    
+    {\displaystyle \forall (A,B)\in {\mathcal {P}}(U)\times {\mathcal {P}}(U)\,:\quad \exists !C\in {\mathcal {P}}(U)\;/\quad C=A\cup B}
+  
+
+Para todo par ordenado (A,B) en P(U) por P(U), se cumple que existe un único C en P(U), tal que C es la unión A y B.
+Definiendo la unión de dos conjuntos como:
+
+  
+    
+      
+        C
+        =
+        A
+        ∪
+        B
+        ⟶
+        
+        ∀
+        x
+        ∈
+        C
+        :
+        
+        x
+        ∈
+        A
+        
+        ∨
+        
+        x
+        ∈
+        B
+      
+    
+    {\displaystyle C=A\cup B\longrightarrow \quad \forall x\in C:\quad x\in A\;\lor \;x\in B}
+  
+
+El conjunto C es la unión de A y B, si para todo elemento x de C, se cumple que x es elemento de A o de B
+
+La segunda operación binaria la llamaremos intersección:
+
+  
+    
+      
+        
+          
+            
+              
+                ∩
+                :
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+                ×
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+              
+                →
+              
+              
+                
+                  
+                    P
+                  
+                
+                (
+                U
+                )
+              
+            
+            
+              
+              
+                (
+                A
+                ,
+                B
+                )
+              
+              
+                →
+              
+              
+                C
+                =
+                A
+                ∩
+                B
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\cap :&{\mathcal {P}}(U)\times {\mathcal {P}}(U)&\to &{\mathcal {P}}(U)\\&(A,B)&\to &C=A\cap B\end{array}}}
+  
+
+Con lo que definimos una aplicación que, a cada par ordenado (A, B) de P(U) por P(U), le asigna un C de P(U).
+
+  
+    
+      
+        ∀
+        (
+        A
+        ,
+        B
+        )
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ×
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        :
+        
+        ∃
+        !
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        
+        
+          /
+        
+        
+        C
+        =
+        A
+        ∩
+        B
+      
+    
+    {\displaystyle \forall (A,B)\in {\mathcal {P}}(U)\times {\mathcal {P}}(U)\,:\quad \exists !C\in {\mathcal {P}}(U)\;/\quad C=A\cap B}
+  
+
+Para todo par ordenado (A,B) en P(U) por P(U), se cumple que existe un único C en P(U), tal que C es la intersección A y B.
+Definiendo la intersección de dos conjuntos como:
+
+  
+    
+      
+        C
+        =
+        A
+        ∩
+        B
+        ⟶
+        
+        ∀
+        x
+        ∈
+        C
+        :
+        
+        x
+        ∈
+        A
+        
+        ∧
+        
+        x
+        ∈
+        B
+      
+    
+    {\displaystyle C=A\cap B\longrightarrow \quad \forall x\in C:\quad x\in A\;\land \;x\in B}
+  
+
+El conjunto C es la intersección de A y B, si para todo elemento x de C, se cumple que x es elemento de A y de B.
+
+
+==== Axiomas ====
+Con lo que podemos plantear: 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ,
+        
+          
+
+          
+          
+            C
+          
+        
+        ,
+        ∪
+        ,
+        ∩
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}}(U),{}^{C},\cup ,\cap )}
+  
+, para un 
+  
+    
+      
+        U
+        
+      
+    
+    {\displaystyle U\,}
+  
+ conocido, como álgebra de Boole si cumple las siguientes axiomas:
+
+1a: La ley asociativa de la unión:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ,
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        (
+        A
+        ∪
+        B
+        )
+        ∪
+        C
+        =
+        A
+        ∪
+        (
+        B
+        ∪
+        C
+        )
+      
+    
+    {\displaystyle \forall A,B,C\in {\mathcal {P}}(U):\;(A\cup B)\cup C=A\cup (B\cup C)}
+  
+
+1b: La ley asociativa de la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ,
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        (
+        A
+        ∩
+        B
+        )
+        ∩
+        C
+        =
+        A
+        ∩
+        (
+        B
+        ∩
+        C
+        )
+      
+    
+    {\displaystyle \forall A,B,C\in {\mathcal {P}}(U):\;(A\cap B)\cap C=A\cap (B\cap C)}
+  
+
+2a: Existencia del elemento neutro para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        ∅
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cup \varnothing =A}
+  
+
+2b: Existencia del elemento neutro para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        U
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cap U=A}
+  
+
+3a: La ley conmutativa de la unión:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        B
+        =
+        B
+        ∪
+        A
+      
+    
+    {\displaystyle \forall A,B\in {\mathcal {P}}(U):\;A\cup B=B\cup A}
+  
+
+3b: La ley conmutativa de la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        B
+        =
+        B
+        ∩
+        A
+      
+    
+    {\displaystyle \forall A,B\in {\mathcal {P}}(U):\;A\cap B=B\cap A}
+  
+
+4a: Ley distributiva de la unión respecto de la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ,
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        (
+        B
+        ∩
+        C
+        )
+        =
+        (
+        A
+        ∪
+        B
+        )
+        ∩
+        (
+        A
+        ∪
+        C
+        )
+      
+    
+    {\displaystyle \forall A,B,C\in {\mathcal {P}}(U):\;A\cup (B\cap C)=(A\cup B)\cap (A\cup C)}
+  
+
+4b: Ley distributiva de la intersección respecto a la unión:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ,
+        C
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        (
+        B
+        ∪
+        C
+        )
+        =
+        (
+        A
+        ∩
+        B
+        )
+        ∪
+        (
+        A
+        ∩
+        C
+        )
+      
+    
+    {\displaystyle \forall A,B,C\in {\mathcal {P}}(U):\;A\cap (B\cup C)=(A\cap B)\cup (A\cap C)}
+  
+
+5a: Existe elemento complementario para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ;
+        
+        ∃
+        
+          A
+          
+            C
+          
+        
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        
+          A
+          
+            C
+          
+        
+        =
+        U
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U);\;\exists A^{C}\in {\mathcal {P}}(U):\;A\cup A^{C}=U}
+  
+
+5b: Existe elemento complementario para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ;
+        
+        ∃
+        
+          A
+          
+            C
+          
+        
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        
+          A
+          
+            C
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U);\;\exists A^{C}\in {\mathcal {P}}(U):\;A\cap A^{C}=\varnothing }
+  
+
+Concluyendo que 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ,
+        
+          
+
+          
+          
+            C
+          
+        
+        ,
+        ∪
+        ,
+        ∩
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}}(U),{}^{C},\cup ,\cap )}
+  
+ es un álgebra de boole.
+
+
+==== Teoremas fundamentales ====
+Partiendo de estos axiomas se puede demostrar los siguientes teoremas:
+
+6a: Ley de idempotencia para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        A
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cup A=A}
+  
+
+6b: Ley de idempotencia para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        A
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cap A=A}
+  
+
+7a: Ley de dominación para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        U
+        =
+        U
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cup U=U}
+  
+
+7b: Ley de dominación para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        ∅
+        =
+        ∅
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cap \varnothing =\varnothing }
+  
+
+8a: Ley de identidad para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        ∅
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cup \varnothing =A}
+  
+
+8b: Ley de identidad para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        U
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cap U=A}
+  
+
+9a: ley de absorción para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        (
+        A
+        ∩
+        B
+        )
+        =
+        A
+      
+    
+    {\displaystyle \forall A,B\in {\mathcal {P}}(U):\;A\cup (A\cap B)=A}
+  
+
+9a: ley de absorción para la intersección:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        (
+        A
+        ∪
+        B
+        )
+        =
+        A
+      
+    
+    {\displaystyle \forall A,B\in {\mathcal {P}}(U):\;A\cap (A\cup B)=A}
+  
+
+10a: Ley de De Morgan para la unión:
+
+  
+    
+      
+        ∀
+        A
+        ,
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        B
+        =
+        
+          
+            (
+            
+              
+                A
+              
+              
+                C
+              
+            
+            ∩
+            
+              
+                B
+              
+              
+                C
+              
+            
+            )
+          
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \forall A,B\in {\mathcal {P}}(U):\;A\cup B={({A}^{C}\cap {B}^{C})}^{C}}
+  
+
+10b: Ley de De Morgan para la inersección:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        B
+        =
+        
+          
+            (
+            
+              
+                A
+              
+              
+                C
+              
+            
+            ∪
+            
+              
+                B
+              
+              
+                C
+              
+            
+            )
+          
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \forall a,b\in {\mathcal {P}}(U):\;A\cap B={({A}^{C}\cup {B}^{C})}^{C}}
+  
+
+11: Ley de involución:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        
+          
+            
+              
+                A
+              
+              
+                C
+              
+            
+          
+          
+            C
+          
+        
+        =
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;{{A}^{C}}^{C}=A}
+  
+
+12: Ley del complemento:
+
+  
+    
+      
+        
+          
+            U
+          
+          
+            C
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle {U}^{C}=\varnothing }
+  
+
+  
+    
+      
+        
+          
+            ∅
+          
+          
+            C
+          
+        
+        =
+        U
+      
+    
+    {\displaystyle {\varnothing }^{C}=U}
+  
+
+13: Principio del tercero excluido:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∪
+        
+          A
+          
+            C
+          
+        
+        =
+        U
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cup A^{C}=U}
+  
+
+14: Principio de no contradicción:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        A
+        ∩
+        
+          A
+          
+            C
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;A\cap A^{C}=\varnothing }
+  
+
+
+==== Orden en el álgebra de Boole ====
+Dado 
+  
+    
+      
+        (
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        ,
+        
+          
+
+          
+          
+            C
+          
+        
+        ,
+        ∪
+        ,
+        ∩
+        )
+      
+    
+    {\displaystyle ({\mathcal {P}}(U),{}^{C},\cup ,\cap )}
+  
+ álgebra de Boole, podemos comprobar:
+
+  
+    
+      
+        A
+        ∪
+        B
+        =
+        B
+      
+    
+    {\displaystyle A\cup B=B}
+  
+
+  
+    
+      
+        A
+        ∩
+        B
+        =
+        A
+      
+    
+    {\displaystyle A\cap B=A}
+  
+
+  
+    
+      
+        
+          
+            A
+          
+          
+            C
+          
+        
+        ∪
+        B
+        =
+        U
+      
+    
+    {\displaystyle {A}^{C}\cup B=U}
+  
+
+  
+    
+      
+        A
+        ∩
+        
+          
+            B
+          
+          
+            C
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle A\cap {B}^{C}=\varnothing }
+  
+
+Para los conjuntos A y B que cumplen estas propiedades, podemos decir que A antecede a B, que en el caso de conjuntos se diría A es igual o un subconjunto de B y lo denotamos:
+
+  
+    
+      
+        A
+        ⊆
+        B
+      
+    
+    {\displaystyle A\subseteq B}
+  
+
+Entendiéndose que A es igual o un subconjunto de B cuando:
+
+  
+    
+      
+        A
+        ⊆
+        B
+        ⟶
+        
+        ∀
+        x
+        ∈
+        A
+        :
+        
+        x
+        ∈
+        B
+      
+    
+    {\displaystyle A\subseteq B\longrightarrow \quad \forall x\in A:\;x\in B}
+  
+
+El conjunto A es igual o un subconjunto de B, si para todo elemento x que pertenezca a A, x pertenece a B.
+También se puede comprobar:
+
+  
+    
+      
+        ∀
+        B
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        
+          
+            
+              
+                
+                  B
+                  ∪
+                  U
+                  =
+                  U
+                
+              
+              
+                
+                  B
+                  ∩
+                  U
+                  =
+                  B
+                
+              
+              
+                
+                  
+                    
+                      B
+                    
+                    
+                      C
+                    
+                  
+                  ∪
+                  U
+                  =
+                  U
+                
+              
+              
+                
+                  B
+                  ∩
+                  
+                    
+                      U
+                    
+                    
+                      C
+                    
+                  
+                  =
+                  ∅
+                
+              
+            
+          
+        
+        ⟶
+        
+        B
+        ⊆
+        U
+      
+    
+    {\displaystyle \forall B\in {\mathcal {P}}(U):\;{\begin{array}{|l}B\cup U=U\\B\cap U=B\\{B}^{C}\cup U=U\\B\cap {U}^{C}=\varnothing \end{array}}\longrightarrow \quad B\subseteq U}
+  
+
+Para todo B de las partes de U, si se cumple que: la unión de B y U es U, la intersección de B y U es B, la unión del complemento de B y U es U, la intersección de B y el complemento de U es el conjunto vacío, entonces B es igual o un subconjunto de U.
+Esta conclusión forma parte de la definición de las partes de U, pero se puede llegar a ella por el cumplimiento de una de las cuatro condiciones expuestas, como ya se mencionó, las cuatro condiciones son equivalentes y el cumplimiento de una de ellas implica el cumplimiento de las demás.
+Aplicando el mismo razonamiento podemos ver:
+
+  
+    
+      
+        ∀
+        A
+        ∈
+        
+          
+            P
+          
+        
+        (
+        U
+        )
+        :
+        
+        
+          
+            
+              
+                
+                  ∅
+                  ∪
+                  A
+                  =
+                  A
+                
+              
+              
+                
+                  ∅
+                  ∩
+                  A
+                  =
+                  ∅
+                
+              
+              
+                
+                  
+                    
+                      ∅
+                    
+                    
+                      C
+                    
+                  
+                  ∪
+                  A
+                  =
+                  U
+                
+              
+              
+                
+                  ∅
+                  ∩
+                  
+                    
+                      A
+                    
+                    
+                      C
+                    
+                  
+                  =
+                  ∅
+                
+              
+            
+          
+        
+        ⟶
+        
+        ∅
+        ⊆
+        A
+      
+    
+    {\displaystyle \forall A\in {\mathcal {P}}(U):\;{\begin{array}{|l}\varnothing \cup A=A\\\varnothing \cap A=\varnothing \\{\varnothing }^{C}\cup A=U\\\varnothing \cap {A}^{C}=\varnothing \end{array}}\longrightarrow \quad \varnothing \subseteq A}
+  
+
+Siendo A un conjunto de las partes de U, llegando a la conclusión de que el conjunto vacío es igual o un subconjunto de A.
+
+
+=== Lógica proposicional ===
+
+Una proposición, o un predicado, es un valor de verdad que puede expresarse de forma verbal o con expresiones o relaciones matemática o lógica, por ejemplo:
+
+'Hoy es miércoles.'
+'El edificio es alto.'
+'El perro está ladrando.'
+Son proposiciones expresadas verbalmente, y también lo son:
+
+'El número 2 es par'
+'El número 7 es divisor de 100'
+Dado que cada una de ellas puede ser verdadera o falsa, las proposiciones suelen designarse con letra:
+
+p= 'Llueve'
+q= 'Llueve mucho'
+r= 'Llevo paraguas'
+s= 'La calle está mojada'
+Las afirmaciones verdadero y falso también son proposiciones, designaremos con: 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ al conjunto de proposiciones, a fin de ver que la lógica de proposiciones es un álgebra de Boole, además consideraremos:
+
+  
+    
+      
+        ∅
+        ⟶
+        
+        ⊥
+        =
+        F
+        =
+        f
+        a
+        l
+        s
+        o
+      
+    
+    {\displaystyle \varnothing \longrightarrow \quad \bot =F=falso}
+  
+
+  
+    
+      
+        U
+        ⟶
+        
+        ⊤
+        =
+        V
+        =
+        v
+        e
+        r
+        d
+        a
+        d
+        e
+        r
+        o
+      
+    
+    {\displaystyle U\longrightarrow \quad \top =V=verdadero}
+  
+
+La operación unaria interna, que llamaremos negación:
+
+  
+    
+      
+        
+          
+            
+              
+                ¬
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                →
+              
+              
+                b
+                =
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\lnot :&{\mathfrak {B}}&\to &{\mathfrak {B}}\\&a&\to &b=\lnot a\end{array}}}
+  
+
+La operación unaria interna negación, definimos una aplicación que a cada proposición a, le asigna otra poposición b.
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        b
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        b
+        =
+        ¬
+        
+          a
+        
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}\,:\quad \exists !b\in {\mathfrak {B}}\;/\quad b=\lnot {a}}
+  
+
+Para toda proposición a, se cumple que existe una única proposición b, tal que b es la negación de a.
+
+La primera operación binaria interna, que llamaremos disyunción:
+
+  
+    
+      
+        
+          
+            
+              
+                ∨
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ∨
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\lor :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\lor b\end{array}}}
+  
+
+Con la operación disyunción, definimos una aplicación que a cada par ordenado (a, b) de B por B, le asigna un c de B.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        ∨
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a\lor b}
+  
+
+Para todo par ordenado (a,b) en B por B, se cumple que existe un único c en B, tal que c es el resultado de la disyunción de a y b.
+
+La segunda operación binaria interna, que llamaremos conjunción:
+
+  
+    
+      
+        
+          
+            
+              
+                ∧
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ∧
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\land :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\land b\end{array}}}
+  
+
+Con la operación conjunción definimos una aplicación que, a cada par ordenado (a, b) de B por B, le asigna un c de B.
+
+  
+    
+      
+        ∀
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            B
+          
+        
+        ×
+        
+          
+            B
+          
+        
+        
+        :
+        
+        ∃
+        !
+        c
+        ∈
+        
+          
+            B
+          
+        
+        
+        
+          /
+        
+        
+        c
+        =
+        a
+        ∧
+        b
+      
+    
+    {\displaystyle \forall (a,b)\in {\mathfrak {B}}\times {\mathfrak {B}}\,:\quad \exists !c\in {\mathfrak {B}}\;/\quad c=a\land b}
+  
+
+Para todo par ordenado (a, b) en B por B, se cumple que existe un único c en B, tal que c es el resultado de la conjunción de a y b.
+
+
+==== Axiomas ====
+Así 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ¬
+        
+
+        
+        ,
+        ∨
+        ,
+        ∧
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\lnot {},\lor ,\land )}
+  
+ es un álgebra de Boole al cumple los siguientes axiomas:
+
+1a: La ley asociativa de la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        (
+        a
+        ∨
+        b
+        )
+        ∨
+        c
+        =
+        a
+        ∨
+        (
+        b
+        ∨
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in {\mathfrak {B}}:\;(a\lor b)\lor c=a\lor (b\lor c)}
+  
+
+1b: La ley asociativa de la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        (
+        a
+        ∧
+        b
+        )
+        ∧
+        c
+        =
+        a
+        ∧
+        (
+        b
+        ∧
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in {\mathfrak {B}}:\;(a\land b)\land c=a\land (b\land c)}
+  
+
+2a: Existencia del elemento neutro para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        F
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\lor F=a}
+  
+
+2b: Existencia del elemento neutro para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        V
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\land V=a}
+  
+
+3a: La ley conmutativa de la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        b
+        =
+        b
+        ∨
+        a
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\lor b=b\lor a}
+  
+
+3b: La ley conmutativa de la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        b
+        =
+        b
+        ∧
+        a
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\land b=b\land a}
+  
+
+4a: Ley distributiva de la disyunción respecto a la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        (
+        b
+        ∧
+        c
+        )
+        =
+        (
+        a
+        ∨
+        b
+        )
+        ∧
+        (
+        a
+        ∨
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in {\mathfrak {B}}:\;a\lor (b\land c)=(a\lor b)\land (a\lor c)}
+  
+
+4b: Ley distributiva de la conjunción respecto a la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        (
+        b
+        ∨
+        c
+        )
+        =
+        (
+        a
+        ∧
+        b
+        )
+        ∨
+        (
+        a
+        ∧
+        c
+        )
+      
+    
+    {\displaystyle \forall a,b,c\in {\mathfrak {B}}:\;a\land (b\lor c)=(a\land b)\lor (a\land c)}
+  
+
+5a: Existe elemento complementario para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        ;
+        
+        ∃
+        ¬
+        
+          a
+        
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        ¬
+        
+          a
+        
+        =
+        V
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}};\;\exists \lnot {a}\in {\mathfrak {B}}:\;a\lor \lnot {a}=V}
+  
+
+5b: Existe elemento complementario para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        ;
+        
+        ∃
+        ¬
+        
+          a
+        
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        ¬
+        
+          a
+        
+        =
+        F
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}};\;\exists \lnot {a}\in {\mathfrak {B}}:\;a\land \lnot {a}=F}
+  
+
+Luego 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ¬
+        
+
+        
+        ,
+        ∨
+        ,
+        ∧
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\lnot {},\lor ,\land )}
+  
+ es álgebra de boole.
+
+
+==== Teoremas fundamentales ====
+Partiendo de estos axiomas se puede demostrar los siguientes teoremas:
+
+6a: Ley de idempotencia para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        a
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\lor a=a}
+  
+
+6b: Ley de idempotencia para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        a
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\land a=a}
+  
+
+7a: Ley de dominación para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        V
+        =
+        V
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\lor V=V}
+  
+
+7b: Ley de dominación para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        F
+        =
+        F
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\land F=F}
+  
+
+8a: Ley de identidad para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        F
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\lor F=a}
+  
+
+8b: Ley de identidad para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        V
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\land V=a}
+  
+
+9a:  Ley de absorción para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        (
+        a
+        ∧
+        b
+        )
+        =
+        a
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\lor (a\land b)=a}
+  
+
+9b:  Ley de absorción para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        (
+        a
+        ∨
+        b
+        )
+        =
+        a
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\land (a\lor b)=a}
+  
+
+10a: Ley de De Morgan para la disyunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        b
+        =
+        ¬
+        
+          (
+          ¬
+          
+            a
+          
+          ∧
+          ¬
+          
+            b
+          
+          )
+        
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\lor b=\lnot {(\lnot {a}\land \lnot {b})}}
+  
+
+10b: Ley de De Morgan para la conjunción:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        b
+        =
+        ¬
+        (
+        
+          ¬
+          
+            a
+          
+          ∨
+          ¬
+          
+            b
+          
+          )
+        
+      
+    
+    {\displaystyle \forall a,b\in {\mathfrak {B}}:\;a\land b=\lnot ({\lnot {a}\lor \lnot {b})}}
+  
+
+11: Ley de involución:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        ¬
+        ¬
+        a
+        =
+        a
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;\lnot \lnot a=a}
+  
+
+12: Ley de complemento:
+
+  
+    
+      
+        ¬
+        V
+        =
+        F
+      
+    
+    {\displaystyle \lnot V=F}
+  
+
+  
+    
+      
+        ¬
+        F
+        =
+        V
+      
+    
+    {\displaystyle \lnot F=V}
+  
+
+13: Principio del tercero excluido:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∨
+        ¬
+        a
+        =
+        V
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\lor \lnot a=V}
+  
+
+14: Principio de no contradicción:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        
+          
+            B
+          
+        
+        :
+        
+        a
+        ∧
+        ¬
+        a
+        =
+        F
+      
+    
+    {\displaystyle \forall a\in {\mathfrak {B}}:\;a\land \lnot a=F}
+  
+
+
+==== Orden en el álgebra de Boole ====
+Sabiendo que 
+  
+    
+      
+        (
+        
+          
+            B
+          
+        
+        ,
+        ¬
+        
+
+        
+        ,
+        ∨
+        ,
+        ∧
+        )
+      
+    
+    {\displaystyle ({\mathfrak {B}},\lnot {},\lor ,\land )}
+  
+ es álgebra de Boole, se puede comprobar que:
+
+  
+    
+      
+        a
+        ∨
+        b
+        =
+        b
+      
+    
+    {\displaystyle a\lor b=b}
+  
+
+  
+    
+      
+        a
+        ∧
+        b
+        =
+        a
+      
+    
+    {\displaystyle a\land b=a}
+  
+
+  
+    
+      
+        ¬
+        a
+        ∨
+        b
+        =
+        V
+      
+    
+    {\displaystyle \lnot a\lor b=V}
+  
+
+  
+    
+      
+        a
+        ∧
+        ¬
+        b
+        =
+        F
+      
+    
+    {\displaystyle a\land \lnot b=F}
+  
+
+Para las proposiciones: a, b que cumplen alguna de estas condiciones se puede afirmar que a antecede a b. Que en el caso de proposiciones o predicados se dice que a es tanto o más fuerte que b, o que b es más débil que a, y lo representamos:
+
+  
+    
+      
+        a
+        ≼
+        b
+      
+    
+    {\displaystyle a\preccurlyeq b}
+  
+
+Así por ejemplo dadas las proposiciones:
+
+a= Llueve mucho
+b= Llueve
+podemos ver:
+
+  
+    
+      
+        a
+        ∨
+        b
+        =
+        b
+      
+    
+    {\displaystyle a\lor b=b}
+  
+
+Si: llueve mucho o llueve entonces llueve.
+Si se da la circunstancia de cualesquiera de dos, que llueve mucho o llueve, claramente llueve en cualquier caso.
+
+  
+    
+      
+        a
+        ∧
+        b
+        =
+        a
+      
+    
+    {\displaystyle a\land b=a}
+  
+
+Si: llueve mucho y llueve entonces llueve mucho.
+Si afirmamos que llueve mucho y que llueve, y se cumplen las dos circunstancias entonces es que llueve mucho.
+
+  
+    
+      
+        ¬
+        a
+        ∨
+        b
+        =
+        V
+      
+    
+    {\displaystyle \lnot a\lor b=V}
+  
+
+Si: no llueve mucho o llueve es verdadero.
+No llueve mucho indica que puede que llueva poco o que no llueva, si no llueve mucho o llueve abarca todas las posibilidades, desde tiempo seco a muy lluvioso, luego la afirmación es verdadera en todo caso.
+
+  
+    
+      
+        a
+        ∧
+        ¬
+        b
+        =
+        F
+      
+    
+    {\displaystyle a\land \lnot b=F}
+  
+
+Si: llueve mucho y no llueve es falso.
+Si afirmamos que llueve mucho y simultáneamente que no llueve, la afirmación es claramente falsa.
+La afirmación más restrictiva es la más fuerte y la menos restrictiva la más débil, en este caso:
+
+  
+    
+      
+        l
+        l
+        u
+        e
+        v
+        e
+        
+        m
+        u
+        c
+        h
+        o
+        ≼
+        l
+        l
+        u
+        e
+        v
+        e
+      
+    
+    {\displaystyle llueve\;mucho\preccurlyeq llueve}
+  
+
+La proposición llueve mucho es tanto o más fuerte que llueve, la afirmación llueve mucho es un caso particular o el mismo caso de llueve.
+
+
+== Operaciones en álgebra de Boole ==
+
+El álgebra de Boole se basa en un conjunto en el que se han definidos tres operaciones internas: una unaria y dos binarias, como ya hemos visto, siendo cómoda esta definición. Estrictamente hablando solo son necesarias dos, la unaria y una de las binarias, así, por ejemplo, en la lógica binaria con la negación y el producto podemos definir la suma.
+
+Con la ley de De Morgan:
+
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        {
+        0
+        ,
+        1
+        }
+        :
+        
+        
+          
+            
+              a
+              +
+              b
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              a
+              ¯
+            
+          
+        
+        ⋅
+        
+          
+            
+              b
+              ¯
+            
+          
+        
+        ⟶
+        
+        a
+        +
+        b
+        =
+        
+          
+            
+              
+                
+                  
+                    a
+                    ¯
+                  
+                
+              
+              ⋅
+              
+                
+                  
+                    b
+                    ¯
+                  
+                
+              
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle \forall a,b\in \{0,1\}:\;{\overline {a+b}}={\bar {a}}\cdot {\bar {b}}\longrightarrow \quad a+b={\overline {{\bar {a}}\cdot {\bar {b}}}}}
+  
+
+Esta expresión resulta más compleja, pero partiendo de la negación y el producto binarios se define la suma binaria.
+En la imagen de la derecha podemos ver un circuito en paralelo de dos pulsadores a y b, que corresponde a la suma binaria de a y b, y su equivalente en un circuito en serie de a y b, los dos dan como resultado la misma tabla de verdad, y por tanto son equivalentes, lo artificioso del circuito serie para obtener el mismo resultado que en un circuito paralelo deja ver lo conveniente de considerar esa función, la posibilidad de obtener la suma de dos variables binarias mediante la negación y el producto señalan que, de forma primaria, el álgebra de Boole se basa solo en dos operaciones, y que cualquier expresión en la que intervenga la suma puede transformarse en otra equivalente en la que solo intervienen la negación y el producto.
+En el caso de la teoría de conjuntos con el complemento y la intersección podemos definir la unión:
+
+  
+    
+      
+        
+          
+            (
+            A
+            ∪
+            B
+            )
+          
+          
+            C
+          
+        
+        =
+        
+          
+            A
+          
+          
+            C
+          
+        
+        ∩
+        
+          
+            B
+          
+          
+            C
+          
+        
+        ⟶
+        
+        A
+        ∪
+        B
+        =
+        
+          
+            (
+            
+              
+                A
+              
+              
+                C
+              
+            
+            ∩
+            
+              
+                B
+              
+              
+                C
+              
+            
+            )
+          
+          
+            C
+          
+        
+      
+    
+    {\displaystyle {(A\cup B)}^{C}={A}^{C}\cap {B}^{C}\longrightarrow \quad A\cup B={({A}^{C}\cap {B}^{C})}^{C}}
+  
+
+De una forma similar al álgebra binaria, o cualquier otra álgebra de Boole, La definición del álgebra con solo dos operaciones complica las expresiones, pero permite determinar ciertas relaciones muy útiles, así como otras operaciones distintas.
+En el álgebra de Boole definido en un conjunto 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ las operaciones son internas, dado que parte de elemento de 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, para obtener un resultado en 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+.
+Sin perdida de la generalidad, y dado los distintos formas que puede adoptar el álgebra de Boole consideraremos la lógica proposicional con las proposiciones: a, c, b, etc. Que pueden tomar los valores verdadero: V o falso: F. Y las conectivas lógicas sobre esas proposiciones que dan como resultado otras proposiciones lógicas, cada proposición: a, b, c, etc. Define un conjunto A, B, C, etc. Que podemos representar de forma gráfica en un diagrama de Venn.
+Podemos ver estas conectivas lógicas para: 0, 1 y 2 variables en un diagrama de Hasse:
+
+
+=== Operaciones por el número de argumentos ===
+Si vemos las distintas operaciones por su número de argumentos podemos distinguir:
+
+
+==== Sin argumentos ====
+
+Las operaciones lógicas sin argumentos son:
+
+  
+    
+      
+        
+          
+            
+              
+                ⋅
+              
+              
+                
+                  f
+                  
+                    1
+                  
+                
+              
+              
+                
+                  f
+                  
+                    2
+                  
+                
+              
+            
+            
+              
+                ⋅
+              
+              
+                V
+              
+              
+                F
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{c|cc}\cdot &f_{1}&f_{2}\\\hline \cdot &V&F\\\end{array}}}
+  
+
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊤
+        
+        ≡
+        
+        V
+      
+    
+    {\displaystyle f_{1}()\;\equiv \;\top \;\equiv \;V}
+  
+
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊥
+        
+        ≡
+        
+        F
+      
+    
+    {\displaystyle f_{2}()\;\equiv \;\bot \;\equiv \;F}
+  
+
+
+==== Con un argumento ====
+
+Las operaciones con solo un argumento son:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+              
+              
+                
+                  f
+                  
+                    1
+                  
+                
+              
+              
+                
+                  f
+                  
+                    2
+                  
+                
+              
+              
+                
+                  f
+                  
+                    3
+                  
+                
+              
+              
+                
+                  f
+                  
+                    4
+                  
+                
+              
+            
+            
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{c|cccc}a&f_{1}&f_{2}&f_{3}&f_{4}\\\hline V&V&V&F&F\\F&V&F&V&F\\\end{array}}}
+  
+
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        a
+        )
+        
+        ≡
+        
+        
+          f
+          
+            1
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊤
+        
+        ≡
+        
+        V
+      
+    
+    {\displaystyle f_{1}(a)\;\equiv \;f_{1}()\;\equiv \;\top \;\equiv \;V}
+  
+
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+        (
+        a
+        )
+        =
+        a
+      
+    
+    {\displaystyle f_{2}(a)=a}
+  
+
+  
+    
+      
+        
+          f
+          
+            3
+          
+        
+        (
+        a
+        )
+        =
+        ¬
+        a
+      
+    
+    {\displaystyle f_{3}(a)=\neg a}
+  
+
+  
+    
+      
+        
+          f
+          
+            4
+          
+        
+        (
+        a
+        )
+        
+        ≡
+        
+        
+          f
+          
+            2
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊥
+        
+        ≡
+        
+        F
+      
+    
+    {\displaystyle f_{4}(a)\;\equiv \;f_{2}()\;\equiv \;\bot \;\equiv \;F}
+  
+
+
+==== Con dos argumentos ====
+
+Las operaciones que necesitan dos argumentos son:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+              
+              
+                b
+              
+              
+                
+                  f
+                  
+                    1
+                  
+                
+              
+              
+                
+                  f
+                  
+                    2
+                  
+                
+              
+              
+                
+                  f
+                  
+                    3
+                  
+                
+              
+              
+                
+                  f
+                  
+                    4
+                  
+                
+              
+              
+                
+                  f
+                  
+                    5
+                  
+                
+              
+              
+                
+                  f
+                  
+                    6
+                  
+                
+              
+              
+                
+                  f
+                  
+                    7
+                  
+                
+              
+              
+                
+                  f
+                  
+                    8
+                  
+                
+              
+              
+                
+                  f
+                  
+                    9
+                  
+                
+              
+              
+                
+                  f
+                  
+                    10
+                  
+                
+              
+              
+                
+                  f
+                  
+                    11
+                  
+                
+              
+              
+                
+                  f
+                  
+                    12
+                  
+                
+              
+              
+                
+                  f
+                  
+                    13
+                  
+                
+              
+              
+                
+                  f
+                  
+                    14
+                  
+                
+              
+              
+                
+                  f
+                  
+                    15
+                  
+                
+              
+              
+                
+                  f
+                  
+                    16
+                  
+                
+              
+            
+            
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cc|cccccccccccccccc}a&b&f_{1}&f_{2}&f_{3}&f_{4}&f_{5}&f_{6}&f_{7}&f_{8}&f_{9}&f_{10}&f_{11}&f_{12}&f_{13}&f_{14}&f_{15}&f_{16}\\\hline V&V&V&V&V&V&V&V&V&V&F&F&F&F&F&F&F&F\\V&F&V&V&V&V&F&F&F&F&V&V&V&V&F&F&F&F\\F&V&V&V&F&F&V&V&F&F&V&V&F&F&V&V&F&F\\F&F&V&F&V&F&V&F&V&F&V&F&V&F&V&F&V&F\\\end{array}}}
+  
+
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            1
+          
+        
+        (
+        a
+        )
+        
+        ≡
+        
+        
+          f
+          
+            1
+          
+        
+        (
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            1
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊤
+        
+        ≡
+        
+        V
+      
+    
+    {\displaystyle f_{1}(a,b)\;\equiv \;f_{1}(a)\;\equiv \;f_{1}(b)\;\equiv \;f_{1}()\;\equiv \;\top \;\equiv \;V}
+  
+
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ∨
+        b
+      
+    
+    {\displaystyle f_{2}(a,b)=a\lor b}
+  
+
+  
+    
+      
+        
+          f
+          
+            3
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ←
+        b
+      
+    
+    {\displaystyle f_{3}(a,b)=a\leftarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            4
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            2
+          
+        
+        (
+        a
+        )
+        =
+        a
+      
+    
+    {\displaystyle f_{4}(a,b)\;\equiv \;f_{2}(a)=a}
+  
+
+  
+    
+      
+        
+          f
+          
+            5
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        →
+        b
+      
+    
+    {\displaystyle f_{5}(a,b)=a\to b}
+  
+
+  
+    
+      
+        
+          f
+          
+            6
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            2
+          
+        
+        (
+        b
+        )
+        =
+        b
+      
+    
+    {\displaystyle f_{6}(a,b)\;\equiv \;f_{2}(b)=b}
+  
+
+  
+    
+      
+        
+          f
+          
+            7
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↔
+        b
+      
+    
+    {\displaystyle f_{7}(a,b)=a\leftrightarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            8
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ∧
+        b
+      
+    
+    {\displaystyle f_{8}(a,b)=a\land b}
+  
+
+  
+    
+      
+        
+          f
+          
+            9
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↑
+        b
+      
+    
+    {\displaystyle f_{9}(a,b)=a\uparrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            10
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↮
+        b
+      
+    
+    {\displaystyle f_{10}(a,b)=a\not \leftrightarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            11
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            3
+          
+        
+        (
+        b
+        )
+        =
+        ¬
+        b
+      
+    
+    {\displaystyle f_{11}(a,b)\;\equiv \;f_{3}(b)=\neg b}
+  
+
+  
+    
+      
+        
+          f
+          
+            12
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↛
+        b
+      
+    
+    {\displaystyle f_{12}(a,b)=a\not \rightarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            13
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            3
+          
+        
+        (
+        a
+        )
+        =
+        ¬
+        a
+      
+    
+    {\displaystyle f_{13}(a,b)\;\equiv \;f_{3}(a)=\neg a}
+  
+
+  
+    
+      
+        
+          f
+          
+            14
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↚
+        b
+      
+    
+    {\displaystyle f_{14}(a,b)=a\not \leftarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            15
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        =
+        a
+        ↓
+        b
+      
+    
+    {\displaystyle f_{15}(a,b)=a\downarrow b}
+  
+
+  
+    
+      
+        
+          f
+          
+            16
+          
+        
+        (
+        a
+        ,
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            4
+          
+        
+        (
+        a
+        )
+        
+        ≡
+        
+        
+          f
+          
+            4
+          
+        
+        (
+        b
+        )
+        
+        ≡
+        
+        
+          f
+          
+            2
+          
+        
+        (
+        )
+        
+        ≡
+        
+        ⊥
+        
+        ≡
+        
+        F
+      
+    
+    {\displaystyle f_{16}(a,b)\;\equiv \;f_{4}(a)\;\equiv \;f_{4}(b)\;\equiv \;f_{2}()\;\equiv \;\bot \;\equiv \;F}
+  
+
+
+=== Operaciones nularias ===
+Una operación nularia es la que devuelve un valor sin necesidad de argumentos, podemos ver tautología y contradicción.
+
+La tautología presenta el valor verdadero sin necesidad de argumentos o independientemente de las variables sobre la que se calcule. En teoría de conjuntos corresponde al conjunto universal.
+En lógica proposicional corresponde al valor: verdadero:
+
+  
+    
+      
+        
+          
+            
+              
+                ⊤
+                :
+              
+              
+                ∅
+              
+              
+                ⟶
+              
+              
+                
+                  U
+                
+              
+            
+            
+              
+              
+                (
+                )
+              
+              
+                ⟶
+              
+              
+                a
+                =
+                ⊤
+                (
+                )
+                ≡
+                a
+                =
+                V
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{ccll}\top :&\varnothing &\longrightarrow &\mathbb {U} \\&()&\longrightarrow &a=\top ()\equiv a=V\end{array}}}
+  
+
+En un circuito de conmutación corresponde a una conexión fija o puente cerrado.
+
+La contradicción, por el contrario, presenta siempre el valor falso, sin necesitar argumentos o independientemente de los argumentos presentados. En teoría de conjuntos corresponde al conjunto vacío.
+En lógica proposicional corresponde al valor: falso:
+
+  
+    
+      
+        
+          
+            
+              
+                ⊥
+                :
+              
+              
+                ∅
+              
+              
+                ⟶
+              
+              
+                
+                  U
+                
+              
+            
+            
+              
+              
+                (
+                )
+              
+              
+                ⟶
+              
+              
+                a
+                =
+                ⊥
+                (
+                )
+                ≡
+                a
+                =
+                F
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{ccll}\bot :&\varnothing &\longrightarrow &\mathbb {U} \\&()&\longrightarrow &a=\bot ()\equiv a=F\end{array}}}
+  
+
+En un circuito de conmutación, corresponde a la no conexión o puente abierto.
+
+
+=== Operaciones unarias ===
+Una operación unaria es la que solo necesita un argumento para presentar un resultado, podemos ver dos operaciones unarias: identidad y negación.
+
+La operación identidad de una afirmación presenta el valor de la variable.
+
+  
+    
+      
+        
+          
+            
+              
+                i
+                d
+                :
+              
+              
+                
+                  U
+                
+              
+              
+                ⟶
+              
+              
+                
+                  U
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                ⟶
+              
+              
+                b
+                =
+                i
+                d
+                (
+                a
+                )
+                ≡
+                b
+                =
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{ccll}id:&\mathbb {U} &\longrightarrow &\mathbb {U} \\&a&\longrightarrow &b=id(a)\equiv b=a\end{array}}}
+  
+
+Esta operación se puede hacer con el dispositivo electrónico amplificador buffer.
+
+En un circuito de conmutación corresponde a un interruptor normalmente abierto: Interruptor NA.
+
+La operación negación lógica de una variable presenta el valor contrario del argumento, o los casos contrarios de los recogidos en el argumento.
+
+  
+    
+      
+        
+          
+            
+              
+                ¬
+                :
+              
+              
+                
+                  U
+                
+              
+              
+                ⟶
+              
+              
+                
+                  U
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                ⟶
+              
+              
+                b
+                =
+                ¬
+                (
+                a
+                )
+                ≡
+                b
+                =
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{ccll}\lnot :&\mathbb {U} &\longrightarrow &\mathbb {U} \\&a&\longrightarrow &b=\lnot (a)\equiv b=\lnot a\end{array}}}
+  
+
+Esta operación se hace con la Puerta NOT.
+
+En un circuito de conmutación corresponde a un interruptor normalmente cerrado: Interruptor NC.
+
+
+=== Operaciones binarias ===
+La operación binaria es la que necesita dos argumentos, de hecho es la forma más generalizada de operación, normalmente cuando nos referimos a operaciones, nos referimos a operaciones binarias, en el álgebra de Boole podemos ver las siguientes operaciones binarias:
+
+La Disyunción lógica acepta dos argumentos presentando como resultado verdadero si uno u otro de los argumentos es verdadero.
+La disyunción puede expresarse:
+
+  
+    
+      
+        a
+        ∨
+        b
+      
+    
+    {\displaystyle a\lor b}
+  
+
+Esta operación es conmutativa.
+La operación disyunción lógica de proposiciones, es equivalente a la unión de conjuntos en teoría de conjuntos, a la puerta lógica OR:
+
+y al circuito en paralelo en circuitos de conmutación
+
+La Disyunción opuesta presenta resultado verdadero solo cuando sus dos argumentos son falsos. Esta operación es la negación de la disyunción.
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↓
+                b
+              
+              
+                =
+              
+              
+                ¬
+                (
+                a
+                ∨
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                ¬
+                a
+                ∧
+                ¬
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\downarrow b&=&\lnot (a\lor b)\\&=&\lnot a\land \lnot b\\\end{array}}}
+  
+
+Esta operación es conmutativa.
+La negación conjunta de proposiciones es equivalente a la puerta lógica NOR.
+
+La Conjunción lógica presenta resultado verdadero solo cuando sus dos argumentos son verdaderos.
+
+  
+    
+      
+        
+          
+            
+              
+                ∧
+                :
+              
+              
+                
+                  U
+                
+                ×
+                
+                  U
+                
+              
+              
+                ⟶
+              
+              
+                
+                  U
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                ⟶
+              
+              
+                c
+                =
+                ∧
+                (
+                a
+                ,
+                b
+                )
+                ≡
+                c
+                =
+                a
+                ∧
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{ccll}\land :&\mathbb {U} \times \mathbb {U} &\longrightarrow &\mathbb {U} \\&(a,b)&\longrightarrow &c=\land (a,b)\equiv c=a\land b\end{array}}}
+  
+
+Esta operación es conmutativa.
+Normalmente representado:
+
+  
+    
+      
+        a
+        ∧
+        b
+      
+    
+    {\displaystyle a\land b}
+  
+
+La conjunción lógica de proposiciones es equivalente a la intersección de conjuntos en teoría de conjuntos, o a la puerta lógica AND:
+
+en circuitos de conmutación sería un circuito en serie de interruptores.
+
+La Conjunción opuesta presenta resultado verdadero en todos los casos excepto cuando sus dos argumentos son verdaderos. Esta operación es la negación de la conjunción.
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↑
+                b
+              
+              
+                =
+              
+              
+                ¬
+                (
+                a
+                ∧
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                ¬
+                a
+                ∨
+                ¬
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\uparrow b&=&\lnot (a\land b)\\&=&\lnot a\lor \lnot b\\\end{array}}}
+  
+
+Esta operación es conmutativa.
+La conjunción opuesta de proposiciones es equivalente a la puerta lógica NAND.
+
+La Implicación lógica presenta resultado falso si el primer argumento es verdadero y el segundo falso, en el resto de los casos presenta resultado verdadero, esta operación no es conmutativa y puede expresarse:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+                b
+              
+              
+                =
+              
+              
+                ¬
+                a
+                ∨
+                b
+              
+            
+            
+              
+              
+                =
+              
+              
+                (
+                a
+                ∧
+                b
+                )
+                ∨
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\to b&=&\lnot a\lor b\\&=&(a\land b)\lor \lnot a\\\end{array}}}
+  
+
+Esta operación no es conmutativa.
+A esta operación también se llama implicación: a implica b:
+
+si a es verdadero b es verdadero.
+si a es falso y b es verdadero, la implicación es falsa.
+si a es falsa, la implicación es verdadera independientemente el valor de b.
+A esta operación le corresponde un conjunto de puertas lógicas complejas:
+
+La Adjunción lógica presenta resultado verdadero si el primer argumento es verdadero y el segundo falso, en el resto de los casos presenta resultado falso, esta operación no es conmutativa y es la negación de la condicional material, también suele llamarse diferencia de a y b, puede expresarse:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↛
+                b
+              
+              
+                =
+              
+              
+                ¬
+                (
+                a
+                →
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                a
+                ∧
+                ¬
+                b
+              
+            
+            
+              
+              
+                =
+              
+              
+                a
+                −
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\nrightarrow b&=&\lnot (a\to b)\\&=&a\land \lnot b\\&=&a-b\\\end{array}}}
+  
+
+Esta operación no es conmutativa.
+A esta operación le corresponde un conjunto de puertas lógicas complejas:
+
+La Implicación opuesta es la operación que presenta resultado falso si el primer argumento es falso y el segundo verdadero, en el resto de los casos presenta resultado verdadero, esta operación no es conmutativa y es el resultado de permutar a y b en la condicional material, puede expresarse:
+
+  
+    
+      
+        a
+        ←
+        b
+        
+        =
+        
+        a
+        ∨
+        ¬
+        b
+      
+    
+    {\displaystyle a\leftarrow b\;=\;a\lor \lnot b}
+  
+
+Esta operación no es conmutativa.
+A esta operación le corresponde un conjunto de puertas lógicas complejas:
+
+La Adjunción opuesta presenta resultado verdadero si el primer argumento es falso y el segundo verdadero, en el resto de los casos presenta resultado falso, esta operación no es conmutativa y es la negación de la condicional inverso, también suele llamarse diferencia: b - a, puede expresarse:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↚
+                b
+              
+              
+                =
+              
+              
+                ¬
+                (
+                a
+                ←
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                ¬
+                a
+                ∧
+                b
+              
+            
+            
+              
+              
+                =
+              
+              
+                b
+                −
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\nleftarrow b&=&\lnot (a\leftarrow b)\\&=&\lnot a\land b\\&=&b-a\\\end{array}}}
+  
+
+Esta operación no es conmutativa.
+A esta operación le corresponde un conjunto de puertas lógicas complejas:
+
+La Bicondicional presenta resultado verdadero si los dos argumentos son iguales, esto es: si a y b son verdaderos o si a y b son falsos.
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↔
+                b
+              
+              
+                =
+              
+              
+                (
+                a
+                →
+                b
+                )
+                ∧
+                (
+                a
+                ←
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                (
+                ¬
+                a
+                ∨
+                b
+                )
+                ∧
+                (
+                a
+                ∨
+                ¬
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                (
+                a
+                ∧
+                b
+                )
+                ∨
+                (
+                ¬
+                a
+                ∧
+                ¬
+                b
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\leftrightarrow b&=&(a\rightarrow b)\land (a\leftarrow b)\\&=&(\lnot a\lor b)\land (a\lor \lnot b)\\&=&(a\land b)\lor (\lnot a\land \lnot b)\\\end{array}}}
+  
+
+Esta operación es conmutativa.
+Le corresponde la Puerta XNOR.
+
+La Disyunción exclusiva presenta resultado verdadero si los dos argumentos son dispares, esto es si de los dos argumentos uno es verdadero y otro falso, es la negación de la bicondicional:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ↮
+                b
+              
+              
+                =
+              
+              
+                ¬
+                (
+                a
+                ↔
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                (
+                a
+                ∧
+                ¬
+                b
+                )
+                ∨
+                (
+                ¬
+                a
+                ∧
+                b
+                )
+              
+            
+            
+              
+              
+                =
+              
+              
+                a
+                ⊻
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lrl}a\nleftrightarrow b&=&\lnot (a\leftrightarrow b)\\&=&(a\land \lnot b)\lor (\lnot a\land b)\\&=&a\veebar b\\\end{array}}}
+  
+
+Esta operación es conmutativa.
+Esta operación también se llama o exclusivo, uno o el otro pero no los dos, le corresponde la puerta lógica: XOR.
+
+
+== Fórmula de Boole bien formada ==
+
+Partiendo de un conjunto: 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+ y donde a, b, c, d, ... son variables o constantes que pueden tomar valores del conjunto 
+  
+    
+      
+        
+          
+            B
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {B}}}
+  
+, donde se han definido las siguientes operaciones internas:
+
+  
+    
+      
+        
+          
+            
+              
+                ∼:
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                a
+              
+              
+                →
+              
+              
+                b
+                =∼
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\sim :&{\mathfrak {B}}&\to &{\mathfrak {B}}\\&a&\to &b=\sim a\end{array}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                ⊕
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ⊕
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\oplus :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\oplus b\end{array}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                ⊙
+                :
+              
+              
+                
+                  
+                    B
+                  
+                
+                ×
+                
+                  
+                    B
+                  
+                
+              
+              
+                →
+              
+              
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              
+              
+                (
+                a
+                ,
+                b
+                )
+              
+              
+                →
+              
+              
+                c
+                =
+                a
+                ⊙
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rrcl}\odot :&{\mathfrak {B}}\times {\mathfrak {B}}&\to &{\mathfrak {B}}\\&(a,b)&\to &c=a\odot b\end{array}}}
+  
+
+podemos decir que son fórmulas bien formadas: fbf:
+1: Una variable o constante:
+
+  
+    
+      
+        a
+        
+      
+    
+    {\displaystyle a\;}
+  
+
+2: La negación de una variable o constante:
+
+  
+    
+      
+        ∼
+        a
+        
+      
+    
+    {\displaystyle \sim a\;}
+  
+
+3: La operación binaria entre dos variables o constantes:
+
+  
+    
+      
+        a
+        ⊕
+        b
+        
+      
+    
+    {\displaystyle a\oplus b\;}
+  
+
+4: El resultado de sustituir en una fórmula bien formada, una variable o constante por una fórmula bien formada:
+
+  
+    
+      
+        
+          
+          
+            
+              
+                
+                  a
+                  ⊕
+                  b
+                
+              
+              
+                
+                  a
+                  =
+                  c
+                  ⊙
+                  d
+                
+              
+            
+          
+          }
+        
+        ⟶
+        
+        (
+        c
+        ⊙
+        d
+        )
+        ⊕
+        b
+      
+    
+    {\displaystyle \left.{\begin{array}{l}a\oplus b\\a=c\odot d\end{array}}\right\}\longrightarrow \quad (c\odot d)\oplus b}
+  
+
+La aplicación repetida de estos criterios dará siempre una fórmula bien formada.
+ejemplo:
+
+  
+    
+      
+        
+          
+          
+            
+              
+                
+                  
+                    
+                    
+                      
+                        
+                          
+                            ∼
+                            a
+                          
+                        
+                        
+                          
+                            a
+                            =
+                            b
+                            ⊙
+                            c
+                          
+                        
+                      
+                    
+                    }
+                  
+                  ⟶
+                  
+                  ∼
+                  (
+                  b
+                  ⊙
+                  c
+                  )
+                
+              
+              
+                
+                  
+                  c
+                  =
+                  d
+                  ⊕
+                  e
+                
+              
+            
+          
+          }
+        
+        ⟶
+        
+        ∼
+        (
+        b
+        ⊙
+        (
+        d
+        ⊕
+        e
+        )
+        )
+      
+    
+    {\displaystyle \left.{\begin{array}{l}\left.{\begin{array}{l}\sim a\\a=b\odot c\end{array}}\right\}\longrightarrow \quad \sim (b\odot c)\\\;c=d\oplus e\end{array}}\right\}\longrightarrow \quad \sim (b\odot (d\oplus e))}
+  
+
+Se podrán emplear tantos paréntesis como sean necesarios para evitar ambigüedades, evitando siempre la utilización superflua de paréntesis.
+
+
+=== Jerarquía de los operadores ===
+Al evaluar una expresión booleana, deben realizarse las operaciones de acuerdo con su nivel jerárquico, realizando primero la de mayor jerarquía. Si existen paréntesis, deben resolverse primero los más internos y trabajar hacia fuera. En ausencia de paréntesis, la jerarquía de las operaciones es, de mayor a menor, la siguiente:
+
+  
+    
+      
+        ¬
+        
+        ∼
+      
+    
+    {\displaystyle \lnot \quad \sim }
+  
+
+  
+    
+      
+        ∧
+        
+        ⊙
+      
+    
+    {\displaystyle \land \quad \odot }
+  
+
+  
+    
+      
+        ∨
+        
+        ⊕
+      
+    
+    {\displaystyle \lor \quad \oplus }
+  
+
+  
+    
+      
+        →
+      
+    
+    {\displaystyle \rightarrow }
+  
+
+  
+    
+      
+        ↔
+      
+    
+    {\displaystyle \leftrightarrow }
+  
+
+Si se tienen varias operaciones con la misma jerarquía, éstas pueden ser evaluadas de derecha a izquierda o de izquierda a derecha, el resultado será el mismo.
+Como ejemplo, considérese la evaluación de las siguientes expresiones booleanas:
+
+  
+    
+      
+        ∼
+        a
+        ⊙
+        b
+        
+        ⟷
+        
+        (
+        ∼
+        a
+        )
+        ⊙
+        b
+      
+    
+    {\displaystyle \sim a\odot b\quad \longleftrightarrow \quad (\sim a)\odot b}
+  
+
+  
+    
+      
+        a
+        ⊕
+        b
+        ⊙
+        c
+        
+        ⟷
+        
+        a
+        ⊕
+        (
+        b
+        ⊙
+        c
+        )
+      
+    
+    {\displaystyle a\oplus b\odot c\quad \longleftrightarrow \quad a\oplus (b\odot c)}
+  
+
+  
+    
+      
+        a
+        ⊕
+        b
+        ⊕
+        c
+        
+        ⟷
+        
+        (
+        a
+        ⊕
+        b
+        )
+        ⊕
+        c
+        
+        ⟷
+        
+        a
+        ⊕
+        (
+        b
+        ⊕
+        c
+        )
+      
+    
+    {\displaystyle a\oplus b\oplus c\quad \longleftrightarrow \quad (a\oplus b)\oplus c\quad \longleftrightarrow \quad a\oplus (b\oplus c)}
+  
+
+
+== Regla de inferencia en álgebra de Boole ==
+
+En lógica, una regla de inferencia, o regla de transformación es una forma lógica que consiste en una función que toma premisas, que son ciertas, analiza su sintaxis, y devuelve una conclusión (o conclusiones), a diferencia de la simplificación de funciones lógicas, que partiendo de una expresión la transforma simplificándola, hasta llegar a una expresión mínima equivalente.
+Aquí veremos las reglas de inferencia, que partiendo de premisas ciertas, llega a conclusiones ciertas, en operaciones de dos variables.
+
+  
+    
+      
+        
+          
+            
+              
+              
+              
+                ⊤
+              
+              
+                a
+                ∨
+                b
+              
+              
+                a
+                ←
+                b
+              
+              
+                a
+              
+              
+                a
+                →
+                b
+              
+              
+                b
+              
+              
+                a
+                ↔
+                b
+              
+              
+                a
+                ∧
+                b
+              
+              
+                a
+                ↑
+                b
+              
+              
+                a
+                ↮
+                b
+              
+              
+                ¬
+                b
+              
+              
+                a
+                ↛
+                b
+              
+              
+                ¬
+                a
+              
+              
+                a
+                ↚
+                b
+              
+              
+                a
+                ↓
+                b
+              
+              
+                ⊥
+              
+            
+            
+              
+                a
+              
+              
+                b
+              
+              
+                
+                  f
+                  
+                    1
+                  
+                
+              
+              
+                
+                  f
+                  
+                    2
+                  
+                
+              
+              
+                
+                  f
+                  
+                    3
+                  
+                
+              
+              
+                
+                  f
+                  
+                    4
+                  
+                
+              
+              
+                
+                  f
+                  
+                    5
+                  
+                
+              
+              
+                
+                  f
+                  
+                    6
+                  
+                
+              
+              
+                
+                  f
+                  
+                    7
+                  
+                
+              
+              
+                
+                  f
+                  
+                    8
+                  
+                
+              
+              
+                
+                  f
+                  
+                    9
+                  
+                
+              
+              
+                
+                  f
+                  
+                    10
+                  
+                
+              
+              
+                
+                  f
+                  
+                    11
+                  
+                
+              
+              
+                
+                  f
+                  
+                    12
+                  
+                
+              
+              
+                
+                  f
+                  
+                    13
+                  
+                
+              
+              
+                
+                  f
+                  
+                    14
+                  
+                
+              
+              
+                
+                  f
+                  
+                    15
+                  
+                
+              
+              
+                
+                  f
+                  
+                    16
+                  
+                
+              
+            
+            
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                V
+              
+              
+                F
+              
+              
+                F
+              
+            
+            
+              
+                F
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+              
+                V
+              
+              
+                F
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cc|cccccccccccccccc}&&\top &a\lor b&a\leftarrow b&a&a\rightarrow b&b&a\leftrightarrow b&a\land b&a\uparrow b&a\not \leftrightarrow b&\neg b&a\not \rightarrow b&\neg a&a\not \leftarrow b&a\downarrow b&\bot \\\hline a&b&f_{1}&f_{2}&f_{3}&f_{4}&f_{5}&f_{6}&f_{7}&f_{8}&f_{9}&f_{10}&f_{11}&f_{12}&f_{13}&f_{14}&f_{15}&f_{16}\\\hline V&V&V&V&V&V&V&V&V&V&F&F&F&F&F&F&F&F\\V&F&V&V&V&V&F&F&F&F&V&V&V&V&F&F&F&F\\F&V&V&V&F&F&V&V&F&F&V&V&F&F&V&V&F&F\\F&F&V&F&V&F&V&F&V&F&V&F&V&F&V&F&V&F\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{2}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ∨
+                b
+              
+            
+            
+              
+              
+                ¬
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ∨
+                b
+              
+            
+            
+              
+              
+                ¬
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\lor b\\&\neg a\\\hline \therefore &b\\\end{array}}\quad {\begin{array}{cr}&a\lor b\\&\neg b\\\hline \therefore &a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            3
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{3}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ←
+                b
+              
+            
+            
+              
+              
+                ¬
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ←
+                b
+              
+            
+            
+              
+              
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\leftarrow b\\&\neg a\\\hline \therefore &\neg b\\\end{array}}\quad {\begin{array}{cr}&a\leftarrow b\\&b\\\hline \therefore &a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            5
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{5}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                →
+                b
+              
+            
+            
+              
+              
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                →
+                b
+              
+            
+            
+              
+              
+                ¬
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\rightarrow b\\&a\\\hline \therefore &b\\\end{array}}\quad {\begin{array}{cr}&a\rightarrow b\\&\neg b\\\hline \therefore &\neg a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            7
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{7}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↔
+                b
+              
+            
+            
+              
+              
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↔
+                b
+              
+            
+            
+              
+              
+                ¬
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↔
+                b
+              
+            
+            
+              
+              
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↔
+                b
+              
+            
+            
+              
+              
+                ¬
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\leftrightarrow b\\&a\\\hline \therefore &b\\\end{array}}\quad {\begin{array}{cr}&a\leftrightarrow b\\&\neg a\\\hline \therefore &\neg b\\\end{array}}\quad {\begin{array}{cr}&a\leftrightarrow b\\&b\\\hline \therefore &a\\\end{array}}\quad {\begin{array}{cr}&a\leftrightarrow b\\&\neg b\\\hline \therefore &\neg a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            8
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{8}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ∧
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ∧
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\land b\\\hline \therefore &a\\\end{array}}\quad {\begin{array}{cr}&a\land b\\\hline \therefore &b\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            9
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{9}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↑
+                b
+              
+            
+            
+              
+              
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↑
+                b
+              
+            
+            
+              
+              
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\uparrow b\\&a\\\hline \therefore &\neg b\\\end{array}}\quad {\begin{array}{cr}&a\uparrow b\\&b\\\hline \therefore &\neg a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            10
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{10}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↮
+                b
+              
+            
+            
+              
+              
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↮
+                b
+              
+            
+            
+              
+              
+                ¬
+                a
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↮
+                b
+              
+            
+            
+              
+              
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↮
+                b
+              
+            
+            
+              
+              
+                ¬
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\not \leftrightarrow b\\&a\\\hline \therefore &\neg b\\\end{array}}\quad {\begin{array}{cr}&a\not \leftrightarrow b\\&\neg a\\\hline \therefore &b\\\end{array}}\quad {\begin{array}{cr}&a\not \leftrightarrow b\\&b\\\hline \therefore &\neg a\\\end{array}}\quad {\begin{array}{cr}&a\not \leftrightarrow b\\&\neg b\\\hline \therefore &a\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            12
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{12}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↛
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↛
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\not \rightarrow b\\\hline \therefore &a\\\end{array}}\quad {\begin{array}{cr}&a\not \rightarrow b\\\hline \therefore &\neg b\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            14
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{14}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↚
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↚
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\not \leftarrow b\\\hline \therefore &\neg a\\\end{array}}\quad {\begin{array}{cr}&a\not \leftarrow b\\\hline \therefore &b\\\end{array}}}
+  
+
+La función: 
+  
+    
+      
+        
+          f
+          
+            15
+          
+        
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle f_{15}(a,b)}
+  
+ .
+
+  
+    
+      
+        
+          
+            
+              
+              
+                a
+                ↓
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                a
+              
+            
+          
+        
+        
+        
+          
+            
+              
+              
+                a
+                ↓
+                b
+              
+            
+            
+              
+                ∴
+              
+              
+                ¬
+                b
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{cr}&a\downarrow b\\\hline \therefore &\neg a\\\end{array}}\quad {\begin{array}{cr}&a\downarrow b\\\hline \therefore &\neg b\\\end{array}}}
+  
+
+
+== Véase también ==
+Retículo (matemáticas)
+Función booleana
+Formas Canónicas (Álgebra de Boole)
+Circuito de conmutación
+Lógica binaria
+Puerta lógica
+Sistema digital
+Tabla de verdad
+Operador a nivel de bits
+
+
+== Referencias ==
+ 
+
+
+== Bibliografía ==
+González Carlomán, Antonio.  Universidad de Oviedo. Servicio de Publicaciones, ed. Retículo completo de Boole, lógica matemática, teoría de conjuntos (2006 edición). ISBN 84-8317-534-7. 
+García Zubia, Javier; Sanz Martínez, Jesús; Sotomayor Basilio, Borja.  Universidad de Deusto. Departamento de Publicaciones, ed. Boole-Deusto v2.1 entorno de diseño lógico (2005 edición). ISBN 84-7485-973-5. 
+Giménez Pradales, José Miguel.  Universidad Politécnica de Cataluña. Departamento de Matemática Aplicada III, ed. Álgebra de Boole para ingeniera técnica (2004 edición). ISBN 84-933451-0-5. 
+García Zubia, Javier; Sanz Martínez, Jesús; Sotomayor Basilio, Borja.  Universidad de Deusto. Departamento de Publicaciones, ed. Boole-Deusto entorno de diseño lógico (2004 edición). ISBN 84-7485-929-8. 
+Montes Lozano, Antoni.  Editorial UOC, S.L., ed. Álgebras de Boole (2002 edición). ISBN 84-8429-979-1. 
+Montes Lozano, Antoni.  Editorial UOC, S.L., ed. Álgebras de Boole (2002 edición). ISBN 84-8429-926-0. 
+González Carlomán, Antonio.  Universidad de Oviedo. Servicio de Publicaciones, ed. Retículo completo de Boole. Lógica matemática teoría de conjuntos (2001 edición). ISBN 84-8317-264-X. 
+Martínez Garza, Jaime; Olvera Rodríguez. Organización y arquitectura de computadoras (2000 edición). ISBN 968-444-417-6.  
+Ginés Gómez, José Carlos.  Gines Gómez, José Carlos, ed. Puertas lógicas y álgebra de Boole, electrónica digital técnica de telecomunicación (1998 edición). ISBN 84-607-9518-7. 
+Tiñena Salvañá, Francesc.  Editorial UOC, S.L., ed. Àlgebres de Boole (gestió) (1998 edición). ISBN 84-8318-582-2. 
+Tiñena Salvañá, Francesc.  Editorial UOC, S.L., ed. Àlgebres de Boole (1998 edición). ISBN 84-8318-614-4. 
+Masip Bruin, Xavier; Román Jiménez, José Antonio; Sánchez López, Sergio.  Ediciones UPC, S.L., ed. Álgebra de Boole y funciones lógicas (1996 edición). ISBN 84-89636-20-6. 
+AYRES, Frank.  Mc Graw-Hill. Serie Schaum, ed. Álgebra Moderna (1994 edición). ISBN 968-422-917-8. 
+Permingeat, Noel; Glaude, Denis.  Editorial Vicens-Vives, S.A., ed. Álgebra de Boole (1993 edición). ISBN 84-316-3294-1. 
+Jane Ihnsa, Ignacio.  Universidad de Barcelona. Publicaciones y Ediciones, ed. Álgebras de Boole y lógica (1989 edición). ISBN 84-7875-040-1. 
+Casanova, Gastón (1 de mayo de 1975).  Editorial Tecnos, ed. El álgebra de Boole (1975 edición). ISBN 84-309-0580-4. 
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Álgebra de Boole.
+Álgebra de Boole
+Álgebra de Boole
+TEMA 6. ÁLGEBRA DE BOOLE
+TEMA 3. Álgebra de Boole
+Álgebra de Boole y puertas lógicas
+Álgebra de Boole y circuitos con puertas lógicas Archivado el 26 de mayo de 2012 en Wayback Machine.
+Tema 5: Álgebra de Boole y Funciones Lógicas
+BOOLE-DEUSTO SW didáctico: Tablas de verdad, V-K, autómatas...
+Álgebra de Boole y Diseño de Computadoras (PDF)
+Curso Completo de Electrónica Digital Archivado el 17 de junio de 2012 en Wayback Machine.

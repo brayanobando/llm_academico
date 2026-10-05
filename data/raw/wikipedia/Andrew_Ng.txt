@@ -1,0 +1,33 @@
+Andrew Yan-Tak Ng en chino: 吳恩達 (18 de abril de 1976)​ es un científico informático y empresario tecnológico británico-estadounidense centrado en el aprendizaje automático y la inteligencia artificial (IA). Ng fue cofundador y director de Google Brain y anteriormente fue científico jefe en Baidu.​
+Ng es profesor adjunto en la Universidad de Stanford (anteriormente profesor asociado y director de su Laboratorio de IA de Stanford o SAIL). Ng también ha trabajado en educación en línea, cofundando Coursera​ y DeepLearning.AI.  Ha liderado muchos esfuerzos para "democratizar el aprendizaje profundo", enseñando a más de 8 millones de estudiantes a través de sus cursos en línea.​​ Ng es reconocido mundialmente en ciencias de la computación, incluido en la lista de las 100 personas más influyentes de la revista Time en 2012 y en la de las personas más creativas de Fast Company en 2014. Su influencia se extiende a ser nombrado en la lista Time100 de las personas más influyentes en IA en 2023.​
+En 2018, lanzó y actualmente dirige el AI Fund, inicialmente un fondo de inversión de 175 millones de dólares para respaldar startups de inteligencia artificial. Fundó Landing AI, que ofrece productos SaaS impulsados por IA.​ El 11 de abril de 2024, Amazon anunció el nombramiento de Ng para su junta directiva.​
+Sus investigaciones se centran en la Inteligencia Artificial, Machine Learning (Aprendizaje Automático), y Deep Learning (Aprendizaje Profundo).  Algunos de sus proyectos incluyen el Helicóptero Autónomo de Stanford,​​ el cual es uno de los más avanzados helicópteros autónomos en el mundo, y STAIR (STanford Artificial Intelligence Robot) (Robot de Inteligencia Artificial de Stanford),​ el cual derivó a ROS, una famosa plataforma opensource de robótica.  
+Ng es también autor o coautor de más de 100 artículos sobre Machine Learning, robótica y otros temas relacionados, y algunos de sus trabajos en Computer Vision (Visión Artificial) han sido ampliamente reconocidos.​
+
+
+== Investigaciones en Machine Learning ==
+En el 2011, Ng fundó el proyecto Google Brain en Google, el cual desarrolla una red neuronal a gran escala usando la infraestructura de computación distribuida de Google.​
+Entre otros de sus hechos notables está una red neuronal entrenada usando algoritmos de aprendizaje profundo en 16.000 núcleos de CPU, los cuales aprendieron a reconocer conceptos de alto nivel, como gatos, solo con ver videos en YouTube, y sin haber sido programados para saber qué es un "gato".​
+​
+Esta tecnología también es usada en el reconocimiento de voz de Android.​
+
+
+== Educación En Línea ==
+Ng comenzó el programa Stanford Engineering Everywhere (SEE), el cual en 2008, dispuso una serie de cursos de Stanford online, para su versión gratuita.  Ng enseñó uno de los cursos, Machine Learning, el cual consistía de videos de las clases de Ng, junto con otro material de la clase de Stanford CS229.
+La versión "aplicada" de la clase de Stanford (CS229a) fue alojada en ml-class.org y comenzó en octubre del 2011, con más de 100.000 estudiantes registrados en primera instancia; el curso presentaba acertijos y trabajos de programación que eran evaluados. Esta clase se convirtió en uno de los primeros Cursos Abiertos En línea Masivos por un profesor de Stanford.​  Lo cual llevó a fundar la plataforma Coursera en el 2012.
+
+
+== Vida personal ==
+Ng nació en el Reino Unido en 1976 y vivió en Hong Kong y Singapur. Se graduó en la institución Raffles en Singapur en la promoción de 1992. Y recibió su licenciatura en Ciencias de la Computación por la Universidad Carnegie Mellon en Pittsburgh, Pensilvania en la clase de 1997. Entonces cursó su máster del Instituto Tecnológico de Massachusetts en Boston en la clase de 1998 y recibió su Doctorado de la Universidad de California en Berkeley en el 2002. Comenzó a trabajar en la Universidad de Stanford durante el mismo año; actualmente reside en Palo Alto, California.
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Web personal
+Web de STAIR Archivado el 21 de enero de 2013 en Wayback Machine.
+Publicaciones
+Clase Machine Learning (CS 229)
+Videos de clases
+http://chronicle.com/article/From-Self-Flying-Helicopters/134666/

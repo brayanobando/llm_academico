@@ -1,0 +1,50 @@
+Lotfi Asker Zadeh​ (/ˈzɑːdeɪ/; en azerí: Lütfi Rəhim oğlu Ələsgərzadə; en persa: لطفی علی‌عسگرزاده‎; Bakú, 4 de febrero de 1921—Berkeley, 6 de septiembre de 2017)​​ fue un matemático, científico, informático, ingeniero eléctrico y profesor emérito de inteligencia artificial en la Universidad de Berkeley, California.​​​​ Es famoso por introducir en 1965 la teoría de conjuntos difusos o lógica difusa y se le considera el padre de la teoría de la posibilidad.​
+Zadeh era más conocido por proponer matemáticas difusas que consistían en estos conceptos relacionados: conjuntos difusos,​ lógica difusa,​ algoritmos difusos,​ semántica difusa,​ lenguajes difusos,​ control difuso,​ sistemas difusos,​ probabilidades difusas y eventos difusos​ e información difusa.​
+Fue miembro fundador de la Academia Euroasiática.​
+Nació en 1921 en Bakú, una ciudad en el mar Caspio de la antigua República Socialista Soviética de Azerbaiyán. Después de emigrar a Irán y estudiar en la Universidad de Teherán llegó a Estados Unidos en donde continuó sus estudios en el MIT, en la Universidad de Columbia y finalmente en la Universidad de Berkeley.
+Por sus contribuciones en este campo recibió varios galardones, entre los que destaca la Medalla Richard W. Hamming en 1992 y doctorados honoris causa de varias instituciones del mundo, entre ellas la Universidad de Oviedo (1995), la Universidad de Granada (1996) y la Universidad Politécnica de Madrid (2007).
+Se le otorgó el Premio Fundación BBVA Fronteras del Conocimiento 2012 por la invención y el desarrollo de la lógica difusa.​
+
+
+== Vida y carrera ==
+Zadeh nació en Bakú, República Socialista Soviética de Azerbaiyán como Lotfi Aliaskerzadeh,​ hijo de Rahim Aleskerzade, un periodista azerí de Ardabil asignado desde Irán, y Fanya Korenman, una pediatra judía rusa de Odesa y ciudadana iraní.​​​​ El gobierno soviético en ese momento cortejó a corresponsales extranjeros y la familia vivió bien mientras estaba en Bakú.​ Zadeh asistió a la escuela primaria durante tres años allí, lo que dijo "tuvo una influencia significativa y duradera en mi pensamiento y mi forma de ver las cosas".​
+En 1931, cuando Zadeh tenía diez años, su familia se mudó a Teherán en Irán, la tierra natal de su padre. Zadeh estaba matriculado en Alborz College, una escuela misionera presbiteriana, donde se educó durante los siguientes ocho años y donde conoció a su futura esposa, Fay.​ Zadeh dice que fue "profundamente influenciado" por los misioneros "extremadamente decentes, finos, honestos y serviciales" de los Estados Unidos que dirigían la universidad. "Para mí, representaban lo mejor que se podía encontrar en los Estados Unidos: gente del Medio Oeste con fuertes raíces. Eran realmente 'buenos samaritanos', dispuestos a entregarse por el beneficio de los demás. Así que este tipo de actitud me influyó profundamente. También me inculcó un profundo deseo de vivir en los Estados Unidos".​ Durante este tiempo, Zadeh obtuvo varias patentes.​
+A pesar de ser más fluido en ruso que en persa, Zadeh se presentó a los exámenes universitarios nacionales y obtuvo el tercer lugar en todo el país.​ Como estudiante, ocupó el primer lugar en su clase en sus primeros dos años. En 1942, se graduó de la Universidad de Teherán con un título en ingeniería eléctrica, uno de los tres únicos estudiantes en ese campo que se graduaron ese año, debido a la confusión creada por la Segunda Guerra Mundial, cuando Estados Unidos, Reino Unido y la Unión Soviética invadieron Irán. Más de 30 000 soldados estadounidenses tenían su base allí y Zadeh trabajaba con su padre, que laboraba con ellos como contratista de hardware y materiales de construcción.​
+En 1943, Zadeh decidió emigrar a los Estados Unidos y viajó a Filadelfia pasando por El Cairo después de meses de demora esperando la documentación adecuada o que apareciera el barco adecuado. Llegó a mediados de 1944 e ingresó al Instituto de Tecnología de Massachusetts (MIT) como estudiante de postgrado más tarde ese año.​ Mientras estaba en los Estados Unidos, cambió su nombre a Lotfi Asker Zadeh.​
+Recibió una maestría en ingeniería eléctrica del MIT en 1946 y luego se postuló para la Universidad de Columbia, ya que sus padres se habían establecido en la ciudad de Nueva York.​ Columbia lo admitió como estudiante de doctorado y también le ofreció un puesto de profesor.​ Recibió su Ph.D. en ingeniería eléctrica de Columbia en 1949, y se convirtió en profesor asistente al año siguiente.​​
+Zadeh enseñó durante diez años en Columbia, fue ascendido a catedrático universitario en 1957 y enseñó en la Universidad de California en Berkeley a partir de 1959. Publicó su trabajo fundamental sobre conjuntos difusos en 1965, en el que detalló las matemáticas de la teoría de conjuntos difusos. En 1973 propuso su teoría de la lógica difusa.
+
+
+== Trabajo ==
+Debido a la importancia de la relajación de la lógica aristotélica, abre la aplicabilidad de los métodos racionales a la mayoría de las situaciones prácticas. Zadeh es uno de los autores más referenciados en los campos de las matemáticas aplicadas y ciencias de la computación, pero sus contribuciones no se limitan a los conjuntos difusos y sistemas. Según Google Académico, hasta octubre de 2019, el trabajo de Zadeh ha sido citado unas 230.000 veces en trabajos académicos y el artículo de 1965 Fuzzy sets recibió más de 100.000 citas.​
+
+
+=== Sistemas y conjuntos borrosos ===
+Zadeh, en su teoría de conjuntos difusos, propuso usar una función de pertenencia (con un rango que cubre el intervalo [0,1]) que opera en el dominio de todos los valores posibles. Propuso nuevas operaciones para el cálculo de la lógica y mostró que la lógica difusa era una generalización de la lógica clásica y booleana. También propuso los números difusos como un caso especial de conjuntos difusos, así como las reglas correspondientes para operaciones matemáticas consistentes (aritmética difusa).​
+
+
+=== Otras contribuciones ===
+A Zadeh también se le atribuye, junto con John R. Ragazzini, en 1952, haber sido pioneros en el desarrollo del método de transformada z en el procesamiento y análisis de señales de tiempo discreto. Estos métodos son ahora estándar en el procesamiento de señales digitales, control digital y otros sistemas de tiempo discreto utilizados en la industria y la investigación. Fue editor del International Journal of Computational Cognition.
+El trabajo más reciente de Zadeh incluyó la informática con palabras y percepciones. Sus artículos recientes incluyen From Search Engines to Question-Answering Systems — The Role of Fuzzy Logic, Progress in Informatics,​ y el esbozo Hacia una teoría generalizada de la incertidumbre (GTU).
+
+
+== Publicaciones ==
+1965. «Conjuntos difusos.» Información y Control. 1965, 8: 338-353.
+1965. «Conjuntos difusos y los sistemas.» En: Fox J, editor. teoría del sistema. Brooklyn, NY: Universidad Politécnica Press, 1965: 29-39.
+1972. «Una interpretación conjuntos difusos-teórica de los modificadores lingüísticos.» Diario de Cibernética de 1972; 2: 4-34.
+1973. «Esbozo de un nuevo enfoque para el análisis de sistemas complejos y los procesos de decisión.» IEEE Trans. Sistemas, Hombre y Cibernética, 1973; 3: 28-44.
+1974. «La lógica difusa y su aplicación al razonamiento aproximado.» En: Tratamiento de la Información 74, Proc. IFIP Congr. 1974 (3), pp. 591-594.
+1975. «La lógica difusa y razonamiento aproximado.» Synthese, 1975, 30: 407-428.
+1975. «Cálculo de las restricciones fuzzy.» En: LA Zadeh, KS Fu, Tanaka K, M Shimura, editores. Fuzzy y sus aplicaciones a los procesos cognitivos y la Decisión. Nueva York: Academic Press, 1975: 1-39.
+1975. «El concepto de una variable lingüística y su aplicación al razonamiento aproximado», I-III, Ciencias de la Información 8 (1975) 199-251, 301-357, 9 (1976) 43-80.
+2002. «A partir de cálculos con números a la computación con palabras - de la manipulación de las mediciones a la manipulación de las percepciones.» Revista Internacional de Matemática Aplicada y Ciencias de la Computación, pp. 307-324, vol. 12, no. 3, 2002.
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Lotfi A. Zadeh.
+Sitio oficial de Zadeh. En inglés.
+2009 Medalla Benjamin Franklin a Lotfi Zadeh.
+Trillas, Enric (June 2011). «Lotfi A. Zadeh: On the man and his work». Scientia Iranica (en inglés) 18 (3): 574-579. doi:10.1016/j.scient.2011.05.001.

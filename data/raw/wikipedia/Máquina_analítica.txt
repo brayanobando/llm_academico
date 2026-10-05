@@ -1,0 +1,61 @@
+La máquina analítica es el diseño de un computador moderno de uso general realizado por el profesor británico de matemática Charles Babbage,​ que representó un paso importante en la historia de la informática. Fue inicialmente descrita en 1837, aunque Babbage continuó refinando el diseño hasta su muerte en 1871.​ La máquina no pudo construirse debido a razones de índole política, pues hubo detractores por un posible uso de la máquina para fines bélicos.
+Algunos piensan que las limitaciones tecnológicas de la época eran un obstáculo para construir la máquina de haberse obtenido financiación y apoyo político al proyecto.
+
+
+== Historia ==
+ El primer intento de Babbage para diseñar un dispositivo de computación mecánica fue la máquina diferencial, que fue un computador diseñado específicamente para construir tablas de logaritmos y de funciones trigonométricas evaluando polinomios por aproximación. La construcción de esta máquina nunca se llegó a completar, Babbage tenía conflictos con el ingeniero superior, Joseph Clement, y en última instancia, el gobierno británico retiró el financiamiento para su proyecto. Durante este proyecto, Babbage comprendió que parte de su trabajo podía ser aprovechado en el diseño de un computador de propósito general, de manera que inició el diseño de la máquina analítica. El trabajo en el diseño de la máquina analítica empezó en 1835.​
+En 1842, el matemático italiano Luigi Menabrea, quien se había encontrado con Babbage durante un viaje de éste por Italia, escribió una descripción de la máquina en francés. En 1843, esa descripción fue traducida al inglés y anotada de forma extensa por Ada Lovelace (hija del poeta Lord Byron), quien ya se había interesado en la máquina unos años antes. Ada Lovelace escribió, en una de las muchas notas que incluye el artículo, un algoritmo para calcular los números de Bernoulli, que es considerado como el primer programa de ordenador. Como reconocimiento a su trabajo, ella ha sido descrita en muchas ocasiones como la primera programadora. El lenguaje de programación Ada actualmente utilizado lleva su nombre.​
+
+
+== Diseño ==
+La máquina analítica debía funcionar con un motor a vapor y habría tenido 2,25 metros de alto, 3 metros de largo y 1.20 metros de ancho. Para la entrada de datos y programas utilizó un sistema de tarjetas perforadas derivado del telar de Jacquard,​ mecanismo ya utilizado en la época para dirigir diversos equipos mecánicos, haciéndolo infinitamente programable.​ La salida debía producirse por una impresora, un equipo de dibujo y una campana. La máquina debía también perforar tarjetas que podrían ser leídas posteriormente. La máquina analítica trabajaba con una aritmética de coma fija en base 10 y poseía una memoria capaz de almacenar 1000 números de 50 dígitos cada uno (aproximadamente 16,2 kB). Una unidad aritmética sería capaz de realizar las cuatro operaciones aritméticas, además de las comparaciones y las raíces cuadradas. Inicialmente en 1838 fue concebido como la máquina diferencial curvada sobre sí misma, en una disposición generalmente circular, con la memoria larga que salía de un lado. Dibujos posteriores en 1858 muestran un diseño de cuadrícula regularizado.
+Igual que la unidad central de procesamiento (CPU) de un ordenador moderno, el molino se basaría en sus propios procedimientos internos para ser almacenada en forma de clavijas insertadas en tambores giratorios llamados "barriles", para llevar a cabo algunas de las instrucciones más complejas del programa de usuario. 
+El lenguaje de programación que sería utilizado era similar a los actuales lenguajes ensambladores. Era posible realizar bucles y condicionales de manera que el lenguaje propuesto habría sido Turing-completo. 
+Se utilizaban tres tipos diferentes de tarjetas perforadas: una para operaciones aritméticas, una para constantes numéricas y otra para operaciones de almacenamiento y recuperación de datos de la memoria, y la transferencia de datos entre la unidad aritmética y la memoria. Había tres lectores separados para los tres tipos de tarjetas.  Babbage desarrolló unas dos docenas de programas para la máquina analítica entre 1837 y 1840, y un programa más adelante. Estos programas tratan polinomios, fórmulas iterativas, el método de reducción de Gauss, y los  números de Bernoulli.
+
+
+== Problemas en su construcción ==
+Aunque los planos eran probablemente correctos, las disputas con el artesano que construyó las partes y el fin de los fondos por parte del gobierno, la hicieron imposible de construir. El problema era debido a que los engranajes en esa época aún no aguantaban mucho esfuerzo y con el calor se deformaban. El proveedor de Babbage no podía hacer nada para evitarlo por lo cual mantenían largas discusiones. Babbage tampoco podía buscar otro proveedor.
+
+
+== Construcción parcial ==
+En 1878, un comité de la Asociación británica para el avance de la ciencia recomendó no construir la máquina analítica, por lo que Babbage no tuvo acceso a fondos del gobierno.
+En 1910, el hijo de Babbage, Henry P. Babbage informó que una parte del dispositivo de cálculo y el equipo de impresión habían sido construidos y utilizados para calcular una lista de múltiplos de Pi (con errores). Esto sólo era una pequeña parte de la máquina analítica que no podía ser programada ni disponía de memoria.
+En 1991 el museo de ciencias de Londres, siguiendo los planos originales de Charles Babbage, con escasas modificaciones sobre los mismos, construyó la máquina diferencial. Y en la siguiente década se construyó la impresora de la máquina diferencial.
+
+
+== Influencia ==
+La máquina analítica fue prácticamente olvidada salvo por tres inventores: Percy Ludgate, Leonardo Torres Quevedo y Vannevar Bush que independientemente propusieron, a principios del siglo XX, diseños de máquinas analíticas basados en la de Babbage. 
+Los trabajos de George Stibitz de Bell Laboratories en Nueva York justo antes de la Segunda Guerra Mundial y de Howard Aiken en la Universidad de Harvard, durante y justo después de la guerra están estrechamente relacionado con el trabajo de Babbage sobre la máquina analítica. Ambos construyeron computadores electromagnéticos estrechamente relacionados con la máquina analítica, si bien ninguno de estos equipos puede ser considerado como un computador programable moderno. La máquina de Aiken fue financiada por IBM y fue llamada alison vera  
+De la autobiografía de Babbage:
+
+Tan pronto como exista una Máquina Analítica, será necesario redirigir el futuro curso de la ciencia. 
+
+
+== Comparación con otros ordenadores primerizos ==
+Si la máquina analítica hubiera estado construida, hubiera sido digital, programable y Turing completo. Luigi Federico Menabrea informó en el boceto de la máquina analítica: «El Sr. Babbage cree que puede, por su máquina, formar el producto de dos números, cada uno con veinte dígitos, en tres minutos». En comparación, Harvard Mark I podría realizar la misma función en tan solo seis segundos. Un PC modernos puede hacer lo mismo en menos de una millonésima de segundo. Cabe destacar que la máquina analítica de Babbage fue descrita más de cien años antes de cualquier de los dispositivos computacionales nombrados y por lo tanto, no es de extrañar que fuera mucho más lenta.
+
+
+== Referencias ==
+
+
+== Bibliografía utilizada ==
+Babbage, Charles (1864). «Chapter VIII - Of the Analytical Engine». Passages from the Life of a Philosopher. Londres: Longman, Green, Longman, Roberts, & Green. pp. 112-141. 
+Babbage, Charles (1889).  Babbage, Henry P., ed. Babbage’s Calculating Engines - Being a Collection of Papers Relating to Them; Their History, and Construction. Nueva York: Cambridge University Press. ISBN 978-1-108-00096-3. Archivado desde el original el 4 de marzo de 2016. Consultado el 10 de agosto de 2016. 
+Bromley, Allan G. (jul–sept 1982). «Charles Babbage's Analytical Engine, 1838». IEEE Annals of the History of Computing 4 (3): 197-217. doi:10.1109/mahc.1982.10028. Archivado desde el original el 26 de febrero de 2021. Consultado el 10 de agosto de 2016. 
+Bromley, Allan G. (1990). «Difference and Analytical Engines».  En Aspray, William, ed. Computing Before Computers. Ames: Iowa State University Press. pp. 59-98. ISBN 0-8138-0047-1. 
+Bromley, Allan G. (octubre–dic 2000). «Babbage's Analytical Engine Plans 28 and 28a-The Programmer's Interface». IEEE Annals of the History of Computing 22 (4): 5-19. doi:10.1109/85.887986. 
+Cohen, I. Bernard (2000). «8 - Aiken's Background in Computing and Knowledge of Babbage's Machines». Howard Aiken: Portrait of a Computer Pioneer. Cambridge: MIT Press. pp. 61–72. ISBN 9780262531795. 
+Collier, Bruce (1970). The Little Engines That Could've: The Calculating Machines of Charles Babbage (Ph.D.). Harvard University. Consultado el 18 de diciembre de 2015. 
+Green, Christopher D. (2005). «Was Babbage’s Analytical Engine intended to be a mechanical model of the mind?». History of Psychology 8 (1): 35-45. doi:10.1037/1093-4510.8.1.35. Consultado el 25 de diciembre de 2015. 
+Hyman, Anthony (1982). Charles Babbage: A Biography. Oxford: Oxford University Press. ISBN 9780198581703. 
+Menabrea, Luigi Federico; Lovelace, Ada (1843). «Sketch of the Analytical Engine invented by Charles Babbage... with notes by the translator. Tradujo Ada Lovelace».  En Richard Taylor, ed. Scientific Memoirs 3. Londres: Richard and John E. Taylor. pp. 666-731. 
+Randell, Brian (octubre–dic 1982). «From Analytical Engine to Electronic Digital Computer: The Contributions of Ludgate, Torres, and Bush». IEEE Annals of the History of Computing 4 (4). 
+Wilkes, Maurice Vincent (1971). «Babbage as a Computer Pioneer». Proc. Babbage Memorial Meeting. Londres: British Computer Society. pp. 415-440. 
+Guijarro Mora, V. y González de la Lastra, L. (2010). La quimera del autómata matemático. Madrid, Cátedra. ISBN 978-84-376-2653-10. 
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Máquina analítica.
+The Analytical Engine
+Babbage, Science Museum, London

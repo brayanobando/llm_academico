@@ -1,0 +1,47 @@
+En las redes neuronales artificiales, la atención es una técnica que pretende imitar la atención cognitiva. Este efecto realza algunas partes de los datos de entrada mientras que disminuye otras. La motivación es que la red debe dedicar más atención a las partes importantes de los datos, aunque puedan ser una pequeña porción de una imagen o una frase. El aprendizaje de qué parte de los datos es más importante que otra depende del contexto, y se entrena mediante descenso del gradiente.
+Los mecanismos similares a la atención se introdujeron en los años 90 con nombres como módulos multiplicativos, unidades sigma pi,​ e hiperredes[.​ La flexibilidad de estos modelos proviene de la introducción de pesos "blandos" que pueden cambiar durante el tiempo de ejecución, en contraste con los pesos estándar que deben permanecer fijos en tiempo de ejecución. Entre los usos de la atención se incluyen la memoria en controladores de pesos rápidos,​ máquinas de Turing neuronales, tareas de razonamiento en ordenadores neuronales diferenciables,​ procesamiento del lenguaje en transformadores y LSTM, y procesamiento de datos multisensoriales (sonido, imágenes, vídeo y texto) en perceptores.​​​​
+
+
+== Resumen ==
+Correlacionar las distintas partes de una frase o una imagen puede contribuir a captar su estructura. El esquema de atención brinda una oportunidad a la red neuronal para lograrlo. Por ejemplo, en la frase "See that girl run." (en español: Mira a esa chica correr), cuando la red procesa "that" (en español: esa) queremos que sepa que esa palabra se refiere a "girl" (en español: chica). El siguiente diagrama muestra cómo una red correctamente entrenada puede conseguirlo.
+
+La estructura de los datos de entrada se captura en las ponderaciones Qw y Kw, y las ponderaciones Vw expresan esa estructura en términos de características más significativas para la tarea para la que se está entrenando. Por este motivo, los componentes de la cabeza de atención se denominan Query (Q), Key (K) y Value (V), una analogía poco precisa y posiblemente engañosa con los sistemas de bases de datos relacionales.
+Podemos acelerar enormemente los cálculos paralelizando lo anterior. Tenga en cuenta que el vector de contexto de "that" no depende de los vectores de contexto de las demás palabras; por tanto, podemos calcular todos los vectores de contexto a la vez utilizando simplemente la matriz X de word embedding apiladas en lugar de x en la fórmula anterior. Ahora, el softmax debe interpretarse como un softmax matricial que actúa sobre filas separadas. Esto supone una enorme ventaja sobre las redes recurrentes, que deben operar secuencialmente.
+
+
+== Ejemplo de traducción ==
+Para construir una máquina que traduzca del inglés al francés, se injerta una unidad de atención en el codificador-decodificador básico (diagrama de abajo). En el caso más sencillo, la unidad de atención consiste en productos de puntos de los estados recurrentes del codificador y no necesita entrenamiento. En la práctica, la unidad de atención consta de 3 capas de red neuronal entrenadas y totalmente conectadas denominadas query (consulta), key (clave) y value (valor).
+
+Codificador-decodificador con atención. La parte izquierda (líneas negras) es el codificador-decodificador, la parte central (líneas naranjas) es la unidad de atención y la parte derecha (en gris y colores) son los datos calculados. Las regiones grises de la matriz H y el vector w son valores cero. Los subíndices numéricos indican el tamaño de los vectores, mientras que los subíndices i e i - 1 indican los pasos temporales.
+
+Vistos como una matriz, los pesos de atención muestran cómo la red ajusta su enfoque según el contexto.
+
+Esta visión de los pesos de atención aborda el problema de la "explicabilidad" de las redes neuronales. Las redes que realizan traducciones literales sin tener en cuenta el orden de las palabras mostrarían las puntuaciones más altas a lo largo de la diagonal (dominante) de la matriz. La dominancia fuera de la diagonal muestra que el mecanismo de atención es más sofisticado. En la primera pasada por el descodificador, el 94% del peso de la atención recae en la primera palabra inglesa "I", por lo que la red ofrece la palabra "je". En la segunda pasada por el descodificador, el 88% del peso de la atención está en la tercera palabra inglesa "you", por lo que ofrece "t'". En la última pasada, el 95% de la atención se centra en la segunda palabra inglesa "love", por lo que ofrece "aime".
+
+
+== Variantes ==
+Muchas variantes de la atención aplican pesos suaves, como por ejemplo
+
+"focos internos de atención"​ generados por programadores de pesos rápidos o controladores de pesos rápidos (1992)​ (también conocidos como transformadores con "autoatención linealizada"​​). Una red neuronal lenta aprende por descenso de gradiente a programar los pesos rápidos de otra red neuronal a través de productos externos de patrones de activación autogenerados llamados "FROM" y "TO" ("DESDE" y "HACIA") que en terminología de transformadores se denominan "key" y "value". Este "mapeo de atención" de pesos rápidos se aplica a las queries (consultas).
+Atención de Bahdanau,​ también denominada atención aditiva,
+Atención de Luong​ que se conoce como atención multiplicativa, construida sobre la atención aditiva,
+autoatención altamente paralelizable introducida en 2016 como atención descomponible​ y utilizada con éxito en transformadores un año después.
+Para las redes neuronales convolucionales, los mecanismos de atención pueden distinguirse por la dimensión sobre la que operan, en concreto: atención espacial,​ atención de canal,​ o combinaciones.​​
+Estas variantes recombinan las entradas del lado del codificador para redistribuir esos efectos a cada salida objetivo. A menudo, una matriz de productos de puntos de tipo correlación proporciona los coeficientes de reponderación.
+
+
+== Véase también ==
+Aprendizaje activo
+Alucinación (inteligencia artificial)
+Transformador de visión
+Transformador (modelo de aprendizaje automático), Atención escalada del producto escalar.
+Attention Is All You Need
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Jurafsky, Dan; Martin, James H. (2022). «Speech and Language Processing». ch. 10.4 Attention and ch. 9.7 Self-Attention Networks: Transformers (3rd ed. draft, January 2022 edición). 
+Alex Graves (4 de mayo de 2020). «Attention and Memory in Deep Learning (videoconferencia)». DeepMind / UCL, via YouTube. 
+«Rasa Algorithm Whiteboard - Attention». YouTube.

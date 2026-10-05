@@ -1,0 +1,555 @@
+En aprendizaje automático (AA) y minería de datos, el aprendizaje supervisado es una técnica para deducir una función a partir de datos de formación. Los datos de formación consisten de pares de objetos (normalmente vectores): una componente del par son los datos de entrada y el otro, los resultados deseados. La salida de la función puede ser un valor numérico (como en los problemas de regresión) o una etiqueta de clase (como en los de clasificación). El objetivo del aprendizaje supervisado es el de crear una función capaz de predecir el valor correspondiente a cualquier objeto de entrada válida después de haber visto una serie de ejemplos, los datos de formación. Para ello, tiene que generalizar a partir de los datos presentados a las situaciones no vistas previamente.
+En esto difiere del aprendizaje no supervisado.
+
+
+== Información general ==
+El aprendizaje supervisado puede generar modelos de dos tipos. Por lo general, genera una función que transforma los datos de entrada en los resultados deseados. 
+Con el fin de resolver un determinado problema de aprendizaje supervisado (por ejemplo, aprender a reconocer la escritura) uno tiene que considerar varios pasos:
+
+Determinar el tipo de ejemplos de formación. Antes de hacer cualquier otra cosa, hay que decidir qué tipo de datos se va a utilizar para formar el modelo. Por ejemplo, podría ser un único carácter a mano, una palabra completa escrita a mano, o toda una línea de escritura a mano.
+Reunir un conjunto de formación. El conjunto de necesidades de formación a las características propias del uso del mundo real de la función. Por lo tanto, un conjunto de objetos de entrada que se recopila y salidas correspondientes se recogen también, ya sea humana o de los expertos a partir de mediciones.
+Determinar la función de ingreso de la representación de la función aprendido. La precisión de la función aprendida depende en gran medida de cómo el objeto de entrada está representado. Normalmente, el objeto de entrada se transforma en un vector de características, que contiene una serie de características que son descriptivos del objeto. El número de características no debe ser demasiado grande, a causa de la maldición de la dimensionalidad, pero debe ser lo suficientemente grande como para predecir con precisión la salida.
+Determinar la estructura de la función adecuada para resolver y el problema y la técnica de aprendizaje correspondiente. Por ejemplo, se podría optar por utilizar red neuronal artificial o un árbol de decisión.
+Completar el diseño. El ingeniero a continuación, ejecuta el algoritmo de aprendizaje en el conjunto de la formación obtenida. Parámetros del algoritmo de aprendizaje puede ser ajustado mediante la optimización de rendimiento en un subconjunto de ellas (llamado conjunto de validación) del conjunto de formación, o por medio de la validación cruzada. Después del ajuste de parámetros y de aprendizaje, el desempeño del algoritmo se puede medir utilizando un conjunto de pruebas independiente del de formación.
+Otro término para el aprendizaje supervisado es la clasificación. Una amplia gama de clasificadores están disponibles, cada uno con sus fortalezas y debilidades. Clasificador rendimiento depende en gran medida de las características de los datos que deben clasificarse. No hay una clasificación única que funciona mejor en todos los problemas dados, lo que también se conoce como el No hay almuerzo gratis teorema. Diversas pruebas empíricas se han realizado para comparar el rendimiento del clasificador y para encontrar las características de los datos que determinan el rendimiento del clasificador. La determinación de un clasificador adecuado para un problema dado, sin embargo aún más un arte que una ciencia.
+Los clasificadores más utilizados son las redes neuronales, como el (perceptrón multicapa); las máquinas de vectores de soporte; el algoritmo de los K vecinos más cercanos, los modelos de mixturas; el clasificador bayesiano ingenuo; los árboles de decisión y las funciones de base radial.
+
+
+== Minimización del riesgo empírico ==
+El objetivo del aprendizaje supervisado es encontrar una función g, dado un conjunto de puntos de la forma (x, g(x)).
+Se supone que el conjunto de puntos para los que el comportamiento de los g es conocido es una muestra de variables aleatorias independientes idénticamente distribuidas de acuerdo con una distribución de probabilidad desconocida p. Por otra parte, se considera una función de pérdida L:
+
+  
+    
+      
+        L
+        :
+        Y
+        ×
+        Y
+        →
+        
+          
+            R
+          
+          
+            ≥
+            0
+          
+        
+      
+    
+    {\displaystyle L:Y\times Y\to \mathbb {R} ^{\geq 0}}
+  
+
+donde Y es el dominio de g, y L es una función mapas en el número no negativo real s (nuevas restricciones pueden ser colocados enL) . La cantidad L(z, y) es la pérdida sufrida en la predicción de z, como el valor de g cuando su valor verdadero es y.
+El riesgo asociado con una función f es la esperanza de la función de pérdida:
+
+  
+    
+      
+        R
+        (
+        f
+        )
+        =
+        
+          ∑
+          
+            i
+          
+        
+        L
+        (
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        ,
+        g
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        )
+        
+        p
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle R(f)=\sum _{i}L(f(x_{i}),g(x_{i}))\;p(x_{i})}
+  
+
+Si la distribución de probabilidad p es continua se puede reescribir la fórmula anterior usando una integral en lugar de un sumatorio..
+Ahora el objetivo es encontrar una función f* entre una subclase fijo de funciones para las que el riesgoR( f *) es mínima .
+Sin embargo, dado el comportamiento de los g generalmente solo es conocido por un conjunto finito de puntos (x1, y1), ..., (xnyn), uno sólo puede aproximar el verdadero riesgo, por ejemplo con el riesgo empírico:
+
+  
+    
+      
+        
+          
+            
+              
+                R
+                ~
+              
+            
+          
+          
+            n
+          
+        
+        (
+        f
+        )
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        L
+        (
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        ,
+        
+          y
+          
+            i
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle {\tilde {R}}_{n}(f)={\frac {1}{n}}\sum _{i=1}^{n}L(f(x_{i}),y_{i}).}
+  
+
+Selección de la función f* que minimiza el riesgo empírico se conoce como el principio de minimización empírica de riesgos. Teoría estadística de aprendizaje investiga bajo qué condiciones la minimización del riesgo empírico es admisible y lo bien que las aproximaciones se puede esperar que sea.
+
+
+== Aprendizaje Activo ==
+
+Hay situaciones en las que los datos sin etiqueta es abundante, pero los datos de etiquetado es caro. En esta situación, el algoritmo de aprendizaje de manera activa la consulta del usuario / profesor para las etiquetas. Este tipo de aprendizaje supervisado iterativo se llama aprendizaje activo. Dado que el estudiante elige los ejemplos, el número de ejemplos para aprender un concepto a menudo pueden ser mucho menores que el número requerido en el aprendizaje supervisado normal. Con este enfoque se corre el riesgo de que el algoritmo puede centrarse en importancia ni como ejemplos válidos.
+El aprendizaje activo puede ser especialmente útil en problemas de investigación biológica, como ingeniería de proteínas, donde unas pocas proteínas han sido descubiertos con una cierta función interesante y se quiere determinar cuál de las muchas posibles mutantes que el próximo que tendrá un.​
+
+
+=== Definiciones ===
+Que 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ es el conjunto total de todos los datos en cuestión. Por ejemplo, en un problema de ingeniería de proteínas, 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ se incluyen todas las proteínas que se sabe que tienen una determinada actividad interesante y todas las proteínas adicionales que uno podría querer poner a prueba para esa actividad.
+Durante cada iteración, 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+, 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ se divide en tres subgrupos:
+
+  
+    
+      
+        
+          
+            T
+          
+          
+            K
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {T} _{K,i}}
+  
+: Puntos cuya etiqueta es conocida
+
+  
+    
+      
+        
+          
+            T
+          
+          
+            U
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {T} _{U,i}}
+  
+: Puntos cuya etiqueta es desconocida
+
+  
+    
+      
+        
+          
+            T
+          
+          
+            C
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {T} _{C,i}}
+  
+: Un subconjunto de 
+  
+    
+      
+        
+          T
+          
+            U
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle T_{U,i}}
+  
+ escogido para ser etiquetado
+La mayoría de las investigaciones actuales en el aprendizaje activo implica que el mejor método para elegir los puntos de datos para 
+  
+    
+      
+        
+          T
+          
+            C
+            ,
+            i
+          
+        
+      
+    
+    {\displaystyle T_{C,i}}
+  
+.
+
+
+=== Hiperplano marginal mínima ===
+Algunos de los algoritmos de aprendizaje activo se basan en máquinas de vectores de soporte y aprovechar la estructura de la SVM para determinar qué puntos de datos a la etiqueta. Estos métodos suelen calcular el margen, 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+, de cada dato sin etiqueta en 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        U
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}U,i)}
+  
+ y tratar 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ como una distancia n-dimensional a partir de ese dato a la separación de hiperplano.
+métodos mínima marginal Hiperplano suponer que los datos con> los más pequeños 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ son las que el SVM es más seguro acerca de, por lo que debe ser colocado en 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        C
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}C,i)}
+  
+ se etiqueten . Otros métodos similares, como máximo marginal Hiperplano, elija los datos con> el mayor 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+. métodos de relaciones de intercambio elegir una combinación de la menor y la mayor 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ s.
+
+
+=== Máxima curiosidad ===
+Otro método de aprendizaje activo, que normalmente se entera de un conjunto de datos con menos ejemplos de mínima Hiperplano marginal, pero es más intensivo en cómputo y sólo para los clasificadores discreto es máxima curiosidad.​
+curiosidad máxima tiene en cada uno sin etiqueta de referencia en 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        U
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}U,i)}
+  
+ y asume todas las etiquetas posibles ese dato pueda tener. Este dato supone con cada clase se añade a 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        K
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}K,i)}
+  
+ y luego el nuevo 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        K
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}K,i)}
+  
+ cruz validados. Se supone que cuando el dato es emparejado con su etiqueta correcta, la exactitud de validación cruzada (o correlación coeficiente) de 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        K
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}K,i)}
+  
+ mejorará más. El dato con la precisión que más ha mejorado se coloca en 
+  
+    
+      
+        
+          T
+          
+            (
+          
+        
+        C
+        ,
+        i
+        )
+      
+    
+    {\displaystyle T_{(}C,i)}
+  
+ se etiqueten.
+
+
+== Enfoques y algoritmos ==
+Aprendizaje activo
+Analítica de aprendizaje
+Red neuronal artificial
+Propagación hacia atrás
+Boosting
+Estadística bayesiana
+Razonamiento basado en casos
+Aprendizaje basado en árboles de decisión
+Inductivo lógica de programación
+Krigeaje
+Programación genética
+Método de agrupamiento para el manejo de datos
+núcleo
+Aprendizaje automático
+La longitud del mensaje mínima (árbol de decisión, gráficos de decisión)
+Clasificador bayesiano ingenuo
+Regresión logística multinomial
+Campo aleatorio condicional
+Algoritmo del vecino más próximo
+Aprendizaje PAC
+Rizado establecen las normas, una metodología de adquisición de conocimientos
+Aprendizaje automático Simbólico
+Aprendizaje automático Subsimbólico
+Máquinas de vectores de soporte
+Random Forest
+Los conjuntos de clasificadores
+Clasificación ordinal
+Pre-procesamiento de datos
+Bases de datos Manejo desequilibrada
+Estadística de aprendizaje relacional
+
+
+== Aplicaciones ==
+Bioinformática
+Quimioinformática
+Relación cuantitativa estructura actividad
+Mercadotecnia de bases de datos
+Reconocimiento de escritura
+Recuperación de información
+Aprendizaje de clasificación
+Reconocimiento de objetos en visión artificial
+Reconocimiento óptico de caracteres
+Spam detección
+Reconocimiento de patrones
+Reconocimiento del habla
+Previsión estados financieros fraudulentos
+
+
+== Cuestiones generales ==
+Teoría del aprendizaje computacional
+Sesgo inductivo
+Overfitting
+(Sin calibrar) probabilidades pertenencia a una clase
+Espacio de versiones
+Aprendizaje no supervisado
+Teoría del aprendizaje estadístico
+Dilema sesgo-varianza
+
+
+== Notas ==
+
+
+== Referencias ==
+S. Kotsiantis, supervisado Aprendizaje Automático: Una Revisión de la Clasificación de las técnicas de Informática Diario 31 (2007) 249-268 (http://www.informatica.si/PDF/31-3/11_Kotsiantis% (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última). 20 -%%% 20Supervised 20Machine 20Learning 20% -% 20A% 20de% ... 20Review pdf).
+Lise Getoor y Taskar Ben: Introducciónaestadística de relación de aprendizaje, MIT Press, 2007.
+
+
+== Enlaces externos ==
+Máquina varias implementaciones de algoritmos de aprendizaje supervisado en Ruby.

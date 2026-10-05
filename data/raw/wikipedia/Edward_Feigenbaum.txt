@@ -1,0 +1,15 @@
+Edward Albert Feigenbaum (nacido el 20 de enero de 1936, Weehawken, Estados Unidos) es un científico de la computación que trabaja en el área de la inteligencia artificial. Frecuentemente se le llama «el padre de los sistemas expertos».
+Se doctoró en la Universidad de Carnegie Mellon. 
+Recibió el galardón más prestigioso de las ciencias de la computación, el premio Turing de la ACM junto a Raj Reddy en 1993 «por ser pionero en el diseño y construcción de sistemas de inteligencia artificial a gran escala, demostrando la importancia práctica y el potencial impacto comercial de la tecnología de la inteligencia artificial».
+Fue jefe del departamento científico de la Fuerza Aérea de Estados Unidos y recibió el galardón de Servicio Civil Excepcional de dicha rama en 1997. 
+Fundó el Laboratorio de Sistemas de Conocimiento en la Universidad de Stanford. Actualmente es profesor emérito de ciencias de la computación en dicha universidad. 
+
+
+== Artículos de Edward Feigenbaum ==
+The Age of Intelligent Machines: Knowledge Processing--From File Servers to Knowledge Servers by Edward Feigenbaum
+
+
+== Enlaces externos ==
+https://web.archive.org/web/20030821053914/http://ksl-web.stanford.edu/people/eaf/
+https://web.archive.org/web/20050912031112/http://ksl.stanford.edu/
+https://web.archive.org/web/20070318173815/http://www.closertotruth.com/participants/efeigenbaum/

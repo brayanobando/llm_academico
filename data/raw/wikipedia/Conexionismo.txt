@@ -1,0 +1,111 @@
+El conexionismo es un conjunto de enfoques en los ámbitos de la inteligencia artificial, psicología cognitiva, ciencia cognitiva, neurociencia y filosofía de la mente, que presenta los fenómenos de la mente y del comportamiento como procesos que emergen de redes formadas por unidades sencillas interconectadas. Hay múltiples formas de conexionismo, pero las más comunes son los modelos de redes neuronales.
+
+
+== Principios básicos ==
+El principio central del conexionismo es que los fenómenos mentales pueden ser descritos por redes de unidades sencillas y frecuentemente iguales que se interconectan. La forma de las conexiones y de las unidades varía de un modelo a otro. Por ejemplo, las unidades de la red podrían representar neuronas y las conexiones podrían representar sinapsis. Otro modelo podría hacer cada unidad de la red una palabra, y cada conexión una indicación de similitud semántica. 
+
+
+=== Propagación de activación ===
+En la mayoría de los modelos conexionistas las redes cambian con el tiempo. Un aspecto estrechamente relacionado y muy común de los modelos conexionistas es la activación. En cualquier momento, una unidad de la red se activa mediante un valor numérico que pretende representar algún aspecto de la unidad. Por ejemplo, si las unidades del modelo son neuronas, la activación puede representar a la probabilidad de que la neurona genere un pico en su potencial de acción. Si se trata de un modelo de propagación de activación, entonces con el tiempo la activación de una unidad se extenderá a todas las demás unidades conectadas a ella. La propagación de activación es siempre una característica de los modelos de redes neuronales, y es muy común en los modelos conexionistas utilizados en psicología cognitiva.
+
+
+=== Redes neuronales artificiales ===
+
+Las redes neuronales son los modelos conexionistas más utilizados hoy en día. Muchas investigaciones en las que se utilizan redes neuronales son denominadas con el nombre más genérico de "conexionistas". Aunque hay gran variedad de modelos de redes neuronales, casi siempre siguen dos principios básicos relativos a la mente:
+
+Cualquier estado mental puede ser descrito como un vector (N)-dimensional  de los valores numéricos de activación en las unidades neurales de una red.
+La memoria se crea cuando se modifican los valores que representan la fuerza de las conexiones entre las unidades neurales. La fuerza de las conexiones, o "pesos", son generalmente representados como una matriz de (N × N) dimensiones.
+La mayoría de los distintos modelos de redes neuronales aparecen por:
+
+La Interpretación de sus unidades: Se pueden interpretar como neuronas individuales o como grupos de estas.
+La Definición de la activación: Hay multitud de formas de definir la activación. Por ejemplo, en una máquina de Boltzmann la activación se interpreta como la probabilidad de generar un pico de potencial de acción, y se determina a través de una función logística sobre la base de la suma de las entradas de cada unidad.
+El algoritmo de aprendizaje: Cada tipo de red modifica sus conexiones de distinta forma. Por lo general, cualquier cambio matemáticamente definido que se dé en los pesos de las conexiones a lo largo del tiempo será definido como un "algoritmo de aprendizaje".
+Los conexionistas están de acuerdo en que las redes neuronales recurrentes (en las cuales las conexiones de la red pueden formar un ciclo dirigido) son un modelo del cerebro mejor que las redes neuronales feedforward (redes sin ciclos dirigidos). Muchos modelos recurrentes conexionistas también incorporan  la teoría de los sistemas dinámicos. Muchos investigadores, como Paul Smolensky, han argumentado que los modelos conexionistas evolucionarán hacia sistemas dinámicos no lineales con un enfoque plenamente continuo y de múltiples dimensiones.
+
+
+=== Realismo biológico ===
+La rama de las redes neuronales del conexionismo sugiere que el estudio de la actividad mental es en realidad el estudio de los sistemas neurales. Esto enlaza el conexionismo con la neurociencia, con modelos que implican diferentes grados de realismo biológico. Los trabajos conexionistas por lo general no necesitan ser biológicamente realistas, pero algunos investigadores de redes neuronales, los neurocientíficos computacionales, intentan modelar los aspectos biológicos de los sistemas naturales neuronales muy cerca de las denominadas "redes neuromórficas". A muchos autores les atrae del conexionismo la clara relación que se puede encontrar entre la actividad neuronal y la cognición. Esto ha sido criticado​ por ser excesivamente reduccionista.
+
+
+=== Aprendizaje ===
+Diversos estudios han estado enfocados en diseñar métodos de enseñanza-aprendizaje a partir del conexionismo.​ Los conexionistas por lo general subrayan la importancia del aprendizaje en sus modelos. Así han creado muchos procedimientos sofisticados de aprendizaje para redes neuronales. El aprendizaje siempre implica la modificación de los pesos de conexión. Esto generalmente conlleva el uso de fórmulas matemáticas para determinar el cambio de los pesos cuando se tienen un conjunto de datos consistente en vectores de activación para un subconjunto de unidades neuronales. 
+Para formalizar el aprendizaje de esta manera los conexionistas tienen muchas herramientas. Una estrategia muy común de los métodos conexionistas de aprendizaje es la incorporación del descenso de gradiente sobre una superficie de error en un espacio definido por la matriz de pesos. Todo el aprendizaje por descenso de gradiente en los modelos conexionistas implica el cambio de cada peso mediante la derivada parcial de la superficie de error con respecto al peso. El algoritmo de retropropagación se hizo popular en la década de 1980 y es probablemente el algoritmo conexionista de descenso de gradiente más conocido en la actualidad.
+
+
+== Historia ==
+Las bases de las ideas conexionistas se pueden remontar a finales del siglo XIX, cuando Santiago Ramón y Cajal estableció las bases para los estudios de redes neuronales, cuando describió la estructura de las neuronas y su forma de interconexión.​ Más tarde, en 1949, Donald Hebb propuso su postulado de aprendizaje según el cual la conexión entre dos neuronas se hará más fuerte si se disparan al mismo tiempo. Pero no fue hasta la década de 1980 cuando el conexionismo se convirtió en un punto de vista popular entre los científicos.
+
+
+=== Procesamiento distribuido en paralelo ===
+El enfoque conexionista que prevalece hoy en día fue originalmente conocido como procesamiento distribuido en paralelo (PDP). Era un enfoque de red neuronal que destacó el carácter paralelo del procesamiento neuronal, y la naturaleza distribuida de las representaciones neuronales. Dicho enfoque proporciona a los investigadores un marco matemático general en el que operar. Dicho marco implica ocho aspectos principales:  
+
+Un conjunto de unidades de procesamiento, representadas por un conjunto de números enteros.
+Una activación para cada unidad, representada por un vector de funciones dependientes del tiempo.
+Una función de activación para cada unidad, representada por un vector de funciones de activación.
+Un patrón de conectividad entre las unidades, representada por una matriz de números reales que indican la fuerza de conexión.
+Una regla de propagación que extienda las activaciones a través de las conexiones, representada por una función de salida de las unidades.
+Una regla de activación para combinar las entradas a una unidad y determinar su nueva activación, representada por una función de activación actual y de propagación.
+Una regla de aprendizaje para modificar las conexiones, basada en la experiencia, representada por un cambio en los pesos sobre la base de cualquier número de variables.
+Un entorno que provee al sistema de la experiencia, representada por conjuntos de vectores de activación para algunos subconjuntos de unidades.
+Estos aspectos son ahora la base para casi todos los modelos conexionistas. Una limitación del PDP es que es reduccionista. Es decir, todos los procesos cognitivos pueden ser explicados en términos de activación neuronal y comunicación. 
+Mucha de la investigación que condujo al desarrollo del PDP se hizo en la década de 1970, pero el PDP se hizo popular en la década de 1980 con el lanzamiento de los libros Parallel Distributed Processing: Explorations in the Microstructure of Cognition - Volume 1 (foundations) y Volume 2 (Psychological and Biological Models), por James L. McClelland, David E. Rumelhart y el Grupo de Investigación de los PDP. Estos libros son considerados obras básicas para el conexionismo, y actualmente es común equiparar plenamente PDP y conexionismo, aunque el término "conexionismo" no se utiliza en ellos.
+
+
+=== Primeros trabajos ===
+Raíces directas del PDP fueron las teorías del perceptrón de investigadores como Frank Rosenblatt en la década de 1950 y 1960. Pero los modelos perceptrón se hicieron muy impopulares a raíz del libro Perceptrons: An Introduction to Computational Geometry de Marvin Minsky y Seymour Papert, publicado en 1969. Este libro mostraba los límites de la clase de funciones que los perceptrones pueden calcular, demostrando que incluso las funciones simples, como el O exclusivo no pueden ser manejadas correctamente. Los libros sobre PDP superaron esta limitación, al mostrar que las redes neuronales multi-capa y no lineales son mucho más robustas y pueden utilizarse para una amplia gama de funciones.
+Muchos de los primeros investigadores abogaron por modelos de estilo conexionista, por ejemplo, en los las décadas de 1940 y 1950, Warren McCulloch, Walter Pitts, Donald Olding Hebb, y Karl Lashley. McCulloch y Pitts mostraron cómo los sistemas neurales podrían implementar la lógica de primer orden en un artículo clásico "A Logical Calculus of Ideas Immanent in Nervous Activity" (1943). Los autores de este artículo fueron influenciados por la importante labor de Nicolas Rashevsky en la década de 1930. Hebb hizo una gran contribución con sus ideas sobre el funcionamiento neural, y propuso un principio de aprendizaje, llamado aprendizaje hebbiano, que se sigue utilizando hoy en día. Lashley argumentó que las representaciones distribuidas son consecuencia de su fracaso en encontrar algo parecido a un engrama en años de experimentos con lesiones.
+
+
+=== Conexionismo aparte de PDP ===
+Aunque el PDP es la forma dominante de conexionismo, hay otro tipo de trabajos teóricos que también deben ser englobados dentro del conexionismo.
+En 1888 Santiago Ramón y Cajal describió la estructura de las neuronas y su forma de interconexión estableciendo de esta manera las bases para los estudios de redes neuronales. Pero muchos principios conexionistas se remontan trabajos tempranos en el campo de la psicología, como los de William James. Las teorías psicológicas basadas en el conocimiento del cerebro humano estaban de moda en el siglo XIX. Ya en 1869, el neurólogo John Hughlings Jackson abogó por sistemas distribuidos en varios niveles. Partiendo de esta base las publicaciones de Herbert Spencer Principles of Psychology, 3a edición (1872), y de Sigmund Freud Project for a Scientific Psychology (1895) proponían teorías conexionistas o proto-conexionistas. Estas tendían a ser teorías especulativas. Pero a principios del siglo XX, Edward Thorndike estaba experimentando con formas de aprendizaje que postulaban las redes de tipo conexionista.
+En la década de 1950, Friedrich Hayek propuso que el orden espontáneo en el cerebro era consecuencia de redes descentralizadas formadas por unidades sencillas. El trabajo de Hayek era raramente citado en la literatura sobre PDP hasta hace poco. 
+Otra forma de modelo conexionista fue la llamada Gramática estratificacional desarrollada por el lingüista Sydney Lamb en la década de 1960. La gramática estratificacional solo ha sido utilizada por los lingüistas, y nunca fue unificada bajo el enfoque de los PDP. Como resultado pocos son los investigadores que ahora la utilizan.
+Hay también modelos conexionistas híbridos, la mayoría mezcla de representaciones simbólicas con modelos de redes neuronales.
+El enfoque híbrido ha sido defendido por algunos investigadores como Ron Sun.
+
+
+== Debate conexionismo vs. Inteligencia artificial convencional ==
+Mientras el conexionismo se hacía cada vez más popular en la década de 1980, hubo una reacción contraria por parte de algunos investigadores, incluyendo a Jerry Fodor, Steven Pinker y otros. Argumentaban que el conexionismo tal y como se estaba desarrollando corría el peligro de olvidar lo que ellos veían como los progresos realizados por el enfoque clásico de la inteligencia artificial en los campos de la ciencia cognitiva y la psicología. La inteligencia artificial convencional argumenta que la mente opera mediante la realización de operaciones simbólicas puramente formales, como una máquina de Turing. Algunos investigadores señalaron que la tendencia hacia el conexionismo era un error, ya que significaba una reversión hacia el asociacionismo y el abandono de la idea de un lenguaje del pensamiento. Por el contrario estas tendencias hicieron que otros investigadores fueran atraídos hacia el conexionismo. 
+El Conexionismo y la IA convencional no tienen porqué ser excluyentes, pero el debate a finales de la década de 1980 y principios de la de 1990 condujo a la oposición entre los dos enfoques. Durante el debate, algunos investigadores han argumentado que el conexionismo y la IA convencional son totalmente compatibles, aunque no se ha alcanzado un consenso pleno sobre esta cuestión. Las diferencias entre los dos enfoques más citados son los siguientes:
+
+En IA convencional se plantean modelos simbólicos que no se asemejan en nada a la estructura cerebral subyacente, mientras que en conexionismo se aborda un modelado de "bajo nivel", tratando de asegurar que los modelos se asemejen a estructuras neurológicas.
+La IA convencional se centra generalmente en la estructura de símbolos explícitos (modelos mentales) y reglas sintácticas para su manipulación a nivel interno, mientras que los conexionistas se centran en el aprendizaje mediante estímulos procedentes del medio y en el almacenamiento de esta información en forma de conexiones entre neuronas.
+Los partidarios de la IA convencional creen que la actividad mental interna consiste en la manipulación de símbolos explícitos, mientras que los conexionistas creen que la manipulación de símbolos explícitos es una representación muy pobre de la actividad mental.
+Los partidarios de la IA convencional a menudo plantean subsistemas simbólicos de dominio específico diseñados para apoyar el aprendizaje en áreas específicas del conocimiento (por ejemplo, lenguaje, intencionalidad, números), mientras que los conexionistas postulan uno o un pequeño conjunto de mecanismos de aprendizaje muy generales.
+A pesar de estas diferencias, algunos teóricos han propuesto que la arquitectura conexionista es simplemente la forma en que el sistema de manipulación de símbolos es implementado en el cerebro orgánico. Esto es lógico ya que se sabe que los modelos conexionistas pueden implementar sistemas de manipulación de símbolos del tipo de los utilizados en los modelos de IA convencional. De hecho, esto debe de ser así al ser uno de los propósitos de los sistemas conexionistas el explicar la capacidad humana para realizar tareas de manipulación de símbolos. La cuestión reside en si esta manipulación de símbolos es la base de la cognición en general. Sin embargo, las descripciones computacionales pueden ser útiles descripciones de la cognición de alto nivel, por ejemplo de la lógica.
+El debate sobre si las redes conexionistas eran capaces de producir la estructura sintáctica observada en razonamientos de tipo lógico fue tardío y el hecho de que los procedimientos utilizados eran muy improbables en el cerebro hizo que la controversia persistiera. Hoy en día los avances de la neurofisiología y de la comprensión de las redes neuronales han llevado a la elaboración de modelos que han tenido éxito en la superación de gran número de aquellos primeros problemas. Para los neurocientíficos la cuestión fundamental sobre el conocimiento se ha inclinado a favor del conexionismo. Sin embargo, este desarrollo relativamente reciente aún no han alcanzado un consenso aceptable entre aquellos que trabajan en otros campos, tales como la psicología o la filosofía de la mente.
+Parte del atractivo de las descripciones de la IA convencional se debe a que son relativamente fáciles de interpretar, y por lo tanto pueden ser vistas como una contribución a nuestra comprensión de determinados procesos mentales, mientras que los modelos conexionistas son por lo general más oscuros, en la medida de que solo se pueden describir en términos muy generales (especificando algoritmo de aprendizaje, número de unidades, etc.), o en términos de bajo nivel que dificultan la comprensión de los procesos cognitivos. En este sentido, los modelos conexionistas pueden aportar datos para una teoría general del conocimiento (es decir, el conexionismo), sin que ello represente una teoría útil del proceso particular que esté siendo modelado. El debate podría considerarse en cierta medida un mero reflejo de las diferencias en el nivel de análisis en el que se enmarcan las teorías particulares. 
+La reciente popularidad de los sistemas dinámicos en la filosofía de la mente (debido a las obras de autores como Tim van Gelder) ha añadido una nueva perspectiva al debate, algunos autores argumentan ahora que cualquier división entre el conexionismo y la IA convencional queda mejor caracterizada como una división entre la IA convencional y los sistemas dinámicos.
+
+
+== Véase también ==
+Asociacionismo
+Red neuronal artificial
+Inteligencia artificial
+Cibernética
+Inteligencia computacional
+Neurociencia computacional
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Martínez Freire, Pascual (2007).  Netbiblo, ed. La Importancia del Conocimiento. Filosofía y Ciencias Cognitivas. ISBN 978-84-9745-172-7. 
+Reynoso, Carlos (2006).  SB, ed. Complejidad y Caos: Una Exploración Antropológica (PDF). ISBN 987-12-5604-3. Archivado desde el original el 24 de mayo de 2010. Consultado el 18 de febrero de 2010. 
+Freedman, David H. (1996). «Capítulo 3: El Arte del pensamiento». Hacedores de cerebros. (url con vista previa restringida). Editorial Andres Bello. pp. 83-130. ISBN 956-13-1324-3. 
+Rumelhart, D.E., J.L. McClelland and the PDP Research Group (1986). Parallel Distributed Processing: Explorations in the Microstructure of Cognition. Volume 1: Foundations (en inglés), Cambridge, MA: MIT Press
+McClelland, J.L., D.E. Rumelhart and the PDP Research Group (1986). Parallel Distributed Processing: Explorations in the Microstructure of Cognition. Volume 2: Psychological and Biological Models (en inglés), Cambridge, MA: MIT Press
+Pinker, Steven and Mehler, Jacques (1988). Connections and Symbols (en inglés), Cambridge MA: MIT Press.
+Jeffrey L. Elman, Elizabeth A. Bates, Mark H. Johnson, Annette Karmiloff-Smith, Domenico Parisi, Kim Plunkett (1996). Rethinking Innateness: A connectionist perspective on development (en inglés), Cambridge MA: MIT Press.
+Marcus, Gary F. (2001). The Algebraic Mind: Integrating Connectionism and Cognitive Science (Learning, Development, and Conceptual Change) (en inglés), Cambridge, MA: MIT Press
+Wasserman, Philip D. (1989). Neural computing: theory and practice (en inglés). New York: Van Nostrand Reinhold. ISBN 0-442-20743-3. 
+S. Ramón y Cajal (2006). Trabajos escogidos. Antoni Bosch Editor. ISBN 978-84-95348-26-5. 
+
+
+== Enlaces externos ==
+A Brief History of Connectionism. David A. Medler. Biological Computation Project. Department of Psychology, University of Alberta (en inglés)
+"Connectionism artículo de James Garson en la Stanford Encyclopedia of Philosophy (en inglés)
+Una demostración de Activación interactiva y Competencia de Redes Archivado el 3 de julio de 2015 en Wayback Machine. (en inglés)
+Publicaciones de D. Santiago Ramón y Cajal

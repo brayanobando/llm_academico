@@ -1,0 +1,863 @@
+En el campo del aprendizaje automático, el perceptrón, es un algoritmo para el aprendizaje supervisado de clasificadores binarios. Un clasificador binario es una función que puede decidir si una entrada, representada por un vector de números, pertenece o no a una clase específica.
+El perceptrón es un tipo de clasificador lineal, es decir, un algoritmo capaz de generar un criterio para seleccionar un subconjunto de elementos a partir de un conjunto de elementos más grande.
+El perceptrón puede utilizarse con otros tipos de perceptrones o de neurona artificial, para formar una  red neuronal artificial más compleja.
+El concepto de perceptrón fue introducido por Frank Rosenblatt en 1958.​
+
+
+== Definición ==
+El modelo biológico más simple de un perceptrón es una neurona y viceversa. Es decir, el modelo matemático más simple de una neurona es un perceptrón. La neurona es una célula especializada y caracterizada por poseer una cantidad indefinida de canales de entrada llamados dendritas y un canal de salida llamado axón. Las dendritas operan como sensores que recogen información de la región donde se hallan y la derivan hacia el cuerpo de la neurona que reacciona mediante una sinapsis que envía una respuesta hacia el cerebro.​
+Una neurona sola y aislada carece de razón de ser. Su labor especializada se torna valiosa en la medida en que se asocia a otras neuronas, formando una red. Normalmente, el axón de una neurona entrega su información como «señal de entrada» a una dendrita de otra neurona y así sucesivamente. El perceptrón que capta la señal en adelante se extiende formando una red de neuronas, sean éstas biológicas o de sustrato semiconductor (compuertas lógicas).
+El perceptrón usa una matriz para representar las redes neuronales y es un discriminador terciario que traza su entrada 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ (un vector binario) a un único valor de salida 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ (un solo valor binario) a través de dicha matriz. 
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  1
+                
+                
+                  
+                    si 
+                  
+                  w
+                  ⋅
+                  x
+                  −
+                  u
+                  >
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    en otro caso
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle f(x)={\begin{cases}1&{\text{si }}w\cdot x-u>0\\0&{\text{en otro caso}}\end{cases}}}
+  
+ 
+Donde 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ es un vector de pesos reales y 
+  
+    
+      
+        w
+        ⋅
+        x
+      
+    
+    {\displaystyle w\cdot x}
+  
+ es el producto escalar (que computa una suma ponderada). 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ es el 'umbral', el cual representa el grado de inhibición de la neurona, es un término constante que no depende del valor que tome la entrada. 
+El valor de 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ (0 o 1) se usa para clasificar 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ como un caso positivo o un caso negativo, en el caso de un problema de clasificación binario. El umbral puede entenderse como una manera de compensar la función de activación, o una forma de fijar un nivel mínimo de actividad a la neurona para considerarse como activa. La suma ponderada de las entradas debe producir un valor mayor que 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ para cambiar la neurona de estado 0 a 1. ​
+La limitación de este algoritmo es que si dibujamos en un gráfico estos elementos, se deben poder separar con un hiperplano únicamente los elementos «deseados»  discriminándolos (separándolos) de los «no deseados».
+
+
+== Aprendizaje ==
+En el perceptrón, existen dos tipos de aprendizaje, el primero utiliza una tasa de aprendizaje mientras que el segundo no la utiliza. Esta tasa de aprendizaje amortigua el cambio de los valores de los pesos.​
+El algoritmo de aprendizaje es el mismo para todas las neuronas, todo lo que sigue se aplica a una sola neurona en el aislamiento. Se definen algunas variables primero: 
+
+  
+    
+      
+        x
+        (
+        j
+        )
+      
+    
+    {\displaystyle x(j)}
+  
+ denota el elemento en la posición 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+ en el vector de la entrada
+
+  
+    
+      
+        w
+        (
+        j
+        )
+      
+    
+    {\displaystyle w(j)}
+  
+ el elemento en la posición 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+ en el vector de peso
+
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ denota la salida de la neurona
+
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+ denota la salida esperada
+
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ es una constante tal que 
+  
+    
+      
+        0
+        <
+        α
+        <
+        1
+      
+    
+    {\displaystyle 0<\alpha <1}
+  
+
+Los dos tipos de aprendizaje difieren en este paso. Para el primer tipo de aprendizaje, utilizando tasa de aprendizaje, utilizaremos la siguiente regla de actualización de los pesos:
+
+  
+    
+      
+        w
+        (
+        j
+        
+          )
+          ′
+        
+        =
+        w
+        (
+        j
+        )
+        +
+        α
+        (
+        δ
+        −
+        y
+        )
+        x
+        (
+        j
+        )
+        
+      
+    
+    {\displaystyle w(j)'=w(j)+\alpha (\delta -y)x(j)\,}
+  
+
+Para el segundo tipo de aprendizaje, sin utilizar tasa de aprendizaje, la regla de actualización de los pesos será la siguiente:
+
+  
+    
+      
+        w
+        (
+        j
+        
+          )
+          ′
+        
+        =
+        w
+        (
+        j
+        )
+        +
+        (
+        δ
+        −
+        y
+        )
+        x
+        (
+        j
+        )
+      
+    
+    {\displaystyle w(j)'=w(j)+(\delta -y)x(j)}
+  
+
+Por lo cual, el aprendizaje es modelado como la actualización del vector de peso después de cada iteración, lo cual sólo tendrá lugar si la salida 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ difiere de la salida deseada 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+. Para considerar una neurona al interactuar en múltiples iteraciones debemos definir algunas variables más:
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x_{i}}
+  
+ denota el vector de entrada para la iteración i
+
+  
+    
+      
+        
+          w
+          
+            i
+          
+        
+      
+    
+    {\displaystyle w_{i}}
+  
+ denota el vector de peso para la iteración i
+
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+      
+    
+    {\displaystyle y_{i}}
+  
+ denota la salida para la iteración i
+
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+        =
+        {
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          x
+          
+            m
+          
+        
+        ,
+        
+          y
+          
+            m
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle D_{m}=\{(x_{1},y_{1}),\dots ,(x_{m},y_{m})\}}
+  
+ denota un periodo de aprendizaje de 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ iteraciones
+En cada iteración el vector de peso es actualizado como sigue:
+
+Para cada pareja ordenada 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ en 
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+        =
+        {
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          x
+          
+            m
+          
+        
+        ,
+        
+          y
+          
+            m
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle D_{m}=\{(x_{1},y_{1}),\dots ,(x_{m},y_{m})\}}
+  
+
+Pasar 
+  
+    
+      
+        (
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          y
+          
+            i
+          
+        
+        ,
+        
+          w
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{i},y_{i},w_{i})}
+  
+ a la regla de actualización 
+  
+    
+      
+        w
+        (
+        j
+        
+          )
+          ′
+        
+        =
+        w
+        (
+        j
+        )
+        +
+        α
+        (
+        δ
+        −
+        y
+        )
+        x
+        (
+        j
+        )
+      
+    
+    {\displaystyle w(j)'=w(j)+\alpha (\delta -y)x(j)}
+  
+
+El periodo de aprendizaje 
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+      
+    
+    {\displaystyle D_{m}}
+  
+ se dice que es separable linealmente si existe un valor positivo 
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  
+ y un vector de peso 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ tal que:
+
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+        ⋅
+        
+          (
+          
+            ⟨
+            w
+            ,
+            
+              x
+              
+                i
+              
+            
+            ⟩
+            +
+            u
+          
+          )
+        
+        >
+        γ
+      
+    
+    {\displaystyle y_{i}\cdot \left(\langle w,x_{i}\rangle +u\right)>\gamma }
+  
+ para todos los 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+.
+Novikoff (1962) probó que el algoritmo de aprendizaje converge después de un número finito de iteraciones si los datos son separables linealmente y el número de errores está limitado a:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  2
+                  R
+                
+                γ
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \left({\frac {2R}{\gamma }}\right)^{2}}
+  
+.
+Sin embargo si los datos no son separables linealmente, la línea de algoritmo anterior no se garantiza que converja.
+
+
+== Ejemplo ==
+Considere las funciones AND y OR. Estas funciones son linealmente separables y por lo tanto pueden ser aprendidas por un perceptrón.
+
+La función XOR no puede ser aprendida por un único perceptrón puesto que requiere al menos de dos líneas para separar las clases (0 y 1). Debe utilizarse al menos una capa adicional de perceptrones para permitir su aprendizaje.
+
+Un perceptrón aprende a realizar la función binaria NAND con entradas 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle x_{1}\,}
+  
+ y 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle x_{2}\,}
+  
+.
+
+Entradas: 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        
+      
+    
+    {\displaystyle x_{0}\,}
+  
+, 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle x_{1}\,}
+  
+, 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle x_{2}\,}
+  
+, donde 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        
+      
+    
+    {\displaystyle x_{0}\,}
+  
+ se mantiene constante en 1.
+Umbral (
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+): 0.5
+Bias (
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+): 0
+Tasa de aprendizaje (
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+): 0.1
+Conjunto de formación, que consiste en cuatro muestras: 
+  
+    
+      
+        {
+        (
+        (
+        1
+        ,
+        0
+        ,
+        0
+        )
+        ,
+        1
+        )
+        ,
+        (
+        (
+        1
+        ,
+        0
+        ,
+        1
+        )
+        ,
+        1
+        )
+        ,
+        (
+        (
+        1
+        ,
+        1
+        ,
+        0
+        )
+        ,
+        1
+        )
+        ,
+        (
+        (
+        1
+        ,
+        1
+        ,
+        1
+        )
+        ,
+        0
+        )
+        }
+        
+      
+    
+    {\displaystyle \{((1,0,0),1),((1,0,1),1),((1,1,0),1),((1,1,1),0)\}\,}
+  
+
+En lo que sigue, los pesos finales de una iteración se convierten en los pesos iniciales de la siguiente. Cada ciclo sobre todas las muestras en el conjunto de formación está marcado con líneas gruesas.
+
+Este ejemplo se puede implementar en Python con el siguiente código.
+
+
+== Véase también ==
+Perceptrón multicapa
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Implementación en MATLAB
+Explicación Geométrica del Perceptron y código de ejemplo en Java

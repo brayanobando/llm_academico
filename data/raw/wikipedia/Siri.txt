@@ -1,0 +1,168 @@
+Siri es un asistente virtual desarrollado por Apple Inc. e integrado en sus sistemas operativos y dispositivos, entre ellos iOS, iPadOS, watchOS, macOS, tvOS, HomePod, CarPlay y visionOS. Utiliza tecnologías de reconocimiento de voz, procesamiento del lenguaje natural, síntesis de voz, aprendizaje automático y, en sus generaciones más recientes, modelos generativos asociados a Apple Intelligence, para responder preguntas, controlar funciones del dispositivo, ejecutar acciones, realizar búsquedas, crear recordatorios, enviar mensajes, consultar información y automatizar tareas mediante aplicaciones y servicios compatibles.​​
+Siri nació en 2003 como una aplicación independiente de Siri, Inc., una empresa derivada de SRI International, y fue lanzada en la App Store en febrero de 2010. Apple adquirió Siri, Inc. en abril de ese mismo año y la integró de forma nativa en el iPhone 4S, presentado el 4 de octubre de 2011 y puesto a la venta el 14 de octubre de 2011.​​​​
+Desde su integración inicial en el iPhone, Siri se ha expandido progresivamente al resto del ecosistema Apple. En 2015 llegó a Apple Watch y al nuevo Apple TV con mando Siri Remote; en 2016 se incorporó a macOS Sierra y Apple abrió parte de sus funciones a desarrolladores mediante SiriKit; en 2017 se integró en HomePod; en 2018 se amplió con Atajos de Siri; y desde 2024 se ha vinculado a Apple Intelligence, la plataforma de inteligencia personal de Apple.​​​​
+En junio de 2026 Apple presentó Siri AI, una evolución de Siri basada en Apple Intelligence, con mayor capacidad conversacional, contexto personal, conocimiento del mundo, conciencia de lo que aparece en pantalla y una aplicación dedicada para mantener conversaciones más largas. Apple anunció que Siri AI estaría disponible en versión beta más adelante en 2026, inicialmente en inglés y en dispositivos compatibles con Apple Intelligence, con limitaciones iniciales de disponibilidad en la Unión Europea, China y determinados idiomas.​​
+
+
+== Historia ==
+
+
+=== Orígenes en SRI International y CALO ===
+Siri tiene su origen en investigaciones de SRI International, organización que participó en el proyecto CALO, siglas de Cognitive Assistant that Learns and Organizes. CALO formó parte del programa PAL de DARPA y buscaba desarrollar asistentes cognitivos capaces de aprender, organizar información, razonar sobre tareas y ayudar al usuario en actividades complejas.​
+La empresa Siri, Inc. fue creada como una derivada de SRI International. Sus fundadores principales fueron Dag Kittlaus, Adam Cheyer y Tom Gruber, con participación de Norman Winarsky desde SRI. La tecnología original combinaba reconocimiento de voz, comprensión semántica, contexto personal y delegación de tareas a servicios externos. Según SRI, Apple adquirió Siri en abril de 2010, después de que la aplicación independiente hubiera llegado al mercado ese mismo año.​
+
+
+=== Aplicación independiente y adquisición por Apple ===
+La primera versión pública de Siri apareció como aplicación independiente para el iPhone en febrero de 2010. Su objetivo era actuar como un asistente personal capaz de entender peticiones formuladas en lenguaje natural, como reservar una mesa, buscar negocios cercanos o consultar información mediante servicios externos. En aquel momento, Siri se apoyaba en proveedores como OpenTable, Yelp, CitySearch y otros servicios de búsqueda, reservas y datos locales.​
+Apple adquirió Siri, Inc. en abril de 2010. La operación aparece en los registros de la Federal Trade Commission de Estados Unidos y supuso la cancelación de los planes de Siri, Inc. para llevar la aplicación a otras plataformas móviles, como Android y BlackBerry, que habían sido mencionadas en informaciones periodísticas de la época.​​
+
+
+=== Integración en el iPhone 4S ===
+Apple presentó el iPhone 4S el 4 de octubre de 2011 con Siri como una de sus funciones principales. La compañía describió Siri como un asistente inteligente capaz de entender contexto, responder preguntas, realizar acciones y conversar con el usuario en lenguaje natural. El iPhone 4S llegó al mercado el 14 de octubre de 2011 en los primeros países de lanzamiento.​
+La primera integración nativa de Siri en iOS permitía realizar llamadas, enviar mensajes, crear recordatorios, consultar el tiempo, buscar información, usar el calendario, reproducir música, configurar alarmas y obtener respuestas a preguntas generales. También se integraba con servicios como mapas, bolsa, correo, contactos y búsquedas web. En esa etapa, Siri se ofrecía inicialmente en inglés, francés y alemán, y posteriormente se amplió a más idiomas, incluido el español.​
+
+
+=== Expansión a otros dispositivos ===
+Después de su debut en el iPhone, Siri se fue incorporando a otros dispositivos de Apple. En Apple Watch, Siri pasó a ser una forma de interacción rápida desde la muñeca, accesible mediante voz o manteniendo pulsada la Digital Crown. En el Apple TV, Siri se integró en el mando Siri Remote para buscar contenido, controlar reproducción y navegar por la interfaz mediante voz.​​
+En 2016, con macOS Sierra, Siri llegó al Mac. Apple presentó la función como una forma de buscar archivos, consultar información, enviar mensajes, encontrar imágenes, modificar ajustes y mantener resultados de Siri en el centro de notificaciones. La llegada a macOS consolidó a Siri como un servicio transversal del ecosistema Apple y no solo como una característica de iOS.​
+En 2017, Apple presentó HomePod, un altavoz inteligente centrado en música, control del hogar y uso de Siri en el entorno doméstico. En HomePod, Siri permite reproducir música, controlar accesorios de HomeKit, responder consultas, enviar mensajes y atender peticiones personales cuando el usuario ha configurado el reconocimiento de voz.​​
+Apple también extendió Siri a CarPlay, AirPods y Apple Vision Pro, con modalidades de interacción adaptadas a cada dispositivo. En CarPlay, Siri permite reducir la interacción manual al conducir; en AirPods se usa para notificaciones, mensajes y control por voz; y en Apple Vision Pro forma parte de la interacción del sistema mediante voz.​
+
+
+=== SiriKit, Atajos y App Intents ===
+Hasta 2016, Siri funcionaba principalmente como una tecnología cerrada integrada en aplicaciones y servicios seleccionados de Apple. Con iOS 10, Apple presentó SiriKit, un marco de desarrollo que permite a aplicaciones de terceros exponer determinadas funciones a Siri dentro de dominios definidos por Apple, como mensajería, llamadas, búsqueda de fotos, reserva de viajes, pagos, entrenamientos y algunas funciones de CarPlay.​
+En 2018, Apple presentó Atajos de Siri con iOS 12. Esta función permitió que las aplicaciones ofrecieran acciones al sistema y que los usuarios crearan automatizaciones invocables mediante frases personalizadas. Atajos amplió el papel de Siri, al pasar de ser únicamente un asistente de preguntas y respuestas a actuar también como punto de entrada para flujos de trabajo entre aplicaciones.​
+Posteriormente, Apple impulsó App Intents, un marco que permite a las aplicaciones exponer acciones y entidades al sistema para integrarse con Siri, Atajos, Spotlight, widgets, controles y experiencias de Apple Intelligence. Apple ha descrito App Intents como una pieza central para que las funciones de las aplicaciones sean comprensibles y accionables por el sistema y por los modelos de inteligencia personal.​​
+
+
+=== Apple Intelligence y Siri AI ===
+En junio de 2024, Apple presentó Apple Intelligence, una plataforma de inteligencia personal integrada en iOS, iPadOS y macOS. Apple describió Apple Intelligence como un sistema que combina modelos generativos con contexto personal, procesamiento en el dispositivo y, para tareas más complejas, Private Cloud Compute. En esa presentación, Siri recibió un nuevo diseño, mejor comprensión del lenguaje, capacidad para mantener el contexto entre peticiones y la posibilidad de apoyarse en Apple Intelligence para entender mejor las solicitudes del usuario.​
+Apple anunció inicialmente funciones de Siri más personalizadas para la generación de iOS 18, pero en marzo de 2025 reconoció que algunas de esas mejoras tardarían más de lo previsto y serían desplegadas posteriormente. La compañía indicó que trabajaba en una Siri capaz de entender mejor el contexto personal, actuar dentro y entre aplicaciones, y reconocer lo que aparece en pantalla.​
+En junio de 2026, Apple presentó Siri AI como una evolución más profunda del asistente. Según Apple, Siri AI está diseñada para ser más conversacional, comprender el contexto personal del usuario, responder preguntas sobre información propia almacenada en el dispositivo, interpretar lo que se muestra en pantalla, realizar acciones más complejas entre aplicaciones y consultar conocimiento general. Apple también anunció una aplicación dedicada de Siri AI para mantener conversaciones más extensas y revisitar interacciones anteriores.​​
+En enero de 2026, Google y Apple anunciaron una colaboración plurianual por la que la siguiente generación de Apple Foundation Models se basaría en modelos Gemini y tecnología cloud de Google para futuras funciones de Apple Intelligence, incluida una Siri más personalizada. Apple mantuvo, según esa comunicación, su arquitectura centrada en procesamiento en el dispositivo y Private Cloud Compute para preservar la privacidad de los usuarios.​
+
+
+== Funcionamiento ==
+
+
+=== Activación por voz ===
+Siri puede activarse mediante frases como «Oye Siri», «Siri» en dispositivos compatibles, botones físicos o gestos del sistema. Apple ha explicado que la detección de la frase de activación se ejecuta en el propio dispositivo mediante redes neuronales diseñadas para funcionar de forma continua con bajo consumo. En la primera documentación técnica publicada por Apple sobre «Hey Siri», el sistema se describe como un pequeño reconocedor de voz que escucha localmente la frase de activación y calcula la probabilidad de que el usuario haya invocado al asistente.​
+En investigaciones posteriores, Apple describió el sistema de activación de Siri como una arquitectura multietapa orientada a precisión, bajo consumo, privacidad y baja latencia. En dispositivos personales, la activación puede combinar detección de voz, verificación de la frase de activación, identificación del hablante y análisis de si el usuario está dirigiéndose realmente a Siri. Esta aproximación busca reducir activaciones accidentales y decidir qué dispositivo cercano debe responder cuando hay varios productos Apple disponibles.​
+
+
+=== Reconocimiento del habla y comprensión del lenguaje ===
+Una vez activado, Siri convierte la señal de voz en texto mediante tecnologías de reconocimiento automático del habla. Apple ha descrito esta fase como una combinación de modelos acústicos y modelos de lenguaje. Los modelos acústicos estiman qué sonidos se han pronunciado, mientras que los modelos de lenguaje ayudan a seleccionar la secuencia de palabras más probable.​
+Apple también ha publicado investigaciones sobre modelos de lenguaje geográficamente específicos, denominados Geo-LMs, para mejorar el reconocimiento de lugares, negocios y puntos de interés cercanos. Estos modelos permiten que Siri reconozca con mayor probabilidad nombres relevantes para la ubicación del usuario, como restaurantes, calles o establecimientos próximos.​
+La fase de comprensión del lenguaje natural interpreta la intención del usuario y la relaciona con acciones del sistema, aplicaciones compatibles, servicios web o modelos de Apple Intelligence. Apple no ha publicado un diagrama completo extremo a extremo de todo el sistema clásico de Siri, por lo que algunos detalles de la orquestación interna no son públicos. Sin embargo, la documentación de SiriKit, App Intents y Apple Intelligence muestra que Apple usa una combinación de dominios de acción, entidades, contexto personal y modelos para decidir cómo responder o qué acción ejecutar.​​​​
+
+
+=== Síntesis de voz ===
+Siri responde al usuario mediante síntesis de voz. Apple ha explicado que, desde iOS 10 y con mejoras en iOS 11, las voces de Siri se basan en técnicas de aprendizaje profundo ejecutadas en el dispositivo. En concreto, Apple describió el uso de modelos neuronales para producir voces más naturales dentro de un sistema híbrido de síntesis y selección de unidades.​
+La ejecución local de parte de la síntesis reduce la dependencia de la red, mejora la latencia y permite mantener una experiencia más consistente en distintos dispositivos. Las voces disponibles dependen del idioma, región, sistema operativo y modelo de dispositivo.
+
+
+=== Apple Neural Engine, modelos locales y Private Cloud Compute ===
+Con Apple Intelligence, Apple introdujo una arquitectura que prioriza el procesamiento en el dispositivo. En dispositivos compatibles, muchas tareas de Apple Intelligence y Siri pueden ejecutarse localmente mediante modelos optimizados y el Apple Neural Engine. Para peticiones más complejas, Apple afirma utilizar Private Cloud Compute, una infraestructura diseñada para ejecutar modelos mayores sin almacenar los datos del usuario ni hacerlos accesibles a Apple fuera de la petición concreta.​​
+Apple ha publicado documentación técnica de Private Cloud Compute y herramientas de investigación para que terceros puedan examinar aspectos de su diseño de seguridad. La compañía sostiene que las peticiones enviadas a Private Cloud Compute no se almacenan, se procesan de forma efímera y solo se usan para satisfacer la solicitud del usuario.​​
+
+
+== Funciones ==
+Siri permite realizar tareas de asistencia personal, control del dispositivo, búsqueda de información, comunicación, automatización y control del hogar. Sus funciones varían según el dispositivo, el idioma, la región, la versión del sistema operativo y la compatibilidad con Apple Intelligence.
+Entre las funciones tradicionales de Siri se incluyen:
+
+hacer llamadas telefónicas, iniciar videollamadas y enviar mensajes;
+crear recordatorios, alarmas, temporizadores y eventos de calendario;
+consultar el tiempo, la hora, resultados deportivos, información financiera y datos generales;
+reproducir música, pódcast y otros contenidos multimedia;
+abrir aplicaciones y modificar ajustes del sistema;
+controlar accesorios de hogar inteligente compatibles con HomeKit;
+iniciar rutas, buscar lugares y consultar información local;
+leer notificaciones y responder mensajes en dispositivos compatibles;
+ejecutar atajos creados por el usuario;
+interactuar con aplicaciones de terceros mediante SiriKit o App Intents.
+En Apple TV, Siri se orienta sobre todo a la búsqueda y control de contenido audiovisual. En HomePod, se centra en música, hogar inteligente, peticiones personales y control por voz en el entorno doméstico. En Apple Watch, permite realizar acciones rápidas sin usar la pantalla o con interacción mínima.​​​
+
+
+=== Siri AI ===
+Siri AI, presentada en 2026, amplía las funciones tradicionales de Siri mediante modelos generativos y contexto personal. Apple afirma que Siri AI puede responder preguntas más complejas, mantener conversaciones más naturales, recordar el contexto de interacciones anteriores, entender información personal relevante y actuar entre aplicaciones. Entre los ejemplos descritos por Apple se encuentran localizar información en mensajes o correos, interpretar contenidos visibles en pantalla, realizar acciones sobre fotografías o archivos, y combinar varias instrucciones en una misma petición.​
+Apple también anunció una aplicación dedicada de Siri AI, separada de la invocación rápida del asistente, para mantener conversaciones más largas, revisar conversaciones anteriores y usar el asistente como espacio de interacción continuada. La compañía indicó que Siri AI estaría disponible en beta más adelante en 2026 y que inicialmente funcionaría en inglés en dispositivos compatibles.​​
+
+
+=== Integración opcional con ChatGPT ===
+Desde la presentación de Apple Intelligence en 2024, Apple permite que Siri y otras funciones del sistema puedan recurrir opcionalmente a ChatGPT para determinadas solicitudes. Apple afirma que el usuario debe autorizar el envío de información a ChatGPT y que, antes de enviar fotos o archivos, el sistema solicita confirmación. Esta integración no sustituye a Siri, sino que actúa como una extensión para ciertos tipos de preguntas o tareas que requieren capacidades externas.​​
+
+
+== Plataformas y disponibilidad ==
+Siri está disponible en múltiples dispositivos de Apple, aunque sus funciones no son idénticas en todos ellos. Algunas capacidades dependen del hardware, del idioma, de la región y de si el dispositivo es compatible con Apple Intelligence.
+
+Apple Intelligence requiere dispositivos concretos. Apple ha indicado que sus funciones están disponibles en iPhone 15 Pro, iPhone 15 Pro Max, modelos posteriores compatibles, iPad con chip A17 Pro o M1 y posteriores, Mac con M1 o posterior, Apple Vision Pro y determinados modelos de Apple Watch emparejados con un iPhone compatible, según la función y versión del sistema.​
+En junio de 2026 Apple anunció que Siri AI no estaría disponible inicialmente en iOS 27, iPadOS 27 ni watchOS 27 en la Unión Europea, aunque sí en macOS 27 y visionOS 27 cuando el idioma del dispositivo fuese compatible. Apple también indicó que Siri AI no estaría disponible inicialmente en China continental mientras se resolvían requisitos regulatorios.​
+
+
+== Idiomas ==
+Siri es un servicio multilingüe. Desde su lanzamiento inicial en inglés, francés y alemán, Apple ha añadido numerosos idiomas y variantes regionales. El español se incorporó en 2012 y está disponible en distintas variedades regionales, dependiendo de la plataforma y del sistema operativo.
+La disponibilidad exacta de idiomas varía según la función. Apple Intelligence y Siri AI tienen restricciones adicionales: Apple anunció que Siri AI llegaría inicialmente en inglés y que se ampliaría a más idiomas posteriormente. Por su parte, Apple Intelligence ha ido incorporando progresivamente idiomas como español, francés, alemán, italiano, portugués, japonés, coreano, chino y variantes localizadas del inglés, entre otros.​​
+
+
+== Desarrollo para terceros ==
+
+
+=== SiriKit ===
+SiriKit permite que las aplicaciones de terceros ofrezcan determinadas funciones a Siri dentro de categorías definidas por Apple. En su lanzamiento con iOS 10, Apple lo orientó a dominios como mensajería, llamadas, búsqueda de fotos, reserva de viajes, pagos, entrenamientos y funciones relacionadas con CarPlay. SiriKit no es una API general para controlar cualquier aplicación, sino un marco restringido a tipos de intención concretos.​
+
+
+=== Atajos de Siri ===
+Atajos de Siri permite a los usuarios crear o activar automatizaciones. Las aplicaciones pueden donar acciones al sistema, que luego pueden sugerirse de forma inteligente o invocarse por voz. Con la aplicación Atajos, los usuarios pueden encadenar pasos de distintas aplicaciones y servicios. Esta función convirtió a Siri en una interfaz para flujos de trabajo personalizados y no solo en un asistente de consultas.​
+
+
+=== App Intents ===
+App Intents es el marco moderno de Apple para exponer acciones, entidades y capacidades de una aplicación al sistema. Permite que una misma definición pueda integrarse con Siri, Atajos, Spotlight, widgets, controles, acciones del sistema y experiencias de Apple Intelligence. En WWDC 2024 Apple presentó nuevas capacidades para que las aplicaciones fuesen más comprensibles para Siri y para los modelos de Apple Intelligence mediante dominios, esquemas semánticos y acciones reutilizables.​​
+
+
+== Privacidad ==
+Apple presenta la privacidad como una de las características diferenciales de Siri. Según la compañía, muchas solicitudes se procesan en el dispositivo cuando es posible, las búsquedas y peticiones de Siri no se asocian al Apple Account del usuario y se vinculan a un identificador aleatorio generado por el dispositivo. Apple también afirma que no vende los datos de Siri ni los usa para crear perfiles de marketing.​​
+Cuando una petición requiere procesamiento por servidores de Apple, la compañía indica que se envía únicamente la información necesaria para responder a la solicitud y que se utilizan protocolos cifrados. Algunos datos contextuales, como nombres de contactos, música, pódcast, libros o nombres de dispositivos y miembros de la familia, pueden enviarse para mejorar la precisión de la petición, pero Apple sostiene que no se vinculan al Apple Account.​
+
+
+=== Controversia de 2019 sobre revisión humana ===
+En 2019, una investigación periodística reveló que contratistas que trabajaban para Apple escuchaban fragmentos de audio de Siri como parte de un programa de control de calidad. La información generó críticas por la posibilidad de que se revisaran grabaciones accidentales con contenido sensible. Apple suspendió temporalmente el programa y publicó una disculpa pública.​​
+Tras la controversia, Apple anunció tres cambios principales: dejar de conservar por defecto las grabaciones de audio de las interacciones con Siri, convertir la revisión de audio en una opción voluntaria del usuario y limitar la revisión humana a empleados de Apple, en lugar de contratistas externos. La compañía también afirmó que trabajaría para eliminar de la revisión las activaciones accidentales.​
+En enero de 2025, Associated Press informó de un acuerdo propuesto de 95 millones de dólares para resolver una demanda colectiva en Estados Unidos relacionada con supuestas grabaciones no autorizadas de Siri. Apple negó haber cometido irregularidades y el acuerdo no implicó admisión de responsabilidad.​
+
+
+=== Private Cloud Compute ===
+Con Apple Intelligence, Apple introdujo Private Cloud Compute para procesar solicitudes que requieren modelos más grandes que los disponibles localmente en el dispositivo. Apple afirma que los servidores de Private Cloud Compute están diseñados para no almacenar los datos del usuario, no permitir acceso privilegiado por parte de Apple y ser verificables por investigadores externos.​​
+Apple ha publicado documentación y un entorno de investigación virtual para que especialistas puedan examinar componentes del sistema. Esta estrategia busca que las afirmaciones de privacidad de Private Cloud Compute sean auditables y no dependan únicamente de declaraciones corporativas.​
+
+
+== Seguridad ==
+Siri, como otros asistentes de voz, ha sido objeto de investigaciones sobre ataques mediante comandos inaudibles o señales manipuladas. En 2017, investigadores presentaron DolphinAttack, una técnica de inyección de comandos ultrasónicos inaudibles para seres humanos que podía activar asistentes de voz, incluido Siri, en determinadas condiciones experimentales.​
+En 2019, la investigación Light Commands mostró que era posible inyectar comandos de voz en micrófonos MEMS mediante luz láser modulada, afectando a varios asistentes de voz comerciales, entre ellos Siri. En 2020, SurfingAttack demostró ataques mediante ondas ultrasónicas guiadas por superficies sólidas, capaces de interactuar con asistentes de voz sin línea de visión directa bajo ciertas condiciones.​​
+Estos trabajos no implican que todos los dispositivos sean vulnerables en cualquier situación, pero muestran que los asistentes de voz plantean riesgos específicos relacionados con activaciones no deseadas, señales inaudibles, comandos maliciosos y autenticación del hablante. Apple ha respondido a este tipo de problemas mediante detección local, verificación de activación, reconocimiento de voz en determinados dispositivos y mejoras de privacidad y seguridad en el procesamiento de solicitudes.​
+
+
+== Recepción y competencia ==
+Siri fue uno de los primeros asistentes virtuales integrados de forma masiva en un teléfono inteligente. Su llegada al iPhone 4S en 2011 popularizó la interacción por voz en dispositivos móviles y contribuyó a establecer el asistente conversacional como una función de sistema operativo. Sin embargo, con el tiempo recibió críticas por su menor flexibilidad conversacional en comparación con algunos competidores y por la lentitud de Apple a la hora de incorporar capacidades generativas avanzadas.​​
+Sus principales competidores históricos han sido Google Assistant, Amazon Alexa, Microsoft Cortana, Samsung Bixby y otros asistentes especializados. A partir de 2025 y 2026, el mercado comenzó a cambiar hacia asistentes generativos: Google empezó a sustituir gradualmente Google Assistant en móviles por Gemini, Amazon presentó Alexa+ como una versión generativa de Alexa, y Microsoft retiró Cortana como asistente independiente en Windows y otras plataformas.​​​
+La posición competitiva de Siri se ha apoyado tradicionalmente en la integración vertical con el hardware, el software y los servicios de Apple, así como en la automatización mediante Atajos y en una política de privacidad más restrictiva que la de algunos rivales basados principalmente en procesamiento en la nube. No obstante, la comparación directa entre Siri AI, Gemini y Alexa+ debe hacerse con cautela, porque a junio de 2026 las nuevas generaciones de asistentes se encontraban en distintas fases de despliegue y no existían pruebas públicas homogéneas que comparasen de forma concluyente precisión, latencia, cobertura lingüística y capacidad de acción entre ellas.​​​
+
+
+== Controversias y limitaciones ==
+Además de la controversia de privacidad de 2019, Siri ha recibido críticas por limitaciones de idioma, disponibilidad regional, activaciones accidentales y dependencia de servicios concretos. En sus primeras versiones, algunas funciones, como búsquedas locales, restaurantes, mapas o resultados deportivos, estaban más desarrolladas en Estados Unidos que en otros países. Con el tiempo, Apple amplió la disponibilidad de idiomas y regiones, aunque determinadas funciones siguen dependiendo del país, la plataforma y los acuerdos de servicio.
+La transición hacia Apple Intelligence también introdujo nuevas limitaciones. Las funciones más avanzadas requieren dispositivos compatibles, idiomas admitidos y, en algunos casos, disponibilidad regulatoria. Apple ha anunciado restricciones iniciales de Siri AI en la Unión Europea para iOS, iPadOS y watchOS, así como ausencia inicial en China continental.​​
+
+
+== Véase también ==
+Procesamiento de lenguaje natural
+HomeKit
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+
+Página web oficial
+Siri para desarrolladores en Apple Developer
+Página de soporte de Siri en Apple Support
+Apple Machine Learning Research

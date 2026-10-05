@@ -1,0 +1,316 @@
+Un algoritmo es una serie de pasos organizados que describe el proceso que se debe seguir, para dar solución a un problema específico.
+
+En los años 1970, de la mano de John Henry Holland, surgió una de las líneas más prometedoras de la inteligencia artificial, la de los algoritmos genéticos, (AG).​​ Son llamados así porque se inspiran en la evolución biológica y su base genético-molecular. 
+Estos algoritmos hacen evolucionar una población de individuos sometiéndola a acciones aleatorias, semejantes a las que actúan en la evolución biológica (mutaciones y recombinaciones genéticas), así como también a una selección. De acuerdo con algún criterio, se decide cuáles son los individuos más adaptados, que sobreviven, y cuáles son los menos aptos, que son descartados.
+Los algoritmos genéticos se enmarcan dentro de los algoritmos evolutivos, que incluyen también las estrategias evolutivas, la programación evolutiva y la programación genética.
+
+
+== Introducción ==
+
+
+=== Función ===
+Los algoritmos genéticos (AG) funcionan entre el conjunto de soluciones de un problema llamado fenotipo, y el conjunto de individuos de una población natural, codificando la información de cada solución en una cadena, generalmente binaria, llamada cromosoma. Los símbolos que forman la cadena son llamados genes. Cuando la representación de los cromosomas se hace con cadenas de dígitos binarios se le conoce como genotipo. Los cromosomas evolucionan a través de iteraciones, llamadas generaciones. En cada generación, los cromosomas son evaluados usando alguna medida de aptitud. Las siguientes generaciones (nuevos cromosomas), son generadas aplicando los operadores genéticos repetidamente, siendo estos los operadores de selección, cruzamiento, mutación y reemplazo.
+
+
+=== Cuándo usar estos algoritmos ===
+Los algoritmos genéticos son de probada eficacia en caso de querer calcular funciones no derivables (o de derivación muy compleja) aunque su uso es posible con cualquier función.
+Deben tenerse en cuenta también las siguientes consideraciones:
+
+Si la función a optimizar tiene muchos máximos/mínimos locales se requerirán más iteraciones del algoritmo para "asegurar" el máximo/mínimo global.
+Si la función a optimizar contiene varios puntos muy cercanos en valor al óptimo, solamente podemos "asegurar" que encontraremos uno de ellos (no necesariamente el óptimo).
+
+
+=== Funcionamiento de un algoritmo genético básico ===
+Un algoritmo genético puede presentar diversas variaciones, dependiendo de cómo se decide el reemplazo de los individuos para formar la nueva población. En general, el pseudocódigo consiste de los siguientes pasos:
+
+Inicialización: Se genera aleatoriamente la población inicial, que está constituida por un conjunto de cromosomas los cuales representan las posibles soluciones del problema. En caso de no hacerlo aleatoriamente, es importante garantizar que dentro de la población inicial, se tenga la diversidad estructural de estas soluciones para tener una representación de la mayor parte de la población posible o al menos evitar la convergencia prematura.
+Evaluación: A cada uno de los cromosomas de esta población se aplicará la función de aptitud para saber cómo de "buena" es la solución que se está codificando.
+Condición de término: El AG se deberá detener cuando se alcance la solución óptima, pero esta generalmente se desconoce, por lo que se deben utilizar otros criterios de detención. Normalmente se usan dos criterios: correr el AG un número máximo de iteraciones (generaciones) o detenerlo cuando no haya cambios en la población. Mientras no se cumpla la condición de término se hace lo siguiente:
+Selección: Después de saber la aptitud de cada cromosoma se procede a elegir los cromosomas que serán cruzados en la siguiente generación. Los cromosomas con mejor aptitud tienen mayor probabilidad de ser seleccionados.
+Recombinación o cruzamiento: La recombinación es el principal operador genético, representa la reproducción sexual, opera sobre dos cromosomas a la vez para generar dos descendientes donde se combinan las características de ambos cromosomas padres.
+Mutación: Modifica al azar parte del cromosoma de los individuos, y permite alcanzar zonas del espacio de búsqueda que no estaban cubiertas por los individuos de la población actual.
+Reemplazo: Una vez aplicados los operadores genéticos, se seleccionan los mejores individuos para conformar la población de la generación siguiente.
+
+
+=== Desventajas y limitaciones ===
+Entre otras podemos mencionar:
+
+Para problemas de alta complejidad la función de evaluación puede tornarse demasiado costosa en términos de tiempo y recursos. Por ejemplo existen casos en la vida real para los cuales recrear una simulación de la solución propuesta por una iteración puede tardar muchos días y consumir gran cantidad de procesamiento y recursos asociados.
+Puede haber casos en los cuales dependiendo los parámetros que se utilicen para la evaluación el algoritmo podría no llegar a converger en una solución óptima o bien terminar en una convergencia prematura con resultados no satisfactorios (la convergencia prematura podría significar una convergencia en un óptimo local o punto arbitrario afectando los resultados a largo plazo).
+Se dice que no poseen una buena escalabilidad con la complejidad, por ejemplo para sistemas que están compuestos por muchas variables, componentes o elementos su respectivo espacio de búsqueda crece de manera exponencial debido entre otras cosas a las relaciones que puedan surgir, por lo tanto el problema del diseño de una aeronave debe desglosarse en representaciones simples, como perfiles aerodinámicos, tomando en cuenta que la recombinación de los elementos puede perjudicar el rendimiento individual.
+La "mejor" solución lo es solo en comparación a otras soluciones por lo que no se tiene demasiado claro un criterio de cuándo detenerse ya que no se cuenta con una solución específica.
+No es recomendable utilizarlos para problemas que buscan respuesta a problemas que convergen en soluciones simples como Correcto/Incorrecto ya que el algoritmo difícilmente convergerá y el resultado será tan válido como escogerlo al azar.
+El diseño, la creación de la función de aptitud (fitness) y la selección de los criterios de mutación entre otros, necesitan de cierta pericia y conocimiento del problema para obtener buenos resultados.
+
+
+=== Aplicaciones ===
+Diseño automatizado, incluyendo investigación en diseño de materiales y diseño multiobjetivo de componentes automovilísticos: mejor comportamiento ante choques, ahorros de peso, mejora de aerodinámica, etc.
+Diseño automatizado de equipamiento industrial.
+Diseño automatizado de sistemas de comercio en el sector financiero.
+Construcción de árboles filogenéticos.
+Optimización de carga de contenedores.
+Diseño de sistemas de distribución de aguas.
+Diseño de topologías de circuitos impresos.
+Diseño de topologías de redes computacionales.
+En teoría de juegos, resolución de equilibrios.
+Análisis de expresión de genes.
+Aprendizaje de comportamiento de robots.
+Aprendizaje de reglas de lógica difusa.
+Análisis lingüístico, incluyendo inducción gramática, y otros aspectos de procesamiento de lenguajes naturales, tales como eliminación de ambigüedad de sentido.
+Infraestructura de redes de comunicaciones móviles.
+Optimización de estructuras moleculares.
+Planificación de producción multicriteria.
+Predicción.
+Aplicación de algoritmos genéticos al dilema del prisionero iterado.
+Optimización de sistemas de compresión de datos, por ejemplo, usando wavelets.
+Predicción de plegamiento de proteínas.
+Optimización de Layout.
+Optimización de Redes.
+Predicción de estructura de ARN.
+En bioinformática, alineamiento múltiple de secuencias.
+Aplicaciones en planificación de procesos industriales, incluyendo planificación job-shop.
+Selección óptima de modelos matemáticos para la descripción de sistemas biológicos.
+Manejo de residuos sólidos.
+Ingeniería de software.
+Construcción de horarios en grandes universidades, evitando conflictos de clases.
+Problema del viajante.
+Hallazgo de errores en programas.
+Optimización de producción y distribución de energía eléctrica.
+Diseño de redes geodésicas (problemas de diseño).
+Calibración y detección de daños en estructuras civiles.
+Cálculo de poblaciones estelares en sistemas estelares complejos.
+
+
+== Metodología ==
+
+
+=== Problemas de optimización ===
+En un algoritmo genético, una población de soluciones candidatas (llamadas individuos, criaturas o fenotipos) a un problema de optimización se desarrolla hacia mejores soluciones. Cada solución candidata tiene un conjunto de propiedades (sus cromosomas o genotipos) que pueden ser mutados y alterados. Tradicionalmente, las soluciones se representan en binario como cadenas de ceros y unos, pero también son posibles otras codificaciones.
+La evolución suele partir de una población de individuos generados al azar, y es un proceso iterativo, con la población en cada iteración llamada generación. En cada generación, se evalúa la aptitud de cada individuo en la población. La aptitud suele ser el valor de la función objetivo en el problema de optimización que se está resolviendo. Los individuos más aptos son seleccionados estocásticamente de la población actual, y el genoma de cada individuo es modificado (recombinado y posiblemente mutado al azar) para formar una nueva generación. La nueva generación de soluciones candidatas se utiliza entonces en la siguiente iteración del algoritmo. Comúnmente, el algoritmo termina cuando se ha producido un número máximo de generaciones, o se ha alcanzado un nivel de aptitud satisfactorio para la población.
+Un algoritmo genético típico requiere:
+
+Una representación genética del dominio de la solución.
+Una función de aptitud para evaluar el dominio de la solución.
+Una representación estándar de cada solución candidata es como una matriz de bits. Las matrices de otros tipos y estructuras se pueden utilizar esencialmente de la misma manera. La propiedad principal que hace convenientes estas representaciones genéticas es que sus partes son fácilmente alineadas debido a su tamaño fijo, lo que facilita las operaciones de cruce simple. También se pueden usar representaciones de longitud variable, pero la implementación del entrecruzamiento cromosómico es más compleja en este caso. Las representaciones arborescentes se exploran en la programación genética y las representaciones en forma de gráfico se exploran en la programación evolutiva. Una mezcla de ambos cromosomas lineales y árboles se explora en la programación de expresión genética.
+Una vez que se define la representación genética y la función de aptitud, un AG procede a inicializar una población de soluciones y luego a mejorarla mediante la aplicación repetitiva de los operadores de mutación, entrecruzamiento cromosómico, inversión y selección.
+
+
+==== Inicialización ====
+El tamaño de la población depende de la naturaleza del problema, pero normalmente contiene varios cientos o miles de posibles soluciones. A menudo, la población inicial se genera aleatoriamente, permitiendo toda la gama de posibles soluciones (el espacio de búsqueda). Ocasionalmente, las soluciones pueden ser "sembradas" en áreas donde es probable encontrar soluciones óptimas.
+
+
+==== Selección ====
+Durante cada generación sucesiva, una parte de la población existente se selecciona para criar una nueva generación. Las soluciones individuales se seleccionan a través de un proceso basado en la aptitud, donde las soluciones de acondicionamiento (como medido por una función de acondicionamiento físico) son típicamente más probables de ser seleccionadas. Ciertos métodos de selección evalúan la aptitud de cada solución y preferentemente seleccionan las mejores soluciones. Otros métodos califican solo a una muestra aleatoria de la población, ya que el proceso anterior puede llevar mucho tiempo.
+La función de fitness se define sobre la representación genética y mide la calidad de la solución representada. La función de acondicionamiento físico depende siempre del problema. Por ejemplo, en el problema de la mochila se quiere maximizar el valor total de los objetos que se pueden poner en una mochila de alguna capacidad fija. Una representación de una solución puede ser una matriz de bits, donde cada bit representa un objeto diferente, y el valor del bit (0 o 1) representa si el objeto está o no en la mochila. No todas las representaciones son válidas, ya que el tamaño de los objetos puede exceder la capacidad de la mochila. La aptitud de la solución es la suma de valores de todos los objetos en la mochila si la representación es válida, o 0 de lo contrario.
+En algunos problemas, es difícil o incluso imposible definir la expresión de la condición física. En estos casos, se puede utilizar una simulación para determinar el valor de la función de aptitud de un fenotipo (por ejemplo, la dinámica de fluidos computacional se usa para determinar la resistencia al aire de un vehículo cuya forma se codifica como fenotipo) o incluso algoritmos genéticos interactivos.
+
+
+==== Operadores genéticos ====
+El siguiente paso es generar una población de segunda generación, de soluciones de las seleccionadas a través de una combinación de operadores genéticos: entrecruzamiento cromosómico (también llamado crossover o recombinación) y mutación.
+Para cada nueva solución que se ha producido, se ha seleccionado un par de soluciones "padre" para la cría de la agrupación seleccionada previamente. Al producir una solución de "cría" usando los métodos de entrecruzamiento cromosómico y mutación arriba mencionados, se crea una nueva solución que típicamente comparte muchas de las características de sus "padres". Se seleccionan nuevos padres para cada nueva cría, y el proceso continúa hasta que se genere una nueva población de soluciones de tamaño apropiado. Aunque los métodos de reproducción que se basan en el uso de dos padres son más "biología inspirada", algunos temas de investigación sugieren que más de dos "padres" puedan generar cromosomas de mayor calidad.
+Estos procesos finalmente resultan en la siguiente generación de población de cromosomas, que es diferente a la generación inicial. En general, la aptitud física promedio se ha incrementado por este procedimiento para la población, ya que solo los mejores organismos de la primera generación son seleccionados para la cría, junto con una pequeña proporción de soluciones menos aptas. Estas soluciones menos aptas aseguran la diversidad genética dentro del grupo genético de los padres y, por lo tanto, aseguran la diversidad genética de la siguiente generación de hijos.
+La opinión se divide en la importancia del cruce versus la mutación. Hay muchas referencias en Fogel (2006) que apoyan la importancia de la búsqueda basada en mutaciones.
+Aunque el cruce y la mutación se conocen como los principales operadores genéticos, es posible utilizar otros operadores como el reagrupamiento, la colonización-extinción o la migración en algoritmos genéticos.
+Vale la pena ajustar parámetros como la probabilidad de mutación, la probabilidad de entrecruzamiento cromosómico y el tamaño de la población para encontrar ajustes razonables para la clase de problema que se está trabajando. Una tasa de mutación muy pequeña puede conducir a la deriva genética (que es de naturaleza no ergódica). Una tasa de recombinación que es demasiado alta puede conducir a la convergencia prematura del algoritmo genético. Una tasa de mutación demasiado alta puede conducir a la pérdida de buenas soluciones, a menos que se utilice una selección elitista.
+
+
+==== Terminación ====
+Este proceso generacional se repite hasta que se alcanza una condición de terminación. Las condiciones de terminación comunes son:
+
+Se encuentra una solución que satisface los criterios mínimos.
+Se alcanza un número fijado de generaciones.
+Se alcanza el presupuesto asignado (tiempo de cálculo / dinero).
+La aptitud de la solución de la clasificación más alta está alcanzando o ha alcanzado una meseta tal que las sucesivas iteraciones ya no producen mejores resultados.
+Inspección manual.
+Combinaciones de las anteriores.
+
+
+== La hipótesis del bloque de construcción ==
+Los algoritmos genéticos son sencillos de implementar, pero su comportamiento es difícil de entender. En particular, es difícil entender por qué estos algoritmos con frecuencia tienen éxito en la generación de soluciones de alta aptitud cuando se aplica a problemas prácticos. La hipótesis del bloque de construcción (BBH) consiste en:
+
+Una descripción de una heurística que realiza la adaptación identificando y recombinando "bloques de construcción", es decir, orden bajo, esquemas de definición de longitud baja con una aptitud superior al promedio.
+Una hipótesis de que un algoritmo genético realiza adaptación implícita y eficientemente implementando esta heurística.
+Goldberg describe la heurística de la siguiente manera:
+Los esquemas cortos, de bajo orden y de alto ajuste son muestreados, recombinados (cruzados) y remuestreados para formar cadenas de aptitud potencialmente más alta. En cierto modo, al trabajar con estos esquemas particulares (los bloques de construcción), hemos reducido la complejidad de nuestro problema. En lugar de construir cadenas de alto rendimiento mediante el intento de todas las combinaciones concebibles, construimos mejores y mejores cadenas de las mejores soluciones parciales de los últimos muestreos.
+"Debido a que los esquemas altamente ajustados de baja definición de longitud y bajo orden desempeñan un papel tan importante en la acción de los algoritmos genéticos, ya les hemos dado un nombre especial: bloques de construcción. Como un niño crea magníficas fortalezas a través de la disposición de bloques simples de madera, también lo hace un algoritmo genético buscando acercarse a un rendimiento óptimo a través de la yuxtaposición de corto, de bajo orden, de alto rendimiento esquemas, o bloques de construcción."
+A pesar de la falta de consenso en cuanto a la validez de la hipótesis de bloques de construcción, se ha evaluado y utilizado como referencia a lo largo de los años. Muchas estimaciones de los algoritmos de distribución, por ejemplo, se han propuesto en un intento de proporcionar un entorno en el que la hipótesis se cumpliría. Aunque se han reportado buenos resultados para algunas clases de problemas, todavía queda escepticismo con respecto a la generalidad y / o practicidad de la hipótesis del bloque de construcción como explicación de la eficiencia de los AG. De hecho, hay una cantidad razonable de trabajo que intenta entender sus limitaciones desde la perspectiva de la estimación de los algoritmos de distribución. 
+
+
+== Limitaciones ==
+Existen limitaciones en el uso de un algoritmo genético en comparación con algoritmos de optimización alternativos:
+
+La evaluación repetida de la función de aptitud para problemas complejos es a menudo el segmento más prohibitivo y limitante de los algoritmos evolutivos artificiales. Encontrar la solución óptima a problemas tridimensionales y multimodales complejos requiere a menudo evaluaciones de la función de acondicionamiento muy costosas. En problemas del mundo real tales como problemas de optimización estructural, una evaluación de una sola función puede requerir varias horas a varios días de simulación completa. Métodos típicos de optimización no pueden hacer frente a este tipo de problemas. En este caso, puede ser necesario renunciar a una evaluación exacta y utilizar una aptitud aproximada que sea computacionalmente eficiente. Es evidente que la amalgama de modelos aproximados puede ser uno de los enfoques más prometedores para usar de manera convincente AG para resolver complejos problemas de la vida real.
+Los algoritmos genéticos no se adecuan bien a la complejidad. Es decir, cuando el número de elementos expuestos a la mutación es grande, a menudo hay un aumento exponencial en el tamaño del espacio de búsqueda. Esto hace extremadamente difícil el uso de la técnica en problemas tales como el diseño de un motor, una casa o un avión. Con el fin de hacer que tales problemas sean tratables a la búsqueda evolutiva, deben ser descompuestos en la representación más simple posible. Por lo tanto, normalmente vemos algoritmos evolutivos que codifican diseños para álabes de ventilador en lugar de motores, formas de construcción en lugar de planes detallados de construcción y perfiles aerodinámicos en lugar de diseños completos de aeronaves. El segundo problema de la complejidad es la cuestión de cómo proteger partes que han evolucionado para representar buenas soluciones de una mutación destructiva adicional, particularmente cuando su evaluación de la aptitud requiere que se combinen bien con otras partes.
+La solución "mejor" es solo en comparación con otras soluciones. Como resultado, el criterio de parada no está claro en cada problema.
+En muchos problemas, los AG pueden tener una tendencia a converger hacia óptima local o incluso puntos arbitrarios en lugar del óptimo global del problema. Esto significa que no "sabe cómo" sacrificar la aptitud a corto plazo para ganar aptitud a más largo plazo. La probabilidad de que esto ocurra depende de la forma del paisaje de fitness: ciertos problemas pueden proporcionar un ascenso fácil hacia un óptimo global, otros pueden hacer que sea más fácil para la función encontrar la óptima local. Este problema puede ser aliviado mediante el uso de una función de fitness diferentes, el aumento de la tasa de mutación, o mediante el uso de técnicas de selección que mantienen una diversa población de soluciones [12], aunque el almuerzo libre teorema [13] demuestra que no hay una solución general A este problema. Una técnica común para mantener la diversidad es imponer una "pena de nicho", en la cual, cualquier grupo de individuos de similar similitud (radio de nicho) tiene una penalización agregada, lo que reducirá la representación de ese grupo en generaciones posteriores, permitiendo otros) A mantener en la población. Este truco, sin embargo, puede no ser eficaz, dependiendo del paisaje del problema. Otra técnica posible sería simplemente reemplazar parte de la población con individuos generados al azar, cuando la mayoría de la población es demasiado similar entre sí. La diversidad es importante en los algoritmos genéticos (y en la programación genética) porque cruzar una población homogénea no genera nuevas soluciones. En las estrategias de evolución y la programación evolutiva, la diversidad no es esencial debido a una mayor dependencia de la mutación.
+Operar en conjuntos de datos dinámicos es difícil, ya que los genomas comienzan a converger tempranamente hacia soluciones que ya no son válidas para datos posteriores. Se han propuesto varios métodos para remediar esto, aumentando la diversidad genética de alguna manera y evitando la convergencia temprana, ya sea aumentando la probabilidad de mutación cuando cae la calidad de la solución (llamada hipermutación desencadenada) o introduciendo ocasionalmente nuevos elementos generados aleatoriamente en el conjunto genético (Llamados inmigrantes aleatorios). Una vez más, las estrategias de evolución y la programación evolutiva se pueden implementar con una llamada "estrategia de coma" en la que los padres no se mantienen y los nuevos padres se seleccionan solo a partir de la descendencia. Esto puede ser más eficaz en problemas dinámicos.
+Los GAs no pueden resolver problemas en los que la única medida correcta es una medida correcta / incorrecta (como problemas de decisión), ya que no hay forma de converger en la solución (no hay colina para escalar). En estos casos, una búsqueda aleatoria puede encontrar una solución tan rápidamente como una AG. Sin embargo, si la situación permite que el ensayo de éxito / fracaso se repita dando (posiblemente) resultados diferentes, entonces la proporción de éxitos a fracasos proporciona una medida de aptitud adecuada.
+Para problemas específicos de optimización e instancias problemáticas, otros algoritmos de optimización pueden ser más eficientes que los algoritmos genéticos en términos de velocidad de convergencia. Los algoritmos alternativos y complementarios incluyen estrategias de evolución, programación evolutiva, recocido simulado, adaptación gaussiana, escalada de colinas e inteligencia de enjambre (por ejemplo: optimización de hormigas, optimización de enjambre de partículas) y métodos basados en programación lineal entera. La idoneidad de los algoritmos genéticos depende de la cantidad de conocimiento del problema; Los problemas bien conocidos suelen tener enfoques mejores y más especializados.
+
+
+== Variantes ==
+
+
+=== Representación del cromosoma ===
+El algoritmo más simple representa cada cromosoma como una cadena de bits. Normalmente, los parámetros numéricos pueden ser representados por números enteros, aunque es posible usar representaciones de coma flotante. La representación en coma flotante es natural para las estrategias de evolución y la programación evolutiva. La noción de algoritmos genéticos de valor real se ha ofrecido pero es realmente un nombre incorrecto porque no representa realmente la teoría del bloque de construcción que fue propuesta por John Henry Holland  en los años 70. Esta teoría no está sin apoyo, sin embargo, sobre la base de los resultados teóricos y experimentales (véase más adelante). El algoritmo básico realiza el cruce y la mutación en el nivel de bits. Otras variantes tratan el cromosoma como una lista de números que son índices en una tabla de instrucciones, nodos en una lista enlazada, hashes, objetos o cualquier otra estructura de datos imaginable. El cruce y la mutación se realizan para respetar los límites de los elementos de datos. Para la mayoría de los tipos de datos, se pueden diseñar operadores de variación específicos. Los diferentes tipos de datos cromosómicos parecen funcionar mejor o peor para diferentes dominios de problemas específicos.
+Cuando se utilizan representaciones de números de bits de números enteros, a menudo se emplea la codificación Gray. De esta manera, pequeños cambios en el número entero pueden ser fácilmente afectados por mutaciones o crossovers. Esto se ha encontrado para ayudar a prevenir la convergencia prematura en las paredes llamadas Hamming, en el que demasiadas mutaciones simultáneas (o eventos de cruce) debe ocurrir con el fin de cambiar el cromosoma a una mejor solución.
+Otros enfoques implican el uso de matrices de números de valor real en lugar de cadenas de bits para representar los cromosomas. Los resultados de la teoría de los esquemas sugieren que en general, cuanto menor es el alfabeto, mejor es el rendimiento, pero inicialmente fue sorprendente para los investigadores que se obtuvieron buenos resultados usando cromosomas de valor real. Esto se explicó como el conjunto de valores reales en una población finita de cromosomas como la formación de un alfabeto virtual (cuando la selección y la recombinación son dominantes) con una cardinalidad mucho menor de lo que se esperaría de una representación en coma flotante [14] [15]
+Una expansión del algoritmo genético accesible problema del dominio se puede obtener a través de la codificación más compleja de la solución de agrupaciones por concatenación de varios tipos de genes heterogéneamente codificados en un cromosoma. [16] Este enfoque particular permite resolver problemas de optimización que requieren dominios de definición sumamente dispares para los parámetros del problema. Por ejemplo, en los problemas de ajuste en cascada del controlador, la estructura del controlador de bucle interno puede pertenecer a un regulador convencional de tres parámetros, mientras que el bucle externo podría implementar un controlador lingüístico (tal como un sistema difuso) que tiene una descripción inherentemente diferente. Esta forma particular de codificación requiere un mecanismo especializado de cruce que recombina el cromosoma por sección, y es una herramienta útil para el modelado y simulación de sistemas adaptativos complejos, especialmente procesos de evolución.
+
+
+=== Elitismo ===
+Una variante práctica del proceso general de construcción de una nueva población es permitir que los mejores organismos de la generación actual se trasladen a la siguiente, sin alterarse. Esta estrategia se conoce como selección elitista y garantiza que la calidad de la solución obtenida por la GA no disminuirá de una generación a la siguiente
+
+
+=== Implementaciones paralelas ===
+Implementaciones paralelas de algoritmos genéticos vienen en dos sabores. Los algoritmos genéticos paralelos de grano grueso asumen una población en cada uno de los nodos informáticos y la migración de individuos entre los nodos. Los algoritmos genéticos paralelos suponen un individuo en cada nodo procesador que actúa con individuos vecinos para la selección y reproducción. Otras variantes, como algoritmos genéticos para problemas de optimización en línea, introducen dependencia del tiempo o ruido en la función de fitness.
+
+
+=== Algoritmo genético adaptativo ===
+Los algoritmos genéticos con parámetros adaptativos (algoritmos genéticos adaptativos, AGAs) es otra variante significativa y prometedora de los algoritmos genéticos. Las probabilidades de crossover (pc) y mutación (p. m.) determinan en gran medida el grado de exactitud de la solución y la velocidad de convergencia que los algoritmos genéticos pueden obtener. En lugar de utilizar valores fijos de pc y p. m., los AGs utilizan la información de población en cada generación y ajustan adaptativamente el pc y p. m. con el fin de mantener la diversidad de población así como para sostener la capacidad de convergencia. En AGA (algoritmo genético adaptativo), el ajuste de pc y p. m. depende de los valores de aptitud de las soluciones. En CAGA (algoritmo adaptativo basado en el clustering), a través del uso de análisis de agrupación para juzgar los estados de optimización de la población, el ajuste de pc y p. m. depende de estos estados de optimización. Puede ser muy eficaz combinar GA con otros métodos de optimización. GA tiende a ser bastante bueno para encontrar en general buenas soluciones globales, pero bastante ineficiente para encontrar las últimas mutaciones para encontrar el óptimo absoluto. Otras técnicas (como la simple subida de colinas) son bastante eficientes para encontrar el óptimo absoluto en una región limitada. La alternancia de GA y escalada de colinas puede mejorar la eficiencia de GA [citación necesaria], mientras que superar la falta de solidez de la subida de la colina.
+Esto significa que las reglas de variación genética pueden tener un significado diferente en el caso natural. Por ejemplo - siempre que los pasos se almacenan en orden consecutivo - cruce puede sumar una serie de pasos de ADN materno añadiendo una serie de pasos de ADN paterno y así sucesivamente. Esto es como añadir vectores que más probablemente pueden seguir una cresta en el paisaje fenotípico. Por lo tanto, la eficiencia del proceso puede aumentarse en muchos órdenes de magnitud. Además, el operador de inversión tiene la oportunidad de situar los pasos en orden consecutivo o cualquier otra orden adecuada a favor de la supervivencia o la eficiencia.
+Una variación, en la que la población en su conjunto se desarrolla en lugar de sus miembros individuales, se conoce como recombinación de grupos genéticos.
+Se han desarrollado una serie de variaciones para intentar mejorar el rendimiento de los AGs en problemas con un alto grado de epistasis de aptitud, es decir, cuando la aptitud de una solución consiste en interaccionar subconjuntos de sus variables. Tales algoritmos tienen como objetivo aprender (antes de explotar) estas interacciones fenotípicas beneficiosas. Como tales, están alineados con la hipótesis del bloque de construcción en la reducción adaptativa de la recombinación disruptiva.
+
+
+== Dominios de problemas ==
+Los problemas que parecen ser particularmente apropiados para la solución mediante algoritmos genéticos incluyen problemas de programación y muchos paquetes de software de programación se basan en AGs. Los AG también se han aplicado a la ingeniería. Los algoritmos genéticos a menudo se aplican como un enfoque para resolver problemas de optimización global.
+Como regla general, los algoritmos genéticos pueden ser útiles en dominios problemáticos que tienen un paisaje de aptitud complejo, ya que la mezcla, es decir, la mutación en combinación con crossover, está diseñada para alejar a la población de la óptima local de que un algoritmo tradicional. Observe que los operadores de crossover de uso común no pueden cambiar ninguna población uniforme. La mutación por sí sola puede proporcionar ergodicidad del proceso general del algoritmo genético (visto como una cadena de Markov).
+
+
+== Historia ==
+En 1950, Alan Turing propuso una "máquina de aprendizaje" que sería paralela a los principios de la evolución. La simulación por computadora de la evolución comenzó tan pronto como en 1954 con el trabajo de Nils Aall Barricelli, que utilizaba la computadora en el instituto para el estudio avanzado en Princeton (Nueva Jersey). Su publicación de 1954 no fue ampliamente notada. A partir de 1957, el australiano cuantitativo genetista Alex Fraser publicó una serie de artículos sobre la simulación de la selección artificial de organismos con múltiples loci controlando un rasgo mensurable. A partir de estos comienzos, la simulación por ordenador de la evolución por los biólogos se hizo más común a principios de 1960, y los métodos fueron descritos en los libros de Fraser y Burnell (1970)  y Alfred Crosby (1973) Las simulaciones de Fraser incluían todos los elementos esenciales de los algoritmos genéticos modernos. Además, Hans-Joachim Bremermann publicó una serie de artículos en los años sesenta que también adoptaron una población de solución a problemas de optimización, sometidos a recombinación, mutación y selección. La investigación de Bremermann también incluyó los elementos de los algoritmos genéticos modernos.  Otros destacados primeros pioneros son Richard Friedberg, George Friedman y Michael Conrad. Muchos de los primeros artículos han sido reimpresos por Fogel (1998).
+Aunque Barricelli, en el trabajo que relató en 1963, había simulado la evolución de la capacidad de jugar un juego simple, la evolución artificial se convirtió en un método de optimización ampliamente reconocido como resultado del trabajo de Ingo Rechenberg y Hans-Paul Schwefel en los años 1960 y principios de 1970 - el grupo de Rechenberg fue capaz de resolver problemas complejos de ingeniería a través de estrategias de evolución.Otro enfoque fue la técnica de programación evolutiva de Lawrence J. Fogel, que se propuso para generar inteligencia artificial. La programación evolutiva utilizó originalmente máquinas de estado finito para predecir los entornos y utilizó la variación y la selección para optimizar las lógicas predictivas. Los algoritmos genéticos, en particular, se hicieron populares a través del trabajo de John Henry Holland a principios de los años setenta, y particularmente de su libro Adaptation in Natural and Artificial Systems (1975). Su trabajo se originó con estudios de autómatas celulares, conducidos por Holland y sus estudiantes en la Universidad de Míchigan. Holland introdujo un marco formalizado para predecir la calidad de la próxima generación, conocido como el teorema del esquema de Holland. La investigación en GAs permaneció en gran parte teórica hasta mediados de los años 80, cuando la primera conferencia internacional en algoritmos genéticos fue llevada a cabo en Pittsburgh, Pensilvania.
+
+
+=== Productos comerciales ===
+A finales de 1980, General Electric comenzó a vender el primer producto de algoritmo genético del mundo, una caja de herramientas basada en mainframe diseñada para procesos industriales. En 1989, Axcelis, Inc. lanzó Evolver, el primer producto AG comercial para computadoras de escritorio. El escritor de la tecnología del New York Times John Markoff escribió sobre Evolver en 1990, y siguió siendo el único algoritmo comercial interactivo hasta 1995. Evolver fue vendido a Palisade en 1997, traducido a varios idiomas, y actualmente está en su sexta versión.
+
+
+== Ejemplo ==
+Considérese el problema de insertar signos de suma o resta entre los dígitos 9 8 7 6 5 4 3 2 1 para construir una expresión cuyo valor sea 100; no vale añadir, retirar o desordenar a los dígitos. Una solución puede ser 98+7-6+5-4+3-2-1 porque, al evaluar su valor, da exactamente 100.
+Hay 9 sitios (uno antes de cada dígito) donde colocar un signo de más (+), un signo de menos (-) o nada (lo cual implicará que dos o más dígitos se unan para formar cantidades mayores; como 98 en el ejemplo anterior, donde se puso "nada" antes del 9 y antes del 8). Existen, por lo tanto, 3 a la 9 = 19683 expresiones distintas (por combinatoria) entre las cuales buscar aquellas con la suma deseada. Es posible desarrollar un algoritmo exhaustivo que las genere todas y, dada la relativa pequeñez de este ejemplo, determinar completamente todas las posibles configuraciones. Sin embargo, este reto se presta para ilustrar los pasos de un proceso genético.
+
+
+=== Codificación ===
+Existe una biyección entre las cadenas de "trits" (dígitos ternarios: 0, 1, 2) de longitud 9 y las posibles configuraciones de signos para cada suma. Por ejemplo, si se adopta la convención de que "0" representa "nada", "1" representa "menos" y "2" representa "más", entonces la cadena de "trits"  002121211 corresponde a la solución 98+7-6+5-4+3-2-1.
+
+
+== Técnicas relacionadas ==
+
+
+=== Campos de los padres ===
+Los algoritmos genéticos son un subcampo de:
+
+Algoritmos evolutivos
+Computación evolutiva
+Metaheurística
+Optimización estocástica
+Mejoramiento
+
+
+=== Campos relacionados ===
+
+
+==== Algoritmos evolutivos ====
+Los algoritmos evolutivos son un subcampo de la computación evolutiva.
+
+Las estrategias de evolución (ES, véase Rechenberg, 1994) evolucionan a los individuos por medio de la mutación y la recombinación intermedia o discreta. Los algoritmos ES están diseñados especialmente para resolver problemas en el dominio de valor real. Utilizan la autoadaptación para ajustar los parámetros de control de la búsqueda. La des-aleatorización de la auto-adaptación ha llevado a la actual Covariance Matrix Adaptation Evolution Strategy (CMA-ES).
+La programación evolutiva (EP) implica poblaciones de soluciones con mutación y selección y representaciones arbitrarias. Utiliza la autoadaptación para ajustar los parámetros, y puede incluir otras operaciones de variación, como combinar información de múltiples padres.
+La estimación del algoritmo de distribución (EDA) sustituye a los operadores tradicionales de reproducción por operadores guiados por modelos. Estos modelos son aprendidos de la población empleando técnicas de aprendizaje automático y representados como Modelos Gráficos Probabilísticos, a partir de los cuales se pueden muestrear nuevas soluciones [45] [46] o generadas a partir de entrecruzamiento cromosómico guiado [47].
+La programación de expresión génica (GEP) también utiliza poblaciones de programas informáticos. Estos complejos programas informáticos están codificados en cromosomas lineales más simples de longitud fija, que luego se expresan como árboles de expresión. Los árboles de expresión o programas informáticos evolucionan porque los cromosomas experimentan mutación y recombinación de una manera similar a la GA canónica. Pero gracias a la organización especial de los cromosomas GEP, estas modificaciones genéticas siempre dan lugar a programas informáticos válidos. [48]
+La programación genética (GP) es una técnica relacionada popularizada por John Koza en la que se optimizan los programas informáticos, en lugar de los parámetros funcionales. La programación genética a menudo utiliza estructuras de datos internas basadas en árboles para representar los programas informáticos para la adaptación en lugar de las estructuras de lista típicas de los algoritmos genéticos.
+La agrupación algoritmo genético (GGA) es una evolución de la AG donde el foco se desplaza de los elementos individuales, como en las AG clásicas, a los grupos o subconjunto de elementos. [49] La idea detrás de esta evolución de la GA propuesta por Emanuel Falkenauer es que la solución de algunos problemas complejos, como la agrupación o problemas de partición donde un conjunto de elementos debe ser dividido en un grupo de elementos disjuntos de una manera óptima, se lograría mejor mediante la toma de características de los grupos de artículos equivalentes a los genes. Este tipo de problemas incluyen embalaje de contenedores, balanceo de líneas, agrupación con respecto a una medida de distancia, pilas iguales, etc., en las que los GA clásicos demostraron un mal desempeño. Hacer que los genes equivalgan a grupos implica cromosomas que son en general de longitud variable, y operadores genéticos especiales que manipulan grupos enteros de elementos. Para el embalaje de los recipientes, en particular, un GGA hibridado con el Criterio de Dominancia de Martello y Toth, es posiblemente la mejor técnica hasta la fecha.
+Los algoritmos evolutivos interactivos son algoritmos evolutivos que utilizan la evaluación humana. Por lo general, se aplican a dominios donde es difícil diseñar una función de aptitud computacional, por ejemplo, la evolución de imágenes, música, diseños artísticos y formas para ajustarse a la preferencia estética de los usuarios.
+
+
+==== Inteligencia de enjambre ====
+La optimización de la colonia de hormigas (ACO) utiliza muchas hormigas (o agentes) equipadas con un modelo de feromonas para recorrer el espacio de la solución y encontrar áreas productivas locales. Se considera una estimación del algoritmo de distribución.
+La optimización de enjambre de partículas (PSO) es un método computacional para la optimización multiparamétrica que también utiliza un enfoque basado en la población. Una población (enjambre) de soluciones candidatas (partículas) se mueve en el espacio de búsqueda, y el movimiento de las partículas es influenciado tanto por su posición más conocida como por la posición global más conocida del enjambre. Al igual que los algoritmos genéticos, el método de PSO depende del intercambio de información entre los miembros de la población. En algunos problemas, el PSO es a menudo más eficiente desde el punto de vista computacional que los AG, especialmente en problemas sin restricciones con variables continuas.
+
+
+==== Otros algoritmos evolutivos de computación ====
+El algoritmo Memetic (MA), a menudo llamado algoritmo genético híbrido, entre otros, es un método basado en la población en el cual las soluciones también están sujetas a fases de mejora local. La idea de los algoritmos meméticos, que a diferencia de los genes, pueden adaptarse. En algunas áreas problemáticas se demuestra que son más eficientes que los algoritmos evolutivos tradicionales.
+Los algoritmos bacteriológicos (BA) están inspirados en la ecología evolutiva y, más concretamente, en la adaptación bacteriológica. La ecología evolutiva es el estudio de los organismos vivos en el contexto de su entorno, con el objetivo de descubrir cómo se adaptan. Su concepto básico es que en un ambiente heterogéneo, no hay un individuo que se ajuste a todo el entorno. Por lo tanto, uno tiene que razonar a nivel de la población. También se cree que los BA podrían aplicarse con éxito a complejos problemas de posicionamiento (antenas para teléfonos celulares, planificación urbana, etc.) o minería de datos. [52]
+El algoritmo cultural (CA) consiste en el componente de la población casi idéntico al del algoritmo genético y, además, un componente del conocimiento llamado el espacio de la creencia.
+El algoritmo de búsqueda diferencial (DS) está inspirado en la migración de superorganismos.
+La adaptación gaussiana (adaptación normal o natural, abreviada NA para evitar la confusión con GA) está destinada a maximizar el rendimiento de fabricación de sistemas de procesamiento de señales. También se puede utilizar para la optimización paramétrica ordinaria. Se basa en un cierto teorema válido para todas las regiones de aceptabilidad y todas las distribuciones gaussianas. La eficiencia de la NA depende de la teoría de la información y de un cierto teorema de la eficiencia. Su eficiencia se define como información dividida por el trabajo necesario para obtener la información. Debido a que la NA maximiza la aptitud media más que la aptitud del individuo, el paisaje se suaviza de tal manera que los valles entre picos pueden desaparecer. Por lo tanto, tiene una cierta "ambición" para evitar los picos locales en el paisaje de fitness. La NA también es buena para escalar crestas afiladas mediante la adaptación de la matriz de momentos, porque la NA puede maximizar el desorden (información promedio) del gaussiano manteniendo simultáneamente la aptitud media constante.
+
+
+==== Otros métodos metaheurísticos ====
+El recocido simulado (SA) es una técnica de optimización global relacionada que atraviesa el espacio de búsqueda mediante la prueba de mutaciones aleatorias en una solución individual. Una mutación que aumenta la aptitud siempre se acepta. Una mutación que disminuye la aptitud se acepta probabilisticamente basándose en la diferencia en aptitud y un parámetro decreciente de la temperatura. En la jerga del SA, se habla de buscar la energía más baja en lugar de la aptitud máxima. El SA también se puede utilizar dentro de un algoritmo GA estándar comenzando con una tasa relativamente alta de mutación y disminuyendo a lo largo del tiempo a lo largo de un calendario dado.
+La búsqueda tabú (TS) es similar al recocido simulado en que ambos atraviesan el espacio de la solución probando mutaciones de una solución individual. Mientras que el recocido simulado genera solo una solución mutada, la búsqueda de tabú genera muchas soluciones mutadas y se mueve a la solución con la energía más baja de las generadas. Con el fin de evitar bucles y fomentar un mayor movimiento a través del espacio de solución, se mantiene una lista tabú de soluciones parciales o completas. Está prohibido pasar a una solución que contiene elementos de la lista tabú, que se actualiza a medida que la solución atraviesa el espacio de la solución.
+La Optimización Extrema (EO), a diferencia de los GAs, que trabajan con una población de soluciones candidatas, desarrolla una única solución y realiza modificaciones locales a los peores componentes. Esto requiere que se seleccione una representación adecuada que permita asignar a los componentes de solución individuales una medida de calidad ("aptitud"). El principio de gobierno detrás de este algoritmo es el de la mejora emergente mediante la eliminación selectiva de componentes de baja calidad y su sustitución por un componente seleccionado al azar. Esto está decididamente en desacuerdo con un GA que selecciona buenas soluciones en un intento de hacer mejores soluciones.
+
+
+==== Otros métodos de optimización estocástica ====
+El método de entropía cruzada (CE) genera soluciones de candidatos mediante una distribución de probabilidad parametrizada. Los parámetros se actualizan mediante la minimización de la entropía cruzada, para generar mejores muestras en la siguiente iteración.
+La optimización de búsqueda reactiva (RSO) aboga por la integración de técnicas de aprendizaje sub-simbólicas en la heurística de búsqueda para resolver problemas complejos de optimización. La palabra reactiva sugiere una respuesta rápida a los eventos durante la búsqueda a través de un bucle interno de retroalimentación en línea para el autoajuste de parámetros críticos. Las metodologías de interés para la búsqueda reactiva incluyen el aprendizaje mecánico y las estadísticas, en particular el aprendizaje por refuerzo, el aprendizaje activo o de consulta, las redes neuronales y las metaheurísticas.
+
+
+== Véase también ==
+Redes neuronales
+Lógica difusa
+Red bayesiana
+Mínimo/máximo local
+Inteligencia Artificial
+Emergencia
+Autómata celular
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Banzhaf, Wolfgang; Nordin, Peter; Keller, Robert; Francone, Frank (1998). Genetic Programming - An Introduction. San Francisco, CA: Morgan Kaufmann. ISBN 978-1558605107.
+Bies, Robert R.; Muldoon, Matthew F.; Pollock, Bruce G.; Manuck, Steven; Smith, Gwenn; Sale, Mark E. (2006). "The Genetic Algorithm-Based, Hybrid Machine Learning Approach to Model Selection". Journal of Pharmacokinetics and Pharmacodynamics. Netherlands: Springer: 196-221.
+Carmona, Enrique J.; Fernández, Severino (2020). Fundamentos de la Computación Evolutiva. Marcombo. ISBN 978-8426727558.
+Cha, Sung-Hyuk; Tappert, Charles C. (2009). "Genetic Algorithm for Constructing Compact Binary Decision Trees". Journal of Pattern Recognition Research. 4 (1): 1-13. Doi: 10.13176 / 11.44.
+Eiben, Agoston; Smith, James (2003). Introduction to Evolutionary Computing. Springer. ISBN 978-3540401841.
+Fraser, Alex S. (1957). "Simulation of Genetic Systems by Automatic Digital Computers, I. Introduction." Australian Journal of Biological Sciences. 10: 484-491.
+Goldberg, David (1989). Genetic Algorithms in Search, Optimization and Machine Learning. Reading, MA: Addison-Wesley Professional. ISBN 978-0201157673.
+Goldberg, David (2002). The Design of Innovation: Lessons from and for Competent Genetic Algorithms. Norwell, MA: Kluwer Academic Publishers. ISBN 978-1402070983.
+Fogel, David. Evolutionary Computation: Toward the New Philosophy of Machine Intelligence (3rd ed.). Piscataway, NJ: IEEE Press. ISBN 978-0471669517.
+Hingston, Philip; Barone, Luigi; Michalewicz, Zbigniew (2008). Design by Evolution: Advances in Evolutionary Design. Springer. ISBN 978-3540741091.
+Holland, John (1992). Adaptation in Natural and Artificial Systems. Cambridge, MA: MIT Press. ISBN 978-0262581110.
+Koza, John (1992). Genetic Programming: On the Programming of Computers by Means of Natural Selection. Cambridge, MA: MIT Press. ISBN 978-0262111706.
+Michalewicz, Zbigniew (1996). Genetic Algorithms + Data Structures = Evolution Programs. Springer-Verlag. ISBN 978-3540606765.
+Mitchell, Melanie (1996). An Introduction to Genetic Algorithms Cambridge, MA: MIT Press. ISBN 9780585030944.
+Poly, R.; Langdon, W. B.; McPhee, N.F. (2008). A Field Guide to Genetic Programming. Lulu.com, freely available from the internet. ISBN 978-1-4092-0073-4.
+Rechenberg, Ingo (1994): Evolutionsstrategie '94, Stuttgart: Fromman-Holzboog.
+Schmitt, Lothar M; Nehaniv, Chrystopher L; Fujii, Robert H (1998), Linear analysis of genetic algorithms, Theoretical Computer Science 208: 111-148
+Schmitt, Lothar M (2001), Theory of Genetic Algorithms, Theoretical Computer Science 259: 1-61
+Schmitt, Lothar M (2004), Theory of Genetic Algorithms II: models for genetic operators over the string-tensor representation of populations and convergence to global optimal for arbitrary fitness function under scaling, Theoretical Computer Science 310: 181-231
+Schwefel, Hans-Paul (1974): Numerische Optimierung von Computer-Modellen (PhD thesis). Reprinted by Birkhäuser (1977).
+Vose, Michael (1999). The Simple Genetic Algorithm: Foundations and Theory. Cambridge, MA: MIT Press. ISBN 978-0262220583.
+Whitley, Darrell (1994). "A genetic algorithm tutorial". Statistics and Computing. 4 (2): 65-85. Doi: 10.1007 / BF00175354.
+
+
+== Enlaces externos ==
+
+
+=== Recursos ===
+(enlace roto) En esta Web se exponen varios algoritmos genéticos junto a sus códigos de programación y como se pueden usar para encontrar el punto óptimo de un proceso.
+Aplicación de los algoritmos genéticos a la optimización de laminados de material compuesto
+Juego de estrategia masivo multijugador en línea basado en evolucionar y enfrentar especímenes mediante Algoritmos Genéticos (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).
+(en inglés) A Practical Genetic Algorithm Tutorial Programming step by step a Genetic Algorithm.
+(en inglés) Introduction to Genetic Algorithms with interactive Java applets
+Tutorial de algoritmos genéticos Archivado el 28 de octubre de 2005 en Wayback Machine.
+Un tutorial sencillo en español sobre los algoritmos genéticos
+Introducción a los Algoritmos Genéticos
+Algoritmos genéticos y computación evolutiva
+Robot con Sistema de Navegación a base de Algoritmos Genéticos
+Algoritmos genéticos en Ruby
+Arquimedex.com Explicación sencilla y práctica de los algoritmos genéticos
+Poli, R., Langdon, W. B., McPhee, N. F. (2008), A Field Guide to Genetic Programming, freely available via Lulu.com, ISBN 978-1-4092-0073-4
+(en inglés) Global Optimization Algorithms - Theory and Application Archivado el 11 de septiembre de 2008 en Wayback Machine.
+Trabajo de Tesis de grado
+Implementación del problema de las 8 reinas en JAVA
+
+
+=== Tutoriales ===
+Genetic Algorithms - Computer programs that "evolve" in ways that resemble natural selection can solve complex problems even their creators do not fully understand An excellent introduction to GA by John Holland and with an application to the Prisoner's Dilemma
+An online interactive GA tutorial for a reader to practise or learn how a GA works: Learn step by step or watch global convergence in batch, change the population size, crossover rates/bounds, mutation rates/bounds and selection mechanisms, and add constraints.
+A Genetic Algorithm Tutorial by Darrell Whitley Computer Science Department Colorado State University An excellent tutorial with lots of theory
+"Essentials of Metaheuristics" Archivado el 3 de noviembre de 2011 en Wayback Machine., 2009 (225 p). Free open text by Sean Luke.
+Global Optimization Algorithms – Theory and Application Archivado el 11 de septiembre de 2008 en Wayback Machine.

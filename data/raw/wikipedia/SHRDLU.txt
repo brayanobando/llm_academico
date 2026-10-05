@@ -1,0 +1,54 @@
+SHRDLU es un programa de computadora para la comprensión del lenguaje natural. Fue desarrollado por Terry Winograd en el MIT entre los años 1968 y 1970. Fue implementado con los lenguajes de programación Micro Planner y LISP para una máquina DEC PDP-6 con terminal gráfico DEC. Posteriormente en la Universidad de Utah le fue añadido un mundo en 3D donde se representaba gráficamente los objetos conocidos por el programa.
+El nombre SHRDLU no significa nada en concreto, sino que está derivado de ETAOIN SHRDLU, que es el alineamiento de las letras en una máquina linotipia, en orden descendente respecto la frecuencia de uso en inglés.
+
+
+== Funcionamiento ==
+SHRDLU permite al usuario interactuar mediante frases simples de inglés. El usuario debe instruir a SHRDLU como mover los objetos de su entorno. Este entorno fue llamado small blocks world (pequeño mundo de bloques). Contenía objetos tales como bloques, conos, bolas y otras formas geométricas. Lo que hizo único a SHRDLU, es que con la combinación de los conceptos anteriores se podía realizar una simulación de la comprensión computacional del lenguaje.
+El entorno o mundo de bloques era lo suficientemente simple para poder ser descrito completamente (objetos, características y posiciones) usando un conjunto reducido de palabras en inglés (50 aproximadamente). Nombres como bloque, cono, y pirámide, verbos como pon, mueve y deja y adjetivos como pequeño, grande y rojo. Las combinaciones posibles de este lenguaje básico permitían al programa realizar lo que el usuario le ordenaba.
+SHRDLU incluía una memoria básica de trabajo que contenía el contexto de la conversación. Por ejemplo, se le podía decir: Pon el cono verde encima del bloque rojo. y a continuación: Coge el cono. El cono que queremos coger debe significar el que nos hemos referido anteriormente y no cualquier otro que este en el entorno. SHRDLU debía buscar el último contexto más próximo en el cual hemos hablado de El cono. Esto permitía en muchas ocasiones poner o no adjetivos adicionales. Por otra parte se podía interrogar acerca del historial de acciones, por ejemplo: Dime que has cogido antes del cono.
+
+
+== Diálogo de ejemplo ==
+A continuación se muestra, traducida desde el inglés, una parte de la famosa conversación entre SHRDLU y una persona anónima. Extraído Terry Winograd, Understanding Natural Language, Academic Press, Nueva York (1972)
+
+Persona: Toma un bloque rojo grande.
+SHRDLU: De acuerdo.
+Persona: Coge la pirámide.
+SHRDLU: No entiendo a qué pirámide se refiere.
+Persona: Encuentra un bloque más alto que ese que estás sosteniendo y ponlo en la caja.
+SHRDLU: Supongo que con "lo" se refiere al bloque que es más alto que éste que estoy sosteniendo.
+SHRDLU: De acuerdo.
+Persona: ¿Qué contiene la caja?
+SHRDLU: La pirámide azul y el bloque azul.
+Persona: ¿Qué sostiene a la pirámide?
+SHRDLU: La caja.
+Persona: ¿Cuántos bloques no están en la caja?
+SHRDLU: Cuatro de ellos.
+Persona: ¿Es al menos uno de ellos más pequeño que ese que te dije que tomaras?
+SHRDLU: Sí, el cubo rojo
+Persona: ¿Está sostenido?
+SHRDLU: Sí, por la mesa.
+Persona: ¿Puede la mesa tomar bloques?
+SHRDLU: No
+Persona: Apila dos pirámides.
+SHRDLU: No puedo.
+Persona: La pirámide azul es mía.
+SHRDLU: Comprendo.
+Persona: Gracias.
+SHRDLU: De nada.
+
+
+== Véase también ==
+Lingüística computacional
+Lista de proyectos de inteligencia artificial
+Procesamiento de lenguaje natural
+
+
+== Referencias ==
+Procedures as a Representation for Data in a Computer Program for Understanding Natural Language. MIT AI Technical Report 235, February 1971
+Terry Winograd, Understanding Natural Language, Academic Press, Nueva York (1972)
+
+
+== Enlaces externos ==
+SHRDLU Archivado el 17 de agosto de 2020 en Wayback Machine. - Página de Terry Winograd. Incluye el código fuente SHRDLU (en inglés)
+SHRDLU resurrection Archivado el 17 de noviembre de 2017 en Wayback Machine. - nueva versión de SHRDLU que incluye entorno en Java3D (en inglés)

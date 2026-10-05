@@ -1,0 +1,78 @@
+El reconocimiento automático del habla (RAH) o reconocimiento automático de voz es una disciplina de la inteligencia artificial que tiene como objetivo permitir la comunicación hablada entre seres humanos y computadoras. El problema que se plantea en un sistema de este tipo es el de hacer cooperar un conjunto de informaciones que provienen de diversas fuentes de conocimiento (acústica, fonética, fonológica, léxica, sintáctica, semántica y pragmática), en presencia de ambigüedades, incertidumbres y errores inevitables para llegar a obtener una interpretación aceptable del mensaje acústico recibido.
+Un sistema de reconocimiento de voz es una herramienta computacional capaz de procesar la señal de voz emitida por el ser humano y reconocer la información contenida en esta, convirtiéndola en texto o emitiendo órdenes que actúan sobre un proceso. En su desarrollo intervienen diversas disciplinas, tales como: la fisiología, la acústica, la lingüística, el procesamiento de señales, la inteligencia artificial y la ciencia de la computación.
+
+
+== Diseño de un sistema de RAH ==
+
+
+=== Aprendizaje ===
+
+Un aspecto crucial en el diseño de un sistema de RAH es la elección del tipo de aprendizaje que se utilice para construir las diversas fuentes de conocimiento. Básicamente, existen dos tipos:
+
+Aprendizaje deductivo: Las técnicas de aprendizaje deductivo se basan en la transferencia de los conocimientos de un experto humano a un sistema informático. Un ejemplo paradigmático de las metodologías que utilizan tales técnicas lo constituyen los sistemas basados en el conocimiento y, en particular, los sistemas expertos.
+Aprendizaje inductivo: Las técnicas de aprendizaje inductivo se basan en la posibilidad de que el sistema consiga automáticamente los conocimientos necesarios a partir de ejemplos reales sobre la tarea que se desea modelizar. Por ejemplo, aquellas partes de los sistemas basados en los modelos ocultos de Márkov o en las redes neuronales artificiales que se configuran automáticamente a partir de muestras de aprendizaje.
+En la práctica, no existen metodologías que estén basadas únicamente en el aprendizaje inductivo o deductivo. De hecho, se asume un compromiso deductivo-inductivo en el que los aspectos generales se suministran deductivamente y la caracterización de la variabilidad se realiza inductivamente.
+
+
+=== Decodificador acústico-fonético ===
+Las fuentes de información acústica, fonética, fonológica y posiblemente léxica, con los correspondientes procedimientos interpretativos, dan lugar a un módulo conocido como decodificador acústico-fonético (o en ocasiones a un decodificador léxico). La entrada al decodificador acústico-fonético es la señal vocal convenientemente representada; para ello, es necesario que esta sufra un preproceso de parametrización. En esta etapa previa es necesario asumir algún modelo físico, contándose con modelos auditivos y modelos articulatorios.
+
+
+=== Modelo del lenguaje ===
+Las fuentes de conocimiento sintáctico, semántico y pragmático dan lugar al modelo del lenguaje del sistema. Cuando la representación de la Sintaxis y de la Semántica tiende a integrarse, se desarrollan sistemas de RAH de gramática restringida para tareas concretas.
+
+Los modelos del lenguaje más complejos necesitan para su correcto funcionamiento grandes corpora de voz y de texto escrito para el aprendizaje y la evaluación de los correspondientes sistemas. Gracias a ellos, se pueden abordar gramáticas más complejas y acercarse al Procesamiento de lenguajes naturales.
+
+
+== Características de los sistemas existentes ==
+Los sistemas comerciales han estado disponibles desde 1990. A pesar del aparente éxito de estas tecnologías, muy pocas personas utilizan el sistema del reconocimiento del habla en sus computadoras. Parece ser que muchos de los usuarios utilizan el ratón y el teclado para guardar o redactar documentos, porque les resulta más cómodo y rápido a pesar del hecho de que todos podemos hablar a más velocidad de la que tecleamos. Sin embargo, con el uso del teclado y del reconocimiento del habla, el trabajo puede ser mucho más efectivo. Por ejemplo, los creadores del sistema comercial para juristas DigaLaw X estiman que dictar con el mismo es de 3 a 4 veces más rápido que mecanografiar, con similar precisión. [cita requerida]
+Este sistema se está utilizando sobre todo en aplicaciones telefónicas: agencias de viajes, atención al cliente, información, etcétera. La mejora de estos sistemas de reconocimiento del habla ha ido aumentando, y su eficacia cada vez es mayor.[cita requerida]
+
+
+== Clasificación ==
+Los sistemas de reconocimiento de voz pueden clasificarse según los siguientes criterios:
+
+Entrenabilidad: determina si el sistema necesita un entrenamiento previo antes de empezar a usarse.
+Dependencia del hablante: determina si el sistema debe entrenarse para cada usuario o es independiente del hablante.
+Continuidad: determina si el sistema puede reconocer habla continua o el usuario debe hacer pausas entre palabra y palabra.
+Robustez: determina si el sistema está diseñado para usarse con señales poco ruidosas o, por el contrario, puede funcionar aceptablemente en condiciones ruidosas, ya sea ruido de fondo, ruido procedente del canal o la presencia de voces de otras personas.
+Tamaño del dominio: determina si el sistema está diseñado para reconocer lenguaje de un dominio reducido (unos cientos de palabras p. e. reservas de vuelos o peticiones de información meteorológica) o extenso (miles de palabras).
+
+
+== Usos y aplicaciones ==
+Aunque en teoría cualquier tarea en la que se interactúe con un ordenador puede utilizar el reconocimiento de voz, actualmente las siguientes aplicaciones son las más comunes:
+
+Dictado automático: El dictado automático es, hasta hoy, el uso más común de las tecnologías de reconocimiento de voz. En algunos casos, como en el dictado de recetas médicas y diagnósticos o el dictado de textos legales, se usan corpus especiales para incrementar la precisión del sistema.
+Control por comandos: Los sistemas de reconocimiento de habla diseñados para dar órdenes a un computador (p.e. "Abrir Firefox", "cerrar ventana") se llaman Control por comandos. Estos sistemas reconocen un vocabulario muy reducido, lo que incrementa su rendimiento.
+Telefonía: Algunos sistemas PBX permiten a los usuarios ejecutar comandos mediante el habla, en lugar de pulsar tonos. En muchos casos se pide al usuario que diga un número para navegar un menú.
+Sistemas portátiles: Los sistemas portátiles de tamaño reducido, como los relojes o los teléfonos móviles, tienen unas restricciones muy concretas de tamaño y forma, así que el habla es una solución natural para introducir datos en estos dispositivos.
+Sistemas diseñados para discapacitados: Los sistemas de reconocimiento de voz pueden ser útiles para personas con discapacidades que les impidan teclear con fluidez, así como para personas con problemas auditivos, que pueden usarlos para obtener texto escrito a partir de habla. Esto permitiría, por ejemplo, que los aquejados de sordera pudieran recibir llamadas telefónicas.
+
+
+== Curiosidades ==
+Los investigadores del grupo de reconocimiento de voz de Apple solían llevar una camiseta en la que se podía leer I helped Apple wreck a nice beach ("Yo ayudé a Apple a estropear una buena playa"), cuya pronunciación es prácticamente idéntica a I helped Apple recognize speech ("Yo ayudé a Apple a reconocer habla"). Esta broma ilustra la dificultad de desambiguar cadenas fonéticas.
+
+
+== Véase también ==
+Síntesis de voz
+Lingüística computacional
+Procesamiento de lenguaje natural
+Reconocimiento de locutores
+Siri
+Efecto IA
+
+
+== Referencias ==
+Francisco Casacuberta Nolla. Congreso de la Lengua Española, Sevilla, 1992
+Asunción Moreno. Congreso de la Lengua Española, Sevilla, 1992
+http://www.tldp.org/HOWTO/Speech-Recognition-HOWTO/
+Tordera Yllescas, Juan Carlos (2011): "Lingüística computacional. Tratamiento del habla". Valencia: Universtitat de València.
+
+
+== Enlaces externos ==
+Reconocedor y Analizador de Voz. Fernando Peralta, Anibal Cotrina. Universidad Nacional Mayor de San Marcos, Oct 2002 (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última)..
+Voice tools Project.
+Guía de programas de síntesis y reconocimiento de voz para Linux Archivado el 30 de diciembre de 2005 en Wayback Machine. (en inglés)
+Proyecto de una base de datos acústicos de la lengua española. Joaquim Llisterri, Dolors Poch. Congreso de la Lengua Española, Sevilla, 1992
+Configurar el reconocimiento de voz en Windows
+Reconocimiento de voz de Windows Vista: ¿mejor, igual o peor que Dragon Naturally Speaking?Comandos de voz De iOS (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).Siri

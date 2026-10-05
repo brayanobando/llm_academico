@@ -1,0 +1,33 @@
+Geoffrey Hinton (Wimbledon, Inglaterra, 6 de diciembre de 1947) es un científico computacional, científico cognitivo y psicólogo cognitivo británico. Fue galardonado con el Premio Turing en el 2018 junto con Yoshua Bengio y Yann LeCun por su trabajo en aprendizaje profundo.​ Conocido como el «padrino» de la inteligencia artificial, renunció a Google a los 75 años por los peligros que reconoce en las nuevas tecnologías.​ En 2024 recibió el Premio Nobel de Física junto a John Hopfield.​
+
+
+== Educación ==
+Hinton fue educado en el King's College, Cambridge  y se graduó en 1970, con un bachiller universitario en letras en psicología experimental. Continuó sus estudios en la Universidad de Edimburgo, donde le otorgaron un doctorado en inteligencia artificial en 1977 por su investigación supervisada por Christopher Longuet-Higgins.​
+
+
+== Carrera e investigación ==
+Después de su doctorado trabajó en la Universidad de Sussex, y (después de la dificultad para hallar financiamiento en Gran Bretaña) la Universidad de California, San Diego, y Universidad Carnegie Mellon. Fue director fundador de la Fundación Benéfica Gatsby de la unidad de Neurociencia Computacional en University College de Londres, y desde el 2020​ es profesor en el departamento de informática de la Universidad de Toronto. Tiene la Cátedra de Investigación de Canadá en Aprendizaje de Máquina, y es asesor para el aprendizaje en máquinas y cerebros en el Instituto canadiense para Investigación Avanzada. Hinton enseñó un curso en línea libre en redes neuronales en la plataforma de educación de hamster ex en el 2012.​ Y se unió a Google en marzo del 2013 cuando su compañía, DNNresearch Inc., fue adquirida. Está planeando dividir «su tiempo entre su investigación universitaria y su trabajo en Google».​
+Hinton investiga las maneras de utilizar redes neuronales para aprendizaje de máquina, memoria, percepción y procesamiento de símbolos. Es autor o coautor de más de 200 publicaciones revisadas por pares en estas áreas.​ Mientras fue profesor en la Universidad de Carnegie Mellon (1982-1987), fue uno de los primeros investigadores que demostraron el uso del algoritmo de backpropagation generalizado para entrenar redes neuronales multicapa que ha sido ampliamente utilizado para aplicaciones prácticas.​ Durante el mismo periodo, Hinton coinventó las máquinas de Boltzmann con David Ackley y Terry Sejnowski.​ Sus otras contribuciones a la investigación en redes neuronales incluyen representaciones distribuidas, red neuronal con retraso de tiempo, mezcla de expertos, máquinas de Helmholtz y Producto de Expertos. En 2007 Hinton fue coautor de un trabajo de aprendizaje no supervisado titulado «Aprendizaje no supervisado de transformaciones de imagen».​ Una introducción accesible a las investigaciones de Geoffrey Hinton puede encontrarse en sus artículos en Scientific American en septiembre de 1992 y octubre de 1993.
+En octubre y noviembre de 2017, respectivamente, Hinton publicó dos artículos de investigación de acceso abierto ​​ sobre el tema de la redes neuronales de cápsula, que de acuerdo a Hinton son «por fin algo que funciona bien».​
+Alumnos de doctorado e investigadores de postdoctorado notables de su grupo incluyen a Richard Zemel, Brendan Frey, Radford M. Neal, Ruslan Salakhutdinov, Ilya Sutskever, Yann LeCun​ y Zoubin Ghahramani.
+
+
+== Honores ==
+Hinton fue elegido miembro de la Royal Society (FRS) en 1998. Él fue el primer ganador del Premio David E. Rumelhart en 2001.​ 
+En 2001, Hinton fue galardonado con un Doctorado honoris causa de la Universidad de Edimburgo.​ En 2005 recibió el Premio IJCAI de Investigación de Excelencia por su trayectoria. También fue galardonado con la Medalla de Oro Herzberg de Canadá para la Ciencia y la Ingeniería en 2011.​ En 2013, Hinton fue galardonado con un Doctorado honoris causa de la Universidad de Sherbrooke.​
+En 2016, fue elegido miembro extranjero de la Academia Nacional de Ingeniería de EE. UU. «Por sus contribuciones a la teoría y la práctica de las redes neuronales artificiales y sus aplicaciones para el reconocimiento de voz y visión por computador».​ También recibió el Premio IEEE/RSE Wolfson James Clerk Maxwell en 2016.​
+Ha ganado uno de los Premios Fundación BBVA Fronteras del Conocimiento (2016) en la categoría de Tecnologías de la Información y la Comunicación «por sus contribuciones pioneras y altamente influyentes» para dotar a las máquinas con la capacidad para aprender.​
+Junto a Yann LeCun, y Yoshua Bengio, Hinton fue galardonado con el Premio Turing en 2018 por avances conceptuales y de ingeniería que han hecho de las redes neuronales profundas un componente crítico de la computación.​​​
+En 2024 recibió el Premio Nobel de Física junto a John Hopfield.​
+
+
+== Vida personal ==
+Hinton es descendiente del lógico George Boole, cuya obra se convirtió en uno de los fundamentos de la moderna ciencia de la computación, y del médico cirujano y autor James Hinton.​ Su padre es Howard Hinton.​ Su segundo nombre viene de otro pariente, George Everest.​ Es sobrino del economista Colin Clark.​ Perdió a su primera esposa por cáncer de ovario en 1994.​
+
+
+== Puntos de vista ==
+Hinton se trasladó de los EE. UU. a Canadá en parte debido a su desilusión con la política de la era de Reagan y su desaprobación de la financiación militar de la inteligencia artificial. Cree que los sistemas políticos utilizarán la IA para «aterrorizar a la población». Hinton se ha posicionado en contra de las armas autónomas letales. Con respecto al riesgo de inteligencia artificial, Hinton ha declarado que la superinteligencia parece estar a menos de 50 años en el futuro, pero advierte que «no hay una buena trayectoria de cosas menos inteligentes controlando cosas de mayor inteligencia». Cuando en 2015 se le preguntó por qué continuaba con la investigación a pesar de sus graves preocupaciones, Hinton declaró: «Te podría dar los argumentos habituales. Pero la verdad es que la perspectiva de descubrir es demasiado dulce». Hinton ha declarado también que «es muy duro de pronosticar más allá de unos cinco años» lo que los avances en la IA traerán.​
+La fama le ha conducido a conceder entrevistas en otros idiomas. En español Hinton fue entrevistado por primera por el divulgador Gustavo Entrala en 2025.​ En italiano ha sido entrevistado por el periódico la Repubblica en 2024.​
+
+
+== Referencias ==

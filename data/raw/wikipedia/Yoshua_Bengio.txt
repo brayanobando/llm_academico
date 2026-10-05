@@ -1,0 +1,15 @@
+Yoshua Bengio​ FRS OC FRSC (nacido en 1964 en París, Francia) es un informático canadiense, más conocido por su trabajo en redes neuronales artificiales y aprendizaje profundo. Fue co-receptor del ACM A.M. de 2018. Premio Turing por su trabajo en aprendizaje profundo y galardonado en 2022 con el Premio Príncipe de Asturias de Investigación Científica y Técnica.​Es profesor en el Departamento de Ciencias de la Computación e Investigación de Operaciones de la Universidad de Montreal y director científico del Instituto de Algoritmos de Aprendizaje de Montreal (MILA).
+Bengio, junto con Geoffrey Hinton y Yann LeCun, son conocidos por algunos como los «Padrinos de la IA» y «Padrinos del Aprendizaje Profundo».
+
+
+== Carrera e investigación ==
+Después de su doctorado, Bengio fue becario postdoctoral en MIT (supervisado por Michael I. Jordan) y AT&T Bell Labs. Bengio ha sido miembro de la facultad en la Universidad de Montreal desde 1993, dirige el MILA (Montreal Institute for Learning Algorithms) y es codirector del proyecto Learning in Machines & Brains del Canadian Institute for Advanced Research. 
+Junto con Geoffrey Hinton y Yann LeCun, Cagio Metz considera a Bengio como una de las tres personas más responsables del avance del aprendizaje profundo durante los años 1990 y 2000. Entre los científicos informáticos con un índice h de al menos 100, Bengio es el que tiene las citas más recientes por día, según MILA.
+En octubre de 2016, Bengio cofundó Element AI, una incubadora de inteligencia artificial con sede en Montreal que convierte la investigación de IA en aplicaciones comerciales del mundo real. En mayo de 2017, Bengio anunció que se uniría a la empresa de tecnología legal con sede en Montreal Botler AI, como asesor estratégico. Bengio actualmente se desempeña como asesor científico y técnico de Recursion Pharmaceuticals.
+
+
+== Educación ==
+Bengio recibió su licenciatura (ingeniería eléctrica), MEng (informática) y doctorado (informática) de la Universidad McGill.
+
+
+== Referencias ==

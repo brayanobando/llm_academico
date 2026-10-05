@@ -1,0 +1,1167 @@
+El aprendizaje por refuerzo o aprendizaje reforzado (en inglés: reinforcement learning) es un área del aprendizaje automático (AA) inspirada en la psicología conductista, cuya ocupación es determinar qué acciones debe escoger un agente de software en un entorno dado con el fin de maximizar alguna noción de "recompensa" o premio acumulado. El problema, por su generalidad, se estudia en muchas otras disciplinas, como la teoría de juegos, teoría de control, investigación de operaciones, teoría de la información, la optimización basada en la simulación, estadística y algoritmos genéticos. En otros campos de investigación, donde se estudian los métodos de aprendizaje de refuerzo, se lo conoce como programación dinámica aproximada. El problema se ha estudiado en la teoría de control óptimo, aunque la mayoría de los estudios se centran en la existencia de soluciones óptimas y su caracterización, no en los aspectos de aprendizaje o de aproximación. En la economía y en teoría de juegos, el aprendizaje por refuerzo se puede utilizar para explicar cómo puede surgir equilibrio en condiciones de racionalidad limitada. En aprendizaje de máquina, el medio ambiente es formulado generalmente como un proceso de decisión de Markov (MDP) y muchos algoritmos de aprendizaje por refuerzo están estrechamente relacionados con técnicas de la programación dinámica. La principal diferencia entre las técnicas clásicas y los algoritmos de aprendizaje por refuerzo es que para estos últimos no es necesario el conocimiento de los MDP y se dirigen a grandes MDP donde los métodos exactos se convierten en no viables. El aprendizaje por refuerzo difiere del estándar de aprendizaje supervisado en el que los pares de entradas / salidas correctas nunca se presentan, ni acciones subóptimas corregidas explícitamente. Además, hay un enfoque en el rendimiento en línea, que consiste en encontrar un equilibrio entre la exploración (de un territorio desconocido) y explotación (de los conocimientos actuales).
+
+
+== Introducción ==
+El modelo básico de aprendizaje por refuerzo consiste en:
+
+Un conjunto de estados de entorno 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+;
+Un conjunto de acciones 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+;
+Reglas de la transición entre los estados;
+Reglas que determinan la recompensa inmediata escalar de una transición;
+Reglas que describen lo que observa el agente.
+Las reglas son a menudo estocásticas. La observación implica típicamente la recompensa inmediata al escalar asociado con la última transición. En escenarios, el agente también supone que observa el estado actual del medio ambiente, en cuyo caso se habla de plena observabilidad, mientras que en el caso contrario se habla de observabilidad parcial. A veces, el conjunto de acciones disponibles para el agente está restringido; por ejemplo, no se puede gastar más dinero del que se posee. Un agente de refuerzo de aprendizaje interactúa con su entorno en pasos de tiempo discretos. En cada tiempo de 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+, el agente recibe una observación 
+  
+    
+      
+        
+          o
+          
+            t
+          
+        
+      
+    
+    {\displaystyle o_{t}}
+  
+, que normalmente incluye la recompensa 
+  
+    
+      
+        
+          r
+          
+            t
+          
+        
+      
+    
+    {\displaystyle r_{t}}
+  
+. Se elige entonces una acción 
+  
+    
+      
+        
+          a
+          
+            t
+          
+        
+      
+    
+    {\displaystyle a_{t}}
+  
+ del conjunto de acciones, que se envía posteriormente al medio ambiente. El entorno se mueve a un nuevo estado 
+  
+    
+      
+        
+          s
+          
+            t
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle s_{t+1}}
+  
+ y la recompensa 
+  
+    
+      
+        
+          r
+          
+            t
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle r_{t+1}}
+  
+ asociada con la transición 
+  
+    
+      
+        (
+        
+          s
+          
+            t
+          
+        
+        ,
+        
+          a
+          
+            t
+          
+        
+        ,
+        
+          s
+          
+            t
+            +
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (s_{t},a_{t},s_{t+1})}
+  
+ se determina. El objetivo de un agente de aprendizaje por refuerzo es recoger tanta recompensa como sea posible. El agente puede elegir cualquier acción en función de la historia e incluso puede aleatorizar su selección de acciones. Cuando el rendimiento del agente se compara al de un agente que actúa de manera óptima desde el principio, la diferencia entre estos da lugar a la noción de arrepentimiento. Nótese que para poder actuar cerca de manera óptima, el agente debe razonar sobre las consecuencias a largo plazo de sus acciones: «con el fin de maximizar mis ingresos futuros sería mejor ir a la escuela ahora, a pesar de que la recompensa monetaria inmediata asociada a esto podría ser negativa». Por lo tanto, el aprendizaje por refuerzo es especialmente adecuado para los problemas que incluyen un razonamiento a largo plazo frente a uno a corto plazo. Se ha aplicado con éxito a diversos problemas, entre ellos, el control de robots, telecomunicaciones, backgammon y damas. Dos componentes hacen aprendizaje por refuerzo de gran alcance: el uso de muestras para optimizar el rendimiento y el uso de la función de aproximación para hacer frente a entornos de gran tamaño. Gracias a estos dos componentes clave, el aprendizaje por refuerzo se puede utilizar en entornos de un tamaño considerable en cualquiera de las situaciones siguientes:
+
+Un modelo del entorno es conocido, pero una solución analítica no está disponible;
+Solamente un modelo de simulación del medio ambiente se da (el tema de la optimización basada en la simulación);
+La única manera de recopilar información sobre el medio ambiente es mediante la interacción con él.
+Los dos primeros de estos problemas podrían ser considerados problemas de planificación (desde alguna forma si el modelo está disponible), mientras que el último podría ser considerado como un problema de aprendizaje clásico. Sin embargo, bajo una metodología de aprendizaje por refuerzo, los problemas de planificación se convierten en problemas de aprendizaje automático (AA).
+
+
+== Exploración ==
+El problema del aprendizaje de refuerzo, como se ha descrito, requiere mecanismos de exploración inteligente. Seleccionar al azar acciones, sin hacer referencia a una distribución de probabilidad estimada que se conoce, da lugar a un rendimiento muy pobre. El caso de (pequeños) MDP finitos está relativamente bien entendido por ahora. Sin embargo, debido a la falta de algoritmos que escalen bien con el número de estados, en la práctica, la gente recurre a métodos de exploración simples. Uno de tales métodos es 
+  
+    
+      
+        ϵ
+      
+    
+    {\displaystyle \epsilon }
+  
+-greedy, cuando el agente elige la acción que se cree tiene el mejor efecto a largo plazo, con una probabilidad 
+  
+    
+      
+        1
+        −
+        ϵ
+      
+    
+    {\displaystyle 1-\epsilon }
+  
+, y, de lo contrario, se elige una acción uniformemente al azar. Aquí, 
+  
+    
+      
+        0
+        <
+        ϵ
+        <
+        1
+      
+    
+    {\displaystyle 0<\epsilon <1}
+  
+ es un parámetro de ajuste, que a veces se cambia, ya sea de acuerdo con un horario fijo (por lo que el agente explorar menos como pasa el tiempo), ya de forma adaptativa basada en algunas heurísticas (Tokic y Palma, 2011).
+
+
+== Algoritmos para el control de aprendizaje ==
+Aunque el tema de la exploración se tiene en cuenta, e incluso si el estado era observable (que asumimos a partir de ahora), el problema sigue siendo saber qué acciones son buenas basadas en la experiencia pasada.
+
+
+=== Criterio de optimalidad ===
+Para simplificar, supongamos por un momento que el problema estudiado es episódico, un episodio que termina cuando se alcanza un estado terminal. Supongamos, además, que no importa el curso de las acciones que toma el agente, la terminación es inevitable. Bajo ciertas condiciones de regularidad adicional está entonces bien definida la expectativa de la recompensa total para cualquier política y cualquier distribución inicial sobre los estados. En este sentido, una política se refiere a una asignación de cierta distribución de probabilidad sobre las acciones a todas las historias posibles. Dada una distribución inicial fija 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+, Que por lo tanto podemos asignar el retorno esperado 
+  
+    
+      
+        
+          ρ
+          
+            π
+          
+        
+      
+    
+    {\displaystyle \rho ^{\pi }}
+  
+ a la política 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+:
+  
+    
+      
+        
+          ρ
+          
+            π
+          
+        
+        =
+        E
+        [
+        R
+        
+          |
+        
+        π
+        ]
+        ,
+      
+    
+    {\displaystyle \rho ^{\pi }=E[R|\pi ],}
+  
+ donde la variable aleatoria 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ denota el retorno y se define por:
+  
+    
+      
+        R
+        =
+        
+          ∑
+          
+            t
+            =
+            0
+          
+          
+            N
+            −
+            1
+          
+        
+        
+          r
+          
+            t
+            +
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle R=\sum _{t=0}^{N-1}r_{t+1},}
+  
+ donde 
+  
+    
+      
+        
+          r
+          
+            t
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle r_{t+1}}
+  
+ es la recompensa recibida después de la 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+-ésima transición, el estado inicial se realiza un muestreo al azar de 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ y las acciones son seleccionados por la política 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+. Aquí, 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ denota el tiempo aleatorio cuando se alcanza un estado terminal, es decir, el momento en que el episodio termina. En el caso de problemas no episódicos el retorno a menudo se descuenta,:
+  
+    
+      
+        R
+        =
+        
+          ∑
+          
+            t
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          γ
+          
+            t
+          
+        
+        
+          r
+          
+            t
+            +
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle R=\sum _{t=0}^{\infty }\gamma ^{t}r_{t+1},}
+  
+ dando lugar a la esperado criterio de recompensa para un descuento total. 
+  
+    
+      
+        0
+        ≤
+        γ
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq \gamma \leq 1}
+  
+ es el llamado factor de descuento. Desde el retorno sin descontar es un caso especial de la devolución de descuento, a partir de ahora asumiremos el descuento. Aunque esto parece bastante inocente, el descuento es de hecho un problema si uno se preocupa por el rendimiento en línea. Esto se debe a que el descuento hace que el tiempo inicial de los pasos más importantes. Puesto que un agente de aprendizaje es probable que cometa errores durante los primeros pasos después de sus inicios "vida", ningún algoritmo de aprendizaje desinformado puede lograr un rendimiento casi óptimo en el descuento, incluso si la clase de entornos está restringida a la de PDM finitos. (Esto no significa sin embargo que, dado el tiempo suficiente, un agente de aprendizaje no puede entender cómo actuar casi de forma óptima, si el tiempo se ha reiniciado.) El problema entonces es especificar un algoritmo que puede ser usado para encontrar una póliza con el máximo rendimiento esperado. De la teoría de la PDM se sabe que, sin pérdida de generalidad, la búsqueda puede ser restringida al conjunto de las llamadas políticas estacionarias. Una política se llama estacionaria si la acción de distribución que devuelve solo depende del último estado visitado (que es parte de la historia de la observación del agente, por nuestro supuesto simplificador). De hecho, la búsqueda se puede restringir aún más a las políticas estacionarias deterministas. Una política estacionaria determinista es aquella que selecciona de manera determinista acciones basadas en el estado actual. Desde cualquiera de estas políticas puede ser identificadas con una correspondencia entre el conjunto de estados en el conjunto de acciones, estas políticas se pueden identificar con este tipo de asignaciones, sin pérdida de generalidad.
+
+
+=== Fuerza bruta ===
+El enfoque por fuerza bruta implica las dos etapas siguientes:
+
+Para cada política posible, muestrear resultados.
+Elija la política con el mayor retorno esperado.
+Un problema con esto es que el número de políticas puede ser extremadamente grande, o incluso infinito. Otra es que la varianza de los rendimientos podría ser grande, en cuyo caso se requiere un gran número de muestras para estimar con precisión el retorno de cada política. Estos problemas se pueden aliviar utilizamos alguna estructura y permitir que las muestras sean generadas a partir de una política para influir en las estimaciones realizadas por otro. Los dos enfoques principales para conseguirlo son función de la estimación del valor y la búsqueda de políticas directas.
+
+
+=== Acercamiento al valor de la función ===
+Las funciones de valor intentan encontrar una política que maximice el retorno al mantener un conjunto de estimaciones de los rendimientos esperados por alguna política (por lo general, ya sea la "corriente" o la óptima). Estos métodos se basan en la teoría de los PDM, donde optimalidad se define en un sentido que es más fuerte que los anteriores: Una política se llama óptima si se logra un mejor rendimiento esperado en cualquier estado inicial (es decir, las distribuciones iniciales no juegan ningún papel en esta definición). Una vez más, siempre se puede encontrar una política óptima entre las políticas estacionarias. Para definir la optimalidad de una manera formal, definir el valor de una política 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ por: 
+  
+    
+      
+        
+          V
+          
+            π
+          
+        
+        (
+        s
+        )
+        =
+        E
+        [
+        R
+        
+          |
+        
+        s
+        ,
+        π
+        ]
+        ,
+      
+    
+    {\displaystyle V^{\pi }(s)=E[R|s,\pi ],}
+  
+ donde 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ significa el regreso al azar asociado con las siguientes 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ desde el estado inicial 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+. Se define 
+  
+    
+      
+        
+          V
+          
+            ∗
+          
+        
+        (
+        s
+        )
+      
+    
+    {\displaystyle V^{*}(s)}
+  
+ como el valor máximo posible de 
+  
+    
+      
+        
+          V
+          
+            π
+          
+        
+        (
+        s
+        )
+      
+    
+    {\displaystyle V^{\pi }(s)}
+  
+, en donde 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ se le permite cambiar: 
+  
+    
+      
+        
+          V
+          
+            ∗
+          
+        
+        (
+        s
+        )
+        =
+        
+          sup
+          
+            π
+          
+        
+        
+          V
+          
+            π
+          
+        
+        (
+        s
+        )
+        .
+      
+    
+    {\displaystyle V^{*}(s)=\sup \limits _{\pi }V^{\pi }(s).}
+  
+ Una política que alcanza estos valores óptimos en cada estado se llama óptima. Es evidente que una política óptima en este sentido fuerte también es óptima en el sentido de que maximiza el rendimiento esperado 
+  
+    
+      
+        
+          ρ
+          
+            π
+          
+        
+      
+    
+    {\displaystyle \rho ^{\pi }}
+  
+, desde 
+  
+    
+      
+        
+          ρ
+          
+            π
+          
+        
+        =
+        E
+        [
+        
+          V
+          
+            π
+          
+        
+        (
+        S
+        )
+        ]
+      
+    
+    {\displaystyle \rho ^{\pi }=E[V^{\pi }(S)]}
+  
+, en donde 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ es un estado de la muestra al azar de la distribución 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+. Aunque los valores de estado son suficientes para definir el óptimo, que demostrará ser útil para definir la acción-valores. Dado un estado 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, Una acción 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ y una política de 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+, La acción-valor del par 
+  
+    
+      
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (s,a)}
+  
+ bajo 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ se define por:
+  
+    
+      
+        
+          Q
+          
+            π
+          
+        
+        (
+        s
+        ,
+        a
+        )
+        =
+        E
+        [
+        R
+        
+          |
+        
+        s
+        ,
+        a
+        ,
+        π
+        ]
+        ,
+        
+      
+    
+    {\displaystyle Q^{\pi }(s,a)=E[R|s,a,\pi ],\,}
+  
+ donde, ahora, 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ significa el retorno aleatorio asociado con la primera toma de acción 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ en el estado de 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ y siguiendo 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+,, a partir de entonces. Es bien conocido a partir de la teoría de los PDM que si alguien nos da 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ para una política óptima, siempre podemos optar por acciones óptimas simplemente eligiendo la acción con el valor más alto en cada estado. La función de acción-valor de una política óptima se llama la función óptima acción-valor y se representa por 
+  
+    
+      
+        
+          Q
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle Q^{*}}
+  
+. Suponiendo pleno conocimiento de la MDP, hay dos enfoques básicos para calcular la función óptima acción del valor, valor de iteración y la política de repetición. Ambos algoritmos calcular una secuencia de funciones 
+  
+    
+      
+        
+          Q
+          
+            k
+          
+        
+      
+    
+    {\displaystyle Q_{k}}
+  
+ (
+  
+    
+      
+        k
+        =
+        0
+        ,
+        1
+        ,
+        2
+        ,
+        …
+        ,
+      
+    
+    {\displaystyle k=0,1,2,\ldots ,}
+  
+) Que convergen a 
+  
+    
+      
+        
+          Q
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle Q^{*}}
+  
+.
+
+
+==== Método de Montecarlo ====
+Los Método de Montecarlo más simples se pueden usar en un algoritmo que imita políticas de iteración. La política de iteración consta de dos etapas: la evaluación y mejora. Los Método de Montecarlo se utilizan en la etapa de evaluación. En este paso, dado, la política determinista estacionaria 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+, el objetivo es calcular los valores de la función 
+  
+    
+      
+        
+          Q
+          
+            π
+          
+        
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle Q^{\pi }(s,a)}
+  
+ (O una buena aproximación a ellas) para todos los pares estado-acción 
+  
+    
+      
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (s,a)}
+  
+. Supongamos (por simplicidad) que el MDP es finito y que hay una tabla de acciones por estados en la memoria. Además, se supone que el problema es episódico y después de cada episodio uno nuevo comienza a partir de un estado inicial aleatorio. Entonces, la estimación del valor de un par estado-acción determinada 
+  
+    
+      
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (s,a)}
+  
+se puede calcular simplemente el promedio de los rendimientos de la muestra que se originaron a partir de 
+  
+    
+      
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (s,a)}
+  
+Dado el tiempo suficiente, este procedimiento puede así construir una estimación precisa 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ de la función de la acción-valor 
+  
+    
+      
+        
+          Q
+          
+            π
+          
+        
+      
+    
+    {\displaystyle Q^{\pi }}
+  
+. Aquí termina la descripción de la etapa de evaluación de políticas. En la etapa de mejora de las políticas, como se hace en el algoritmo de iteración, la siguiente política se obtiene mediante el cálculo de una política greedy con respecto a 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+: Dado un estado 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+, la nueva política devuelve una acción que maximiza 
+  
+    
+      
+        Q
+        (
+        s
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle Q(s,\cdot )}
+  
+. En la práctica a menudo se evita el cómputo y el almacenamiento de la nueva política, pero utiliza la evaluación perezosa para aplazar el cómputo de las acciones que maximizan cuando realmente sea necesario. Este procedimiento puede acarrear algunos problemas como los siguientes:
+
+Se puede perder mucho tiempo en la evaluación de una política subóptima;
+Utilizar muestras de manera ineficiente
+Cuando las trayectorias tienen una alta varianza, la convergencia será lenta;
+Funciona solo en los problemas episódicos;
+Actúa en solo MDPs pequeños y finitos.
+
+
+==== Métodos de diferencias temporales ====
+El primer problema se puede corregir fácilmente, permitiendo que el procedimiento pueda cambiar la política (en todos, o en algunos estados) antes de que los valores se establezcan. Por muy bueno que parezca, esto puede ser peligroso, ya que esto podría impedir la convergencia. Sin embargo, la mayoría de los algoritmos actuales implementan esta idea, dando lugar a la clase de algoritmo de iteración política generalizada. Observamos de pasada que el actor crítico métodos pertenecen a esta categoría. El segundo problema se puede corregir en el algoritmo, permitiendo trayectorias para contribuir a cualquier par estado-acción en ellos. Esto también puede ayudar, hasta cierto punto con el tercer problema, aunque una solución mejor cuando los rendimientos tienen alta varianza es utilizar diferencia temporal de Sutton (TD) métodos que se basan en la recursiva ecuación de Bellman. Tenga en cuenta que el cálculo en métodos TD puede ser incrementales (cuando después de cada transición de la memoria se cambia y la transición se desecha), o por lotes (cuando se recogen las transiciones y luego las estimaciones se calculan una vez sobre la base de un gran número de transiciones). El métodos por lotes, un excelente ejemplo de lo que es el método de mínimos cuadrados diferencia temporal debido al Bradtke and Barto(1996), puede utilizar la información de las muestras mejor, mientras que los métodos incrementales son la única opción cuando los métodos de proceso por lotes se convierten en inviable debido a su alta computacional o la complejidad de la memoria. Además, existen métodos que tratan de unificar las ventajas de los dos enfoques. Con el fin de abordar la última cuestión mencionada en el apartado anterior, se utilizan métodos de aproximación de funciones. En la aproximación función lineal se parte de una asignación 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ que asigna un vector de dimensión finita a cada par estado-acción. Entonces, los valores de acción de un par estado-acción 
+  
+    
+      
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle (s,a)}
+  
+ se obtienen mediante la combinación lineal de los componentes 
+  
+    
+      
+        ϕ
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle \phi (s,a)}
+  
+ con algunos pesos 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+::
+  
+    
+      
+        Q
+        (
+        s
+        ,
+        a
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            d
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          ϕ
+          
+            i
+          
+        
+        (
+        s
+        ,
+        a
+        )
+      
+    
+    {\displaystyle Q(s,a)=\sum \limits _{i=1}^{d}\theta _{i}\phi _{i}(s,a)}
+  
+. La aproximación lineal de la función no es la única opción. Más recientemente, los métodos basados en las ideas de estadística no paramétrica se han explorado (que se pueden ver para construir sus propias características). Hasta ahora, la discusión se limita a la forma de iteración política se puede utilizar como base de los algoritmos de aprendizaje de refuerzo diseño. Igualmente importante, el valor de iteración también se puede utilizar como punto de partida, dando lugar al algoritmo Q-aprendizaje (Watkins 1989) y sus muchas variantes. El problema con los métodos que utilizan los valores de acción es que es posible que necesiten estimaciones muy precisas de los valores de acción de la competencia, que pueden ser difíciles de obtener cuando los rendimientos son ruidosos. Aunque este problema se mitiga en cierta medida por métodos de diferencias temporales y si se utiliza el llamado método de aproximación de funciones compatibles, queda mucho trabajo por hacer para aumentar la generalidad y la eficiencia. Otro problema específico de los métodos de diferencia temporal viene de su dependencia de la ecuación de Bellman recursiva. La mayoría de los métodos de diferencias temporales han llamado así a 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ parámetro 
+  
+    
+      
+        (
+        0
+        ≤
+        λ
+        ≤
+        1
+        )
+      
+    
+    {\displaystyle (0\leq \lambda \leq 1)}
+  
+ que permite a interpolar de forma continua entre los métodos de Monte-Carlo (que no se basan en las ecuaciones de Bellman) y los métodos de diferencias temporales básicas (que se basan exclusivamente en las ecuaciones de Bellman), que pueden por lo tanto ser eficaz para paliar este problema.
+
+
+=== Búsqueda política directa ===
+Un método alternativo para encontrar una buena política es buscar directamente en (algún subconjunto) del espacio de la política, en cuyo caso el problema se convierte en una instancia de optimización estocástica. Los dos enfoques disponibles se basan en el gradiente y métodos de gradiente libre. Métodos basados en gradiente (que dan lugar a los denominados métodos de política gradiente) comienzan con una asignación de un (parámetro) espacio de dimensión finita al espacio de políticas: dado el vector de parámetros 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+, dado 
+  
+    
+      
+        
+          π
+          
+            θ
+          
+        
+      
+    
+    {\displaystyle \pi _{\theta }}
+  
+ denotar la política asociada a 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+. Definir la función de rendimiento por: 
+  
+    
+      
+        ρ
+        (
+        θ
+        )
+        =
+        
+          ρ
+          
+            
+              π
+              
+                θ
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \rho (\theta )=\rho ^{\pi _{\theta }}.}
+  
+ Bajo condiciones suaves esta función será diferenciable como una función del vector de parámetros 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+. Si el gradiente de 
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ era conocido, se podría utilizar gradiente de ascenso. Desde una expresión analítica para el gradiente no está disponible, uno debe confiar en una estimación ruidosa. Tal estimación puede construirse de muchas maneras, dando lugar a algoritmos como el método Williams' Reinforce. Una gran clase de métodos evita confiar en la información de gradiente. Estos incluyen el recocido simulado, búsqueda de entropía cruzada o métodos de computación evolutiva. Muchos métodos de gradiente libre pueden alcanzar (en la teoría y en el límite) de un óptimo global. En un número de casos que de hecho han demostrado un rendimiento notable. El problema con los métodos de búsqueda es que pueden converger lentamente si la información basada en el que actúan es ruidosa. Por ejemplo, esto sucede cuando está en problemas episódicos las trayectorias son largas y la varianza de los retornos es grande. Como se ha argumentado antes, los métodos basados en el valor de funciones que se basan en diferencias temporales podrían ayudar en este caso. En los últimos años se han propuesto varios algoritmos actor y crítico siguiendo esta idea y han demostrado un buen desempeño en diversos problemas.
+
+
+== Teoría ==
+La teoría de las pequeñas MDP, finitos es bastante madura. Tanto el comportamiento asintótico como el de muestra finita de la mayoría de los algoritmos es bien entendido. Como se mencionó previamente, se conocen algoritmos con demostrablemente buen desempeño en línea. La teoría de la gran MDP necesita más trabajo. Exploración eficiente es en gran parte intacta (salvo para el caso de problemas de bandidos). Aunque los límites de rendimiento en tiempo finito aparecieron muchos algoritmos en los últimos años, se espera que estos límites mejores ya que son bastante vagos y por lo tanto se necesita más trabajo para comprender mejor las ventajas relativas, así como las limitaciones de estos algoritmos. Para algoritmos incrementales se han resuelto problemas de convergencia asintótica. Recientemente, nuevos algoritmos incrementales temporales basados en diferencias han aparecido que convergen en un conjunto mucho más amplio de condiciones de lo que era posible anteriormente.
+
+
+== Véase también ==
+Aprendizaje por diferencias temporales
+Estado-Acción-Recompensa-Estado-Acción (SARSA)
+Teoría del aprendizaje estadístico
+
+
+== Referencias ==
+Williams, Ronald J. (1987). «A class of gradient-estimating algorithms for reinforcement learning in neural networks». Proceedings of the IEEE First International Conference on Neural Networks. 
+Sutton, Richard S. (1988). «Learning to predict by the method of temporal differences». Machine Learning (Springer) 3: 9-44. doi:10.1007/BF00115009. 
+Bradtke, Steven J.; Andrew G. Barto (1996). «Learning to predict by the method of temporal differences». Machine Learning (Springer) 22: 33-57. doi:10.1023/A:1018056104778.  
+Bertsekas, Dimitri P.; John Tsitsiklis (1996). Neuro-Dynamic Programming. Nashua, NH: Athena Scientific. ISBN 1-886529-10-8.  
+Kaelbling, Leslie P.; Michael L. Littman; Andrew W. Moore (1996). «Reinforcement Learning: A Survey». Journal of Artificial Intelligence Research 4: 237-285. Archivado desde el original el 20 de noviembre de 2001. 
+Sutton, Richard S.; Barto, Andrew G. (1998). Reinforcement Learning: An Introduction. MIT Press. ISBN 0-262-19398-1. Archivado desde el original el 4 de septiembre de 2009.  Versión revisada del libro (2018).
+Peters, Jan; Sethu Vijayakumar; Stefan Schaal (2003). Reinforcement Learning for Humanoid Robotics. Archivado desde el original el 12 de mayo de 2013. Consultado el 13 de diciembre de 2013.  
+Powell, Warren (2007). Approximate dynamic programming: solving the curses of dimensionality. Wiley-Interscience. ISBN 0-470-17155-3. Archivado desde el original el 31 de julio de 2016. Consultado el 13 de diciembre de 2013. 
+Auer, Peter; Thomas Jaksch; Ronald Ortner (2010). «Near-optimal regret bounds for reinforcement learning». Journal of Machine Learning Research 11: 1563-1600. 
+Szita, Istvan; Csaba Szepesvari (2010). «Model-based Reinforcement Learning with Nearly Tight Exploration Complexity Bounds». Omnipress. pp. 1031-1038. Archivado desde el original el 14 de julio de 2010.  
+Bertsekas, Dimitri P. (agosto de 2010). «Chapter 6 (online): Approximate Dynamic Programming». Dynamic Programming and Optimal Control II (3 edición). 
+Busoniu, Lucian; Robert Babuska; Bart De Schutter; Damien Ernst (2010). Reinforcement Learning and Dynamic Programming using Function Approximators. Taylor & Francis CRC Press. ISBN 978-1-4398-2108-4. 
+Tokic, Michel; Günther Palm (2011). «Value-Difference Based Exploration: Adaptive Control between Epsilon-Greedy and Softmax». KI 2011: Advances in Artificial Intelligence. Lecture Notes in Computer Science 7006. Springer Berlin / Heidelberg. pp. 335-346. 
+
+
+== Enlaces externos ==
+Reinforcement Learning and Artificial Intelligence (Sutton's lab at the University of Alberta) (en inglés)
+Autonomous Learning Laboratory (Barto's lab at the University of Massachusetts Amherst) (en inglés)
+RL-Glue (en inglés)
+Software Tools for Reinforcement Learning (Matlab and Python) (en inglés)
+The UofA Reinforcement Learning Library (texts) (en inglés)
+The Reinforcement Learning Toolbox from the (Graz University of Technology) (en inglés)
+Hybrid reinforcement learning (en inglés)
+Piqle: a Generic Java Platform for Reinforcement Learning (en inglés)
+A Short Introduction To Some Reinforcement Learning Algorithms (en inglés)
+Reinforcement Learning applied to Tic-Tac-Toe Game (en inglés)
+Scholarpedia Reinforcement Learning (en inglés)
+Scholarpedia Temporal Difference Learning (en inglés)
+Stanford Reinforcement Learning Course (en inglés)
+Real-world reinforcement learning experiments at Delft University of Technology (en inglés)
+Reinforcement Learning Tools for Matlab (en inglés)
+Stanford University Andrew Ng Lecture on Reinforcement Learning (en inglés)
+Relative Entropy Policy Search (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última). (en inglés)

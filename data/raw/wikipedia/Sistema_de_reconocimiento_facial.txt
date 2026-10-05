@@ -1,0 +1,223 @@
+El sistema de reconocimiento facial es una aplicación dirigida por ordenador que identifica automáticamente a una persona en una imagen digital. Esto es posible mediante un análisis de las características faciales del sujeto extraídas de la imagen o de un fotograma clave de una fuente de vídeo, y comparándolas con una base de datos.​
+
+
+== Introducción ==
+El reconocimiento facial se ha convertido en los últimos años en un área de investigación activa que abarca diversas disciplinas, como procesado de imágenes, reconocimiento de patrones, visión por ordenador y redes neuronales. Involucra a investigadores de áreas de informática como a neurocientíficos y psicólogos. Se podría considerar también dentro del campo de reconocimiento de objetos, donde la cara es un objeto tridimensional sujeto a variaciones de iluminación, pose, etc., y ha de ser identificada basada en su proyección 2D (excepto cuando se utilizan técnicas 3D).
+El objetivo de un sistema de reconocimiento facial es, generalmente, el siguiente: dada una imagen de una cara "desconocida", o imagen de test, encontrar una imagen de la misma cara en un conjunto de imágenes "conocidas", o imágenes de entrenamiento. La gran dificultad añadida es la de conseguir que este proceso se pueda realizar en tiempo real. El sistema identificará las caras presentes en imágenes o videos automáticamente. Puede operar en dos modos:
+
+Verificación o autentificación de caras: compara una imagen de la cara con otra imagen con la cara de la que queremos saber la identidad. El sistema confirmará o rechazará la identidad de la cara.
+Identificación o reconocimiento de caras: compara la imagen de una cara desconocida con todas las imágenes de caras conocidas que se encuentran en la base de datos para determinar su identidad.
+Por su naturaleza amigable, este tipo de sistemas siguen siendo atractivos a pesar de la existencia de otros métodos muy fiables de identificación personal biométricos, como el análisis de huellas dactilares y el reconocimiento del iris.
+
+
+== Aplicaciones ==
+
+
+=== Aplicaciones actuales ===
+Se utiliza principalmente en sistemas de seguridad para el reconocimiento de usuarios. En estos sistemas se utiliza un lector que define las características del rostro, y cuando este solicita el acceso, se verifica comparando los datos obtenidos con la base de datos. Sin embargo, estos sistemas no son útiles a largo plazo ya que, a medida que pasan los años, los rasgos faciales varían y al solicitar el acceso ya no coinciden con la imagen en la base de datos. Para solucionar este problema se puede utilizar un algoritmo que interprete el paso de los años, aunque igualmente sigue sin ser del todo fiable), o bien, renovar frecuentemente la base de datos.
+También se utiliza en aplicaciones de interacción persona-ordenador, en gestión multimedia, y en software como Google's Picasa, Apple iPhoto, Sony's Picture Motion Browser (PMB), Facebook y Asus Smart Logon.
+
+
+=== Posibles aplicaciones futuras ===
+Una aplicación de reconocimiento facial futura se basa en establecer esta técnica a nivel de usuario. Por ejemplo, en un supermercado o en un establecimiento pequeño se podría llevar a cabo un control sobre quien abre la caja registradora mediante un reconocimiento facial previo, de esta manera también se pueden evitar intentos de robo ya que, al no reconocer el rostro, la caja permanecería cerrada. Un caso más extremo sería en los cajeros automáticos donde, para poder operar, fuese necesario un reconocimiento facial en vez del actual PIN.
+
+
+== Casos en Latinoamérica ==
+En Colombia, el reconocimiento facial ha sido usado en pruebas piloto para apoyar el control de acceso y la verificación de identidad en estadios de fútbol. En 2021, la Registraduría Nacional del Estado Civil informó sobre una prueba realizada en el estadio El Campín de Bogotá durante un partido entre Millonarios y Patriotas. Según la entidad, el sistema permitió verificar la identidad de los asistentes a la tribuna sur y buscaba reducir riesgos asociados con suplantación y seguridad en eventos deportivos masivos.​
+El uso de este tipo de sistemas también ha sido analizado desde la protección de datos personales, debido a que la biometría facial implica el tratamiento de datos sensibles. En Colombia, la Ley 1581 de 2012 regula el tratamiento de datos personales y establece deberes para responsables y encargados del tratamiento.​ En 2025, la Superintendencia de Industria y Comercio señaló, en un caso relacionado con reconocimiento facial en propiedad horizontal, que no se puede condicionar el acceso a un espacio al suministro de datos biométricos como único mecanismo de ingreso, y que deben existir alternativas no invasivas para quienes no autoricen el tratamiento de estos datos.​
+El reconocimiento facial también ha sido incorporado en sistemas de videovigilancia del transporte público. En 2023, la Policía anunció la implementación de 786 cámaras biométricas en el sistema de TransMilenio de Bogotá como parte de una prueba piloto orientada a la identificación de personas con requerimientos judiciales. El sistema permitía comparar los rostros captados por las cámaras con bases de datos de las autoridades y generar alertas ante posibles coincidencias.​
+
+
+== Funcionamiento ==
+El proceso consta de cuatro módulos principales:
+
+Detección de la cara: detecta que hay una cara en la imagen, sin identificarla. Si se trata de un video, también podemos hacer un seguimiento de la cara. Proporciona la localización y la escala a la que encontramos la cara.
+Alineación de la cara: localiza los componentes de la cara y, mediante transformaciones geométricas, la normaliza respecto propiedades geométricas, como el tamaño y la pose, y fotométricas, como la iluminación. Para normalizar las imágenes de caras, se pueden seguir diferentes reglas, como la distancia entre las pupilas, la posición de la nariz, o la distancia entre las comisuras de los labios. También se debe definir el tamaño de las imágenes y la gama de colores. Normalmente, para disminuir la carga computacional del sistema, se acostumbra a utilizar imágenes pequeñas en escala de grises. A veces también se realiza una ecualización del histograma.
+Extracción de características: proporciona información para distinguir entre las caras de diferentes personas según variaciones geométricas o fotométricas.
+Reconocimiento: el vector de características extraído se compara con los vectores de características extraídos de las caras de la base de datos. Si encuentra uno con un porcentaje elevado de similitud, nos devuelve la identidad de la cara; si no, nos indica que es una cara desconocida.
+Los resultados obtenidos dependen de las características extraídas para representar el patrón de la cara y de los métodos de clasificación utilizados para distinguir los rostros, pero para extraer estas características apropiadamente, hace falta localizar y normalizar la cara adecuadamente.​
+
+
+== Técnicas y algoritmos ==
+
+
+=== Técnicas Tradicionales ===
+Los métodos de reconocimiento facial tradicional se pueden dividir en dos grandes grupos:
+
+
+==== Holísticos ====
+
+Reconocen según toda la imagen facial. Son métodos basados en correlación. El esquema de clasificación más simple, donde se utilizan modelos de comparación para el reconocimiento, es el template matching. El problema del template matching es que ha de comparar muchas características (para él, un pixel es una característica), y si tenemos en cuenta que en la base de datos encontramos M personas, con N imágenes por persona, observamos que este método no se puede implementar en tiempo real. Por lo tanto, se trabaja con otros métodos que decorrelacionan las características entre sí para conseguir reducir el espacio facial en un número menor de coeficientes, que tengan un alto poder discriminatorio entre las personas. Es lo que se denomina subespacio facial. Ejemplos de métodos que trabajan a partir de subespacios son el Análisis de Componentes Principales (PCA - Principal Component Analysis) a partir de eigenfaces, el Análisis Linear Discriminante (LDA - Linear Discriminant Analysis) o el Discriminante Linear de Fisher (FLD - Fisher Linear Discriminant) a partir de fisherfaces.
+La técnica PCA se considera una de las que proporciona un mayor rendimiento. Funciona proyectando las imágenes faciales sobre un espacio de facciones que engloba las variaciones significativas entre las imágenes faciales conocidas. Las facciones significativas se llaman eigenfaces, ya que son los eigenvectors, o componentes principales, del conjunto de caras. La proyección caracteriza la imagen facial de un individuo como la suma de los diferentes pesos de todas las facciones y, de la misma manera, para reconocer una imagen facial determinada solo hará falta comparar estos pesos con aquellos de los individuos conocidos previamente. No tiene en cuenta la información de qué imágenes pertenecen a un mismo individuo. Es muy sensible a cambios en las condiciones de iluminación en diferentes imágenes de una misma persona.
+El método LDA permite utilizar la información entre miembros de la misma clase (imágenes de la misma persona) para desarrollar un conjunto de vectores de características donde las variaciones entre las diferentes caras se enfatizan mientras que los cambios debidos a la iluminación, expresión facial y orientación de la cara no. Es decir, maximiza la variancia de las muestras entre clases, y la minimiza entre muestras de la misma clase.
+La técnica FLD es equivalente al LDA. Los resultados obtenidos con FLD son bastante mejores que los que podemos obtener con PCA, sobre todo cuando las condiciones lumínicas varían entre el conjunto de imágenes de entrenamiento y de test, y también con cambios de expresión facial, dando más peso a zonas como los ojos, la nariz o las mejillas que a la boca, porque son zonas más invariables en las diferentes expresiones que puede tener una persona.
+Otros métodos, en vez de utilizar subespacios faciales, siguen una clasificación por redes neuronales y plantillas deformables, como EGM - Elastic graph matching.
+
+
+==== Locales o geométricos ====
+Se comparan diferentes características geométricas de las caras. Existen dos divisiones, la basada en los vectores característicos extraídos del perfil, y la basada en los extraídos a partir de una vista frontal. Se utilizaba mucho anteriormente pero sus resultados no son óptimos.
+
+
+=== Técnicas 3D ===
+Últimamente ha incrementado la tendencia del reconocimiento facial tridimensional, donde se utilizan imágenes 3D tanto en el entrenamiento como en el reconocimiento. Esta técnica utiliza sensores en 3D para captar información sobre la forma de la cara. Esta información se utiliza posteriormente para identificar rasgos característicos del rostro como por ejemplo la barbilla, el contorno de los ojos, la nariz o los pómulos, y reteniendo información espacial, aparte de la textura y la profundidad. Una ventaja del reconocimiento facial en 3D es que no les afectan los cambios de iluminación, como pasa en el caso de otras técnicas. Además, otro punto a favor es que pueden reconocer una cara en diferentes ángulos, incluso de perfil. El problema es que es difícil obtener imágenes 3D fidedignas en la fase de reconocimiento, ya que los sensores 3D tienen que estar muy bien calibrados y sincronizados para adquirir la información correctamente. Es por eso que se utiliza el método de Anàlisi de Components Principals Parcial (P2CA - Partial Principal Component Analysis), derivado del PCA, donde se utilizan imágenes en 3D en la fase de entrenamiento y en la base de datos, pero en la fase de test puede utilizar tanto imágenes en 2D como en 3D. La técnica intenta reconstruir modelos faciales en 3D a partir de múltiples imágenes de la misma persona adquiridas mediante un sistema multicámara o a partir de aparatos 3D. Las imágenes 3D son imágenes de 180° en coordenadas cilíndricas. Otros ejemplos de técnicas 3D son 3-D Morphable Model i 3-D Face Recognition.
+
+
+=== Técnicas de análisis de la textura de la piel ===
+Esta tendencia utiliza los detalles visuales de la piel. Analiza las líneas únicas, patrones y detalles evidentes como manchas y/o cicatrices del rostro del sujeto. Al utilizar este algoritmo nos ahorramos tener que recorrer toda la base de datos ya que podemos descartar imágenes fácilmente. Hay estudios que demuestran que utilizando esta técnica, juntamente con el reconocimiento facial, el rendimiento puede aumentar hasta un 25 por ciento.​
+
+
+== Reconocimiento basado en video ==
+Se han desarrollado algunos sistemas de reconocimiento facial basados en video,​ por ejemplo, salas inteligentes que pueden reconocer a las personas e iniciar automáticamente las acciones apropiadas. Otro ejemplo son los sistemas que detectan la fatiga de un conductor, monitorizando las expresiones de la cara y los movimientos de cabeza. Pero en aplicaciones de videovigilancia, el reconocimiento y la identificación facial todavía es una tarea difícil debido a:
+
+Baja calidad de video: normalmente la grabación se hace en la calle, con una iluminación inadecuada y, además, las personas no son colaborativas, en el sentido de que no ayudan a ser reconocidas. Para solucionarlo, se pueden aplicar técnicas de superresolución.
+Imagen pequeña de la cara: debido a las condiciones de adquisición de la imagen, el tamaño de la cara suele ser más pequeño que los que hay en la base de datos. Eso no solo hace que la tarea sea más difícil, sino que también afecta a la exactitud del proceso de segmentación, así como a la detección de los puntos más importantes utilizados en el reconocimiento.
+Hay aplicaciones en las que da buenos resultados, como en sistemas de control de acceso y en cajeros, donde el video se adquiere en un ambiente relativamente controlado y el tamaño de la cara es aceptable. En estos casos, el reconocimiento basado en video ofrece algunas ventajas respecto el basado en imágenes:
+
+El video proporciona más información, ya que tenemos más frames para elegir en cual realizar la clasificación.
+El video proporciona continuidad temporal, permitiendo reutilizar la información de clasificación obtenida de los frames de alta calidad para procesar los frames de baja calidad.
+El video permite hacer un seguimiento de las caras, así los cambios de pose y las expressiones faciales se pueden compensar.
+
+
+== Aspectos técnicos ==
+
+
+=== Debilidades ===
+El sistema de reconocimiento facial no es perfecto y a veces difícil de implementar en ciertas condiciones. Una de las principales debilidades de este sistema es debida al ángulo en el que se encuentra el rostro que queremos reconocer. Estudios han confirmado que el reconocimiento actúa correctamente hasta los 20º,​ una vez superado este ángulo comienzan a surgir problemas. Es por este motivo que se está investigando el reconocimiento en 3D con el cual este inconveniente desaparecería.
+Otro inconveniente es el mal funcionamiento en situaciones de poca luz, además, llevar el pelo largo, gafas de sol u otros objetos que cubran parte del rostro dificulta mucho la tarea. El algoritmo no siempre es capaz de distinguir los rostros si la expresión de este es diferente a la almacenada en la base de datos.
+Para solucionar algunos de estos problemas, aparte de hacer el reconocimiento sobre video, también se pueden utilizar técnicas multimodales​ donde, aparte de la imagen de la persona, se incorpora también información de voz y audio, si esta se encuentra dentro del contenido.
+Principalmente, podemos distinguir dos problemas que causan una seria degradación del rendimiento en la mayoría de los sistemas existentes:
+
+
+==== Problema de iluminación ====
+Los cambios provocados por la iluminación son normalmente más grandes que las diferencias entre personas, causando a los sistemas basados en comparación a equivocarse al clasificar las imágenes de entrada. Se han propuesto algunas soluciones basadas en el conocimiento, en particular teniendo en cuenta que todas las caras pertenecen a una misma clase. Estas técnicas están divididas en 4 tipos:
+
+Métodos heurísticos: por ejemplo, cuando utilizamos los subespacios de eigenfaces, descartando las componentes principales.
+Métodos de comparación de imágenes: se utilizan representaciones apropiadas de la imagen y medidas de distancia.
+Métodos basados en la clase: utilizan múltiples imágenes de la misma cara en una pose fija pero bajo diferentes condiciones lumínicas.
+Métodos basados en el modelo: utilizan modelos 3D.
+
+
+==== Problema del cambio de pose ====
+El rendimiento de un sistema de reconocimiento facial también baja significativamente cuando hay presentes cambios en la pose. Hay diferentes métodos propuestos para solucionarlo:
+
+Métodos donde la base de datos incluye imágenes de una persona en diferentes poses.
+Métodos híbridos, donde hay disponibles diferentes imágenes por persona durante el entrenamiento, pero solo una por persona en el reconocimiento. Es la más utilizada.
+Métodos basados en una única imagen, donde no hay entrenamiento. No es popular.
+
+
+=== Efectividad ===
+Según un estudio reciente, el reconocimiento facial automático da mejores resultados que en los humanos, pero todavía no hay una técnica que proporcione una solución robusta para todo tipo de situaciones y para las diferentes aplicaciones que lo puedan necesitar.
+Según la revista 'Science', utilizar imágenes compuestas por varias fotografías adquiridas en diferentes ángulos de una misma persona permite que el rendimiento del algoritmo llegue hasta un 100% en el mejor de los casos. Este es el resultado de estudios de psicólogos de la Universidad de Glasgow, donde se está tratando el tema y se ha llegado a la conclusión de que este nuevo sistema emula una de las claves de la capacidad humana para reconocer rostros. Aun así continúa sin poder distinguir entre diferentes expresiones faciales.
+
+
+=== Privacidad ===
+Aunque esta tecnología nos aporta grandes beneficios, se cuestiona moralmente la privacidad del sujeto. Lo que a simple vista se considera como un avance tecnológico se puede convertir en un arma. Dependiendo de su uso se puede controlar toda una sociedad entera sabiendo en todo momento donde se encuentran y qué están haciendo.Algunas de las preocupaciones incluyen la utilización de la tecnología por el ejército de la ley sin consentimiento y la utilizan de esta tecnología como forma de vigilancia.​
+
+
+== Evaluación ==
+Dada la gran cantidad de teorías y técnicas aplicables al reconocimiento facial, son necesarias una clara evaluación y una comparativa para estos algoritmos. Para que sean factibles, se han de utilizar grandes cantidades de imágenes para una evaluación adecuada. También es muy importante que la muestra sea estadísticamente lo más similar posible a las imágenes que surgen en la aplicación que se está considerando. La puntuación ha de realizarse de manera que refleje el coste de los errores de reconocimiento. Recordemos que los resultados dependen mucho de la aplicación que tratamos, así que no podemos extrapolar los resultados para otras aplicaciones.
+Existen extensas bases de datos públicas disponibles, así como protocolos de test, para probar las aplicaciones del reconocimiento facial. Uno de ellos es el protocolo FERET, cuyo objetivo es proporcionar un marco de actuación que modele una configuración en tiempo real y reunir una extensa base de datos con imágenes de caras para poder desarrollar algoritmos y evaluarlos. Es el que se utiliza en el FRVT (Face Recognition Vendor Test).
+En la siguiente tabla se muestran una serie de bases de datos disponibles actualmente, donde se puede observar el número de elementos utilizados y el tiempo de reconocimiento:
+
+
+== Mejoras recientes ==
+A mediados del 2006, en el Face Recognition Grand Challenge (FRGC) se evaluaron los últimos algoritmos de reconocimiento facial. Escanners faciales 3D, imágenes de rostros de alta definición y del iris fueron utilizadas en los tests. Los resultados indicaron que estos nuevos algoritmos tienen 10 veces más exactitud que los algoritmos con fecha anterior a 2002, y 100 veces más que los de 1995. Estos algoritmos son tan precisos que son capaces de reconocer a dos gemelos idénticos.
+Otra mejora reciente es que las imágenes de baja resolución actualmente ya no son un problema porque pueden ser tratadas a partir de la superresolución del rostro, conocido como Face Hallucination. Igualmente, la instalación de cámaras de alta definición está en proceso.
+
+
+== Peligros encontrados ==
+Pese a que este sistema cuente con numerosas ventajas, los principales riesgos de los que se ha hablado en los últimos años son:
+
+
+==== Pérdida de privacidad ====
+
+Algunos consideran que la privacidad en el siglo XXI es un mito,​​​ especialmente si se tienen en cuenta el escándalo de Cambridge Analytica de 2018​ relacionados con la comercialización de información personal y los consecuentes cambios, en el mismo año, en la «Política de Privacidad».​
+No obstante, sigue existiendo una mayoría que defiende su deseo de preservar la privacidad, algo que llega a verse en peligro con, entre otras cosas, los avances en el sistema de reconocimiento facial. Pese a que la idea de utilizar el sistema de reconocimiento facial para reforzar los sistemas legales y hacer de los países más seguros está aceptada por la gran mayoría, el problema se encuentra en lo que se puede conseguir a partir de esto.
+La información de la que uno puede disponer a través del sistema de reconocimiento facial (Localización o datos personales, entre otras cosas​) permite la utilización de la misma para fines tanto positivos​ (Las razones por las cuales se utiliza) como negativos. En las manos de la persona incorrecta el reconocimiento facial puede ser utilizado como arma de acoso y extorsión, entre otras cosas, al disponer de información exacta sobre localización y datos personales.
+Ejemplos
+FBI
+A través de una investigación hecha por la American Government Accountability Office, en marzo de 2018, se descubrió que el FBI, mediante su base de datos Next Generation Identification-Interstate Photo System (NGI-IPS), dispone de 412 000 000 fotografías, entre las cuales se encuentran personas que no han sido sujetos de ningún tipo de investigación.​​
+Además, la media de utilización de estos datos fue encubierta deliberadamente por el FBI para no ir en contra de los requisitos de la evaluación del impacto sobre la privacidad.​
+Moscú
+La implementación de la tecnología FaceN, aportando para ello el código de Find Face (Servicio que permite buscar a personas usando sus fotos) permite obtener las imágenes y datos de millones de personas en Rusia.  Este servicio permite hacer hasta 200 búsquedas y mirar con ello al menos 2 millones de rostros en menos de un segundo.​
+Bogotá
+El Fondo de Vigilancia y Seguridad de Bogotá contrató ente 2015 y 2016 el Sistema Integrado de Videovigilancia Inteligente para TransMilenio (SIVIT), diseñado para identificar automáticamente a personas en las estaciones de sistema de transporte masivo de la ciudad mediante el análisis de 120 puntos del rostro. El contrato tuvo un valor superior a los $11.750 millones de pesos colombianos e incluyó la instalación de 164 cámaras,​ pero el sistema nunca llegó a operar plenamente porque no existía una base de datos con características faciales para realizar el cotejo.​ La Personería de Bogotá sancionó al entonces subgerente técnico del Fondo de Vigilancia y Seguridad por irregularidades en el proceso de contratación.​
+En octubre de 2023, la Policía Metropolitana de Bogotá anunció un nuevo piloto con 786 cámaras biométricas distribuidas en 20 estaciones de TransMilenio, orientado a identificar a personas con requerimientos judiciales frente a una base de datos de aproximadamente 5000 personas.​
+
+
+==== Bases de datos de Redes Sociales ====
+Las redes sociales como Facebook, Instagram o Google +, cuentan con muchas más imágenes de rostros que el FBI, teniendo además una solución al reconocimiento facial desarrollada y mejorada constantemente.​
+Concretamente el sistema de reconocimiento facial de Facebook es uno de los más grandes del mundo.​ El problema de esto es la discreta introducción del sistema a la plataforma, de manera que tu imagen se introduce en la base de datos de forma casi imperceptible.
+Desde que implantó este sistema en su base de datos en 2012, ha recibido numerosas demandas en relación con los problemas que pueden generar en los usuarios tener sus datos guardados en la base de datos de Facebook o Google. [1][2]
+
+
+==== Información abierta a todo el mundo ====
+La posibilidad de acceder a las redes sociales de una persona a través del reconocimiento facial en una imagen pone a disposición de cualquiera un amplio contenido de información personal.
+Ejemplo
+A partir de un proyecto de fotografía llevado a cabo por el estudiante Yegor Tsvertkov en St. Petersburgo, consistente en fotografiar a personas desconocidas y encontrarlas en redes sociales a través de FindFace,​ un grupo de troles comenzaron a acosar a actrices porno rusas.
+Las imágenes de estas actrices fueron subidas a la aplicación FindFace por estos troles y a través de ella consiguieron dar con sus redes sociales, acosando una vez en ellas a familiares y amigos de las actrices.​
+
+
+=== Sesgos y disparidades en la precisión ===
+Diversos estudios han documentado que la precisión de los sistemas de reconocimiento facial varía significativamente según características demográficas como el género, la edad y el tono de piel de las personas evaluadas. La investigación pionera en este campo fue realizada por Joy Buolamwini y Timnit Gebru, del Instituto Tecnológico de Massachusetts (MIT), quienes evaluaron tres sistemas comerciales de clasificación de género y encontraron que las mujeres de piel oscura eran el grupo peor clasificado, con tasas de error de hasta 34,7 %, frente a un error máximo de 0,8 % en hombres de piel clara.​
+Estos hallazgos fueron posteriormente corroborados por el Instituto Nacional de Estándares y Tecnología de Estados Unidos (NIST), que en 2019 evaluó cerca de 200 algoritmos comerciales de reconocimiento facial y encontró tasas de falsos positivos más altas para personas afroamericanas y asiáticas en comparación con personas caucásicas, así como una menor precisión general en el reconocimiento de mujeres frente a hombres.​ Organizaciones de derechos civiles como la Unión Estadounidense por las Libertades Civiles (ACLU) señalaron que estos resultados debían llevar a agencias gubernamentales, incluyendo las responsables del control fronterizo, a reconsiderar el uso de esta tecnología.​
+Estas disparidades técnicas tienen implicaciones particulares en el contexto del control migratorio y fronterizo, donde el reconocimiento facial se utiliza de forma creciente para verificar identidades. La investigadora Estela Schindel documenta que ciertos grupos, entre ellos personas de edad avanzada, trabajadores manuales y personas de piel u ojos oscuros, presentan con mayor frecuencia fallas de registro biométrico (conocidas como failure to enroll), lo que puede traducirse en demoras adicionales o en la necesidad de intervención manual durante el proceso de control migratorio.​ La socióloga Shoshana Magnet, en su libro When Biometrics Fail (2011), argumenta de manera similar que las tecnologías biométricas no solo presentan fallas técnicas frecuentes en la identificación, sino que estas fallas tienden a reforzar desigualdades étnicas, raciales, etarias y de género ya existentes.​
+
+
+== Teorías ==
+En relación con esta polémica han surgido diferentes opiniones, ofreciendo cada una de ellas un balance relacionado con los potenciales beneficios que el sistema de reconocimiento facial ofrece contrapuesto con los aspectos negativas de este.
+
+
+=== Al Now ===
+Según el reporte hecho por Al Now (Instituto de estudio de las implicaciones social de la Inteligencia artificial) en 2018, dónde se comentan numerosos incidentes acontecidos en 2018 a causa de las nuevas tecnologías, sistemas como el reconocimiento facial podrían llevar a facilitar una manipulación y vigilancia de los gobiernos y grandes corporativas.​
+Concretamente, este grupo afirmará que el reconocimiento facial necesitará ser regulado a fin de proteger los intereses públicos.
+
+
+=== Forbes Technology Council ===
+Por otro lado, un grupo de 10 miembros del Forbes Technology Council elaboraron un informe en relación con los peligros que generaría la utilización de reconocimiento facial para temas legales. Este consejo consiste en una organización sin ánimo de lucro compuesta por líderes de diversas empresas tecnológicas.​ En este informe establecieron lo siguiente:
+
+
+==== Balance Positivo ====
+Según Arnie Gordon, presidente de Arlyn Scales, un sistema de reconocimiento facial utilizado de forma errónea puede derivar en problemas de privacidad y donde todas las personas se reconozcan entre sí. No obstante, si se trata éticamente, este software podría mejorar los sistemas de seguridad notablemente.
+Jason Gill, de la compañía The HOTT, considerará que el reconocimiento facial permite avanzar, de la misma manera que el resto de descubrimientos tecnológicos. Concretamente esta herramienta, establecerá, podría acabar con el tráfico humano, identificar a personas desaparecidas. Pese a que haya un cierto margen a la criminalidad considerará que la tecnología siempre genera un cambio a mejor en toda sociedad.
+Joe McCann, de NodeSource Inc establecerá el concepto de privacidad como un mito. Es decir,  tener un teléfono inteligente, cuenta de banco o internet implica no tener privacidad, según afirma Joe McCann. Consecuentemente, en su opinión, una vez se asimile esto podrá utilizarse el reconocimiento facial para usos necesarios como la captura de criminales.
+Simon Smith, de Bench Sci, establece cómo el reconocimiento facial permitiría facilitar las relaciones sociales, facilitando el contacto y conocimiento entre las personas.
+Naresh Soni, de la compañía Tsunami XR, considera que lo más importante es centrarse en entrenar bien a los humanos que trabajan con estos sistemas para que sean ellos los que decidan éticamente cómo utilizarlo.
+
+
+==== Balance Negativo ====
+David Murray, de Doctor.com, considera que con los avances en el reconocimiento facial las oportunidades de generar crímenes aumentan, sobre todo aquellos relacionados con el acoso.
+Frank Palermo, de Virtusahablará, comenta cómo el reconocimiento facial tiene su lado positivo y su lado negativo. No duda que todo el mundo acepte la utilización de esta tecnología para reforzar las leyes y frenar el terrorismo. No obstante, esta misma herramienta, considera, puede ser utilizada para estrategias de Marketing y vigilancia. Esta tecnología podría identificar a una persona en público, encontrar su localización y conocer sus actividades.
+Michael Hoyt, de Life Cycle Engineering Inc.[3], afirmará que lo importante, pese a que esta tecnología pueda frenar crímenes, es que en el momento en el que los datos personales de cualquiera están a disposición de alguien externo, esos mismos datos están siendo usados y por tanto, vendidos.
+​
+
+
+=== Estudio de Carnegie Mellon ===
+Un estudio realizado por investigadores en la Universidad de Carnegie Mellon en 2011 demostró cómo la identificación de desconocidos permitía obtener su información personal y en ocasiones, números de seguridad, utilizando sistemas de reconocimiento facial.​ Este equipo de investigación estaba conducido por Alessandro Adquisti, también profesor de información tecnológica y políticas públicas en la Universidad Heinz, y su equipo, entre los cuales se encontraban los doctores Ralph Gross y Fred Stutztman.
+El objetivo de este estudio era determinar el potencial peligro que el reconocimiento facial podía generar en una sociedad, dada la facilidad con la que se puede acceder a los datos personales de una persona a través de este sistema. Para ello, se llevaron a cabo tres experimentos:
+
+A través de una página de citas en línea donde los nombres e información personal de los usuarios estaban bajo pseudónimos, el equipo de investigación identificó a los individuos y su información personal real.
+Identificación de los estudiantes que andaban por el campus de la Universidad a partir de la información publicada por estos en sus redes sociales.
+A partir de una foto del rostro de unos estudiantes, el equipo de Adquisti consiguió adivinar los gustos y aficiones de estos e incluso números de la seguridad social.
+Este estudio se complementó además con la creación de una aplicación para teléfono inteligente que permitía descubrir información de sujetos a partir de imágenes de sus caras.
+El estudio busca demostrar cómo esta capacidad de reconocimiento continuará mejorando y volviéndose más asequible económicamente a medida haya más formas de identificarse los unos a los otros. Ante esta situación, Acquisti considerará lo siguiente:
+"Finalmente, todo este acceso nos acabará forzando a replantearnos nuestra noción de privacidad. También puede llegar a afectarnos en cómo interactuámos los unos con los otros. A través de la evolución natural, el ser humano ha desarrollado mecanismos para manejar confianza en las relaciones interpersonales cara a cara. ¿Confiaremos en nuestros instintos cuando nuestros teléfonos móviles puedan predecir información sobre otras personas?"​
+
+
+== Referencias ==
+
+
+== Véase también ==
+Reconocimiento de expresiones faciales
+OpenCV
+Fawkes (software de encubrimiento de imágenes)
+
+
+== Bibliografía ==
+S.Li, A.Jain, "Handbook of Face Recognition", Springer, 2004
+Gary Bradski, Adrian Kaehler, "Learning OpenCV", O'Reilly, 2008
+
+
+== Enlaces externos ==
+http://www.biometrics.gov/Documents/FaceRec.pdf
+http://enfsi.eu/

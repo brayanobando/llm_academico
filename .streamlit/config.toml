@@ -1,0 +1,26 @@
+# Tema visual del chat (Streamlit lo lee automáticamente al ejecutar `streamlit run app.py`)
+
+[theme]
+base = "light"
+primaryColor = "#2D5BE3"              # cobalto: botones, sliders, mensajes del usuario
+backgroundColor = "#F3F5FA"           # papel azul frío
+secondaryBackgroundColor = "#E7EBF5"
+textColor = "#1B2033"                 # tinta
+borderColor = "#D5DBEA"
+linkColor = "#2D5BE3"
+baseRadius = "0.6rem"
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap, sans-serif"
+headingFontWeights = [650, 600]
+
+[theme.sidebar]
+backgroundColor = "#1B2559"           # tinta índigo
+secondaryBackgroundColor = "#273274"
+textColor = "#E9ECF8"
+primaryColor = "#F0A43A"              # ámbar en la barra lateral
+borderColor = "#34407F"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

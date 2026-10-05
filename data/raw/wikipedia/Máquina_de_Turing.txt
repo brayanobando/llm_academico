@@ -1,0 +1,1563 @@
+Una máquina de Turing es un dispositivo que manipula símbolos sobre una tira de cinta de acuerdo con una tabla de reglas. A pesar de su simplicidad, una máquina de Turing puede ser adaptada para simular la lógica de cualquier algoritmo de computador y es particularmente útil en la explicación de las funciones de una CPU dentro de un computador.
+Originalmente fue definida por el matemático inglés Alan Turing como una «máquina automática» en 1936 en la revista Proceedings of the London Mathematical Society​. La máquina de Turing no está diseñada como una tecnología de computación práctica, sino como un dispositivo hipotético que representa una máquina de computación. Las máquinas de Turing ayudan a los científicos a entender los límites del cálculo mecánico.​​
+Turing dio una definición sucinta del experimento en su ensayo de 1948, «Máquinas inteligentes». Refiriéndose a su publicación de 1936, Turing escribió que la máquina de Turing, aquí llamada una máquina de computación lógica, consistía en:
+
+ 
+
+Una máquina de Turing que es capaz de simular cualquier otra máquina de Turing es llamada una máquina universal de Turing (UTM, o simplemente una máquina universal). Una definición más matemáticamente orientada, con una similar naturaleza «universal», fue presentada por Alonzo Church, cuyo trabajo sobre el cálculo lambda se entrelaza con el de Turing en una teoría formal de la computación conocida como la tesis de Church-Turing. La tesis señala que las máquinas de Turing capturan, de hecho, la noción informal de un método eficaz en la lógica y las matemáticas y proporcionan una definición precisa de un algoritmo o «procedimiento mecánico».
+La importancia de la máquina de Turing en la historia de la computación es doble: primero, la máquina de Turing fue uno de los primeros (si no el primero) modelos teóricos para las computadoras, viendo la luz en 1936. Segundo, estudiando sus propiedades abstractas, la máquina de Turing ha servido de base para mucho desarrollo teórico en las ciencias de la computación y en la teoría de la complejidad. Una razón para esto es que las máquinas de Turing son simples, y por tanto amenas al análisis. Dicho esto, cabe aclarar que las máquinas de Turing no son un modelo práctico para la computación en máquinas reales, las cuales precisan modelos más rápidos como los basados en RAM.
+
+
+== Historia ==
+
+ Alan Turing introdujo el concepto de máquina de Turing en el trabajo On computable numbers, with an application to the Entscheidungsproblem, publicado por la Sociedad Matemática de Londres en 1936, en el que se estudiaba la cuestión planteada por David Hilbert sobre si las matemáticas son decidibles, es decir, si hay un método definido que pueda aplicarse a cualquier sentencia matemática y que nos diga si esa sentencia es cierta o no. Turing ideó un modelo formal de computador, la máquina de Turing, y demostró que existían problemas que una máquina no podía resolver.​
+Con este aparato extremadamente sencillo es posible realizar cualquier cómputo que un computador digital sea capaz de realizar.​
+Mediante este modelo teórico y el análisis de la complejidad de los algoritmos, fue posible la categorización de problemas computacionales de acuerdo a su comportamiento, apareciendo así, el conjunto de problemas denominados P y NP, cuyas soluciones pueden encontrarse en tiempo polinómico por máquinas de Turing deterministas y no deterministas, respectivamente.
+Precisamente, la tesis de Church-Turing formulada por Alan Turing y Alonzo Church, de forma independiente a mediados del siglo XX caracteriza la noción informal de computabilidad con la computación mediante una máquina de Turing.​
+La idea subyacente es el concepto de que una máquina de Turing puede verse como un autómata ejecutando un procedimiento efectivo definido formalmente, donde el espacio de memoria de trabajo es ilimitado, pero en un momento determinado solo una parte finita es accesible.
+
+
+== Descripción informal ==
+
+La máquina de Turing modela matemáticamente a una máquina que opera mecánicamente sobre una cinta. En esta cinta hay símbolos que la máquina puede leer y escribir, uno a la vez, usando un cabezal lector/escritor de cinta. La operación está completamente determinada por un conjunto finito de instrucciones elementales como «en el estado 42, si el símbolo visto es 0, escribe un 1; Si el símbolo visto es 1, cambia al estado 17; en el estado 17, si el símbolo visto es 0, escribe un 1 y cambia al estado 6; etc». En el artículo original («Sobre números computables con una aplicación al Entscheidungsproblem»), Turing no imagina un mecanismo, sino una persona a la que él llama la «computadora», quien ejecuta servilmente estas reglas mecánicas deterministas (o como Turing pone, «de una manera desganada»).
+Más precisamente, una máquina de Turing consta de:
+
+Una cinta que se divide en celdas, una al lado de la otra. Cada celda contiene un símbolo de algún alfabeto finito. El alfabeto contiene un símbolo especial llamado blanco (aquí escrito como «B») y uno o más símbolos adicionales. La cinta se supone que es arbitrariamente extensible hacia la izquierda y hacia la derecha, es decir, la máquina de Turing siempre es provista con tanta cinta como necesite para su computación. Las celdas que no se hayan escrito previamente se asumen que están rellenas con el símbolo blanco. En algunos modelos la cinta tiene un extremo izquierdo marcado con un símbolo especial; la cinta se extiende o es indefinidamente extensible hacia la derecha.
+Un cabezal que puede leer y escribir símbolos en la cinta y mover la cinta a la izquierda y a la derecha una (y solo una) celda a la vez. En algunos modelos el cabezal se mueve y la cinta es estacionaria.
+Un registro de estado que almacena el estado de la máquina de Turing, uno de los estados finitos. Hay un estado inicial especial con el que el registro de estado se inicia. Turing escribe que estos estados reemplazan el «estado de la mente» en que ordinariamente estaría una persona realizando cálculos.
+Una tabla finita de instrucciones (llamada ocasionalmente como tabla de acción o función de transición). Las instrucciones son usualmente 5-tuplas: qiaj→qi1aj1dk, (a veces 4-tuplas), que, dado el estado (qi) en que la máquina se encuentra actualmente y el símbolo (aj) que se está leyendo en la cinta (el símbolo actualmente debajo del cabezal) le indica a la máquina hacer lo siguiente en secuencia (para los modelos de 5-tupla):
+Borra o escribe un símbolo (reemplazando aj con aj1), y entonces
+Mueve el cabezal (que es descrito por dk y puede tener los valores: «L» para un paso a la izquierda, o «R» para un paso a la derecha, o «N» para permanecer en el mismo lugar) y luego
+Asume el mismo o un nuevo estado como prescrito (ve al estado qi1).
+En los modelos de 4-tupla, son especificadas como instrucciones separadas: borrar o escribir un símbolo (aj1) y mover el cabezal a la izquierda o la derecha (dk). Específicamente, la tabla indica a la máquina: (ia) borrar o escribir un símbolo o (ib) mover el cabezal a la izquierda o a la derecha, y luego (ii) asumir el mismo o un nuevo estado, pero no las dos acciones (ia) y (ib) en la misma instrucción. En algunos modelos, si no hay ninguna entrada en la tabla para la actual combinación de símbolo y estado, la máquina se detendrá; otros modelos requieren que estén llenas todas las entradas.
+Note que cada parte de la máquina — su estado y colecciones de símbolos — y sus acciones — imprimir, borrar, movimiento de la cinta — es finito, discreto y distinguible; es la cantidad potencialmente ilimitada de cinta lo que le da una cantidad ilimitada de espacio de almacenamiento.
+
+
+== Definición formal ==
+Una máquina de Turing​ es un modelo computacional que realiza una lectura/escritura de manera automática sobre una entrada llamada cinta, generando una salida en esta misma.
+Este modelo está formado por un alfabeto de entrada y uno de salida, un símbolo especial llamado blanco (normalmente b, 
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+  
+ o 0), un conjunto de estados finitos y un conjunto de transiciones entre dichos estados. Su funcionamiento se basa en una función de transición, que recibe un estado inicial y una cadena de caracteres (la cinta, la cual puede ser infinita) pertenecientes al alfabeto de entrada. La máquina va leyendo una celda de la cinta en cada paso, borrando el símbolo en el que se encuentra posicionado su cabezal y escribiendo un nuevo símbolo perteneciente al alfabeto de salida, para luego desplazar el cabezal a la izquierda o a la derecha (solo una celda a la vez). Esto se repite según se indique en la función de transición, para finalmente detenerse en un estado final o de aceptación, representando así la salida.
+Una máquina de Turing con una sola cinta puede definirse como una 7-tupla
+
+  
+    
+      
+        M
+        =
+        (
+        Q
+        ,
+        Σ
+        ,
+        Γ
+        ,
+        s
+        ,
+        b
+        ,
+        F
+        ,
+        δ
+        )
+        ,
+        
+      
+    
+    {\displaystyle M=(Q,\Sigma ,\Gamma ,s,b,F,\delta ),\!}
+  
+
+donde:​
+
+  
+    
+      
+        Q
+        
+      
+    
+    {\displaystyle Q\!}
+  
+ es un conjunto finito de estados.
+
+  
+    
+      
+        Σ
+        
+      
+    
+    {\displaystyle \Sigma \!}
+  
+ es un conjunto finito de símbolos distinto del espacio en blanco, denominado alfabeto de máquina o de entrada.
+
+  
+    
+      
+        Γ
+        
+      
+    
+    {\displaystyle \Gamma \!}
+  
+ es un conjunto finito de símbolos de cinta, denominado alfabeto de cinta (
+  
+    
+      
+        Σ
+        ⊆
+        Γ
+      
+    
+    {\displaystyle \Sigma \subseteq \Gamma }
+  
+).
+
+  
+    
+      
+        s
+        ∈
+        Q
+      
+    
+    {\displaystyle s\in Q}
+  
+ es el estado inicial.
+
+  
+    
+      
+        b
+        ∈
+        Γ
+      
+    
+    {\displaystyle b\in \Gamma }
+  
+ es un símbolo denominado blanco, y es el único símbolo que se puede repetir un número infinito de veces.
+
+  
+    
+      
+        F
+        ⊆
+        Q
+      
+    
+    {\displaystyle F\subseteq Q}
+  
+ es el conjunto de estados finales de aceptación.
+
+  
+    
+      
+        δ
+        :
+        Q
+        ×
+        Γ
+        →
+        Q
+        ×
+        Γ
+        ×
+        {
+        L
+        ,
+        R
+        }
+      
+    
+    {\displaystyle \delta :Q\times \Gamma \rightarrow Q\times \Gamma \times \{L,R\}}
+  
+ es una función parcial denominada función de transición, donde 
+  
+    
+      
+        L
+        
+      
+    
+    {\displaystyle L\!}
+  
+ es un movimiento a la izquierda y 
+  
+    
+      
+        R
+        
+      
+    
+    {\displaystyle R\!}
+  
+ es el movimiento a la derecha.
+Existe en la literatura un abundante número de definiciones alternativas, pero todas ellas tienen el mismo poder computacional, por ejemplo se puede añadir el símbolo 
+  
+    
+      
+        S
+        
+      
+    
+    {\displaystyle S\!}
+  
+ como símbolo de «no movimiento» en un paso de cómputo.
+
+
+=== Funcionamiento de la máquina de Turing ===
+La máquina de Turing consta de un cabezal lector/escritor y una cinta infinita en la que el cabezal lee el contenido, borra el contenido anterior y escribe un nuevo valor. Las operaciones que se pueden realizar en esta máquina se limitan a:
+
+Mover el cabezal lector/escritor hacia la derecha.
+Mover el cabezal lector/escritor hacia la izquierda.
+El cómputo se determina a partir de una tabla de estados de la forma:
+
+(estado, valor) 
+  
+    
+      
+        →
+      
+    
+    {\displaystyle \rightarrow }
+  
+ (nuevo estado, nuevo valor, dirección)
+Esta tabla toma como parámetros el estado actual de la máquina y el carácter leído de la cinta, dando la dirección para mover el cabezal, el nuevo estado de la máquina y el valor a escribir en la cinta.
+La memoria es la cinta de la máquina que se divide en espacios de trabajo denominados celdas, donde se pueden escribir y leer símbolos. Inicialmente todas las celdas contienen un símbolo especial denominado «blanco». Las instrucciones que determinan el funcionamiento de la máquina tienen la forma, «si estamos en el estado x leyendo la posición y, donde hay escrito el símbolo z, entonces este símbolo debe ser reemplazado por este otro símbolo, y pasar a leer la celda siguiente, bien a la izquierda o bien a la derecha».
+La máquina de Turing puede considerarse como un autómata capaz de reconocer lenguajes formales. En ese sentido, es capaz de reconocer los lenguajes recursivamente enumerables, de acuerdo a la jerarquía de Chomsky. Su potencia es, por tanto, superior a otros tipos de autómatas, como el autómata finito, o el autómata con pila, o igual a otros modelos con la misma potencia computacional.
+
+
+=== Representación como diagrama de estados ===
+Las máquinas de Turing pueden representarse mediante grafos particulares, también llamados diagramas de estados finitos, de la siguiente manera:
+Los estados se representan como vértices, etiquetados con su nombre en el interior.
+Una transición desde un estado a otro, se representa mediante una arista dirigida que une a estos vértices, y está rotulada por símbolo que lee el cabezal/símbolo que escribirá el cabezal, movimiento del cabezal.
+El estado inicial se caracteriza por tener una arista que llega a él y que no proviene de ningún otro vértice.
+El o los estados finales se representan mediante vértices que están encerrados a su vez por otra circunferencia.
+
+
+=== Descripción instantánea ===
+Es una secuencia de la forma 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        q
+        
+          α
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \alpha _{1}q\alpha _{2}\!}
+  
+ donde 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            2
+          
+        
+        ∈
+        
+          Γ
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \alpha _{1},\alpha _{2}\in \Gamma ^{*}}
+  
+ y 
+  
+    
+      
+        q
+        ∈
+        Q
+      
+    
+    {\displaystyle q\in Q}
+  
+ que escribe el estado de una máquina de Turing. La cinta contiene la cadena 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        
+          α
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \alpha _{1}\alpha _{2}\!}
+  
+ seguida de infinitos blancos. El cabezal señala el primer símbolo de 
+  
+    
+      
+        
+          α
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \alpha _{2}\!}
+  
+.
+Por ejemplo, para la máquina de Turing
+
+  
+    
+      
+        M
+        T
+        =
+        (
+        {
+        p
+        ,
+        q
+        }
+        ,
+        {
+        0
+        ,
+        1
+        }
+        ,
+        {
+        0
+        ,
+        1
+        ,
+        x
+        }
+        ,
+        p
+        ,
+        Δ
+        ,
+        {
+        q
+        }
+        ,
+        δ
+        )
+        ,
+        
+      
+    
+    {\displaystyle MT=(\{p,q\},\{0,1\},\{0,1,x\},p,\Delta ,\{q\},\delta ),\!}
+  
+
+con las transiciones
+
+  
+    
+      
+        
+          
+            
+              
+                δ
+                (
+                p
+                ,
+                1
+                )
+              
+              
+                
+                =
+                (
+                p
+                ,
+                x
+                ,
+                R
+                )
+                ,
+              
+            
+            
+              
+                δ
+                (
+                p
+                ,
+                0
+                )
+              
+              
+                
+                =
+                (
+                p
+                ,
+                0
+                ,
+                R
+                )
+                
+                   y
+                
+              
+            
+            
+              
+                δ
+                (
+                p
+                ,
+                Δ
+                )
+              
+              
+                
+                =
+                (
+                q
+                ,
+                Δ
+                ,
+                R
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\delta (p,1)&=(p,x,R),\\\delta (p,0)&=(p,0,R){\text{ y}}\\\delta (p,\Delta )&=(q,\Delta ,R).\end{aligned}}}
+  
+
+La descripción instantánea para la cinta 1011 es:
+
+  
+    
+      
+        p
+        1011
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle p1011\Delta \Delta \ldots }
+  
+
+  
+    
+      
+        x
+        p
+        011
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle xp011\Delta \Delta \ldots }
+  
+
+  
+    
+      
+        x
+        0
+        p
+        11
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle x0p11\Delta \Delta \ldots }
+  
+
+  
+    
+      
+        x
+        0
+        x
+        p
+        1
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle x0xp1\Delta \Delta \ldots }
+  
+
+  
+    
+      
+        x
+        0
+        x
+        x
+        p
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle x0xxp\Delta \Delta \ldots }
+  
+
+  
+    
+      
+        x
+        0
+        x
+        x
+        q
+        Δ
+        Δ
+        …
+      
+    
+    {\displaystyle x0xxq\Delta \Delta \ldots }
+  
+
+
+== Ejemplo ==
+Definimos una máquina de Turing sobre el alfabeto 
+  
+    
+      
+        {
+        0
+        ,
+        1
+        }
+      
+    
+    {\displaystyle \{0,1\}}
+  
+, donde 0 representa el símbolo blanco. La máquina comenzará su proceso situada sobre un símbolo «1» de una serie. La máquina de Turing copiará el número de símbolos «1» que encuentre hasta el primer blanco detrás de dicho símbolo blanco. Es decir, posiciona el cabezal sobre el 1 situado en el extremo izquierdo, doblará el número de símbolos 1, con un 0 en medio. Así, si tenemos la entrada «111» devolverá «1110111», con «1111» devolverá «111101111», y sucesivamente.
+El conjunto de estados es 
+  
+    
+      
+        {
+        
+          s
+          
+            1
+          
+        
+        ,
+        
+          s
+          
+            2
+          
+        
+        ,
+        
+          s
+          
+            3
+          
+        
+        ,
+        
+          s
+          
+            4
+          
+        
+        ,
+        
+          s
+          
+            5
+          
+        
+        }
+        
+      
+    
+    {\displaystyle \{s_{1},s_{2},s_{3},s_{4},s_{5}\}\!}
+  
+ y el estado inicial es 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle s_{1}\!}
+  
+. La tabla que describe la función de transición es la
+siguiente:
+
+El funcionamiento de una computación de esta máquina puede mostrarse con el siguiente ejemplo (en negrita se resalta la posición de la cabeza lectora/escritora):
+
+La máquina realiza su proceso por medio de un bucle, en el estado inicial 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle s_{1}\!}
+  
+, reemplaza el primer 1 con un 0, y pasa al estado 
+  
+    
+      
+        
+          s
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle s_{2}\!}
+  
+, con el que avanza hacia la derecha, saltando los símbolos 1 hasta un 0 (que debe existir), cuando lo encuentra pasa al estado 
+  
+    
+      
+        
+          s
+          
+            3
+          
+        
+        
+      
+    
+    {\displaystyle s_{3}\!}
+  
+, con este estado avanza saltando los 1 hasta encontrar otro 0 (la primera vez no habrá ningún 1). Una vez en el extremo derecho, añade un 1. Después comienza el proceso de retorno; con 
+  
+    
+      
+        
+          s
+          
+            4
+          
+        
+        
+      
+    
+    {\displaystyle s_{4}\!}
+  
+ vuelve a la izquierda saltando los 1, cuando encuentra un 0 (en el medio de la secuencia), pasa a 
+  
+    
+      
+        
+          s
+          
+            5
+          
+        
+        
+      
+    
+    {\displaystyle s_{5}\!}
+  
+ que continúa a la izquierda saltando los 1 hasta el 0 que se escribió al principio. Se reemplaza de nuevo este 0 por 1, y pasa al símbolo siguiente, si es un 1, se pasa a otra iteración del bucle, pasando al estado s1 de nuevo. Si es un símbolo 0, será el símbolo central, con lo que la máquina se detiene al haber finalizado el cómputo.
+
+
+== Modificaciones equivalentes ==
+Una razón para aceptar la máquina de Turing como un modelo general de cómputo es que el modelo que hemos definido anteriormente es equivalente a muchas versiones modificadas que en principio pareciera incrementar el poder computacional.
+
+
+=== Máquina de Turing con movimiento de espera ===
+La función de transición de la MT sencilla está definida por
+
+  
+    
+      
+        δ
+        :
+        Q
+        ×
+        Γ
+        →
+        Q
+        ×
+        Γ
+        ×
+        {
+        L
+        ,
+        R
+        }
+        ,
+      
+    
+    {\displaystyle \delta :Q\times \Gamma \rightarrow Q\times \Gamma \times \{L,R\},}
+  
+
+la cual puede ser modificada como
+
+  
+    
+      
+        δ
+        :
+        Q
+        ×
+        Γ
+        →
+        Q
+        ×
+        Γ
+        ×
+        {
+        L
+        ,
+        R
+        ,
+        S
+        }
+        .
+      
+    
+    {\displaystyle \delta :Q\times \Gamma \rightarrow Q\times \Gamma \times \{L,R,S\}.}
+  
+
+Donde 
+  
+    
+      
+        S
+        
+      
+    
+    {\displaystyle S\!}
+  
+ significa «permanecer» o «esperar», es decir no mover el cabezal de lectura/escritura. Por lo tanto, 
+  
+    
+      
+        δ
+        (
+        q
+        ,
+        σ
+        )
+        =
+        (
+        p
+        ,
+        
+          σ
+          ′
+        
+        ,
+        S
+        )
+        
+      
+    
+    {\displaystyle \delta (q,\sigma )=(p,\sigma ',S)\!}
+  
+ significa que se pasa del estado q al p, se escribe 
+  
+    
+      
+        
+          σ
+          ′
+        
+      
+    
+    {\displaystyle \sigma '}
+  
+ en la celda actual y la cabeza se queda sobre la celda actual.
+
+
+=== Máquina de Turing con cinta infinita a ambos lados ===
+Esta modificación se denota al igual que una MT sencilla, lo que la hace diferente es que la cinta es infinita tanto por la derecha como por la izquierda, lo cual permite realizar transiciones iniciales como 
+  
+    
+      
+        δ
+        (
+        
+          q
+          
+            0
+          
+        
+        ,
+        x
+        )
+        =
+        (
+        
+          q
+          
+            1
+          
+        
+        ,
+        y
+        ,
+        L
+        )
+        
+      
+    
+    {\displaystyle \delta (q_{0},x)=(q_{1},y,L)\!}
+  
+.
+
+
+=== Máquina de Turing con cinta multipista ===
+Es aquella que mediante la cual cada celda de la cinta de una máquina sencilla se divide en subceldas. Cada celda es así capaz de contener varios símbolos de la cinta. Por ejemplo, la cinta de la figura tiene cada celda subdividida en tres subceldas.
+Se dice que esta cinta tiene múltiples pistas puesto que cada celda de esta máquina de Turing contiene múltiples caracteres, el contenido de las celdas de la cinta puede ser representado mediante n-tuplas ordenadas. Los movimientos que realice esta máquina dependerán de su estado actual y de la n-tupla que represente el contenido de la celda actual. Cabe mencionar que posee un solo cabezal al igual que una MT sencilla.
+
+
+=== Máquina de Turing multicinta ===
+Una MT con más de una cinta consiste de un control finito con k cabezales lectores/escritores y k cintas. Cada cinta es infinita en ambos sentidos. La MT define su movimiento dependiendo del símbolo que está leyendo cada uno de sus cabezales, da reglas de sustitución para cada uno de los símbolos y dirección de movimiento para cada uno de los cabezales. Inicialmente la MT empieza con la entrada en la primera cinta y el resto de las cintas en blanco.
+
+
+=== Máquina de Turing multidimensional ===
+Una MT multidimensional es aquella cuya cinta puede verse como extendiéndose infinitamente en más de una dirección, el ejemplo más básico sería el de una máquina bidimensional cuya cinta se extendería infinitamente hacia arriba, abajo, derecha e izquierda.
+En la modificación bidimensional de MT que se muestra en la figura también se agregan dos nuevos movimientos del cabezal {U,D} (es decir arriba y abajo). De esta forma la definición de los movimientos que realiza el cabezal será {L,R,U,D}.
+
+
+== Máquina de Turing determinista y no determinista ==
+
+La entrada de una máquina de Turing viene determinada por el estado actual y el símbolo leído, un par (estado, símbolo), siendo el cambio de estado, la escritura de un nuevo símbolo y el movimiento del cabezal, las acciones a tomar en función de una entrada. En el caso de que para cada par (estado, símbolo) posible exista a lo sumo una posibilidad de ejecución, se dirá que es una máquina de Turing determinista, mientras que en el caso de que exista al menos un par (estado, símbolo) con más de una posible combinación de actuaciones se dirá que se trata de una máquina de Turing no determinista.
+La función de transición 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+ en el caso no determinista, queda definida como sigue:
+
+  
+    
+      
+        δ
+        :
+        Q
+        ×
+        Γ
+        →
+        
+          
+            P
+          
+        
+        (
+        Q
+        ×
+        Γ
+        ×
+        {
+        L
+        ,
+        R
+        }
+        )
+      
+    
+    {\displaystyle \delta :Q\times \Gamma \rightarrow {\mathcal {P}}(Q\times \Gamma \times \{L,R\})}
+  
+
+¿Cómo sabe una máquina no determinista qué acción tomar de las varias posibles? Hay dos formas de verlo: una es decir que la máquina es «el mejor adivino posible», esto es, que siempre elige la transición que finalmente la llevará a un estado final de aceptación. La otra es imaginarse que la máquina se «clona», bifurcándose en varias copias, cada una de las cuales sigue una de las posibles transiciones. Mientras que una máquina determinista sigue un único «camino computacional», una máquina no determinista tiene un «árbol computacional». Si cualquiera de las ramas del árbol finaliza en un estado de aceptación, se dice que la máquina acepta la entrada.
+La capacidad de cómputo de ambas versiones es equivalente; se puede demostrar que dada una máquina de Turing no determinista existe otra máquina de Turing determinista equivalente, en el sentido de que reconoce el mismo lenguaje, y viceversa. No obstante, la velocidad de ejecución de ambos formalismos no es la misma, pues si una máquina no determinista M reconoce una cierta palabra de tamaño n en un tiempo 
+  
+    
+      
+        O
+        (
+        t
+        (
+        n
+        )
+        )
+        
+      
+    
+    {\displaystyle O(t(n))\!}
+  
+, la máquina determinista equivalente reconocerá la palabra en un tiempo 
+  
+    
+      
+        O
+        (
+        
+          2
+          
+            t
+            (
+            n
+            )
+          
+        
+        )
+        
+      
+    
+    {\displaystyle O(2^{t(n)})\!}
+  
+. Es decir, el no determinismo permitirá reducir la complejidad de la solución de los problemas, permitiendo resolver, por ejemplo, problemas de complejidad exponencial en un tiempo polinómico.
+
+
+== Problema de la parada (halting problem) ==
+
+El problema de la parada o problema de la detención (halting problem en inglés) para máquinas de Turing consiste en: dada una MT M y una palabra w, determinar si M terminará en un número finito de pasos cuando se ejecuta usando w como entrada.
+Alan Turing, en su famoso artículo «On computable numbers, with an application to the Entscheidungsproblem» (1936), demostró que el problema de la parada de la máquina de Turing es indecidible, en el sentido de que ninguna máquina de Turing lo puede resolver.
+
+
+== Codificación de una máquina de Turing ==
+Toda máquina de Turing puede codificarse como una secuencia binaria finita, es decir una secuencia finita de ceros y unos. Para simplificar la codificación, suponemos que toda MT tiene un único estado inicial denotado por 
+  
+    
+      
+        
+          q
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle q_{1}\!}
+  
+, y un único estado final denotado 
+  
+    
+      
+        
+          q
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle q_{2}\!}
+  
+. Tendremos que para una MT M de la forma
+
+  
+    
+      
+        Γ
+        =
+        {
+        
+          s
+          
+            1
+          
+        
+        ,
+        
+          s
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          s
+          
+            m
+          
+        
+        ,
+        …
+        ,
+        
+          s
+          
+            p
+          
+        
+        }
+        
+      
+    
+    {\displaystyle \Gamma =\{s_{1},s_{2},\ldots ,s_{m},\ldots ,s_{p}\}\!}
+  
+ donde 
+  
+    
+      
+        
+          s
+          
+            1
+          
+        
+      
+    
+    {\displaystyle s_{1}}
+  
+ representa el símbolo blanco 0, 
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+  
+ o b (según se desee denotar),
+
+  
+    
+      
+        Σ
+        =
+        {
+        
+          s
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          s
+          
+            m
+          
+        
+        }
+        
+      
+    
+    {\displaystyle \Sigma =\{s_{2},\ldots ,s_{m}\}\!}
+  
+ es alfabeto de entrada y
+
+  
+    
+      
+        {
+        
+          s
+          
+            m
+            +
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          s
+          
+            p
+          
+        
+        }
+        
+      
+    
+    {\displaystyle \{s_{m+1},\ldots ,s_{p}\}\!}
+  
+ son los símbolos auxiliares utilizados por M (cada MT utiliza su propia colección finito de símbolos auxiliares).
+Todos estos símbolos se codifican como secuencias de unos:
+
+Los estados de una MT 
+  
+    
+      
+        
+          q
+          
+            1
+          
+        
+        ,
+        
+          q
+          
+            2
+          
+        
+        ,
+        
+          q
+          
+            3
+          
+        
+        ,
+        …
+        ,
+        
+          q
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle q_{1},q_{2},q_{3},\ldots ,q_{n}\!}
+  
+ se codifican también con secuencias de unos:
+
+Las directrices de desplazamiento 
+  
+    
+      
+        R
+        
+      
+    
+    {\displaystyle R\!}
+  
+, 
+  
+    
+      
+        L
+        
+      
+    
+    {\displaystyle L\!}
+  
+ y 
+  
+    
+      
+        S
+        
+      
+    
+    {\displaystyle S\!}
+  
+ se codifican con 1, 11, 111, respectivamente. Una transición 
+  
+    
+      
+        δ
+        (
+        q
+        ,
+        a
+        )
+        =
+        (
+        p
+        ,
+        c
+        ,
+        R
+        )
+        
+      
+    
+    {\displaystyle \delta (q,a)=(p,c,R)\!}
+  
+ se codifica usando ceros como separadores entre los estados, los símbolos del alfabeto de cinta y la directriz de desplazamiento 
+  
+    
+      
+        R
+        
+      
+    
+    {\displaystyle R\!}
+  
+. Así, la transición 
+  
+    
+      
+        δ
+        (
+        
+          q
+          
+            3
+          
+        
+        ,
+        
+          s
+          
+            2
+          
+        
+        )
+        =
+        (
+        
+          q
+          
+            5
+          
+        
+        ,
+        
+          s
+          
+            3
+          
+        
+        ,
+        R
+        )
+        
+      
+    
+    {\displaystyle \delta (q_{3},s_{2})=(q_{5},s_{3},R)\!}
+  
+ se codifica como
+
+  
+    
+      
+        01110110111110111010.
+        
+      
+    
+    {\displaystyle 01110110111110111010.\!}
+  
+
+En general, la codificación de una transición cualquiera 
+  
+    
+      
+        δ
+        (
+        
+          q
+          
+            i
+          
+        
+        ,
+        
+          s
+          
+            k
+          
+        
+        )
+        =
+        (
+        
+          q
+          
+            j
+          
+        
+        ,
+        
+          s
+          
+            l
+          
+        
+        ,
+        R
+        )
+        
+      
+    
+    {\displaystyle \delta (q_{i},s_{k})=(q_{j},s_{l},R)\!}
+  
+ es
+
+  
+    
+      
+        
+          01
+          
+            i
+          
+        
+        
+          01
+          
+            k
+          
+        
+        
+          01
+          
+            j
+          
+        
+        
+          01
+          
+            l
+          
+        
+        
+          01
+          
+            t
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle 01^{i}01^{k}01^{j}01^{l}01^{t},\!}
+  
+
+donde 
+  
+    
+      
+        t
+        ∈
+        {
+        1
+        ,
+        2
+        ,
+        3
+        }
+        
+      
+    
+    {\displaystyle t\in \{1,2,3\}\!}
+  
+, según la dirección sea 
+  
+    
+      
+        
+          d
+          e
+          r
+          e
+          c
+          h
+          a
+        
+        (
+        R
+        )
+        ,
+         
+        
+          i
+          z
+          q
+          u
+          i
+          e
+          r
+          d
+          a
+        
+        (
+        L
+        )
+        ,
+         
+        
+          e
+          s
+          p
+          e
+          r
+          a
+          r
+        
+        (
+        S
+        )
+      
+    
+    {\displaystyle \mathrm {derecha} (R),\ \mathrm {izquierda} (L),\ \mathrm {esperar} (S)}
+  
+.
+Una MT se codifica escribiendo consecutivamente las secuencias de las modificaciones de todas sus transiciones. Más precisamente, la codificación de una MT M es de la forma 
+  
+    
+      
+        
+          C
+          
+            1
+          
+        
+        
+          C
+          
+            2
+          
+        
+        …
+        
+          C
+          
+            i
+          
+        
+        
+      
+    
+    {\displaystyle C_{1}C_{2}\ldots C_{i}\!}
+  
+, donde 
+  
+    
+      
+        
+          C
+          
+            i
+          
+        
+        
+      
+    
+    {\displaystyle C_{i}\!}
+  
+ es la codificación de la 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+-ésima transición de M. Puesto que el orden en que se representen las transiciones de una MT no es relevante, una misma MT tiene varias codificaciones diferentes. Esto no representa ninguna desventaja práctica o conceptual ya que no se pretende que las codificaciones sean únicas.
+
+
+== Máquina de Turing universal ==
+
+Una máquina de Turing computa una determinada función parcial de carácter definido e unívoca, definida sobre las secuencias de posibles cadenas de símbolos de su alfabeto. En este sentido se puede considerar como equivalente a un programa de ordenador, o a un algoritmo. Sin embargo es posible realizar una codificación de la tabla que representa a una máquina de Turing, a su vez, como una secuencia de símbolos en un determinado alfabeto; por ello, podemos construir una máquina de Turing que acepte como entrada la tabla que representa a otra máquina de Turing, y, de esta manera, simule su comportamiento.
+En 1947, Turing indicó: 
+
+ 
+
+Con esta codificación de tablas como cadenas, se abre la posibilidad de que unas máquinas de Turing se comporten como otras máquinas de Turing. Sin embargo, muchas de sus posibilidades son indecidibles, pues no admiten una solución algorítmica. Por ejemplo, un problema interesante es determinar si una máquina de Turing cualquiera se parará en un tiempo finito sobre una determinada entrada; problema conocido como problema de la parada, y que Turing demostró que era indecidible. En general, se puede demostrar que cualquier cuestión no trivial sobre el comportamiento o la salida de una máquina de Turing es un problema indecidible.
+El concepto de Máquina de Turing universal está relacionado con el de un sistema operativo básico, pues puede ejecutar cualquier instrucción computable sobre él.​
+
+
+== Máquina de Turing cuántica ==
+
+En 1985, Deutsch presentó el diseño de la primera Máquina cuántica basada en una máquina de Turing. Con este fin enunció una nueva variante la tesis de Church-Turing dando lugar al denominado «principio de Church-Turing-Deutsch».
+La estructura de una máquina de Turing cuántica es muy similar a la de una máquina de Turing clásica. Está compuesta por los tres elementos clásicos:
+
+Una cinta de memoria infinita en donde cada elemento es un qubit.
+Un procesador finito.
+Un cabezal.
+El procesador contiene el conjunto de instrucciones que se aplica sobre el elemento de la cinta señalado por el cabezal. El resultado dependerá del qubit de la cinta y del estado del procesador. El procesador ejecuta una instrucción por unidad de tiempo.
+La cinta de memoria es similar a la de una máquina de Turing tradicional. La única diferencia es que cada elemento de la cinta de la máquina cuántica es un qubit. El alfabeto de esta nueva máquina está formado por el espacio de valores del qubit.
+La posición del cabezal se representa con una variable entera.
+
+
+== Modelos equivalentes ==
+
+Dos modelos matemáticos equivalentes a los de las máquinas de Turing son las máquinas de Post, creadas en forma paralela por Emil Leon Post,​ y el cálculo lambda, introducido por Alonzo Church y Stephen Kleene en los años 1930, y también usado por Church para demostrar en 1936 el Entscheidungsproblem.
+
+
+== Véase también ==
+Teoría de autómatas
+Sistema combinacional
+Autómata finito
+Autómata con pila
+Máquina abstracta
+Máquina de Turing universal
+Máquina de Turing alternante
+Problema de la parada
+Jerarquía de Chomsky
+Juego de la vida
+Cálculo lambda
+Gusanos de Paterson
+
+
+== Notas ==
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Hodges, Andrew (1983). Alan Turing: The Enigma. Reino Unido: Burnett Books/Hutchinson. ISBN 0-671-49207-1. 
+Minsky, Marvin (1967). «Unsolvability of the Halting Problem». Computation: Finite and Infinite Machines. NJ: Prentice–Hall, Inc. 
+Turing, A.M. (1936). «On Computable Numbers, with an Application to the Entscheidungsproblem». Proceedings of the London Mathematical Society. 2 (1937) 42: 230-265. doi:10.1112/plms/s2-42.1.230. 
+Turing, A.M. (1938). «On Computable Numbers, with an Application to the Entscheidungsproblem: A correction». Proceedings of the London Mathematical Society. 2 (1937) 43 (6): 544-6. doi:10.1112/plms/s2-43.6.544. 
+
+
+== Enlaces externos ==
+Sitio web de Stephen Wolfram 
+Demuestran que la máquina de Turing (2,3) es universal
+Máquina de Turing construida sobre hardware
+Video de máquina de Turing mecánica en YouTube

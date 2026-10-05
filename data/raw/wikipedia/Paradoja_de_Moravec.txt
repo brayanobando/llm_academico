@@ -1,0 +1,39 @@
+La paradoja de Moravec es el descubrimiento en el campo de la inteligencia artificial (IA) y robótica de que, de forma antiintuitiva, el pensamiento razonado humano (el pensamiento inteligente y racional) requiere relativamente de poca computación, mientras que las habilidades sensoriales y motoras, no conscientes y compartidas con otros muchos animales, requieren de grandes esfuerzos computacionales. Este principio fue postulado por Hans Moravec, Rodney Brooks, Marvin Minsky y otros en la década de 1980.  Moravec afirmó: «Comparativamente es fácil conseguir que las computadoras muestren capacidades similares a las de un humano adulto en tests de inteligencia, y difícil o imposible lograr que posean las habilidades perceptivas y motrices de un bebé de un año».​
+Marvin Minsky escribió: «En general, no somos conscientes de nuestras mejores habilidades», añadiendo que «somos más conscientes de los pequeños procesos que nos cuestan que de los complejos que se realizan de forma fluida».​
+Una posible explicación a la paradoja deriva de la teoría de la evolución. De acuerdo con la selección natural, las capacidades humanas han sido mantenidas y optimizadas; más aún, conforme más antiguas son esas habilidades, mayor tiempo ha habido para perfeccionarlas. De este modo, puesto que el pensamiento abstracto es un descubrimiento relativamente reciente en términos evolutivos, podría ser que no se hubiera alcanzado una solución eficiente por falta de tiempo.
+
+
+== La base biológica de las capacidades humanas ==
+Una posible explicación de la paradoja, ofrecida por Moravec, se basa en la evolución. Todas las habilidades humanas se implementan biológicamente, utilizando maquinaria diseñada por el proceso de la selección natural. En el curso de su evolución, la selección natural ha tendido a preservar aquellas mejoras en el diseño y optimizaciones. Mientras más antigua es una habilidad, más tiempo ha tenido la selección natural para mejorar el diseño. El pensamiento abstracto se desarrolló recientemente,  por lo tanto, no debemos esperar que su aplicación sea especialmente eficiente.
+Como Moravec escribe:
+
+ 
+
+Una forma compacta de expresar este argumento sería:
+
+Debemos esperar que la dificultad de aplicar ingeniería inversa sobre cualquier habilidad humana deba ser, más o menos, proporcional a la cantidad de tiempo que la habilidad ha tomado evolucionando en los animales.
+Las habilidades humanas más antiguas son, en gran parte, inconscientes y por eso parecen ser fáciles.
+Por lo tanto, es de esperar que las habilidades que aparenten ser fáciles sean difíciles de aplicar ingeniería inversa, pero aquellas habilidades que requieren esfuerzo no necesariamente puede ser difíciles de diseñar en absoluto.
+Algunos ejemplos de las habilidades que han ido evolucionando durante millones de años son: el reconocimiento facial, desplazamiento en el espacio,  juzgar las motivaciones de las personas, capturar una pelota, reconocimiento de voz,  establecimiento de objetivos alcanzables, prestar atención a las cosas interesantes; todo lo que tenga que ver con la percepción, la atención, la visualización, las habilidades motoras y habilidades sociales por ejemplo.
+Algunos ejemplos de habilidades que han aparecido más recientemente son: las matemáticas, la ingeniería, los juegos humanos, la lógica y la mayor parte de lo que llamamos ciencia. Estas habilidades resultan ser difíciles para nosotros, puesto que no son para lo que nuestros cuerpos y cerebros se desarrollaron principalmente. Estas son  habilidades y técnicas adquiridas recientemente y han tenido unos pocos miles de años para ser refinados, principalmente por la evolución cultural.
+
+
+== Influencia histórica sobre la inteligencia artificial ==
+En los primeros días de investigación sobre la inteligencia artificial (IA), los principales investigadores a menudo predijeron que ellos serían capaces de crear máquinas pensantes en pocas décadas (ver la historia de la inteligencia artificial). Su optimismo provenía en parte del hecho de que habían tenido éxito en escribir programas que utilizan lógica, resolver problemas algebraicos y geométricos, y jugaban juegos como las damas y el ajedrez. La lógica y el álgebra son complicados para las personas por lo que son considerados un signo de inteligencia. Asumieron que, teniendo (casi) resueltos los problemas "difíciles", los problemas "fáciles" de la visión y el razonamiento del sentido común serían pronto resueltos. Pero se equivocaron, y una de las razones es que estos problemas no son nada fáciles, sino increíblemente difíciles. El hecho de que habían resuelto problemas como la lógica y el álgebra era irrelevante, porque estos problemas son extremadamente fáciles para ser resueltos por máquinas.
+Rodney Brooks explica que, según las primeras investigaciones de IA, la inteligencia es "mejor caracterizada como las cosas que los científicos altamente educados encuentran desafiante", como el ajedrez, la integración simbólica, demostración de teoremas matemáticos y resolver problemas de álgebra complicados. "Las cosas que los niños de cuatro o cinco años podían hacer sin esfuerzo, como distinguir visualmente entre una taza de café y una silla, o caminar en dos patas, o encontrar el camino desde su dormitorio a la sala no eran considerados como actividades que requirieran inteligencia." ​
+Esto llevaría Brooks a seguir una nueva dirección en la inteligencia artificial y la robótica. Decidió construir máquinas inteligentes con "Sin cognición. Sólo detección y acción. Eso es todo lo que voy a construir, completamente dejando de lado lo que tradicionalmente se pensó como la inteligencia de la inteligencia artificial." "​ Esta nueva dirección, a la que llamó "Nouvelle IA" fue muy influyente en la robótica y la IA.​
+
+
+== Recepción ==
+El lingüista y científico cognitivo Steven Pinker analiza el principal aprendizaje de los investigadores de IA. En su libro The Language Instinct (1994), destaca:La principal lección de treinta y cinco años de investigación en IA es que los problemas difíciles son fáciles y los problemas fáciles son difíciles. Las habilidades mentales de un niño de cuatro años que damos por sentado, reconocer una cara, levantar un lápiz, cruzar una habitación, responder una pregunta, de hecho, resuelven algunos de los problemas de ingeniería más difíciles jamás concebidos ... Con la aparición de una nueva generación de dispositivos inteligentes, serán los analistas de valores y los ingenieros petroquímicos y los miembros de la junta de libertad condicional puedan quedar obsoletos por las máquinas. Por otra parte los jardineros, recepcionistas y cocineros pueden estar seguros en sus trabajos en las próximas décadas.​
+
+
+== Véase también ==
+Hans Moravec
+Historia de la inteligencia artificial
+
+
+== Referencias ==
+
+
+== Bibliografía ==

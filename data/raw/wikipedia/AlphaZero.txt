@@ -1,0 +1,29 @@
+AlphaZero es un programa informático desarrollado por DeepMind, que es el predecesor generalizado de AlphaGo Zero. El 5 de diciembre de 2017, el equipo de DeepMind lanzó una preimpresión presentando AlphaZero, que logró en 24 horas un nivel de juego sobrehumano en ajedrez, shogi y Go al derrotar a los campeones del mundo, Stockfish, Elmo y la versión de 3 días de AlphaGo Zero en cada caso. AlphaZero dominó a Stockfish después de solo 4 horas de autoaprendizaje, sin acceso a libros de apertura o base de datos de tablas de finales.​​​
+En 2019 se implementó una versión libre del mismo conocida como KataGo. (Ver «New Go-playing trick defeats world-class Go AI, but loses to human amateurs». Consultado el 8 de junio de 2023.  Este artículo de 2022 describe una estrategia ganadora que permite a cualquier amateur vencer a dichos programas​.) No obstante, estos sistemas siguen en investigación y mejoran continuamente.
+
+
+== Relación con AlphaGo Zero ==
+AlphaZero (AZ) es la base más generalizada del algoritmo AlphaGo Zero (AGZ), capaz de jugar ajedrez. A partir, de AlphaZero se crearon variantes capaces de jugar shogi y Go. La más famosa AlphaGo Zero, la cual supuso un hito en el campo de la Inteligencia Artificial debido a que el Go era un juego con un factor de ramificación muy elevado y hasta la fecha un programa informático no había sido capaz de dominarlo. Las diferencias entre AZ y AGZ incluyen:
+
+AZ tiene reglas codificadas para establecer hiperparámetros de búsqueda.
+La red neuronal ahora se actualiza continuamente.
+Go (a diferencia del ajedrez) es simétrico bajo ciertas reflexiones y rotaciones; AGZ fue programado para aprovechar estas simetrías. AZ no es.
+El ajedrez (a diferencia de Go) puede terminar empatado. por lo tanto, AZ puede tener en cuenta la posibilidad de las tablas.
+
+
+== AlphaZero vs Stockfish y Elmo ==
+Al comparar las búsquedas de árbol de búsqueda Monte Carlo, AlphaZero busca solo 80,000 posiciones por segundo en ajedrez y 40,000 en shogi,​ en comparación con 70 millones para Stockfish y 35 millones para Elmo. AlphaZero compensa el menor número de evaluaciones mediante el uso de su red neuronal profunda para centrarse mucho más selectivamente en la variación más prometedora.​
+
+
+== Resultados ==
+En las partidas de ajedrez de AlphaZero contra Stockfish, a cada programa se le dio un minuto de tiempo de reflexión por jugada. AlphaZero ganó 25 partidas con las blancas, ganó 3 con las negras y empató las 72 restantes.​​ En 2017, StockFish 8 era el campeón vigente del campeonato organizado por chess.com de ajedrez por computadora, con un Elo de 3400 puntos.​
+En cien partidas de shogi contra Elmo, AlphaZero ganó noventa y perdió ocho.​
+Después de 8 horas de autoaprendizaje de Go teniendo como contrincante a una versión previa de AlphaZero, AlphaZero ganó sesenta partidas y perdió cuarenta.​
+En una versión actualizada de AlphaZero este venció a Stockfish 8 en un encuentro de 1000 partidas, obteniendo un resultado de +155 -6 = 839.​ Calculando este resultado en Elo, AlphaZero sería superior a Stockfish 8 en 53 puntos Elo. La diferencia de Elo es mucho menor de lo que parece y se explica por la gran cantidad de tablas en el match. (AlphaZero obtuvo el 57.45% de los puntos vs 42.55% que obtuvo StockFish 8​).
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+AlphaZero: Shedding new light on the grand games of chess, shogi and Go Archivado el 1 de agosto de 2019 en Wayback Machine.

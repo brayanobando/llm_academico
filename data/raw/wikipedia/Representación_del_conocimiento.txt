@@ -1,0 +1,76 @@
+La representación del conocimiento y el razonamiento es un área de la inteligencia artificial cuyo objetivo fundamental es representar el conocimiento de una manera que facilite la inferencia (sacar conclusiones) a partir de dicho conocimiento. Analiza cómo pensar formalmente - cómo usar un sistema de símbolos para representar un dominio del discurso (aquello de lo que se puede hablar), junto con funciones que permitan inferir (realizar un razonamiento formal) sobre los objetos. Generalmente, se usa algún tipo de lógica para proveer una semántica formal de cómo las funciones de razonamiento se aplican a los símbolos del dominio del discurso, además de proveer operadores como cuantificadores, operadores modales, etc. Esto, junto a una teoría de interpretación, dan significado a las frases en la lógica.
+Cuando diseñamos una representación del conocimiento (y un sistema de representación del conocimiento para interpretar frases en la lógica para poder derivar inferencias de ellas) tenemos que hacer elecciones a lo largo de un número de ámbitos de diseño. La decisión más importante que hay que tomar es la expresividad de la representación del conocimiento. Cuanto más expresiva es, decir algo es más fácil y más compacto. Sin embargo, cuanto más expresivo es un lenguaje, más difícil es derivar inferencias automáticamente de él. Un ejemplo de una representación del conocimiento poco expresiva es la lógica proposicional. Un ejemplo de una representación del conocimiento muy expresiva es la lógica autoepistémica. Las representaciones del conocimiento poco expresivas pueden ser tanto completas como consistentes (formalmente menos expresivas que la teoría de conjuntos). Las representaciones del conocimiento más expresivas pueden ser ni completas ni consistentes. 
+El principal problema es encontrar una representación del conocimiento y un sistema de razonamiento que la soporte, que pueda hacer las inferencias que necesita una aplicación dentro de los límites de recursos del problema a tratar. Los desarrollos recientes en la representación del conocimiento han sido liderados por la web semántica, y han incorporado el desarrollo de lenguajes y estándares de representación del conocimiento basados en XML, que incluyen Resource Description Framework (RDF), RDF Schema, DARPA Agent Markup Language (DAML), y Web Ontology Language (OWL).
+
+
+== Visión general ==
+Existen varios conjuntos de técnicas de representación como los marcos, las reglas, el etiquetado y las redes semánticas, que tienen su origen en teorías del procesamiento de la información humana. Como el conocimiento se usa para conseguir comportamiento inteligente, el objetivo fundamental de la representación del conocimiento es representar el conocimiento de manera que facilite el razonamiento. Una buena representación del conocimiento debe ser declarativa, además de conocimiento fundamental. Qué es la representación del conocimiento se entiende mejor en términos de cinco roles fundamentales que juega, cada uno crucial para la aplicación:​​
+
+Una representación del conocimiento es fundamentalmente un sucedáneo, un sustituto para el objeto en sí, usado para activar una entidad a efectos de determinar las consecuencias, pensando en lugar de actuando, o sea, razonando acerca del mundo en lugar de tomando acción en él.
+Es un grupo de compromisos ontológicos, una respuesta a la pregunta sobre los términos en que se debe  pensar acerca del mundo.
+Es una teoría fragmentaria del razonamiento inteligente, expresado en términos de tres componentes: (i) El concepto fundamental de la representación del razonamiento inteligente; (ii) El conjunto de inferencias que la representación sanciona; y (iii) El conjunto de inferencias que recomienda.
+Es un medio para una computación pragmáticamente eficiente, el entorno computacional en que el pensamiento tiene lugar. Una contribución para esta eficiencia pragmática viene dada por la guía que una representación provee para organizar información, de modo que facilite hacer las inferencias recomendadas.
+Es un modo de expresión humana, un lenguaje en el que se dicen cosas sobre el mundo.
+Algunas cuestiones que surgen en la representación del conocimiento, desde el punto de vista de la inteligencia artificial, son:
+-Cómo se representa el conocimiento
+-Cuál es la naturaleza del conocimiento
+-el carácter particular o general del dominio de un esquema de representación 
+-Cuán expresivo es un esquema de representación o lenguaje formal
+-el carácter declarativo o procesal de los esquemas
+En el campo de la inteligencia artificial, la solución de problemas puede ser simplificada con una elección apropiada de representación del conocimiento. Algunos problemas son más fáciles de resolver al representar el conocimiento de un modo determinado. Por ejemplo, es más fácil dividir números representados en el sistema arábigo que números representados en  el sistema romano.
+
+
+== Características ==
+Una buena representación del conocimiento cubre seis características básicas:
+
+Cobertura, que significa que la representación del conocimiento cubre la información en anchura y profundidad. Sin una cobertura amplia, la representación del conocimiento no puede determinar nada ni resolver ambigüedades.
+Comprensible por humanos. La representación del conocimiento es vista como un lenguaje natural, así que la lógica debería fluir libremente. Debería soportar la modularidad y la jerarquía de clases (los osos polares son osos, que son animales). Debería además contar con primitivas simples que se combinen de forma compleja.
+Consistencia. Si Pedro ha cerrado la puerta, también puede ser interpretado como la puerta ha sido cerrada por Pedro. Siendo consistente, la representación del conocimiento puede eliminar conocimiento redundante o conflictivo.
+Eficiencia.
+Facilidad de modificación y actualización.
+Soporte de la actividad inteligente que usa la base de conocimiento.
+Para entender mejor porque estas características representan una buena representación del conocimiento, piensa en como una enciclopedia (por ejemplo, Wikipedia) está estructurada. Hay millones de artículos (cobertura), que están organizados en categorías, tipos de contenido, y temas similares (comprensible por humanos). Redirige diferentes títulos pero mismo contenido al mismo artículo (consistencia). Es eficiente, es fácil añadir o actualizar páginas, y permite a los usuarios consultar la base de conocimiento en sus teléfonos u ordenadores de escritorio.
+
+
+== Historia de la representación del conocimiento y el razonamiento ==
+En las ciencias de la computación, particularmente la inteligencia artificial, se han ideado un número de representaciones para estructurar la información.
+Representación del conocimiento es un término comúnmente usado para referirse a representaciones pensadas para el procesamiento por ordenadores modernos, y en particular, para representaciones compuestas por objetos explícitos (la clase que contiene a todos los elefantes, o Jacobo un individuo en concreto), y de afirmaciones sobre ellos ('Jacobo es un elefante', o 'todos los elefantes son grises'). Representar el conocimiento en una forma explícita como esta permite a los ordenadores sacar conclusiones de conocimiento previamente almacenado ('Jacobo es gris').
+Muchos métodos de representación del conocimiento fueron probados a lo largo de la década de 1970 hasta principios de los años 80, cómo responder a preguntas usando heurísticas, redes neuronales, demostraciones de teoremas, y sistemas expertos, con un grado variable de éxito. La diagnosis médica (por ejemplo Mycin) fue un área importante de aplicación, al igual que lo fueron juegos como el ajedrez. 
+En los años 80, surgieron lenguajes formales de programación y sistemas de representación del conocimiento. Grandes proyectos se llevaron a cabo para intentar codificar grandes masas de conocimiento general, por ejemplo, el proyecto "Cyc" (todavía activo) tomó un gran enciclopedia codificando no la información en sí, sino la información que un lector necesitaría para poder entender la enciclopedia: física elemental, nociones de tiempo, causalidad, motivación; objetos comunes y clases de objetos.
+A través de dicho trabajo, se apreció mejor la dificultad de la representación del conocimiento. En lingüísticas computacionales, mientras tanto, se estaban construyendo bases de datos de información lingüística mucho más grandes, y estas, junto con los grandes incrementos en velocidad y capacidad de computación, hicieron las representaciones del conocimiento más profundas más factibles.
+Se han desarrollado diversos lenguajes de programación orientados a la representación del conocimiento. Prolog, desarrollado en 1972,​ pero popularizado mucho después, representa proposiciones y lógica básica, y puede derivar conclusiones de premisas conocidas. KL-ONE (años 80) está más orientado a la representación del conocimiento en sí. En 1995, se desarrolló el estándar de metadata Dublin Core.
+En el mundo de los documentos electrónicos, se estaban desarrollando lenguajes para representar la estructura de los documentos, como el SGML (del que desciende el HTML) y más tarde XML. Estos facilitaron los esfuerzos de recuperación de información y minería de datos, que en años recientes comenzaron a relacionarse a la representación del conocimiento.
+El desarrollo de la web semántica, ha incluido el desarrollo de lenguajes de representación del conocimiento y estándares basados en XML, incluyendo RDF, RDF Schema, DARPA Agent Markup Language (DAML), y Web Ontology Language (OWL).
+
+
+== Véase también ==
+
+
+== Referencias ==
+
+
+== Lectura adicional ==
+Ronald J. Brachman; What IS-A is and isn't. An Analysis of Taxonomic Links in Semantic Networks; IEEE Computer, 16 (10); October 1983
+Ronald J. Brachman, Hector J. Levesque Knowledge Representation and Reasoning, Morgan Kaufmann, 2004 ISBN 978-1-55860-932-7
+Ronald J. Brachman, Hector J. Levesque (eds) Readings in Knowledge Representation, Morgan Kaufmann, 1985, ISBN 0-934613-01-X
+Chein, M., Mugnier, M.-L. (2009),Graph-based Knowledge Representation: Computational Foundations of Conceptual Graphs, Springer, 2009, ISBN 978-1-84800-285-2.
+Randall Davis, Howard Shrobe, and Peter Szolovits; What Is a Knowledge Representation? AI Magazine, 14(1):17-33,1993
+Ronald Fagin, Joseph Y. Halpern, Yoram Moses, Moshe Y. Vardi Reasoning About Knowledge, MIT Press, 1995, ISBN 0-262-06162-7
+Jean-Luc Hainaut, Jean-Marc Hick, Vincent Englebert, Jean Henrard, Didier Roland: Understanding Implementations of IS-A Relations. ER 1996: 42-57
+Hermann Helbig: Knowledge Representation and the Semantics of Natural Language, Springer, Berlin, Heidelberg, New York 2006
+Arthur B. Markman: Knowledge Representation Lawrence Erlbaum Associates, 1998
+John F. Sowa: Knowledge Representation: Logical, Philosophical, and Computational Foundations. Brooks/Cole: New York, 2000
+Adrian Walker, Michael McCord, John F. Sowa, and Walter G. Wilson: Knowledge Systems and Prolog, Second Edition, Addison-Wesley, 1990
+
+
+== Enlaces externos ==
+Carlos Reynoso - Presentaciones sobre mapas cognitivos del espacio
+What is a Knowledge Representation? by Randall Davis and others
+Introduction to Knowledge Modeling by Pejman Makhfi
+Introduction to Description Logics course by Enrico Franconi, Faculty of Computer Science, Free University of Bolzano, Italy
+DATR Lexical knowledge representation language Archivado el 17 de febrero de 2016 en Wayback Machine.
+Loom Project Home Page
+Description Logic in Practice: A CLASSIC Application
+The Rule Markup Initiative
+Schemas
+Nelements KOS Archivado el 1 de marzo de 2021 en Wayback Machine. - a generic 3d knowledge representation system

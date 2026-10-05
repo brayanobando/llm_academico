@@ -1,0 +1,124 @@
+Herbert Alexander Simon (15 de junio de 1916-9 de febrero de 2001) fue un economista, politólogo y teórico de las ciencias sociales estadounidense. 
+En 1978 fue laureado con el Premio de Economía Conmemorativo de Alfred Nobel por su investigación pionera sobre «el proceso de toma de decisiones dentro de las organizaciones económicas».​ 
+Fue «uno de los investigadores más importantes en el terreno interdisciplinario».
+
+
+== Biografía ==
+Herbert A. Simon nació en Milwaukee, Wisconsin. Estudió en la Universidad de Chicago, donde se graduó en 1936 y se doctoró en 1943. Trabajó como asistente de esa universidad (1936-1938) y también en organizaciones ligadas a la gestión de organismos públicos, en la International City Managers's Association (1938-1939) y en el Bureau of Public Administration de la Universidad de California en Ambato (1939-1942), dónde dirigió los Administrative Measurement Studies.
+Después de esta experiencia profesional volvió a la universidad. Fue profesor auxiliar (1942-1947) y profesor titular (1947-1949) de ciencias políticas en el Instituto de Tecnología (Institute of Technology). En 1949 comenzó a trabajar Carnegie Institute of Technology para enseñar administración y psicología y, después de 1966, enseñó ciencia de la computación y psicología en la Carnegie-Mellon (Pittsburgh).
+Además dedicó gran cantidad de tiempo a ser consejero de instituciones públicas y privadas. Recibió el Premio Turing de la ACM en 1975, junto con Allen Newell por hacer «contribuciones básicas a la inteligencia artificial, la psicología cognitiva humana y el procesamiento de listas», y el Award for Distinguished Scientific Contribution de la Asociación Norteamericana de Psicología (APA) en 1969. Además fue designado Miembro Distinguido (Distinguished Fellow) de la Asociación Norteamericana de Economía.
+Herbert Alexander Simon se tomó muy en serio la estructura básica de la ciencia económica, esforzándose en definirla como la ciencia de la elección, para lo cual trabajó sobre el proceso psicológico de la toma de decisiones. Según Simon la hipótesis básica de la economía neoclásica, la de que los agentes tienden a maximizar los resultados de sus comportamientos, es muy limitada. En la práctica ningún ser humano está continuamente buscando la solución óptima. Aunque deseara hacerlo, el coste de informarse sobre todas las alternativas y la incertidumbre sobre el futuro lo harían imposible.
+De acuerdo con Simon, las personas simplemente intentan buscar una mínima satisfacción, es decir, tratan de alcanzar ciertos niveles de éxito para después, poco a poco, ir ajustando esa solución. Esta estructura de pensamiento, que Simon denominó racionalidad limitada estimuló muchos trabajos posteriores sobre el comportamiento de los individuos, las organizaciones y la sociedad.
+Simon fue pionero en investigar la forma en que deben tomarse decisiones en organizaciones económicas complejas (empresas públicas, multinacionales, etc.). Su obra más celebrada es Administrative Behavior: A Study of Decision-making Processes in Administrative Organization (1947) en la cual, en contra de la concepción clásica sobre la existencia de unos responsables en tomar decisiones que conocen todas las opciones, elabora un modelo o proceso racional de adopción de decisiones «satisfactorias». Su Spurious Correlation: A Causal Interpretation (1954), publicado en el Journal of the American Statistical Association, constituyó un primer avance metodológico en el análisis de encuestas. También es importante su The New Science of Management Decision (1960).
+
+
+== Toma de decisiones ==
+Administrative Behavior, publicado por primera vez en 1947 y actualizado a lo largo de los años se basó en la disertación doctoral de Simon. Sirvió como la base para el trabajo de su vida. La pieza central de este libro son los procesos conductuales y cognitivos de los seres humanos que toman decisiones racionales. Según su definición, una decisión operativa debe ser correcta y eficiente, y debe ser práctica para implementar con un conjunto de medios coordinados.​
+Simon reconoció que una Teoría de la administración es en gran parte una teoría de la toma de decisiones humanas, y como tal debe basarse tanto en la economía como en la psicología. El afirma al respecto:
+«[Si] no hubiera límites para la racionalidad humana, la teoría administrativa sería estéril. Consistiría en un precepto único: siempre seleccione esa alternativa, entre las disponibles, lo que conducirá al logro más completo de sus objetivos».
+Contrariamente al estereotipo de «homo economicus», Simon argumentó que las alternativas y las consecuencias pueden ser parcialmente conocidas, y los medios y fines son imperfectamente diferenciados, están incompletamente relacionados o son poco detallados.
+Simon definió que la tarea de la toma racional de decisiones consiste en seleccionar la alternativa que da como resultado el conjunto más preferido de todas las posibles consecuencias. La corrección de las decisiones administrativas se midió así:
+
+   Adecuación para alcanzar el objetivo deseado
+   Eficiencia con la que se obtuvo el resultado
+La tarea de elección se dividió en tres pasos obligatorios:​
+
+   Identificar y enumerar todas las alternativas
+   Determinar todas las consecuencias resultantes de cada una de las alternativas;
+   Comparar la precisión y la eficiencia de cada uno de estos conjuntos de consecuencias
+Cualquier persona u organización que intente implementar este modelo en una situación real no podrá cumplir con los tres requisitos. Simon argumentó que el conocimiento de todas las alternativas, o todas las consecuencias que siguen de cada alternativa es imposible en muchos casos reales.​
+Simon intentó determinar las técnicas y / o los procesos de comportamiento que una persona u organización podría aplicar para lograr aproximadamente el mejor resultado dados los límites en la toma racional de decisiones. Simon escribe al respecto:
+
+ 
+
+Por lo tanto, Simon describe el trabajo en términos de un marco económico, condicionado a las limitaciones cognitivas humanas: hombre económico y hombre administrativo.
+El comportamiento administrativo aborda una amplia gama de comportamientos humanos, habilidades cognitivas, técnicas de gestión, políticas de personal, objetivos y procedimientos de capacitación, funciones especializadas, criterios para la evaluación de la precisión y la eficiencia, y todas las ramificaciones de los procesos de comunicación. Simon está particularmente interesado en cómo estos factores influyen en la toma de decisiones, tanto directa como indirectamente.
+Simons argumentó que los dos posibles resultados de una elección requieren monitoreo y que se esperaría que muchos miembros de la organización se centren en la adecuación, pero que la administración debe prestar especial atención a la eficiencia con la que se obtuvo el resultado deseado. 
+Simon siguió a Chester Barnard, quien señaló que «las decisiones que toma una persona como miembro de una organización son bastante distintas de sus decisiones personales».​ Las elecciones personales pueden determinarse ya sea que un individuo se una a una organización en particular y continúe haciéndolo en su vida privada extra-organizacional. Sin embargo, como miembro de una organización, ese individuo toma decisiones que no están relacionadas con las necesidades y resultados personales, sino en un sentido impersonal como parte de los objetivos, el propósito y el efecto de la organización. Los incentivos, recompensas y sanciones organizacionales están diseñados para formar, fortalecer y mantener esta identificación.
+Simon vio dos elementos universales del comportamiento social humano como clave para crear la posibilidad de un comportamiento organizacional en los individuos humanos: Autoridad (abordada en el Capítulo VII - El Papel de la Autoridad) y Lealtad e Identificación (Abordada en el Capítulo X: Lealtad, e Identificación Organizacional).
+La autoridad es una marca primaria, bien estudiada, del comportamiento organizacional, claramente definida en el contexto organizacional como la capacidad y el derecho de un individuo de rango superior para guiar las decisiones de un individuo de rango inferior. Las acciones, actitudes y relaciones de las personas dominantes y subordinadas constituyen componentes del comportamiento de roles que pueden variar ampliamente en forma, estilo y contenido, pero no varían en la expectativa de obediencia por parte del estado superior y la voluntad de obedecer del subordinado. 
+La lealtad fue definida por Simon como el «proceso por el cual el individuo sustituye los objetivos organizacionales (objetivos de servicio u objetivos de conservación) por sus propios objetivos como los índices de valor que determinan sus decisiones organizacionales».​ Esto implicó la evaluación de opciones alternativas en términos de sus consecuencias para el grupo en lugar de solo para uno mismo o su familia.​
+Las decisiones pueden ser mezclas complejas de hechos y valores. La información sobre los hechos, especialmente los hechos o hechos probados empíricamente derivados de la experiencia especializada, se transmiten más fácilmente en el ejercicio de la autoridad que las expresiones de valores. A Simon le interesa principalmente buscar la identificación del empleado individual con los objetivos y valores de la organización. Siguiendo a Lasswell,​ afirma que «una persona se identifica con un grupo cuando, al tomar una decisión, evalúa las diversas alternativas de elección en términos de sus consecuencias para el grupo especificado».​ Una persona puede identificarse con cualquier número de grupos sociales, geográficos, económicos, raciales, religiosos, familiares, educativos, de género, políticos y deportivos. De hecho, el número y la variedad son ilimitados. El problema fundamental para las organizaciones es reconocer que las identificaciones personales y grupales pueden facilitar u obstaculizar la correcta toma de decisiones de la organización. Una organización específica tiene que determinar deliberadamente, y especificar con el detalle apropiado y un lenguaje claro, sus propias metas, objetivos, medios, fines y valores.
+Simon ha criticado la comprensión elemental de la economía tradicional sobre la toma de decisiones y argumenta que «es demasiado rápida para construir una imagen idealista e irreal del proceso de toma de decisiones y luego prescribir sobre la base de una imagen tan poco realista». Sus contribuciones a la investigación en el área de la toma de decisiones administrativas se han vuelto cada vez más comunes en la comunidad empresarial.
+
+
+== Sociología y economía ==
+Simon ha sido acreditado por algunos cambios revolucionarios en microeconomía. Él es responsable del concepto de toma de decisiones organizacionales como se lo conoce hoy. También fue el primero en discutir este concepto en términos de incertidumbre; es decir, es imposible tener información perfecta y completa en un momento dado para tomar una decisión. Si bien esta noción no era del todo nueva, Simon fue el que teorizó de manera consistente al respecto. Fue en esta área en la que recibió el Premio del Banco de Suecia en Ciencias Económicas en memoria de Alfred Nobel en 1978.​ 
+En la Comisión Cowles, el objetivo principal de Simon era vincular la teoría económica con las matemáticas y las estadísticas. Sus principales contribuciones fueron en los campos de equilibrio general y econometría. Fue muy influenciado por el debate marginalista que comenzó en la década de 1930. La doctrina de la época argumentaba que no era aparente empíricamente que los empresarios necesitaran seguir los principios marginalistas de maximización de beneficios / minimización de costos en las empresas en funcionamiento. El argumento pasó a señalar que la maximización de los beneficios no se lograba, en parte, debido a la falta de información completa.
+En la toma de decisiones, Simon creía que los agentes enfrentan incertidumbres sobre el futuro y los costos para adquirir información en el presente. Estos factores limitan la medida en que los agentes pueden tomar una decisión completamente racional, por lo tanto, poseen solo una «racionalidad limitada» y deben tomar decisiones eligiendo lo que podría no ser óptimo, pero que les hará lo suficientemente felices. La racionalidad limitada es un tema central en la economía del comportamiento. Se refiere a las formas en que el proceso real de toma de decisiones influye en la decisión. Las teorías de la racionalidad limitada relajan una o más suposiciones de la teoría estándar de la utilidad esperada. 
+Además, Simon enfatizó que los psicólogos invocan una definición «de procedimiento« de racionalidad, mientras que los economistas emplean una definición «sustantiva». Gustavo Barros argumentó que el concepto de racionalidad procedimental no tiene una presencia significativa en el campo de la economía y nunca ha tenido tanto peso como el concepto de racionalidad limitada.​ Sin embargo, en un artículo anterior, Bhargava (1997) destacó la importancia de los argumentos de Simon y enfatizó que hay varias aplicaciones de la definición de racionalidad «procedimental» en los análisis econométricos de los datos sobre la salud. En particular, los economistas deben emplear «suposiciones auxiliares» que reflejen el conocimiento en los campos biomédicos relevantes, y orientar la especificación de modelos econométricos para los resultados de salud.
+Simon también fue conocido por su investigación sobre la organización industrial. Determinó que la organización interna de las empresas y las decisiones comerciales externas de las mismas, no se ajustaban a las teorías neoclásicas de la toma de decisiones «racionales». Simon escribió muchos artículos sobre el tema a lo largo de su vida, centrándose principalmente en el tema de la toma de decisiones dentro del comportamiento de lo que denominó «racionalidad limitada».
+
+ 
+ 
+Simon determinó que la mejor manera de estudiar estas áreas era a través de simulaciones por ordenador. Como tal, desarrolló interés en la informática. Los principales intereses de Simon en informática eran la inteligencia artificial, la interacción hombre-computadora, los principios de la organización de humanos y máquinas como sistemas de procesamiento de información, el uso de computadoras para estudiar (modelando) problemas filosóficos de la naturaleza de la inteligencia y de la epistemología, y las implicaciones sociales de la tecnología informática. 
+En su juventud, Simon se interesó en la economía de la tierra y el georgismo, una idea conocida en su momento como el «impuesto único».​ El sistema está destinado a redistribuir la renta económica no devengada al público y mejorar el uso de la tierra. En 1979, Simon todavía mantuvo estas ideas y argumentó que el impuesto al valor de la tierra debería reemplazar los impuestos sobre los salarios.​
+Algunas de las investigaciones económicas de Simon estaban dirigidas a comprender el cambio tecnológico en general y la revolución del procesamiento de la información en particular.
+
+
+== Inteligencia artificial ==
+Simon fue un pionero en el campo de la inteligencia artificial, creando con Allen Newell los programas Logic Theory Machine (1956) y General Problem Solver (GPS) (1957). El GPS posiblemente sea el primer método desarrollado para separar la estrategia de resolución de problemas de la información sobre problemas particulares. Ambos programas se desarrollaron utilizando el lenguaje de procesamiento de la información (IPL) (1956) desarrollado por Newell, Cliff Shaw y Simon. Donald Knuth menciona el desarrollo del procesamiento de listas en IPL, con la lista vinculada originalmente llamada «memoria NSS» por sus inventores.​ En 1957, Simon predijo que el ajedrez por computadora superaría las habilidades del ajedrez humano en «diez años» aunque, en realidad, esa transición duró unos cuarenta años.​
+A principios de la década de 1960, el psicólogo Ulric Neisser afirmó que si bien las máquinas son capaces de reproducir comportamientos de «cognición fría» como el razonamiento, la planificación, la percepción y la decisión, nunca serían capaces de reproducir comportamientos de «cognición caliente» como el dolor, el placer y el deseo. y otras emociones. Simon respondió a los puntos de vista de Neisser en 1963 escribiendo un documento sobre cognición emocional,​ que actualizó en 1967 y publicó en Psychological Review. La comunidad de investigación de inteligencia artificial ignoró en gran medida el trabajo de Simon sobre cognición emocional durante varios años, pero el trabajo subsiguiente sobre las emociones realizado por Sloman y Picard ayudó a centrar la atención en el trabajo de Simon y, finalmente, lo hizo muy influyente en el tema.​
+Simon también colaboró con James G. March en varias obras de teoría organizacional.​
+Con Allen Newell, Simon desarrolló una teoría para la simulación del comportamiento de resolución de problemas humanos usando reglas de producción.​ El estudio de la resolución de problemas humanos requirió nuevos tipos de mediciones humanas y, con Anders Ericsson, Simon desarrolló la técnica experimental del análisis del protocolo verbal.​ Simon estaba interesado en el papel del conocimiento en la experiencia. Dijo que para convertirse en un experto en un tema se necesitaban unos diez años de experiencia y que él y sus colegas estimaban que la experiencia era el resultado de aprender aproximadamente 50 000 fragmentos de información. Se dice que un experto ajedrecista aprende alrededor de 50 000 patrones de posición de ajedrez.​
+Fue galardonado con el Premio ACM Turing, junto con Allen Newell, en 1975:​
+
+ 
+.
+
+
+== Psicología ==
+Simon estaba interesado en cómo los humanos aprenden y, con Edward Feigenbaum, desarrolló la teoría EPAM (Perceptor Elemental y Memorizador), una de las primeras teorías del aprendizaje que se implementará como un programa de computadora. EPAM pudo explicar una gran cantidad de fenómenos en el campo del aprendizaje verbal.​ Las versiones posteriores del modelo se aplicaron a la formación de conceptos y la adquisición de experiencia. Con Fernand Gobet, ha expandido la teoría EPAM al modelo computacional CHREST.​ La teoría explica cómo simples fragmentos de información forman los bloques de construcción de los esquemas, que son estructuras más complejas. CHREST se ha usado predominantemente para simular aspectos de la experiencia ajedrecística.
+
+
+== Escritos ==
+
+
+=== Libros ===
+1947.     Administrative     Behavior: A Study of Decision-Making Processes in     Administrative Organization – 4th ed. in 1997, The Free Press
+1957. Models of Man. John Wiley. Presents mathematical models of human behaviour.
+1958 (with James G. March and the collaboration of Harold Guetzkow). Organizations. New York: Wiley. the foundation of modern organization theory
+1969. The Sciences of the Artificial. MIT Press, Cambridge, Mass, 1st edition. Made the idea easy to grasp: «objects (real or symbolic) in the environment of the decision-maker influence choice as much as the intrinsic information-processing capabilities of the decision-maker»; Explained «the principles of modeling complex systems, particularly the human information-processing system that we call the mind» - 3rd ed. in 1996, MIT Press.
+1972 (with Allen Newell). Human Problem     Solving. Prentice Hall, Englewood Cliffs, NJ, (1972). «the most important book on the scientific study of human thinking in the 20th century»
+1977. Models of Discovery : and other topics in the methods of science. Dordrecht, Holland: Reidel.
+1979. Models of Thought, Vols. 1 and 2. Yale University Press. His papers on human information-processing and problem-solving.
+1982. Models of Bounded Rationality, Vols. 1 and 2. MIT Press. His papers on economics. - Vol. 3. in 1997, MIT Press. His papers on economics since the publication of Vols. 1 and 2 in 1982. The estudios grouped under the category «The Structure of Complex Systems»– dealing with issues such as causal ordering, decomposability, aggregation of variables, model abstraction– are of general interest in systems modelling, not just in economics.
+1983. Reason in Human Affairs, Stanford University Press. A readable 115pp. book on human decision-making and information processing, based on lectures he gave at Stanford in 1982. A popular presentation of his     technical work.
+1987 (with P. Langley, G. Bradshaw, and J. Zytkow). Scientific Discovery: computational explorations of the creative processes. MIT Press.
+1991. Models of My Life. Basic Books, Sloan Foundation Series. His autobiography.
+1997. An Empirically Based Microeconomics. Cambridge University Press. A compact and readable summary of his criticisms of conventional     «axiomatic» microeconomics, based on a lecture series.
+2008 (posthumously). Economics, Bounded Rationality and the Cognitive Revolution. Edward Elgar Publishing, ISBN 1847208967. Reprint some of his papers not widely read by economists.
+
+
+=== Artículos ===
+1938 (with Clarence E. Ridley). Measuring Municipal Activities: a Survey of Suggested Criteria and Reporting Forms For Appraising Administration.
+1943. Fiscal Aspects of Metropolitan Consolidation.
+1945. The Technique of Municipal Administration, 2d ed.
+1955. «A Behavioral Model of Rational Choice», Quarterly Journal of Economics, vol. 69, 99–118.
+1956. «Reply: Surrogates for Uncertain Decision Problems», Office of Naval Research, January 1956. – Reprinted in 1982, In: H.A. Simon, Models of Bounded Rationality, Volume 1, Economic Analysis and Public Policy, Cambridge, Mass., MIT Press, 235–44.
+1958 (with Allen Newell and J. C. Shaw). Elements of a theory of human problem solving[54]
+1967. «Motivational and emotional controls of cognition», Psychological Review, vol. 74, 29–39, reprinted in Models of Thought Vol 1.
+1972. «Theories of Bounded Rationality», Chapter 8 in C. B. McGuire and R. Radner, eds., Decision and Organization, Ámsterdam: North-Holland Publishing Company.
+1980 (with K. Anders Ericsson). «Verbal reports as data», Psychological     Review, vol. 87, 215–251.
+1985 «Human Nature in Politics: The Dialogue of Psychology with Political Science», The American Political Science Review, vol. 79, no. 2 (Jun., 1985),     pp. 293–304
+1995 (with Peter C.-H. Cheng). «Scientific discovery and creative reasoning with     diagrams», in S. M. Smith, T. B. Ward & R. A. Finke (Eds.), The Creative Cognition Approach (pp. 205–228). Cambridge, MA: MIT Press.
+1998 (with John R. Anderson, Lynne M. Reder, K. Anders Ericsson, and Robert Glaser). «Radical Constructivism and Cognitive Psychology», Brookings Papers on Education Policy, no. 1, 227–278.
+2000 (with John R. Anderson and Lynne M. Reder). «Applications and misapplications of cognitive psychology to mathematics education», Texas Education Review, vol. 1, no. 2, 29–49.
+
+
+== Bibliografía ==
+Barnard, C.I. (1938), The Functions of the Executive, Cambridge: Harvard University Press
+Lasswell, H.D. (1935), World Politics and Personal Insecurity, New York: Whittlesey House
+Simon, Herbert (1976), Administrative Behavior (3rd ed.), New York: The Free Press
+Simon, Herbert (1991), Models of My Life, United States: Basic Books
+Simon, Herbert A. 'Organizations and markets', Journal of Economic Perspectives, vol. 5, no. 2 (1991), pp. 25–44.
+Augier, Mie; March, James (2001). «Remembering Herbert A. Simon (1916-2001)». Public Administration Review.
+
+
+== Véase también ==
+Racionalidad limitada
+Modelo de cubo de basura
+James Gary March
+
+
+== Referencias ==

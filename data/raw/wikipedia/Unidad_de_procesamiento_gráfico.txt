@@ -1,0 +1,60 @@
+Una unidad de procesamiento gráfico (del inglés graphics processing unit, GPU) o procesador gráfico es un coprocesador dedicado al procesamiento de gráficos u operaciones de coma flotante, para aligerar la carga de trabajo del procesador/CPU central en aplicaciones como los videojuegos o aplicaciones 3D interactivas. De esta forma, mientras gran parte de lo relacionado con los gráficos se procesa en la GPU, la unidad central de procesamiento (CPU) puede dedicarse a otro tipo de cálculos (como la inteligencia artificial o los cálculos mecánicos en el caso de los videojuegos).
+En resumen, las tarjetas gráficas son componentes de hardware encargados de procesar y generar las imágenes que se muestran en la pantalla de una computadora. Su función principal es liberar al procesador central (CPU) de las tareas gráficas, permitiendo una representación más rápida y fluida de gráficos, animaciones y vídeos. Son especialmente importantes en actividades que requieren un alto rendimiento visual, como videojuegos, diseño 3D, edición multimedia y simulaciones.
+La GPU implementa ciertas operaciones gráficas llamadas primitivas optimizadas para el procesamiento gráfico. Una de las primitivas más comunes para el procesamiento gráfico en 3D es el antialiasing, que suaviza los bordes de las figuras para darles un aspecto más realista. Adicionalmente existen primitivas para dibujar rectángulos, triángulos, círculos y arcos. Las GPU actualmente disponen de gran cantidad de primitivas, buscando mayor realismo en los efectos.
+Las GPU están presentes en las tarjetas gráficas.
+
+
+== Historia ==
+Las modernas GPU son descendientes de los chips gráficos monolíticos de finales de la década de 1970 y 1980. Estos chips tenían soporte BitBLT limitado en la forma de sprites (si es que tenían dicho soporte del todo), y usualmente no tenían soporte para dibujo de figuras. Algunos GPU podían ejecutar varias operaciones en una lista de display y podían usar DMA para reducir la carga en el procesador anfitrión; un ejemplo temprano es el coprocesador ANTIC usado en el Atari 800 y el Atari 5200. Hacia finales de la década de 1980 y principios de la de 1990, los microprocesadores de propósito general de alta velocidad fueron muy populares para implementar las GPU más avanzadas. Muchas tarjetas gráficas para PC y estaciones de trabajo usaban procesadores digitales de señales (DSP por sus siglas en inglés) tales como la serie TMS340 de Texas Instruments, para implementar funciones de dibujo rápidas y muchas impresoras láser contenían un procesador de barrido de imágenes "PostScript" (un caso especial de GPU) corriendo en un procesador RISC como el AMD 29000.
+
+
+== Diferencias con la CPU ==
+Si bien en un computador genérico no es posible reemplazar la CPU por una GPU, hoy en día las GPU son muy potentes y pueden incluso superar la frecuencia de reloj de una CPU antigua (más de 1.5 gigahercios). Pero la potencia de las GPU y su veloz ritmo de desarrollo reciente se deben a dos factores diferentes. El primer factor es la alta especialización de las GPU, ya que al estar pensadas para desarrollar una sola tarea, es posible dedicar más silicio en su diseño para llevar a cabo esa tarea más eficientemente. Por ejemplo, las GPU actuales están optimizadas para cálculo con valores en coma flotante, predominantes en los gráficos 3D.
+Por otro lado, muchas aplicaciones gráficas conllevan un alto grado de paralelismo inherente, al ser sus unidades fundamentales de cálculo (vértices y píxeles) completamente independientes. Por tanto, es una buena estrategia usar la fuerza bruta en las GPU para completar más cálculos en el mismo tiempo. Los modelos actuales de GPU suelen tener cientos de procesadores shader unificados que son capaces de actuar como vertex shaders, y como pixel shaders, o fragment shaders. De este modo, una frecuencia de reloj de unos 1-1.9 GHz (el estándar hoy en día en las GPU de más potencia), es muy baja en comparación con lo ofrecido por las CPU (3.8-5 GHz en los modelos más potentes, no necesariamente más eficientes), se traduce en una potencia de cálculo mucho mayor gracias a su arquitectura en paralelo.
+Una de las mayores diferencias con la CPU estriba en su arquitectura. A diferencia del procesador central, que tiene una arquitectura de von Neumann, la GPU se basa en el Modelo Circulante. Este modelo facilita el procesamiento en paralelo, y la gran segmentación que posee la GPU para sus tareas.
+
+
+== Arquitectura de la GPU ==
+Una GPU está altamente segmentada, lo que indica que posee gran cantidad de unidades funcionales. Estas unidades funcionales se pueden dividir principalmente en dos: aquellas que procesan vértices (renderizador), y aquellas que procesan píxeles (rasterizador). Por tanto, se establecen el vértice y el píxel como las principales unidades que maneja la GPU.
+Adicionalmente, y no con menos importancia, se encuentra la memoria. Ésta destaca por su rapidez, y va a desempeñar un papel relevante a la hora de almacenar los resultados intermedios de las operaciones y las texturas que se utilicen.
+Inicialmente, a la GPU le llega la información de la CPU en forma de vértices. El primer tratamiento que reciben estos vértices se realiza en el vertex shader. Aquí se realizan transformaciones como la rotación o el movimiento de las figuras. Tras esto, se define la parte de estos vértices que se va a ver (clipping), y los vértices se transforman en píxeles mediante el proceso de rasterización. Estas etapas no poseen una carga relevante para la GPU.
+Donde sí se encuentra el principal cuello de botella del chip gráfico es en el siguiente paso: el pixel shader. Aquí se realizan las transformaciones referentes a los píxeles, tales como la aplicación de texturas. Cuando se ha realizado todo esto, y antes de almacenar los píxeles en la caché, se aplican algunos efectos como el antialiasing, blending y el efecto niebla.
+Otras unidades funcionales llamadas unidades de salida de renderizado  (ROP, raster operations pipeline) toman la información guardada en la caché y preparan los píxeles para su visualización. También pueden encargarse de aplicar algunos efectos. Tras esto, se almacena la salida en el búfer de fotogramas. Ahora hay dos opciones: o tomar directamente estos píxeles para su representación en un monitor digital, o generar una señal analógica a partir de ellos, para monitores analógicos. Si es este último caso, han de pasar por un DAC, digital-analog converter, para ser finalmente mostrados en pantalla.
+
+
+== Programación de la GPU ==
+
+Al inicio, la programación de la GPU se realizaba con llamadas a servicios de interrupción de la BIOS. Tras esto, la programación de la GPU se empezó a hacer en el lenguaje ensamblador específico a cada modelo. Posteriormente, se introdujo un nivel más entre el hardware y el software, con la creación de interfaces de programación de aplicaciones (API) específicas para gráficos, que proporcionaron un lenguaje más homogéneo para los modelos existentes en el mercado. La primera API usada ampliamente fue el estándar abierto OpenGL (Open Graphics Language), tras el cual Microsoft desarrolló DirectX.
+Tras el desarrollo de estas API, se decidió crear un lenguaje más próximo al natural utilizado por el programador.
+Una característica a remarcar de las tarjetas gráficas NVIDIA, el lenguaje de programación máquina debe estar introducido sobre la base de texto unicode 16, dado a la arquitectura de los microchips que utilizan desde la serie GeForce GTX 700.
+
+
+== Cálculos de la GPU para propósito general ==
+Se intenta aprovechar la gran potencia de cálculo de las GPU para aplicaciones no relacionadas con los gráficos, en lo que recientemente se viene a llamar GPGPU, o GPU de propósito general (general purpose GPU, por sus siglas en inglés).
+
+
+== Las GPU y la química cuántica ==
+La química cuántica es una de las disciplinas donde se necesita una gran potencia de cálculo. Por supuesto que han sido reportadas varias aplicaciones donde las GPUs han sido utilizadas. Varias de esas aplicaciones están relacionadas con la solución de las ecuaciones de Kohn-Sham, dentro de la teoría de funcionales de la densidad, y la solución de las ecuaciones de Hartree-Fock.​ También han sido reportadas aplicaciones relacionadas con métodos basados en la función de onda que estiman la correlación electrónica,​ o energías de ionización.​​ La potencia de las GPUs se ha evidenciado con aplicaciones relacionadas con el modelo de átomos en moléculas.​
+
+
+== Véase también ==
+Cg
+Direct3D
+GLSL
+GPGPU
+Gráficos 3D por computadora
+HLSL
+Larrabee
+OpenGL
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+
+ Wikimedia Commons alberga una galería multimedia sobre Unidad de procesamiento gráfico.
+Sitio web oficial de ATI/AMD
+Sitio web oficial de NVIDIA
+Lo que debes saber acerca de la reparación de tarjeta gráfica del portátil
+Motivos por los que falla una tarjeta gráfica de portátil

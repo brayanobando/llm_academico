@@ -1,0 +1,169 @@
+Un robot es una entidad virtual o mecánica artificial. En la práctica, esto es por lo general un sistema electromecánico que, por su apariencia o sus movimientos, ofrece la sensación de tener un propósito propio.
+La independencia en sus acciones hace que sus acciones sean la razón de un estudio razonable y profundo en el área de la ciencia y tecnología.
+La palabra puede referirse tanto a mecanismos físicos como a sistemas virtuales de software, aunque suele aludirse a los segundos con el término de bots.​
+No hay un consenso sobre qué máquinas pueden ser consideradas robots, pero sí existe un acuerdo general entre los expertos y el público sobre que los robots tienden a hacer parte o todo lo que sigue: moverse, hacer funcionar un brazo mecánico, sentir y manipular su entorno y mostrar un comportamiento inteligente, especialmente si ese comportamiento imita al de los humanos o a otros animales. Actualmente podría considerarse que un robot es una computadora con la capacidad y el propósito de movimiento que en general es capaz de desarrollar múltiples tareas de manera flexible según su programación; así que podría diferenciarse de algún electrodoméstico específico. 
+Aunque las historias sobre ayudantes y acompañantes artificiales, así como los intentos de crearlos, tienen una larga historia, las máquinas totalmente autónomas no aparecieron hasta el siglo XX. El primer robot programable y dirigido de forma digital, el Unimate, creado por George Devol, fue instalado en 1961 para levantar piezas calientes de metal de una máquina de tinte y colocarlas. 
+Los robots domésticos para la limpieza y mantenimiento del hogar son cada vez más comunes. No obstante, existe una cierta ansiedad sobre el impacto económico de la automatización y la amenaza del armamento robótico, una ansiedad que se ve reflejada en el retrato a menudo perverso y malvado de robots presentes en obras de la cultura popular. Comparados con sus colegas de ficción, los robots reales siguen siendo limitados.
+
+
+== Etimología ==
+El gran público conoció la palabra robot a través de la obra R.U.R. (Robots Universales Rossum) del dramaturgo checo Karel Čapek, que se estrenó en 1920.​ La palabra se escribía como robotnik.
+Sin embargo, no fue este autor quien inventó la palabra. En una breve carta escrita a la editorial del Diccionario Oxford, atribuye a su hermano Josef la creación del término.​ En un artículo publicado en la revista checa Lidové noviny en 1933, explicó que originalmente le quiso llamar laboři (del latín labor, trabajo). Sin embargo, no le gustaba la palabra y pidió consejo a su hermano Josef, que le sugirió "roboti". La palabra robota significa literalmente trabajo o labor y figuradamente "trabajo duro" en checo y muchas lenguas eslavas. Tradicionalmente robota era el periodo de trabajo que un siervo debía otorgar a su señor, generalmente 6 meses del año.​ La servidumbre se prohibió en 1848 en Bohemia, por lo que cuando Čapek escribió R.U.R., el uso del término robota ya se había extendido a varios tipos de trabajo, pero el significado obsoleto de "servidumbre" seguiría reconociéndose.​​
+La palabra robótica, usada para describir este campo de estudio, fue acuñada por el escritor de ciencia ficción Isaac Asimov.
+La robótica concentra 3 áreas de estudio: la mecatrónica, la física y las matemáticas como ciencias básicas.
+
+
+== Historia ==
+En el siglo IV antes de Cristo, el matemático griego Arquitas de Tarento construyó un ave mecánica que funcionaba con vapor y a la que llamó «La paloma». También el ingeniero Herón de Alejandría (10-70 d. C.) creó numerosos dispositivos automáticos que los usuarios podían modificar, y describió máquinas accionadas por presión de aire, vapor y agua.​ Por su parte, el estudioso chino Su Sung levantó una torre de reloj en 1088 con figuras mecánicas que daban las campanadas de las horas.​
+Al Jazarí (1136–1206), un inventor musulmán de la dinastía Artuqid, diseñó y construyó una serie de máquinas automatizadas, entre las que había útiles de cocina, autómatas musicales que funcionaban con agua, y en 1206 los primeros robots humanoides programables. Las máquinas tenían el aspecto de cuatro músicos a bordo de un bote en un lago, entreteniendo a los invitados en las fiestas reales. Su mecanismo contenía un tambor programable con clavijas que chocaban con pequeñas palancas que accionaban instrumentos de percusión. Podían cambiarse los ritmos y patrones que tocaba el tamborilero moviendo las clavijas.
+
+
+=== Desarrollo moderno ===
+El ingeniero e inventor francés Jacques de Vaucanson en 1737, construyó el primer autómata, Joueur de Flûte ("El Flautista"), una figura de tamaño natural de un pastor que tocaba el tambor y la flauta y tenía un repertorio de doce canciones.
+El artesano japonés Hisashige Tanaka (1799-1881), conocido como el «Edison japonés», creó una serie de juguetes mecánicos extremadamente complejos, algunos de los cuales servían té, disparaban flechas sacadas de un carcaj e incluso trazaban un kanji (caracteres utilizados en la escritura japonesa).​
+Por otra parte, desde la generalización del uso de la tecnología en procesos de producción con la Revolución Industrial se intentó la construcción de dispositivos automáticos que ayudasen o sustituyesen al hombre. Entre ellos destacaron los Jaquemarts, muñecos de dos o más posiciones que golpean campanas accionados por mecanismos de relojería china y japonesa.
+Robots equipados con una sola rueda fueron utilizados para llevar a cabo investigaciones sobre conducta, navegación y planeo de ruta. Cuando estuvieron listos para intentar nuevamente con los robots caminantes, comenzaron con pequeños hexápodos y otros tipos de robots de múltiples patas. Estos robots imitaban insectos y artrópodos en funciones y forma. Como se ha mencionado anteriormente, la tendencia se dirige hacia ese tipo de cuerpos que ofrecen gran flexibilidad y han demostrado ser adaptables a cualquier ambiente. Con más de 4 piernas, estos robots son estáticamente estables, lo que hace que el trabajar con ellos sea más sencillo. Recientemente se han hecho progresos hacia los robots con locomoción bípeda.
+En el sentido común de un autómata, el mayor robot en el mundo tendría que ser el Maeslantkering, una barrera para tormentas del Plan Delta en los Países Bajos construida en los años 1990, la cual se cierra automáticamente cuando es necesario. Sin embargo, esta estructura no satisface los requerimientos de movilidad o generalidad.
+En 2002 Honda y Sony comenzaron a vender comercialmente robots humanoides como «mascotas». Los robots con forma de perro o de serpiente se encuentran, sin embargo, en una fase de producción muy amplia; el ejemplo más notorio ha sido Aibo de Sony.
+
+
+== La robótica en la actualidad ==
+En la actualidad, los robots comerciales e industriales se utilizan ampliamente y realizan tareas de forma más exacta o más barata que los humanos. También se emplean en trabajos demasiado sucios, peligrosos o tediosos para los humanos. Los robots se usan en plantas de manufactura, montaje y embalaje, en transporte, en exploraciones en la Tierra y en el espacio, cirugía, armamento, investigación en laboratorios y en la producción en masa de bienes industriales o de consumo.​
+Otras aplicaciones incluyen la limpieza de residuos tóxicos, minería, búsqueda y rescate de personas y localización de minas terrestres.
+
+Existe una gran esperanza, especialmente en Japón, de que el cuidado del hogar para la población de edad avanzada pueda ser desempeñado por robots.​​
+Los robots parecen estar abaratándose y reduciendo su tamaño, una tendencia relacionada con la miniaturización de los componentes electrónicos que se utilizan para manejarlos. Además, muchos robots son diseñados en simuladores mucho antes de construirse y de que interactúen con ambientes físicos reales. Un buen ejemplo de esto es el equipo máquina espiritual,​ un equipo de 5 robots desarrollado totalmente en un ambiente virtual para jugar al fútbol en la liga mundial de la F.I.R.A.​
+Además de los campos mencionados, hay modelos trabajando en el sector educativo, servicios (por ejemplo, en lugar de recepcionistas humanos​ o vigilancia) y tareas de búsqueda y rescate.
+
+
+=== Usos médicos ===
+Recientemente se ha logrado un gran avance en los robots dedicados a la medicina,​ con dos compañías en particular, Computer Motion e Intuitive Surgical, que han recibido la aprobación regulatoria en América del Norte, Europa y Asia para que sus robots sean utilizados en procedimientos de cirugía invasiva mínima. Desde la compra de Computer Motion (creador del robot Zeus) por Intuitive Surgical, se han desarrollado ya 6 modelos de robot Da Vinci por esta última, pasando por el primero modelo DaVinci, S, Si, Xi, X y el más reciente lanzado "SP". Actualmente hasta diciembre de 2017 se contabilizan en el mundo alrededor de 4409 sistemas Da Vinci, siendo Estados Unidos el país con más equipos disponibles, con un total de 2,862. Con aplicaciones en Urología, Ginecología, Cirugía general, Coloproctología, Cirugía Pediátrica, Cirugía Torácica, Cirugía Cardíaca y ORL.
+También la automatización de laboratorios es un área en crecimiento. Aquí, los robots son utilizados para transportar muestras biológicas o químicas entre instrumentos tales como incubadoras, manejadores de líquidos y lectores. Otros lugares donde los robots están reemplazando a los humanos son la exploración del fondo oceánico y exploración espacial. Para esas tareas se suele recurrir a robots de tipo artrópodo.
+
+
+=== Modelos militares ===
+Un impulsor muy significativo de este tipo de investigaciones es el desarrollo de equipos de espionaje militar.
+A fin de proteger a aquellos que ponen su vida en peligro, los robots de seguridad y defensa aptos para el combate pueden realizar numerosas misiones para ayudar a los profesionales de la seguridad pública y del ejército.
+
+
+== Arquitectura de los robots ==
+
+Existen diferentes tipos y clases de robots, entre ellos con forma humana, de animales, de plantas o incluso de elementos arquitectónicos pero todos se diferencian por sus capacidades y se clasifican en 4 formas:
+
+Androides: robots con forma humana. Imitan el comportamiento de las personas, su utilidad en la actualidad es de solo experimentación. El principal limitante de este modelo es la implementación del equilibrio en el desplazamiento, pues es bípedo.
+Móviles: se desplazan mediante una plataforma rodante (ruedas); estos robots aseguran el transporte de piezas de un punto a otro.
+Zoomórficos: es un sistema de locomoción imitando a los animales. La aplicación de estos robots sirve, sobre todo, para el estudio de volcanes y exploración espacial.
+Poliarticulados: mueven sus extremidades con pocos grados de libertad. Su principal utilidad es industrial, para desplazar elementos que requieren cuidados.
+En esta última se puede clasificar según su morfología en robots angulares o antropomórficos, robots cilíndricos, robots esféricos o polares, robots tipo SCARA, robots paralelos, robots cartesianos, entre otros.
+
+
+== Brazo robótico ==
+
+El robot de fabricación más común es el robot industrial y de entre los robots industriales, el más común es el brazo articulado también llamado brazo robótico.​​ Un brazo robótico típico se compone de siete segmentos metálicos, unidos por seis articulaciones.​ Una computadora controla el robot girando motores de pasos individuales conectados a cada junta (los brazos más grandes utilizan la hidráulica o neumática). A diferencia de los motores eléctricos de movimiento continuo, los motores de pasos pueden moverse en incrementos exactos. Esto permite que el ordenador pueda mover el brazo de manera muy precisa, repitiendo exactamente el mismo movimiento una y otra vez. El robot utiliza sensores de movimiento para hacer que se mueva la cantidad justa.
+Un robot industrial con seis articulaciones se asemeja mucho a un brazo humano - tiene el equivalente de un hombro, un codo y la muñeca. Típicamente, el hombro está montado en una estructura de base estacionaria en lugar de a un cuerpo móvil. Este tipo de robot tiene seis grados de libertad, lo que significa que puede pivotar en seis formas diferentes. Un brazo humano, en comparación, tiene siete grados de libertad.​​​​
+El trabajo del brazo humano es mover la mano de un lugar a otro. Del mismo modo, el trabajo del brazo robótico es mover un efector final de un lugar a otro. Se puede equipar brazos robóticos con todo tipo de efectores de extremo, que están adaptados a una aplicación particular. Un efector final común es una versión simplificada de la mano, que puede captar y transportar objetos diferentes. Las manos robóticas a menudo han incorporado sensores de presión que le dicen a la computadora que tan fuerte el robot está sujetando un objeto en particular. Esto evita que el robot tire o rompa lo que lleva. Otros efectores finales incluyen sopletes, los soldadores por puntos, taladros y la pintura por
+aire a presión entre otros.​
+
+
+=== Robots industriales ===
+Los robots industriales están diseñados para hacer exactamente lo mismo, en un ambiente controlado, una y otra vez. Por ejemplo, un robot podría cerrar las tapas de frascos de mantequilla que salen de una línea de montaje. Para enseñar a un robot cómo hacer su trabajo, el programador guía el brazo a través de los movimientos utilizando un controlador de mano (teach pendant). El robot almacena la secuencia exacta de los movimientos en su memoria, y lo hace una y otra vez cada vez que una nueva unidad viene por la línea de montaje.
+Existen diferentes técnicas para programar robots industriales. Entre ellas se encuentran las técnicas de programación gestual y las de programación textual. En la programación gestual un operario guía al robot, manualmente o mediante controles remotos, enseñándole la tarea que este debe realizar. El robot va almacenando los pasos a seguir y luego puede repetirlos de manera autónoma. En la programación textual, en cambio, se realizan primero los cálculos de las posiciones y trayectorias que el robot debe recorrer y, con esta información, se crean las instrucciones del programa que el robot deberá ejecutar. Una vez transferido el programa al robot, este puede comenzar a realizar la tarea de manera autónoma.
+La mayoría de los robots industriales trabajan en cadenas de montaje de automóviles, poniendo los coches juntos. Los robots pueden hacer este trabajo más eficientemente que los seres humanos gracias a su precisión, que les permite por ejemplo perforar siempre en el mismo lugar o apretar siempre los tornillos con la misma cantidad de fuerza, sin importar las horas que trabaje (cosa que no sucede con los humanos). Los robots de fabricación son también muy importantes en la industria electrónica, ya que se necesita un control increíblemente preciso para armar un microchip.
+
+
+== Proyectos en marcha ==
+
+Proyecto Autómata Abierto. El propósito de este proyecto es desarrollar software modular y componentes electrónicos, desde los cuales sea posible ensamblar un robot móvil basado en una computadora personal que pueda ser utilizado en entornos caseros o de oficinas. Todo el código fuente es distribuido bajo los términos de la Licencia Pública General (GNU).
+Dean Kamen, fundador de FIRST y de la Sociedad Americana de Ingenieros Mecánicos (ASME), ha creado una Competencia Robótica multinacional que reúne a profesionales y jóvenes para resolver problemas de diseño de ingeniería de manera competitiva. En 2003, el torneo contó con más de 20 000 estudiantes en más de 800 equipos en 24 competiciones. Los equipos vienen de Canadá, Brasil, el Reino Unido y los Estados Unidos. A diferencia de las competiciones de los robots de lucha sumo que se celebran regularmente en algunos lugares o las peleas de ficción de “BattleBots“ transmitidas por televisión, estos torneos incluyen la construcción de un robot.
+Crear y modelar emociones en robots es una investigación dirigida por la especialista en inteligencia artificial Lola Cañamero de la Universidad de Hertfordshire en el Reino Unido con el Grupo de Investigación de Sistemas Adaptativos (Adaptatifs Systems Research Group).​ El proyecto inicial denominado Feelix Growing (2006-2010)​ también coordinado por Cañamero, tenía como objetivo de modelar emociones en robots y desarrollar robots que aprendan a interactuar con seres humanos de manera emotiva, estuvo financiado por el programa de robótica avanzada de la Comisión Europea​ y en él se involucraron seis países europeos, 25 expertos en robótica, psicólogos y neurocientíficos.​
+
+
+== Cuestiones éticas ==
+
+ 
+Existe la preocupación de que los robots puedan desplazar o competir con los humanos. Las leyes o reglas que pudieran o debieran ser aplicadas a los robots u otros “entes autónomos” en cooperación o competencia con humanos si algún día se logra alcanzar la tecnología suficiente como para hacerlos inteligentes y conscientes de sí mismos, han estimulado las investigaciones macroeconómicas de este tipo de competencia, notablemente construido por Alessandro Acquisti basándose en un trabajo anterior de John von Neumann.
+Actualmente, no es posible aplicar las Tres leyes de la robótica, dado que los robots no tienen capacidad para comprender su significado, evaluar las situaciones de riesgo tanto para los humanos como para ellos mismos o resolver los conflictos que se podrían dar entre estas leyes.
+Entender y aplicar lo anteriormente expuesto requeriría verdadera inteligencia y consciencia del medio circundante, así como de sí mismo, por parte del robot, algo que a pesar de los grandes avances tecnológicos de la era moderna no se ha alcanzado.​
+
+
+== El impacto de los robots en el plano laboral ==
+Muchas grandes empresas, como Intel, Sony, General Motors, Dell, han implementado en sus líneas de producción unidades robóticas para desempeñar tareas que por lo general hubiesen desempeñado trabajadores de carne y hueso en épocas anteriores.
+Esto ha causado una agilización en los procesos realizados, así como un mayor ahorro de recursos, al disponer de máquinas que pueden desempeñar las funciones de cierta cantidad de empleados a un costo relativamente menor y con un grado mayor de eficiencia, mejorando notablemente el rendimiento general y las ganancias de la empresa, así como la calidad de los productos ofrecidos.
+Pero, por otro lado, ha suscitado y mantenido inquietudes entre diversos grupos por su impacto en la tasa de empleos disponibles, así como su repercusión directa en las personas desplazadas. Dicha controversia ha abarcado el aspecto de la seguridad, llamando la atención de casos como el ocurrido en Jackson, Míchigan, el 21 de julio de 1984 donde un robot aplastó a un trabajador contra una barra de protección en la que aparentemente fue la primera muerte relacionada con un robot en los EE. UU.​
+Debido a esto se ha llamado la atención sobre la ética en el diseño y construcción de los robots, así como la necesidad de contar con lineamientos claros de seguridad que garanticen una correcta interacción entre humanos y máquinas.
+El empleo de robots para labores de manufactura pudiera aún abaratar costos, ya que a diferencia de un operario humano no acarrearía pago de sueldos/salarios ni reivindicaciones laborales. No obstante, por tratarse de una máquina requeriría de servicio técnico (mantenimiento y reparación), lo cual conlleva un gasto monetario.
+
+
+== La relación robots-ONU ==
+El relator especial de la ONU sobre ejecuciones extrajudiciales, sumarias o arbitrarias, Christof Heyns, está tratando de detener la creación y el esparcimiento de los robots autónomos letales (LAR), conocidos también como robots asesinos, hacia otros países de manera general. Heyns realizó un informe en el que se menciona de manera muy significativa la necesidad de realizar una legislación o protocolo mundial que describa el compromiso serio y significativo de poner un límite al desarrollo de esta tecnología que, probablemente en un futuro no muy lejano, a los robots se les confiera el poder y el permiso para matar a los seres humanos.
+Asimismo, mencionó que, mientras los drones sigan teniendo a un ser humano como su controlador que les dirija a quien matar y a quién no, también sería muy probable que los robots asesinos, debido a su programación centrada en el ataque contra los seres humanos y a la destrucción de los mismos, puede ser un grave peligro. En su informe plantea su idea sobre las preocupaciones de las posibles consecuencias del uso de los LAR, y es que, según Heyns, los robots podrían desequilibrar la balanza entre la guerra y la paz, y no solo eso: tienen una estructura que les permite tener un largo alcance cuando son utilizados.
+El relator propuso que el desarrollo de esta tecnología no dejaría nada bueno para nadie, quizá para las grandes potencias que tienen planeado una guerra o el aprovechamiento de algunos recursos. Pero la cuestión aquí es la programación que pueden tener estos robots, porque ¿será posible que un robot pueda distinguir entre los combatientes y los civiles?
+Para finalizar su informe menciona que, a pesar de que su implementación, sería inaceptable. De igual modo, sería muy importante que se elaboren una serie de reglas que permitan un manejo en el desarrollo de esta tecnología que no beneficiaría para nada a la sociedad, y en cambio estaría representando un grave problema para todo el mundo, porque si los robots pudieran tomar por sí mismos algunas decisiones, estaríamos en un gran riesgo que no se debe permitir o por lo menos lograr controlar el manejo de estos robots.
+"Así que tal vez es necesario formalizar de una vez por todas en las restricciones del uso y la construcción de esta tecnología, así como tener la capacidad moral y ética de realizar robots en beneficio de la sociedad, que contribuyan en todo momento con los seres humanos. Esta tecnología abrirá camino a un futuro prometedor donde resplandezca paz y una buena interacción entre robots y humanos. Solo pido a las grandes potencias que no tengan en mente destruir este hermoso planeta que nos ha dotado de mucha vida y felicidad a todos nosotros y sobre todo a las futuras generaciones."​​​​
+
+
+== Los robots en la ficción ==
+
+
+=== Mitología ===
+Muchas mitologías antiguas tratan la idea de los humanos artificiales.
+En la mitología clásica, se dice que Cadmo sembró dientes de dragón que se convertían en soldados, y Galatea, la estatua de Pigmalión, cobró vida. También el dios griego de los herreros, Hefesto (Vulcano para los romanos) creó sirvientes mecánicos inteligentes, otros hechos de oro e incluso mesas que se podían mover por sí mismas.
+Algunos de estos autómatas ayudan al dios a forjar la armadura de Aquiles, según la Ilíada​
+Aunque, por supuesto, no se describe a esas máquinas como "robots" o como "androides", son en cualquier caso dispositivos mecánicos de apariencia humana.
+Una leyenda hebrea habla del Golem, una estatua animada por la magia cabalística. Por su parte, las leyendas de los Inuit describen al Tupilaq (o Tupilak), que un mago puede crear para cazar y asesinar a un enemigo. Sin embargo, emplear un Tupilaq para este fin puede ser una espada de doble filo, ya que la víctima puede detener el ataque del Tupilaq y reprogramarlo con magia para que busque y destruya a su creador.
+
+
+=== Literatura ===
+Ya en 1817, en un cuento de Hoffmann llamado El hombre de arena, aparece una mujer que parecía una muñeca mecánica, y en la obra de Edward S. Ellis de 1865 El Hombre de Vapor de las Praderas se expresa la fascinación americana por la industrialización.
+Como se indicaba más arriba, la primera obra en utilizar la palabra robot fue la obra teatral R.U.R. de Karel Čapek (escrita en colaboración con su hermano Josef en 1920; representada por primera vez en 1921; escenificada en Nueva York en 1922. La edición en inglés se publicó en 1923).
+La obra comienza en una fábrica que construye personas artificiales llamadas robots, pero están más cerca del concepto moderno de androide o clon, en el sentido de que se trata de criaturas que pueden confundirse con humanos. Pueden pensar por sí mismos, aunque parecen felices de servir. En cuestión está si los robots están siendo explotados, así como las consecuencias por su tratamiento.
+El autor más prolífico de historias sobre robots fue Isaac Asimov (1920-1992), que colocó los robots y su interacción con la sociedad en el centro de muchos de sus libros.​​ Este autor consideró seriamente la serie ideal de instrucciones que debería darse a los robots para reducir el peligro que estos representaban para los humanos. Así llegó a formular sus Tres Leyes de la Robótica: Ningún robot causará daño a un ser humano o permitirá, con su inacción, que un ser humano sufra daño; todo robot obedecerá las órdenes que le den los seres humanos, a menos que esas órdenes entren en conflicto con la primera ley; y todo robot debe proteger su propia existencia, siempre que esa protección no entre en conflicto con la primera o la segunda ley.​
+Esas tres leyes se introdujeron por primera vez en su relato corto de 1942 Círculo Vicioso, aunque habían sido esbozadas en algunos textos anteriores. Más tarde, Asimov añadió la ley de Cero: "Ningún robot causará daño a la humanidad ni permitirá, con su inacción que la humanidad sufra daño". El resto de las leyes se modificaron para ajustarse a este añadido.
+Según el Oxford English Dictionary, el principio del relato breve ¡Mentiroso! de 1941 contiene el primer uso registrado de la palabra robótica. El autor no fue consciente de esto en un principio, y asumió que la palabra ya existía por su analogía con mecánica, hidráulica y otros términos similares que se refieren a ramas aplicadas del conocimiento.​
+
+
+=== Cine y televisión ===
+Cine
+El tono económico y filosófico iniciado por R.U.R. sería desarrollado más tarde por la película Metrópolis, y las populares Blade Runner (1982) o The Terminator (1984).
+Existen muchas películas sobre robots, entre las cuales cabe destacar:
+
+A.I. Inteligencia artificial;
+las dos películas basadas en los relatos de Isaac Asimov: Yo, Robot y El hombre bicentenario;
+la serie de animé Chobits;
+Time of eve;
+The Terminator;
+Cortocircuito;
+Star Wars;
+WALL·E;
+Robot salvaje;
+Robot & Frank (comedia-drama acerca del uso de robots como acompañantes terapéuticos para personas con problemas de salud como la demencia senil)
+Gigantes de Acero (Acción-drama Sobre un futuro en donde los boxeadores han sido remplazados por robots para que se destruyan entre sí).
+Televisión
+En televisión, existen series muy populares como Robot Wars y BattleBots. En la serie Futurama y Doraemon, de Matt Groening y Fujiko F. Fujio respectivamente, los robots poseen una identidad propia, como ciudadanos. También, en la serie Almost Human aparecen robots-policías con conciencia propia, llamados DRN, los cuales funcionan con un programa de “alma sintética”. También existe la serie Astroboy, en el que el dr. Tenma pierde a su hijo Tobio, quien lo reemplaza por un androide con los rasgos de su hijo (físicos y mentales), así como el popular androide con cerebro positrónico Data de Star Trek.
+
+
+== Véase también ==
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Robots.
+ Wikcionario  tiene definiciones y otra información sobre robot.
+Robotoide.
+Robots, qué son, ¿nos sustituirán?.
+Robotics Portal.
+Asociación de Robótica y Domótica de España (A.R.D.E.).
+Robots.
+Robótica Gadgetsytecnologia.com.
+Robótica WebEducativa.net.
+Máquinas que piensan: Robots y circuitos con microcontroladores, por Francisco Carabaza Piñeiro. Archivado el 20 de octubre de 2020 en Wayback Machine.
+Concurso de robots Cybertech, de la Universidad Politécnica de Madrid.
+International Federation of Robotics (Federación Internacional de Robótica, en inglés).
+Robots Argentina; página didáctica sin fines de lucro.
+'Ecorobotik' Primer Concurso de Robots Reciclados.
+'Minirobots' Robot programable educativo de Moway.
+Inteligencia Artificial en Educación.
+Robótica Educativa: Estrategias Activas en Ingeniería. (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última).
+Introducción a los brazos robots.

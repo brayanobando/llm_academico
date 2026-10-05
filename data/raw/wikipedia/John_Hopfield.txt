@@ -1,0 +1,19 @@
+John Joseph Hopfield (Chicago, Illinois; 15 de julio de 1933), citado como John Hopfield, es un físico estadounidense reconocido por el desarrollo de la red de Hopfield. En el 2024 fue galardonado con el Premio Nobel de Física por su trabajo sobre redes neuronales artificiales junto con Geoffrey Everest Hinton.​
+
+
+== Datos biográficos ==
+
+
+=== Primeros años y educación ===
+John Joseph Hopfield nació en 1933 en Chicago,​ hijo de los físicos John Joseph Hopfield (registrado al nacer como Jan Józef Chmielewski) y Helen Hopfield (Helen Staff, de soltera).​​
+Hopfield obtuvo una licenciatura (Bachelor of Arts) con una especialidad en física en el Colegio Swarthmore en Pensilvania en 1954 y un doctorado (doctor of Philosophy) en física en la Universidad Cornell en 1958.​ Su tesis de doctorado se intituló "A quantum-mechanical theory of the contribution of excitons to the complex dielectric constant of crystals" ("Una teoría de la mecánica cuántica acerca de la influencia de los excitones sobre la constante dieléctrica compleja de los cristales")​ Su asesor de doctorado fue Albert Overhauser.​
+
+
+=== Carrera ===
+Pasó dos años en el grupo teórico de Laboratorios Bell estudiando las propiedades ópticas de los semiconductores, junto a David Gilbert Thomas​ y luego en un modelo cuantitativo para describir el comportamiento cooperativo de la hemoglobina junto con Robert G. Shulman.​​​ Posteriormente trabajó como parte del personal docente en la Universidad de California, Berkeley (física, 1961–1964),​ Universidad Princeton (física, 1964–1980),​ Instituto Tecnológico de California (Caltech, química y biología, 1980–1997)​ y de nuevo en Princeton (1997–),​​ donde fue Profesor Howard A. Prior de Biología Molecular, 
+emérito.​
+En 1976, participó en un cortometraje científico acerca de la estructura de la hemoglobina, donde presentaba a Linus Pauling.​ 
+En 1981–1983 Richard Feynman, Carver Mead y Hopfield dieron un curso durante un año en Caltech llamado "La física de la computación".​ Feynman invitó a Hopfield a dar un curso acerca de las redes neuronales asociativas.​​ Este trabajo inspiró la creación del programa de doctorado en sistemas de cómputo y sistemas neurales en Caltech en 1986, y uno de los fundadores fue Hopfield.​​
+
+
+== Referencias ==

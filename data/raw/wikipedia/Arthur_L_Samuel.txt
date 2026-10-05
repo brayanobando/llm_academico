@@ -1,0 +1,16 @@
+Arthur L. Samuel (1901 - 1990) fue un pionero en el campo de los juegos informáticos y la inteligencia artificial y el creador de uno de los primeros juegos didácticos como demostración muy temprana del concepto de la inteligencia artificial (AI).
+
+
+== Biografía ==
+Samuel trabajó en una universidad de Emporia, Kansas para pagar sus estudios y recibió un máster en Ingeniería Eléctrica de parte de M.I.T. En 1928, ensambló los Laboratorios Bell, donde trabajó principalmente en el hardware o lo que hoy se conoce como Ingeniería_informática.
+Luego de una restricccion de parte de U.I.U.C, Samuel fue a trabajar a la IBM, donde haría su mejor trabajo, que fue hacer programas inspectores en la primera computadora comercial de IBM, la IBM 701. El programa era una demostración sensacional de los avances del hardware y la programación experta.
+Fue el pionero de la programación no numérica, que posteriormente se iba a utilizar para el sistema de instrucción de procesadores; fue uno de los pioneros en trabajar en proyectos con excepción de cómputo.
+En 1966, Samuel visitó a un profesor de la Universidad de Stanford, donde trabajó el resto de su vida. En 1990, Samuel murió de Parkinson el 29 de julio en Stanford.
+
+
+== Referencias ==
+Programas Inspectores (en PDF)
+
+
+== Enlaces externos ==
+Museo de Stanford

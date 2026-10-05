@@ -1,0 +1,71 @@
+En la historia de la inteligencia artificial, un Invierno IA es un período de reducción de fondos e interés en la investigación de inteligencia artificial.​ El término fue acuñado por analogía a la idea del invierno nuclear.​
+El término apareció por primera vez en 1984 como el tema central de un debate público en la conferencia anual de la AAAI. Es una reacción en cadena que comienza con el pesimismo de la comunidad de IA, seguido por el pesimismo en la prensa, seguido de un severo recorte en la financiación, seguido por el final de la investigación seria.​ En la conferencia, Roger Schank y Marvin Minsky-dos de los principales investigadores de la IA que habían sobrevivido el "invierno" de la década de 1970, advirtieron a la comunidad de negocios que el entusiasmo por la IA había crecido de forma descontrolada en la década de 1980 y que, sin duda, la decepción ciertamente seguiría. Tres años más tarde, la industria de la IA mil millones de dólares comenzó a derrumbarse.​
+El furor es común en diversas tecnologías emergentes, como lo fue la Mania del Ferrocarril o la Burbuja puntocom. El Invierno IA fue un resultado de ese furor, debido a promesas poco realistas por parte de los desarrolladores, expectativas altas de los usuarios finales y una amplia promoción en los medios.​  A pesar de la subida y la caída de la reputación de la IA, se ha continuado desarrollando nuevas tecnologías y exitosas tecnologías. El investigador Rodney Brooks se quejaría en 2002 de que "existe este estúpido mito de que la IA ha fallado, pero la IA esta a su alrededor cada segundo del día." ​ En el 2005, Ray Kurzweil estaba de acuerdo: "Muchos observadores siguen pensando que el invierno IA fue el final de la historia y que nada desde entonces ha venido del campo IA. Sin embargo, hoy en día miles de aplicaciones de la IA están profundamente arraigados en la infraestructura de todas las industrias."​
+Es entusiasmo y optimismo sobre la IA ha aumentado gradualmente desde su punto más bajo en 1990. A partir de la década del 2010 la Inteligencia artificial (y especialmente el subcampo del Aprendizaje automático) empezó a ganar interés por parte de la comunidad de investigación, lo que llevó a un auge dramático en el financiamiento y la inversión del sector.
+
+
+== Visión General ==
+Hubo dos grandes inviernos entre 1974-1980 y luego en 1987-1993​ y varios episodios más pequeños, incluyendo los siguientes:
+
+1966: El fracaso de la Traducción automática
+1970: el Abandono del Conexionismo
+Periodo de tendencias superpuestas:
+1971–75: La frustración de la DARPA con el programa de investigación en Reconocimiento del habla del programa de la Universidad Carnegie Mellon
+1973: Gran disminución en la investigación de IA en el Reino Unido en respuesta al reporte​ de James Lighthill
+1973–74: Los recortes de la DARPA a la investigación académica en general sobre la IA.
+1987: El colapso del mercado de la Máquina Lisp
+1988: Cancelación de nuevos gastos en IA por la SCI (Iniciativa de Computación Estratégica)
+1993: resistencia al despliegue y mantenimiento de nuevos Sistemas Expertos
+1990s: Fin de los objetivos originales del proyecto de la Quinta generación de computadoras
+
+
+== Los Contratiempos de 1974 ==
+
+
+=== El Informe Lighthill ===
+
+En 1973, el Parlamento del Reino Unido solicitó al profesor Sir James Lighthill que evaluara el estado de la investigación sobre IA en el Reino Unido. Su informe, ahora llamado el informe de Lighthill, criticó el fracaso total de la IA para lograr sus "grandiosos objetivos". Lighthilll llegó a la conclusión de que nada de lo que se hacía en IA no se podía realizar en otras ciencias. Mencionó específicamente el problema de la "Explosión combinatoria" o la "intractabilidad", lo que implicaba que muchos de los algoritmos más exitosos de la IA se detendrían en problemas del mundo real y solo eran adecuados para resolver versiones de "juguete" de estos mismos.​ 
+El informe fue impugnado en un debate emitido en la serie "Controversia" de la BBC en 1973. El debate "El robot de propósito general es un espejismo" de la Royal Institution fue Lighthill contra el equipo de Donald Michie, John McCarthy y Richard Gregory.​  McCarthy escribió más tarde que "el problema de la explosión combinatoria ha sido reconocido en la IA desde el principio".​
+El informe condujo al desmantelamiento completo de la investigación de IA en Inglaterra.​ La investigación de IA continuó en solo unas pocas universidades (Edimburgo, Essex y Sussex). Esto "creó un efecto de onda de proa que llevó a recortes de fondos en toda Europa", escribe James Hendler.​ La investigación no reviviría a gran escala hasta 1983, cuando Alvey (un proyecto de investigación del Gobierno británico) comenzó a financiar nuevamente la IA de un cofre de guerra de £ 350 millones en respuesta al Proyecto japonés de quinta generación. Alvey tenía una serie de requisitos solo para el Reino Unido que no se sentían bien internacionalmente, especialmente con los socios estadounidenses, y perdió la Fase 2 de financiación.
+
+
+=== Los recortes de fondos de DARPA a principios de la década de 1970 ===
+Durante la década de 1960, la Agencia de Proyectos de Investigación Avanzados de Defensa (entonces conocida como "ARPA", ahora conocida como "DARPA") proporcionó millones de dólares para la investigación de IA casi sin condiciones. El director de DARPA en esos años, J. C. R. Licklider creía en "financiar personas, no proyectos""​  y permitió que los líderes de AI (como Marvin Minsky, John McCarthy, Herbert A. Simon o Allen Newell) lo gastaran de casi cualquier forma que quisieran.
+Esta actitud cambió después de la aprobación de la Enmienda Mansfield en 1969, que requería que DARPA financiara "la investigación directa orientada a la misión, en lugar de la investigación básica no dirigida".​ DARPA ya no financiaría la investigación pura no dirigida del tipo que se había llevado a cabo en la década de 1960. Los investigadores ahora tenían que demostrar que su trabajo pronto produciría alguna tecnología militar útil. Las propuestas de investigación de IA se llevaron a cabo con un estándar muy alto. La situación no se ayudó cuando el informe de Lighthill y el propio estudio de DARPA (el American Study Group) sugirieron que era poco probable que la mayoría de las investigaciones sobre IA produjeran algo realmente útil en el futuro previsible. El dinero de DARPA se dirigió a proyectos específicos con objetivos identificables, como tanques autónomos y sistemas de gestión de batallas. En 1974, la financiación de proyectos de IA era difícil de encontrar.​
+El investigador de IA Hans Moravec culpó de la crisis a las predicciones poco realistas de sus colegas: "Muchos investigadores se vieron atrapados en una red de exageración creciente. Sus promesas iniciales a DARPA habían sido demasiado optimistas. Por supuesto, lo que entregaron se detuvo considerablemente por debajo de eso. Pero sintieron que no podían prometer menos en su próxima propuesta que en la primera, por lo que prometieron aun más ".​ El resultado, afirma Moravec, es que parte del personal de DARPA había perdido la paciencia con la investigación de IA. "Se expresó literalmente en DARPA que 'a algunas de estas personas se les daría una lección [al] tener sus contratos de dos millones de dólares al año reducidos a casi nada'", dijo Moravec a Daniel Crevier.​
+Si bien el proyecto del tanque autónomo fue un fracaso, el sistema de gestión de batallas (la Herramienta de Análisis Dinámico y Replanificación) demostró ser enormemente exitoso, ahorrando miles de millones en la primera Guerra del Golfo, reembolsando toda la inversión de DARPA en IA​ y justificando la política pragmática de DARPA .​
+
+
+== Véase también ==
+Efecto IA
+Historia de la inteligencia artificial
+Crisis del Software
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+
+Crevier,  Daniel (1993). AI: The Tumultuous Search for Artificial Intelligence. p. 203. ISBN 9780465029976. 
+Hendler, James (2007). «Where Are All the Intelligent Agents?». IEEE Intelligent Systems 22 (3): 2-3. doi:10.1109/MIS.2007.62. 
+Howe, J. (November 1994). «Artificial Intelligence at Edinburgh University : a Perspective». Archivado desde el original el 17 de agosto de 2007. Consultado el 30 de agosto de 2007. 
+Kaplan, Andreas; Haenlein, Michael (2018). «Siri, Siri in my Hand, who's the Fairest in the Land? On the Interpretations, Illustrations and Implications of Artificial Intelligence». Business Horizons (Business Horizons 62(1)) 62: 15-25. doi:10.1016/j.bushor.2018.08.004. 
+Kurzweil, Ray (2005). The Singularity is Near. Viking Press. 
+Lighthill, Professor Sir James (1973). «Artificial Intelligence: A General Survey». Artificial Intelligence: a paper symposium. Science Research Council. 
+Minsky, Marvin; Papert, Seymour (1969). Perceptrons: An Introduction to Computational Geometry. The MIT Press. 
+NRC (1999). «Developments in Artificial Intelligence». Funding a Revolution: Government Support for Computing Research. National Academy Press. Archivado desde el original el 12 de enero de 2008. Consultado el 30 de agosto de 2007. 
+Newquist, HP (1994). The Brain Makers: Genius, Ego, and Greed In The Search For Machines That Think. Macmillan/SAMS. ISBN 978-0-9885937-1-8. 
+
+
+== Otras Lecturas ==
+Luke Muehlhauser (Septiembre de 2016). «What should we learn from past AI forecasts?». Open Philanthropy Project. 
+
+
+== Enlaces externos ==
+ComputerWorld article (febrero de 2005)
+AI Expert Newsletter (enero de 2005)
+"If It Works, It's Not AI: A Commercial Look at Artificial Intelligence startups"
+Patterns of Software- una colección de ensayos por Richard P. Gabriel
+Review of ``Artificial Intelligence: A General Survey by John McCarthy
+Other Freddy II Robot Resources Incluye un enlace al debate de 90 minutos de la "Controversia" de1973 de la Real Academia de Lighthill vs. Michie, McCarthy y Gregory en respuesta al informe de Lighthill al gobierno británico.

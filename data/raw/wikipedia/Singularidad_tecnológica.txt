@@ -1,0 +1,221 @@
+La singularidad tecnológica es el advenimiento hipotético de inteligencia artificial general (también conocida como «inteligencia artificial fuerte», del inglés strong AI). La singularidad tecnológica implica que un conjunto de algoritmos, redes informáticas o robots, puedan ser capaces de diseñar o producir computadoras o robots mejores que los ya existentes. Se dice que las repeticiones de este ciclo de mejoras podrían dar lugar a un efecto fuera de control —una explosión de inteligencia—​​ donde las máquinas inteligentes diseñarían generaciones de máquinas cada vez más potentes, desarrollando una inteligencia cada vez más superior a la humana.​
+
+
+== Origen ==
+El primer uso del término «singularidad» se registra en 1957. Fue utilizado por el matemático y físico húngaro John von Neumann. Ese año, en una conversación con Von Neumann, Stanislaw Ulam describió los avances de la tecnología del siguiente modo:​
+
+ 
+
+Ray Kurzweil citó el uso de Von Neumann del término en un prólogo del clásico The Computer and the Brain del propio Von Neumann. 
+Años más tarde, en 1965, I. J. Good escribió primero sobre una "explosión de inteligencia", la cual sugiere que si las máquinas pudieran superar ligeramente el intelecto humano, podrían mejorar sus propios diseños en formas imprevisibles para sus diseñadores, y por lo tanto aumentarse recursivamente a sí mismas haciéndose más inteligentes y realimentando ese ciclo. La primera de esas mejoras puede ser pequeña, pero a medida que la máquina se vuelve más inteligente, podría dar lugar a una cascada de automejora y un aumento repentino de la superinteligencia (o singularidad).
+No es hasta 1983 cuando el término es popularizado por el matemático y escritor Vernor Vinge, quien sostiene que tanto la inteligencia artificial, la mejora biológica humana, o las interfaces cerebro-ordenador podrían ser la génesis de la singularidad. Se popularizó enormemente la noción de inteligencia de Dios en una serie de escritos, abordando primero el tema de forma impresa en la edición de enero de 1983 de la revista Omni. En este artículo de opinión, Vinge parece haber sido el primero en utilizar el término "singularidad" de tal manera que estaba atado específicamente a la creación de máquinas inteligentes.​​ Por escrito: 
+
+ 
+
+
+== Historia ==
+Aunque el término se acuñó por primera vez en 1957, varios científicos y autores ya habían discutido este fenómeno años antes, aunque de manera inconsciente. Sin saberlo, lo que describían en algún momento se conocería como 'singularidad'. 
+
+
+=== Sus comienzos ===
+Uno de las primeras personas que afirmara la existencia de una singularidad fue el francés Nicolas de Condorcet, matemático, filósofo y revolucionario del siglo XVIII. En su Boceto para un cuadro histórico del progreso de la mente humana de 1794, Condorcet afirma: 
+
+ 
+Años más tarde, el editor R. Thornton​​ escribió sobre la reciente invención de una calculadora mecánica de cuatro funciones:
+
+ 
+
+En 1863, el escritor Samuel Butler escribió “Darwin entre las máquinas” (del inglés, Darwin Among the Machines), que se incorporó más tarde en su famosa novela “Erewhon”.  Señaló la rápida evolución de la tecnología y la comparó con la evolución de la vida, haciendo uso del término singularidad sin darse cuenta:
+
+ 
+
+En 1909, el historiador Henry Adams escribió un ensayo, “La Regla de la Fase Aplicada a la Historia” (del inglés, The Rule of Phase Applied to History),​ en el que desarrolló una "teoría física de la historia" mediante la aplicación de la ley de los cuadrados inversos a períodos históricos, proponiendo una "Ley de la Aceleración del Pensamiento ". Adams interpreta la Historia como un proceso de avanzar hacia un "equilibrio", y especuló que este proceso sería "llevar el pensamiento hasta el límite de sus posibilidades en el año 1921. ¡Es muy posible!", Y agregó que "las consecuencias pueden ser tan sorprendentes como el cambio de agua a vapor, del gusano a mariposa o de la radio a los electrones."​  El futurólogo John Smart ha llamado a Adams "Primer Teórico de la Tierra sobre la Singularidad".​
+Este término se lo puede relacionar también con el matemático Alan Turing, quien en 1951 habló de máquinas superando a los seres humanos intelectualmente​:
+
+ 
+
+
+=== A través de los años ===
+En 1985, Ray Solomonoff introdujo la noción de "punto infinito"​ en la escala del tiempo de la inteligencia artificial, analizando la magnitud del "shock del futuro", que "podemos esperar de nuestra IA expandida en la comunidad científica", y sobre los efectos sociales. Las estimaciones fueron hechas "para cuando ocurrirían estos hitos, seguidos por algunas sugerencias para la utilización más eficaz del crecimiento tecnológico extremadamente rápido que se espera".
+En su libro Mind Children (1988), el científico de la computación y futurista Hans Moravec generaliza la ley de Moore para hacer predicciones sobre el futuro de la vida artificial. Moravec esboza una línea de tiempo y un escenario en este sentido​​ en el que los robots van a evolucionar en una nueva serie de especies artificiales, al alrededor del 2030 al 2040.​
+En “Robot: Mere Machine to Transcendent Mind”, publicado en 1998, Moravec considera además las implicaciones de la evolución de la inteligencia del robot, la generalización de la ley de Moore a las tecnologías precediendo el circuito integrado, y especulando sobre una venida "fuego en mente" de superinteligencia de rápida expansión, similar a las ideas de Vinge.
+Un artículo de 1993 por Vinge, "The Coming Technological Singularity: How to Survive in the Post-Human Era",​ se extendió ampliamente en Internet y ayudó a popularizar la idea.​ Este artículo contiene la declaración citada a menudo, "Dentro de treinta años, vamos a disponer de los medios tecnológicos para crear inteligencia sobrehumana. Poco después, la era humana se terminará." Vinge refina su estimación de las escalas temporales necesarias, y agregó: "Me sorprendería si este evento se produce antes de 2005 o después de 2030."
+El libro de divulgación científica de Damien Broderick The Spike (1997) fue el primero para investigar la singularidad tecnológica en detalle.
+En 2005, Ray Kurzweil publicó “The singularity is near”, la cual llevó la idea de la singularidad a los medios de comunicación populares, tanto a través de la accesibilidad del libro, como a través de una campaña de publicidad que incluía una aparición en “The Daily Show con Jon Stewart”.​ El libro agita una intensa controversia, en parte debido a que las predicciones utópicas de Kurzweil contrastan fuertemente con otras visiones más oscuras de las posibilidades de la singularidad. Kurzweil.  Sus teorías y las controversias que lo rodean fueron objeto del documental de Barry Ptolemy “Transcendent Man”.
+En 2007, Eliezer Yudkowsky sugirió que muchas de las variadas definiciones que se han asignado a la "singularidad" son incompatibles entre sí en lugar de apoyarse mutuamente.​ Por ejemplo, Kurzweil extrapola actuales trayectorias tecnológicas más allá de la llegada de la automejora de la IA o inteligencia sobrehumana, que Yudkowsky argumenta que representa una tensión con lo que I.J. Good propone; discontinúa en la inteligencia y la tesis de Vinge de imprevisibilidad.
+En 2008, Robin Hanson (teniendo como "singularidad" el fuerte aumento en el exponente del crecimiento económico) enumeró las revoluciones agrícola e industrial como singularidades pasadas. La extrapolación de estos sucesos pasados; Hanson propone que la próxima singularidad económica debería aumentar el crecimiento económico de entre 60 y 250 veces. Una innovación que permitiría la sustitución virtual del todo el trabajo humano y que podría desencadenar este evento.​
+En 2009, Kurzweil y el fundador de X-Prize, Peter Diamandis anunciaron la creación de la Universidad de la Singularidad, cuya misión declarada es "educar, inspirar y empoderar a los líderes para aplicar tecnologías exponenciales para hacer frente a los grandes retos de la humanidad."​ Financiada por Google, Autodesk, ePlanet Ventures, y un grupo de líderes de la industria de tecnología de la Universidad de la Singularidad, se basa en el Ames Research Center de la NASA en Mountain View, California. La organización sin fines de lucro ejecuta un programa anual de posgrado de diez semanas durante el verano del hemisferio norte que cubre diez tecnologías diferentes y pistas aliadas, y una serie de programas ejecutivos en todo el año.
+A través de los años se siguió hablando de la misma.  En 2010 Aubrey de Grey aplica el término "matuselaridad"​ hasta el punto en el que la tecnología médica mejora tan rápido que la vida humana útil esperada aumenta por más allá de un año por año (velocidad de escape de la longevidad). En " Apocalyptic AI – Visions of Heaven in Robotics, Artificial Intelligence, and Virtual Reality"​ (2010), Robert Geraci ofrece una cuenta del desarrollo de "ciber - teología", inspirada en los estudios de la Singularidad.
+El ensayista y filósofo Éric Sadin, habla en 2017 en su texto sobre un acoplamiento humano-máquina, describiéndolo como algo inédito entre organismos fisiológicos y códigos digitales. Este acoplamiento se va tejiendo y tensionando inestablemente entre aptitudes y misiones otorgadas por un lado a los humanos, y por otro a las máquinas. Sadin nos dice que se caracteriza, hasta ahora y por un tiempo, por un equilibrio incierto y nebuloso, basado por la distribución binaria y emblemática en la frecuentación de todos los flujos de Internet, operados la gran mayoría por robots electrónicos autónomos.​
+En 2024, el profesor español Carlos Fenollosa publicó el ensayo "La singularidad. Inteligencia artificial: causas, consecuencias y retos de haber inventado máquinas que piensan". Fenollosa defiende que no es necesario el uso de una superinteligencia para alcanzar la singularidad, y que es posible llegar a este punto mediante una IA débil controlada por humanos que genere interés compuesto y un crecimiento exponencial. Finalmente, Fenollosa argumenta que la IA disponible en 2024 ya es suficientemente sofisticada como para iniciar el proceso de singularidad, y que "lidiar con este problema no es tarea para futuras generaciones, sino para la nuestra".​
+
+
+== Predicciones ==
+Algunos autores se han dedicado a predecir cuándo y cómo esta singularidad podría ocurrir.
+
+
+=== Albert Cortina y Miquel-Ángel Serra ===
+Según los autores la singularidad tecnológica ocasionará cambios sociales inimaginables, imposibles de comprender o de predecir por cualquier humano. En esa fase de la evolución se producirá la fusión entre tecnología e inteligencia humana. La tecnología dominará los métodos de la biología hasta dar lugar a una era en que se impondrá la inteligencia no biológica de los post humanos, que se expandirá por el universo.[cita requerida]
+
+
+=== Raymond Kurzweil ===
+Por un lado este científico e inventor, en su libro La singularidad esta cerca, nos advierte de que este fenómeno ocurrirá alrededor del año 2045 y predice un ascenso gradual a la singularidad.​ Aquel momento en donde se espera que las inteligencias basadas en la informática excedan significativamente la suma total de la capacidad intelectual humana, la escritura de los avances en la computación antes de esa fecha "no va a representar a la Singularidad" porque no lo hacen "para corresponder a una profunda expansión de nuestra inteligencia."​ En 2011, Kurzweil le dijo a la revista Time: "Nosotros revertiremos el éxito de la ingeniería del cerebro humano a mediados de la década de 2020. A finales de esa década, los ordenadores serán capaces de tener una inteligencia a nivel humano".​
+
+
+=== Vernor Vinge ===
+Por otro lado Vernor la predice en 15 años menos, en el 2030. Esto difiere completamente con Kurzweil ya que predice un ascenso gradual a la singularidad, en lugar de una automejora rápida de la inteligencia sobrehumana de Vinge. Para él hay cuatro maneras en que la singularidad podría ocurrir:​
+
+El desarrollo de equipos que alcanzan la consciencia ("despiertan") y poseen inteligencia sobrehumana.
+Las grandes redes de ordenadores (y sus usuarios asociados) pueden "despertar" como una entidad sobrehumana inteligente.
+Interfaces humano/computadoras pueden llegar a ser tan íntimas que los usuarios razonablemente pueden considerarse sobrehumanamente inteligentes.
+La ciencia biológica puede encontrar maneras de mejorar el intelecto humano natural.
+Vinge continúa prediciendo que las inteligencias sobrehumanas podrán mejorar sus propias mentes más rápido que sus creadores humanos. "Cuando las unidades de mayor inteligencia humana progresen", postula Vinge, "el progreso será mucho más rápido".  Predice que este ciclo de retroalimentación de la inteligencia automejorada conllevará grandes cantidades de avances tecnológicos dentro de un corto período de tiempo, y afirma que la creación de la inteligencia sobrehumana representa una ruptura en la capacidad de los humanos para modelar su futuro. Su argumento es que los autores no pueden escribir personajes realistas que superen el intelecto humano, ya que va más allá de la capacidad de expresión humana. En otras palabra: No podemos pensar más allá de nuestra capacidad y forma de pensar.  Vinge nombra a este evento como "la Singularidad".
+Cumbre de la Singularidad[cita requerida]
+En la Cumbre de la Singularidad del 2012, Stuart Armstrong hizo un estudio sobre las predicciones de la inteligencia artificial general (AGI) de los expertos y se encontró una amplia gama de fechas predichas, con un valor medio de 2040. Discutiendo el nivel de incertidumbre en las estimaciones de AGI, Armstrong dijo en 2012: «No es completamente formal, pero mi estimación actual del 80 % es algo así como a partir de cinco a 100 años».​
+
+
+== Manifestaciones ==
+Muchos autores definieron que la singularidad tecnológica se puede llegar a manifestar de diferentes maneras: a partir de la inteligencia artificial, la super inteligencia o la singularidad de la No-IA. 
+
+
+=== Explosión de inteligencia ===
+La IA fuerte podría llegar a provocar, tal como lo expresa Irving John Good, una “explosión de inteligencia”.​  A pesar de que el progreso tecnológico se ha acelerado, se ha visto limitado por la inteligencia básica del cerebro humano, que no ha tenido, según Paul R. Ehrlich, un cambio significativo durante los últimos milenios.​ Mediante el creciente poder de las computadoras y otras tecnologías, podría ser posible construir una máquina más inteligente que la humanidad.​ El siguiente paso consiste en una inteligencia sobrehumana –inventada ya sea a través de la amplificación de la inteligencia humana o a través de la inteligencia artificial– capaz de aportar una mayor resolución de problemas y habilidades inventivas, y de diseñar una máquina mejor, más inteligente (automejora recursiva). Estas iteraciones de automejora recursiva podrían acelerar, y permitir potencialmente, un enorme cambio cualitativo antes de que los límites superiores impuestos por las leyes de la física o de cálculo teórico fueran fijados.​​​
+
+
+=== Superinteligencia ===
+
+Muchos de los escritores que hablan sobre la singularidad, como Vernor Vinge y Ray Kurzweil,  definen el concepto en términos de la creación tecnológica de superinteligencia. Aunque argumentan que es difícil o imposible para los seres humanos de hoy en día predecir cómo será la vida de los seres humanos en un mundo post-singularidad.​​​ 
+Vernor Vinge hizo una analogía entre la ruptura de nuestra capacidad de predecir lo que sucedería después del desarrollo de la superinteligencia y la ruptura de la capacidad predictiva de la física moderna en la singularidad del espacio-tiempo, más allá del horizonte de sucesos de un agujero negro.​ El autor y otros destacados escritores declaran específicamente que sin la superinteligencia, los cambios que produciría este acontecimiento no se podrían calificar como una verdadera singularidad.​
+
+
+=== Singularidad de la No-IA ===
+Algunos autores utilizan "la singularidad" de una manera más amplia para referirse a los cambios radicales en nuestra sociedad, provocados por las nuevas tecnologías como la nanotecnología molecular.​​​ Muchos autores también vinculan la singularidad de las observaciones del crecimiento exponencial de diversas tecnologías (con la Ley de Moore, que es el ejemplo más prominente). Con el uso de tales observaciones como base para la predicción de la singularidad, es probable que suceda en algún momento del siglo 21.​​
+
+
+=== Singularidad biotecnológica ===
+Dentro de transhumanismo diversos autores han hipotetizado sobre la medicina regenerativa para perseguir la hiperlongevidad prolongada. Futurólogos como Aubrey de Grey han teorizado sobre la singularidad enfocada en la biología humana a través de indicadores como la denominada velocidad de escape de la longevidad (LEV en sus iniciales en inglés), que define un momento hipotético en el que los avances médicos permiten prolongar indefinidamente la vida humana al ritmo que envejecemos o más rápido.​ La consecuencia sería que el envejecimiento dejaría de ser una causa inevitable de muerte para quienes reciben terapias de rejuvenecimiento avanzadas.
+
+
+== Verosimilitud ==
+No existe entre los expertos unanimidad acerca de la total factibilidad de este acontecimiento.
+El investigador Gary Marcus afirma que «prácticamente todo el mundo en el campo de la IA cree que las máquinas algún día superarán a los humanos y en cierto nivel, la única diferencia real entre los entusiastas y los escépticos es un marco de tiempo».​ Pero por otro lado, gran cantidad de tecnólogos y académicos afirman que la singularidad tecnológica está en pausa, incluyendo a Paul Allen, Jeff Hawkins, John Holland, Jaron Lanier, y Gordon Moore, cuya ley de Moore se cita a menudo en apoyo del concepto.​​​
+
+
+=== Causa probable: el crecimiento exponencial ===
+
+El crecimiento exponencial de la tecnología informática sugerido por la Ley de Moore es comúnmente citado como una razón para esperar una singularidad en un futuro relativamente próximo. El informático y futurista Hans Moravec propuso en un libro de 1998​ que la curva de crecimiento exponencial podría extenderse de nuevo a través de tecnologías de computación previas al circuito integrado. El futurista Ray Kurzweil postula una ley de rendimientos acelerados, en el que la velocidad del cambio tecnológico aumenta de manera exponencial​ la generalización de la ley de Moore al igual que en la propuesta de Moravec. A esto se le suma la tecnología de materiales específicamente aplicada a la nanotecnología, la tecnología médica y otras.​
+Entre 1986 y 2007, la capacidad específica de la aplicación de las máquinas para computar la información per cápita, se ha duplicado cada 14 meses; la capacidad per cápita de ordenadores de uso general en el mundo se ha duplicado cada 18 meses; la capacidad mundial de telecomunicaciones per cápita se duplicó cada 34 meses; y la capacidad de almacenamiento del mundo per cápita se duplicó cada 40 meses.​
+Al igual que otros autores, Kurzweil se reserva el término "singularidad" para definir un rápido aumento de la inteligencia, a diferencia de otras tecnologías como, por ejemplo, la escritura: «La Singularidad nos permitirá trascender las limitaciones de nuestros cuerpos y cerebros biológicos».
+No habrá distinción, después de la Singularidad, entre el ser humano y la máquina".​ Se cree que el "diseño del cerebro humano, aunque no es sencillo, es no obstante un billón de veces más simple de lo que parece, debido a la masiva redundancia".​ Según Kurzweil, la razón por la que el cerebro tiene una calidad desordenada e impredecible es porque, como la mayoría de los sistemas biológicos, es un "fractal probabilístico".​
+
+
+=== Cambio acelerado ===
+
+Algunos defensores de la singularidad argumentan su inevitabilidad mediante la extrapolación de las tendencias del pasado, en especial las relativas en el acortamiento de la brecha entre las mejoras y la tecnología. 
+Hawkins (1983) escribe que "mindsteps", cambios dramáticos e irreversibles a paradigmas o visiones del mundo, se están acelerando en la frecuencia cuantificada en su ecuación de la misma. Cita los inventos de la escritura, la matemática y la informática como ejemplos sobre tales cambios.
+El análisis de Kurzweil a partir de la ley de rendimientos o retornos acelerados (del inglés Law of Accelerating Returns) identifica que cada vez que la tecnología se acerca a una barrera, las nuevas tecnologías la superarán.  Presumiblemente, una singularidad tecnológica llevaría a un rápido desarrollo de una civilización Kardashev Tipo I, la cual ha logrado el dominio de los recursos de su planeta de origen.​
+Peligros frecuentemente citados incluyen a los asociados comúnmente con la nanotecnología molecular y la ingeniería genética. Estas amenazas son los principales problemas para los defensores y críticos de la singularidad, que fueron objeto de análisis en el artículo de la revista Wired de Bill Joy "Por qué el futuro no nos necesita" (“Why the future doesn’t need us”)​
+La Acceleration Studies Foundation (al español, Fundación de Estudios de Aceleración), una fundación educativa sin fines de lucro fundada por John Smart, dedicada a la divulgación, la educación, la investigación y a la defensa en relación con la aceleración del cambio.​  En ella se produce la conferencia sobre la aceleración del cambio (Accelerating Change) en la Universidad de Stanford.  Además, mantiene el sitio educativo Acceleration Watch.
+Los avances recientes, como la producción en masa del grafeno utilizando mezcladores modificados de cocina (2014) y los superconductores de alta temperatura basados en metamateriales, podrían permitir supercomputadoras que utilizarían tanta energía como un microprocesador del tipo Core I7 (45W) y podrían alcanzar la misma potencia de cálculo como el sistema de IBM Blue Gene/L.​​
+
+
+== Oposición ==
+Son varios los críticos que están completamente en desacuerdo sobre el acontecimiento singularidad, afirmando que ningún equipo o máquina podrían alcanzar la inteligencia humana.​
+El científico canadiense Steven Pinker declaró en 2008:
+
+ 
+
+Por otro lado, el científico alemán Schmidhuber (2006) sugiere diferencias en la memoria de los acontecimientos recientes y lejanos para crear una ilusión de la aceleración del cambio, y que tales fenómenos pueden ser responsables de las predicciones apocalípticas del pasado.
+
+
+=== Sobre la economía ===
+El investigador futurista Martin Ford postula que antes de la singularidad podría ocurrir que ciertos trabajos rutinarios fuesen automatizados, lo que provocaría un desempleo masivo y la caída de la demanda del consumidor, por lo que esto destruiría el incentivo para invertir en las tecnologías necesarias para que se lleve a cabo la singularidad.​
+El escritor estadounidense Jaron Lanier, también habla en torno a la tecnología, refutando la idea de que la singularidad es inevitable. Postula que la tecnología se está creando a sí misma y no es un proceso en el anonimato. Afirma que la única razón para creer en la acción humana sobre la tecnología es que pueda tener una economía en donde las personas ganen su propio camino e inventen sus propias vidas; si se estructura una sociedad sin hacer énfasis en la acción humana individual, sería lo mismo que negar a las personas influyentes la dignidad y la autodeterminación. "Singularidad como una celebración de mal gusto y mala política".​
+En El Progreso de la Informática (en inglés, The Progress of Computing), el economista estadounidense, William Nordhaus argumentó que hasta 1940, los equipos siguieron el crecimiento lento de la economía industrial tradicional, rechazando así las extrapolaciones de la ley de Moore a las computadoras del siglo 19.​
+Andrew Kennedy, por otra parte, en su artículo de 2006 para la Sociedad Interplanetaria Británica discute el cambio y el crecimiento en las velocidades de los viajes espaciales,​ declaró que aunque el crecimiento global a largo plazo es inevitable, este es pequeño e incorpora subidas y bajadas.  Señaló además que "Las nuevas tecnologías siguen las leyes del uso de la energía y la información de difusión conocidas y están obligados a conectarse con los que existen. Notables descubrimientos teóricos, si terminan siendo utilizados totalmente, lograrían desempeñar su papel en el mantenimiento de la tasa de crecimiento: y que no hacen de su curva trazada... redundante". Afirmó que el crecimiento exponencial no es predictor de sí mismo, e ilustra esto con ejemplos como la teoría cuántica.
+
+
+=== Retroceso tecnológico ===
+El geógrafo Jared Diamond habla de un retroceso tecnológico que imposibilitará la singularidad. Sostiene que cuando las culturas autolimitantes superen la capacidad de carga sostenible de su entorno, y el consumo de los recursos estratégicos (madera, suelos o agua) crearán una retroalimentación positiva deletérea repetitiva que conduciría finalmente al colapso social.​ A esta misma idea de retroceso tecnológico se le suman los físicos Theodore Modis​​ y Jonathan Huebner.​ Ellos admiten que la invocación tecnológica aumenta pero esta en descenso por la subida de las frecuencias de reloj de las computadoras que está retrasándose con relación a la predicción de Moore en cuanto a que la densidad del circuito sigue manteniéndose con un aumento exponencial. Esto es debido a la excesiva acumulación de calor desde el chip, que no puede disipar lo suficientemente rápido para evitar que el chip se derrita cuando se opera a altas velocidades. Los avances en la velocidad pueden ser posibles en el futuro, en virtud de más diseños de CPU energéticamente eficientes y procesadores de multi-celdas.​ Mientras que Kurzweil utiliza los recursos y trabajos de Modis, alrededor de la aceleración del cambio, Modis se distanció de la tesis de Kurzweil de una "singularidad tecnológica", alegando que carece de rigor científico.​
+Finalmente, el empresario estadounidense Paul Allen argumenta lo contrario sobre los retornos acelerados, en concreto se refiere al "Freno de la complejidad".​  Afirma que la ciencia más avanzada hacia la comprensión hace que la inteligencia se haga más difícil, y sería para hacer progresos adicionales. Un estudio sobre la cantidad de patentes muestra que la creatividad humana no muestra retornos acelerados, tal y como sugiere Joseph Tainter en su artículo “El Colapso de las Sociedades Complejas” (del inglés, The Collapse of Complex Societies),​ una ley de rendimientos decrecientes.
+El número de patentes por cada mil alcanzó su punto máximo en el período de 1850 a 1900, y ha ido disminuyendo desde entonces.​ El crecimiento de la complejidad con el tiempo llega a ser autolimitada, y conduce a un generalizado "colapso general de sistemas".​
+
+
+=== En contra de Kurzweil ===
+Además de las críticas generales del concepto de singularidad, varios críticos han planteado cuestiones en contra de lo que manifestaba como singularidad el científico Raymond Kurzweil. Una línea de crítica es que un gráfico log-log de esta naturaleza se inclina intrínsecamente hacia un resultado en línea recta. Otros identifican un sesgo de selección en los puntos que Kurzweil elige utilizar. Un claro ejemplo de esto lo planteó el biólogo PZ Myers quien señala que muchos de los primeros "eventos" evolutivos fueron detenidos arbitrariamente.​ Kurzweil ha refutado esto, trazando eventos evolutivos de 15 fuentes neutrales, y demostrando que encajan en una línea recta en un gráfico log-log. The Economist se burló de la idea con un gráfico extrapolando el número de hojas en una máquina de afeitar, la cual ha aumentado en los últimos años entre uno hasta cinco, y que aumentará cada vez más rápido hasta el infinito.​
+
+
+=== Otras singularidades ===
+Por otro lado, varios autores proponen otras "singularidades" a través del análisis de las tendencias de la población mundial, el producto interno bruto mundial o la longevidad, entre otros índices. Andrey Korotayev y otros argumentan que las curvas hiperbólicas de crecimiento histórico se le pueden atribuir a los ciclos de retroalimentación que dejaron de afectar a las tendencias mundiales en la década de 1970, y que el crecimiento hiperbólico no debe esperarse en el futuro.​​
+El microbiólogo Joan Slonczewski y el escritor Adam Gopnik argumentan que la Singularidad es un proceso gradual; que como seres humanos gradualmente externalizamos nuestra capacidad a las máquinas,​ que redefinimos esas habilidades como inhumanas, sin darse cuenta de lo poco que queda. Este concepto se denomina Singularidad Mitocondrial.​ La idea se refiere a las mitocondrias, los orgánulos que se desarrollan a partir de bacterias autónomas, pero ahora controlan nuestras células vivas. En el futuro, el "ser humano" dentro del exoesqueleto de la máquina podría existir solo para encenderla.
+
+
+== Riesgos ==
+El acontecimiento singularidad tecnológica para algunos autores y críticos trae muchísimos riesgos para la sociedad. En el 2000, Bill Joy, un tecnólogo prominente y un cofundador de Sun Microsystems, expresó su preocupación por los peligros potenciales de la singularidad.​
+
+
+=== Incertidumbre ===
+El término "singularidad tecnológica" refleja la idea de que tal cambio puede ocurrir de repente, y que es difícil predecir cómo el nuevo mundo resultante operaría.​​ No está claro si una explosión de inteligencia de este tipo sería beneficiosa o perjudicial, o incluso una amenaza existencial.​​ Como el tema no ha sido tratado por los investigadores de inteligencia artificial general, a pesar de que el tema de la inteligencia artificial amigable sea investigada por el Instituto Futuro de la Humanidad (Future of Humanity Institute) y el Instituto para la Singularidad de la Inteligencia artificial (Singularity Institute for Artificial Intelligence), que ahora es el Instituto de Investigación en Inteligencia de la Máquina (Machine Intelligence Research Institute).​
+
+
+=== Implicaciones para la sociedad humana ===
+En febrero de 2009, bajo los auspicios de la Asociación para el Avance de la Inteligencia Artificial (AAAI), Eric Horvitz presidió una reunión de informáticos, investigadores de inteligencia artificial y robótica en Asilomar en Pacific Grove, California. El objetivo fue discutir el posible impacto de la hipotética posibilidad de que los robots podrían llegar a ser autosuficientes y capaces de tomar sus propias decisiones. Discutieron la medida en que las computadoras y los robots podrían ser capaces de adquirir autonomía, y en qué medida podrían utilizar tales habilidades para plantear amenazas o riesgos.
+Algunas máquinas han adquirido diversas formas de semi-autonomía, incluyendo la capacidad de localizar sus propias fuentes de energía y elegir objetivos para atacar con armas. Además, algunos virus informáticos pueden evadir la eliminación y han logrado la "inteligencia de la cucaracha." Los asistentes a la conferencia señalaron que la autoconciencia como se muestra en la ciencia ficción es probablemente poco probable, pero que existen otros riesgos y peligros potenciales.​
+Algunos expertos y académicos han cuestionado el uso de robots para el combate militar, sobre todo cuando a estos robots se les da algún grado de funciones autónomas.​ Un informe de la marina de Estados Unidos indica que, como los robots militares se vuelven más complejos, debería de haber una mayor atención a implicaciones sobre su capacidad de tomar decisiones autónomas.​​ La AAAI ha encargado un estudio para examinar esta cuestión,​ que apunta a programas como el dispositivo de adquisición de idiomas (Language Acquisition Device), que se reivindica para emular la interacción humana.
+
+
+=== Medidas de seguridad - ¿Tecnología amigable? ===
+Por otro lado, algunos apoyan el diseño de la inteligencia artificial amable, lo que significa que los avances que ya se están produciendo con la IA también deben incluir un esfuerzo para que la IA sea intrínsecamente amable y humana.​ De Isaac Asimov, “las Tres Leyes de la Robótica” es uno de los primeros ejemplos de medidas de seguridad propuestas para la IA. Las leyes están destinadas a prevenir que los robots de inteligencia artificial dañen a los seres humanos. En las historias de Asimov, los problemas percibidos con las leyes tienden a surgir como resultado de un malentendido por parte de algún operador humano; los propios robots están simplemente actuando para su mejor interpretación de sus normas. 
+Por ejemplo, en el 2004 el Instituto de Investigación en Inteligencia de la Máquina lanzó una campaña en Internet llamada “3 Leyes inseguras” para crear conciencia sobre los problemas de seguridad de la IA y la insuficiencia de las leyes de Asimov en particular.​
+
+
+== En la cultura popular ==
+El término singularidad y el acontecimiento que este trae se pudo ver en grandes películas, series, novelas, y en muchos formatos más. Todos ellos abordaron de alguna manera este acontecimiento en sus historias.
+
+
+=== Novelas ===
+En 1984, Samuel R. Delany utiliza "fuga cultural" como un recurso argumental en su novela de ciencia ficción Stars in My Pocket Like Grains of Sand; el término fugitivo de complejidad tecnológica y cultural, en efecto, destruye toda la vida en cualquier mundo en el que se trasluce un proceso poco comprendido por los personajes de la novela, y en contra de los que buscan una defensa estable.
+Ni más ni menos, Vernor Vigne también popularizó el concepto en las novelas de ciencia ficción como en “Marooned in Realtime” (1986) y en “A Fire Upon the Deep” (1992). El primero se encuentra en un mundo de rápida aceleración de cambio que lleva a la aparición de más y más tecnologías sofisticadas separadas por intervalos de tiempo cada vez más cortos, hasta que se alcanza un punto más allá de la comprensión humana. Este último comienza con una descripción imaginativa de la evolución de una super inteligencia pasando por una aceleración exponencialmente en etapas de desarrollo que terminan en un poder trascendente, casi omnipotente e insondable por simples humanos. Vinge también implica que el desarrollo no puede detenerse en este nivel.
+En la serie de relatos del escritor estadounidense Isaac Asimov relacionados con Multivac, una supercomputadora, y particularmente en su cuento La última pregunta plantea que ésta es capaz de autocorregirse más eficiente y velozmente de lo que lo pueden hacer técnicos humanos, prescindiendo cada vez más de ellos, y desarrollando en algún momento la capacidad de diseñar y fabricar a su sucesora a partir de la anterior. Llega a un punto donde se fusiona con todas las mentes humanas y es una única voluntad: la AC.
+Los eventos de la yihad butleriana que sirven para dar contexto a la novela Dune de Frank Herbert (1965) y sobre los cuales se centra especifícamente una posterior precuela se originan cuando una máquina, Omnius, alcanza la singularidad.
+La novela de 1979 de James P. Hogan “The Two Faces of Tomorrow” es una descripción explícita de lo que ahora se llama la Singularidad. Un sistema de inteligencia artificial resuelve un problema de excavación en la luna de una manera brillante y novedosa, pero casi mata a un equipo de trabajo en el proceso. Al darse cuenta de que los sistemas se están volviendo demasiado sofisticados y complejos de predecir o dirigir, un equipo científico se propone enseñar a una red informática sofisticada cómo pensar más humanamente. La historia documenta el surgimiento de conciencia en el sistema informático, la pérdida de los seres humanos de control y los intentos fallidos de cerrar el experimento en el que el equipo se defiende desesperadamente a sí mismo, y la inteligencia del ordenador alcance la madurez.
+Al discutir sobre el creciente reconocimiento de la singularidad, Vernor Vinge escribió en 1993 que "fueron los escritores de ciencia ficción quienes sintieron el primer impacto concreto". Además de su propia historia corta "Bookworm, Run”, cuyo protagonista es un chimpancé con la inteligencia aumentada por un experimento del gobierno, cita a la novela “Blood Music” de Greg Bear (1983) como un ejemplo de la singularidad en la ficción.
+El 1996 la novela “Holy Fire” por Bruce Sterling explora algunos de esos temas y postula que un Methuselarity se convertirá en una gerontocracia.
+En la novela de William Gibson de 1984 Neuromante, inteligencias artificiales capaces de mejorar sus propios programas están estrictamente reguladas por la especial "policía de Turing" para asegurarse de que no superan un cierto nivel de inteligencia, y la trama se centra en los esfuerzos de uno de la IA para eludir su control.
+En el cuento de Harlan Ellison “I Have No Mouth, and I Must Scream” (1967), una IA malévola logra omnipotencia.
+
+
+=== Películas ===
+Películas populares en la que las computadoras se vuelven inteligentes y tratan de dominar a la raza humana incluyen Colossus: The Forbin Project; la serie Terminator; La serie Matrix; Transformers, la película de Stanley Kubrick y Arthur C. Clarke, 2001: A Space Odyssey, entre muchas otras.
+Las series de televisión Dr. Who, The 100, Battlestar Galactica, y Star Trek: The Next Generation (que también se adentra en la realidad virtual, la cibernética, formas alternativas de vida, y el posible camino evolutivo de la humanidad) también explora estos temas. De todos ellos, solo cuenta con un verdadero coloso super inteligente.
+
+The Machine. Por el escritor-director Caradog James, sigue a dos científicos que crean la primera inteligencia artificial consciente de sí misma en el mundo durante la Guerra Fría.
+Trascendence. De Wally Pfister, toda su trama se centra en un escenario de despliegue singular en el que logran transferir la consciencia de un humano y cargarla a la red.
+Her. La película de ciencia ficción del 2013 sigue una relación romántica de un hombre con una IA muy inteligente, que con el tiempo aprende a mejorarse a sí misma y crea una explosión de inteligencia.
+Blade Runner y Blade Runner 2049. La adaptación al cine de la novela de Philip K. Dick, “Do Androids Dream of Electric Sheep?”.
+Ex Machina y Tron exploran el concepto de la génesis de las máquinas pensantes y su relación con el impacto en la humanidad.
+Accelerando. De Charles Stross, acelerar el avance de la tecnología es el tema central de esta película.
+Yo, Robot. Vagamente basada en historias de robots de Asimov, una computadora de IA intenta tomar el control completo sobre la humanidad con el propósito de proteger a la humanidad de sí misma, debido a una extrapolación de las Tres Leyes.
+Alien: Covenant. Una película que trata de un viaje hacia un remoto planeta en la galaxia. En la historia se activa un androide nuevo, el cual es una inteligencia artificial. En el viaje descubren que no están solos en dicho planeta, y su objetivo comienza a ser tratar de vivir en ese ambiente peligroso y hostil.
+
+
+=== Otros ===
+El documental Transcendent Man, basado en The Singularity Is Near, cubre la búsqueda de Kurzweil para revelar lo que él cree que es el destino de la humanidad. Otro documental, Plug & Pray, se centra en la promesa, los problemas y la ética de la inteligencia artificial y la robótica, con Joseph Weizenbaum y Kurzweil como los temas principales de la película.​ Un documental de 2012 titulado simplemente The Singularity cubre tanto perspectivas futuristas como contra-futuristas.​
+En la música, álbum The Singularity (Fase I: Neohumanity) por la banda sueca Scar Symmetry es la primera parte del álbum conceptual de tres partes sobre la base de los acontecimientos de la singularidad.
+Existe el cómic web “Cuestionable Content”, que tiene lugar en mundo post-singularidad con un "IA amable".​
+
+
+=== Autores ===
+Los autores notables que abordan temas relacionados con la singularidad incluyen Robert Heinlein, Karl Schroeder, Greg Egan, Ken MacLeod, Rudy Rucker, David Brin, Iain M. Banks, Neal Stephenson, de Tony Ballantyne, Bruce Sterling, Dan Simmons, Damien Broderick, Fredric Brown, Jacek Dukaj, Stanislaw Lem, Nagaru Tanigawa, Douglas Adams, Michael Crichton, e Ian McDonald.
+
+
+== Véase también ==
+Revolución tecnológica
+Inteligencia artificial
+Tecnologías emergentes
+
+
+== Notas ==
+
+
+== Referencias ==

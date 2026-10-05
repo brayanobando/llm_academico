@@ -1,0 +1,20 @@
+Word embedding o encaje léxico es el nombre de un conjunto de modelos de lenguaje y técnicas de aprendizaje en procesamiento del lenguaje natural (PLN) en donde las palabras o frases del lenguaje natural son representadas como vectores de números reales. Conceptualmente implica el encaje matemático de un espacio con una dimensión por palabra a un espacio vectorial continuo con menos dimensiones.
+Algunos de los métodos para generar este mapeo o representación son las redes neuronales; la reducción de dimensionalidad con matrices de co-ocurrencia de palabras; los modelos probabilísticos, y la representación explícita en términos del contexto en el cual estas palabras figuran.​​​​​​
+El Word y phrase embeddings (para palabras y frases respectivamente), utilizados de forma subyacente como forma de representación, demostraron aumentar el rendimiento de tareas en el procesamiento del lenguaje natural (NLP) como en el análisis sintáctico​ y análisis de sentimiento.​
+
+
+== Desarrollo de la técnica ==
+En lingüística la técnica de word embeddings fue discutida en el área de investigación de semántica distribucional. Apunta para cuantificar y categorizar las semejanzas semánticas entre elementos lingüísticos basándose en sus propiedades distribucionales en muestras grandes de dato de lengua. La idea subyacente que "una palabra está caracterizada por la compañía que mantiene" estuvo popularizado por J. R. Firth.​
+Hay muchas ramas y muchos grupos de desarrollo trabajando en este tema. En 2013, un equipo en Google dirigido por Tomas Mikolov creó word2vec, un paquete de herramientas el cual puede entrenar un modelo de espacio vectorial más rápidamente que las aproximaciones anteriores.​ La mayoría de las nuevas técnicas utilizan una arquitectura de red neuronal en vez de los modelos más tradicionales como n-gram y aprendizaje no supervisado.​
+
+
+== Software ==
+Entre el software para entrenar y utilizar word embedding se halla word2vec, GloVe de Stanford, Gensim,​ Indra​ y Deeplearning4j.​ Tanto el análisis de Componente principal (PCA en inglés) como T-Distributed Stochastic Neighbour Embedding (t-SNE) se utilizan para reducir la dimensionalidad del espacio vectorial de palabras y visualizar el encaje de palabras en grupos (clusters).​
+
+
+== Véase también ==
+Incrustación de vecinos estocásticos distribuidos en t (t-SNE)
+Tf-idf
+
+
+== Referencias ==

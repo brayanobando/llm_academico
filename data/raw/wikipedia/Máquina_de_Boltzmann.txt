@@ -1,0 +1,1250 @@
+Una máquina de Boltzmann es un tipo de red neuronal recurrente estocástica. El nombre le fue dado por los investigadores Geoffrey Hinton y Terry Sejnowski. Las máquinas de Boltzmann pueden considerarse como la contrapartida estocástica y generativa de las redes de Hopfield. Fueron de los primeros tipos de redes neuronales capaces de aprender mediante representaciones internas, son capaces de representar y (con tiempo suficiente) resolver complicados problemas combinatorios. Sin embargo, debido a una serie de cuestiones que se abordan más adelante, las máquinas de Boltzmann sin restricciones de conectividad no han demostrado ser útiles para resolver los problemas que se dan en la práctica en el aprendizaje o inferencia de las máquinas. Aun así resultan interesantes en la teoría debido a la localización y a la naturaleza hebbiana de su algoritmo de entrenamiento, así como por su paralelismo y por la semejanza de su dinámica a fenómenos físicos sencillos. Si se limita la conectividad, el aprendizaje puede ser lo bastante eficaz como para ser útil en la resolución de problemas prácticos.
+En mecánica estadística se denominan distribuciones de Boltzmann y son utilizadas en funciones de muestreo.
+
+
+== Estructura ==
+Las máquinas de Boltzmann, al igual que las redes de Hopfield, poseen unidades con una "energía" definida para la red. También dispone de unidades binarias, pero a diferencia de las redes de Hopfield, las unidades de una máquina de Boltzmann son estocásticas. La energía global, 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+, en una máquina de Boltzmann es idéntica en forma a la de una red de Hopfield:
+
+  
+    
+      
+        E
+        =
+        −
+        
+          ∑
+          
+            i
+            <
+            j
+          
+        
+        
+          w
+          
+            i
+            j
+          
+        
+        
+        
+          s
+          
+            i
+          
+        
+        
+        
+          s
+          
+            j
+          
+        
+        +
+        
+          ∑
+          
+            i
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+        
+          s
+          
+            i
+          
+        
+      
+    
+    {\displaystyle E=-\sum _{i<j}w_{ij}\,s_{i}\,s_{j}+\sum _{i}\theta _{i}\,s_{i}}
+  
+
+Donde:
+
+  
+    
+      
+        
+          w
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle w_{ij}}
+  
+ es la fuerza de conexión entre la unidad 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+ y la unidad 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+.
+
+  
+    
+      
+        
+          s
+          
+            i
+          
+        
+      
+    
+    {\displaystyle s_{i}}
+  
+ es el estado, 
+  
+    
+      
+        
+          s
+          
+            i
+          
+        
+        ∈
+        {
+        0
+        ,
+        1
+        }
+      
+    
+    {\displaystyle s_{i}\in \{0,1\}}
+  
+, de la unidad 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+.
+
+  
+    
+      
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \theta _{i}}
+  
+ es el umbral de la unidad 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+.
+Las conexiones de una máquina de Boltzmann tienen dos limitaciones:
+
+Ninguna unidad se conecta a sí misma.
+
+  
+    
+      
+        
+          w
+          
+            i
+            j
+          
+        
+        =
+        
+          w
+          
+            j
+            i
+          
+        
+        
+        ∀
+        i
+        ,
+        j
+      
+    
+    {\displaystyle w_{ij}=w_{ji}\qquad \forall i,j}
+  
+. (Todas las conexiones son simétricas.)
+
+
+== Probabilidad de estado de una unidad ==
+El incremento de energía global que resulta de una sola unidad 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ siendo 0 (off) frente a 1 (on), expresada como 
+  
+    
+      
+        Δ
+        
+          E
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \Delta E_{i}}
+  
+, viene dada por la expresión:
+
+  
+    
+      
+        Δ
+        
+          E
+          
+            i
+          
+        
+        =
+        
+          ∑
+          
+            j
+          
+        
+        
+          w
+          
+            i
+            j
+          
+        
+        
+        
+          s
+          
+            j
+          
+        
+        −
+        
+          θ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \Delta E_{i}=\sum _{j}w_{ij}\,s_{j}-\theta _{i}}
+  
+
+Esto se puede expresar como la diferencia de energía entre dos estados:
+
+  
+    
+      
+        Δ
+        
+          E
+          
+            i
+          
+        
+        =
+        
+          E
+          
+            i=off
+          
+        
+        −
+        
+          E
+          
+            i=on
+          
+        
+      
+    
+    {\displaystyle \Delta E_{i}=E_{\text{i=off}}-E_{\text{i=on}}}
+  
+
+A continuación sustituimos la energía para cada Estado con su probabilidad relativa de acuerdo con el factor de Boltzmann (la propiedad de la distribución de Boltzmann en la cual la energía de un estado es proporcional al menos logaritmo de probabilidad de dicho estado):
+
+  
+    
+      
+        Δ
+        
+          E
+          
+            i
+          
+        
+        =
+        −
+        
+          k
+          
+            B
+          
+        
+        
+        T
+        
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i=off
+          
+        
+        )
+        −
+        −
+        
+          k
+          
+            B
+          
+        
+        
+        T
+        
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i=on
+          
+        
+        )
+      
+    
+    {\displaystyle \Delta E_{i}=-k_{B}\,T\,\ln(p_{\text{i=off}})--k_{B}\,T\,\ln(p_{\text{i=on}})}
+  
+
+Donde 
+  
+    
+      
+        
+          k
+          
+            B
+          
+        
+      
+    
+    {\displaystyle k_{B}}
+  
+ es la constante de Boltzmann y se engloba dentro de la noción artificial de temperatura 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+. A continuación se reordenan los términos considerando que la probabilidad de que una unidad esté en on y en off es uno:
+
+  
+    
+      
+        
+          
+            
+              Δ
+              
+                E
+                
+                  i
+                
+              
+            
+            T
+          
+        
+        =
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i=on
+          
+        
+        )
+        −
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i=off
+          
+        
+        )
+      
+    
+    {\displaystyle {\frac {\Delta E_{i}}{T}}=\ln(p_{\text{i=on}})-\ln(p_{\text{i=off}})}
+  
+
+  
+    
+      
+        
+          
+            
+              Δ
+              
+                E
+                
+                  i
+                
+              
+            
+            T
+          
+        
+        =
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i=on
+          
+        
+        )
+        −
+        ln
+        ⁡
+        (
+        1
+        −
+        
+          p
+          
+            i=on
+          
+        
+        )
+      
+    
+    {\displaystyle {\frac {\Delta E_{i}}{T}}=\ln(p_{\text{i=on}})-\ln(1-p_{\text{i=on}})}
+  
+
+  
+    
+      
+        
+          
+            
+              Δ
+              
+                E
+                
+                  i
+                
+              
+            
+            T
+          
+        
+        =
+        ln
+        ⁡
+        
+          (
+          
+            
+              
+                p
+                
+                  i=on
+                
+              
+              
+                1
+                −
+                
+                  p
+                  
+                    i=on
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\Delta E_{i}}{T}}=\ln \left({\frac {p_{\text{i=on}}}{1-p_{\text{i=on}}}}\right)}
+  
+
+  
+    
+      
+        −
+        
+          
+            
+              Δ
+              
+                E
+                
+                  i
+                
+              
+            
+            T
+          
+        
+        =
+        ln
+        ⁡
+        
+          (
+          
+            
+              
+                1
+                −
+                
+                  p
+                  
+                    i=on
+                  
+                
+              
+              
+                p
+                
+                  i=on
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle -{\frac {\Delta E_{i}}{T}}=\ln \left({\frac {1-p_{\text{i=on}}}{p_{\text{i=on}}}}\right)}
+  
+
+  
+    
+      
+        −
+        
+          
+            
+              Δ
+              
+                E
+                
+                  i
+                
+              
+            
+            T
+          
+        
+        =
+        ln
+        ⁡
+        
+          (
+          
+            
+              
+                1
+                
+                  p
+                  
+                    i=on
+                  
+                
+              
+            
+            −
+            1
+          
+          )
+        
+      
+    
+    {\displaystyle -{\frac {\Delta E_{i}}{T}}=\ln \left({\frac {1}{p_{\text{i=on}}}}-1\right)}
+  
+
+  
+    
+      
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                
+                  Δ
+                  
+                    E
+                    
+                      i
+                    
+                  
+                
+                T
+              
+            
+          
+          )
+        
+        =
+        
+          
+            1
+            
+              p
+              
+                i=on
+              
+            
+          
+        
+        −
+        1
+      
+    
+    {\displaystyle \exp \left(-{\frac {\Delta E_{i}}{T}}\right)={\frac {1}{p_{\text{i=on}}}}-1}
+  
+
+Finalmente podemos resolver para 
+  
+    
+      
+        
+          p
+          
+            i=on
+          
+        
+      
+    
+    {\displaystyle p_{\text{i=on}}}
+  
+, la probabilidad de que la unidad 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ esté en on. 
+
+  
+    
+      
+        
+          p
+          
+            i=on
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              +
+              exp
+              ⁡
+              (
+              −
+              
+                
+                  
+                    Δ
+                    
+                      E
+                      
+                        i
+                      
+                    
+                  
+                  T
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle p_{\text{i=on}}={\frac {1}{1+\exp(-{\frac {\Delta E_{i}}{T}})}}}
+  
+
+Donde el escalar 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ se refiere a cómo está la temperatura en el sistema. Esta relación es la fuente de la función logística que se encuentra en las expresiones de probabilidad de las distintas variantes de la máquina de Boltzmann.
+
+
+== Estado de equilibrio ==
+La red se ejecuta repetidamente escogiendo una unidad y estableciendo su estado de acuerdo con la fórmula anterior. Después de ejecutarse durante suficiente tiempo a una cierta temperatura, la probabilidad del estado global de la red va a depender sólo del estado global de energía, de acuerdo a una distribución de Boltzmann. Esto significa que los logaritmos de las probabilidades de los estados globales se volverán lineales en sus energías. Esta relación se cumple cuando la máquina está "en equilibrio termodinámico", lo que significa que la distribución de probabilidad de los estados globales ha convergido. Si empezamos a hacer funcionar la red a alta temperatura, y desciende gradualmente hasta llegar a un equilibrio termodinámico a una baja temperatura, estaremos garantizando la convergencia a una distribución donde el nivel de energía fluctúe alrededor del mínimo global. Este proceso se llama Simulated annealing (SA) o templado simulado.
+Para entrenar a la red de modo que la posibilidad de que converja en un estado global se ajuste a una distribución externa, habrá que establecer los pesos para que los estados globales con mayor probabilidad tengan la energía más baja. Para esto se usa el siguiente método de entrenamiento.
+
+
+== Entrenamiento ==
+Las unidades de la máquina de Boltzmann se dividen en unidades "visibles", V, y unidades "ocultas", H. Las primeras son las que recibirán información del "entorno", por ejemplo la serie de entrenamiento podría ser un conjunto de vectores binarios aplicado sobre las unidades V. La distribución en el conjunto de entrenamiento se denota 
+  
+    
+      
+        
+          P
+          
+            +
+          
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle P^{+}(V)}
+  
+. 
+En las máquinas de Boltzmann, como ya se ha dicho, la distribución de los estados globales convergen hasta un equilibrio termodinámico. Después de que marginalizar por encima de las unidades visibles 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+, la convergencia de la distribución se puede denotar como 
+  
+    
+      
+        
+          P
+          
+            −
+          
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle P^{-}(V)}
+  
+. 
+Nuestro objetivo es aproximar la distribución "real" 
+  
+    
+      
+        
+          P
+          
+            +
+          
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle P^{+}(V)}
+  
+ a la expresión 
+  
+    
+      
+        
+          P
+          
+            −
+          
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle P^{-}(V)}
+  
+, la cual es producida eventualmente por la máquina. Para medir la similitud entre las dos distribuciones se usa la divergencia de Kullback-Leibler, 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+:
+
+  
+    
+      
+        G
+        =
+        
+          ∑
+          
+            v
+          
+        
+        
+          
+            P
+            
+              +
+            
+          
+          (
+          v
+          )
+          ln
+          ⁡
+          
+            (
+            
+              
+                
+                  
+                    P
+                    
+                      +
+                    
+                  
+                  (
+                  v
+                  )
+                
+                
+                  
+                    P
+                    
+                      −
+                    
+                  
+                  (
+                  v
+                  )
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle G=\sum _{v}{P^{+}(v)\ln \left({\frac {P^{+}(v)}{P^{-}(v)}}\right)}}
+  
+
+Donde el sumatorio es superior a todos los posibles estados de 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+. 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ varía en función de los pesos, ya que estos determinan la energía de un estado, y la energía a su vez determina 
+  
+    
+      
+        
+          P
+          
+            −
+          
+        
+        (
+        v
+        )
+      
+    
+    {\displaystyle P^{-}(v)}
+  
+, según la distribución de Boltzmann. Por lo tanto, podemos utilizar un algoritmo de descenso de gradiente sobre 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ para un peso determinado, 
+  
+    
+      
+        
+          w
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle w_{ij}}
+  
+, que se cambiará restando la derivada parcial de 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ con respecto al peso. 
+El entrenamiento de una máquina de Boltzmann consta de dos fases, que se van cambiando iterativamente entre ellas. Una es la fase "positiva" en que los estados de las unidades visibles se sujetan a un vector de estado binario particular, muestra del conjunto de entrenamiento (de acuerdo a 
+  
+    
+      
+        
+          P
+          
+            +
+          
+        
+      
+    
+    {\displaystyle P^{+}}
+  
+). La otra es la fase "negativa", en la que a la red se le permite ejecutarse libremente, es decir, los estados de las unidades no están determinados por datos externos. Sorprendentemente, el gradiente con respecto a un peso determinado, 
+  
+    
+      
+        
+          w
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle w_{ij}}
+  
+, está dado por una ecuación muy sencilla (demostrada por Ackley et al.):
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                G
+              
+            
+            
+              ∂
+              
+                
+                  w
+                  
+                    i
+                    j
+                  
+                
+              
+            
+          
+        
+        =
+        −
+        
+          
+            1
+            R
+          
+        
+        [
+        
+          p
+          
+            i
+            j
+          
+          
+            +
+          
+        
+        −
+        
+          p
+          
+            i
+            j
+          
+          
+            −
+          
+        
+        ]
+      
+    
+    {\displaystyle {\frac {\partial {G}}{\partial {w_{ij}}}}=-{\frac {1}{R}}[p_{ij}^{+}-p_{ij}^{-}]}
+  
+
+Donde:
+
+  
+    
+      
+        
+          p
+          
+            i
+            j
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle p_{ij}^{+}}
+  
+ es la probabilidad de que tanto las unidades i como j estén activadas cuando la máquina esté en equilibrio durante la fase positiva.
+
+  
+    
+      
+        
+          p
+          
+            i
+            j
+          
+          
+            −
+          
+        
+      
+    
+    {\displaystyle p_{ij}^{-}}
+  
+ es la probabilidad de que tanto las unidades i como j estén activadas cuando la máquina esté en equilibrio durante la fase negativa.
+
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ denota la tasa de aprendizaje.
+Este resultado se deduce del hecho de que en el equilibrio termodinámico la probabilidad 
+  
+    
+      
+        
+          P
+          
+            −
+          
+        
+        (
+        s
+        )
+      
+    
+    {\displaystyle P^{-}(s)}
+  
+ de cualquier estado global 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ cuando la red está funcionando libremente viene dada por la distribución de Boltzmann (de ahí el nombre de "máquina de Boltzmann"). 
+Sorprendentemente, esta regla de aprendizaje es bastante plausible desde el punto de vista biológico por el hecho de que la única información necesaria para cambiar los pesos es proporcionada de forma "local". Es decir, la conexión (o sinapsis usando terminología biológica) no necesita más información que la que suministran las dos neuronas que conecta. Esto es mucho más realista biológicamente hablando que lo que sucede con la información que necesitan muchos otros algoritmos de entrenamiento de redes neuronales, como por ejemplo el de retropropagación.
+En el entrenamiendo de una máquina de Boltzmann no se utiliza el algoritmo EM, muy utilizado en Aprendizaje automático. Minimizar la divergencia KL, es equivalente a maximizar el logaritmo de la verosimilitud de los datos. Por lo tanto, el procedimiento de entrenamiento lleva a cabo un gradiente de ascenso sobre el logaritmo de verosimilitud de los datos observados. Esto contrasta con el algoritmo EM, donde la distribución posterior de los nodos ocultos debe ser calculada antes de la maximización de la verosimilitud llevada a cabo en el paso M.
+En entrenamiento de sesgos es similar, pero usa sólo la actividad de un solo nodo:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                G
+              
+            
+            
+              ∂
+              
+                
+                  θ
+                  
+                    i
+                  
+                
+              
+            
+          
+        
+        =
+        −
+        
+          
+            1
+            R
+          
+        
+        [
+        
+          p
+          
+            i
+          
+          
+            +
+          
+        
+        −
+        
+          p
+          
+            i
+          
+          
+            −
+          
+        
+        ]
+      
+    
+    {\displaystyle {\frac {\partial {G}}{\partial {\theta _{i}}}}=-{\frac {1}{R}}[p_{i}^{+}-p_{i}^{-}]}
+  
+
+
+== Problemas en la aplicación práctica ==
+Las máquinas de Boltzmann presentan un grave problema práctico, y es que el aprendizaje parece dejar de producirse correctamente cuando la máquina se amplía a algo más grande que una máquina trivial. Esto se debe a una serie de efectos, los más importantes de los cuales son:
+
+El tiempo que la máquina necesita para recopilar las estadísticas de equilibrio crece exponencialmente con el tamaño de la máquina, y con la magnitud de la fuerza de las conexiones.
+Las fuerzas de las conexiones son más flexibles cuando las unidades conectadas tienen probabilidades de activación intermedias entre cero y uno, llevando a la llamada trampa de varianza. El efecto neto es que el ruido hace que las fuerzas de las conexiones se vuelvan aleatorias hasta que las actividades se saturan.
+
+
+== Máquina de Boltzmann restringida ==
+Aunque el aprendizaje es por lo general poco práctico en las máquinas de Boltzmann, puede llegar a ser muy eficiente en una arquitectura llamada Máquina de Boltzmann restringida o MBR (RBM en inglés: Restricted Boltzmann Machine). Esta arquitectura no permite las conexiones entre las unidades de las capas ocultas. Después de entrenar a una MBR las actividades de sus unidades ocultas pueden ser tratadas como datos para el entrenamiento de una MBR de nivel superior. Este método de apilamiento MBR hace que sea posible entrenar muchas capas de unidades ocultas de manera eficiente y que cada nueva capa sea añadida para mejorar el modelo generativo principal.
+
+
+== Historia ==
+La máquina de Boltzmann es una versión del método de Montecarlo de las redes de Hopfield.
+Se cree que la idea de utilizar modelos de Ising para la inferencia fue descrita por primera vez por Geoffrey E. Hinton y Terrence J. Sejnowski​​
+La misma idea de aplicar el modelo de Ising con el muestreo de Gibbs templado también está presente en el proyecto de Douglas Hofstadter Copycat.​​
+Ideas similares (cambiando el signo de la función de energía) también se pueden encontrar en la "Teoría de la Armonía" de Paul Smolensky.
+La analogía explícita extraída de la mecánica estadística en la formulación de la máquina de Boltzmann ha llevado a la utilización de una terminología tomada de la física (por ejemplo, "energía" en lugar de "armonía"), que se ha convertido en estándar en el campo. La adopción generalizada de esta terminología puede haber sido alentada por el hecho de que su uso ha llevado a importar una variedad de conceptos y métodos tomados de la mecánica estadística. Sin embargo, no hay ninguna razón para pensar que las diversas propuestas para el uso de templado simulado para la inferencia descritas anteriormente no sean independientes. (Helmholtz, hizo una analogía similar en los albores de la psicofísica.)
+Los modelos de Ising se consideran en la actualidad como un caso especial de los campos aleatorios de Markov, que encuentran una amplia aplicación en diversos campos, como los de la lingüística, robótica, visión artificial e inteligencia artificial.
+
+
+== Véase también ==
+Máquina de Boltzmann restringida
+
+
+== Bibliografía ==
+Fort, J. C.; Gerschenfeld, A. (1988). «El nacimiento de un ordenador neuronal: La máquina de Boltzmann». Mundo Científico 8: 614. 
+Ackley, D. H.; Hinton, G. E.; Sejnowski, T. J. (1985). «A Learning Algorithm for Boltzmann Machines». Cognitive Science (en inglés) 9: 147-169. Archivado desde el original el 5 de julio de 2010. 
+Hinton, G. E.; Sejnowski, T. J. (1986). «Learning and Relearning in Boltzmann Machines».  En D. E. Rumelhart, J. L. McClelland, and the PDP Research Group, ed. Parallel Distributed Processing: Explorations in the Microstructure of Cognition. Volume 1: Foundations (en inglés) (Cambridge: MIT Press): 282-317. Archivado desde el original el 5 de julio de 2010.  
+Hinton, G. E. (2002). «Training Products of Experts by Minimizing Contrastive Divergence». Neural Computation (en inglés) 14: 1771-1800. 
+Hinton, G. E.; Osindero, S.; Teh Y. (2006). «A fast learning algorithm for deep belief nets». Neural Computation (en inglés) 18: 1527-1554. 
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Artículo en Scholarpedia por Hinton sobre las máquinas de Boltzmann (en inglés)
+Discurso de Geoffrey Hinton en Google en YouTube (en inglés)

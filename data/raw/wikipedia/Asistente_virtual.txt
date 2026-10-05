@@ -1,0 +1,95 @@
+Un asistente virtual es un agente de software que ayuda a usuarios de sistemas computacionales, automatizando y realizando tareas con la mínima interacción hombre-máquina. La interacción que se da entre un asistente virtual y una persona, debe ser natural, una persona se comunica usando la voz y el asistente virtual lo procesa, interpreta y responde de la misma manera.
+El término chatterbot, viene de la unión de dos vocablos ingleses: “chatter”, cuyo significado es “hablador”, y “bot”, que sirve como abreviatura de la palabra inglesa adoptada también por nuestro idioma, “robot”.​
+A veces el término bot conversacional (en inglés: chatbot) se utiliza para referirse a los asistentes virtuales en general o específicamente a aquellos a los que se accede por chat en línea (o en algunos casos, programas de chat en línea que son para entretenimiento y no para propósitos útiles).
+Hacia 2017, las capacidades y el uso de los asistentes virtuales se está expandiendo rápidamente, con nuevos productos entrando al mercado. Una encuesta en línea en mayo de 2017 encontró el más utilizado en los Estados Unidos fueron Siri de Apple (34%), Google Assistant (19%), Amazon Alexa (6%) y Microsoft Cortana (4%).​ El uso de altavoces inteligentes alimentados por estos asistentes es radicalmente diferente; Apple ni siquiera anunció su altavoz inteligente hasta junio de 2017. El asistente virtual M de Facebook esperaba estar disponible para cientos de millones en Facebook Messenger en 2017. Apple y Google tienen grandes bases instaladas de usuarios en teléfonos inteligentes y Microsoft tiene una gran base instalada de computadoras personales basadas en Windows (donde trabaja Cortana, además de teléfonos y altavoces inteligentes); mientras que Alexa fue el primero en obtener la posibilidad de realizar pedidos de comercio electrónico en línea, desde Amazon.​
+Un asistente personal inteligente  es un agente tipo software que puede realizar tareas u ofrecer servicios a un individuo. Estas tareas o servicios están basados en datos de entrada de usuario, reconocimiento de ubicación y la habilidad de acceder a información de una variedad de recursos en línea (como al clima o al tráfico, noticias, precios de acciones, horario del usuario, precios al por menor, etc). Algunos ejemplos de asistentes personales son Siri de Apple, Braina, Google Assistant y Google Now de Google,, Amazon Echo de Amazon, Cortana de Microsoft, S Voice y Bixby de Samsung, Voice Mate, Silvia y Hidi de HTC y Celia de Huawei. Uno de los aspectos clave de un asistente personal inteligente es su habilidad para organizar y mantener información. Esto incluye el manejo de correos electrónicos, eventos en el calendario, archivos, lista a seguir, etc.​
+De acuerdo con el inversor de capital de riesgo, Chi-Hua Chien,​ de la firma Kleiner Perkins Caufield & Byers, ejemplos de tareas que pueden ser ejecutadas por inteligentes automatizados agentes personales​ incluyen manejo de agenda (ejemplo: mandar una alerta a alguien que llegará tarde a su cena por un inconveniente de tráfico,  actualización de horarios para ambas partes, y cambiar el horario de reservación del restaurante) y un manejador personal de salud (ejemplo: monitorear la ingesta diaria de calorías, el ritmo cardiaco y el régimen de ejercicio, después hacer recomendaciones y dar opciones para mejorar la salud).
+La tecnología del asistente personal inteligente es permitida por la combinación de dispositivos móviles, interfaces de programación de aplicaciones (API), y la proliferación de aplicaciones móviles. Sin embargo,  asistentes personales automatizados son diseñados para realizar tareas que solo son especificadas una vez a través de la voz del usuario mientras que los agentes personales inteligentes realizan tareas en curso (ejemplo: actualización en la agenda o calendario) de forma autónoma.
+
+
+== Historia ==
+El asistente personal inteligente tiene sus orígenes en un proyecto de inteligencia militar artificial llamada CALO, por sus siglas en inglés "cognitive assistant that learns and organizes” que significa asistente cognitivo que aprende y organiza.​ Adam Cheyer, un mánager del proyecto CALO, tomó a unas personas del SRI International del centro de inteligencia artificial y formó un equipo para empezar la creación de Siri. Éste fue el primer conocido asistente personal inteligente.
+La primera herramienta que permitió ejecutar reconocimiento digital de voz fue IBM Shoebox, presentado al público general durante la Feria Mundial de Seattle de 1962, tras su lanzamiento inicial al mercado en 1961. Esta computadora temprana, desarrollada casi 20 años antes de la introducción del primer IBM Personal Computer en 1981, fue capaz de reconocer dieciséis palabras habladas y los dígitos del 0 a 9. El siguiente hito en el desarrollo de la tecnología de reconocimiento de voz se logró en la década de 1970 en la Universidad Carnegie Mellon en Pittsburgh, Pensilvania, con el apoyo sustantivo del Departamento de Defensa de los Estados Unidos y su agencia DARPA. Su herramienta Harpy dominó un millar de palabras, similar al vocabulario de un niño de tres años. Alrededor de diez años más tarde, el mismo grupo de científicos desarrolló un sistema que no sólo podía analizar palabras individuales sino secuencias enteras de palabras habilitadas por el modelo oculto de Márkov.​ Así, los primeros asistentes virtuales, los cuales aplicaron software de reconocimiento del habla fueron contestadores automáticos y softwares médicos de dictáfonos digitales.​ En la década de 1990, la tecnología de reconocimiento de voz digital se convirtió en una característica de las computadoras personales de Microsoft, IBM, Philips y Lernout & Hauspie luchando por los clientes. Mucho más tarde el lanzamiento al mercado del primer teléfono inteligente IBM Simon en 1994 sentó las bases para los asistentes virtuales inteligentes tal como se conocen hoy en día.​ El primer asistente virtual digital instalado en un teléfono inteligente fue Siri, que fue presentado como una característica del iPhone 4S el 14 de octubre de 2011.​ Apple Inc. desarrolló Siri tras su adquisición en 2010 de Siri Inc., un spin-off de SRI International, que es un instituto de investigación financiado por DARPA y el Departamento de Defensa de los Estados Unidos.​
+Como parte de la historia de los asistentes virtuales también tenemos los chatterbots o agentes conversacionales surgidos en algunas páginas de Internet en los años 90 y principios del 2000, que buscaban la interacción con el usuario de la página simulando mantener una conversación con él, con el fin de ayudarle en sus búsquedas de un modo automatizado.​ Los primeros chatterbots eran muy limitados y no siempre comprendían las instrucciones de los humanos. Estaban insertados en las páginas web y funcionaban mediante texto.​ Su funcionamiento se basaba en la grabación previa de unas respuestas automatizadas que se ofrecían al usuario tras el reconocimiento de determinadas palabras clave.
+Tienen cinco grandes ventajas: Eficacia, mejora de la satisfacción del cliente en línea, optimización de costes, aprendizaje automático continuado y detección de las tendencias y necesidades del mercado.​
+
+
+== Tipos (clasificación) de asistentes virtuales ==
+Según la naturaleza de la interacción entre el usuario y el asistente virtual, se pueden encontrar asistentes virtuales que funcionen a través de texto, voz o intercambio de imágenes. Los separamos además entre asistentes virtuales de propósito general o asistentes virtuales de dominio específico según el grado de complejidad de la tarea que realizan.​
+
+
+== Método de interacción ==
+Los asistentes virtuales hacen el trabajo a través de:
+
+Texto (chat en línea), especialmente en una aplicación de mensajería instantánea o en otra aplicación. Son los asistentes virtuales que encontramos a través de las consultas de preguntas frecuentes, asistentes de consulta rápida en línea en formato web, aplicaciones multimedia o bots en sistemas de comunicación por chat. Permiten una comunicación rápida con el asistente y ofrecen soluciones a problemas comunes.
+Voz: Facilitan la realización de tareas y consultas por voz, generalmente a través de un dispositivo dedicado exclusivamente para ello también conocidos como altavoz inteligente. Los asistentes virtuales de esta categoría más utilizados son Amazon Echo, Siri, Asistente de Google o Microsoft Cortana,​ también Amazon Alexa​ en el dispositivo Amazon Echo, o [Siri] en un iPhone.
+Intercambio de (tomando y/o subiendo) imágenes: Aparecen en servicios automatizados en toma, edición y exposición de imágenes. Los encontramos en programas multimedia generalmente acompañados de otro formato de interacción, como en el caso de Bixby en el Samsung Galaxy S8.
+Algunos asistentes virtuales son accesibles a través de múltiples métodos, tales como Google Assistant a través de chat en la aplicación Google Allo y vía voz en altavoces inteligentes de Google Home.
+Los asistentes virtuales usan el procesamiento de lenguajes naturales (PLN) para combinar el texto del usuario o la entrada de voz con comandos ejecutables. Muchos aprenden continuamente usando técnicas de inteligencia artificial, incluyendo el aprendizaje automático.
+
+
+== Dispositivos y objetos con asistentes virtuales ==
+Los asistentes virtuales pueden estar integrados en diversos tipos de plataformas o, en el caso de algunos como Amazon Alexa, a través de varios de ellos:
+
+En objetos como altavoces inteligentes como Amazon Echo, Mycroft y Google Home
+En aplicaciones de mensajería instantánea tanto en teléfonos inteligentes como vía web, como el asistente virtual M tanto en Facebook como Facebook Messenger
+Construido como parte del sistema operativo móvil, como Siri de Apple en dispositivos con iOS, o en un sistema operativo estacionario como Cortana en Microsoft Windows
+Construido en un teléfono inteligente independiente del sistema operativo, como Bixby en el Samsung Galaxy S8, Google Assistant en el Google Pixel y Sherpa assistant de Sherpa.​​
+En otras aplicaciones móviles como Google Allo
+Dentro de plataformas de mensajería instantánea, con asistentes de organizaciones específicas, como el Aerobot de Aeroméxico en Facebook Messenger o el Secretario de Wechat en WeChat
+Dentro de aplicaciones móviles de compañías específicas y otras organizaciones, como Dom de Domino's Pizza​
+En relojes inteligentes
+En electrodomésticos,​ automóviles,​ y tecnología ponible con Android Wear.​​
+Antiguas generaciones de asistentes virtuales que usualmente funcionaban en sitios web, como Ask Jenn de Alaska Airlines,​ o en sistemas de respuesta de voz interactiva (RVI) como el RVI de American Airlines de Nuance.​
+
+
+== Servicios ==
+Los asistentes virtuales pueden proporcionar una amplia variedad de servicios, incluyendo:​
+
+Proveer información sobre el tiempo, datos de Wikipedia o IMDb, ajustar alarmas, listas de pendientes o de compras
+Reproducir música de servicios de streaming como Spotify y Pandora; reproducir estaciones de radio; leer audiolibros
+Reproducir videos, programas de televisión o películas en televisores, de fuentes como por ejemplo Netflix
+Comprar artículos, como por ejemplo desde Amazon
+Complementar y/o reemplazar servicios de atención al cliente por humanos.​ Un reporte estimó que un asistente automático en línea produjo una reducción de 30% en la carga de trabajo de un centro de llamadas.
+
+
+== Comparación ==
+
+
+== Uso de asistentes virtuales en educación ==
+Los asistentes virtuales son considerados como tecnologías emergentes, es decir, productos de innovación científica y de avance que impactan el estilo de vida de sus usuarios, se espera que ese impacto sea positivo y genere bienestar. Los asistentes virtuales pueden aplicarse en distintos campos.​
+La educación es uno de los campos en los que pueden utilizarse los asistentes virtuales, para procesos de enseñanza-aprendizaje bien sea presencial o virtual  más aún en este tiempo en que las tecnologías de la información y la comunicación están siendo cada vez más usadas para apoyar las labores educativas. Los humanos podemos interactuar con los asistentes virtuales a través de nuestra voz para esperar una respuesta o la ejecución de una orden por parte de los asistentes virtuales.​
+Entre las ventajas de usar asistentes virtuales en la educación están la preferencia y aceptación de los estudiantes a la interacción por voz, pues es más fácil que la interacción por texto; se puede interactuar como si fuera otra persona sin necesidad de usar un computador, teléfono o tableta.​
+De acuerdo al informe de educación superior, Horizon Report del año 2019 los asistentes virtuales tendrán gran utilidad y un alto potencial de impacto a largo plazo en la educación superior.​
+En el año 2020 se publicó un artículo que describe una investigación sobre de la utilidad y eficacia de los asistentes virtuales en educación secundaria.​ En dicha investigación, se evaluó la capacidad de resolver dudas y brindar información en el aula de los asistentes Amazon Echo y Google Nest mini, los cuales fueron evaluados mediante una serie de preguntas hechas de forma oral por los estudiantes de la asignatura de Tecnología a los asistentes virtuales. Al evaluar a los asistentes virtuales, ninguno de los asistentes pudo responder más de 33 de las 58 preguntas planteadas.​
+Pese a ello, el uso de asistentes virtuales en el aula tiene una serie de aplicaciones muy beneficiosas, como es el caso de:​
+
+Enseñanza de idiomas, a través de traducciones básicas o como diccionario virtual
+Práctica de matemáticas, como es el caso de las tablas de multiplicar o el cálculo mental
+Ejercitar la memoria, a través de juegos
+Repaso de contenidos, mediante juegos de preguntas
+Resolución de dudas puntuales como fechas o nombres
+
+
+== Véase también ==
+Amazon Echo
+Alisa (asistente virtual)
+M (asistente virtual)
+Agente inteligente
+Agente de software
+Procesamiento de lenguajes naturales
+Mya (Asistente Virtual)
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+
+
+=== Asistentes virtuales conversacionales ===
+Sherpa Asistente conversacional también en español. Archivado el 3 de enero de 2020 en Wayback Machine.
+Stico o Sticobot Archivado el 27 de mayo de 2020 en Wayback Machine. (en español) - Es el primer asistente virtual conversacional de ocio y vida. A marzo de 2018 narra partidos de fútbol de los equipos elegidos y cuenta chistes si se lo pides.
+Irene (en español) - Asistente virtual para todo tipo de conversaciones coloquiales.
+Bookline (en español) - Asistente virtual telefónico especializado en la gestión de reservas en restaurantes.
+Lista de las Mejores Aplicaciones Asistentes personales para Android Mejores Asistentes personales android Archivado el 21 de agosto de 2019 en Wayback Machine.

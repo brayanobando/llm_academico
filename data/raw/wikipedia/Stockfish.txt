@@ -1,0 +1,20 @@
+Stockfish es un motor de ajedrez UCI (Interfaz de Ajedrez Universal) de código abierto para múltiples plataformas desarrollado por Tord Romstad, Joona Kiiski, Marco Costalba y Gary Linscott, con la colaboración de la comunidad de desarrolladores de código abierto.​ Se publica bajo la licencia GPLv3. Desde el 31 de mayo de 2014 la versión 5 está disponible en C++ y también precompilada para Windows, Linux, Mac y Android. Además está disponible una aplicación especial para iOS que funciona en iPhone, iPod touch y iPad.
+Stockfish se origina a partir de otro motor GPL llamado Glaurung, que fue desarrollado por el noruego Tord Romstad. En noviembre de 2008, el italiano Marco Costalba escribió Stockfish 1.0 a partir del código fuente de la versión 2.1 de Glaurung. Luego, se unieron al proyecto Joona Kiiski y el propio Tord Romstad dando por terminado Glaurung.
+Se puede especular de que su nombre "Stockfish" puede provenir de una referencia al nombre de uno de los mejores jugadores de Ajedrez de la historia "Bobby Fischer" aunque lo más probable es que su nombre no tenga ninguna relación real con el ajedrecista.
+En abril de 2016, Stockfish goza de la primera posición en los rankings de motores de ajedrez compitiendo contra programas fuertes como Houdini, Komodo, Rybka, Critter, Gull, entre otros.​​​​
+Al igual que los motores mencionados, Stockfish soporta paralelismo y es compatible con sistemas operativos de 32 bits y 64 bits. También puede jugar el ajedrez aleatorio de Fischer.
+El 4 de diciembre de 2017, Stockfish 8 (versión del año 2016) se enfrentó al módulo AlphaZero desarrollado por Google DeepMind, que se basa en aprendizaje reforzado y redes neuronales (inteligencia artificial). Se enfrentaron en una serie de cien partidas, la mitad jugando con blancas y la mitad con negras. El resultado fue que AlphaZero ganó 28 e hicieron tablas en 72. Para lograrlo, AlphaZero tan solo necesitó conocer las reglas del juego y 4 horas de entrenamiento jugando contra sí mismo.​
+Stockfish es el campeón de las temporadas 6 (2014), 9 (2016), 11 (2018), 12 (2018), 13 (2018), 14 (2019) y 16 (2019), 18 (2020), 19 (2020), 20 (2021) terminando segundo en las temporadas 5 (2013), 7 (2014), 8 (2015) y 15 (2019) del TCEC (campeonato no oficial de los mejores motores de ajedrez).​​
+
+
+== Véase también ==
+Motor de ajedrez
+Ajedrez
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio oficial
+Repositorio de código en Github

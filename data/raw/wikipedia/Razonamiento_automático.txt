@@ -1,0 +1,45 @@
+El razonamiento automatizado es un pancho de la ciencias de la computación dedicada a comprender diferentes aspectos del razonamiento de manera que permita la creación de programas informáticos que posibiliten a los ordenadores razonar de forma completamente automática, o casi automática. Se le considera habitualmente como una subárea de la  inteligencia artificial, pero además posee fuertes conexiones con la Teoría de la computación e incluso con la filosofía.
+
+
+== Historia ==
+La historia del razonamiento automatizado se remonta a los primeros indicios de la mecanización del mismo, que pueden remontarse a la filosofía de la Antigua Grecia, que dio origen, finalmente de la mano de Aristóteles, al tratado de lógica proposicional descrito en su compendio de libros, Órganon. Éste pretendía esquematizar los razonamientos usando símbolos que sustitutían a las distintas afirmaciones (proposiciones) que formaban parte de un razonamiento. Los debates y discusiones sobre lógica proposicional estuvieron desde entonces en boga de los filósofos griegos, hasta la llegada de la Edad Media. Por ejemplo, y con respecto a la interpretación de la conectiva llamada implicador, Calímaco llegó a decir:
+
+ 
+
+Con la llegada de los pueblos bárbaros, y la caída de la cultura clásica, la Europa Medieval perdió y no reavivó el interés científico aproximadamente hasta el siglo XII con la introducción de los textos aristotélicos, que desde entonces gobernaron la filosofía escolástica, alrededor del siglo XI, traídos y recopilados celosamente desde hacía siglos por la tradición musulmana, en la Casa de la sabiduría.
+Esto propició la aparición de la llamada Revolución Científica del siglo XII, que volvió a reavivar, entre otras cosas, las preocupaciones de la lógica, todavía desde un punto de vista totalmente filosófico.
+Ya en el 1305, el pensador catalán Ramon Llull, fuertemente influenciado por Roger Bacon (uno de los primeros revolucionarios del siglo XII), escribió un tratado, el Ars Magna, que puede considerarse un claro precursor del razonamiento automatizado, ya entendido como un procedimiento mecánico que razona por sí mismo. A diferencia de la lógica aristotélica (sinónima de proposicional), que solo es una herramienta para hacer razonamientos desde un punto de vista más analítico, pero realizados en última instancia por el individuo, el Ars Magna de Llull era un sistema de circunferencias con etiquetas de símbolos que representan conceptos, y que conectados como si de una maquinaria de reloj se tratara, permitía seleccionar distintos atributos o conceptos en la máquina, y, accionándola, permitiría llegar a las conclusiones de dicho razonamiento. Estos estaban muy fuertemente imbuidos de conceptos teológicos y filosóficos, para realizar razonamientos en estas áreas, de modo que se llegara a verdades indiscutibles (de principal orientación a la ideología cristiana), a partir de conceptos que atribuirían como verdaderos tanto judíos como musulmanes, a fin de convencer a ambos bandos.
+El siguiente eslabón de esta cadena recaía en posesión de Gottfried Leibniz. Debido a su fuerte convicción racionalista, reflexionó sobre la posibilidad de construir, ya no solamente una máquina, sino también un lenguaje universal (concepto preconizado por René Descartes, padre del racionalismo) que tuviera el suficiente poder de expresión para razonar con coherencia, rigidez y sin ambigüedad sobre cualquier tipo de concepto. Él se inspiró en el Ars Magna de Llull para construir éste Ars combinatoria.
+Durante todo este período, el estudio sobre el razonamiento, tanto mecánico como analítico, caía dentro del campo de la filosofía y en las manos de los filósofos y matemáticos con inclinaciones filosóficas.
+Fue en el siglo XIX y XX, ya de la mano de la matemática, donde se obtuvieron nuevos enfoques sobre el razonamiento. El principal interés fue axiomatizar la matemática en una teoría axiomática basal que la constituyera entera, entre cuyos principales autores y responsables pueden citarse a Dedekind (que consiguió reunir la matemática numérica e infinitesimal, mediante las llamadas cortaduras de Dedekind), los debates y la disputa entre Georg Cantor, Gottlob Frege y Bertrand Russell (sobre los problemas y conceptos del infinito y el conjunto, y la construcción de la lógica de primer orden), David Hilbert, estableciendo su finitismo metodológico, y por último Ernst Zermelo y Adolf Fraenkel que construyeron su axiomática ZF, que ha permanecido prácticamente invariable hasta nuestros días. Se consiguió entonces culminar este proceso de axiomatización que la matemática llevaba experimentando durante más de un siglo.
+Y es este proceso el que propició los nuevos enfoques sobre el razonamiento automatizado moderno. Una vez conseguido un marco formal de razonamiento y construcción de la matemática, la siguiente pregunta obvia era la capacidad mecánica de los sistemas que se acaban de constituir. Es decir, qué información me otorgan los símbolos, qué conexiones pueden existir entre las premisas y las conclusiones que se intentan demostrar, dentro de una teoría axiomática, y cuáles son sus limitaciones teóricas. Dicho de otra forma, hasta qué punto un matemático o un lógico podía trasladar a los símbolos la responsabilidad de realizar el horrible y tedioso trabajo de conseguir demostrar teoremas, con solo seguir los pasos marcados por un procedimiento mecánico. 
+Las respuestas a estas preguntas tuvieron dos salidas principales: la primera fue la construcción de todo el corpus matemático de la computación (la formalización del concepto de algoritmo, es decir, la formalización del concepto de proceso mecánico y función computable), principalmente de la mano de Alan Turing, y la segunda los resultados sobre las limitaciones de expresión y aptitud de los lenguajes formales, que son los usados para razonar, resultados principalmente tomados de la mano de Kurt Gödel.
+A partir de todos estos resultados teóricos conjuntos, empezó a divergir su utilidad práctica (al menos en los problemas que caben dentro de las limitaciones teóricas), con la construcción de softwares de razonamiento, tanto automatizado como interactivo, para ayudar, por ejemplo, a guiar al usuario que desee demostrar algunos teoremas de sus propios sistemas, por ejemplo, en problemas de verificación del software.
+
+
+== Subáreas ==
+Las subáreas más desarrolladas del razonamiento automatizado son probablemente la demostración automática de teoremas (y la menos automática, pero más pragmática demostración interactiva de teoremas y la verificación de demostraciones (que garantiza que un razonamiento es correcto). Además, se ha realizado un trabajo enorme en el razonamiento por analogía, inducción y abducción. Otros temas importantes son el razonamiento con incertidumbre y el razonamiento no monótono. Una parte importante del razonamiento con incertidumbre es la argumentación, donde se aplican restricciones de minimalidad y de consistencia sobre el razonamiento automatizado clásico. El sistema Oscar de John Pollock es un ejemplo de argumentación automática que es más específico que un "simple" demostrador automatizado de teoremas. La argumentación formal es un subárea de la inteligencia artificial.
+Las herramientas y las técnicas del razonamiento automatizado incluyen las lógicas y los cálculos clásicos de demostración automática de teoremas, así como la lógica difusa, la inferencia bayesiana el razonamiento por el principio de entropía maximal y un gran número de técnicas ad hoc menos formales.
+
+
+== Referencias ==
+
+Portoraro, Frederic Automated Reasoning. The Stanford Encyclopedia of Philosophy (Winter 2008 Edition), Edward N. Zalta (ed.).
+
+
+== Enlaces externos ==
+
+
+=== Conferencias y congresos ===
+International Joint Conference on Automated Reasoning(IJCAR)
+Conference on Automated Deduction (CADE)
+International Workshop on the Implementation of Logics
+Workshop Series on  Empirically Successful Topics in Automated Reasoning
+
+
+=== Revistas ===
+Journal of Automated Reasoning
+
+
+=== Comunidades ===
+Association for Automated Reasoning (AAR)

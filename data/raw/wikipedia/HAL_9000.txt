@@ -1,0 +1,59 @@
+HAL 9000, cuyo nombre es un acrónimo en inglés de Heuristically Programmed Algorithmic Computer (Computador algorítmico programado heurísticamente), es una supercomputadora o superordenador ficticio de tipo mainframe que aparece en la serie Odisea espacial, iniciada con la novela 2001 A Space Odyssey escrita por Arthur C. Clarke en 1968. HAL es la computadora u ordenador de a bordo, encargada de controlar las funciones vitales de la nave espacial Discovery, cuya inteligencia artificial cambia drásticamente su comportamiento a lo largo del filme. HAL está programada para no recibir respuestas que tengan dudas, pese ser una computadora heurística, lo cual la hace muy semejante al pensamiento humano; su programación consiste "fundamentalmente" en cumplir sin objeciones los planes trazados, razón por la cual elimina a los que dudan o son escépticos, considerándolos "mecanismos fallidos".
+
+
+== Origen del nombre ==
+Existen versiones que sostienen que la palabra HAL fue derivada intencionalmente, mediante un corrimiento hacia atrás en el abecedario, del nombre IBM, sin embargo, este origen ha sido negado tanto por Arthur C. Clarke como por su personaje de ficción el Dr. Chandra, creador de HAL, quien declara que "hoy en día, cualquier persona inteligente debería saber que HAL significa Heuristic Algorithmic".
+
+
+== Presencia en la saga ==
+
+
+=== HAL en 2001: Una odisea del espacio ===
+En la película 2001: Una odisea del espacio, HAL informa a los astronautas de un fallo en progreso en la unidad de la antena de comunicación con la Tierra. David Bowman, como consecuencia, realiza un paseo espacial para retirar la unidad presuntamente defectuosa. Al revisarla, no encuentra ningún fallo y esto confunde a los astronautas Bowman y Frank Poole, quienes solicitan a la NASA una réplica de la información. Como el gemelo terrestre de HAL no repite el fallo, Bowman y Pool consideran la posibilidad de desconectar sus circuitos cognoscitivos.
+Para discutirlo se encierran en una cápsula y apagan todos los canales de audio. Así ambos suponen que HAL no puede oírlos, pero HAL es capaz de leer los labios y entiende que hay una perspectiva de desconexión. Frank Poole efectúa más tarde un paseo espacial para revisar la antena y HAL le golpea con la nave auxiliar. Cuando Bowman sale apresurado para salvarlo, HAL simula otro fallo y mata a los otros tres miembros de la tripulación que estaban en animación suspendida. Al darse cuenta de lo sucedido, David Bowman decide desconectar a HAL.
+El núcleo central de HAL es representado como un cuarto lleno de pequeños y brillantes módulos de computadora montados en bloques de donde pueden ser quitados o insertados. Bowman comienza a apagar a HAL quitando los módulos uno a uno; mientras lo hace, se produce la degradación de la conciencia de HAL. En el momento en que la lógica de HAL se ha ido completamente, él comienza a cantar la canción "Daisy Bell". HAL 9000 es muy conocido por una partida de ajedrez que juega con Frank Poole. Un fallo que comete en un momento del juego es visto como un presagio siniestro sobre los futuros acontecimientos de la película y sobre la creciente dominación de la máquina sobre el hombre.
+HAL 9000 es representado por sus "ojos", unas pequeñas cámaras de vídeo presentes en varios lugares de la nave; su voz es la del actor canadiense Douglas Rain. HAL inició su funcionamiento el 12 de enero de 1997 (1992 en la película) [1] en los laboratorios H.A.L. en Urbana (Illinois) y fue creado por el doctor Chandra. En la película HAL es representado no sólo con capacidades de reconocimiento de voz, reconocimiento facial y procesamiento de lenguaje, sino también con lectura de labios, apreciación del arte, interpretación de emociones, expresión de emociones y razonamiento.
+La novela difiere de la película en una serie de detalles. Primero, la novela explica con mayor detalle las causas del comportamiento de HAL. Segundo, en la película, HAL deja a Bowman fuera de la nave después de que este intenta recuperar el cuerpo de Poole. En la novela Bowman permanece en la nave y se ve obligado a apagar a HAL después de que éste intente matarlo abriendo las compuertas de la nave.
+
+
+=== HAL en 2010: Odisea dos ===
+En la secuela 2010: Odisea dos HAL es reiniciado por su creador, el doctor Chandra, quien llega a bordo de la nave espacial soviética Leonov. Chandra descubre que la crisis de HAL ha sido causada por una contradicción en la programación: fue construido para "el procesamiento exacto de la información sin ocultamiento ni distorsión", sin embargo, sus órdenes requerían que mantuviera el descubrimiento del monolito TMA-1 en secreto. Esta contradicción creó un "bucle Hofstadter-Moebius" que lleva a HAL a la paranoia.
+Las inteligencias extraterrestres, controlando los monolitos, tienen planes grandiosos para Júpiter, planes que ponen en peligro al Leonov. Su tripulación humana diseña un plan de escape, que desafortunadamente requiera dejar atrás al Discovery 1 y a HAL, para ser destruidos. El doctor Chandra explica el peligro y HAL se sacrifica para salvar a la tripulación del Leonov. En el momento de su destrucción los creadores del monolito transforman a HAL en un ser no-corpóreo, para que David Bowman pueda tener un compañero.
+Los detalles en la novela y la película son prácticamente los mismos, con una excepción importante: en la película HAL funciona normalmente después de ser reactivado. En la novela se descubre que sus circuitos de voz fueron destruidos durante el apagado, forzándolo a comunicarse a través de texto en pantalla.
+La sesión de interacción de teclado/pantalla entre HAL y el doctor Chandra tiene un toque de SHRDLU, lo cual incrementa el realismo de la escena y le da una impresión interesante de la concepción que se tenía de la inteligencia artificial en el momento en que fue escrita a novela.
+
+
+=== HAL en 2061: Odisea tres ===
+En 2061: Odisea tres, Heywood Floyd se sorprende al encontrar a HAL, ahora almacenado junto con Dave Bowman en el monolito de la luna Europa. Ambos explican que durante el proceso de convertir Júpiter en una estrella el monolito sufrió averías, por lo que en cierto momento duplicaron a Floyd y el allí presente, la copia, fue manifestado con el propósito de crear junto a ellos una trinidad que complemente al monolito dañado y lo asista en cumplir sus tareas y misiones; de esta forma Bowman es el poder, HAL el conocimiento y Floyd la experiencia.
+
+
+=== HAL en 3001: Odisea final ===
+En 3001: Odisea final aparecen las formas combinadas de Dave Bowman y HAL. Los dos finalmente se han combinado en una entidad llamada Halman, después que Bowman rescatara a HAL de morir destruido en la nave espacial Discovery 1. Dicha entidad cuenta cómo las primitivas formas de vida gaseosa jovianas en las nubes de Júpiter fueron sacrificadas para convertir a Júpiter en un Sol y así calentar a Europa, por lo que se teme que la humanidad sea sacrificada por la prometedora evolución de la vida en Europa. Al final de 3001: Odisea final, Halman ayuda a Frank Poole a infectar al monolito con varios virus informáticos.
+
+
+== Computadora SAL 9000 ==
+HAL 9000 tiene por los menos un gemelo terrestre, SAL 9000. SAL (o posiblemente otro "gemelo 9000") fue utilizado como un sistema de referencia para HAL; cuando la computadora gemela falla en predecir cualquier fallo en las comunicaciones, Bowman y Poole comienzan a desconfiar de HAL. SAL es claramente "femenina", posee cámaras similares a las de HAL, pero su "ojo" es azul. El Dr. Chandra posee una terminal privada al mainframe de SAL en su oficina, y su influencia causa en SAL el desarrollo de un leve acento hindú, haciéndola sonar como una princesa de la India regresando de la Universidad de Cambridge (2010: Odisea dos). En la versión cinematográfica, la voz de SAL la proporciona Candice Bergen, quien aparece en los créditos bajo el seudónimo de Olga Mallsnerd. En España el doblaje corrió a cargo de la actriz María Jesús Lleonart.
+Antes del inicio de la misión soviética-estadounidense para recuperar al Discovery, Chandra utiliza a SAL para simular los posibles efectos que puede haber causado el "sueño" prolongado en HAL (Proyecto Fénix). Cuando el Dr. Chandra ridiculiza a SAL para adivinar la razón del nombre del proyecto, su despliegue de cultura deja en claro que SAL tiene acceso a alguna clase de base de datos enciclopédica.
+En el libro 2010 se sabe que otra máquina como HAL en una base en la Tierra sufre la misma psicosis que HAL.
+
+
+== HAL 9000 y el futuro de la computación ==
+Cuando el film 2001 fue presentado en 1968, faltaba mucho para el año 2001 y una computadora con las características de HAL parecía bastante posible en esa época. A mediados de 1960 los científicos eran generalmente optimistas en cuanto a que en una generación o dos habría computadoras que podrían hacer "casi cualquier cosa que un humano pudiera hacer".
+Sin embargo, cuando se aproximaba el año 2001 se volvió claro que las predicciones de Odisea del espacio en cuanto a tecnología de inteligencia artificial en las computadoras estaban un tanto erradas. El lenguaje hablado, la lectura de labios, el planteamiento y el sentido común en las computadoras todavía seguían siendo temas de ciencia ficción.
+
+
+== Véase también ==
+Monolito
+(9000) Hal, asteroide al que da nombre.
+2001: A Space Odyssey (novela)
+Inteligencia artificial
+Computadoras en la ciencia ficción
+
+
+== Enlaces externos ==
+Text excerpts from HAL 9000 in 2001: A Space Odyssey
+Audio soundbites from 2001: A Space Odyssey
+HAL's Legacy, on-line ebook (mostly full-text) of the printed version edited by David G. Stork, MIT Press, 1997, ISBN 0-262-69211-2 - a collection of essays on HAL
+HAL's Legacy, An Interview with Arthur C. Clarke.
+The case for HAL's sanity, by Clay Waldrop 
+"2001" fills the theater at HAL 9000's "birthday" in 1997 at the University of Illinois at Urbana-Champaign

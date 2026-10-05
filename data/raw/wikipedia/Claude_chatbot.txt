@@ -1,0 +1,80 @@
+Claude es una familia de grandes modelos lingüísticos (LLM) desarrollada por Anthropic.​
+Es producto de la investigación colaborativa con socios como Notion, Quora y DuckDuckGo. Su algoritmo está entrenado para ser funcional como asistente, al cual se le pueden hacer preguntas de forma similar a como se realizan con ChatGPT. Su entrenamiento permite la generación de texto como resultado a las preguntas que se planteen, de una manera muy similar a como lo harían los humanos; no obstante, es necesario tener en cuenta que al ser un algoritmo (software), sus respuestas corresponden a una construcción textual predictiva con base en una semántica lógica,​ no al razonamiento de las preguntas que se realizan. Al igual que todos los algoritmos de inteligencia artificial, Claude carece de autoconciencia​ e inteligencia general.​​
+Claude puede proporcionar resúmenes de temas concretos o crear historias, entre otras actividades, como:
+
+Generar texto, traducir idiomas, escribir diferentes tipos de contenido creativo y responder preguntas de manera informativa.
+Seguir instrucciones y completar las solicitudes de manera cuidadosa.
+Utilizar su conocimiento para responder a las preguntas de una manera completa e informativa, incluso si son abiertas, desafiantes o extrañas.
+Generar diferentes formatos de texto creativo de contenido de texto, como poemas, código, guiones, piezas musicales, correo electrónico, cartas, etc.
+
+
+== Versiones ==
+
+
+=== Claude 3 ===
+Claude 3 se lanzó el 14 de marzo de 2024, con afirmaciones de haber establecido nuevos puntos de referencia en la industria a través de una amplia gama de tareas cognitivas. La familia Claude 3 incluye tres modelos de vanguardia en orden ascendente de capacidad: Haiku, Sonnet y Opus. La versión predeterminada de Claude 3 Opus tiene una ventana de contexto de 200,000 tokens, pero esta capacidad se está ampliando a 1 millón para casos de uso específicos.​​
+Claude 3 parece haber realizado un razonamiento metacognitivo, incluyendo la capacidad de darse cuenta de estar siendo probado artificialmente durante evaluaciones de aguja en un pajar.​​
+
+
+=== Claude 3.7 Sonnet ===
+En febrero de 2025, Anthropic presentó Claude 3.7 Sonnet, un modelo de razonamiento híbrido pionero que permite a los usuarios elegir entre respuestas rápidas y respuestas más reflexivas y detalladas. Este modelo integra ambas capacidades en un solo marco, eliminando la necesidad de múltiples modelos. Los usuarios pueden controlar cuánto tiempo "piensa" el modelo sobre una pregunta, equilibrando velocidad y precisión según sus necesidades.​
+Claude 3.7 Sonnet sobresale en programación y resolución de problemas complejos, superando a competidores en pruebas como SWE-Bench y TAU-Bench. También cuenta con una "pizarra visible" para mostrar su proceso de razonamiento, aunque algunas partes pueden estar redactadas por motivos de seguridad.​
+Junto con este modelo, Anthropic está lanzando Claude Code, una herramienta de codificación agente que permite a los desarrolladores ejecutar tareas de codificación directamente desde su terminal.​
+
+
+=== Claude 4 ===
+El 22 de mayo de 2025, Anthropic anunció la familia Claude 4, integrada inicialmente por Claude Opus 4 y Claude Sonnet 4. La empresa afirmó que estos modelos establecen nuevos estándares en programación, razonamiento avanzado y agentes de inteligencia artificial. ​
+Claude Opus 4 fue presentado como el modelo más potente de Anthropic hasta la fecha y orientado especialmente a tareas complejas de programación y flujos de trabajo de larga duración. Claude Sonnet 4 constituye una mejora significativa respecto de Claude 3.7 Sonnet, ofreciendo mayor precisión al seguir instrucciones y mejor rendimiento en razonamiento y generación de código. ​
+Entre las principales novedades de Claude 4 se encuentran:
+
+Pensamiento extendido con uso de herramientas (Extended Thinking), permitiendo alternar entre razonamiento y herramientas como la búsqueda web durante una misma tarea.
+Uso simultáneo de múltiples herramientas, mejorando la eficiencia en tareas complejas.
+Mejor memoria cuando dispone de acceso a archivos locales, pudiendo extraer y conservar información relevante durante proyectos extensos.
+Mayor precisión al seguir instrucciones y reducción de comportamientos que recurrían a atajos o soluciones incorrectas en tareas agénticas.
+Disponibilidad de Claude Code, una herramienta para desarrolladores que permite utilizar Claude directamente desde la terminal para programar, corregir errores y automatizar tareas de desarrollo.​
+
+
+=== Claude 5 ===
+En junio de 2026, Anthropic presentó la familia Claude 5, comenzando con Claude Sonnet 5. La empresa describió este modelo como "el Sonnet más agéntico hasta la fecha", con capacidades significativamente mejoradas para programación, uso de herramientas y ejecución autónoma de tareas. Claude Sonnet 5 incorpora razonamiento adaptativo, una ventana de contexto de hasta un millón de tokens y un nuevo tokenizador optimizado, además de ofrecer un rendimiento cercano al de modelos de mayor tamaño manteniendo el costo y la velocidad característicos de la serie Sonnet. Está disponible en Claude.ai, la API de Anthropic y diversas plataformas en la nube. ​
+Tras su lanzamiento, Claude Sonnet 5 pasó a formar parte de los modelos disponibles en GitHub Copilot, permitiendo su selección para tareas de programación asistida dentro de dicho servicio.​
+Posteriormente, Anthropic anunció Claude Fable 5, un modelo de mayor capacidad destinado a tareas de razonamiento avanzado y agentes de inteligencia artificial. La compañía lo presentó como la siguiente generación de modelos Claude. Tras un período temporal de restricciones regulatorias relacionadas con controles de exportación en Estados Unidos, el acceso al modelo fue restablecido una vez implementadas nuevas medidas de seguridad y mitigación de riesgos. ​​
+Entre las principales novedades de Claude 5 se encuentran:
+
+razonamiento adaptativo que ajusta automáticamente el nivel de análisis según la complejidad de la tarea;
+capacidad de planificar y ejecutar tareas de forma autónoma mediante herramientas como navegadores web y terminales;
+ventana de contexto de hasta 1 millón de tokens;
+nuevo tokenizador que mejora la eficiencia del procesamiento;
+mejoras significativas en programación, razonamiento, uso de herramientas y trabajo agéntico;
+disponibilidad mediante Claude.ai, la API de Anthropic, Amazon Bedrock y Google Cloud Vertex AI.
+
+
+== Antecedentes ==
+Anthropic es una empresa de investigación que se centra en la construcción de sistemas de inteligencia artificial, fundada en 2021 por Dario Amodei y Daniela Amodei. La empresa ha recaudado más de 400 millones de dólares en fondos de inversores como Google, Andreessen Horowitz y Peter Thiel y cuenta con un equipo de más de 100 investigadores e ingenieros que trabajan en una variedad de problemas de seguridad de la inteligencia artificial. Actualmente su trabajo se centra en desarrollar nuevas técnicas para hacer que los sistemas de inteligencia artificial sean más confiables, interpretables y dirigibles, con la intención de garantizar que este tipo de tecnología se utilice de manera ética y no repercuta de manera negativa en la sociedad.​ 
+Entre las investigaciones publicadas por la empresa se encuentran:
+
+La interpretabilidad de los sistemas de aprendizaje automático
+La seguridad de los sistemas de aprendizaje por refuerzo
+La alineación de los sistemas de IA con los valores humanos
+
+
+== Modelo de lenguaje ==
+Es una vertiente de la inteligencia artificial que se enfoca en el procesamiento del lenguaje natural, se fundamenta en los principios del test de Turing (1950)​ al intentar comprender el lenguaje humano y dar una respuesta con una estructura sintáctica similar al lenguaje humano. Turing con su juego de la imitación, logró sentar las bases para responder a su pregunta respecto a si ¿las máquinas pueden pensar?​ Posterior a los estudios de Turing, McCarthy; Minsky; Rochester y Shannon (1955)​ acuñaría el término de inteligencia artificial, el cual se dio a conocer en la conferencia de Dartmouth, que tuvo lugar en el verano de 1956 en la universidad Dartmouth College en el año 1956.
+Este campo de desarrollo tecnológico ha sido muy prometedor, motivo por el que su investigación ha llevado a la creación de distintas tecnologías en el campo de la inteligencia artificial. De modo que en la actualidad, es posible hacer cuasi cualquier cosa con inteligencia artificial, lo que también ha despertado la preocupación de grupos sociales, preocupaciones que han movilizado a investigadores y académicos en busca de mostrar el posible impacto negativo de este tipo de tecnologías en diversos aspectos de la vida humana, entre los que destaca el sector laboral,​ la manipulación social,​ así como en el periodismo;​​ por mencionar algunos.
+Es importante considerar que el uso de la inteligencia artificial de manera desinformada, sin considerar leyes morales y principios éticos, puede tener impactos negativos en la sociedad, por lo que es importante tener cuidado con el uso de estas aplicaciones, ya que en concreto, hablando de algoritmos de generativos de texto, difundir los contenidos generados sin el razonamiento humano, y presentarlos como información veraz, puede llevarnos a un estado de posverdad,​ de desinformación que podría sesgar las decisiones personales a consecuencia de la exposición a información incorrecta, parcial o malintencionada.
+
+
+== Véase también ==
+Qwen
+DeepSeek
+LLaMA (gran modelo de lenguaje)
+Inteligencia artificial
+ChatGPT
+Modelo extenso de lenguaje
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Introducing Claude
+Anthropic

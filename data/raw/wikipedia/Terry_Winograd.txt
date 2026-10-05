@@ -1,0 +1,47 @@
+Terry Allen Winograd (nació el 24 de febrero de 1946), profesor emérito de Ciencias de la Computación en la Universidad de Stanford, es reconocido en los campos de la psicología, la inteligencia artificial y la interacción humano-computadora. Durante sus más de 40 años de enseñanza e investigación, creó y dirigió el Human-Computer Interaction Group y el programa de docencia e investigación en Human-Computer Interaction Design en Stanford. Además, fue miembro fundador del Hasso Plattner Institute of Design (conocido como la “d.school”).
+Winograd realizó investigaciones pioneras en inteligencia artificial, en particular en la comprensión del lenguaje natural, durante su doctorado en el MIT Artificial Intelligence Lab en la década de 1960. Entre 1968 y 1970 escribió el programa SHRDLU, con el cual se propuso explorar cómo un ordenador podía alcanzar un nivel de “entendimiento” suficiente para procesar el lenguaje natural. El programa aceptaba comandos como “Mueve el bloque azul” y ejecutaba la acción mediante un simulador de brazo robótico, pudiendo incluso responder verbalmente a preguntas o aclaraciones, como “No sé a lo que te refieres con bloque azul”. Históricamente, SHRDLU se considera un ejemplo clásico de las dificultades que enfrenta un programador al construir una memoria semántica para un ordenador y de lo limitados o “frágiles” que resultan estos sistemas.
+En 1986, junto con Fernando Flores, Winograd publicó el libro Understanding Computers and Cognition, que marcó una importante ruptura con la filosofía tradicional subyacente a la inteligencia artificial, proponiendo una visión más centrada en el contexto humano y social de la computación.
+Fue miembro fundador y presidente nacional de Computer Professionals for Social Responsibility, miembro de la ACM CHI Academy y ACM Fellow. En 2011 recibió el CHI Lifetime Research Achievement Award.
+Actualmente, es Fellow del Stanford Human-Centered AI Institute y forma parte del consejo de Corporate Accountability International. Además, ha sido consultor de varias empresas, entre ellas Google, fundada por estudiantes de Stanford que participaron en sus proyectos.
+Winograd continúa colaborando en la investigación informática, incluyendo el uso de la computación ubicua en el trabajo colaborativo, e imparte clases y seminarios en el Departamento de Ciencias de la Computación de la Universidad de Stanford.
+
+
+== Premios académicos recibidos ==
+Founders Award, Computer Professionals for Social Responsibility (1996) Rigo Award, SIGDOC (1999)
+Member, ACM CHI Academy (2004)
+Felllow, ACM (2009)
+Lifetime Research Award, ACM SIGCHI (2011)
+
+
+== Libros de Terry Winograd ==
+Winograd, Terry, with John Bennett, Laura De Young, and Bradley Hartfield (eds.), Bringing Design to Software , Reading, MA: Addison Wesley, 1996.
+Adler, Paul, and Terry Winograd (eds.), Usability: Turning Technologies into Tools, New York: Oxford University Press, 1992.
+Friedman, Batya and Terry Winograd (eds.), Computing and Social Responsibility: a Collection of Course Syllabi, Palo Alto: Computer Professionals for Social Responsibility, 1989.
+Winograd, Terry (ed.), Special issue of ACM Transactions on Office Information Systems 6:2 (April, 1988), on "A language/action perspective."
+Winograd, Terry and Fernando Flores, Understanding Computers and Cognition: A New Foundation for Design, (220 pp.) Norwood, NJ: Ablex, 1986. Paperback issued by Addison-Wesley, 1987.
+Winograd, Terry, Language as a Cognitive Process: Volume I: Syntax, (650 pp.) Reading MA: Addison-Wesley, 1983.
+Winograd, Terry, Understanding Natural Language, (191 pp.) New York: Academic Press, 1972. Also published in Cognitive Psychology, 3:1 (1972), pp. 1-191.
+
+
+== Referencias ==
+Entrevista para su libro 'Designing Interactions' Archivado el 8 de marzo de 2008 en Wayback Machine.
+Página personal de Stanford visited Oct 8, 2025
+'Como trabaja Google' (enlace roto disponible en Internet Archive; véase el historial, la primera versión y la última)., David Carr, Baseline Magazine, July 6, 2006
+CV de Terry Winograd
+
+
+== Véase también ==
+David Kelley (IDEO)
+Marvin Minsky
+Seymour Papert
+Gerry Sussman
+Blocks world
+Fernando Flores
+
+
+== Enlaces externos ==
+Oral history interview, 11 December 1991. Charles Babbage Institute, University of Minnesota, Minneapolis
+Stanford HCI Group
+Terry Winograd's faculty page
+SHRDLU overview
+Terry Winograd's biography at the d.school

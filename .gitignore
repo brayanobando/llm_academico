@@ -1,0 +1,10 @@
+# Entorno virtual y caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Checkpoints de más de 100 MB (GitHub no acepta archivos tan grandes).
+# Guardan los pesos y el estado del optimizador; los mismos pesos están en checkpoints/model.safetensors.
+checkpoints/best.pt
+checkpoints/last.pt

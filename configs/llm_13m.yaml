@@ -1,0 +1,29 @@
+# Mini LLM de ~13M parámetros (Paso 4, lámina 5/8: "empezar con 13M")
+# Pensado para la GTX 1650 Ti (4 GB) y el corpus de historia de la IA (~500 mil tokens).
+
+modelo:
+  vocab_size: 16000        # igual al tokenizer (data/tokenizer/tokenizer.json)
+  context: 256             # cuántos tokens ve el modelo a la vez (igual que make_sequences --context)
+  d_model: 320             # tamaño del vector de cada token (la D de la lámina)
+  n_heads: 5               # cabezas de atención -> 320 / 5 = 64 dimensiones por cabeza
+  n_layers: 6              # bloques Transformer apilados (el "× N" de la lámina)
+  d_ff: 1280               # neuronas ocultas del MLP (4 × d_model)
+  dropout: 0.1             # apaga neuronas al azar al entrenar, para que no memorice
+  pos_encoding: sinusoidal # sinusoidal (las "ondas" de la lámina) o learned (estilo GPT-2)
+  pre_norm: true           # true = LayerNorm antes de cada subcapa (más estable);
+                           # false = "Add & Norm" después, el orden exacto del diagrama (paper de 2017)
+  tie_weights: true        # la capa de salida comparte pesos con los embeddings (ahorra 5M parámetros)
+  flash: true              # atención optimizada de PyTorch (mismo resultado, más rápida)
+
+entrenamiento:             # se usa en el Paso 5 (lámina 6/8)
+  batch_size: 16           # bloques por lote
+  epochs: 20               # vueltas completas sobre data/train/train.npy
+  lr: 6.0e-4               # tasa de aprendizaje máxima de AdamW
+  min_lr: 6.0e-5           # tasa al final (decae con forma de coseno)
+  warmup_steps: 100        # pasos iniciales en que la tasa sube desde 0
+  weight_decay: 0.1        # regularización de AdamW
+  grad_clip: 1.0           # recorta gradientes muy grandes
+  eval_every: 50           # cada cuántos pasos medir la pérdida de validación
+  paciencia: 8             # parar si la validación no mejora en 8 evaluaciones seguidas (0 = nunca)
+  amp: fp16                # fp16 en la GTX 1650 Ti (no soporta bf16); "none" para desactivar
+  seed: 42

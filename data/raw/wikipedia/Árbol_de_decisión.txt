@@ -1,0 +1,81 @@
+Un árbol de decisión es una forma gráfica y analítica de un modelo de predicción estadística para representar todos los eventos​, tomando la mejores decisiones desde un punto de vista probabilístico.​​ 
+Dado un conjunto de datos se fabrican diagramas de construcciones lógicas, muy similares a los sistemas de predicción basados en reglas, que sirven para representar y categorizar una serie de condiciones que ocurren de forma sucesiva, para la resolución de un problema. ​ 
+Puede ser empleado para hacer tareas de clasificación y de regresión, es utilizado en diversos campos tales como la inteligencia artificial hasta la economía o el derecho.​  
+
+
+== Construcción de un árbol de decisión ==
+
+
+=== Elementos ===
+
+Los árboles de decisión están formados por nodos, vectores de números, flechas y etiquetas.​
+
+Cada nodo se puede definir como el momento en el que se ha de tomar una decisión de entre varias posibles, lo que va haciendo que a medida que aumenta el número de nodos aumente el número de posibles finales a los que puede llegar el individuo. Esto hace que un árbol con muchos nodos sea complicado de dibujar a mano y de analizar debido a la existencia de numerosos caminos que se pueden seguir.
+Los vectores de números serían la solución final a la que se llega en función de las diversas posibilidades que se tienen, dan las utilidades en esa solución.
+Las flechas son las uniones entre un nodo y otro y representan cada acción distinta.
+Las etiquetas se encuentran en cada nodo y cada flecha y dan nombre a cada acción.
+
+
+=== Conceptos ===
+Cuando tratemos en el desarrollo de árboles utilizaremos frecuentemente estos conceptos:
+
+Costo. Se refiere a dos conceptos diferentes: el costo de medición para determinar el valor de una determinada propiedad (atributo) exhibida por el objeto y el costo de clasificación errónea al decidir que el objeto pertenece a la clase X cuando su clase real es Y.
+Sobreajuste (Overfitting).  Se produce cuando los datos de formación son pocos o contienen incoherencias. Al tomar un espacio de hipótesis H, se dice que una hipótesis h ∈ H  sobreajusta un conjunto de formación C si existe alguna hipótesis alternativa h' ∈ H tal que h clasifica mejor que h' los elementos del conjunto de formación, pero h' clasifica mejor que h el conjunto completo de posibles instancias.
+Poda (Prunning). La poda consiste en eliminar una rama de un nodo transformándolo en una hoja (terminal), asignándole la clasificación más común de los ejemplos de formación considerados en ese nodo.
+La validación cruzada. Es el proceso de construir un árbol con la mayoría de los datos y luego usar la parte restante de los datos para probar la precisión del árbol.
+
+
+=== Reglas ===
+En los árboles de decisión se tiene que cumplir una serie de reglas.
+
+Al comienzo del juego se da un nodo inicial que no es apuntado por ninguna flecha, es el único del juego con esta característica.
+El resto de los nodos del juego son apuntados por una única flecha.
+De esto se deduce que hay un único camino para llegar del nodo inicial a cada uno de los nodos del juego. No hay varias formas de llegar a la misma solución final, las decisiones son excluyentes.
+En los árboles de decisiones las decisiones que se eligen son lineales, a medida que vas seleccionando entre varias opciones se van cerrando otras, lo que implica normalmente que no hay marcha atrás. En general se podría decir que las normas siguen una forma condicional: Opción 1->opción 2->opción 3->Resultado Final X
+Estas reglas suelen ir implícitas en el conjunto de datos a raíz del cual se construye el árbol de decisión.
+
+
+=== Ejemplo ===
+
+En este árbol de decisión podemos observar como hay cuatro posibles soluciones finales. En él se cumplen las normas antes descritas (nodo inicial, una única flecha por nodo y un único camino para llegar a cada nodo final) y tiene todos los elementos antes descritos (nodos, vectores de números, flechas y etiquetas). La imagen representa un árbol de decisión conformado por dos jugadores, en él se pueden observar las opciones que 
+El juego cuenta con dos jugadoras. La primera decisión la ha de tomar la jugadora 1, quien debe decidir entre O1 y O2, en este punto será la jugadora 2 quien decida. Si la Jugadora 1 ha elegido O1, tendrá que decidir entre A1 y R1, A1 le producirá una utilidad de 2, y R1 de 0, a su vez A1 le reportará una utilidad de 8 a la jugadora 1 y R1 de 0. En cambio, si la jugadora 1 elige O2, la jugadora 2 deberá elegir entre A2 y R2, la primera opción le reportará una utilidad de 5 a ella y a la otra jugadora, R2 reportará una utilidad de 0 a las dos. Con los adecuados métodos de inducción existentes se podría resolver este árbol de decisión sin mucha complicación.
+
+
+== Los árboles de decisión en Teoría de juegos ==
+
+Un área donde son aplicados los árboles de decisión es la Teoría de juegos, esta utiliza modelos para estudiar interacciones de estructuras formalizadas de incentivos. Es muy utilizada en diversos campos: economía, política, biología, sociología, psicología, filosofía y ciencias de la computación entre otras.
+En la teoría de juegos los árboles de decisión son utilizados en la llamada forma extensiva, que modeliza los juegos que presentan algún orden. En ellos siempre hay un nodo inicial del que salen varias flechas que apuntan a otros nodos y se reproduce la metodología antes explicada llegando cada rama a un vector de números.
+También es posible que los juegos de forma extensiva modelen juegos simultáneos, estos se representan con una línea discontinua entre los nodos que ha de elegir un jugador sin saber de antemano la opción escogida por el otro, tomando este un vector de decisiones anticipado sin saber en cual de esos nodos estará, el ejemplo clásico sería el del juego piedra, papel o tijera.
+
+
+== Acciones simultáneas en árboles de decisión ==
+
+Un tipo de variante de los árboles de decisión serían los que atañen a los juegos simultáneos. 
+Los juegos simultáneos son aquellos juegos en los que los jugadores toman la decisión a la vez, y por tanto ninguno de ellos sabe qué decisión ha tomado el otro antes de elegir. Un ejemplo de este tipo de juegos sería el de Piedra, papel o tijera. En el que los jugadores del mismo han de escoger una de esas tres opciones sin saber cuál de ellas escogerán el resto. 
+En los árboles de decisión esto se representa añadiendo una variante a los antes descritos, como el jugador número dos no sabe en qué nodo se encuentra, por lo que podría encontrarse en cualquiera de ellos, estos están unidos por una línea discontinua, mostrando la incapacidad de este de saber en qué nodo esta. Por lo que su decisión será totalmente independiente de la escogida por el otro jugador. 
+
+
+== Árboles de decisión en el diseño de aplicaciones informáticas ==
+En el diseño de aplicaciones informáticas, un árbol de decisión indica las acciones a realizar en función del valor de una o varias variables.
+Es una representación en forma de árbol cuyas ramas se bifurcan en función de los valores tomados por las variables y que terminan en una acción concreta. Se suele utilizar cuando el número de condiciones no es muy grande (en tal caso, es mejor utilizar una tabla de decisión).
+
+De forma más concreta, refiriéndonos al ámbito empresarial, podemos decir que los árboles de decisión son diagramas de decisiones secuenciales nos muestran sus posibles resultados. Estos ayudan a las empresas a determinar cuales son sus opciones al mostrarles las distintas decisiones y sus resultados. La opción que evita una pérdida o produce un beneficio extra tiene un valor. La habilidad de crear una opción, por lo tanto, tiene un valor que puede ser comprado o vendido.
+
+
+== Véase también ==
+Algoritmo ID3
+Álgebra de Boole
+Grupo de trabajo
+Microeconomía
+Economía de la información
+Teoría de Juegos
+Juegos en forma extensiva
+Ingeniería de características
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Ejercicio resuelto y explicación detallada de un Árbol de Decisión (o Árboles de Decisiones): [1]
+Explicación en video de árboles de decisión, por Florencia Roca y Jorge Rojas Arzu, "Evaluación de Proyectos para Emprendedores": [2]

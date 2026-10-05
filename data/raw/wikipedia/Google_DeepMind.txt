@@ -1,0 +1,57 @@
+Google DeepMind es una compañía británico-estadounidense de investigación y desarrollo de inteligencia artificial adquirida el 26 de enero de 2014​ por Alphabet Inc., empresa matriz de Google.
+La compañía fue fundada en 2010, por Demis Hassabis. Desde entonces la empresa ha creado varios desarrollos, como una red neuronal que aprende cómo jugar a los videojuegos de una manera similar a la de los seres humanos,​ así como una máquina de Turing Neural, o una red neuronal que puede ser capaz de acceder a una memoria externa como una máquina convencional de Turing, lo que resulta en una computadora que imita la memoria a corto plazo del cerebro humano.​
+La compañía generó titulares en 2016 después de que su programa AlphaGo derrotó a un jugador humano profesional de go de 9 dan por primera vez.​
+
+
+== Historia ==
+
+
+=== 2010 a 2014 ===
+En 2010 el start-up fue creado por Demis Hassabis, Shane Legg y Mustafa Suleyman.​​ Hassabis y Legg se conocieron por primera vez en UCL en la Unidad de Neurociencia Computacional Gatsby.​
+Desde entonces las principales firmas de capital de riesgo  Horizons Ventures y Founders Fund han invertido en la compañía,​ así como el empresario Scott Banister.​ Jaan Tallinn fue de los primeros inversionistas y consejeros de la compañía.​
+En 2014, DeepMind recibió el premio de la «Compañía del año» por el Laboratorio de Computación de Cambridge.​
+La compañía creó una red neuronal que aprende a jugar videojuegos de manera similar a los humanos​ y una red neuronal que puede ser capaz de acceder a la memoria externa como una máquina de Turing convencional, resultando en una computadora que parece imitar posiblemente la memoria a corto plazo del cerebro humano.​
+
+
+=== Adquisición por Google ===
+El 26 de enero de 2014, Google anunció​ que había acordado adquirir Tecnologías DeepMind. La adquisición tuvo lugar después de que Facebook acabara negocios con Tecnologías DeepMind en 2013.​ Después de la adquisición la compañía fue renombrada a Google DeepMind.​
+Los costos estimados de la adquisición varían entre $400 millones​ y $500 millones.​​​​​
+Una de las condiciones de DeepMind para Google era que establecieran und comité de Ética de la inteligencia artificial.​
+
+
+=== Renombramiento a Google Deepmind ===
+El 20 de abril de 2023, Deepmind anuncia que se fusionará con el equipo Brain de Google Research para formar una nueva unidad llamada Google DeepMind, liderada por Demis Hassabis. El objetivo de esta unidad es acelerar el progreso hacia una inteligencia artificial general que ayude a resolver los mayores desafíos que enfrenta la humanidad.​
+
+Según Demis Hassabis:Creo que podemos llegar a ese futuro más rápido. Construir una IA cada vez más capaz y general, de forma segura y responsable, exige que resolvamos algunos de los desafíos científicos y de ingeniería más difíciles de nuestro tiempo. Para ello, necesitamos trabajar con mayor velocidad, una colaboración y ejecución más sólidas, y simplificar la forma en que tomamos decisiones para centrarnos en lograr el mayor impacto.
+
+
+== AlphaGo ==
+
+En octubre de 2015, un programa llamado AlphaGo, impulsado por DeepMind, venció al campeón europeo de go Fan Hui, un profesional de 2 Dan (de 9 Dan posibles), cinco a cero​ Esta es la primera vez que una inteligencia artificial (AI) venció a un jugador profesional de go​ Anteriormente, las computadoras sólo eran conocidas por haber jugado go al «nivel amateur».​​ Go se considera mucho más difícil para las computadoras de ganar en comparación con otros juegos como el ajedrez, debido al mucho mayor número de posibilidades, por lo que es prohibitivamente difícil para los métodos tradicionales de IA como la fuerza bruta.​​ El anuncio de la noticia se retrasó hasta el 27 de enero de 2016 para coincidir con la publicación de un artículo en la revista Nature describiendo los algoritmos utilizados.​ En marzo de 2016 jugó contra un jugador de 9-dan profesional, Lee Sedol (9 Dan), en Corea. De las cinco partidas AlphaGo ganó las tres primeras, la cuarta partida la ganó Lee Sedol y la quinta nuevamente fue ganada por la inteligencia artificial quedando el resultado cuatro a uno. Sobre este evento existe un documental creado por Netflix en el 2017 denominado AlphaGo Archivado el 4 de febrero de 2018 en Wayback Machine.
+
+
+== AlphaZero ==
+
+El 4 de diciembre de 2017, el equipo de DeepMind logró un gran avance al derrotar el módulo AlphaZero a Stockfish 8 en una serie de cien partidas, la mitad jugando con blancas y la mitad con negras. El resultado fue que ganó 28 e hicieron tablas en 72, no perdiendo ninguna. Para lograrlo, tan solo ha necesitado conocer las reglas del juego y cuatro horas de entrenamiento jugando contra sí mismo.​ En 2017, StockFish 8 era el campeón vigente del campeonato mundial de ajedrez por computadora, con un ELO de 3400 puntos.​
+
+
+== Investigación ==
+El objetivo de Tecnologías DeepMind es «resolver la inteligencia»,​ la cual están tratando de lograr mediante la combinación de  «Las mejores técnicas de Aprendizaje automático y Neurociencia de sistemas para construir potentes algoritmos de aprendizaje de propósito general».​ Están tratando de formalizar la inteligencia​ con el fin de no solo implementarla a las máquinas, pero también al cerebro humano, como explica Demis Hassabis:
+
+ 
+
+Actualmente el enfoque de la compañía está en publicar investigaciones en sistemas computacionales que son capaces de jugar juegos, y desarrollar estos sistemas, que van desde juegos como go​ hasta juegos de arcade. De acuerdo con Shane Legg la inteligencia a un nivel humano en una máquina puede ser lograda  «cuando una máquina pueda jugar un rango amplio de juegos desde la percepción de corriente de entrada y salida, y transferir conocimiento a través de los juegos[...]».​ La investigación describe una IA jugando siete juegos diferentes en Atari (Pong, Breakout, Space Invaders, Seaquest, Beamrider, Enduro, y Q*bert) según los informes, que llevó la adquisición por Google.​
+
+
+=== Aprendizaje reforzado profundo ===
+A diferencia de otras IA, como Deep Blue o Watson de IBM, las cuales fueron desarrolladas para un propósito predefinido y solo funcionan dentro de su ámbito, Google DeepMind dice que sus sistemas no están pre-programados: aprenden de la experiencia, usando solo píxeles primos como datos de entrada.​​ Prueban el sistema en videojuegos, en especial en juegos arcade, como Space Invaders o Breakout.​​ Sin alterar el código, el IA empieza a entender como jugar el juego, y después de jugar varias veces, en algunas juego (especialmente en Breakout), tiene una mayor eficiencia al jugar que cualquier humano.​ Para la mayoría de los juegos (por ejemplo, Space Invaders, Ms Pacman, Q*Bert), DeepMind jugó por debajo del actual récord mundial. La aplicación del IA de DeepMind para videojuegos es actualmente para juegos que se crearon en los setenta y en los ochenta, con el trabajo que se realiza en juegos más complejos en 3D como Doom, el cual apareció por primera vez al principio de los años noventa.​
+
+
+== Véase también ==
+AlphaFold para predecir la estructura 3D de una proteína basada únicamente en su secuencia genética.
+TensorFlow.
+Google.
+Google AI.
+
+
+== Referencias ==

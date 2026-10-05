@@ -1,0 +1,195 @@
+George Boole (/buːl/; Lincoln, Lincolnshire, Inglaterra, 2 de noviembre de 1815-Ballintemple, Condado de Cork, Irlanda, 8 de diciembre de 1864) fue un matemático y lógico británico.​
+Como inventor del álgebra de Boole (en 1847),​ que marca los fundamentos de la aritmética computacional​ moderna, Boole es considerado como uno de los fundadores del campo de las ciencias de la computación.​ En 1854 publicó Una investigación de las leyes del pensamiento: en las que se fundamentan las teorías matemáticas de la lógica y las probabilidades, donde desarrolló un sistema de reglas que permiten expresar, manipular y simplificar problemas lógicos y filosóficos cuyos argumentos admiten dos estados (verdadero o falso) por procedimientos matemáticos. Se podría decir que es el padre de los operadores lógicos simbólicos y que, gracias a su álgebra, hoy en día es posible realizar operaciones lógicas simbólicamente.
+Sus principales publicaciones son El análisis matemático de la lógica (1847), Una investigación de las leyes del pensamiento (1854), Un tratado de ecuaciones diferenciales (1859) y Un tratado del cálculo de las diferencias finitas (1860).
+
+
+== Biografía ==
+
+
+=== Inicios en Lincoln ===
+
+Boole nació en 1815 en Lincoln, Lincolnshire, Inglaterra. Fue hijo de John Boole (1779-1848), un zapatero de bajos recursos,​ y de Mary Ann Joyce.​ John Boole estuvo especialmente interesado en las matemáticas y la lógica; dio a su hijo sus primeras lecciones en estos temas y le enseñó educación primaria. Sin embargo, el talento matemático de George Boole no se manifestó durante la juventud, ya que al principio mostraba mayor interés por las humanidades.​ 
+Debido a un serio declive en los negocios, el joven Boole recibió poca enseñanza formal y académica posterior.​ Fue un autodidacta en lenguas modernas y aprendió latín, posiblemente ayudado por William Brooke, un librero en Lincoln, o lo aprendió en la escuela de Thomas Bainbridge.​ En una ocasión, un periódico local publicó su traducción de un poema en latín y un erudito lo acusó de plagio bajo el argumento de que Boole no era capaz de tal hazaña.​ 
+A los 16 años, Boole se convirtió en el sostén de sus padres y tres hermanos menores al aceptar un puesto de asistente de maestro en Doncaster, en la Escuela de Heigham.​ Hasta ese momento Boole estudió en solitario las matemáticas superiores.​ También enseñó brevemente en Liverpool.​ Boole se mantuvo hasta el final de su vida en uno u otro grado dentro de la profesión educativa. 
+Participó en el Instituto de Mecánica de Lincoln de los Greyfriars, un monasterio franciscano fundado en 1833.​​Edward French Bromhead, quien conoció a John Boole a través de la institución, ayudó a George con libros de matemáticas​ y el reverendo George Stevens Dickson, de la iglesia St. Swithin, le dio el texto de cálculo de Sylvestre François Lacroix.​ Aun así, sin un maestro, le llevó muchos años dominar el cálculo.​
+A los 19 años, Boole fundó su propia escuela en Lincoln: Free School Lane.​ Cuatro años más tarde, tras el fallecimiento de Robert Hall, se hizo cargo de la Academia Hall en Waddington, a las afueras de Lincoln. En 1840 regresó a Lincoln, donde dirigió un internado.​ Se unió a la Sociedad Topográfica de Lincoln, de cuyo comité fue miembro, y presentó un escrito titulado «Sobre el origen, progreso y tendencias del politeísmo, especialmente entre los antiguos egipcios y persas, y en la India moderna».​
+Boole se convirtió en una figura local prominente, admirador del obispo John Kaye. Participó en la campaña local del «cierre temprano», que buscaba controlar las horas de trabajo de las tiendas minoristas. Con Edmund Larken y otros, fundó una sociedad de préstamo inmobiliario en 1847. También se relacionó con el cartista Thomas Cooper, cuya esposa era pariente suya.​
+A partir de 1838, Boole estableció contacto con académicos matemáticos británicos afines y empezó a leer más. Estudió álgebra en forma de métodos simbólicos, tal como se entendían en ese momento, y comenzó a publicar artículos de investigación.​
+
+
+=== Vida en Cork ===
+
+En 1849 fue nombrado el primer profesor de matemáticas del entonces Queen's College (hoy University College Cork) en Cork, Irlanda. Allí conoció a su futura esposa, Mary Everest, en 1850, sobrina de John Ryall, profesor de griego. Se casaron en 1855.​​ Mantuvo contacto con Lincoln y colaboró con E. R. Larken en una campaña para reducir la prostitución.​
+En 1861, Boole fue a juicio contra alguien de nombre John Hewitt Wheatley, por el cual el patrimonio y los intereses de Wheatley en las tierras de Maghan/Mahon, condado de Cork, pasaron a ser propiedad de Boole.​
+En marzo de 1863, alquiló la casa de nombre Litchfield Cottage, en Cork, donde vivió con su esposa Mary hasta su fallecimiento el 8 de diciembre del año siguiente.​ Boole murió de un ataque de fiebre que terminó en un derrame pleural.​​ En su testamento legó a su esposa todos sus bienes y los derechos en el arrendamiento de la casa.​ En agosto de 1865, unos ocho meses después del fallecimiento, Everest cedió la casa a un sujeto llamado Francis Heard.
+El carácter personal de Boole le valió la estima más profunda de todos sus amigos. Se caracterizó por la modestia y entregó su vida a la búsqueda de la verdad.​ Fue enterrado en el cementerio de la Iglesia de St. Michael, Church Road, Blackrock (un barrio de Cork). Hay una placa conmemorativa en la iglesia contigua.
+
+
+== Publicaciones ==
+Con la excepción de Augustus De Morgan, Boole fue probablemente el primer matemático inglés desde los tiempos de John Wallis que escribió sobre lógica. Su primer trabajo publicado fue sobre la «Teoría de las transformaciones analíticas», publicado por el El Periódico Matemático de Cambridge en 1839.​ Boole publicó veintidós artículos en ese periódico y en su sucesor, El Periódico Matemático de Cambridge y Dublin. Asimismo, publicó dieciséis artículos en las series tercera y cuarta de la Philosophical Magazine y un trabajo sobre las bases matemática de la lógica en la Mechanic's Magazine, en 1848.​
+En 1841 Boole publicó un influyente artículo sobre la naciente teoría de invariantes.​ En 1844 publicó Sobre un método general de análisis, una contribución a las ecuaciones diferenciales lineales donde, partiendo del caso de los coeficientes constantes en los que ya había trabajado, abordó el caso de los coeficientes variables.​ Su principal innovación en métodos operacionales consistió en admitir que las operaciones podían no ser conmutativas.​
+
+En la primavera de 1847, Boole publicó The Mathematical Analysis of Logic (El análisis matemático de la lógica),​ el primero de sus trabajos sobre lógica simbólica y el cual él mismo llegó a considerar una precipitada e imperfecta exposición de su sistema lógico. En la portada del mismo se  incluye la frase de Aristóteles (Anal. post., lib. I, cap. XI): «Todas las ciencias se asocian con otras respecto a elementos comunes. (Y yo llamo común a todo aquello que utilizan en sus demostraciones, no a aquello que puede ser o no ser probado)».
+El desarrollo de las ideas encontradas en ese pequeño escrito de 80 páginas llevó a la realización de su trabajo más importante, An Investigation of the Laws of Thought: on Which are Founded the Mathematical Theories of Logic and Probabilities (Una investigación sobre las leyes del pensamiento: en las cuales se fundamentan las teorías matemáticas de la lógica y las probabilidades, de 1854), conocido simplemente como Las leyes del pensamiento.​ De esta obra destaca la creación de un sistema que permitió estructurar un método simbólico para la inferencia lógica. Boole demostró que, dada una proposición con un número de premisas, estas pueden tratarse simbólicamente para llegar a la conclusión lógica contenida en dichas premisas. La segunda parte de sus Leyes del pensamiento intentó descubrir un método general para poder determinar la probabilidad de cualquier evento lógicamente relacionado con un sistema de eventos dados cuyas probabilidades conocemos previamente. Dicho método fue objeto de controversia en la Philosophical Magazine.​
+En 1857, Boole publicó su tratado On the Comparison of Transcendents, with Certain Applications to the Theory of Definite Integrals (Sobre la comparación de transcendentes, con ciertas aplicaciones a la teoría de integrales definidas),​ donde estudiaba la suma de residuos de una función racional. Entre otros resultados, probó la conocida como identidad de Boole:
+
+  
+    
+      
+        
+          m
+          e
+          s
+        
+        
+          {
+          
+            x
+            ∈
+            
+              R
+            
+            
+            ∣
+            
+            ℜ
+            
+              
+                1
+                π
+              
+            
+            ∑
+            
+              
+                
+                  a
+                  
+                    k
+                  
+                
+                
+                  x
+                  −
+                  
+                    b
+                    
+                      k
+                    
+                  
+                
+              
+            
+            ≥
+            t
+          
+          }
+        
+        =
+        
+          
+            
+              ∑
+              
+                a
+                
+                  k
+                
+              
+            
+            
+              π
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {mes} \left\{x\in \mathbb {R} \,\mid \,\Re {\frac {1}{\pi }}\sum {\frac {a_{k}}{x-b_{k}}}\geq t\right\}={\frac {\sum a_{k}}{\pi t}}}
+  
+
+para cualesquier números reales ak > 0, bk y t > 0.​ La generalización de esta identidad juega un importante papel en la teoría de la transformada de Hilbert.​
+Dos tratados matemáticos encapsulan los principales descubrimientos de Boole y se conviertien en referentes educativos: el conocido Tratado sobre ecuaciones diferenciales (A Treatise on Differential Equations) de 1859 y el Tratado sobre el cálculo de las diferencias finitas (A Treatise on the Calculus of Finite Differences), una secuela publicada el año siguiente.​ La principal aportación del primero fue el desarrollo del método simbólico general y de un método general de análisis que se aplica al estudio de distintos tipos de ecuaciones diferenciales. Este se convirtió en libro de texto en la Universidad de Cambridge y se editó ininterrumpidamente hasta 1923; en 2014 se publicó una edición revisada. El segundo tratado indaga en el cálculo diferencial e integral, las series y las ecuaciones de funciones diferenciales; contiene más de doscientos problemas y sus soluciones comentadas por el propio Boole.
+Durante sus últimos años de vida, Boole se dedicó a ampliar sus investigaciones con el objetivo de producir una segunda edición de ese tratado de 1859 que fuera mucho más completa. Parte de sus últimas vacaciones las pasó estudiando arduamente en las bibliotecas de la Royal Society y del Museo Británico; sin embargo, esta nueva edición nunca se completó. Tras su muerte, los manuscritos dejados a cargo de Isaac Todhunter eran tan incompletos para dicho propósito que Todhunter decidió publicarlos en 1865 en un volumen suplementario de Ecuaciones Diferenciales editado por él.​
+Boole poseía también un amplio y profundo conocimiento de la literatura en general. Dante fue su poeta favorito y prefirió el Paraíso al Infierno. La Metafísica de Aristóteles, la Ética de Spinoza, las obras filosóficas de Cicerón y muchas otras afines fueron también temas frecuentes de estudio. Sus reflexiones sobre cuestiones filosóficas, religiosas y científicas pueden encontrarse en cuatro de sus escritos: El genio de sir Isaac Newton, El uso correcto del ocio, Las afirmaciones de la Ciencia y El aspecto social de la cultura intelectual, los cuales publicó en diferentes momentos.​
+
+
+=== Recopilaciones de su obra ===
+El trabajo de Boole se halla esparcido en distintas publicaciones. Una larga lista de sus tesis y documentos sueltos, tanto en temas de lógica como de matemáticas, se encuentran en el Catálogo de tesis científicas publicado por la Royal Society, que también publicó seis tesis importantes en su periódico científico Philosophical Transactions. Otras pocas obras pueden hallarse en publicaciones del periódico Transactions of the Royal Society of Edinburgh, de la Royal Society of Edinburgh, y en el Boletín de la Academia de San Petersburgo de 1862 (con el nombre de G. Boldt, vol. iv, pp. 198-215), publicado por la Academia Real Irlandesa.​
+
+
+=== Análisis de su obra ===
+La novedosa perspectiva de Boole sobre la aplicación del método lógico se debió a la misma confianza profunda en el razonamiento simbólico que lo hizo triunfar en la investigación matemática. Aunque no consideraba la lógica como una rama de las matemáticas, como queda claro en su Análisis matemático de 1847, fue capaz de señalar la profunda analogía entre los símbolos del álgebra y la representación simbólica que, en su opinión, era necesaria para representar formas lógicas y silogismos. Teorizó que las proposiciones lógicas se podían expresar en forma de ecuaciones algebraicas y, por lo tanto, obtenerse conclusiones silogísticas siguiendo las reglas ordinarias algebraicas.​
+En 1921 el economista John Maynard Keynes publicó un libro que se ha convertido en un clásico en la teoría de la probabilidad, A Treatise of Probability (Tratado de la probabilidad). En su libro, Keynes comentaba la teoría de Boole sobre la probabilidad y sostenía que Boole había cometido un error fundamental acerca del concepto de independencia estocástica​ que a su juicio viciaba la mayor parte del trabajo de su predecesor. En su libro, The Last Challenge Problem: George Boole's Theory of Probability (2009), David Miller proporciona un método general de acuerdo con el sistema de Boole e intenta resolver los problemas reconocidos anteriormente por Keynes y otros autores.
+
+
+== Familia ==
+Boole tuvo cinco hijas:
+
+Mary Lucy Margaret (1856-1908),​ que se casó con el matemático y escritor Charles Howard Hinton y tuvo cuatro hijos:
+George (1882-1943)
+Eric (1884-¿?)
+William (1886-1909)
+Sebastian (1887-1923), inventor de las «barras de mono» (instalación para juegos infantiles). Sebastián tuvo tres hijos:
+Jean Hinton (1917-2002, nombre de casada: Rosner), que fue activista por la paz.
+William H. Hinton (1919-2004), que visitó China en las décadas de 1930 y 1940 y escribió un relato influyente sobre la reforma agraria comunista.
+Joan Hinton (1921-2010), que trabajó en el Proyecto Manhattan y vivió en China desde 1948 hasta su muerte el 8 de junio de 2010. Se casó con Sid Engst.
+Margaret (1858-1935), que se casó con el artista Edward Ingram Taylor, con quien tuvo dos hijos:
+Su hijo mayor, Geoffrey Ingram Taylor, se convirtió en matemático y llegó a ser miembro de la Royal Society.
+Su hijo menor, Julian, fue profesor de Cirugía.
+Alicia (1860-1940), que hizo importantes contribuciones a la geometría de cuatro dimensiones.
+Lucy Everest (1862-1905), que fue la primera mujer profesora de Química en Inglaterra.
+Ethel Lilian (1864-1960), que se casó con el científico y revolucionario polaco Wilfrid Michael Voynich y que fue autora de la novela The Gadfly.
+
+
+== Legado ==
+
+El trabajo de Boole fue ampliado y perfeccionado por William Stanley Jevons, Augustus De Morgan, Charles Sanders Peirce y William Ernest Johnson. Este trabajo fue resumido por Ernst Schröder, Louis Couturat y Clarence Irving Lewis.
+El trabajo de Boole (así como el de su descendencia intelectual) fue relativamente oscuro excepto entre los lógicos. En su momento parecía no tener usos prácticos. Sin embargo, aproximadamente setenta años después de la muerte de Boole, Claude Shannon asistió a una clase de filosofía en la Universidad de Michigan que le introdujo en los estudios de Boole. Shannon reconoció que el trabajo de Boole podía ser la base de mecanismos y procesos en el mundo real y que por lo tanto era de gran relevancia. En 1937 Shannon se dedicó a escribir una tesis de licenciatura en el Instituto de Tecnología de Massachusetts en la que demostró cómo el álgebra de Boole puede optimizar el diseño de los sistemas electromecánicos de relés, por entonces utilizados en los conmutadores de enrutamiento telefónico. También demostró que los circuitos con relés podían resolver problemas de álgebra booleana. El empleo de las propiedades de los interruptores eléctricos a la lógica de proceso es el concepto básico que subyace en todos los sistemas electrónicos modernos en los equipos digitales. 
+Victor Shestakov, de la Universidad Estatal de Moscú (1907-1987), propuso en 1935 una teoría de los interruptores eléctricos basados en la lógica booleana. Esto fue antes de que Claude Shannon y según el testimonio de los lógicos y los matemáticos soviéticos Sofia Yanovskaya, Gaaze-Rapoport, Dobrushin, Lupanov, Dmitri Medvédev y Uspensky, a pesar de que presentaron sus tesis académicas en el mismo año de 1938. Pero la primera publicación de los resultados de Shestakov tuvo lugar solo en 1941 (en ruso). Por lo tanto, el álgebra de Boole se convirtió en el fundamento de la práctica de circuitos digitales de diseño y Boole, a través de Shannon y Shestakov, en la base teórica para la era digital.
+
+ 
+
+
+== Reconocimientos y epónimos ==
+Medalla del primer lugar de la Royal Society en 1844, por su tesis de ese año El análisis matemático de la lógica.​
+Medalla Keith de la Real Sociedad de Edimburgo en 1855,​ por su tesis Sobre la aplicación de la teoría de probabilidades a las preguntas de la combinación de testimonios y juicios.​
+Elegido miembro de la Royal Society en 1857.​
+Doctor honoris causa por la Universidad de Dublín y por la Universidad de Oxford.​
+Fueron nombrados en su honor:
+El álgebra de Boole.
+La palabra clave Bool, que representa un tipo de dato en muchos lenguajes de programación, algunos de los cuales (como Pascal y Java) usan el nombre completo Boolean.​
+La librería, la sala de lectura subterránea y el Centro Boole para la Investigación y la Informática​ de la Universidad de Cork.
+La calle Boole Heights de Bracknell, Berkshire.
+El cráter Boole en la Luna.​
+El asteroide (17734) Boole.​
+En 2015, en conmemoración al 200 aniversario de su nacimiento en 1815:
+La Universidad de Cork reunió admiradores de Boole procedentes de todos los países del mundo para celebrar su vida y su legado.​ Se hicieron diversas actividades, incluyendo el lanzamiento de una nueva edición de la biografía The Life and Work of George Boole: A Prelude to the Digital Age (La vida y trabajo de George Boole: un preludio de la era digital), publicada originalmente en 1985 por Desmond MacHale.
+El buscador Google mostró un Doodle con una imagen de inspiración algebraica el 2 de noviembre de 2015.​
+
+
+== Véase también ==
+Proposición categórica
+David Hilbert
+Bertrand Russell
+
+
+== Notas ==
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre George Boole.
+George Boole (en inglés).
+Artículo de Roger Parsons sobre Boole (en inglés).
+Stanford Encyclopedia of Philosophy. George Boole. Biografía y documentados comentarios de su obra matemática (en inglés).
+
+
+=== Libros ===
+BOOLE, George. The Mathematical Analysis of Logic (1847), en Google Books.
+BOOLE, George. An investigation of the Laws of Thought (1854), en Google Books.
+BOOLE, George. Treatise of Differential Equations (1959), en Google Books.
+BOOLE, George. Treatise of the Calculus of Finite Differences (1860), en Google Books.
+FORSYTH, Andrew Russell. A Treatise on Differential Equations (1996), en Google Books.

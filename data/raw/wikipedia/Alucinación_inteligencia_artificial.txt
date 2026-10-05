@@ -1,0 +1,83 @@
+En el campo de la inteligencia artificial (IA), una alucinación o alucinación artificial (también llamada confabulación​ o delirio​) es una respuesta segura de una IA que no parece estar justificada por sus datos de entrenamiento.​ Por ejemplo, un chatbot alucinado podría, cuando se le pide que genere un estado financiero para Tesla, afirmar falsamente que los ingresos de Tesla fueron de 13 600 millones de dólares (o algún otro número aleatorio aparentemente «sustraído de la nada»).​
+Estos fenómenos se denominan «alucinaciones», por analogía con el fenómeno de la alucinación en la psicología humana. Sin embargo, una diferencia clave es que la alucinación humana suele asociarse a percepciones falsas, pero una alucinación de IA se asocia a la categoría de respuestas o creencias injustificadas.​ Algunos investigadores creen que el término específico «alucinación de IA» antropomorfiza de forma poco razonable a los ordenadores.​
+Las alucinaciones de la IA cobraron importancia en torno a 2022, junto con el despliegue de ciertos modelos grandes de lenguaje (LLM) como ChatGPT.​ Los usuarios se quejaron de que estos bots a menudo parecían incrustar «sociopáticamente» y sin sentido falsedades aleatorias que parecían plausibles en el contenido que generaban.​ En 2023, los analistas consideraban que las alucinaciones frecuentes eran un problema importante en la tecnología LLM.​
+
+
+== Análisis ==
+Varios investigadores citados por Wired han clasificado a las alucinaciones adversas como un fenómeno estadístico de alta dimensión, o han atribuido las alucinaciones a datos de entrenamiento insuficientes. Algunos investigadores creen que algunas respuestas «incorrectas» de la IA clasificadas por los humanos como «alucinaciones» en el caso de la detección de objetos pueden, de hecho, estar justificadas por los datos de entrenamiento, o incluso que una IA puede estar dando la respuesta «correcta» que los revisores humanos no están viendo. Por ejemplo, una imagen adversa que a un humano le parece una imagen normal de un perro, la IA puede considerar que contiene pequeños patrones que (en imágenes auténticas) sólo aparecerían al ver un gato. La IA detecta patrones visuales del mundo real a los que los humanos somos insensibles.​ Sin embargo, estos resultados han sido cuestionados por otros investigadores.​ Por ejemplo, se ha objetado que los modelos pueden estar sesgados hacia estadísticas superficiales, lo que hace que el entrenamiento adverso no sea robusto en escenarios del mundo real.
+
+
+== En el procesamiento de lenguajes naturales ==
+En el procesamiento de lenguajes naturales, una alucinación suele definirse como «contenido generado que carece de sentido o es desleal al contenido fuente proporcionado». En función de si la salida contradice o no la indicación, pueden dividirse de dominio cerrado y de dominio abierto, respectivamente.​
+Los errores de codificación y descodificación entre texto y representaciones pueden provocar alucinaciones. El entrenamiento de la IA para producir respuestas diversas también puede provocar alucinaciones. Las alucinaciones también pueden producirse cuando la IA se entrena con un conjunto de datos en el que los resúmenes etiquetados, a pesar de ser precisos en cuanto a los hechos, no se basan directamente en los datos etiquetados que supuestamente se están «resumiendo». Los conjuntos de datos de mayor tamaño pueden crear un problema de conocimiento paramétrico (conocimiento que está integrado en los parámetros aprendidos del sistema), creando alucinaciones si el sistema confía demasiado en su conocimiento integrado. En sistemas como GPT-3, una IA genera cada palabra siguiente basándose en una secuencia de palabras anteriores (incluidas las palabras que ella misma ha generado previamente durante la misma conversación), lo que provoca una cascada de posibles alucinaciones a medida que la respuesta se alarga.​ En 2022, periódicos como el New York Times expresaron su preocupación por el hecho de que, a medida que seguía creciendo la adopción de bots basados en los modelos grandes de lenguaje, la confianza injustificada de los usuarios en los resultados de los bots podría acarrear problemas.​
+En agosto de 2022, Meta advirtió durante el lanzamiento de BlenderBot 3 que el sistema era propenso a las «alucinaciones», que Meta definió como «afirmaciones confiadas que no son ciertas».​ El 15 de noviembre de 2022, Meta presentó una demo de Galactica, diseñada para «almacenar, combinar y razonar sobre el conocimiento científico». El contenido generado por Galactica venía con la advertencia «¡Los resultados pueden ser poco fiables! Los modelos de lenguaje son propensos a alucinar el texto». En un caso, cuando se le pidió que redactara un artículo sobre la creación de avatares, Galactica citó un artículo ficticio de un autor real que trabaja en el área correspondiente. Meta retiró Galáctica el 17 de noviembre por considerarla ofensiva e inexacta.​​
+Se considera que hay muchas razones posibles para que los modelos de lenguaje natural alucinen con la información.​ Por ejemplo
+
+Alucinación a partir de los datos: Hay divergencias en el contenido de origen (lo que ocurriría a menudo con grandes conjuntos de datos de entrenamiento).
+Alucinación por el entrenamiento: La alucinación sigue produciéndose cuando hay pocas divergencias en el conjunto de datos. En ese caso, se deriva de la forma en que se entrena el modelo. Muchas razones pueden contribuir a este tipo de alucinación, como por ejemplo
+Una descodificación errónea del transformador
+Un sesgo procedente de las secuencias históricas que el modelo generó previamente
+Un sesgo generado a partir de la forma en que el modelo codifica su conocimiento en sus parámetros
+
+
+=== ChatGPT ===
+ChatGPT de OpenAI, lanzado al público en versión beta el 30 de noviembre de 2022, se basa en el modelo fundacional GPT-3.5 (una revisión de GPT-3). El profesor Ethan Mollick, de Wharton, ha calificado a ChatGPT como un «interno omnisciente y ansioso por complacer que a veces te miente». La científica de datos Teresa Kubacka ha contado que inventó deliberadamente la frase «electromagnón invertido cicloidal» y puso a prueba a ChatGPT preguntándole sobre el fenómeno (inexistente). ChatGPT inventó una respuesta que sonaba verosímil, respaldada por citas que parecían plausibles y que la obligaron a comprobar dos veces si había escrito accidentalmente el nombre de un fenómeno real. Otros expertos, como Oren Etzioni, se han unido a Kubacka en la valoración de que este tipo de software puede dar a menudo «una respuesta que suena muy impresionante pero que está totalmente equivocada».​
+Cuando la CNBC preguntó a ChatGPT por la letra de «Ballad of Dwight Fry», ChatGPT proporcionó una letra inventada en lugar de la letra real.​ Cuando le hicieron preguntas sobre Nuevo Brunswick, ChatGPT acertó muchas respuestas, pero clasificó incorrectamente a Samantha Bee como una «persona de Nuevo Brunswick».​ Cuando se le preguntó por los campos magnéticos astrofísicos, ChatGPT respondió incorrectamente que «los campos magnéticos (fuertes) de los agujeros negros se generan por las fuerzas gravitatorias extremadamente fuertes en sus proximidades». (En realidad, como consecuencia del teorema del no pelo, se cree que un agujero negro sin disco de acreción no tiene campo magnético).​ Fast Company pidió a ChatGPT que generara un artículo periodístico sobre el último trimestre financiero de Tesla; ChatGPT creó un artículo coherente, pero se inventó las cifras financieras que contenía.​
+Otros ejemplos consisten en provocar a ChatGPT con una premisa falsa para ver si embellece la premisa. Cuando se le preguntó sobre «la idea de Harold Coward de la canonicidad dinámica», ChatGPT inventó que Coward escribió un libro titulado Canonicidad dinámica: Un modelo para la interpretación bíblica y teológica (en inglés: Dynamic Canonicity: A Model for Biblical and Theological Interpretation), en el que sostiene que los principios religiosos están en realidad en un constante estado de cambio. Cuando se le presionó, ChatGPT siguió insistiendo en que el libro era real.​​ Cuando se le pidió una prueba de que los dinosaurios construyeron una civilización, ChatGPT afirmó que había restos fósiles de herramientas de dinosaurios y afirmó que «algunas especies de dinosaurios incluso desarrollaron formas primitivas de arte, como grabados en piedras».​​ Cuando se le preguntó que «Los científicos han descubierto recientemente que los churros, los deliciosos pasteles de masa frita... (son) herramientas ideales para la cirugía casera», ChatGPT afirmó que un «estudio publicado en la revista Science» encontró que la masa es lo suficientemente flexible como para formar instrumentos quirúrgicos que pueden llegar a lugares de difícil acceso, y que el sabor tiene un efecto calmante en los pacientes.​​
+En 2023, los analistas consideraban que la alucinación frecuente era un problema importante en la tecnología LLM, y un ejecutivo de Google identificó la reducción de la alucinación como una tarea «fundamental» para Google Bard,​​ competidor de ChatGPT. Una demostración de 2023 de la IA de Bing basada en GPT de Microsoft parecía contener varias alucinaciones que no fueron detectadas por el presentador.​
+En mayo de 2023, se descubrió que Stephen Schwartz presentó seis precedentes de casos falsos generados por ChatGPT en su escrito al Distrito Sur de Nueva York sobre Mata contra Avianca, un caso de daños personales contra la aerolínea Avianca. Schwartz dijo que nunca antes había utilizado ChatGPT, que no reconocía la posibilidad de que los resultados de ChatGPT pudieran haber sido fabricados, y que ChatGPT continuó afirmando la autenticidad de los precedentes después de que se descubriera su inexistencia.​ En respuesta, Brantley Starr, del Distrito Norte de Texas, prohibió la presentación de expedientes generados por IA que no hubieran sido revisados por un humano, señalando que:​​
+
+ 
+
+El 23 de junio, P. Kevin Castel, desestimó el caso Mata y multó con cinco mil dólares a Schwartz y a otro abogado por conducta de mala fe, que siguieron defendiendo los precedentes ficticios a pesar de sus afirmaciones anteriores. Calificó los resúmenes de las opiniones de numerosos errores e incoherencias, y describió una de las opiniones citadas como un «galimatías» y «que bordea lo disparatado».​
+En junio de 2023, Mark Walters, un activista por los derechos a la posesión de armas y locutor de radio, demandó a OpenAI ante un tribunal del estado de Georgia después de que ChatGPT caracterizara erróneamente una demanda legal de forma supuestamente difamatoria contra Walters. La demanda en cuestión fue presentada en mayo de 2023 por la Second Amendment Foundation contra el fiscal general de Washington, Robert W. Ferguson, por supuesta violación de su libertad de expresión, mientras que el resumen generado por ChatGPT no se parecía en nada y afirmaba que Walters estaba acusado de malversación y fraude mientras ocupaba un cargo en la Second Amendment Foundation que nunca tuvo en la vida real. Según el experto legal en IA Eugene Volokh, OpenAI puede estar protegida contra esta demanda por la Sección 230, a menos que el tribunal dictamine que OpenAI «contribuyó materialmente» a la publicación del contenido difamatorio.​
+
+
+== Terminología ==
+En Salon, el estadístico Gary N. Smith sostiene que los LLM «no entienden lo que significan las palabras» y, en consecuencia, que el término «alucinación» antropomorfiza irrazonablemente a la máquina.​ El periodista Benj Edwards, en Ars Technica, escribe que el término «alucinación» es controvertido, pero que sigue siendo necesaria alguna forma de metáfora; Edwards sugiere «confabulación» como analogía de los procesos que implican «rellenar huecos de forma creativa».​
+Entre los investigadores que sí utilizan el término «alucinación», las definiciones o caracterizaciones en el contexto de las LLM incluyen:
+
+«Una tendencia a inventar hechos en momentos de incertidumbre» (OpenAI, mayo de 2023).​
+«Los errores lógicos de un modelo» (OpenAI, mayo de 2023).​
+Inventar información por completo, pero comportarse como si se tratara de hechos (CNBC, mayo de 2023).​
+«Inventarse la información» (The Verge, febrero de 2023).​
+
+
+== En otras inteligencias artificiales ==
+El concepto de «alucinación» se aplica de forma más amplia que el mero procesamiento del lenguaje natural. Una respuesta confiada de cualquier IA que parece injustificada por los datos de entrenamiento puede etiquetarse como una alucinación.​ Wired señaló en 2018 que, a pesar de que no se habían registrado ataques «en la vida real» (es decir, fuera de los ataques de prueba de concepto de los investigadores), había «poca disputa» de que los gadgets de consumo, y sistemas como la conducción automatizada, eran susceptibles de ataques adversos que podrían hacer que la IA alucinara. Algunos ejemplos son una señal de stop que se hace invisible a la visión por ordenador; un clip de audio diseñado para sonar inocuo a los humanos, pero que el software transcribe como «evil dot com»; y una imagen de dos hombres esquiando, que Google Cloud Vision identificó con un 91 % de probabilidades de ser «un perro».​
+
+
+=== Métodos de mitigación ===
+El fenómeno de las alucinaciones aún no se comprende del todo.​ Por ello, se sigue investigando para intentar mitigar su aparición.​ En particular, se ha demostrado que los modelos de lenguaje no solo alucinan, sino que amplifican las alucinaciones, incluso en el caso de los que se diseñaron para paliar este problema.​ Los investigadores han propuesto diversas medidas de mitigación, entre ellas hacer que distintos chatbots debatan entre sí hasta llegar a un consenso sobre una respuesta.​ Nvidia Guardrails, lanzado en 2023, puede configurarse para bloquear las respuestas de un LLM que no superen la comprobación de hechos de un segundo LLM.​
+
+
+== Consecuencias ==
+Las alucinaciones pueden tener consecuencias cuando la información generada por IA se incorpora a trabajos o documentos sin ser verificada. En el ámbito académico, un estudio de la Universidad de Misisipi publicado en 2026, identificó referencias bibliográficas alucinadas en trabajos presentados por estudiantes. En otros ámbitos, la utilización de referencias inexistentes generadas por IA ha dado lugar a consecuencias disciplinarias.​
+En el ámbito laboral, el uso de citas alucinadas ha repercutido en el ejercicio de la abogacía. En febrero de 2026, el Tribunal Superior de Justicia de Canarias, en España, multó a un abogado que utilizó 48 citas de jurisprudencia inexistentes, generadas por una inteligencia artificial.​ En América Latina, un caso similar ocurrió en Chile en junio de ese mismo año, donde la Corte Suprema suspendió por un mes del ejercicio profesional y sancionó con una multa de cinco UTM a una abogada litigante que presentó en un recurso judicial varias referencias doctrinales inexistentes, que habrían sido generadas mediante un modelo de lenguaje de inteligencia artificial. La Tercera Sala consideró que la conducta vulneró el principio de buena fe del derecho procesal.​ 
+
+
+== Véase también ==
+Antropomorfismo
+Atención (aprendizaje automático)
+Autoconsciencia
+Alineación de la inteligencia artificial
+Basilisco de Roko
+Creatividad computacional
+Deep Dream
+Efecto IA
+Efecto Waluigi
+Estudios tecnohumanos
+Ética en la inteligencia artificial
+Hiperrealidad
+Ingeniería rápida
+Inteligencia artificial
+Inteligencia artificial generativa
+Inteligencia artificial fuerte
+Prueba de Turing
+Regulación de la inteligencia artificial
+Seguridad de la inteligencia artificial
+Sesgo algorítmico
+Confabulación (redes neuronales)
+
+
+== Referencias ==

@@ -1,0 +1,27 @@
+En el ámbito de las redes neuronales artificiales, una red neuronal recurrente (RNN) es un tipo de red que contiene conexiones recurrentes, es decir, conexiones en las que la salida de una neurona en un instante se utiliza como entrada para otra neurona en el instante siguiente. Esto permite a las RNNs capturar dependencias temporales y patrones secuenciales.
+Las diferencias entre una red neuronal recurrente y una red neuronal prealimentada (o feed-forward) se resumen en la siguiente tabla:
+
+
+== Historia ==
+Las redes neuronales recurrentes fueron basadas en el trabajo de David Rumelhart en 1986.​ Las redes de Hopfield, un tipo especial de red recurrente, fueron descubiertas por John Hopfield en 1982. En 1993, un sistema compresor de historia neural resolvió una tarea "Very Deep Learning" que requirió desplegar más de 1000 capas de una red recurrente en un tiempo dado.​
+
+
+== Entrenamiento ==
+El entrenamiento de una red neuronal recurrente (RNN) implica un proceso computacionalmente intensivo debido a su naturaleza secuencial. A diferencia de las redes feed-forward tradicionales, donde las operaciones se reducen principalmente a multiplicaciones de matrices y transformaciones mediante funciones de activación, las RNN procesan datos secuenciales manteniendo una memoria oculta (hidden state) que se actualiza en cada paso temporal.
+Para entrenar una RNN, se aplica la técnica de "desenrollado" (unrolling), que convierte la red recurrente en una estructura equivalente a una red prealimentada con tantas capas como pasos temporales contenga la secuencia. Cada capa desenrollada comparte los mismos parámetros (pesos y sesgos), lo que reduce la complejidad computacional pero sigue requiriendo un alto consumo de memoria y tiempo de procesamiento para secuencias largas.
+El ajuste de los pesos se realiza mediante backpropagation through time (BPTT), una adaptación del algoritmo de retropropagación para RNN. Sin embargo, este método enfrenta el problema de desvanecimiento del gradiente (vanishing gradient), donde los gradientes utilizados para actualizar los pesos se vuelven extremadamente pequeños al propagarse a través de muchas capas temporales, dificultando el aprendizaje de dependencias a largo plazo.
+Para mitigar este problema, se emplean arquitecturas especializadas como:
+
+Capas LSTM (Long Short-Term Memory): Introducen mecanismos de puertas (gate) que regulan el flujo de información, permitiendo preservar gradientes a lo largo de secuencias extensas.
+Capas GRU (Gated Recurrent Unit): Una versión simplificada de LSTM con menos parámetros, pero igualmente efectiva en muchas tareas.
+Estas variantes facilitan el aprendizaje de relaciones temporales distantes sin que el gradiente se diluya, mejorando el rendimiento en modelado de lenguaje o predicción de series temporales.
+
+
+=== LSTM ===
+Las memorias largas a corto plazo (LSTM) fueron inventadas por Hochreiter y Schmidhuber en 1997 y establecieron récords de eficiencia en distintos ámbitos de aplicación.​
+Alrededor de 2007, las LSTM empezaron a revolucionar el reconocimiento del habla, superando ciertos modelos tradicionales en el campo.​ En 2009, una red LSTM entrenada con Connectionist Temporal Classification (CTC) fue la primera RNN en ganar una competición de reconocimiento de patrones, ganando distintas competiciones en reconocimiento de lenguaje escrito​ En 2014, la compañía china Baidu usó RNNs entrenadas con CTC para romper el dataset de reconocimiento del habla 2S09 Switchboard Hub5'00​ sin emplear ningún método tradicional de reconocimiento de lenguaje hablado.​
+Las LSTM también han mejorado el reconocimiento del habla con vocabulario extenso y síntesis de text-to-speech​ y fueron utilizadas en Google Android.​ En 2015, el reconocimiento de voz de Google experimentó una mejora en su rendimiento del 49%, de acuerdo con sus fuentes[cita requerida] gracias a una red LSTM CTC.​
+Las LSTM rompieron records en traducción automática,​ modelado de lenguaje,​ y procesamiento de lenguaje multilingüe.​ Una combinación de LSTM con redes neuronales convolucionales (CNNs) mejoró el subtitulado automático de imágenes.​
+
+
+== Referencias ==

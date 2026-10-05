@@ -1,0 +1,66 @@
+ELIZA es el primer programa informático de procesamiento del lenguaje natural creado entre 1964 y 1966​ en el MIT por Joseph Weizenbaum.​​ Creada para explorar la comunicación entre humanos y máquinas, ELIZA simuló la conversación utilizando una metodología de concordancia y sustitución de patrones que daba a los usuarios una ilusión de entendimiento por parte del programa, pero no tenía ninguna representación que pudiera considerarse que realmente comprendía lo que se decía por ninguna de las dos partes.​​​ Mientras que el programa ELIZA en sí se escribió (originalmente) en MAD-SLIP, las directivas de concordancia de patrones que contenían la mayor parte de su capacidad de lenguaje se proporcionaron en «scripts» separados, representados en una representación similar al Lisp.​ El guion más famoso, DOCTOR, simulaba un psicoterapeuta de la escuela rogeriana (en la que el terapeuta a menudo refleja las palabras del paciente al paciente),​​ y utilizaba reglas, dictadas en el guion, para responder con preguntas no direccionales en las entradas de los usuarios. Como tal, ELIZA fue uno de los primeros chatterbots («chatbot» modernamente) y uno de los primeros programas capaces de ejecutar la prueba de Turing.​
+El creador de ELIZA, Weizenbaum, pensaba que el programa podía ser un método para explorar la comunicación entre humanos y máquinas. Se sorprendió, y sorprendió que personas, incluida la secretaria de Weizenbaum, atribuyeran sentimientos humanos al programa informático.​Muchos académicos creían que el programa podría influir positivamente en la vida de muchas personas, especialmente aquellas con problemas psicológicos, y que podría ayudar a los médicos que trabajan en el tratamiento de estos pacientes.​ Aunque ELIZA era capaz de participar en el discurso, no podía conversar con la verdadera comprensión.​ Sin embargo, muchos usuarios tempranos estaban convencidos de la inteligencia y la comprensión de ELIZA, a pesar de la insistencia de Weizenbaum en lo contrario.​ El código fuente original de ELIZA había desaparecido desde su creación en la década de 1960, ya que no era habitual publicar artículos que incluyeran código fuente en ese momento. Sin embargo, más recientemente, el código fuente MAD-SLIP se ha descubierto en los archivos del MIT y se ha publicado en diversas plataformas, como archive.org. El código fuente tiene un gran interés histórico, ya que demuestra no sólo la especificidad de los lenguajes y técnicas de programación en ese momento, sino también el inicio de la abstracción y la abstracción de software como medio para conseguir una programación de software sofisticada.
+
+
+== Funcionamiento ==
+
+ELIZA funciona buscando palabras clave en la frase escrita por el usuario y responde con una frase modelo registrada en su base de datos.
+A veces, las respuestas de este bot conversacional resultaban tan convincentes que al conversar por primera vez con él, algunas personas creyeron que en verdad estaban dialogando con un interlocutor humano. Sin embargo, esto tuvo un límite cuando el usuario encontraba mensajes implícitos o subliminales en las respuestas del bot que en verdad no existían o no intentaban significar eso. Llegado este punto, la conversación se volvía incoherente.
+Cuando se escribía determinada frase que el bot no conocía, el mismo reformulaba dicha expresión a modo de pregunta o reflexión.
+
+
+== Diseño ==
+Weizenbaum escribió originalmente ELIZA en MAD-SLIP para CTSS en un IBM 7094, como un programa para hacer posible la conversación en lenguaje natural con un ordenador. Para ello, Weizenbaum identificó cinco «problemas técnicos fundamentales» para ELIZA a superar: la identificación de palabras clave, el descubrimiento de un contexto mínimo, la elección de transformaciones adecuadas, la generación de respuestas en ausencia de palabras clave y la provisión de palabras clave.​ Weizenbaum resolvió estos problemas e hizo que ELIZA no tuviera un marco contextual ni un universo de discurso integrado.​ Sin embargo, esto requería que ELIZA tuviera un script de instrucciones sobre cómo responder a las aportaciones de los usuarios.
+ELIZA comienza su proceso de respuesta a una entrada de un usuario examinando primero la entrada de texto por una «palabra clave». Una «palabra clave» es una palabra designada como importante por el script de ELIZA actuante, que asigna a cada palabra clave un número de precedencia, o un RANK, diseñado por el programador. Si se encuentran estas palabras, se colocan en una «pila de claves», con la palabra clave del RANK más alto en la parte superior. Entonces, la frase de entrada se manipula y se transforma tal y como lo indique la regla asociada a la palabra clave del RANK más alto. Por ejemplo, cuando el script DOCTOR encuentra palabras como «igual» o «igual», saldría un mensaje relacionado con la similitud, en este caso «¿De qué manera?», puesto que estas palabras tenían un número de precedencia alto . Esto también demuestra cómo determinadas palabras, tal y como dicta el guion, pueden manipularse independientemente de consideraciones contextuales, como cambiar pronombres de primera persona y pronombres de segunda persona y viceversa, ya que éstas también tenían números de precedencia elevados. Estas palabras con elevados números de precedencia se consideran superiores a los patrones de conversación y se tratan independientemente de los patrones contextuales.
+
+Tras el primer examen, el siguiente paso del proceso es aplicar una regla de transformación adecuada, que incluye dos partes: la «regla de descomposición» y la «regla de remontaje». En primer lugar, se revisa la entrada de los patrones sintácticos a fin de establecer el contexto mínimo necesario para responder. Utilizando las palabras clave y otras palabras cercanas de la entrada, se ponen a prueba distintas reglas de desmontaje hasta que se encuentra un patrón adecuado. Utilizando las reglas del script, la frase se «desmonta» y se organiza en secciones de las partes componentes tal y como dicta la «regla de descomposición para la palabra clave de más alto rango». El ejemplo que da Weizenbaum es la entrada «Eres muy útil», que se transforma en «Soy muy útil». A continuación, se divide en (1) vacío (2) «yo» (3) «son» (4) «muy útil». La regla de descomposición ha dividido la frase en cuatro pequeños segmentos que contienen tanto las palabras clave como la información de la frase.
+Entonces, la regla de descomposición designa una regla de montaje particular, o un conjunto de reglas de montaje, a seguir cuando se reconstruye la oración. La regla de reensamblado toma los fragmentos de la entrada que la regla de descomposición había creado, los reordena y añade palabras programadas para crear una respuesta. Utilizando el ejemplo de Weizenbaum indicado anteriormente, esta regla de montaje tomaría los fragmentos y los aplicaría a la frase «¿Qué te hace pensar que soy (4)», que daría como resultado «¿Qué te hace pensar que soy muy útil?». Este ejemplo es bastante simple, puesto que dependiendo de la regla de desmontaje, la salida podría ser significativamente más compleja y utilizar más la entrada del usuario. Sin embargo, a partir de este montaje, ELIZA envía la frase construida al usuario en forma de texto en la pantalla.​
+Estos pasos representan la mayor parte de los procedimientos que sigue ELIZA para crear una respuesta a partir de una entrada típica, aunque existen diversas situaciones especializadas a las que ELIZA/DOCTOR puede responder. Algo que Weizenbaum escribió específicamente fue cuando no existe ninguna palabra clave. Una solución fue que ELIZA respondiera con un comentario que no tenía contenido, como «Ya veo» o «Por favor, sigue». El segundo método fue utilizar una estructura «MEMORIA», que grababa entradas recientes anteriores, y utilizaría estas entradas para crear una respuesta que hiciera referencia a una parte de la conversación anterior cuando se encontraba sin palabras clave.​ Esto fue posible debido a la capacidad de Slip de etiquetar palabras para otros usos, que simultáneamente permitió a ELIZA examinar, almacenar y reutilizar palabras para utilizarlas en las salidas.
+Aunque todas estas funciones estaban enmarcadas en la programación de ELIZA, la forma exacta en la que el programa desmontó, examinó y volvió a montar las entradas está determinada por el script operativo. El script no es estático y se puede editar, o crear uno nuevo, según sea necesario para la operación en el contexto necesario. Esto permitiría aplicar el programa en múltiples situaciones, incluido el conocido guion DOCTOR, que simula a un psicoterapeuta rogeriano.
+Una versión Lisp de ELIZA, basada en el documento CACM de Weizenbaum, fue escrita poco después de la publicación de este artículo, por Bernie Cosell.​​Una versión BASIC apareció en Creative Computing en 1977 (aunque fue escrita en 1973 por Jeff Shrager). Esta versión, que se llevó a muchos de los primeros ordenadores personales, parece haber sido traducida posteriormente a otras muchas versiones en muchos otros idiomas. Shrager afirma no haber visto ni las versiones de Weizenbaum ni las de Cosell.
+En 2021, Jeff Shrager buscó en los archivos de Weizenbaum del MIT, junto con el archivero del MIT Myles Crowley, y encontró archivos con la etiqueta Computer Conversations. Estos incluyen la lista completa del código fuente de ELIZA en MAD-SLIP, con el script DOCTOR adjunto. La finca de Weizenbaum ha dado permiso para abrir este código bajo una licencia de dominio público Creative Commons CC0. El código y otra información se pueden encontrar en el sitio de ELIZAGEN.
+Otra versión de Eliza popular entre los ingenieros de software es la versión que viene con la versión predeterminada de GNU Emacs, ya la que se puede acceder escribiendo M-x doctor desde la mayoría de las implementaciones modernas de Emacs.
+
+
+=== Pseudocódigo ===
+A partir de la figura 15.5, capítulo 15 de Procesamiento del habla y el lenguaje (tercera edición).
+
+function ELIZA GENERATOR (user sentence) vuelve response
+   Let w be the word in sentence que tiene el rango de palabra clave más alta
+   if w exists
+       Let r ser la regla más alta para w que coincide con la frase
+       response ← Aplicar la transformación en r a sentence
+       if w = 'my'
+           future ← Aplicar una transformación de la lista de reglas de «memoria» asentence
+           Push future en la cola de memoria
+       else (no se aplica ninguna palabra clave)
+           Either
+               response ← Aplicar la transformación de la palabra clave NONE a  sentence
+           Or
+               response ← Recupera la respuesta més antigua de la cola de memoria
+   Return response
+
+
+== Véase también ==
+Bot conversacional
+Inteligencia artificial
+Lista de proyectos de inteligencia artificial
+Prueba de Turing
+Habitación china
+Alizia
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Otra versión de ELIZA en JavaScript pero en español
+Código fuente de ELIZA en Java
+Otra implementación de ELIZA en Java
+Otra implementación más de ELIZA en Java, hablando español
+Módulo perl de ELIZA, implementación Archivado el 19 de octubre de 2004 en Wayback Machine. y tutorial
+Versiones de ELIZA para Macintosh Classic y Mac OS X
+Versión de ELIZA en Python
+Conversaciones con ELIZA
+Análisis de ELIZA
+Proyecto que adapta al español a ELIZA en JavaScript, con guion ampliado y editable desde la página.

@@ -1,0 +1,36 @@
+Cyc (del inglés encyclopedia) es un proyecto de inteligencia artificial que intenta ensamblar una ontología comprensiva y una base de datos de conocimiento general con el fin de permitir a las aplicaciones de inteligencia artificial realizar razonamientos del tipo humano.
+El proyecto fue iniciado en 1984 por Doug Lenat. El nombre Cyc es una marca registrada de Cycorp Inc. en Austin, Texas, una compañía de Lenat dedicada al desarrollo de Cyc. El proyecto original es software propietario, pero una pequeña versión del proyecto ha sido liberada bajo una licencia de código abierto y se conoce como OpenCyc.
+Cyc contiene una multitud de reglas simples (como "el agua causa humedad" y "la humedad pudre la comida"). Un ordenador puede concluir a partir del motor de inferencia de Cyc que el agua pudre la comida (al menos en exceso). La base de datos contiene aproximadamente 100.000 conceptos y 1.000.000 de declaraciones que abarcan aserciones definidas por humanos, reglas o ideas del sentido común. Estas están escritas en lenguaje CycL que está basado en cálculo de predicados y tiene una sintaxis similar a Lisp.
+La construcción de Cyc continúa siendo Ingeniería del conocimiento, representando hechos sobre el mundo manualmente e implementado mecanismos de inferencia efectivos sobre dicho conocimiento. Sin embargo, el objetivo del trabajo en Cycorp es dar al sistema Cyc la capacidad de comunicarse con los usuarios finales en lenguaje natural para que el sistema pueda continuar por sí solo con el proceso de construcción del conocimiento.
+
+
+== Influencia y recepción ==
+
+Cyc ha sido descrito como uno de los proyectos más ambiciosos y duraderos de la inteligencia artificial simbólica. Su objetivo de representar formalmente el conocimiento de sentido común influyó en áreas como la representación del conocimiento, las ontologías y los sistemas de razonamiento automatizado.​
+El proyecto también recibió críticas dentro de la comunidad científica debido a que gran parte de su conocimiento debía ser introducido manualmente por ingenieros y expertos, lo que planteaba dificultades para escalar el sistema y permitir una adquisición autónoma de conocimiento.​
+A pesar de estas limitaciones, Cyc es considerado un proyecto relevante dentro de la historia de la inteligencia artificial basada en conocimiento y uno de los intentos más destacados de modelar computacionalmente el sentido común humano.​
+
+
+== Descripción de la base de datos y terminología ==
+
+El ingreso de datos en Cyc se lleva a cabo mediante un proceso que Lenat llama enseñanza por cirugía cerebral,​ el cual es llevado a cabo en el lenguaje CycL. Dicho proceso consiste en descomponer una unidad de información en una serie de características llamadas slots que forman una especie de plantilla para ese tipo de información, para cada slots debe de construirse a su vez otra unidad de información con sus características, de forma que todo el conocimiento quede jerarquizado y categorizado para que Cyc "comprenda" las relaciones que existen entre los conceptos y objetos ingresados.
+Los nombres de conceptos son conocidos en Cyc como constantes. Las constantes empiezan con #$ y son sensibles a las mayúsculas. Hay constantes para:
+
+Ítems individuales, conocidos como individuos, tales como #$LinusTorvalds o #$Colombia.
+Colecciones tales como #$Tree-ThePlant (conteniendo todos los árboles) o #$EquivalenceRelation (conteniendo todas las relaciones de equivalencia). Un miembro de una colección es llamado una instancia de la colección.
+Funciones de verdad que pueden ser aplicadas a uno o más conceptos y retornan verdadero o falso. Por ejemplo #$siblings (hermanos) es la relación de hermandad y es verdadera si los dos argumentos son hermanos. Las funciones de verdad pueden ser divididas en conectoras lógicas (#$and, #$or, #$not, #$implies), cuantificadores (#$forAll, #$thereExists, etc.) y predicados (como en el ejemplo de la hermandad).
+Funciones, que producen nuevos términos a partir de los términos dados. Por ejemplo #$FruitFn a la cual, cuando se le provee un argumento que describe un tipo o colección de plantas, retorna los frutos de estas plantas. Por convención, las funciones constantes empiezan con mayúsculas y terminan en "Fn".
+Véase: CycL, inteligencia artificial, lógica, WordNet, Web semántica
+
+
+== Bibliografía ==
+R.V. Guha; Douglas B. Lenat. «CYC: A Mid-Term Report». AI Magazine, otoño 1990 (en inglés) 11 (3): 32-59.  
+Freedman, David H. (1996). «Capítulo 2: Los padres fundadores». Hacedores de cerebros. (url con vista previa restringida). Editorial Andrés Bello. pp. 64-80. ISBN 956-13-1324-3. 
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+https://www.cyc.com/
+https://web.archive.org/web/20110226000645/http://opencyc.org/

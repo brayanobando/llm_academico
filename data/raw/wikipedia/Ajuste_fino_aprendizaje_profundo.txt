@@ -1,0 +1,38 @@
+En el aprendizaje profundo, el ajuste fino es un enfoque para transferir el aprendizaje en el que los pesos de un modelo previamente entrenado se entrenan en datos nuevos.​  El ajuste fino se puede realizar en toda la red neuronal o solo en un subconjunto de sus capas, en cuyo caso las capas que no se ajustan se «congelan» (no se actualizan durante el paso de retropropagación).​ Un modelo también se puede aumentar con «adaptadores» que constan de muchos menos parámetros que el modelo original, y ajustarse de manera eficiente en los parámetros ajustando los pesos de los adaptadores y dejando el resto de los pesos del modelo congelados.​
+Para algunas arquitecturas, como las redes neuronales convolucionales, es común mantener congeladas las capas anteriores (las más cercanas a la capa de entrada) porque capturan características de nivel inferior, mientras que las capas posteriores a menudo distinguen características de alto nivel que pueden estar más relacionadas con la tarea en la que se entrena al modelo.​​
+Los modelos que se entrenan previamente en corpus grandes y generales habitualmente se ajustan reutilizando los parámetros del modelo como punto de partida y agregando una capa específica de la tarea entrenada desde cero.​ El ajuste fino del modelo completo también es común y, a menudo, produce mejores resultados, pero es más costoso desde el punto de vista computacional.​
+El ajuste fino generalmente se logra con el aprendizaje supervisado, pero también existen técnicas para ajustar un modelo utilizando una supervisión débil.​ El ajuste fino se puede combinar con un aprendizaje de refuerzo a partir del objetivo basado en la retroalimentación humana para producir modelos de lenguaje como ChatGPT (una versión mejorada de GPT-3) y Sparrow.​​
+
+
+== Robustez ==
+El ajuste fino puede degradar la solidez de un modelo a los cambios de distribución.​ Una mitigación es interpolar linealmente las ponderaciones de un modelo ajustado con las ponderaciones del modelo original, lo que puede aumentar en gran medida el rendimiento fuera de la distribución y, al mismo tiempo, conservar en gran medida el rendimiento dentro de la distribución del modelo ajustado. 
+
+
+== Variantes ==
+
+
+=== Adaptación de bajo rango ===
+La adaptación de bajo rango (LoRA) es una técnica basada en adaptadores para ajustar modelos de manera eficiente. La idea básica es diseñar una matriz de rango bajo que luego se agrega a la matriz original.​
+El ajuste fino basado en el adaptador permite un rendimiento que se aproxima al del ajuste fino del modelo completo mientras reduce drásticamente la cantidad de pesos modificados que deben guardarse en el disco. Un modelo de idioma con miles de millones de parámetros puede ajustarse LoRA con solo varios millones de parámetros para guardar, o incluso menos.
+El ajuste fino basado en LoRA se ha vuelto popular en la comunidad Stable Diffusion.​ El soporte para LoRA se está integrando en la biblioteca Difusores de Hugging Face.​ El soporte para LoRA y técnicas similares también está disponible para una amplia gama de otros modelos a través del paquete de ajuste fino de eficiencia de parámetros (PEFT) de Hugging Face.​
+
+
+== Aplicaciones ==
+
+
+=== Procesamiento natural del lenguaje ===
+El ajuste fino es común en el procesamiento del lenguaje natural (PNL), especialmente en el dominio del modelado del lenguaje. Los modelos de lenguaje grande como la serie de modelos básicos de GPT de OpenAI se pueden ajustar en tareas de PNL posteriores para mejorar el rendimiento con respecto al modelo preentrenado sin modificar.​
+Pólemicas
+Greg Rutkowski, un artista digital polaco que emplea estilos de pintura clásica para crear paisajes de fantasía, exigió a los gestores del algoritmo generativo Stable Diffusion que excluyesen su nombre de los posibles prompts con los que los usuarios podían pedir imágenes. El estilo de Rutkowsky de gran popularidad se había convertido en uno de los estilos más solicitados por los usuarios, por encima de artistas tan universalmente consagrados como Picasso, Dalí o Van Gogh. De facto cualquier usuario podía hacer las obras de Rutkowsky. 
+Stable Diffusion reaccionó a la demanda, dejó de ser posible describir una determinada imagen y solicitar que se generase en el estilo de Rutkowski, pero no sirvió para mucho pues la comunidad de Stable Diffusion utilizando el ajuste fino, basado LoRA, fueron capaces de entrenar a una nueva red con obras de Rutkowski para poder seguir generando imágenes con su estilo.​
+
+
+== Modelos comerciales ==
+Los modelos de lenguaje que se ofrecen comercialmente a veces se pueden ajustar si el proveedor ofrece una API de ajuste fino. A partir del 19 de junio de 2023, OpenAI y Azure OpenAI Service de Microsoft Azure ofrecen API de ajuste fino del modelo de lenguaje para un subconjunto de sus modelos, así como Google Cloud Platform para algunos de sus modelos PaLM y otros.​​​ No todos los modelos comerciales admiten ajustes finos; en particular, GPT-3.5 y GPT-4 de OpenAI aún no admiten ajustes por parte de los desarrolladores.
+
+
+== Véase también ==
+Grandes modelos de lenguaje
+
+
+== Referencias ==

@@ -1,0 +1,70 @@
+OpenAI, LLC es una empresa estadounidense de investigación y despliegue de inteligencia artificial fundada en 2015, sin ánimo de lucro. Su misión original era asegurar que la inteligencia artificial general fuese desarrollada como código libre y en beneficio de toda la humanidad. No obstante, en 2019 se convirtió en una empresa híbrida, con una entidad sin ánimo de lucro y otra con fines lucrativos. Desde entonces cuenta con varios inversores como Microsoft,​que proporcionó a OpenAI una inversión de mil millones de dólares en 2019 y otra de diez mil millones de dólares en 2023.​​ Además, los sistemas informáticos de OpenAI se ejecutan en una plataforma de supercomputación basada en Azure, producto de Microsoft.​​​
+Algunos de sus proyectos más destacados son ChatGPT, un chatbot que puede ver, oír y hablar;​ DALL-E, un modelo de IA generativa que puede crear imágenes a partir de descripciones de texto;​ y GPT-6 Astra, su modelo de lenguaje más grande y capaz.​OpenAI también ofrece una plataforma de API que permite a los usuarios acceder y construir sus propios modelos de IA personalizados.
+A finales de 2023, una serie de polémicas envolvieron a la empresa, lo que llevó a la salida de varios miembros importantes de la compañía, varios de ellos cuestionando las posturas comerciales y de desarrollo de la empresa. El 14 de mayo, Ilya Sutskever anunció su salida de OpenAI, empresa que cofundó y en la que se desempeñaba como jefe científico. El 17 de mayo, hizo lo mismo Jan Leike, encargado del equipo de seguridad. ​​
+
+
+== Historia ==
+
+
+=== 2015-2019 ===
+OpenAI se fundó en 2015 como una organización sin fines de lucro, con la misión de asegurar que la inteligencia artificial general (IAG) beneficie a toda la humanidad. Entre sus fundadores se encontraban Elon Musk, Sam Altman, Ilya Sutskever, Greg Brockman y otros expertos en IA.​​
+OpenAI lanza Universe, una plataforma de software para medir y entrenar la inteligencia general de la IA en todo el suministro de juegos, sitios web y otras aplicaciones del mundo.​​​​
+Durante el torneo The International 2017 del videojuego Dota 2, un bot entrenado con las técnicas de aprendizaje automático de OpenAI jugó y ganó una demostración contra el jugador profesional Dendi. Después de la demostración, el director de tecnología Greg Brockman explicó que el robot había aprendido jugando contra sí mismo durante dos semanas en tiempo real, y que el software de aprendizaje era un paso para crear software que pueda manejar tareas complejas «como por ejemplo ser cirujano».​​
+En 2018, OpenAI lanzó GPT-1, un modelo de lenguaje con 117 millones de parámetros. Y en junio, OpenAI alquiló 128 000 CPU y 256 GPU a Google durante varias semanas para entrenar a sus bots de Dota 2.​
+En febrero de 2019, OpenAI optó por no lanzar GPT-2, un nuevo generador de texto de IA, debido a la preocupación por un posible uso indebido. Y, finalmente, en marzo de 2019, Sam Altman dejó Y Combinator para centrarse en su trabajo en OpenAI y se convirtió en el CEO.​
+
+
+=== 2020-2022 ===
+En mayo de 2020, los periodistas del New York Times compitieron contra el software de inteligencia artificial para verificar su grado de aprendizaje reforzado. Durante dicha competición, la IA generó textos periodísticos con resultados óptimos.​
+El 11 de junio de 2020, se conoció que la empresa desarrolló una API para estandarizar todos los futuros desarrollos usando texto en cualquier lenguaje.​
+El 18 de noviembre de 2021, su aplicación Playground fue lanzada al público junto a un servicio API, anteriormente los usuarios debían entrar en una lista de espera para poder utilizarlo. Esta aplicación consiste en la interacción de forma textual con la IA, que devuelve un texto con características muy completas según peticiones que pueden ser muy concretas.​
+En noviembre de 2022, su aplicación ChatGPT fue lanzada al público. Esta consiste en un sistema de chat. Sus funcionalidades incluyen: facilitar en cuestión de minutos el código CSS a utilizar en una página web, generar ideas para cualquier tipo de necesidad e incluso generar un guion para un vídeo de YouTube o TikTok.
+
+
+=== 2023 ===
+El primero de marzo de 2023 lanzaron una API de ChatGPT, con la que desarrolladores externos pueden implementar sus propias herramientas tomando como base la tecnología de ChatGPT.​
+El 3 de marzo de 2023, Reid Hoffman renunció a su puesto en el consejo, citando el deseo de evitar conflictos de intereses entre su puesto en el consejo de OpenAI y sus inversiones en empresas de tecnología de IA a través de Greylock Partners, así como su papel como cofundador de la empresa de tecnología de IA Inflection AI. Hoffman permaneció en el consejo de Microsoft, uno de los principales inversores de OpenAI.​
+El 14 de marzo de 2023, OpenAI lanzó GPT-4,​ como API (con lista de espera) y como función de ChatGPT Plus.​
+
+
+==== Salida de Altman y Brockman ====
+El 17 de noviembre de 2023, Sam Altman fue destituido como CEO por falta de confianza, y la Directora de Tecnología Mira Murati asumió el cargo de CEO interina.​ Greg Brockman, presidente de OpenAI, fue destituido como presidente de la junta directiva. Brockman anunció su marcha de la empresa tras el anuncio, además de informar de algunos detalles de los hechos ocurridos.​
+El 18 de noviembre de 2023, se informó de que había conversaciones para que Altman volviera a su papel de consejero delegado en medio de la presión ejercida sobre el consejo por inversores como Microsoft y Thrive Capital, que condenaron la salida de Altman.​ Aunque el propio Altman se pronunció a favor de volver a OpenAI, ha declarado que estaba considerando fundar una nueva empresa y traer consigo a antiguos empleados de OpenAI si las conversaciones no funcionaban.​ ​El 19 de noviembre de 2023, las negociaciones con Altman para volver a la empresa fracasaron y Murati fue sustituido por Emmett Shear para asumir el cargo de CEO interino.​ Sin embargo, el 29 de noviembre de 2023, Sam Altman regresa como CEO de OpenAI. Además, la compañía anunció un nuevo consejo directivo inicial, que incluye a Bret Taylor como presidente, Larry Summers y Adam D’Angelo. Mira Murati también retomó su puesto como CTO, y Greg Brockman volvió como presidente.​
+
+
+=== 2024 ===
+El 14 de mayo de 2024, Ilya Sutskever anunció que dejaría la empresa. Su sucesor fue Jakub Pachocki.​
+El 1 de junio de 2024, OpenAI había nombrado al exdirector de la NSA, el general Paul Nakasone, miembro de su consejo de administración, afirmando que ayudará a proteger al fabricante de ChatGPT de los «cada vez más sofisticados malos actores».​​​
+En agosto de 2024 se marcharon dos de sus fundadores, uno de ellos su presidente Greg Brockman.​
+
+
+==== Sora ====
+
+El 15 de febrero de 2024, OpenAI presentó el generador de texto a vídeo Sora, que genera vídeos de aspecto realista a partir de instrucciones de texto.​​ El modelo genera vídeos de hasta un minuto de duración, garantizando una alta calidad visual y una implementación precisa de las especificaciones del usuario.​ Sora utiliza una tecnología de modelo de difusión y una arquitectura de transformadores para generar vídeos a partir de pequeños paquetes de datos basados en el conocimiento adquirido de otros productos.
+
+
+==== GPT-4o ====
+
+El 13 de mayo de 2024, OpenAI anuncia su nuevo modelo de inteligencia artificial multimodal, llamado GPT-4o. Su nombre proviene de «GPT-4» y «omni», lo que sugiere su capacidad para procesar múltiples modalidades de entrada y salida, como texto, audio e imágenes.​OpenAI también menciona que, al ser su primer modelo que combina estas modalidades, todavía se está «rascando la superficie» para explorar lo que el modelo puede hacer y sus limitaciones.​GPT-4o tiene limitaciones y riesgos potenciales, como proporcionar información inexacta, perpetuar sesgos y ser vulnerable a la explotación. ​
+En marzo de 2025, OpenAI lanzó la generación de imágenes GPT-4o, que permite a los usuarios crear una amplia gama de imágenes, incluyendo escenas fotorrealistas, ilustraciones estilizadas y diagramas, todo dentro de la interfaz ChatGPT.​ Esta función ha despertado el interés por replicar el icónico estilo artístico de Studio Ghibli, y los usuarios transforman sus fotos en encantadoras imágenes inspiradas en Ghibli.​
+
+
+== OpenAI LP ==
+El 11 de marzo de 2019, OpenAI presentó OpenAI LP como una entidad de «ganancias limitadas».​ La creación de OpenAI LP se anunció con el objetivo de captar más capital y ofrecer mejores sueldos a sus empleados.​Según OpenAI, «nuestra misión es garantizar que la inteligencia artificial general (AGI) beneficie a toda la humanidad, principalmente intentando construir una AGI segura y compartir los beneficios con el mundo. Queremos aumentar nuestra capacidad de recaudar capital sin dejar de cumplir nuestra misión, y ninguna estructura legal preexistente que conozcamos logra el equilibrio adecuado. Nuestra solución es crear OpenAI LP como un híbrido de una empresa con fines de lucro y una organización sin fines de lucro, a la que llamamos una empresa de "ganancias limitadas"».​
+
+
+== Véase también ==
+Anthropic
+Instituto de investigación sobre Inteligencia de Máquinas
+Robótica de código libre
+Google DeepMind
+Open AI Five
+OpenAI Codex
+Worldcoin
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Página web oficial

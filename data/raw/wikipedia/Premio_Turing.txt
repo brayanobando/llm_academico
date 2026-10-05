@@ -1,0 +1,33 @@
+El Premio Turing es un premio de las Ciencias de la Computación que es otorgado anualmente por la Asociación para la Maquinaria Computacional (ACM) a quienes hayan contribuido de manera trascendental al campo de las ciencias computacionales. 
+El galardón rinde homenaje a Alan Turing y desde 2014 es patrocinado por Google, que recompensa con un premio de un millón de dólares estadounidenses al ganador.​
+
+
+== Galardonados ==
+
+
+== Número de galardones por nacionalidad ==
+Esta es la distribución de los Premios Turing desde 1966 hasta 2023. Las nacionalidades de los galardonados están basadas en su lugar de nacimiento, no donde desarrollaron su trabajo como investigadores.
+
+USA Estados Unidos: 48
+UK Reino Unido: 8
+ISR Israel: 5
+FRA Francia: 2
+NOR Noruega: 2
+CAN Canadá: 3
+CHN China: 1
+DEN Dinamarca: 1
+LAT Letonia: 1
+NED Países Bajos: 1
+SUI Suiza: 1
+VEN Venezuela: 1
+GRE Grecia: 1
+IND India: 1
+ITA Italia: 1
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio web oficial del Premio Turing (en inglés).
+El premio Turing, concedido a Diffie y Hellman.

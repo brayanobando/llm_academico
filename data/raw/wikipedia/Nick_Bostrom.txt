@@ -1,0 +1,448 @@
+Nick Bostrom (en sueco, Niklas Boström) es un filósofo sueco de la Universidad de Oxford, nacido en 1973. Es conocido por sus trabajos sobre el principio antrópico, el riesgo existencial, la ética sobre el perfeccionamiento humano, los riesgos de la superinteligencia y el consecuencialismo. Obtuvo un PhD en la Escuela de Economía y Ciencia Política de Londres en el año 2000. En 1998, Bostrom cofundó junto a David Pearce la Asociación Transhumanista Mundial.
+En 2004 cofundó junto a James Hughes el Instituto para la Ética y las Tecnologías Emergentes.  En el año 2006, ha sido el director fundador del Future of Humanity Institute en la Universidad de Oxford.  FHI es un centro de investigación multidisciplinar único en el que un grupo de investigadores destacados, desde los campos de las matemáticas, la informática, la filosofía, entre otras disciplinas, se unen para trabajar en cuestiones de gran formato para la humanidad. 
+En 2011 fundó el Programa Oxford Marton Sobre los Impactos de la Tecnología Futurista y es el director fundador del Instituto Futuro de la Humanidad en la Universidad de Oxford.
+Es el autor de más de 200 publicaciones,​ incluyendo: Superinteligencia: caminos, peligros, estrategias (2014), un bestseller según New York Times,​ y Sesgo antrópico: efectos de la selección de observación en la ciencia y la filosofía (2002).​ En 2009 y 2015, la revista Foreign Policy lo incluyó en su lista de los 100 pensadores globales destacados.​​ El trabajo de Bostrom sobre la superinteligencia y su preocupación por el riesgo existencial que la misma representa para la humanidad en el nuevo siglo, ha llegado a influir en el pensamiento de Elon Musk y Bill Gates.​​​
+
+
+== Biografía ==
+Bostrom nació un 10 de marzo de 1973 en Helsingborg, Suecia.​ Desde joven le desagradó la escuela y terminó sus últimos años de instituto aprendiendo en casa, optando por educarse a sí mismo en una gran variedad de disciplinas como antropología, arte, literatura y ciencia.​
+Obtuvo un B.A. en filosofía, matemáticas, lógica matemática e inteligencia artificial en la Universidad de Gotemburgo y un grado de master en filosofía y física, y neurociencia computacional de la Universidad de Estocolmo y el King's College de Londres respectivamente. Mientras estudiaba en la Universidad de Estocolmo, investigó la relación entre el lenguaje y la realidad estudiando al filósofo analítico Willard Van Orman Quine.​ En el año 2000 ganó un PhD en filosofía en la Escuela de Economía de Londres. Se mantuvo dos años (2000-2002) como educador en la Universidad de Yale.
+Bostrom ha dado consejos sobre políticas además de consultorías para un amplio rango de gobiernos y organizaciones. Fue consultor para la Oficina gubernamental de Ciencia del Reino Unido y un miembro experto para la Agenda del Consejo para Riesgos Catastróficos del Foro Económico Mundial. Es un miembro consultor de la junta del Instituto de Investigación de la Inteligencia de las Máquinas, el Instituto para el Futuro de la Vida, el Instituto de Preguntas Fundacionales en física y cosmología, y un consultor externo para el Centro para el Estudio del Riesgo Existencial de Cambridge.​
+
+
+== Filosofía ==
+
+
+=== Riesgo existencial ===
+Un aspecto importante de las investigaciones de Bostrom se enfoca en el futuro de la humanidad y en los resultados a largo plazo.​​ Introdujo el concepto de  "riesgo existencial", el cual define como el riesgo de que "un resultado adverso pudiera bien devastar el origen de la vida inteligente en la Tierra o bien restringir su potencial permanente y drásticamente". 
+Bostrom desde posiciones transhumanistas advierte sobre los riesgos que esta puede traer y los nombra como riesgos existenciales. Además menciona algunos de los riesgos existenciales (aquellos que tienen que ver con la acción humana)
+
+Mal uso de las tecnologías.
+Guerras nucleares.
+Pandemias.
+Aristocracia posthumana.
+Mala programación de una superinteligencia.
+Superinteligencia autónoma que asume los valores de poder.
+Criogenización y superpoblación.
+Control del estado, de instituciones, ONG, movimientos religiosos, etc. Que no permitan ciertas aplicaciones para el mejoramiento humano (transhumanidad).
+Dificultades tecnológicas. Que la transhumanidad no se pueda llevar a la práctica.
+Agotamiento de los recursos naturales antes de que puedan ser creados artificialmente.
+Y reconoce como uno de los mayores riesgos, el mal uso de la tecnología, con fines hegemónicos, el consumismo y el militarismo entre otros factores, ha traído como consecuencia, la contaminación, la degradación de los ecosistemas y el agotamiento de los recursos. En el mal uso de las tecnologías, también se considera los errores humanos, que un virus se escape de un laboratorio.
+En el libro Riesgo catastrófico global (2008),  los editores Nick Bostrom y Milan Ćirković caracterizaron la relación entre el riesgo existencial y la cada vez más amplia gama de riesgos catastróficos de talla global, y relacionaron el riesgo existencial con los efectos de la selección del observador​ y la paradoja de Fermi.​​ En un escrito de 2013 para el periódico Global Policy, Bostrom ofrece una taxonomía del riesgo existencial y propone una reconceptualización de sustantibilidad en términos dinámicos: como una trayectoria para el desarrollo destinada a minimizar el riesgo existencial.​
+En 2005, Bostrom fundó el Instituto del Futuro de la Humanidad , que investiga el futuro lejano de la civilización humana. También es asesor del Centro para el Estudio del Riesgo Existencial.
+
+
+=== Superinteligencia ===
+En su libro Superinteligencia: caminos, peligros, estrategias (2014), Nick Bostrom define a la superinteligencia como "un intelectual que es mucho más listo que los mejores cerebros humanos prácticamente en cualquier campo, incluyendo la creatividad científica, sabiduría general y habilidades sociales.", además razona que con "un desempeño cognitivo excediendo enormemente el de los humanos en virtualmente todos los dominios de interés", los agentes superinteligentes podrían prometer beneficios sustanciales para la sociedad, pero plantear un significativo riesgo existencial. Por lo tanto, Bostrom asegura que es crucial que abordemos el campo de la inteligencia artificial con precaución y tomemos medidas activas para mitigar el riesgo que enfrentamos. 
+En su libro también menciona que el verdadero reto no está tanto en la inteligencia que sean capaces de alcanzar las máquinas, sino en el desarrollo moral de nuestra especie. Al final, como ya postuló Jean-Paul Sartre, estamos condenados a ser libres. Y eso puede ser peligroso, pero también una excelente oportunidad para dar otro salto evolutivo.
+La aceleración de las tecnologías se seguirá incrementando hasta llegar a un punto que escapa a las capacidades de los humanos (singularidad tecnológica). Se puede lograr una inteligencia artificial por fuerza bruta, o sea que dada la velocidad de la máquina pueda analizar exhaustivamente todas las posibles soluciones. Este es el caso del ajedrez, la inteligencia de la máquina se basa en su velocidad para calcular las variantes, lo cual le permite prever lo que puede suceder en el tablero.
+
+
+=== Carta abierta ===
+En enero de 2015, Nick Bostrom, Stephen Hawking, Max Tegmark, Elon Musk, Martin Rees y Jaan Tallinn, entre otros, firmaron una carta abierta de parte del Instituto para el Futuro de la Vida advirtiendo sobre los potenciales peligros de la inteligencia artificial, en la cual reconocían que "es importante y oportuno investigar cómo desarrollar sistemas de inteligencia artificial que sean sólidos y beneficiosos, y que existen direcciones de investigación concretas que pueden ser perseguidas hoy en día."​​ En vez de avisar de un desastre existencial, la carta pide más investigación para cosechar los beneficios de la IA "al mismo tiempo que se evitan los posibles contratiempos".
+Esta carta está firmada no solo por personas no relacionadas con la IA como Hawking, Musk y Bostrom, sino también por importantes investigadores en computación (entre ellos Demis Hassabis, uno de los principales investigadores en IA), ya que después de todo, si desarrollan una inteligencia artificial que no comparte los mejores valores humanos, significará que no fueron lo suficientemente inteligentes como para controlar sus propias creaciones.
+
+
+=== Razonamiento antrópico ===
+Bostrom ha publicado numerosos artículos sobre razonamiento antrópico, así como el libro Sesgo antrópico: efectos de la selección de observación en la ciencia y la filosofía, en el cual critica las formulaciones previas sobre el principio antrópico, incluyendo las de Brandon Carter, John Leslie, John Barrow y Frank Tipler.​
+Bostrom cree que el mal manejo de la información indicativa es una falla común en muchas áreas de la indagación (incluyendo cosmología, filosofía, teoría de la evolución, teoría de juegos y física cuántica) y argumenta que es necesaria una teoría antrópica para lidiar con estas. Bostrom introdujo el "supuesto de auto-prueba" y el "supuesto de auto-indicación" y mostró cómo ambos llevan a diferentes conclusiones en un número de casos, señalando que, en ciertos experimentos del pensamiento, cada uno de ellos es afectado por paradojas o implicaciones contraintuitivas. Él sugirió que para poder avanzar habría que extender el supuesto de auto-prueba hacia un "supuesto de auto-prueba fuerte", el cual reemplaza a los "observadores" por "momentos del observador", lo cual permitiría que la clase de referencia sea relativizada (y creó una expresión para esto en la "ecuación de la observación").
+En trabajos posteriores, describió el fenómeno de la "sombra antrópica", un efecto de la selección de observación que impide a los observadores observar cierto tipo de catástrofes en su pasado geológico y evolutivo reciente.​ Los tipos de catástrofes que se hallan en la sombra antrópica tienden a ser infravalorados a menos que se hagan correcciones estadísticas.
+
+
+=== Ética del perfeccionamiento humano ===
+Bostrom se muestra a favor de alcanzar el "perfeccionamiento humano", o la "automejora y la perfectibilidad humana a través de la aplicación ética de la ciencia",​​ a la vez que crítica a las posturas que son bio-conservadoras.​ 
+Propuso, junto al filósofo Toby Ord, la prueba inversa. Dado el sesgo irracional del statu quo humano, ¿cómo puede uno distinguir entre la crítica válida hacia los cambios propuestos en una cualidad humana y la crítica motivada por la resistencia al cambio? La prueba inversa intenta resolver esto preguntando si sería bueno alterar dicha cualidad en la dirección opuesta.​
+En 1998 Bostrom cofundó juntó al filósofo David Pearce la Asociación Transhumanista Mundial,​ hoy llamada Humanity+. En 2004 cofundó junto al sociólogo James Hughes el Instituto para la Ética y las Tecnologías Emergentes, aunque actualmente ya no se involucra en ninguna de estas organizaciones.
+En 2009, la revista Foreign Policy mencionó a Bostrom en su lista sobre pensadores globales, por "no aceptar límites en el potencial humano".​
+
+
+=== Humanity Plus (Asociación Transhumanista Mundial) ===
+Humanity Plus, conocida anteriormente como Asociación Transhumanista Mundial, fundada originalmente por Nick Bostrom y David Pearce,  es un movimiento cultural e intelectual internacional que tiene como objetivo final transformar la condición humana mediante el desarrollo y fabricación de tecnología ampliamente disponibles, que a su vez también mejoren las capacidades humanas, tanto a nivel físico como psicológico o intelectuales , basadas en la nanotecnología, en la ingeniería genética y en la cibernética. 
+Humanity Plus es una organización sin fines de lucro que trabaja para promover la discusión de las posibilidades de mejora radical de las capacidades humanas por medio de las tecnologías. Muchos teóricos y partidarios del transhumanismo buscan aplicar la razón, la ciencia y la tecnología para reducir la pobreza, las enfermedades, las discapacidades y la malnutrición en todo el mundo, el transhumanismo se distingue en su enfoque particular en la aplicación de las tecnologías para la mejora de los cuerpos humanos de forma individual.
+Humanity Plus tiene distintos objetivos, aquellos son:
+
+Apoyar la discusión y la conciencia pública de las tecnologías emergentes .
+Defender el derecho de las personas en sociedades libres y democráticas a adoptar tecnologías que expandan las capacidades humanas
+Anticipar y proponer soluciones para las consecuencias potenciales de las nuevas tecnologías.
+Alentar y apoyar activamente el desarrollo de tecnologías emergentes que se considere que tienen un beneficio positivo suficientemente probable
+
+
+=== Estrategia tecnológica ===
+Bostrom ha sugerido que una política tecnológica dirigida a reducir el riesgo existencial debería buscar influenciar el orden en el que varias capacidades tecnológicas son conseguidas, proponiendo el principio del desarrollo tecnológico diferencial. Este sostiene que los humanos deberíamos retrasar el desarrollo de tecnologías peligrosas, particularmente de aquellas que elevan el riesgo existencial, y acelerar el desarrollo de tecnología beneficiosas, particularmente aquellas que nos protegen del riesgo existencial que recae en la naturaleza o en otras tecnologías.
+
+
+=== Argumento de la simulación ===
+
+El argumento de la simulación de Bostrom propone que al menos uno de los siguientes enunciados es verdad:
+
+La fracción de civilizaciones a un nivel humano que alcanzan un estadio posthumano es muy cercana a cero;
+La fracción de civilizaciones posthumanas que se interesan en correr simulaciones sobre ancestros es muy cercana a cero;
+La fracción de todas las personas con nuestro tipo de experiencias que se hallan viviendo en una simulación es muy cercana a uno.
+Para estimar la probabilidad de al menos una de estas proposiciones, Bostrom ofrece la siguiente ecuación:​
+
+  
+    
+      
+        
+          f
+          
+            
+              sim
+            
+          
+        
+        =
+        
+          
+            
+              
+                f
+                
+                  
+                    p
+                  
+                
+              
+              N
+              H
+            
+            
+              (
+              
+                f
+                
+                  
+                    p
+                  
+                
+              
+              N
+              H
+              )
+              +
+              H
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {sim}}={\frac {f_{\textrm {p}}NH}{(f_{\textrm {p}}NH)+H}}}
+  
+
+Donde:
+
+  
+    
+      
+        
+          f
+          
+            
+              p
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {p}}}
+  
+ Es la fracción de todas las civilizaciones humanas que alcanzarán la capacidad tecnológica de programar simuladores de realidad virtual.
+
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ es el número promedio de simulaciones sobre ancestros que corran las civilizaciones representadas por  
+  
+    
+      
+        
+          f
+          
+            
+              p
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {p}}}
+  
+.
+
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ es el número promedio de individuos que han vivido en una civilización antes de que ésta fuera capaz de correr una simulación de la realidad.
+
+  
+    
+      
+        
+          f
+          
+            
+              sim
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {sim}}}
+  
+ es la fracción de todos los humanos que viven en realidades virtuales.
+N se puede calcular multiplicando la fracción de civilizaciones interesadas en crear dichas simulaciones (
+  
+    
+      
+        
+          f
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {1}}}
+  
+) por el número de simulaciones corridas por dichas civilizaciones (
+  
+    
+      
+        
+          N
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle N_{\textrm {1}}}
+  
+):
+
+  
+    
+      
+        N
+        =
+        
+          f
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle N=f_{\textrm {1}}}
+  
+
+  
+    
+      
+        
+          N
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle N_{\textrm {1}}}
+  
+
+Por lo tanto la fórmula se convierte en:
+
+  
+    
+      
+        
+          f
+          
+            
+              sim
+            
+          
+        
+        =
+        
+          
+            
+              
+                f
+                
+                  
+                    p
+                  
+                
+              
+              
+                f
+                
+                  
+                    1
+                  
+                
+              
+              
+                N
+                
+                  
+                    1
+                  
+                
+              
+            
+            
+              (
+              
+                f
+                
+                  
+                    p
+                  
+                
+              
+              
+                f
+                
+                  
+                    1
+                  
+                
+              
+              
+                N
+                
+                  
+                    1
+                  
+                
+              
+              )
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {sim}}={\frac {f_{\textrm {p}}f_{\textrm {1}}N_{\textrm {1}}}{(f_{\textrm {p}}f_{\textrm {1}}N_{\textrm {1}})+1}}}
+  
+
+Ya que el poder de la computación posthumana será mucho mayor, 
+  
+    
+      
+        
+          N
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle N_{\textrm {1}}}
+  
+ tendrá un valor muy grande, de modo que al menos una de las siguientes aproximaciones será verdad:
+
+  
+    
+      
+        
+          f
+          
+            
+              p
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {p}}}
+  
+ ≈ 0
+
+  
+    
+      
+        
+          f
+          
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {1}}}
+  
+ ≈ 0
+
+  
+    
+      
+        
+          f
+          
+            
+              sim
+            
+          
+        
+      
+    
+    {\displaystyle f_{\textrm {sim}}}
+  
+ ≈ 1
+
+
+== Libros ==
+2002 – Sesgo antrópico: efectos de la selección de observación en la ciencia y la filosofía, ISBN 0-415-93858-9.
+2009 – Perfeccionamiento humano, editado por by Bostrom y Julian Savulescu, ISBN 0-19-929972-2.
+2011 – Riesgo catastrófico global, editado por Bostrom y Milan M. Ćirković, ISBN 978-0-19-857050-9.
+2014 – Superinteligencia: caminos, peligros, estrategias, ISBN 978-0-19-967811-2.
+
+
+== Publicaciones ==
+Además de todos sus conocidos libros, Nick Bostrom es conocido por la creación de más de 200 papers los cuales, hablan acerca de distintos temas, como por ejemplo documentos sobre la Naturaleza, Ética,  Bioética, Astrofísica, Análisis y otros más.
+
+“Information Hazards: A Typology of Potential Harms from Knowledge”, (Traducción alEspañol: Riesgos de información: una tipología de daños potenciales del conocimiento), Review of Contemporary Philosophy, Vol. 10 (2011): pp. 44-79​
+"Existential Risk Reduction as Global Priority”, (Traducción en Español: Reducción del riesgo existencial como prioridad mundial ), Global Policy, Vol. 4, n.º 1 (2013): pp. 15-31.​
+· “Thinking Inside the Box: Using and Controlling an Oracle AI”, (traducción en Español:Pensar dentro de la caja: usar y controlar una IA de Oracle ),Minds and Machines, Vol. 22 n.º 4 (2012): pp. 299-324 (w/ Stuart Armstrong and Anders Sandberg)​
+“In Defense of Posthuman Dignity”, (Traducción al Español: En defensa de la dignidad posthumana)Bioethics, Vol. 19, n.º 3 (2005): pp. 202-214. [Este artículo fue elegido para su inclusión en una antología de los mejores artículos de Bioética publicados en las últimas dos décadas: The Bioethics Reader: Editors' Choice, eds. Ruth Chadwick, Helga Kuhse, Willem A. Landman, Udo Schüklenk, and Peter Singer (Oxford: Wiley-Blackwell, 2007)]​
+“The Ethics of Artificial Intelligence”, (Traducción al Español: La ética de la inteligencia artificial), In The Cambridge Handbook of Artificial Intelligence, eds. William Ramsey and Keith Frankish (Cambridge: Cambridge University Press, 2014) (w/ Eliezer Yudkowsky)​
+“Are You Living In A Computer Simulation?”,(Traducción al Español: estás viviendo una simulación de computadora?), Philosophical Quarterly, Vol. 53, n.º 211 (2003): pp. 243-255.​
+“Why I Want to be a Posthuman When I Grow Up”, (Traducción al Español: Por qué quiero ser un posthumano cuando sea grande), In Medical Enhancement and Posthumanity, The International Library of Ethics, Law and Technology series. eds. Bert Gordijn and Ruth Chadwick (Springer, 2008, reprinted in 2010): pp. 107-137.​
+
+
+== Referencias ==
+ 
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Nick Bostrom.
+Página web oficial de Nick Bostrom
+Principio Antrópico de Bostrom
+Oxford Future of Humanity Institute
+Entrevista a Bostrom acerca de la Asociación Transhumanista Mundial

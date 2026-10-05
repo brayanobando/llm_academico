@@ -1,0 +1,2220 @@
+Las máquinas de vectores de soporte o máquinas de vector soporte (del inglés support-vector machines, SVM) son un conjunto de algoritmos de aprendizaje supervisado desarrollados por Vladimir Vapnik y su equipo en los laboratorios de AT&T Bell.
+Estos métodos están propiamente relacionados con problemas de clasificación y regresión. Dado un conjunto de ejemplos de formación (de muestras) podemos etiquetar las clases y formar una SVM para construir un modelo que prediga la clase de una nueva muestra. Intuitivamente, una SVM es un modelo que representa a los puntos de muestra en el espacio, separando las clases a 2 espacios lo más amplios posibles mediante un hiperplano de separación definido como el vector entre los 2 puntos, de las 2 clases, más cercanos al que se llama vector soporte. Cuando las nuevas muestras se ponen en correspondencia con dicho modelo, en función de los espacios a los que pertenezcan, pueden ser clasificadas a una o la otra clase.
+Más formalmente, una SVM construye un hiperplano o conjunto de hiperplanos en un espacio de dimensionalidad muy alta (o incluso infinita) que puede ser utilizado en problemas de clasificación o regresión. Una buena separación entre las clases permitirá una clasificación correcta.
+
+
+== Idea básica ==
+Dado un conjunto de puntos, subconjunto de un conjunto mayor (espacio), en el que cada uno de ellos pertenece a una de dos posibles categorías, un algoritmo basado en SVM construye un modelo capaz de predecir si un punto nuevo (cuya categoría desconocemos)  pertenece a una categoría o a la otra.
+Como en la mayoría de los métodos de clasificación supervisada, los datos de entrada (los puntos) son vistos como un vector p-dimensional (una lista ordenada de p números).
+La SVM busca un hiperplano que separe de forma óptima a los puntos de una clase de la de otra, que eventualmente han podido ser previamente proyectados a un espacio de dimensionalidad superior.
+En ese concepto de "separación óptima" es donde reside la característica fundamental de las SVM: este tipo de algoritmos buscan el hiperplano que tenga la máxima distancia (margen) con los puntos que estén más cerca de él mismo. Por eso también a veces se les conoce a las SVM como clasificadores de margen máximo. De esta forma, los puntos del vector que son etiquetados con una categoría estarán a un lado del hiperplano y los casos que se encuentren en la otra categoría estarán al otro lado.
+Los algoritmos SVM pertenecen a la familia de los clasificadores lineales. También pueden ser considerados un caso especial de la regularización de Tikhonov.
+En la literatura de las SVM, se llama atributo a la variable predictora y característica a un atributo transformado que es usado para definir el hiperplano.
+La elección de la representación más adecuada del universo estudiado, se realiza mediante un proceso denominado selección de características.
+Al vector formado por los puntos más cercanos al hiperplano se le llama vector de soporte.
+Los modelos basados en SVM están estrechamente relacionados con las redes neuronales. Usando una función kernel, resultan un método de formación alternativo para clasificadores polinomiales, funciones de base radial y perceptrón multicapa.
+
+
+=== Ejemplo en 2–dimensiones ===
+En el siguiente ejemplo idealizado para 2-dimensiones, la representación de los datos a clasificar se realiza en el plano x-y.
+El algoritmo SVM trata de encontrar un hiperplano 1-dimensional (en el ejemplo que nos ocupa es una recta) que une a las variables predictoras y constituye el límite que define si un elemento de entrada pertenece a una categoría o a la otra.
+
+Existe un número infinito de posibles hiperplanos (líneas) que realicen la clasificación pero, ¿cuál es la mejor y cómo la definimos?
+La mejor solución es aquella que permita un margen máximo entre los elementos de las dos categorías.
+Se denominan vectores de soporte a los puntos que conforman las dos líneas paralelas al hiperplano, siendo la distancia entre ellas (margen) la mayor posible.
+
+
+=== Soft margin: Errores de formación ===
+Idealmente, el modelo basado en SVM debería producir un hiperplano que separe completamente los datos del universo estudiado en dos categorías. Sin embargo, una separación perfecta no siempre es posible y, si lo es, el resultado del modelo no puede ser generalizado para otros datos. Esto se conoce como sobreajuste (overfitting).
+Con el fin de permitir cierta flexibilidad, las SVM manejan un parámetro C que controla la compensación entre errores de formación y los márgenes rígidos, creando así un margen blando (soft margin) que permita algunos errores en la clasificación a la vez que los penaliza.
+
+
+== Función Kernel ==
+La manera más simple de realizar la separación es mediante una línea recta, un plano recto o un hiperplano N-dimensional.
+Desafortunadamente los universos a estudiar no se suelen presentar en casos idílicos de dos dimensiones como en el ejemplo anterior, sino que un algoritmo SVM debe tratar con a) más de dos variables predictoras, b) curvas no lineales de separación, c) casos donde los conjuntos de datos no pueden ser completamente separados, d) clasificaciones en más de dos categorías.
+Debido a las limitaciones computacionales de las máquinas de aprendizaje lineal, éstas no pueden ser utilizadas en la mayoría de las aplicaciones del mundo real. La representación por medio de funciones Kernel ofrece una solución a este problema, proyectando la información a un espacio de características de mayor dimensión el cual aumenta la capacidad computacional de la máquinas de aprendizaje lineal.
+Es decir, mapearemos el espacio de entradas X a un nuevo espacio de características de mayor dimensionalidad (Hilbert):
+
+F = {φ(x)|x ∈ X}
+x = {x1, x2, · · ·, xn} →  φ(x) = {φ1(x), φ2(x), · · ·, φn(x)}
+
+
+=== Tipos de funciones Kernel (Núcleo) ===
+Polinomial-homogénea: K(xi, xj) = (xi·xj)n
+
+Perceptron: K(xi, xj)= || xi-xj ||
+
+Función de base radial Gaussiana: separado por un hiperplano en el espacio transformado.
+
+  
+    
+      
+        K
+        (
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          x
+          
+            j
+          
+        
+        )
+        =
+        
+          e
+          
+            −
+            
+              
+                
+                  
+                    |
+                  
+                  
+                    |
+                  
+                  
+                    x
+                    
+                      i
+                    
+                  
+                  ,
+                  
+                    x
+                    
+                      j
+                    
+                  
+                  
+                    |
+                  
+                  
+                    |
+                  
+                
+                
+                  2
+                  ⋅
+                  
+                    σ
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle K(x_{i},x_{j})=e^{-{\frac {||x_{i},x_{j}||}{2\cdot \sigma ^{2}}}}}
+  
+
+Sigmoid: K(xi, xj)=tanh(xi· xj−θ)
+
+
+== SVR en Regresión ==
+Una nueva versión de SVM para regresión fue propuesta en 1996 por Vladimir Vapnik, Harris Drucker, Chris Burges, Linda Kaufman y Alex Smola.[nota].
+La Máquina de Vectores de Soporte (SVM, por sus siglas en inglés) es una técnica poderosa dentro del campo del aprendizaje automático que se utiliza tanto para tareas de clasificación como de regresión. Aunque es más conocida por su capacidad para separar datos en diferentes clases mediante la creación de hiperplanos, la SVM también tiene aplicaciones importantes en la regresión. En particular, la regresión lineal basada en SVM, conocida como SVR (Support Vector Regression), se enfoca en encontrar una función que se aproxime lo mejor posible a un conjunto de datos continuos (Gema, 2022).
+La idea básica de SVR consiste en realizar un mapeo de los datos de formación x ∈ X, a un espacio de mayor dimensión F a través de un mapeo no lineal φ: X → F, donde podemos realizar una regresión lineal.
+Dado un conjunto de entrenamiento 
+  
+    
+      
+        S
+        =
+        {
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+        ,
+        (
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          y
+          
+            2
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          x
+          
+            N
+          
+        
+        ,
+        
+          y
+          
+            N
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle S=\{(x^{1},y^{1}),(x^{2},y^{2}),\dots ,(x^{N},y^{N})\}}
+  
+, donde cada par ordenado 
+  
+    
+      
+        (
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          y
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle (x^{i},y^{i})}
+  
+ representa una muestra de datos con 
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x^{i}}
+  
+ como las características de entrada y 
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+      
+    
+    {\displaystyle y^{i}}
+  
+ como el valor de salida correspondiente, se busca una función 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ tal que el valor estimado 
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle f(x^{i})}
+  
+ esté lo más cerca posible de 
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+      
+    
+    {\displaystyle y^{i}}
+  
+.
+La función buscada se puede modelar de manera lineal como:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        ⟨
+        w
+        ,
+        x
+        ⟩
+        +
+        b
+      
+    
+    {\displaystyle f(x)=\langle w,x\rangle +b}
+  
+
+donde 
+  
+    
+      
+        ⟨
+        w
+        ,
+        x
+        ⟩
+      
+    
+    {\displaystyle \langle w,x\rangle }
+  
+ denota el producto interno entre el vector de pesos 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ y el vector de características 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, y 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ es el término independiente.
+
+
+=== Margen de Tolerancia ===
+En primer lugar, es importante mencionar que el modelo se adapta para trabajar en problemas donde la salida no es categórica, sino continua, ya que se obtendrá un número real. Esto supone un reto para predecir la información, ya que hay una infinidad de posibilidades. Sin embargo, la idea de minimizar el error e individualizar el hiperplano que maximiza el margen teniendo en cuenta que se tolera parte del error, se mantienen. A continuación se detallan los puntos antes mencionados (Gonzalez, 2019).
+Como se estudio en clase, en un problema de clasificación, el SVM busca un hiperplano que separe las clases con el máximo margen posible. No obstante, en un problema de regresión, en lugar de separar clases, se busca un hiperplano que pase lo más cerca posible de todos los puntos de datos dentro de un margen de tolerancia definido por 𝜖 (epsilon). Este margen crea una banda alrededor de la función objetivo, dentro de la cual las predicciones no son penalizadas. El objetivo principal es minimizar el error que se encuentra fuera de esta banda, asegurando que la mayoría de los datos caigan dentro de este margen permitido (Gonzalez, 2019).
+
+
+=== Función de Pérdida ===
+La función de pérdida utilizada es conocida como la pérdida 
+  
+    
+      
+        ϵ
+      
+    
+    {\displaystyle \epsilon }
+  
+-insensible, que solo considera los errores que están fuera del margen 
+  
+    
+      
+        ϵ
+      
+    
+    {\displaystyle \epsilon }
+  
+. Si el error está dentro de este margen, se considera como cero. La pérdida se define como (Gema, 2022):
+
+  
+    
+      
+        
+          L
+          
+            ϵ
+          
+        
+        (
+        
+          y
+          
+            i
+          
+        
+        ,
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        )
+        =
+        max
+        (
+        0
+        ,
+        
+          |
+        
+        
+          y
+          
+            i
+          
+        
+        −
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        
+          |
+        
+        −
+        ϵ
+        )
+      
+    
+    {\displaystyle L_{\epsilon }(y_{i},f(x_{i}))=\max(0,|y_{i}-f(x_{i})|-\epsilon )}
+  
+
+donde 
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+      
+    
+    {\displaystyle y_{i}}
+  
+ es el valor real y 
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle f(x_{i})}
+  
+ es el valor predicho por el modelo.
+
+
+=== Margen Duro ===
+Es una variante del Support Vector Regression donde no se permite ningún margen de tolerancia 𝜖 alrededor de la función objetivo. En este enfoque, todos los puntos de datos deben caer exactamente sobre el hiperplano de regresión, sin ningún margen para el error. Esto significa que el modelo trata de ajustar todos los puntos de datos de manera precisa, sin permitir desviaciones. Sin embargo, este enfoque es sensible a los outliers y puede resultar en un modelo que no generaliza bien a nuevos datos, ya que intenta forzar un ajuste perfecto sin flexibilidad para pequeños errores (Gema, 2022). A continuación se plantea la expresión (Gema, 2022):
+Minimizar el siguiente problema de optimización:
+
+  
+    
+      
+        
+          min
+          
+            w
+          
+        
+        
+        
+          
+            1
+            2
+          
+        
+        ‖
+        w
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \min _{w}\quad {\frac {1}{2}}\|w\|^{2}}
+  
+
+sujeto a:
+
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+        −
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        −
+        b
+        ≤
+        ϵ
+        ,
+        
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle y_{i}-w^{T}x_{i}-b\leq \epsilon ,\quad i=1,\dots ,n}
+  
+
+  
+    
+      
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        +
+        b
+        −
+        
+          y
+          
+            i
+          
+        
+        ≤
+        ϵ
+        ,
+        
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle w^{T}x_{i}+b-y_{i}\leq \epsilon ,\quad i=1,\dots ,n}
+  
+
+
+=== Margen Suave ===
+Esta variante del Support Vector Regression permite un margen de tolerancia 𝜖 alrededor de la función objetivo. A diferencia del margen duro en este enfoque se permite que algunos puntos de datos caigan fuera del margen, lo que introduce una mayor flexibilidad en el modelo. El objetivo es encontrar un equilibrio entre ajustar los datos y permitir ciertos errores, penalizando únicamente aquellos puntos que están fuera del margen 𝜖. Este enfoque hace que el modelo sea más robusto frente a outliers y mejora su capacidad de generalización, ya que no exige un ajuste perfecto de todos los puntos de datos, para lograr esto se introducen las variables de holgura 
+  
+    
+      
+        
+          ξ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \xi _{i}}
+  
+ y 
+  
+    
+      
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \xi _{i}^{*}}
+  
+que controlan el error cometido por la función al aproximar un punto i-ésimo (Gema, 2022). A continuación se plantea la expresión (Gema, 2022):
+
+  
+    
+      
+        
+          min
+          
+            w
+            ,
+            
+              ξ
+              
+                i
+              
+            
+            ,
+            
+              ξ
+              
+                i
+              
+              
+                ∗
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                1
+                2
+              
+            
+            ‖
+            w
+            
+              ‖
+              
+                2
+              
+            
+            +
+            C
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                n
+              
+            
+            (
+            
+              ξ
+              
+                i
+              
+            
+            +
+            
+              ξ
+              
+                i
+              
+              
+                ∗
+              
+            
+            )
+          
+          )
+        
+      
+    
+    {\displaystyle \min _{w,\xi _{i},\xi _{i}^{*}}\left({\frac {1}{2}}\|w\|^{2}+C\sum _{i=1}^{n}(\xi _{i}+\xi _{i}^{*})\right)}
+  
+
+sujeto a las restricciones:
+
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+        −
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        −
+        b
+        ≤
+        ϵ
+        +
+        
+          ξ
+          
+            i
+          
+        
+        ,
+        
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle y_{i}-w^{T}x_{i}-b\leq \epsilon +\xi _{i},\quad i=1,\ldots ,n}
+  
+
+  
+    
+      
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        +
+        b
+        −
+        
+          y
+          
+            i
+          
+        
+        ≤
+        ϵ
+        +
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+        ,
+        
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle w^{T}x_{i}+b-y_{i}\leq \epsilon +\xi _{i}^{*},\quad i=1,\ldots ,n}
+  
+
+donde 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ es la magnitud del vector o hiperplano, 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ es una constante mayor o igual a cero que regula entre el valor de 
+  
+    
+      
+        ϵ
+      
+    
+    {\displaystyle \epsilon }
+  
+ y la cantidad de errores mayores que 
+  
+    
+      
+        ϵ
+      
+    
+    {\displaystyle \epsilon }
+  
+ que se toleran.
+
+
+=== Problema de Optimización (Margen Suave) ===
+En primer lugar, se muestra la función lagrangiana (Gema, 2022):
+
+  
+    
+      
+        
+          
+            
+              
+                L
+                (
+                w
+                ,
+                b
+                ,
+                ξ
+                ,
+                
+                  ξ
+                  
+                    ∗
+                  
+                
+                ,
+                β
+                ,
+                
+                  β
+                  
+                    ∗
+                  
+                
+                ,
+                α
+                ,
+                
+                  α
+                  
+                    ∗
+                  
+                
+                )
+                =
+              
+              
+                
+                  
+                    1
+                    2
+                  
+                
+                ‖
+                w
+                
+                  ‖
+                  
+                    2
+                  
+                
+                +
+                C
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                (
+                
+                  ξ
+                  
+                    i
+                  
+                
+                +
+                
+                  ξ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                )
+              
+            
+            
+              
+              
+                 
+                −
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                (
+                
+                  β
+                  
+                    i
+                  
+                
+                
+                  ξ
+                  
+                    i
+                  
+                
+                +
+                
+                  β
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                
+                  ξ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                )
+              
+            
+            
+              
+              
+                 
+                −
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  α
+                  
+                    i
+                  
+                
+                (
+                ϵ
+                +
+                
+                  ξ
+                  
+                    i
+                  
+                
+                −
+                
+                  y
+                  
+                    i
+                  
+                
+                +
+                
+                  w
+                  
+                    T
+                  
+                
+                
+                  x
+                  
+                    i
+                  
+                
+                +
+                b
+                )
+              
+            
+            
+              
+              
+                 
+                −
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  α
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                (
+                ϵ
+                +
+                
+                  ξ
+                  
+                    i
+                  
+                  
+                    ∗
+                  
+                
+                −
+                
+                  y
+                  
+                    i
+                  
+                
+                +
+                
+                  w
+                  
+                    T
+                  
+                
+                
+                  x
+                  
+                    i
+                  
+                
+                −
+                b
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}L(w,b,\xi ,\xi ^{*},\beta ,\beta ^{*},\alpha ,\alpha ^{*})=&{\frac {1}{2}}\|w\|^{2}+C\sum _{i=1}^{n}(\xi _{i}+\xi _{i}^{*})\\&\ -\sum _{i=1}^{n}(\beta _{i}\xi _{i}+\beta _{i}^{*}\xi _{i}^{*})\\&\ -\sum _{i=1}^{n}\alpha _{i}(\epsilon +\xi _{i}-y_{i}+w^{T}x_{i}+b)\\&\ -\sum _{i=1}^{n}\alpha _{i}^{*}(\epsilon +\xi _{i}^{*}-y_{i}+w^{T}x_{i}-b)\end{aligned}}}
+  
+
+A continuación diferenciamos e igualamos a cero:
+1. Derivada respecto a 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              L
+              (
+              w
+              ,
+              b
+              ,
+              ξ
+              ,
+              
+                ξ
+                
+                  ∗
+                
+              
+              ,
+              β
+              ,
+              
+                β
+                
+                  ∗
+                
+              
+              ,
+              α
+              ,
+              
+                α
+                
+                  ∗
+                
+              
+              )
+            
+            
+              ∂
+              w
+            
+          
+        
+        =
+        w
+        −
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        
+          x
+          
+            i
+          
+        
+        =
+        0
+        
+        ⇒
+        
+        w
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial L(w,b,\xi ,\xi ^{*},\beta ,\beta ^{*},\alpha ,\alpha ^{*})}{\partial w}}=w-\sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})x_{i}=0\quad \Rightarrow \quad w=\sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})x_{i}}
+  
+
+2. Derivada respecto a 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              L
+              (
+              w
+              ,
+              b
+              ,
+              ξ
+              ,
+              
+                ξ
+                
+                  ∗
+                
+              
+              ,
+              β
+              ,
+              
+                β
+                
+                  ∗
+                
+              
+              ,
+              α
+              ,
+              
+                α
+                
+                  ∗
+                
+              
+              )
+            
+            
+              ∂
+              b
+            
+          
+        
+        =
+        −
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        =
+        0
+        
+        ⇒
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial L(w,b,\xi ,\xi ^{*},\beta ,\beta ^{*},\alpha ,\alpha ^{*})}{\partial b}}=-\sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})=0\quad \Rightarrow \quad \sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})=0}
+  
+
+3. Derivada respecto a 
+  
+    
+      
+        
+          ξ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \xi _{i}}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              L
+              (
+              w
+              ,
+              b
+              ,
+              ξ
+              ,
+              
+                ξ
+                
+                  ∗
+                
+              
+              ,
+              β
+              ,
+              
+                β
+                
+                  ∗
+                
+              
+              ,
+              α
+              ,
+              
+                α
+                
+                  ∗
+                
+              
+              )
+            
+            
+              ∂
+              
+                ξ
+                
+                  i
+                
+              
+            
+          
+        
+        =
+        C
+        −
+        
+          β
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+        
+        =
+        0
+        
+        ⇒
+        
+        
+          α
+          
+            i
+          
+        
+        =
+        C
+        −
+        
+          β
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial L(w,b,\xi ,\xi ^{*},\beta ,\beta ^{*},\alpha ,\alpha ^{*})}{\partial \xi _{i}}}=C-\beta _{i}-\alpha _{i}=0\quad \Rightarrow \quad \alpha _{i}=C-\beta _{i}}
+  
+
+4. Derivada respecto a 
+  
+    
+      
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \xi _{i}^{*}}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              L
+              (
+              w
+              ,
+              b
+              ,
+              ξ
+              ,
+              
+                ξ
+                
+                  ∗
+                
+              
+              ,
+              β
+              ,
+              
+                β
+                
+                  ∗
+                
+              
+              ,
+              α
+              ,
+              
+                α
+                
+                  ∗
+                
+              
+              )
+            
+            
+              ∂
+              
+                ξ
+                
+                  i
+                
+                
+                  ∗
+                
+              
+            
+          
+        
+        =
+        C
+        −
+        
+          β
+          
+            i
+          
+          
+            ∗
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        =
+        0
+        
+        ⇒
+        
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        =
+        C
+        −
+        
+          β
+          
+            i
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial L(w,b,\xi ,\xi ^{*},\beta ,\beta ^{*},\alpha ,\alpha ^{*})}{\partial \xi _{i}^{*}}}=C-\beta _{i}^{*}-\alpha _{i}^{*}=0\quad \Rightarrow \quad \alpha _{i}^{*}=C-\beta _{i}^{*}}
+  
+
+
+==== Condiciones de KKT y optimización dual en SVR ====
+Además, se deben cumplir las condiciones de KKT (Karush-Kuhn-Tucker):
+
+  
+    
+      
+        
+          α
+          
+            i
+          
+        
+        (
+        ϵ
+        +
+        
+          ξ
+          
+            i
+          
+        
+        −
+        
+          y
+          
+            i
+          
+        
+        −
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        +
+        b
+        )
+        =
+        0
+      
+    
+    {\displaystyle \alpha _{i}(\epsilon +\xi _{i}-y_{i}-w^{T}x_{i}+b)=0}
+  
+
+  
+    
+      
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        (
+        ϵ
+        +
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+        +
+        
+          y
+          
+            i
+          
+        
+        −
+        
+          w
+          
+            T
+          
+        
+        
+          x
+          
+            i
+          
+        
+        −
+        b
+        )
+        =
+        0
+      
+    
+    {\displaystyle \alpha _{i}^{*}(\epsilon +\xi _{i}^{*}+y_{i}-w^{T}x_{i}-b)=0}
+  
+
+  
+    
+      
+        
+          β
+          
+            i
+          
+        
+        
+          ξ
+          
+            i
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \beta _{i}\xi _{i}=0}
+  
+
+  
+    
+      
+        
+          β
+          
+            i
+          
+          
+            ∗
+          
+        
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \beta _{i}^{*}\xi _{i}^{*}=0}
+  
+
+  
+    
+      
+        
+          ξ
+          
+            i
+          
+        
+        ,
+        
+          ξ
+          
+            i
+          
+          
+            ∗
+          
+        
+        ,
+        
+          β
+          
+            i
+          
+        
+        ,
+        
+          β
+          
+            i
+          
+          
+            ∗
+          
+        
+        ,
+        
+          α
+          
+            i
+          
+        
+        ,
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        ≥
+        0
+      
+    
+    {\displaystyle \xi _{i},\xi _{i}^{*},\beta _{i},\beta _{i}^{*},\alpha _{i},\alpha _{i}^{*}\geq 0}
+  
+
+Estas condiciones garantizan que el punto obtenido sea una solución óptima para el problema de SVR.
+Juntando los resultados anteriores, llegamos al planteamiento del problema de optimización dual:
+
+  
+    
+      
+         
+        m
+        a
+        
+          x
+          
+            
+              α
+              
+                i
+              
+            
+            ,
+            
+              α
+              
+                i
+              
+              
+                ∗
+              
+            
+          
+        
+        
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        (
+        
+          α
+          
+            j
+          
+        
+        −
+        
+          α
+          
+            j
+          
+          
+            ∗
+          
+        
+        )
+        ⟨
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          x
+          
+            j
+          
+        
+        ⟩
+        −
+        ϵ
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        +
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          y
+          
+            i
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+      
+    
+    {\displaystyle \ max_{\alpha _{i},\alpha _{i}^{*}}\,-{\frac {1}{2}}\sum _{i=1}^{n}\sum _{j=1}^{n}(\alpha _{i}-\alpha _{i}^{*})(\alpha _{j}-\alpha _{j}^{*})\langle x_{i},x_{j}\rangle -\epsilon \sum _{i=1}^{n}(\alpha _{i}+\alpha _{i}^{*})+\sum _{i=1}^{n}y_{i}(\alpha _{i}-\alpha _{i}^{*})}
+  
+
+sujeto a las restricciones:
+
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle \sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})=0}
+  
+
+  
+    
+      
+        0
+        ≤
+        
+          α
+          
+            i
+          
+        
+        ,
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        ≤
+        C
+        ,
+        
+        ∀
+        i
+        =
+        1
+        ,
+        …
+        ,
+        n
+      
+    
+    {\displaystyle 0\leq \alpha _{i},\alpha _{i}^{*}\leq C,\,\forall i=1,\dots ,n}
+  
+
+
+=== Función de regresión ===
+La solución del problema de optimización dual proporciona los valores óptimos de los multiplicadores de Lagrange, 
+  
+    
+      
+        
+          α
+          
+            i
+          
+        
+        ,
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle \alpha _{i},\alpha _{i}^{*}}
+  
+. Una vez que se tienen 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ y 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, la función de regresión se define como:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          α
+          
+            i
+          
+        
+        −
+        
+          α
+          
+            i
+          
+          
+            ∗
+          
+        
+        )
+        ⟨
+        
+          x
+          
+            i
+          
+        
+        ,
+        x
+        ⟩
+        +
+        b
+      
+    
+    {\displaystyle f(x)=\sum _{i=1}^{n}(\alpha _{i}-\alpha _{i}^{*})\langle x_{i},x\rangle +b}
+  
+
+
+== SVM Multiclase ==
+Hay dos filosofías básicas para resolver el problema de querer clasificar los datos en más de dos categorías:
+
+a) cada categoría es dividida en otras y todas son combinadas.
+b) se construyen k(k-1) / 2 modelos donde k es el número de categorías.
+
+
+== Véase también ==
+Método Kernel
+
+
+== Referencias ==
+
+Gema, V. (2022, septiembre). Aprendizaje supervisado: Métodos, propiedades y aplicaciones [PDF]. Universidad de Málaga. Recuperado de https://riuma.uma.es/xmlui/bitstream/handle/10630/25147/TFG_Aprendizaje_Supervisado_GVG.pdf?sequence=4
+
+
+== Enlaces externos ==
+(en español) Modelo SVM 
+(en inglés) [1], DTREG, Software For Predictive Modeling and Forecasting
+(en inglés) [2], Electronic Statistics Textbook
+(en inglés) www.kernel-machines.org, información general y material de investigación.
+(en inglés) www.support-vector.net, novedades, enlace y códigos relacionados con las máquinas de soporte vectorial.
+(en inglés) SVM light, implementación de SVM, con variantes para aprendizaje supervisado, y para semisupervisado transductivo. Liberado para investigación.
+(en inglés) SVMlin, otra implementación de SVM. Liberado bajo licencia GPL.
+(en inglés) svmtutorial.online

@@ -1,0 +1,11 @@
+# PyTorch se instala aparte (Paso 3/8), según CPU o GPU:
+#   CPU: pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   GPU: pip install torch --index-url https://download.pytorch.org/whl/cu126
+numpy
+tqdm
+tokenizers
+sentencepiece
+safetensors
+matplotlib
+pyyaml        # para leer configs\llm_13m.yaml (Paso 5/8)
+streamlit     # chat local (Paso 8/8)

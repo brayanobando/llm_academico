@@ -1,0 +1,139 @@
+Watson es un sistema basado en inteligencia artificial capaz de responder a preguntas formuladas en lenguaje natural,​ desarrollado por la empresa estadounidense IBM. Forma parte del proyecto del equipo de investigación DeepQA, liderado por el investigador principal David Ferrucci. Se le asignó este nombre en honor del fundador y primer presidente de IBM, Thomas J. Watson.​​
+Watson responde a las preguntas gracias a una base de datos almacenada localmente.​ La información contenida en esa base de datos proviene de multitud de fuentes, incluyendo enciclopedias, diccionarios, tesauros, artículos de noticias, y obras literarias, al igual que bases de datos externos, taxonomías, y ontologías (específicamente DBpedia, WordNet).​
+Para probar sus capacidades reales participó durante tres días en febrero de 2011 en un partido especial de dos juegos en el concurso de televisión estadounidense Jeopardy!, derrotando a sus dos oponentes humanos: Brad Rutter, el ganador de la mayor cantidad de dinero en toda la historia del programa, y Ken Jennings, el poseedor del récord por la racha más larga de campeonatos (después de haber ganado 75 partidos).​​ Watson recibió el primer premio de $1.000.000, mientras Ken Jennings y Brad Rutter recibieron $300.000 y $200.000 respectivamente. Tanto Jennings como Rutter prometieron donar la mitad de sus ganancias respectivas a organizaciones de caridad seleccionadas por ellos (Jennings eligió a VillageReach, y Rutter a Lancaster County Community Foundation),​ mientras IBM dividió las ganancias de Watson entre dos organizaciones (World Vision y World Community Grid).​
+Watson superó a sus oponentes humanos constantemente con el dispositivo de señalización empleado por el juego, pero tuvo problemas para responder a unas pocas categorías, especialmente las compuestas por pistas cortas con pocas palabras. Para cada pista, las respuestas más probables de Watson se mostraron por la pantalla de televisión. Watson tuvo acceso a 200 000 000 de páginas de contenido, estructurado y no estructurado, utilizando cuatro terabytes de almacenamiento en disco,​ incluyendo el texto completo de la Wikipedia en inglés.​ Watson no estaba conectado a Internet durante el juego.​​
+
+Watson es un sistema informático para búsqueda de respuestas (question answering en inglés), desarrollado por IBM.​ La corporación lo describe como "una aplicación de tecnologías avanzadas diseñadas para el procesamiento de lenguajes naturales, la recuperación de información, la representación del conocimiento, el razonamiento automático, y el aprendizaje automático al campo abierto de búsquedas de respuestas," que es "construido en la tecnología DeepQA de IBM para la generación de hipótesis, la recopilación de pruebas masivas, el análisis y la calificación."​
+Según IBM, Watson es un sistema optimizado para trabajo que se diseña para analítica compleja, que se hace posible por la integración de procesadores masivamente paralelos de POWER7 y el software DeepQA desarrollado por la corporación. Su soporte de hardware para la competición en Jeopardy! comprendía dos unidades con 5 bastidores de nodos controladores, con noventa servidores IBM POWER 750, cada servidor utilizando un procesador de 3.5 GHz con 8 núcleos, donde cada núcleo soporta por hardware 4 hilos de ejecución (threads en inglés). El sistema cuenta con un total de 2880 núcleos de procesamiento POWER7, y un total de 16 Terabytes de RAM.​ El hecho de que el procesador POWER7 es capaz de procesar en una manera masivamente paralela lo convierte en un complemento ideal para el software DeepQA integrado en Watson por IBM, que es embarazosamente paralelo (es decir, un trabajo que es fácilmente dividido en múltiples tareas paralelas.)​
+Según John Rennie, Watson puede procesar 500 giga bytes por segundo (el equivalente de un millón de libros).​ El inventor principal y consultor sénior de IBM, Tony Pearson, estimó que el costo total del hardware para Watson fue de cerca de $3.000.000.​ Rennie ha declarado que el contenido de Watson fue almacenado en su RAM para el juego, porque los datos almacenados en discos duros son demasiado lentos para acceder.​
+El software incorporado en Watson fue escrito utilizando los lenguajes de programación Java y C++, y usa dos estructuras empleadas por la Apache Software Foundation — la estructura Hadoop para computación distribuida, y el sistema UIMA (Unstructured Information Management Architecture) para análisis de materiales impresos — así como el software DeepQA desarrollado por IBM y el sistema operativo SUSE Linux Enterprise Server 11.​​​ Según IBM, Watson usa más de 100 técnicas diferentes para analizar el lenguaje natural, identificar fuentes, encontrar y generar hipótesis, buscar y puntuar evidencias,  combinar y clasificar hipótesis.​
+
+
+== Funcionamiento ==
+
+
+=== Introducción al sistema deepQA ===
+Para poder concursar en Jeopardy!, el equipo de IBM necesitaba desarrollar una tecnología de QA (Question Answering en inglés) que tuviera un rendimiento muy parecido e incluso superior al de los campeones del concurso. Necesitaban que Watson acertara más del 85% de las preguntas que respondiera y tenía que ser más rápido que los otros dos concursantes en el 70% de las preguntas totales.​ Cuando empezó el desarrollo de Watson ya se había hecho investigación en el campo del procesamiento del lenguaje natural, y existían otras tecnologías, como PIQUANT o OpenEphyra.​ Éstas estaban entre las mejores de la Text Retrieval Conference (TREC), en la cual se les daba unos documentos y unas preguntas para responder en un tiempo determinado.​  El problema es que en Jeopardy! las pistas que se proporcionan son muy complejas, tienen un lenguaje natural muy rico, con muchas expresiones, la mayoría de veces ambiguas, y de muchísimos temas totalmente diferentes.​ En cambio, en la TREC, las preguntas eran muy concretas y más estructuradas, del tipo ¿Dónde nació John Lennon?, en las que resulta más fácil saber qué están preguntando. Además, el hecho de tener que responder el 70% de todas las preguntas del concurso significaba que necesitaban que Watson fuera muy rápido en encontrar la respuesta, pero eso no es suficiente, ya que hay que responderla bien para conseguir esa precisión. Por lo tanto el sistema debía ser rápido también a la hora de estimar la confianza para decidir si responder o no.
+Aunque ya se había hecho investigación en el campo del QA, Jeopardy! suponía un reto mucho mayor que el que se había tenido hasta el momento, de ahí que IBM desarrollara su propio sistema, al que llamaron DeepQA.
+
+
+=== Adquisición de contenido ===
+Antes de poder responder cualquier pregunta, hay que establecer el contenido que usará el sistema cuando necesite buscar información relacionada con la pregunta.​
+Lo primero que hay que hacer es buscar ejemplos de preguntas para poder saber de qué tipo serán las que el sistema tendrá que responder y el dominio de éstas. A partir de un análisis de estas preguntas de ejemplo, hay que darle a DeepQA un conjunto de diferentes fuentes de información (artículos, obras literarias, enciclopedias…). A partir de esta base inicial de datos, el sistema buscará en otras fuentes en la web, extraerá diferentes recursos que tengan relación con las fuentes iniciales, y les dará una puntuación en función de lo informativos que sean. Por último, DeepQA fusionará las fuentes que haya encontrado con mayor puntuación con su conjunto inicial, así tendrá mucha más información y recursos que consultar.​ Uno de los sistemas usados para adquirir conocimiento de forma automática y guardarlos de manera estructurada es PRISMATIC.​
+Watson tiene datos de muchos tipos, estructurados, semiestructurados (como bases de datos y ontologías​) y no estructurados (mencionados anteriormente), de entre los cuales se encuentran los siguientes: Wikipedia, Freebase, WordNet, DBPedia y la ontología Yago.​​
+
+
+=== Análisis de la pregunta ===
+En este paso se recibe como entrada la pregunta que Watson debe responder, y por lo tanto lo primero que hay que hacer es determinar qué es lo que se está preguntando para poder luego buscar las respuestas. Para la realización de un buen análisis, DeepQA utiliza una gran variedad de algoritmos y sistemas expertos.​ Esta fase está compuesta de diferentes pasos.
+
+
+==== Clasificación de la pregunta ====
+Para poder buscar qué tipo de respuesta necesitamos, primero hay que saber cuál es el tipo de pregunta, si una definición, si una pregunta matemática, un puzle… A estas diferentes formas de clasificar una pregunta se les llama Qclasses (Question classes).​ DeepQA tiene que determinar a qué clase pertenece la pregunta, para hacerlo utiliza diferentes métodos independientes entre ellos. Esto puede dar resultado a que diferentes técnicas detecten clases distintas para la misma pregunta. En caso de encontrar dos o más clases incompatibles, se necesita de otro componente que escoja la mejor opción. Una vez se tiene el tipo de pregunta, este resultado servirá para determinar los métodos y modelos de machine learning que se usarán posteriormente.​
+
+
+==== Detección del focus y los LATs ====
+El llamado focus de una pregunta es la parte de ésta que es una referencia a la respuesta. Esto quiere decir que si lo sustituimos por la respuesta, la pregunta se convierte en una afirmación o hecho. En los ejemplos de preguntas de Jeopardy! siguientes, la parte en negrita es el focus: 
+
+Número de poemas a los cuales Emily Dickinson dio permiso para publicar.​
+Ella se unió al Wild West show de Buffalo Bill Cody después de conocerlo en la Cotton Expo en New Orleans.​
+El LAT (lexical answer type) es una palabra o pequeña frase que nos dice cual es el tipo de respuesta que se pide. Normalmente es una palabra que pertenece al focus, excepto algunos casos. En los ejemplos anteriores, número es el primer LAT, y Ella es el segundo.​
+Encontrar el LAT de una pregunta nos permite determinar si una respuesta encontrada es instancia de este, es decir, si se corresponde con lo que nos pide la pregunta (si el LAT es ella, la respuesta tiene que ser el nombre de una mujer). Por lo tanto, será útil para determinar si la respuesta generada es válida o no.​
+
+
+==== Detección de relaciones ====
+Muchas preguntas contienen relaciones de todo tipo, sintácticas, o entre objetos dentro de la frase. Estas se pueden aprovechar y buscarlas directamente en bases de datos relacionales, las cuales están estructuradas en tablas. Por lo tanto podemos buscar si hay alguna en la que se encuentra la relación que hemos hallado. Por ejemplo, en la pregunta Son los dos estados que podrías estar re entrando si cruzas la frontera norte de Florida, podríamos buscar las fronteras de Florida en alguna base de datos disponible y encontrar la respuesta directamente allí. El problema es que en un estudio realizado con preguntas de Jeopardy! se observó que estos casos son muy escasos y la mayoría de veces no sirve esta técnica.​
+
+
+==== Descomposición ====
+Una parte muy importante del análisis de una pregunta es descomponerla en diferentes preguntas y responder cada una independientemente de las otras. De esta manera, cuanto más correcta sea una respuesta en cada sub-pregunta, más probable será que sea la respuesta correcta a la pregunta inicial.​
+Hay dos tipos de sub-preguntas. Las primeras son las que se pueden analizar y responder en paralelo, ya que no hay dependencias entre ellas. Las otras necesitan responderse secuencialmente, ya que una pregunta requiere de la respuesta de otra para poder responderse. Por ejemplo, en la pregunta Una polémica película de guerra de 1979 estuvo basada en el trabajo realizado en 1902 por este autor es necesario saber a qué película se refiere  (Apocalypse now) para poder encontrar el autor que se está preguntando.​ 
+
+
+=== Generación de hipótesis ===
+En esta fase, se utiliza los resultados del análisis de la pregunta para buscar respuestas y generar candidatos o hipótesis. Luego el sistema tendrá que demostrar que son correctos con un nivel de confianza. Para conseguirlo, el proceso se divide en diferentes etapas.​
+
+
+==== Primera búsqueda ====
+Para empezar con la generación de hipótesis, se realiza una búsqueda con el objetivo de encontrar cualquier contenido que pueda estar relacionada con la respuesta. Se utilizan técnicas de búsqueda en textos, consultas en bases de datos e incluso búsqueda basada en el conocimiento de la información.​
+
+
+==== Generación de candidatos ====
+Con los resultados de la búsqueda inicial se tienen que generar candidatos, que son posibles respuestas. Se tienen que extraer de manera diferente para cada tipo de búsqueda, si se realiza sobre una base de datos de nombres de personas, cada nombre encontrado puede ser un candidato. En otros tipos donde los resultados de la búsqueda son más largos y complejos, se requieren otras técnicas más avanzadas.​
+En esta fase se generarán todos los candidatos que Watson analizará posteriormente para validarlos y extraer el mejor. Esto significa que si la respuesta correcta no se encuentra entre los candidatos, el sistema no podrá responder la pregunta.​
+
+
+=== Soft Filtering ===
+De la búsqueda inicial, se generan muchos candidatos, cada uno de los cuales tiene que ser analizado y se le tiene que dar una puntuación para determinar lo correcto que es. Esto puede causar problemas, ya que es un proceso costoso y consume muchos recursos. Por lo tanto, antes de puntuar los candidatos, se realiza un análisis previo no muy exhausto y con menos consumo para eliminar hipótesis y así ahorrar cálculos.​
+El soft filtering (en inglés), consiste en aplicar un filtro a los candidatos. Éste le asigna una puntuación, con algoritmos más ligeros, y según el resultado se decide si pasará a la siguiente fase.​ Una de las maneras para calcular esta puntuación es determinar si un candidato es instancia del LAT de la pregunta, es decir, el tipo del candidato es el mismo que pide la pregunta, si es una persona el sistema descartará todo lo que no se corresponda con una. A este proceso se le llama Type Coercion.​
+Gracias a este método, de los cientos de candidatos que salen de la generación de hipótesis, solo una parte pasará a la etapa de puntuación, y el resto se enviará directamente a la etapa de fusión de los resultados.​
+
+
+=== Puntuación de las hipótesis ===
+A los candidatos que pasan el soft filtering, hay que analizarlos rigurosamente. Este análisis consiste en buscar pruebas sobre la validez de cada candidato y evaluar estos resultados para poder puntuar las hipótesis.​
+
+
+==== Recopilación de pruebas ====
+Para poder determinar si un candidato es correcto, hay que buscar pruebas que lo demuestren. Una de las técnicas usadas consiste en realizar una búsqueda similar a la realizada en la etapa de generación de hipótesis, pero un requisito es que el candidato se encuentre en el texto. De esta manera las pruebas halladas contendrán la hipótesis en el contexto usado en la pregunta.​​
+
+
+==== Puntuación ====
+En esta fase es donde se calcula el grado de certeza con el que las pruebas apoyan a cada candidato, usando múltiples técnicas. Éstas miden diferentes aspectos y dimensiones de la pregunta, es decir, unos algoritmos más simples simplemente determinarán si la prueba se parece a la pregunta, mientras que otros tendrán en cuenta otros aspectos, como si el candidato es el objeto o el sujeto de la frase donde aparece, entre otros.​
+
+
+=== Fusión de las respuestas ===
+Antes de proceder a la etapa final y escoger la respuesta definitiva, DeepQA fusiona todas las respuestas que sean equivalentes o estén muy relacionadas. Eso quiere decir que también tendrá que fusionar las diferentes puntuaciones y pruebas encontradas en la etapa anterior. Por ejemplo, si la pregunta pide el nombre de una persona, Watson fusionará todos los candidatos que sean nombres de la misma persona. Esto se debe a que la siguiente etapa se usan técnicas basadas en las diferencias relativas entre los candidatos.​
+
+
+=== Ranking y estimación de la confianza ===
+El último paso incluye estimar una confianza sobre lo correcta que es una hipótesis, según sus puntuaciones, y colocar cada candidato en un ranking. Para realizar estas tareas, Watson utiliza aprendizaje automático, el cual necesita que se le entrene con una serie de preguntas con respuestas conocidas y un modelo de aprendizaje basado en las puntuaciones, para que así empiece con una base de conocimiento válido.​
+Una vez se obtiene el ranking con su confianza, Watson ya tiene lo necesario para determinar si tiene que responder la pregunta y cuál usar de todas las que tiene.
+
+
+== Operación ==
+Para cumplir con el requisito principal para todos los concursantes de Jeopardy!, Watson estaba obligado a esperar hasta que el presentador, Alex Trebek, leyera cada pista en su totalidad, y en ese momento, una luz se encendía como una señal para indicar que el sistema está listo. El primer concursante que activa el botón en su zumbador gana la oportunidad de responder.​​ Watson recibió las pistas en forma de textos electrónicos al mismo tiempo en que las mismas fueron puestas a disposición de los participantes humanos.​ Luego analizaría las pistas en diferentes palabras clave y fragmentos de oración para encontrar frases estadísticamente relacionadas.​ La innovación principal de Watson no fue en la creación de un nuevo algoritmo para esta operación, sino más bien en su capacidad de ejecutar rápidamente miles de algoritmos probados para análisis del lenguaje natural al mismo tiempo para encontrar la respuesta correcta.​​ La probabilidad de la corrección de Watson se mide por el número de algoritmos que encuentran la misma respuesta independientemente.​ Una vez que Watson tiene un número pequeño de soluciones posibles, es capaz de hacer comparaciones con su base de datos para determinar si la solución tiene sentido.​ En una secuencia de 20 simulacros, los participantes humanos fueron capaces de usar el tiempo medio de seis o siete segundos que Watson necesitó para escuchar la pista y decidir si querían señalar una respuesta.​ Durante ese tiempo, Watson también debe evaluar la respuesta y determinar si el resultado es correcto de una manera suficiente para señalar.​ Una parte del sistema usado por Watson para ganar el concurso fueron los circuitos electrónicos que recibieron la señal "listo" y luego examinaron si el nivel de confianza de Watson fue suficientemente grande para activar el zumbador. Debido a la velocidad de estos circuitos en comparación con la velocidad de los tiempos en que los seres humanos son capaces de responder, el tiempo de reacción de Watson fue más rápido que el de los concursantes humanos excepto cuando los humanos anticiparon (en vez de reaccionar a) la señal "listo."​ Después de la señalización, Watson habló con una voz electrónica, sintetizada a partir de grabaciones hechas por Jeff Woodman para un programa de texto a voz desarrollado por IBM en 2004,​ dando las respuestas en el formato de "respuesta y pregunta" asociado con Jeopardy!​
+
+
+== Historia ==
+
+Las circunstancias que condujeron al desarrollo de Watson se remontan a la victoria de la computadora Deep Blue sobre Garri Kaspárov, un Gran Maestro Internacional del ajedrez, en el 11 de mayo de 1997. Desde entonces, IBM se encontraba en la búsqueda de un desafío nuevo, y en 2004, Charles Lickel, el gerente de investigaciones de IBM, había encontrado uno cuando vio la racha ganadora de Ken Jennings en Jeopardy! mientras cenaba en un restaurante con sus compañeros de trabajo. Intrigado por la posibilidad de la utilización del concurso como un desafío para IBM, Lickel presentó la idea, y en 2005 Paul Horn, el ejecutivo de investigación de IBM, apoyó a Lickel en persuadir a uno de los miembros de su departamento para asumir el desafío de jugar a Jeopardy! con un sistema de IBM. A pesar de que inicialmente tuvo problemas en encontrar miembros de su equipo de investigación que estuvieran dispuestos a asumir lo que parecía ser un desafío mucho más complejo que el juego de ajedrez, finalmente David Ferrucci aceptó la oferta.​ Watson fue precedido por un sistema llamado "Piquant," que participó en competiciones logradas por el gobierno de los Estados Unidos, donde fue capaz de responder correctamente solo un 35 por ciento de la cantidad total de pistas en el juego, y generalmente requirió varios minutos para responder.​​​ Para competir en Jeopardy! con éxito, Watson necesitaría responder en un máximo de pocos segundos, y en ese tiempo, los problemas planteados en el concurso fueron considerados como imposibles de resolver.​
+En pruebas iniciales conducidas durante el año 2006 por David Ferucci, gerente del Departamento de Análisis e Integración Semántica de IBM, se le proporcionó a Watson 500 pistas de episodios pasados de Jeopardy! Aunque los mejores concursantes humanos fueron capaces de responder correctamente a un máximo del 95 por ciento de las pistas, en su primera prueba Watson fue capaz de responder correctamente a solo un 15 por ciento de las pistas. Durante 2007, el equipo se dio de tres a cinco años y un equipo de 15 personas para resolver los problemas.​ En 2008, los desarrolladores habían avanzado mucho, hasta tal punto que Watson fue capaz de competir con campeones de Jeopardy!.​ En febrero de 2010, Watson derrotaba a campeones de Jeopardy! de manera regular.​
+Watson era principalmente un esfuerzo de IBM, pero su equipo de desarrollo incluye profesores y estudiantes de la Universidad Carnegie Mellon, la Universidad de Massachusetts en Amherst, el Instituto para Ciencias de Información de la Universidad del Sur de California, la Universidad de Texas en Austin, el Instituto Tecnológico de Massachusetts, la Universidad de Trento, y el Instituto Politécnico Rensselaer.​
+En 2008, los representantes de IBM se comunicaron con Harry Friedman, el productor ejecutivo de Jeopardy!, sobre la posibilidad de una competición entre Watson y dos de los concursantes más exitosos del programa (Ken Jennings y Brad Rutter). Friedman estaba de acuerdo con esa decisión.​​ Las diferencias entre Watson y los concursantes humanos habían generado conflictos entre IBM y el personal de Jeopardy! durante la planificación de la competición.​ IBM repetidamente expresó preocupaciones concernientes a que los guionistas del programa explotaran las deficiencias cognitivas de Watson al escribir las pistas y, de este modo, convirtieran el concurso en un test de Turing. Para soslayar esta preocupación, un tercero eligió aleatoriamente las pistas de programas previamente escritos que no habían sido emitidos.​ El personal de Jeopardy! también expresó preocupaciones por el tiempo de reacción con el zumbador. Watson originalmente señaló por vía electrónica, pero el personal del programa pidió que el sistema pulse el botón físicamente, como los concursantes humanos.​ Sin embargo, Watson fue capaz de ser más rápido que sus competidores humanos, aun con su dedo robótico.
+Para preparar a Watson para su competición, IBM construyó un simulacro del plató de Jeopardy! en una sala de conferencias en uno de sus sitios de tecnología. Concursantes humanos, incluyendo concursantes anteriores de Jeopardy!, también participaron en simulacros del concurso, presentados por Todd Alan Crain de The Onion.​ Alrededor de 100 simulacros fueron conducidos, con Watson ganando un 65 por ciento de los partidos.​
+Los partidos oficiales fueron grabados en enero de 2011, y emitidos el siguiente mes.
+
+
+== Usos en el futuro ==
+Según IBM, el objetivo para Watson es permitir que las computadoras comiencen a interactuar de forma natural con humanos a través de una amplia gama de aplicaciones y procesos, comprendiendo las preguntas de los seres humanos y dando respuestas que los seres humanos pueden comprender y justificar.​
+IBM y Nuance Communications Inc. se han unido para el proyecto de investigación para desarrollar un producto comercial durante los próximos 18 a 24 meses que explotará las capacidades de Watson como sistema de apoyo para decisiones clínicas para ayudar al diagnóstico y tratamiento médico de pacientes. Los médicos de la Universidad de Columbia están ayudando a identificar problemas críticos en la práctica de medicina donde la tecnología de Watson puede ser capaz de contribuir, y los médicos de la Universidad de Maryland están trabajando para identificar la mejor manera en que un sistema tecnológico como Watson podría interactuar con los médicos para proporcionar la máxima asistencia.​ También se ha sugerido por Robert C. Weber, el consejero general de IBM, que Watson se puede utilizar para investigaciones legales.​
+Watson se basa en servidores comercialmente disponibles con la marca "IBM Power 750" comercializados desde febrero de 2010. IBM también tiene la intención de comercializar el software DeepQA a corporaciones grandes, a un precio de millones de dólares, lo cual refleja el precio necesario de un millón de dólares para adquirir un servidor que cumpla con los requisitos mínimos para operar Watson. IBM espera que el precio disminuirá considerablemente dentro de una década cuando la tecnología mejore.​
+
+
+== Véase también ==
+Deep Blue (computadora)
+Blue Gene
+Inteligencia artificial
+Lista de proyectos de inteligencia artificial
+Procesamiento de lenguajes naturales
+IA Fuerte
+Mya (Asistente Virtual)
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+
+Página del sistema Watson.
+Página del proyecto DeepQA.
+Información sobre Watson en el sitio web oficial de Jeopardy!.
+"Smartest Machine on Earth," un documental de Nova en PBS sobre el desarrollo de Watson Archivado el 5 de diciembre de 2015 en Wayback Machine..
+Anuncio para POWER7.
+Anuncio para los IBM Power Systems.
+Entrevista en que Noam Chomsky discute Watson y la inteligencia artificial.
+Artículo sobre el programa en The New York Times.
+"The Watson Trivia Challenge" por The New York Times, 16 de junio de 2010.
+
+en Twitter por #IBMWatson Watson en X (antes Twitter).
+«Inteligencia artificial vs seres humanos en el 'quiz show' más visto de EEUU», artículo en El Mundo.
+Watson IBM Concurso TV Jeopardy!

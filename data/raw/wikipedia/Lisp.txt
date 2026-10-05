@@ -1,0 +1,115 @@
+Lisp (históricamente LISP) es una familia de lenguajes de programación de computadora de tipo multiparadigma con larga historia y una inconfundible y útil sintaxis homoicónica basada en la notación polaca.
+Desarrollado originalmente en 1959 por John McCarthy y sus colaboradores en el Instituto Tecnológico de Massachusetts, Lisp es el segundo lenguaje de programación de alto nivel de mayor antigüedad; apareció un año después de FORTRAN y uno antes que COBOL.
+Al igual que COBOL y FORTRAN, Lisp ha cambiado mucho desde sus comienzos, y han existido un gran número de dialectos en su historia. Hoy, los dialectos de Lisp más ampliamente usados son Scheme (1975), Common Lisp (1984), Emacs Lisp (1985) y Clojure (2007).
+Lisp fue creado originalmente como una notación matemática práctica para los programas de computadora, basada en el cálculo lambda de Alonzo Church. Se convirtió rápidamente en el lenguaje de programación favorito en la investigación de la inteligencia artificial (AI). Como lenguajes de programación precursor, Lisp fue pionero en muchas ideas en ciencias de la computación, incluyendo las estructuras de datos de árbol, el manejo de almacenamiento automático, tipos dinámicos, y el compilador auto contenido.
+El acrónimo LISP significa «LISt Processor» (‘procesador de listas’). Las listas encadenadas son una de las estructuras de datos importantes de Lisp, y el código fuente de Lisp en sí mismo está compuesto de listas. Como resultado, los programas de Lisp pueden manipular código fuente de Lisp como si fueran simples datos, dando lugar a sistemas de macros que permiten a los programadores crear lenguajes de dominio específico embebidos en Lisp.
+La intercambiabilidad del código y los datos también da a Lisp su instantáneamente reconocible sintaxis. Todo el código del programa es escrito como expresiones S, o listas entre paréntesis. Una llamada de función o una forma sintáctica es escrita como una lista, con la función o el nombre del operador en primer lugar, y los argumentos a continuación; por ejemplo, una función f que toma tres argumentos puede ser llamada usando (f x y z).
+
+
+== Historia ==
+Lisp fue inventado por John McCarthy en 1958 mientras estaba en el Instituto Tecnológico de Massachusetts (MIT). McCarthy publicó su diseño 1 de abril de 1960 en un artículo de Communications of the ACM titulado «Funciones recursivas de expresiones simbólicas y su cómputo a máquina, Parte I»​ (la «parte II» nunca fue publicada). Allí mostró que con algunos operadores simples y una notación para las funciones, uno puede construir un lenguaje Turing completo para procesamiento de algoritmos.
+Desde 1955 o 1956, el Information Processing Language fue el primer lenguaje de AI, y ya había incluido muchos de los conceptos, tales como proceso por lista y recursión, que vinieron a ser usados en Lisp.
+La notación original de McCarthy usaba «expresiones M» en corchetes que serían traducidas a expresiones S. Como un ejemplo, la expresión M car[cons[A,B]] es equivalente a la expresión S (car (cons A B)). Una vez que Lisp fue implementado, los programadores rápidamente eligieron usar expresiones S, y las expresiones M fueron abandonadas. las expresiones M emergieron otra vez con los intentos efímeros del MLISP​ de Horace Enea y el CGOL de Vaughan Pratt.
+Lisp fue implementado primero por Steve Russell en un computador IBM 704. Russell había leído el artículo de McCarthy, y se dio cuenta (para la sorpresa de McCarthy) que la función eval de Lisp podía ser implementada en código de máquina. El resultado fue un intérprete de Lisp funcional que podía ser usado para correr programas Lisp, o más correctamente, «evaluar expresiones Lisp».
+Dos rutinas de lenguaje ensamblador para el IBM 704 se convirtieron en las operaciones primitivas para descomponer listas: car (contenido del registro de dirección) y cdr (contenido del registro del decremento). Los dialectos de Lisp todavía usan el car y cdr (pronunciado [ˈkɑr] y /ˈkʊdər/) para las operaciones que retornan el primer elemento y el resto de la lista respectivamente.
+El primer compilador completo de Lisp, escrito en Lisp, fue implementado en 1962 por Tim Hart y Mike Levin en el MIT.​ Este compilador introdujo el modelo Lisp de compilación incremental, en el cual las funciones compiladas e interpretadas pueden entremezclarse libremente. El lenguaje en los memos de Hart y Levin es mucho más cercano al estilo moderno de Lisp que el anterior código de McCarthy.
+
+
+=== Genealogía y variantes ===
+Sobre su historia de cincuenta años, Lisp ha producido muchas variaciones en el tema base de un lenguaje de expresión S. Por otra parte, cada dialecto dado puede tener varias implementaciones, por ejemplo, hay más de una docena de implementaciones del Common Lisp.
+Las diferencias entre los dialectos pueden ser muy visibles, por ejemplo, el Common Lisp y el Scheme usan diferentes palabras clave para definir funciones. Dentro de un dialecto que está estandarizado, sin embargo, las implementaciones conformadas soportan el mismo lenguaje base, pero con diferentes extensiones y bibliotecas.
+
+
+=== Relación con la inteligencia artificial ===
+Desde su inicio, Lisp estaba estrechamente relacionado con la comunidad de investigación de la inteligencia artificial, especialmente en sistemas PDP-10.​ Fue usado como la implementación del lenguaje de programación Micro Planner que fue la fundación para el famoso sistema de AI SHRDLU. En los años 1970, a medida que la investigación del AI engendró descendientes comerciales, el desempeño de los sistemas Lisp existentes se convirtió en un problema creciente.
+Lisp era un sistema difícil de implementar con las técnicas de compilador y hardware común de los años 1970. Las rutinas de recolección de basura, desarrolladas por el entonces estudiante graduado del MIT, Daniel Edwards, hicieron práctico correr Lisp en sistemas de computación de propósito general, pero la eficacia todavía seguía siendo un problema. Esto llevó a la creación de las máquinas Lisp: hardware dedicado para correr ambientes y programas Lisp. Avances tanto en el hardware de computadora como en la tecnología de compiladores pronto hicieron obsoletas a las máquinas de Lisp, en detrimento del mercado de Lisp.
+Durante los años 1980 y 1990, fue hecho un gran esfuerzo para unificar los numerosos dialectos de Lisp en un solo lenguaje (más notablemente, InterLisp, Maclisp, ZetaLisp, MetaLisp, y Franz Lisp). El nuevo lenguaje, Common Lisp, fue esencialmente un subconjunto compatible de los dialectos que reemplazó. En 1994, la ANSI publicó el estándar del Common Lisp, «ANSI X3.226-1994 Information Technology Programming Language Common Lisp». En aquel momento el mercado mundial para Lisp era mucho más pequeño de lo que es hoy.[cita requerida]
+
+
+=== Desde el año 2000 ===
+Habiendo declinado algo en los años noventa, Lisp experimentó un nuevo auge enfocado en las implementaciones abiertas de Common Lisp y en el desarrollo de aplicaciones y de nuevas bibliotecas portátiles. Una muestra de este interés fue el que la versión impresa de Practical Common Lisp (Common Lisp Práctico) de Peter Seibel, un tutorial para nuevos programadores publicado en 2004,​ estuviese brevemente en Amazon.com como el segundo libro de programación más popular. El libro es accesible en línea sin costo.​
+Muchos nuevos programadores de Lisp fueron inspirados por escritores como Paul Graham y Eric S. Raymond luchando por un lenguaje que otros consideran anticuado. Los nuevos programadores de Lisp frecuentemente describen el lenguaje como una experiencia que abre los ojos y afirman que es sustancialmente más productivo que otros lenguajes.​ Este aumento de conciencia puede ser contrastado con el «invierno de la inteligencia artificial» y el breve crecimiento de Lisp a mediados de los 1990.​
+En su encuesta de las implementaciones del Common Lisp, Dan Weinreb lista once implementaciones activamente mantenidas. Scieneer Common Lisp es una nueva implementación comercial que bifurcó (fork) del CMUCL con un primer lanzamiento en 2002.
+La comunidad del código libre ha creado la nueva infraestructura de soporte: Cliki es un Wiki que recoge la información relacionada con Common Lisp, el Common Lisp directory lista recursos, el #lisp es un canal popular de IRC (con soporte por un Bot escrito en Lisp), lisppaste Archivado el 9 de junio de 2021 en Wayback Machine. soporta la distribución y el intercambio y comentario de retazos de código (snippets), el Planet Lisp recoge el contenido de varios blogs relacionados con Lisp, en el LispForum Archivado el 14 de marzo de 2018 en Wayback Machine. el usuario discute asuntos referentes a Lisp, Lispjobs es un servicio para anunciar ofertas de trabajo y hay un nuevo servicio de noticias semanales (Weekly Lisp News).
+Han sido celebrados los 50 años del Lisp (1958-2008) en LISP50@OOPSLA. Hay varias reuniones de usuario locales regulares (Boston, Vancouver, Hamburg,…), Reuniones Lisp (European Common Lisp Meeting, European Lisp Symposium) y una International Lisp Conference.
+La comunidad Scheme mantiene activamente más de veinte implementaciones. Se han desarrollado en los últimos años varias significativas nuevas implementaciones (Chicken, Gauche, Ikarus, Larceny, Ypsilon). El estándar de Scheme Revised5 Report on the Algorithmic Language Scheme fue ampliamente aceptado en la comunidad del Scheme. El proceso Scheme Requests for Implementation ha creado muchas bibliotecas y extensiones casi estándares para el Scheme. Las comunidades de usuario de implementaciones individuales del Scheme continúan creciendo. En 2003 un nuevo proceso de estandarización del lenguaje fue comenzada y condujo al estándar R6RS del Scheme en 2007. El uso académico del Scheme para enseñar ciencias de la computación parece haber declinado algo. Algunas universidades ya no están usando Scheme en sus cursos preliminares de ciencias de la computación.
+Hay también algunos nuevos dialectos Lisp. Notablemente: Newlisp (un lenguaje de scripting), Arc (desarrollado por Paul Graham) y recientemente Clojure (desarrollado por Rich Hickey) y NU para la programación con Cocoa de Apple.
+
+
+== Dialectos importantes ==
+Los dos principales dialectos de Lisp usados para la programación de propósitos generales hoy en día son Common Lisp y Scheme. Estos lenguajes representan opciones de diseño significativamente diferentes.
+El Common Lisp, descendiente principalmente de MacLisp, Interlisp, y Lisp Machine Lisp, es un superconjunto ampliado de los primeros dialectos del Lisp, con un estándar de lenguaje grande incluyendo muchos tipos de datos y formas sintácticas incorporados, así como un sistema del objeto. El Scheme es un diseño más minimalista, con un mucho más pequeño conjunto de características estándar pero con ciertas características de implementación (tales como optimización de llamada de cola y continuación completa) no encontradas necesariamente en Common Lisp. El Common Lisp también tomó prestadas ciertas características de Scheme tales como ámbito de léxico y clausura léxica.
+El Scheme, es un dialecto del lenguaje Lisp con ámbito estático y cola recursiva auténtica inventado por Guy Lewis Steele Jr. y Gerald Jay Sussman. Fue diseñado para tener una semántica excepcionalmente clara y simple y pocas maneras diferentes de formar expresiones. Una amplia variedad de paradigmas programados encuentran una expresión conveniente en Scheme, incluyendo los estilos imperativo, funcional, y paso de mensajes. El Scheme continúa evolucionando con una serie de los estándares (Revisedn Report on the Algorithmic Language Scheme) y una serie de Scheme Requests for Implementation.
+Además, los dialectos de Lisp son usados como lenguajes de scripting en un número de aplicaciones, con los más conocidos siendo el Emacs Lisp en el editor de Emacs, Visual Lisp en AutoCAD, Nyquist en Audacity.
+
+
+== Innovaciones del lenguaje ==
+Fue en Lisp donde nacieron muchas ideas de las ciencias de la computación, incluyendo la estructura de dato de árbol, recolección automática de basura, tipado dinámico, condicionales, funciones de orden superior como map y reduce, recursividad, el compilador autocontenido y el REPL.​​
+Lisp fue el primer lenguaje de programación homoicónico: todo el código fuente del programa es al mismo tiempo una estructura de datos del lenguaje (listas anidadas o árboles). Como resultado la metaprogramación en Lisp es relativamente sencilla. Ya que el código fuente de Lisp tiene una correspondencia directa con el árbol sintáctico abstracto del programa, se puede crear código de Lisp para manipular más código de Lisp, o aún crearlo desde cero, sin necesidad de un extensivo análisis sintáctico (parsing) o manipulación de código de máquina binario. Esto generalmente es considerado una de las ventajas primarias del lenguaje con respecto a su poder expresivo, y hace al lenguaje favorable a la evaluación metacircular.
+La ubicua estructura IF THEN ELSE, ahora admitida como un elemento esencial de cualquier lenguaje de programación, fue inventada por McCarthy para el uso en Lisp, donde vio su primera apariencia en una forma más general (la estructura cond). Fue heredada por el ALGOL, que la popularizó.
+Lisp influyó profundamente a Alan Kay, el líder de investigación del Smalltalk, y entonces a su vez Lisp fue influenciado por Smalltalk, adoptando las características de la programación orientada a objetos (clases, instancias, etc.) a finales de los años 1970.
+Lisp introdujo el concepto de recolección de basura, mediante el cual el sistema busca en el «heap» de memoria dinámica para eliminar objetos obsoletos sin intervención explícita del programador.​
+En gran parte debido a sus requerimientos de recursos con respecto al temprano hardware computacional (incluyendo los primeros microprocesadores), Lisp no se hizo tan popular fuera de la comunidad de inteligencia artificial, como lo fueron el FORTRAN y el descendiente del lenguaje ALGOL, el lenguaje C. Lenguajes más nuevos como Java y Python han incorporado algunas versiones limitadas de algunas de las características de Lisp, pero no pueden necesariamente brindar la coherencia y la sinergia de los conceptos completos encontrados en Lisp. Debido a su conveniencia para aplicaciones mal definidas, complejas, y dinámicas, Lisp están disfrutando actualmente de un cierto resurgimiento del interés popular.
+
+
+== Listas ==
+El elemento fundamental en Lisp es la lista, en el sentido más amplio del término, pues tanto los datos como los programas son listas. De ahí viene su nombre, pues Lisp es un acrónimo de «List Processing».
+Las listas en LISP están delimitadas por paréntesis. De aquí viene el chiste del significado de LISP: «LostInStupidParentheses» que aunque con buen humor es completamente ficticio.
+Algunas de las funciones predefinidas de Lisp tienen símbolos familiares (+ para la suma, * para el producto), pero otras son más exóticas, especialmente dos que sirven precisamente para manipular listas, descomponiéndolas en sus componentes. Sus nombres («car» y «cdr») son un poco extraños, reliquias de tiempos pasados y de la estructura de los ordenadores de segunda generación, «car» devuelve la cabeza de una lista y «cdr» su cola o resto.
+Lisp sigue una filosofía de tratamiento no-destructivo de los parámetros, de modo que la mayoría de las funciones devuelven una lista resultado de efectuar alguna transformación sobre la que recibieron, pero sin alterar esta última.
+Uno de los motivos por los que Lisp es especialmente adecuado para la IA es el hecho de que el código y los datos tengan el mismo tratamiento (como listas); esto hace especialmente sencillo escribir programas capaces de escribir otros programas según las circunstancias.
+Lisp fue uno de los primeros lenguajes de programación en incluir manejo de excepciones con las primitivas catch y throw.
+Derivado de Lisp es el lenguaje de programación Logo. Sin entrar en detalles, podría decirse que Logo es Lisp sin paréntesis y con operadores aritméticos infijos.
+
+
+== Orígenes de «car» y «cdr» ==
+
+car: Content of Address part of Register
+cdr: Content of Decremental part of Register
+Son operaciones del conjunto de instrucciones del IBM 704
+
+
+== Ejemplos ==
+
+
+=== Hola mundo ===
+
+
+==== Trabajando con listas ====
+
+
+=== Grandes valores de la Función de Ackermann ===
+
+
+== Referencias ==
+
+
+== Véase también ==
+Inteligencia artificial
+Common Lisp
+Scheme
+Maxima
+
+
+== Enlaces externos ==
+ Wikilibros alberga un libro o manual sobre Programación en LISP.
+Features of Common Lisp Una discusión de algunas de las características más sobresalientes del lenguaje.
+Recursos Lisp en español Archivado el 16 de enero de 2018 en Wayback Machine. Textos en español y traducciones sobre Lisp, Common Lisp, Emacs Lisp, etc.
+Practical Common Lisp Libro introductorio de Common Lisp. Versión en línea y distribuible por la propia editorial.
+The Nature of Lisp. Una introducción para entender la naturaleza del lenguaje y su poder.
+
+
+=== Aplicaciones en Lisp ===
+Entre las más exitosas aplicaciones escritas en Lisp se pueden mencionar:
+
+Emacs, el editor de texto http://www.gnu.org/software/emacs/emacs.html
+ACL2, el demostrador de teoremas https://www.cs.utexas.edu/users/moore/acl2/
+Maxima, el sistema de álgebra computacional https://maxima.sourceforge.net/
+
+
+=== Compiladores de Lisp ===
+GNU Common Lisp, software libre
+Allegro Common Lisp, software propietario
+CMU Common Lisp, software libre
+CLISP, Una implementación de Common Lisp, software libre
+OpenMCL Archivado el 5 de marzo de 2018 en Wayback Machine. Common lisp para Macintosh, software libre

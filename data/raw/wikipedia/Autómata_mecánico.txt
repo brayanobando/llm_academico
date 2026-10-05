@@ -1,0 +1,216 @@
+Autómata (del latín automăta y este del griego αὐτόματος autómatos, ‘espontáneo’ o ‘con movimiento propio’. Según la RAE, «Instrumento o aparato que encierra dentro de sí el mecanismo que le imprime determinados movimientos» o «máquina que imita la figura y los movimientos de un ser animado»)​ es un equivalente tecnológico de lo que en la actualidad serían los robots autónomos. Si el robot es antropomorfo se conoce como androide.​
+
+
+== Origen de los primeros autómatas ==
+
+Históricamente los primeros autómatas se remontan a las estatuas de algunos dioses o reyes despedían fuego de los ojos, como era el caso de una estatua de Osiris. Otras tenían brazos mecánicos operados por los sacerdotes del templo, y otras, como la de Memon de Etiopía, emitían sonidos cuando los rayos del sol las iluminaba, y así infundían temor y respeto a quien las contemplara. Esta finalidad religiosa de los autómatas continuó hasta la Grecia clásica, en la que se hicieron estatuas que se movían con energía hidráulica. Esos nuevos conocimientos quedan plasmados en el primer libro sobre la figura de los robots Autómata, escrito por Herón de Alejandría (10 d. C.-70 d. C.) donde se explica la creación de mecanismos, muchos basados en los principios de Filón o Arquímedes, realizados fundamentalmente como entretenimiento y que imitaban el movimiento, como el de aves que gorjeaban, volaban y bebían, estatuas que servían vino o puertas automáticas, todos producidos por el movimiento del agua, la gravedad o por sistemas de palancas. También cabe destacar su “The Automaton Theatre”, sobre su teatro de marionetas mecánicas que representaban la Guerra de Troya.
+Aunque Herón es el primero en recopilar datos sobre los autómatas, otros anteriores a él realizaron aportaciones, como es el caso de Archytas (428 a. C.-347 a. C.), inventor del tornillo y la polea y famoso por su paloma mecánica capaz de volar gracias a vapor de aire en propulsión. O el terrible sistema descrito por Polibio (200 a. C.-118 a. C.) y utilizado por Nabis, tirano de Esparta, que consistía en un artilugio con forma de mujer con clavos en su pecho y brazos y que abrazaba mortalmente a todo aquel que incumplía sus pagos. Y otros aún más antiguos, pero de más difícil autentificación, como el mítico Trono de Salomón, descrito en la Biblia y otros textos árabes como un árbol de bronce con pájaros cantores, leones y grifos mecánicos además de ser móvil, pudiendo elevarse desde el suelo hasta el techo.
+
+
+== Edad Media y Renacimiento ==
+La Edad Media supone un avance en la creación de autómatas tras el período romano en que no se generó ninguna aportación importante. El problema es que en muchos casos la falta de fuentes o la poca consideración que se le ha dado a esta época ha hecho que muchos inventos y artilugios producidos en este período hayan quedado en el olvido.
+
+
+=== Libro de Mecanismos Ingeniosos ===
+El Libro de Mecanismos Ingeniosos es un libro escrito en el año 805 por los hermanos Banu Musa (Ahmad, Muhammad y Hasan bin Musa ibn Shakir) en los que se describe​ un centenar de mecanismos y autómatas, y cómo emplearlos.​ 
+Los hermanos Banu Musa trabajaban en la Casa de la sabiduría, y el libro fue un encargo del califa Al-Mamun, que dio instrucciones a los Banu Musa para recopilar de las diversas obras grecolatinas que se habían conservado todo el saber al respecto.​ Algunos de los artefactos se inspiraban en las obras de Herón de Alejandría​ y Filón de Bizancio, así como en la antigua Persia, China e India.​ Otros muchos fueron invenciones de los propios hermanos Banu Musa.​
+
+
+=== San Alberto Magno ===
+Nacido en 1206 en Baviera, teólogo, filósofo y hombre de ciencia, San Alberto Magno fue una de las figuras decisivas del pensamiento medieval. Se le han atribuido a lo largo de la historia multitud de obras tanto de carácter mágico como de creación de seres artificiales. En concreto dos, una de las llamadas “cabezas parlantes”, de las que se hablará más adelante, y de un autómata de hierro que le servía como mayordomo y en el que trabajó treinta años de su vida, el cual era capaz de andar, abrir la puerta y saludar a los visitantes, aunque otros autores afirman que además podía hacer más tareas caseras. Otra versión (que también se cuenta en la historia de la cabeza parlante) narra que Santo Tomás de Aquino, discípulo suyo, al ver aquel ser, decidió destruirlo ya que estaba convencido de que la mano del diablo había influido en su creación.
+
+
+=== Al-Jazari ===
+
+Si se habla de avances científicos, Auilicos y tecnológicos se debe mencionar el mundo árabe y a Al-Jazari (1260), uno de los más grandes ingenieros de la historia. Inventor del cigüeñal y los primeros relojes mecánicos movidos por pesos y agua, entre otros muchos inventos de control automático, estuvo también muy interesado en la figura del autómata, creando una obra del mismo nombre (también llamada El libro del conocimiento de los ingeniosos mecanismos) y considerada una de las más importantes sobre la historia de la tecnología. Dentro de esta vertiente cabe destacar su complejo reloj elefante, animado por seres humanos y animales mecánicos que se movían y marcaban las horas, o un autómata con forma humana que servía distintos tipos de bebidas.
+
+
+=== Leonardo da Vinci ===
+
+Leonardo da Vinci (1452-1519), hombre por excelencia del Renacimiento, diseñó al menos dos autómatas de los que se tenga constancia. El primero se considera también uno de los primeros con forma completamente humana, vestido con una armadura medieval. Fue diseñado alrededor del año 1495, aunque como muchos otros inventos de Leonardo no fue construido. Este mecanismo fue reconstruido en la actualidad según los dibujos originales y podía mover los brazos, girar la cabeza y sentarse. El segundo, mucho más ambicioso, se trató de un león mecánico construido a petición de Francisco I, rey de Francia (1515), para facilitar las conversaciones de paz entre el rey francés y el papa León X. Mediante diversos artificios, iba de una habitación a otra, donde se encontraba el monarca; en un momento dado, abrió su pecho y todos pudieron comprobar que estaba lleno de lirios y otras flores, representado así un antiguo símbolo de Florencia (el león) y la flor de lis que Luis XII regaló a la ciudad como señal de amistad.
+
+
+=== Juanelo Turriano ===
+Gran ingeniero del siglo XVI, Juanelo Turriano trabajó en España a las órdenes de Carlos V como relojero de la corte. Fue inventor de multitud de mecanismos, siendo el más famoso el llamado “artilugio de Juanelo”, una obra de ingeniería capaz de llevar el agua desde el Tajo al Alcázar de Toledo, aunque jamás le pagaron por aquella obra. En esa ciudad se le atribuye a Turriano la creación de un autómata (entre otros muchos, como danzarines, guerreros o pájaros voladores) llamado “El Hombre de Palo” (del que queda constancia en el nombre de una calle de Toledo), un sirviente autómata que se diferenciaba del resto por estar hecho de madera y que recorría las calles pidiendo limosna para su dueño, haciendo una reverencia cuando la conseguía. Otros autores más conservadores solo consideran a este autómata un muñeco de palo estático, que se colocó en la ciudad para recoger fondos para la apertura de un hospital.
+
+
+=== René Descartes ===
+Uno de los más famosos casos de creación de un autómata humano, pero también donde es más difícil separar la historia de la ficción, es la historia de René Descartes (1596-1650) y su hija autómata. Una de las principales ideas cartesianas era la consideración de todos los animales como complejos autómatas, seres privados de todo estado mental, que solo actuaban por supervivencia y que en la práctica su carne y huesos funcionaban como la mecánica de un artilugio. Pero cuentan que tras la muerte de su hija ilegítima Francine, de cinco años de edad, se sintió tan deprimido que se propuso construir una muñeca autómata lo más parecida a la fallecida, uniéndose tanto a aquella figura que según describen la trataba como “mi hija Francine”. Su inseparable unión hizo que la llevara de viaje cruzando el mar de Holanda. La tenía guardada en un cofre dentro de su camarote. 
+Entonces Descartes, que solía destacarse por su mal humor, mató al capitán y lo tiró por la borda, al igual que había hecho con la muñeca.
+
+
+== Época de esplendor: siglo XVIII ==
+Con la entrada en el siglo XVIII y los consiguientes avances en materia de relojería se llega a la que se considera la época donde mejores y más perfectos autómatas se realizaron de la historia. Su desarrollo, dominado por el carácter científico, ponía de relieve la obsesión por intentar reproducir lo más fielmente posible los movimientos y comportamientos de los seres vivos.
+
+
+=== Jacques de Vaucanson ===
+
+Nacido un 24 de febrero de 1709, Jacques de Vaucanson, excelente relojero pero con amplios conocimientos de música, anatomía y mecánica, quería demostrar mediante sus autómatas la realización de principios biológicos básicos, tales como la circulación, la digestión o la respiración. Sobre esta última función versó su primera creación, “El Flautista”, figura con forma de pastor y de tamaño natural que tocaba el tambor y la flauta con un variado repertorio musical. Vaucanson lo presentó en la Academia de Ciencias de Francia cosechando un gran éxito. Más tarde, en 1738, crea su segundo autómata, llamado “El Tamborilero”, como una versión mejorada del primero. En esta ocasión la figura tocaba la zampoña de Provenza y el tamboril con veinte melodías distintas. El tercero y más famoso fue el “Pato con aparato digestivo”, transparente y compuesto por más de cuatrocientas partes móviles y que batía las alas, comía y realizaba completamente la digestión imitando al mínimo detalle el comportamiento natural del ave. Aunque en realidad el pato era un engaño, pues lo que comía no era lo mismo que defecaba, sino que al interior del pato había un compartimento en el que se depositaba el grano que comía y del que salía algo parecido a un excremento. Pasados los años, Vaucanson, cansado de su propia obra, vendió las figuras en 1743.
+
+
+=== Friedrich von Knauss ===
+Inventor del siglo XVIII (1724-1789), Friedrich von Knauss fue el creador de uno de los primeros autómatas escritores. Esta compleja creación la formaba una esfera sostenida por dos águilas de bronce; en ella la figura de una diosa sirve de musa al autómata, que con su largo brazo escribe en una hoja en blanco lo que previamente se le ha ordenado realizar. El sistema de funcionamiento es capaz de hacer que el autómata moje la pluma en el tintero para poder escribir y cuenta con un sistema para pasar la página cuando ésta ha quedado escrita.
+
+
+=== Pierre Jaquet-Droz ===
+
+Posiblemente el mejor y más conocido creador de autómatas de la historia. Pierre Jaquet-Droz, suizo nacido en 1721, fue el responsable de los tres autómatas más complejos y famosos del siglo XVIII. Sus tres obras maestras («La pianista», «El dibujante» y «El escritor») causaron asombro en la época, llegando a ser contemplados por reyes y emperadores tanto de Europa como de China, India o Japón.
+El primero de ellos, «La pianista», es un autómata con forma de mujer que toca el órgano, con la particularidad de que es la propia figura la que interpreta las obras pulsando las teclas con sus dedos sin tener el sonido pregrabado o procedente de otro lugar. Compuesta por 2500 piezas, podía mover los ojos dirigiendo la mirada del piano a los dedos, inclinar el cuerpo, respirar y al finalizar cada tema hacer una reverencia.
+«El dibujante», por otra parte, estaba compuesto por unas 2000 piezas, tenía forma de niño sentado en un pupitre y podía realizar hasta cuatro dibujos distintos. Al igual que el anterior, imitaba el comportamiento mientras realizaba la tarea, moviendo los ojos, las manos o incluso soplando en el papel para eliminar los restos del polvo del lápiz.
+El último, y más complejo de los tres autómatas, es «El escritor», compuesto por más de 6000 piezas. Podía escribir utilizando la pluma gracias a una rueda donde se seleccionaban los caracteres uno a uno, pudiendo escribir así pequeños textos de unas cuarenta palabras de longitud. Como los anteriores, realizaba movimientos propios de un ser humano, como mojar la tinta y escurrir el sobrante para no manchar el papel, levantar la pluma como si estuviera pensando, respetando los espacios y puntos y aparte, además de seguir con la mirada el papel y la pluma mientras escribía.
+Los tres autómatas se pueden contemplar en el Musée d’Art et d’Histoire de Neuchâtel, Suiza.
+
+
+=== Jean Eugène Robert-Houdin ===
+
+La fama de los autómatas de Von Knauss y Jaquet-Droz llevó a muchos ilusionistas y prestidigitadores a incorporar trucos con autómatas en sus espectáculos. Es el caso de Jean Eugène Robert-Houdin, que creó varios autómatas que, aunque mecánicos, estaban más cerca del mundo de la magia. Cabe destacar un busto cantante donde se mostraba un sistema de engranajes con el que se decía que la figura cantaba, aunque la realidad es que detrás de ese mecanismo se encontraba una cantante auténtica. También fue responsable de un autómata escritor que dibujaba lo que el público le pedía o el truco del autómata llamado “El Pastelero del Palais Royal”, que traía al mago todos los platos y bebidas que este le pedía, entre otros muchos.
+
+
+=== El Papamoscas ===
+
+De estas fechas data el famoso autómata de la catedral de Burgos, el Papamoscas, cuya misión es la de tocar las campanas señalando la hora: lo hace moviendo su brazo derecho (con el que mueve, a través de una campana, un badajo) al mismo tiempo que abre y cierra la boca. Si bien el mecanismo actual es del siglo XVIII, sustituye a un artilugio parecido de fecha anterior.
+
+
+=== Calendura y Calendureta, de Elche ===
+
+En 1759 el Consell de Elche votó por añadir dos autómatas al campanario construido en 1572 sobre la Torre de la Vetla o Centinela de la antigua muralla, la continua a la Torre del Consell, hoy Ayuntamiento de Elche; ambas del siglo XV. El 29 de septiembre del mismo año fueron "bautizados" los dos autómatas: Miquel Calendura, el mayor, que da las horas, y Vicente sin padre, el pequeño, que da los cuartos. Los nombres corresponden al de las campanas S. Miguel y S. Vicente Ferrer y derivado de Calenda, relativo a la medición del tiempo. Hoy día se les conoce popularmente como Calendura y Calendureta. A Vicent, el pueblo le añadió Calendureta, como diminutivo de Calendura. Tras más de 2 siglos y medio siguen marcando las horas a los ilicitanos, siendo de los pocos supervivientes del levante español.
+
+
+== Autómatas en China y Japón ==
+
+La cultura asiática, especialmente China y Japón, ha tenido una gran tradición de autómatas que se ha mantenido desde tiempos muy antiguos hasta la actualidad. Ya en el año 2000 a. C. se cuentan leyendas chinas sobre autómatas, como la creada por el hijo del rey Tach`uan, hecho de madera, y tan semejante al hombre que confundía a todos los que lo veían, hasta que descubren su naturaleza y es destruido. En tiempos más cercanos se habla de varios emperadores chinos que, curiosos por estos inventos, apoyaron la creación de todo tipo de autómatas, desde los que poseían forma animal (pájaros, caballos, gatos, monos, etcétera) hasta otros con forma humana y que andaban, bailan o tocaban instrumentos.
+En el Japón de los siglos XVIII y XIX los autómatas consiguieron un alto grado de importancia y complejidad. Se les llamaba karakuri, que se podría traducir como “aparatos mecánicos para producir la sorpresa en una persona” y se distinguían tres tipos de figuras: las Butai Karakuri, que se usaban en el teatro, las Zashiki Karakuri, más pequeñas y con las que se jugaba en las habitaciones, y las Dashi Karakuri, que se utilizaban en las festividades religiosas. Su mayor tarea era la representación de mitos y leyendas tradicionales aunque existían de todo tipo, como algunos que servían el té o lanzaban flechas con un arco. Ya entrados en el siglo XX y XXI se ve cómo la tradición del karakuri se mantiene en los modernos robots japoneses, con la creación de complejísimos robots antropomorfos como ASIMO, QRIO o Repliee Q1 o mascotas robóticas como Aibo, descendiente directo de los autómatas animales de siglos pasados.
+
+
+== Última época: 1848-1914 ==
+
+A finales del siglo XIX y comienzos del siglo XX se siguieron creando autómatas de todo tipo, pero la realidad es que no fueron tan elaborados como sus antecesores y estuvieron más guiados al mundo del espectáculo y al comercio, como las autoperipatetikos. Entre los más importantes cabe destacar “La pareja”, de Alexander Nicolas Theroude, los autómatas animales de Blaise Bontems, las figuras que realizaban pequeños trucos de magia o la encantadora de serpientes de Roullet & Decamps, el fumador turco de Leopold Lambert, los escarceos con el mundo de los autómatas de científicos como Nikola Tesla y su modelo de barco manejado a distancia o el autómata caminante de George Moore con forma humana y movido por la fuerza del vapor que podía recorrer distancias a casi 9 millas por hora. Finalmente, con el estallido de la Primera Guerra Mundial, la industria de los autómatas desaparece y no renacerá hasta la llegada de los modernos robots.
+
+
+== Algunos tipos de autómatas ==
+
+
+=== Cabezas y máquinas parlantes ===
+Dentro de los autómatas hay un grupo que ha tenido una gran difusión a lo largo de la historia, las cabezas parlantes, seres que se creían entre la mecánica y la magia que hablaban, aconsejaban a sus dueños o predecían el futuro. La leyenda y el mito han influido mucho en este tipo de mecanismos, encontrándose las primeras versiones en antiguos cuentos árabes. Uno de los ejemplos más famosos es la cabeza con forma de hombre de Roger Bacon (1214-1294), hecha de latón y que podía responder a preguntas sobre el futuro, la de Alberto Magno con forma de mujer, la de Valentín Merbitz que decían que hablaba varios idiomas  (algunos decían que gracias a un ventrílocuo), la cabeza parlante del papa Silvestre II que respondía aleatoriamente “sí” o “no” a las preguntas que se le hacían, o la figura de la santa que hablaba de Atanasio Kircher, además de su libro “Misurgia Universalis”, donde describe con detalle la creación de figuras que podían mover los ojos, labios y lengua.
+En cualquier caso, la mayoría de ellas conseguían la “voz” a través de diversos sistemas. El primero con base documental en conseguirlo fue Kratzenstein, que con un sistema de tubos de órgano podía reproducir las vocales. Más tarde Wolfrang von Kempelen explicaba en una de sus obras cómo fabricar y manipular una de estas máquinas para que pudiera pronunciar algunas frases breves a través de una especie de fuelle por el que pasaba el aire y se modulaban los sonidos. O las creadas por el abate Mical, de tamaño natural y que, exhibidas de dos en dos, se contestaban la una a la otra. Ya en el siglo XIX Joseph Faber ideó la versión más perfecta de estas máquinas, bautizada como Euphonia, que se utilizaba como el órgano de una iglesia y que podía desde recitar el alfabeto hasta responder preguntas, susurrar o reír.
+
+
+=== Jugadores de ajedrez ===
+
+Wolfgang von Kempelen fue el inventor, como se ha señalado anteriormente, de una de las primeras máquinas parlantes, y fue también creador de uno de los más famosos autómatas de la historia, que a su vez, fue uno de los mayores fraudes de su tiempo, pero que, a pesar de ello, impulsó la creación de autómatas jugadores de ajedrez hasta casi nuestros días. Se trata de “El Turco”.
+Construido en 1769, “El Turco” estaba formado por una mesa donde estaba colocado un maniquí con forma humana vestido con ropajes árabes. Una puerta en la parte frontal se abría y dejaba ver el supuesto mecanismo de funcionamiento del autómata. Este jugador fue una de las mayores atracciones de la época ya que, según contaban, era invencible. Viajó a lo largo de Europa aún después de la muerte de su creador, pasando a manos de Johan Maezel, llegando a derrotar al mismísimo Napoleón Bonaparte durante la campaña de la Batalla de Wagram. Después de viajar por Estados Unidos aterriza en Cuba, donde muere William Schlumberger, ayudante de Maezel, y posible encargado de introducirse dentro del autómata para jugar las partidas, ya que después de esta muerte “El Turco” dejó de exhibirse hasta acabar destruido en 1845 en el gran incendio de Filadelfia. Más tarde se dijo que, a lo largo de su historia, el autómata había tenido varios operadores que movían el mecanismo gracias a un tablero de ajedrez secundario. Cada pieza del tablero principal contenía un imán, así el operador podía saber qué pieza había sido movida y dónde. El operador hacía su movimiento mediante un mecanismo que podía encajarse en el tablero secundario, indicando al maniquí dónde mover.
+La fama de este autómata hizo que se crearan otras muchas réplicas con el mismo truco de funcionamiento, algunas de ellas en el siglo XIX, como es el caso de Ajeeb, presentado por Charles Arthur Hooper en 1868; Ajeeb iba vestido de egipcio y fue exhibido muchas veces en Europa y América hasta 1929, cuando también fue destruido en un incendio; este autómata consiguió ganar un torneo de ajedrez en Londres sin que nadie se percatara del artificio. También Mephisto, nacido en 1876 de la mano de Charles Godfrey Gumpley, fabricante de libros ortopédicos, se enfrentó a varios jugadores importantes como Henry Bird y Joseph Henry Blackburne, manejado según parece por Gunsberg.​
+Sin embargo, sí existió un autómata cuyo funcionamiento era totalmente real. Su creación se debe al español Leonardo Torres Quevedo, ingeniero y matemático, inventor de “El Ajedrecista”, presentado en la feria de París de 1914. Funcionaba utilizando unos electroimanes bajo el tablero, jugando automáticamente hasta el final con un rey y una torre contra un rey desde cualquier posición sin ninguna intervención humana.
+Así, se puede considerar a estos autómatas, tanto los falsos como los reales, como pioneros de los modernos juegos de ajedrez informáticos y de ordenadores como Deep Blue, que mantienen el mismo espíritu y objetivos que sus predecesores: conseguir que una máquina pueda vencer a la mente humana.
+
+
+== Autómatas en la ficción ==
+
+
+=== En la mitología ===
+En la mitología griega se describen un puñado de criaturas a guisa de autómatas. Entre ellos está Talos, un gigante de bronce que patrullaba la isla de Creta.​  Hefesto, dios herrero por antonomasia, construyó a las Celédones, unas doncellas de oro que cantaban melodiosamente.​   También había construido a unas sirvientas, también de oro, que le ayudaban en sus labores diarias.​  De la misma manera construyó veinte trípodes dorados y dotados de ruedas que Hefesto creó para desplazar cosas.​  Los calcotauros eran unos toros de bronce que escupían fuego.​  Los perros guardianes de Alcínoo, hechos de oro y plata, custodiaban las puertas de su palacio.​
+El gólem, según el folclore judío, ser creado de arcilla por el rabino Löw introduciéndole en la boca el shem, una inscripción mágica en hebreo que contenía el nombre de Yahveh.
+
+
+=== En la literatura ===
+
+En el Satiricón, de Petronio, se describe un esclavo con esqueleto de plata articulado que sirve los platos y las bebidas.
+En El hombre de arena, E. T. A. Hoffmann habla de Nataniel y su amor por la autómata Olimpia. Su fin será el suicidio al descubrir la verdadera naturaleza de su amada. Este mismo autor hablará en el cuento "Los autómatas" de  "El Turco Parlante", inspirado en el falso autómata de Von Kempelen.
+Frankenstein, obra escrita por Mary Shelley en 1818 y que cuenta la historia del Doctor Frankenstein, obsesionado con crear un ser vivo a partir de diferentes partes del cuerpo de cadáveres diseccionados.
+El jugador de ajedrez de Maezel, de Edgar Allan Poe, donde se intenta descifrar el auténtico funcionamiento de El Turco.
+El Maestro Zacarías, de Julio Verne, cuenta la historia de un relojero que transfiere su alma a sus autómatas.
+El ruiseñor, de Hans Christian Andersen, donde aparece un ave mecánica que imita el sonido del ruiseñor.
+La Eva Futura, de Villiers de L´Isle Adam, describe a Hadaly, la mujer artificial ideal, pero a la vez critica los excesos de las invenciones tecnológicas, representadas por Thomas Edison.
+Las aventuras de Pinocho, de Carlo Collodi, con la historia de Gepeto y su marioneta de madera, la cual talla a partir de un tronco de madera parlante que le entrega el maestro carpintero Cereza.
+Los robots universales de Rossum, escrita en 1920 por el checo Karel Čapek y primera obra donde es utilizado el término moderno "robot".
+Muchos de los cuentos y novelas del escritor de ciencia ficción ruso-estadounidense Isaac Asimov tratan sobre robots tan similares a los humanos que resultan indistinguibles de éstos.
+Fábulas de robots (1964) y su continuación, Ciberíada (1965), del escritor de ciencia ficción polaco Stanislav Lem, son una especie de cuentos o fábulas protagonizadas por robots. En muchas otras de sus obras aparecen frecuentemente personajes que son robots y autómatas.
+
+
+==== Literatura española ====
+La presencia de autómatas es muy frecuente, sobre todo en novelas de género (literatura juvenil, literatura fantástica, ciencia ficción, etc.), pero también hay citas en libros realistas y en los clásicos, como en los libros de caballerías​ y, por su influencia, en Don Quijote de la Mancha, en el capítulo 62 de su segunda parte, en el que Don Quijote se encuentra con una cabeza parlante, que cree hecha por medio de la brujería, cuando en realidad era un truco de feria.
+Carmen Martín Gaite recurrió a las figuras de los autómatas en varias de sus obras, como en el cuento 
+«El  castillo  de  las  tres  murallas» (en el que una estatua animada sirve de enlace entre los personajes de Serena y su hija Altalé), o la novela Caperucita en Manhattan.​
+Otros ejemplos son El jardín de los autómatas, de Armando Boix, donde aparece Schrade, un inventor de autómatas. En Juanelo o el hombre nuevo, Jesús Ferrero recrea la construcción del homúnculo Juanelo, obra del inventor Gianello Turriano​ Autómata, de Adolfo García Ortega, trata sobre el descubrimiento de un artilugio mecánico de tiempos de Felipe II de España, cuyo cometido era defender el estrecho de Magallanes. En varias novelas de Óscar Esquivias aparecen autómatas, como el chubesqui Capablanca en La ciudad del Gran Rey o los fabricados por el relojero Breguet en Étienne el traidor.​ 
+El cuento steampunk "Aria de una muñeca mecánica", de Care Santos, trata sobre el negocio de autómatas.​​
+
+
+=== En el cine ===
+Le Joueur d'echecs (The Chess Player) (1927), dirigida por Raymond Bernard, es una película antibélica basada en la novela de Henri Dupuy-Mazuel, el cual se inspiró en la historia del jugador de ajedrez autómata "El Turco", creado por el barón húngaro Wolfgang von Kempelen.
+Metrópolis (1927), dirigida por Fritz Lang, donde el científico Rotwang CA crea un robot antropomorfo con forma de mujer (o gynoide).
+El mago de Oz (1939), dirigida por Victor Fleming, donde aparece el personaje de el hombre de hojalata, que viaja a Oz en busca de un corazón.
+2001: Una odisea del espacio (1968), dirigida por Stanley Kubrick, en la que aparece el personaje HAL 9000, una computadora con inteligencia artificial que al final enloquece, intentando matar a los tripulantes de la nave Discovery 1.
+Westworld (1973), dirigida por Michael Crichton y protagonizada por Yul Brynner, donde los robots de un parque temático que simulaba el antiguo oeste estadounidense se rebelan en contra de los visitantes.
+The Stepford Wives (1975 y una remake en 2004), basada en el cuento Las mujeres perfectas, de Ira Levin, que cuenta cómo en la ciudad de Stepford los hombres han sustituido a sus mujeres por autómatas que obedecen todas sus órdenes.
+Blade Runner (1982), dirigida por Ridley Scott, donde aparecen los “Replicantes”, seres idénticos a los humanos pero con una esperanza de vida limitada, utilizados como trabajadores.
+The Terminator (1984), dirigida por James Cameron, que muestra que en el futuro las máquinas han esclavizado al hombre y envían al pasado a un autómata de apariencia humana para que elimine a la futura madre del que será líder de la rebelión contra las máquinas.
+Edward Scissorhands (1990), dirigida por Tim Burton, cuenta la historia de Eduardo, un autómata con unas afiladas cuchillas por manos, que quedó incompleto al morir prematuramente su creador.
+Toy Story (1995), dirigida por John Lasseter, recupera el mito de que los seres inanimados, como los juguetes, tienen vida propia en ausencia de sus dueños.
+Inteligencia Artificial (2001), de Steven Spielberg, narra la historia de David, un robot único en su género capaz de amar.
+El hombre bicentenario (1999), dirigida por Chris Columbus, es una película que narra la historia de un autómata capaz de pensar y sentir, basada en una cuento de Isaac Asimov.
+Hugo (2011), película dirigida por Martin Scorsese y basada en el libro La invención de Hugo Cabret, donde el gran cineasta Georges Méliès crea un autómata por el cual se desata la trama de esta historia.
+
+
+== Museos ==
+Museo de Autómatas de La Rochelle, Francia
+Otro famoso museo de autómatas (Museu d'Autòmats) se encuentra en el Parque de Atracciones del Tibidabo, en Barcelona.
+Hay otro en Verdú, cerca de Tárrega: el Museo de Juguetes y Autómatas, en Lérida, Cataluña.
+
+
+== Notas y referencias ==
+
+
+== Bibliografía ==
+La quimera del autómata matemático. Del calculador medieval a la máquina analítica de Babbage, V. Guijarro y L. González, Ed. Cátedra, 2010.
+Núñez de la Fuente, Sara: «Estatuas animadas y autómatas en la literatura juvenil de Carmen Martín Gaite y Óscar Esquivias» en Elos. Revista de Literatura Infantil e Xuvenil, n.º 2, 2015; pp. 39-61.
+Le monde des automates, 1928.
+Los falsos adanes. Historia y mito de los autómatas. Ceserani, G.P. Editorial Tiempo Nuevo, 1971.
+Alvar, Carlos. "De autómatas y otras maravillas." Fantasía y literatura en la Edad Media y los siglos de oro.-(Biblioteca Aurea hispánica; 28) (2004): 29-54.
+Historia de Monstruos, Juan Jacobo Bajarlía.
+Ferris Carrillo, Maria José. "Máquina de amar. Secretos del cuerpo artificial." Banda aparte 14 (1999): 139-140.
+Aracil, Alfredo. "Autómatas y otras ficciones en la cultura del Renacimiento a la Ilustración." Historias 49 (2001): 18-26.
+El Turco: La Vida y Época de la Famosa Máquina Jugadora de Ajedrez del Siglo XVIII, Tom Standage, Editorial Walker & Company, 2002.
+Secretos medievales, Jesús Callejo. Editorial Temas de Hoy, 2006.
+From music boxes to street organs R.Dewaard, 1967.
+La familia del Dr. Frankenstein. Materiales para una historia del hombre artificial, Jesús Alonso Burgos, Alcalá Grupo Editorial, 2007.
+THE JAQUET-DROZ MECHANICAL PUPPETS EDMONDO DROZ 1971.
+Bowers, Q. David. "Encyclopedia of automatic musical instruments." (No Title) (1972).
+CLOKWORK MUSIC W.J.G.ORD-HUME 1973.
+Silver Anniversary Collection MUSICAL BOX SOCIETY INTERNATIONAL 1974.
+The Marvelous World of Music Machines Heinrich Weiss-Stauffachｅr 1976.
+MacDonald Critchley; R. A. Henson; Macdonald Critchley, eds. (1977). Music and the Brain Studies in the Neurology of Music. W. Heinemann Medical Books. ISBN 9781931503358. 
+MUSICAL INSTRUMENTS OF THE WORLD the Diagram Group 1976.
+BARREL ORGAN W.J.G.ORD-HUME 1978.
+ANDROIDS The Jaquet-Droz automaton F.M. Ricci 1979.
+Musical Box W.J.G.ORD-HUME 1980.
+The Musical Box Handbook Cylinder Boxes Graham Webb 1984.
+Brauers, Jan. Von der Äolsharfe zum Digitalspieler: 2000 Jahre mechanische Musik, 100 Jahre Schallplatte. Klinkhardt und Biermann, 1984.
+Le MONDE des AUTOMATES ETUDE HISTORIQUE ET TECHNIQUEⅠⅡ A.Chapuis E.Gelis 1984.
+THE WONDERLAND OF MUSIC BOXES AND AUTOMATA Daniel Troquet 1989.
+Clock and watch museum Geneva 1990 Musee d’art et d’histoire.
+Museums of Horology La Chaux-de-Fonds Le Locle Francois Mercier 1991.
+All’epoca dell Scatole musicali.
+Anne Winter-Jensen M.E.L.D.L., ed. (1987). Automates et musiques. Geneve: Musée de l'horlogerie et de l'émaillerie. ISBN 9782830600476. 
+Bailly, Christian (2003). Automata: The Golden Age: 1848–1914. London: Robert Hale. ISBN 9780709074038. 
+Florence, Theriault (2005). Playing Their Parts 19th Century Automata Musical Boxes and Singing Birds. Gold Horse Publishing. ISBN 9781931503358. 
+Reilly, Kara. Automata and mimesis on the stage of theatre history. Springer, 2011.
+Voskuhl, Adelheid. Androids in the enlightenment: Mechanics, artisans, and cultures of the self. University of Chicago Press, 2019.
+Fairchild, Constance Ashmore (2019). Creative Kinetics: Making Mechanical Marvels in Wood. Echo Point Books & Media. ISBN 9781635618181. 
+Michael, Start (2023). Secrets of Automata: Ingenious Designs for Mechanical Life. The Crowood Press. ISBN 9780719843051. 
+Arthur, Finch (2026). History of Automatons and Robots: From Ancient Greece to the 19th Century: A Journey Through Mechanical Marvels and the Dreams of Artificial Life. Echo Point Books & Media. ISBN 9798243406130. 
+L'Oregue de Barbarie Helmut Zeraschi Payot Lausanne 1980.
+Faszinierende Welt der Automaten Annette Beyer Callwey Verlag Munchen 1983.
+Automaten Chrisian Bailly Hirmer.
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Autómata.
+Sitio web oficial del Centre International de la Mécanique d'Art.
+Automates-Anciens.com
+Autómata from XIX Century. Archivado el 11 de febrero de 2007 en Wayback Machine.
+Archivado el 1 de julio de 2006 en Wayback Machine.
+Las máquinas de Al-Jazari (en inglés)
+Las máquinas parlantes de Wolfgang von Kempelen (en inglés)
+Galería de autómatas de los Siglos XVIII y XIX.
+Karakuri.info Archivado el 18 de marzo de 2021 en Wayback Machine. (en inglés)
+Cronología de los autómatas jugadores de ajedrez (en inglés)

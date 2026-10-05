@@ -1,0 +1,92 @@
+Word2vec es una técnica para el procesamiento de lenguaje natural publicada en 2013. El algoritmo Word2vec utiliza un modelo de red neuronal para aprender asociaciones de palabras a partir de un gran corpus de texto. Una vez entrenado, dicho modelo puede detectar palabras sinónimas o sugerir palabras adicionales para una frase sin terminar. Como su nombre indica, Word2vec representa cada palabra distinta con una lista particular de números llamada vector. Los vectores están escogidos cuidadosamente de forma que una función matemática sencilla (la similitud coseno entre los vectores) indica el nivel de la similitud semántica entre las palabras representada por dichos vectores.
+
+
+== Aproximación ==
+Word2vec es un grupo de modelos relacionados que se utilizan para producir word embeddings. Estos modelos son poco profundos, se entrenan redes neuronales de dos capas para reconstruir contextos lingüísticos de palabras. Word2vec toma como entrada un gran corpus de texto y produce un espacio vectorial, típicamente de varios cientos de dimensiones, asignando cada palabra única en el corpus a un vector correspondiente en el espacio. Los word embeddings están colocados en el espacio vectorial de forma que las palabras que comparten contextos comunes en el corpus están localizadas cerca unas de otras en el espacio.​
+
+
+== Historia ==
+Un equipo de investigadores dirigido por Tomas Mikolov en Google creó, patentó y publicó Word2vec en 2013 en dos artículos.​​ Otros investigadores ayudaron a analizar y explicar el algoritmo.​ Los vectores embedding creados usando el algoritmo Word2vec tienen algunas ventajas comparados con algoritmos anteriores​ como el análisis semántico latente.
+
+
+== CBOW y skip-gram ==
+Word2vec puede utilizar cualquiera de las dos arquitecturas de modelo para producir una representación distribuida de palabras: modelo bolsa de palabras continuo (CBOW) o skip-gram continuo, donde continuo hace referencia al espacio de los vectores de representación. El término skip-gram procede de la forma en que el modelo aprende a predecir palabras contextuales a partir de una palabra objetivo. En el modelo de skip-gram, dada una palabra objetivo, se «salta» a través de las palabras de contexto en la ventana circundante para predecir cada palabra de contexto de forma independiente. Por ejemplo, si la palabra objetivo es «gato» y el tamaño de la ventana de contexto es 2, el modelo de saltograma no predice las palabras de contexto en orden secuencial (como «el» seguido de «tierno» seguido de "y"). En su lugar, predice cada palabra contextual de forma independiente, de ahí el «salto» el término salto.​
+En la arquitectura de la bolsa continua de palabras, el modelo predice la palabra actual de una ventana de palabras de contexto circundante. El orden de palabras de contexto no influye predicción (bolsa-de-suposición de palabras). En la arquitectura saltograma (N-gramas con saltos) continuo, el modelo utiliza la palabra actual para pronosticar la ventana de palabras de contexto que la rodean. La arquitectura saltograma hace que las palabras de contexto cercano pesen más que las palabras del contexto más lejano.​​ Según la nota de los autores,​ CBOW es más rápido, mientras que saltograma trabaja mejor para palabras poco frecuentes.
+
+
+== Parametrización ==
+Los resultados del entrenamiento de Word2vec pueden ser sensibles a la parametrización. Los siguientes son algunos parámetros importantes en el entrenamiento de Word2vec.
+
+
+=== Algoritmo de entrenamiento ===
+Un modelo Word2vec puede ser entrenado con softmax jerárquico y/o muestreo negativo. Para aproximar la verosimilitud logarítmica condicional, un modelo busca maximizar, el método jerárquico softmax utiliza un árbol de Huffman para reducir el cálculo. El método de muestreo negativo, por otro lado, aborda el problema de maximización minimizando la probabilidad logarítmica de las instancias negativas muestreadas. Según los autores, el softmax jerárquico trabaja mejor para palabras infrecuentes, mientras que el muestreo negativo funciona mejor para palabras frecuentes y mejor con vectores de pocas dimensionales.​ Cuando el número de épocas aumenta, el softmax jerárquico deja de ser útil.​
+
+
+=== Sub-Muestreo ===
+Las palabras de alta frecuencia a menudo proporcionan poca información. Las palabras con una frecuencia por encima de un cierto umbral se pueden submuestrear para acelerar el entrenamiento.​
+
+
+=== Dimensionalidad ===
+La calidad de word embedding aumenta con dimensionalidades altas. Pero después de alcanzar algún punto, la ganancia marginal disminuye.​ Típicamente, la dimensionalidad de los vectores se establece entre 100 y 1.000.
+
+
+=== Ventana de contexto ===
+El tamaño de la ventana de contexto determina cuántas palabras antes y después de una palabra se incluyen como palabras de contexto de la palabra dada. Según la nota de los autores, el valor recomendado es 10 para saltograma y 5 para CBOW.​
+
+
+== Extensiones ==
+Se ha propuesto una extensión de Word2vec para construir embeddings de documentos enteros (en lugar de palabras individuales).​ Esta extensión se llama paragraph2vec o doc2vec y ha sido implementado en C, Python​​ y Java/Scala​ (ver abajo), las versiones de Java y Python también soportan la inferencia de embeddings de documentos en documentos nuevos, no vistos.
+
+
+== Vectores de palabras para Bioinformática: BioVectores ==
+Asgari y Mofrad​ han propuesto una extensión de los vectores de palabra para n-gramas en secuencias biológicas (por ejemplo, ADN, ARN, y Proteínas) para aplicaciones de bioinformática. Se llaman bio-vectores (BioVec) para referirse a secuencias biológicas en general con vectores de proteínas (ProtVec) para proteínas (secuencias de aminoácidos) y vectores de genes (GeneVec) para secuencias de genes, esta representación puede ser ampliamente utilizada en aplicaciones de aprendizaje automático en proteómica y genómica. Los resultados sugieren que los BioVectors pueden caracterizar secuencias biológicas en términos de interpretaciones bioquímicas y biofísicas de los patrones subyacentes.​ Una variante similar, dna2vec, ha mostrado que hay correlación entre la puntuación de similitud de Needleman-Wunsch y la similitud del coseno de los vectores de palabras dna2vec.​
+
+
+== Vectores de palabra para Radiología: Embedding Inteligente de Palabras (IWE) ==
+Banerjee et al.​ han propuesto una extensión de los vectores de palabra para crear una representación vectorial densa de informes de radiología no estructurados. Uno de los retos más grandes de Word2Vec es cómo manejar palabras desconocidas o que están fuera del vocabulario (OOV) y palabras morfológicamente similares. Si el modelo Word2vec no ha encontrado una palabra particular antes, será forzado a utilizar un vector aleatorio, el cual está generalmente lejos de su representación ideal. Esto particularmente puede ser un problema en ámbitos como la medicina, donde los sinónimos y palabras relacionadas pueden ser utilizadas dependiendo del estilo preferido del radiólogo, y las palabras pueden haber sido utilizadas de manera poco frecuente en un gran corpus.
+IWE combina Word2vec con una técnica de mapeo de diccionario semántica para emprender los retos importantes de extracción de información de textos clínicos, los cuales incluyen ambigüedad de texto libre de estilo narrativo, variaciones léxicas, uso de fases agramaticales y telegráficas, ordenación arbitraria de palabras, y aparición frecuente de abreviaturas y acrónimos.  De interés particular, el modelo IWE (entrenado con un conjunto de datos institucional) tradujo con éxito un conjunto de datos institucional diferente, lo que demuestra una buena generalización del enfoque entre instituciones.
+
+
+== Análisis ==
+Las razones para el aprendizaje exitoso del word embedding en el marco Word2vec son poco conocidas. Goldberg y Levy señalan que la función objetivo word2vec hace que palabras que aparecen en contextos similares tengan embeddings similares (medidos por la similitud del coseno) y señalan que esto está en la línea de la hipótesis distribucional de J. R. Firth. Sin embargo, señalan que esta explicación es "muy poco precisa" y argumentan que sería preferible una explicación más formal.​
+Levy et al. (2015)​ muestran que gran parte del rendimiento superior de Word2vec o embeddings similares en tareas posteriores no es el resultado de los modelos per se, sino de la elección de hiperparámetros específicos. La transferencia de estos hiperparámetros a enfoques más 'tradicionales' produce rendimientos similares en tareas posteriores. Arora et al. (2016)​ explican que Word2vec y los algoritmos relacionados realizan inferencias para un modelo generador simple de texto, que implica un proceso de generación de recorrido aleatorio basado en un modelo de tema loglineal. Utilizan esto para explicar algunas propiedades de los word embeddings, incluido su uso para resolver analogías.
+
+
+== Preservación de las relaciones semánticas y sintácticas ==
+El enfoque de word embedding es capaz de capturar múltiples grados diferentes de similitud entre palabras. Mikolov et al. (2013)​ encontraron que los patrones semánticos y sintácticos se pueden reproducir utilizando aritmética vectorial. Los patrones como "Hombre es a Mujer como Hermano es a Hermana" puede ser generada mediante operaciones algebraicas en las representaciones vectoriales de estas palabras, de manera que la representación vectorial de "Hermano" - "Hombre" + "Mujer" produce un resultado que es más cercano a la representación vectorial de "Hermana" en el modelo. Tales relaciones se pueden generar para una variedad de relaciones semánticas (como País–Capital) así como relaciones sintácticas (por ejemplo, tiempo presente–tiempo pasado).
+
+
+== Evaluando la calidad de un modelo ==
+Mikolov et al. (2013)​ desarrollaron un enfoque para evaluar la calidad de un modelo Word2vec que se basa en los patrones semánticos y sintácticos discutidos anteriormente. Desarrollaron un conjunto de 8.869 relaciones semánticas y 10.675 relaciones sintácticas que utilizan como benchmark para probar la precisión de un modelo. Cuando se evalúa la calidad de un modelo vectorial, un usuario puede recurrir a esta prueba de precisión que está implementada en Word2vec,​ o desarrollar su propio conjunto de pruebas que sea significativo para los corpus que componen el modelo. Este enfoque ofrece una prueba más desafiante que simplemente argumentar que las palabras más similares a una palabra de prueba dada son intuitivamente plausibles.​
+
+
+=== Parámetros y calidad de modelo ===
+El uso de diferentes parámetros de modelo y diferentes tamaños de corpus puede afectar en gran medida a la calidad de un modelo Word2vec. La precisión se puede mejorar de varias maneras, incluida la elección de la arquitectura del modelo (CBOW o saltograma), aumentando el conjunto de datos de entrenamiento, aumentando la cantidad de dimensiones vectoriales y aumentando el tamaño de la ventana de las palabras consideradas por el algoritmo. Cada una de estas mejoras conlleva el coste de una mayor complejidad computacional y, por lo tanto, un mayor tiempo en la generación de los modelos.​
+En los modelos que utilizan grandes corpus y una gran cantidad de dimensiones, el modelo saltograma produce la precisión general más alta y produce consistentemente la precisión más alta en las relaciones semánticas, además de producir la precisión sintáctica más alta en la mayoría de los casos. Sin embargo, el CBOW es menos costoso computacionalmente y produce resultados de precisión similares.​
+En general, la precisión aumenta con el número de palabras utilizadas y el número de dimensiones. Mikolov et al.​ informan que duplicar la cantidad de datos de entrenamiento da como resultado un aumento en la complejidad computacional equivalente a duplicar el número de dimensiones vectoriales.
+Altszyler y coautores (2017) estudiaron el rendimiento de Word2vec en dos pruebas semánticas para diferentes tamaños de corpus.​ Encontraron que Word2vec tiene una curva de aprendizaje empinada, superando a otra técnica de word embedding (LSA) cuando se entrena con un tamaño de corpus mediano a grande (más de 10 millones de palabras). Sin embargo, con un corpus pequeño de entrenamiento, LSA mostró un mejor rendimiento. Además, muestran que la mejor configuración de parámetros depende de la tarea y del corpus de entrenamiento. Sin embargo, para modelos saltograma formados con corpus de tamaño medio, con 50 dimensiones, un tamaño de ventana de 15 y 10 muestras negativas parece para ser un buen ajuste de parámetros.
+
+
+== Véase también ==
+Aprendizaje de características
+Modelos de lenguaje de redes neuronales
+Modelo de espacio vectorial
+Incrustación de vecinos estocásticos distribuidos en t (t-SNE)
+
+
+== Referencias ==
+ 
+
+
+== Enlaces externos ==
+Wikipedia2Vec (Introducción)
+
+
+=== Implementaciones ===
+C
+C#
+Python (Spark)
+Python (TensorFlow)
+Python (Gensim)
+Java/Scala
+R

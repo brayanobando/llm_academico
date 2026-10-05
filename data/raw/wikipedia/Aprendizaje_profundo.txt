@@ -1,0 +1,63 @@
+El aprendizaje profundo (en inglés, deep learning) es una rama del aprendizaje automático que se basa en el uso de algoritmos para modelar y comprender datos complejos. Estos algoritmos se inspiran en la estructura y función del cerebro humano, utilizando múltiples capas de procesamiento para extraer y transformar información de manera iterativa. El objetivo es crear modelos que puedan aprender representaciones abstractas de los datos, lo que les permite realizar tareas como el reconocimiento de patrones, la clasificación y la predicción con alta precisión.​
+En esencia, el aprendizaje profundo busca identificar las mejores maneras de representar los datos para facilitar el aprendizaje de tareas específicas. Por ejemplo, una imagen puede representarse como un conjunto de pixeles, pero algunas representaciones, como las que resaltan las características importantes de la imagen, pueden hacer que sea más fácil para un modelo determinar si la imagen contiene un rostro humano.
+El aprendizaje profundo ha demostrado ser especialmente eficaz en áreas como la visión artificial, el reconocimiento del habla y el procesamiento de audio y música. Arquitecturas como las redes neuronales convolucionales y los transformadores han logrado resultados sobresalientes en estas áreas, superando a menudo a otros enfoques de aprendizaje automático.
+
+
+== Aplicaciones ==
+
+
+=== Medicina ===
+El aprendizaje profundo se ha aplicado de forma extensa en medicina para tareas como clasificación de imágenes, segmentación de órganos y lesiones, análisis de histopatología digital y apoyo al diagnóstico a partir de imágenes radiológicas y de laboratorio.
+Desde 2022, las arquitecturas Vision Transformer (ViT) han demostrado un rendimiento comparable o superior a las redes neuronales convolucionales (CNN) en clasificación de imágenes médicas de gran escala, permitiendo capturar dependencias globales en imágenes de gigapíxeles mediante mecanismos de auto-atención jerárquica.​
+
+
+== Definiciones ==
+Aunque no existe una definición única y universalmente aceptada de aprendizaje profundo, el concepto central implica el uso de múltiples capas de procesamiento para extraer características y patrones de los datos. Las diferentes definiciones suelen destacar aspectos como:
+
+Uso de capas no lineales: Los algoritmos de aprendizaje profundo utilizan una serie de capas, cada una de las cuales aplica una transformación no lineal a los datos de entrada. Esto permite que el modelo aprenda representaciones complejas y abstractas de los datos.
+Aprendizaje de representaciones jerárquicas: El aprendizaje profundo se basa en la idea de que los datos pueden representarse en múltiples niveles de abstracción. Las capas inferiores aprenden características básicas, mientras que las capas superiores combinan estas características para formar representaciones más complejas.
+Aprendizaje supervisado y no supervisado: Los algoritmos de aprendizaje profundo pueden utilizarse tanto en escenarios de aprendizaje supervisado, donde el modelo se entrena con datos etiquetados, como en escenarios de aprendizaje no supervisado, donde el modelo debe descubrir patrones en los datos sin etiquetas.
+En resumen, el aprendizaje profundo se caracteriza por el uso de múltiples capas de procesamiento no lineal para aprender representaciones jerárquicas de los datos, ya sea de forma supervisada o no supervisada.
+La diferencia clave entre los algoritmos de aprendizaje profundo y los de aprendizaje "poco profundo" radica en el número de transformaciones que se aplican a los datos. Mientras que los algoritmos "poco profundos" pueden aplicar una o dos transformaciones, los algoritmos de aprendizaje profundo suelen utilizar muchas más capas, lo que les permite aprender representaciones más complejas.​ Aunque no hay un número exacto de capas que defina cuándo un algoritmo se considera "profundo", la mayoría de los investigadores coinciden en que implica más de dos transformaciones intermedias.​
+Además de las arquitecturas formadas por un número finito de capas, se han desarrollado modelos de profundidad continua dentro de la familia de las ecuaciones diferenciales neuronales. En las neural ODEs, la transformación del estado se representa mediante una ecuación diferencial ordinaria parametrizada por una red neuronal y se calcula mediante integración numérica. Esta formulación se relaciona con la interpretación de ciertas redes residuales como discretizaciones de una dinámica continua.​
+
+
+== Computación en la nube ==
+
+
+=== Aceleración con GPU ===
+La ejecución de algoritmos de aprendizaje profundo requiere una gran cantidad de potencia de cálculo, especialmente durante el proceso de entrenamiento. Las GPU (unidades de procesamiento gráfico) se han convertido en una herramienta esencial para acelerar este proceso, gracias a su capacidad para realizar cálculos en paralelo de manera eficiente. Esta técnica se conoce como computación de propósito general en GPU (GPGPU, del inglés general-purpose computing on graphics processing units).
+El uso de GPU permite reducir significativamente el tiempo necesario para entrenar modelos de aprendizaje profundo, lo que ha impulsado el desarrollo de aplicaciones en diversos campos, como la biología. Por ejemplo, se han utilizado redes neuronales convolucionales (CNN) para segmentar glándulas en imágenes de histología, lo que puede ayudar en el diagnóstico de enfermedades.​​
+
+
+=== Servicios en la nube ===
+Los principales proveedores de servicios en la nube, como Amazon, Azure e IBM, ofrecen servicios de infraestructura que incluyen acceso a GPU. Esto permite a los usuarios ejecutar algoritmos de aprendizaje profundo sin necesidad de invertir en hardware costoso.​
+
+
+=== Google Cloud y TensorFlow ===
+Google ofrece una plataforma de aprendizaje automático (PaaS) que incluye servicios para crear y desplegar modelos de aprendizaje profundo. Esta plataforma, que se basa en la biblioteca de código abierto TensorFlow, proporciona modelos pre-entrenados y herramientas para personalizar modelos según las necesidades específicas del usuario.
+
+
+== Hardware ==
+El auge del aprendizaje profundo en la década de 2010 se ha debido tanto a los avances en los algoritmos como a las mejoras en el hardware de computación. Las GPU, a menudo optimizadas específicamente para tareas de inteligencia artificial, han superado a las CPU como la opción preferida para el entrenamiento de modelos de aprendizaje profundo a gran escala.​
+Se ha estimado que la cantidad de potencia de cálculo necesaria para entrenar modelos de aprendizaje profundo ha aumentado exponencialmente en los últimos años. Un análisis de OpenAI reveló que la cantidad de cálculo utilizada en los proyectos de aprendizaje profundo más grandes creció 300.000 veces entre 2012 y 2017, con un tiempo de duplicación de tan solo 3,4 meses.​
+
+
+== Véase también ==
+Aprendizaje automático antagónico
+Procesador de aprendizaje profundo (DLP)
+Red de estado de eco
+Reservoir computing
+Transformador de visión
+Red neuronal residual
+Hiperparámetro (aprendizaje automático)
+Aprendizaje por conjuntos
+Isolation forest
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Tutorial de aprendizaje profundo de Hinton (en inglés)
+Centro para el Aprendizaje Biológico y Computacional (CBCL - Center for Biological and Computational Learning) (en inglés)

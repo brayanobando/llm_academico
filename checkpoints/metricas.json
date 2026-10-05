@@ -1,0 +1,48 @@
+{
+  "checkpoints\\best.pt": {
+    "train": {
+      "loss": 3.5728,
+      "perplexity": 35.61,
+      "acierto_top1": 31.51,
+      "acierto_top5": 55.74,
+      "tokens": 456192
+    },
+    "valid": {
+      "loss": 5.0859,
+      "perplexity": 161.73,
+      "acierto_top1": 19.98,
+      "acierto_top5": 40.33,
+      "tokens": 25088
+    },
+    "test": {
+      "loss": 5.0694,
+      "perplexity": 159.08,
+      "acierto_top1": 19.83,
+      "acierto_top5": 40.12,
+      "tokens": 25088
+    }
+  },
+  "checkpoints\\last.pt": {
+    "train": {
+      "loss": 3.1731,
+      "perplexity": 23.88,
+      "acierto_top1": 37.23,
+      "acierto_top5": 61.48,
+      "tokens": 456192
+    },
+    "valid": {
+      "loss": 5.1724,
+      "perplexity": 176.34,
+      "acierto_top1": 19.56,
+      "acierto_top5": 40.27,
+      "tokens": 25088
+    },
+    "test": {
+      "loss": 5.1506,
+      "perplexity": 172.53,
+      "acierto_top1": 19.45,
+      "acierto_top5": 39.84,
+      "tokens": 25088
+    }
+  }
+}

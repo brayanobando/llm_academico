@@ -1,0 +1,465 @@
+Perceptrons: An Introduction to Computational Geometry (en español, Perceptrones: una introducción a la geometría computacional) es un libro escrito por Marvin Minsky y Seymour Papert y publicado en 1969. A principios de la década de 1970 se publicó una edición con correcciones y adiciones a mano. Después del resurgimiento de las redes neuronales se publicó una edición ampliada (ISBN 9780262631112), que contiene un capítulo dedicado a contrarrestar las críticas que se le hicieron en la década de 1980.
+El tema principal del libro es el perceptrón, un tipo de red neuronal artificial desarrollada a finales de la década de 1950 y principios de la de 1960. El libro fue dedicado al psicólogo Frank Rosenblatt, quien en 1957 publicó el primer modelo de un "Perceptrón". Rosenblatt y Minsky se conocían desde la adolescencia, habiendo estudiado con un año de diferencia en la Bronx High School of Science.​ En un momento dado, se convirtieron en figuras centrales de un debate dentro de la comunidad de investigación de IA, y se sabe que promovieron animadas discusiones en conferencias, aunque mantuvieron una relación amistosa.​
+Este libro es el centro de una controversia de larga data en el estudio de la inteligencia artificial. Se afirma que las predicciones pesimistas de los autores fueron responsables de un cambio en la dirección de la investigación en IA, concentrando los esfuerzos en los llamados sistemas "simbólicos", una línea de investigación que se estancó y contribuyó al llamado invierno de la IA de la década de 1980, cuando la promesa de la IA no se cumplió. ​
+El punto clave de Perceptrons reside en una serie de demostraciones matemáticas que reconocen algunas de las fortalezas de los perceptrones, al tiempo que muestran importantes limitaciones.​ La más importante se relaciona con el cálculo de algunos predicados, como la función XOR, y también el importante predicado de conectividad. El problema de la conectividad se ilustra en la portada del libro, de colores poco convencionales, con el fin de mostrar las dificultades que los propios humanos tienen para calcular este predicado. Un crítico, Earl Hunt, señaló que la función XOR también resulta difícil de adquirir para los humanos durante los experimentos de aprendizaje de conceptos.​
+
+
+== Historia de la publicación ==
+Cuando Papert llegó al MIT en 1963, decidieron, junto con Minsky, escribir un análisis teórico de las limitaciones de los perceptrones. Les tomó hasta 1969 terminar de resolver los problemas matemáticos que surgieron inesperadamente durante la escritura. La primera edición se imprimió en 1969. Para la segunda impresión de 1972 los autores realizaron modificaciones a mano. Las notas manuscritas incluyen algunas referencias a las reseñas de la primera edición.​ ​ ​
+En 1988 se publicó una "edición ampliada" que añade un prólogo y un epílogo para analizar el resurgimiento de las redes neuronales en la década de 1980, pero sin nuevos resultados científicos. En 2017 se reimprimió la edición ampliada, con un prólogo de Léon Bottou que analiza el libro desde la perspectiva de alguien que trabaja en aprendizaje profundo .
+
+
+== Antecedentes ==
+El perceptrón es una red neuronal desarrollada por el psicólogo Frank Rosenblatt en 1958 y es una de las máquinas más famosas de su época.​ ​ En 1960, Rosenblatt y sus colegas demostraron que el perceptrón podía aprender, en un número finito de ciclos de entrenamiento, cualquier tarea que sus parámetros pudieran representar. El teorema de convergencia del perceptrón se demostró para redes neuronales de una sola capa.​
+Durante este período, la investigación en redes neuronales fue un enfoque importante para el problema cerebro-máquina, adoptado por un número significativo de personas.​ Informes del New York Times y declaraciones de Rosenblatt afirmaban que las redes neuronales pronto podrían ver imágenes, vencer a los humanos en ajedrez y reproducirse.​ Al mismo tiempo, surgieron otros enfoques nuevos, incluida la IA simbólica.​ Diferentes grupos se encontraron compitiendo por financiación y personal, y su demanda de potencia de cálculo superó con creces la oferta disponible.​
+
+
+== Contenido ==
+Perceptrons: An Introduction to Computational Geometry es un libro de trece capítulos agrupados en tres secciones. Los capítulos 1 al 10 presentan la teoría de los perceptrones de los autores mediante demostraciones, el capítulo 11 trata sobre el aprendizaje, el capítulo 12 aborda problemas de separación lineal y el capítulo 13 analiza algunas de las ideas de los autores sobre perceptrones simples y multicapa y el reconocimiento de patrones. ​ ​
+
+
+=== Definición de perceptrón ===
+Minsky y Papert tomaron como objeto de estudio las versiones abstractas de una clase de dispositivos de aprendizaje que denominaron perceptrones, "en reconocimiento al trabajo pionero de Frank Rosenblatt".​ Estos perceptrones eran formas modificadas de los perceptrones introducidos por Rosenblatt en 1958. Consistían en una retina, una sola capa de funciones de entrada y una sola salida.​ ​
+Además, los autores restringieron el "orden" o número máximo de conexiones entrantes de sus perceptrones. El sociólogo Mikel Olazaran explica que Minsky y Papert "sostenían que el interés de la computación neuronal provenía del hecho de que era una combinación paralela de información local ", que, para ser efectiva, debía ser un cálculo simple. Para los autores, esto implicaba que "cada unidad de asociación podía recibir conexiones solo de una pequeña parte del área de entrada".​ Minsky y Papert denominaron a este concepto "localidad conjuntiva".​
+
+
+=== Paridad y conectividad ===
+Dos ejemplos principales analizados por los autores fueron la paridad y la conectividad. La paridad implica determinar si el número de entradas activadas en la retina de entrada es impar o par, y la conectividad se refiere al problema figura-fondo . Minsky y Papert demostraron que el perceptrón de una sola capa no podía calcular la paridad bajo la condición de localidad conjuntiva (Teorema 3.1.1), y mostraron que el orden requerido para que un perceptrón calcule la conectividad aumentaba con el tamaño de la entrada (Teorema 5.5).​ ​
+
+
+=== El asunto XOR ===
+Algunos críticos del libro  afirman que los autores dan a entender que, dado que una sola neurona artificial es incapaz de implementar algunas funciones como la función lógica XOR, las redes más grandes también tienen limitaciones similares y, por lo tanto, deberían descartarse. La investigación sobre perceptrones de tres capas mostró cómo implementar tales funciones. Rosenblatt en su libro demostró que el "perceptrón elemental" con un número a priori ilimitado de elementos A (neuronas) de la capa oculta y una neurona de salida puede resolver cualquier problema de clasificación. (Teorema de existencia.) Minsky y Papert utilizaron perceptrones con números restringidos de entradas de los elementos A de la capa oculta y una condición de localidad: cada elemento de la capa oculta recibe las señales de entrada de un círculo pequeño. Estos perceptrones restringidos no pueden definir si la imagen es una figura conectada o si el número de píxeles en la imagen es par (el predicado de paridad).
+Hay muchos errores en esta historia. Aunque, de hecho, una sola neurona solo puede calcular un pequeño número de predicados lógicos, era ampliamente conocido que las redes de tales elementos pueden calcular cualquier función booleana posible. Esto era conocido por Warren McCulloch y Walter Pitts, quienes incluso propusieron cómo crear una máquina de Turing con sus neuronas formales (Sección III de ​), se menciona en el libro de Rosenblatt, se menciona en un artículo típico de 1961 (Figura 15​), e incluso se menciona en el libro Perceptrones. Minsky también utiliza ampliamente neuronas formales para crear computadoras teóricas simples en el Capítulo 3 de su libro Computation: Finite and Infinite Machines.
+En la década de 1960 se estudió un caso especial de la red perceptrón como "lógica de umbral lineal", para aplicaciones en circuitos lógicos digitales. La teoría clásica se resume en ​ según Donald Knuth.​ En este caso especial, el aprendizaje del perceptrón se denominó "Síntesis de elemento de umbral único por iteración", y la construcción de una red perceptrón se denominó "Síntesis de red". Otros nombres incluyeron lógica linealmente separable, lógica de entrada lineal, lógica de umbral, lógica de mayoría y lógica de votación . El hardware para realizar la lógica de umbral lineal incluyó núcleo magnético, transistor-resistencia, parametron, diodo túnel-resistencia y relé de bobina múltiple.​ También hubo estudios teóricos sobre los límites superior e inferior del número mínimo de unidades perceptrón necesarias para realizar cualquier función booleana. ​
+Lo que el libro demuestra es que en los perceptrones de alimentación directa de tres capas (con una capa denominada "oculta" o "intermedia"), no es posible calcular ciertos predicados a menos que al menos una de las neuronas de la primera capa (la capa "intermedia") esté conectada con un peso no nulo a cada una de las entradas (Teorema 3.1.1, reproducido a continuación). Esto contradecía la esperanza de algunos investigadores al basarse principalmente en redes con pocas capas de neuronas "locales", cada una conectada solo a un pequeño número de entradas. Una máquina de alimentación directa con neuronas "locales" es mucho más fácil de construir y usar que una red neuronal más grande y completamente conectada, por lo que los investigadores de la época se concentraron en estas en lugar de en modelos más complicados. 
+Algunos otros críticos, en particular Jordan Pollack, señalan que lo que era una pequeña prueba sobre un problema global (la paridad) que no era detectable por detectores locales fue interpretado por la comunidad como un intento bastante exitoso de enterrar toda la idea.​
+
+
+=== Crítica de los perceptrones y sus extensiones ===
+En el prólogo y el epílogo, añadidos a la edición de 1988, los autores reaccionan al resurgimiento de las redes neuronales en la década de 1980 al analizar las redes neuronales multicapa y los perceptrones Gamba. ​ ​ ​ Por "perceptrones Gamba" se referían a máquinas perceptronas de dos capas donde la primera capa también está compuesta por unidades perceptronas ("máscaras Gamba"). En contraste, la mayor parte del libro analiza perceptrones de dos capas donde la primera capa está compuesta por unidades booleanas. Conjeturan que las máquinas Gamba requerirían "una enorme cantidad" de máscaras Gamba y que las redes neuronales multicapa son una extensión "estéril". Además, señalan que muchos de los problemas "imposibles" para los perceptrones ya se habían resuelto utilizando otros métodos.​
+La máquina perceptrón de Gamba era similar a la de Rosenblatt. Su entrada era una imagen. Esta imagen se procesaba en paralelo mediante máscaras binarias (generadas aleatoriamente). Detrás de cada máscara había un fotorreceptor que se activaba si la imagen, tras el enmascaramiento, era lo suficientemente brillante. La segunda capa estaba compuesta por unidades perceptrón estándar.
+Afirmaron que la investigación sobre perceptrones decayó en la década de 1970 no por su libro, sino por problemas inherentes: ninguna máquina de aprendizaje basada en perceptrones podía realizar la asignación de créditos mejor que la regla de aprendizaje de perceptrones de Rosenblatt, y los perceptrones no pueden representar el conocimiento necesario para resolver ciertos problemas.​
+En el capítulo final afirmaron que para las redes neuronales de la década de 1980 "poco ha cambiado de importancia desde 1969". Predijeron que cualquier máquina homogénea no lograría escalar. Las redes neuronales entrenadas mediante descenso de gradiente no lograrían escalar debido a mínimos locales, pesos extremadamente grandes y una convergencia lenta. Los algoritmos de aprendizaje generales para redes neuronales serían imprácticos, ya que no existe una teoría general e independiente del dominio sobre "cómo funcionan las redes neuronales". Solo una sociedad de la mente puede funcionar. Específicamente, pensaban que existen muchos tipos diferentes de pequeños problemas en el mundo, cada uno a la escala de un "problema de juguete". Los grandes problemas siempre se pueden descomponer en pequeños problemas. Cada uno requiere un algoritmo diferente para su solución, algunos son perceptrones, otros programas lógicos, etc. Cualquier máquina homogénea no lograría resolver todos los pequeños problemas, salvo un pequeño número. La inteligencia humana no consiste más que en una colección de muchos pequeños algoritmos diferentes organizados como una sociedad.​
+
+
+== Contenido matemático ==
+
+
+=== Definiciones preliminares ===
+Sea 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ un conjunto finito . Un predicado sobre 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ es una función booleana que toma un subconjunto de 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ y las salidas son 
+  
+    
+      
+        0
+      
+    
+    {\textstyle 0}
+  
+ o 
+  
+    
+      
+        1
+      
+    
+    {\textstyle 1}
+  
+ . En particular, una unidad de perceptrón es un predicado.
+Un predicado 
+  
+    
+      
+        ψ
+      
+    
+    {\textstyle \psi }
+  
+ tiene apoyo 
+  
+    
+      
+        S
+        ⊂
+        R
+      
+    
+    {\textstyle S\subset R}
+  
+, si algún 
+  
+    
+      
+        X
+        ⊂
+        S
+      
+    
+    {\textstyle X\subset S}
+  
+, tenemos 
+  
+    
+      
+        ψ
+        (
+        X
+        )
+        =
+        ψ
+        (
+        X
+        ∩
+        S
+        )
+      
+    
+    {\textstyle \psi (X)=\psi (X\cap S)}
+  
+ En otras palabras, significa que si sabemos cómo funciona 
+  
+    
+      
+        ψ
+      
+    
+    {\textstyle \psi }
+  
+ en subconjuntos de 
+  
+    
+      
+        S
+      
+    
+    {\textstyle S}
+  
+, entonces sabemos cómo funciona en subconjuntos de todos 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ .
+Un predicado puede tener muchos soportes diferentes. El tamaño del soporte de un predicado 
+  
+    
+      
+        ψ
+      
+    
+    {\textstyle \psi }
+  
+ es el número mínimo de elementos necesarios en su soporte. Por ejemplo, las funciones constante-0 y constante-1 están soportadas en el conjunto vacío, por lo que ambas tienen un tamaño de soporte 0.
+Un perceptrón (del tipo estudiado por Minsky y Papert) sobre 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ es una función de forma 
+  
+    
+      
+        θ
+        
+          (
+          
+            
+              ∑
+              
+                i
+              
+            
+            
+              a
+              
+                i
+              
+            
+            
+              ψ
+              
+                i
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \theta \left(\sum _{i}a_{i}\psi _{i}\right)}
+  
+ dónde 
+  
+    
+      
+        
+          ψ
+          
+            i
+          
+        
+      
+    
+    {\textstyle \psi _{i}}
+  
+ son predicados y 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+      
+    
+    {\textstyle a_{i}}
+  
+ son números reales.
+Si 
+  
+    
+      
+        Φ
+      
+    
+    {\textstyle \Phi }
+  
+ es un conjunto de predicados, entonces 
+  
+    
+      
+        L
+        (
+        Φ
+        )
+      
+    
+    {\textstyle L(\Phi )}
+  
+ es el conjunto de todos los perceptrones que utilizan solo predicados en 
+  
+    
+      
+        Φ
+      
+    
+    {\textstyle \Phi }
+  
+ .
+El orden de un perceptrón 
+  
+    
+      
+        θ
+        
+          (
+          
+            
+              ∑
+              
+                i
+              
+            
+            
+              a
+              
+                i
+              
+            
+            
+              ψ
+              
+                i
+              
+            
+          
+          )
+        
+      
+    
+    {\textstyle \theta \left(\sum _{i}a_{i}\psi _{i}\right)}
+  
+ es el tamaño máximo de soporte de sus predicados componentes 
+  
+    
+      
+        {
+        
+          ψ
+          
+            i
+          
+        
+        
+          }
+          
+            i
+          
+        
+      
+    
+    {\textstyle \{\psi _{i}\}_{i}}
+  
+ .
+El orden de una función booleana en 
+  
+    
+      
+        R
+      
+    
+    {\textstyle R}
+  
+ es el orden mínimo posible para un perceptrón que implementa la función booleana.
+Una función booleana es conjuntivamente local si y solo si su orden no aumenta hasta el infinito. 
+  
+    
+      
+        
+          |
+        
+        R
+        
+          |
+        
+      
+    
+    {\displaystyle |R|}
+  
+ aumenta hasta el infinito.
+La máscara de 
+  
+    
+      
+        A
+        ⊂
+        R
+      
+    
+    {\textstyle A\subset R}
+  
+ es el predicado 
+  
+    
+      
+        
+          1
+          
+            A
+          
+        
+      
+    
+    {\textstyle 1_{A}}
+  
+ definido por 
+  
+    
+      
+        
+          1
+          
+            A
+          
+        
+        (
+        X
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  1
+                
+                
+                  
+                     si 
+                  
+                  A
+                  ⊂
+                  X
+                  ,
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                     en otro caso.
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle 1_{A}(X)={\begin{cases}1&{\text{ si }}A\subset X,\\0&{\text{ en otro caso.}}\end{cases}}}
+  
+
+
+== Recepción y legado ==
+Perceptrones recibió varias críticas positivas en los años posteriores a su publicación. En 1969, el profesor de Stanford Michael A. Arbib afirmó: «Este libro ha sido ampliamente aclamado como un nuevo y emocionante capítulo en la teoría del reconocimiento de patrones».​ A principios de ese mismo año, el profesor de CMU Allen Newell escribió una reseña del libro para Science, comenzando el artículo declarando: «Este es un gran libro».​
+or otro lado, H. D. Block expresó su preocupación por la definición restrictiva de perceptrones que daban los autores. Argumentó que estos "estudiaban una clase de máquinas muy limitadas desde un punto de vista bastante ajeno al de Rosenblatt", y que, por lo tanto, el título del libro era "sumamente engañoso".​ Investigadores contemporáneos de redes neuronales compartieron algunas de estas objeciones: Bernard Widrow se quejó de que los autores habían definido los perceptrones de forma demasiado restrictiva, pero también afirmó que las demostraciones de Minsky y Papert eran "prácticamente irrelevantes", ya que se presentaron una década después del perceptrón de Rosenblatt.​
+Se suele pensar que Perceptrons provocó un declive en la investigación de redes neuronales en los años 70 y principios de los 80.​  Durante este período, los investigadores de redes neuronales continuaron con proyectos más pequeños fuera de la corriente principal, mientras que la investigación de IA simbólica experimentó un crecimiento explosivo.​ ​
+Con el resurgimiento del conexionismo a finales de los 80, el investigador de PDP David Rumelhart y sus colegas retomaron Perceptrons. En un informe de 1986, afirmaron haber superado los problemas presentados por Minsky y Papert, y que "su pesimismo sobre el aprendizaje en máquinas multicapa era infundado".​
+
+
+== Análisis de la controversia ==
+Resulta muy instructivo conocer lo que Minsky y Papert dijeron en la década de 1970 sobre las implicaciones más amplias de su libro. En su sitio web, Harvey Cohen,​ investigador de los Laboratorios de IA del MIT desde 1974,​ cita a Minsky y Papert en el Informe de 1971 del Proyecto MAC, dirigido a las agencias de financiación, sobre las "redes Gamba": "Prácticamente no se sabe nada sobre las capacidades computacionales de este último tipo de máquina. Creemos que puede hacer poco más que un perceptrón de bajo orden". En la página anterior, Minsky y Papert aclaran que las "redes Gamba" son redes con capas ocultas.
+Minsky ha comparado el libro con el libro de ficción Necronomicón de los relatos de H.P. Lovecraft, un libro conocido por muchos, pero leído solo por unos pocos.​ Los autores hablan en la edición ampliada sobre las críticas al libro que comenzaron en la década de 1980, con una nueva ola de investigación simbolizada por el libro de PDP .
+La forma en que un grupo de científicos exploró Perceptrons primero para impulsar la investigación en IA en una dirección, y luego otro grupo en otra, ha sido objeto de un estudio sociológico del desarrollo científico.​
+
+
+== Notas ==
+
+
+== Referencias ==
+McCorduck, Pamela (2004), Machines Who Think (2nd ed.), Natick, Massachusetts: A. K. Peters, ISBN 1-5688-1205-1, pp. 104−107
+Crevier, Daniel (1993). AI: The Tumultuous Search for Artificial Intelligence. New York, NY: BasicBooks. ISBN 0-465-02997-3., pp. 102−105
+Russell, Stuart J.; Norvig, Peter (2003), Artificial Intelligence: A Modern Approach (2nd ed.), Upper Saddle River, New Jersey: Prentice Hall, ISBN 0-13-790395-2 p. 22
+Marvin Minsky and Seymour Papert, 1972 (2nd edition with corrections, first edition 1969) Perceptrons: An Introduction to Computational Geometry, The MIT Press, Cambridge MA, ISBN 0-262-63022-2.
+Olazaran, Mikel (1996). «A Sociological Study of the Official History of the Perceptrons Controversy». Social Studies of Science 26 (3): 611-659. doi:10.1177/030631296026003005. 
+Olazaran, Mikel (1 de enero de 1993), «A Sociological History of the Neural Network Controversy»,  en Yovits, Marshall C., ed., Advances in Computers Volume 37 37, Elsevier, pp. 335-425, ISBN 9780120121373, doi:10.1016/S0065-2458(08)60408-8, consultado el 31 de octubre de 2023 .

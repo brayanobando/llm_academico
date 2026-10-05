@@ -1,0 +1,36 @@
+Allen Newell (19 de marzo de 1927 - 19 de julio de 1992) fue un investigador en informática y psicología cognitiva en la escuela de informática de Carnegie Mellon. Contribuyó al lenguaje de procesamiento de información (IPL) (1956) y a dos de los primeros programas de inteligencia artificial, la máquina de lógica teórica (1956) y el Solucionador General de Problemas (1957), con Herbert Simon.
+SOAR es intento de realizar la teoría cognitiva unificada, titulado «No se puede jugar a 20 preguntas con la naturaleza y ganar» (1973). Existen otras arquitecturas cognitivas similares, en particular el ACT de John Anderson, que es una arquitectura unificada bastante popular, usada con éxito por los cognitivistas para describir el comportamiento humano en un amplio conjunto de tareas.
+Recibió el Premio Turing de la ACM junto con Herbert Simon en 1975 porque en un esfuerzo científico de más de veinte años, inicialmente en colaboración con J. C. Shaw y la corporación RAND, y posteriormente con numerosos profesores y estudiantes en Carnegie-Mellon, han hecho contribuciones básicas a la inteligencia artificial, la psicología del conocimiento humano, y el procesamiento de listas.
+
+
+== Biografía ==
+Newell fue un estudiante de doctorado en Princeton durante 1949-1950, cuando estudió matemáticas. Debido a su exposición a un nuevo campo conocido como teoría de juegos y la experiencia de su estudio de las matemáticas, decidió que prefería «una combinación de investigación experimental y teórica antes que la matemática pura» (Herbert Simon). Poco después, dejó Princeton y se incorporó a la corporación RAND en Santa Mónica, California, donde trabajó para "un grupo que estudiaba problemas de logística de las fuerzas aéreas" (Simon). Su trabajo con Joseph Kruskal llevó a la creación de dos teorías: Un modelo de teoría de la organización, y la formulación precisa de conceptos de teoría de la organización.
+Más tarde, Newell «volvió al diseño y ejecución de experimentos de laboratorio sobre toma de decisiones en grupos pequeños» (Simon). Sin embargo, se encontró con un problema. Estaba insatisfecho con sus experimentos con grupos pequeños porque consideraba que los resultados no eran lo suficientemente precisos. Se reunió con sus compañeros en RAND John Kennedy, Bob Chapman, y Bill Biel en una estación de alerta temprana de las fuerzas aéreas para llevar a cabo una simulación completa «para estudiar el proceso organizativo de los grupos de trabajo», recibiendo fondos de las fuerzas aéreas en 1952 (Simon). La clave del experimento era examinar y analizar la interacción entre los miembros del grupo de trabajo y sus pantallas de radar, y con un avión de intercepción. Todo ello eran procesos de toma de decisiones y manejo de la información. A partir de este experimento empezó a creer que el procesado de la información es la actividad principal de una organización.
+septiembre de 1954, Newell se matriculó en un seminario donde Oliver Selfridge «describió un programa de computador que aprendía y reconocía letras y otros patrones» (Simon). Fue entonces cuando Allen tomó consciencia de que se podían crear sistemas inteligentes y con capacidad de adaptación. Con esto en mente, Allen, después de un par de meses, escribiría «La Máquina de Ajedrez: Un ejemplo de cómo tratar una tarea compleja mediante la adaptación», que «describía un imaginativo diseño de un programa para jugar al ajedrez de un modo humanoide» (Simon). 
+
+
+== Premios y honores ==
+1971 - Plaza de profesor John Danz, Universidad de Washington
+1971 - Premio Memorial Harry Goode, Federación Americana de Sociedades de Procesamiento de la Información
+1972 - Academia Nacional de las Ciencias
+1972 - Academia Americana de las Artes y las Ciencias
+1975 - Premio Turing (junto con H. A. Simon), de la ACM (Association for Computing Machinery)
+1976-77 - John Simon Guggenheim Fellow
+1979 - Premio Alexander C. Williams Jr. (junto con William C. Biel, Robert Chapman y John L. Kennedy), Human Factors Society
+1980 - Academia Nacional de Ingeniería
+1980 - Primer presidente de la Asociación Americana para la Inteligencia Artificial
+1982 - Premio al pionero en computación, IEEE Computer Society
+1985 - Premio a una contribución científica distinguida, Asociación Psicológica Americana
+1986 - Doctor honoris causa en Ciencias, Universidad de Pensilvania
+1987 - Plaza de profesor William James, Universidad de Harvard
+1989 - Premio a la excelencia investigadora, Conferencia Internacional en Inteligencia Artificial
+1989 - Doctor honoris causa en Ciencias Sociales y del Comportamiento, University de Groningen, Holanda
+1989 - Premio William James, Asociación Psicológica Americana
+1990 - Premio Emanuel R. Piore Award, IEEE
+1992 - Medalla Nacional de las Ciencias
+1992 - Medalla Louis E. Levy del Instituto Franklin
+
+
+== Enlaces externos ==
+Allen Newell, Herbert A. Simon, Memorias biográficas, Academia Nacional de las Ciencias (en inglés)
+Publicaciones de Allen Newell
